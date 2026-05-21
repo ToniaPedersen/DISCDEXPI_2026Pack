@@ -1,4 +1,4 @@
-# DISC DEXPI 2025 Project Delivery Repository
+# DISC DEXPI 2026 Project Delivery Repository
 
 This GitHub repository contains the document delivery for the **DISC DEXPI 2026 Project**.
 
