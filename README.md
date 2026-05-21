@@ -8,10 +8,9 @@ Recommend to download HTML.zip [[Link]](https://github.com/ToniaPedersen/DISCDEX
 ---
 
 The repository contents are as follows:
-- **DEXPI XML Schema**:
-	- *DEXPI_XML_Schema.xsd* : schema file for DEXPI 2.0 serialization
 	
 - **Profile**:
+	- *DEXPI_XML_Schema.xsd* : schema file for DEXPI 2.0 serialization
 	- *HTML.zip* : Zip file for download of full HTML view of DISC DEXPI profile
 	- *HTML*: Folder for HTML version of the Profile
 	- *XML*: Folder for XML version of the Profile 
