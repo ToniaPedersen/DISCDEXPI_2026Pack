@@ -1,0 +1,5 @@
+SymbolStroke
+============
+
+.. sp:internal-autoelement::
+   :element: Profile.SymbolStroke

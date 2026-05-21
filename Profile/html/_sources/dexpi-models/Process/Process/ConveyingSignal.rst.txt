@@ -1,0 +1,5 @@
+ConveyingSignal
+===============
+
+.. sp:internal-autoelement::
+   :element: Process.Process.ConveyingSignal

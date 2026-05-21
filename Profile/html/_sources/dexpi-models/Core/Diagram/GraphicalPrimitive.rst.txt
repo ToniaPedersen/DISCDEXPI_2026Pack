@@ -1,0 +1,5 @@
+GraphicalPrimitive
+==================
+
+.. sp:internal-autoelement::
+   :element: Core.Diagram.GraphicalPrimitive

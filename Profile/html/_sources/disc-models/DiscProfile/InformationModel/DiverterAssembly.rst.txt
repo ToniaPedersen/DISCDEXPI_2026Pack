@@ -1,0 +1,5 @@
+DiverterAssembly
+================
+
+.. sp:internal-autoelement::
+   :element: DiscProfile.InformationModel.DiverterAssembly

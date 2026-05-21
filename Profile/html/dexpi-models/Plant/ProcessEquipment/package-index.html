@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>ProcessEquipment &#8212; DISC Profile 0.5</title>
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=b86133f3" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/basic_mod.css?v=9b2032db" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sp.css" />
+    <script src="../../../_static/documentation_options.js?v=db78e746"></script>
+    <script src="../../../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../_static/js/theme.js"></script>
+    <script src="../../../_static/js/petite-vue.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="AccessNozzle" href="AccessNozzle.html" />
+    <link rel="prev" title="TechnicalItemParentStructure" href="../PlantStructure/TechnicalItemParentStructure.html" /> 
+  </head><body data-dark_mode_code_blocks="true">
+
+<div id="top_nav">
+    
+
+    <nav>
+        
+            
+        
+
+        <p id="toggle_sidebar">
+            <a href="#" title="Toggle sidebar">|||</a>
+        </p>
+        <h1><a href="../../../index.html" title="Go to homepage">DISC Profile 0.5</a></h1>
+
+        <a id="mode_toggle" href="#" @click.prevent="handleClick" :title="mode">
+    <template v-if="mode == 'light'">
+        <svg width="100%" height="100%" viewBox="0 0 79 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g id="mode_light"><rect id="Bounds" x="0" y="-0" width="78.623" height="79.049" style="fill:none;"/><circle cx="39.311" cy="39.524" r="15.734" style="fill:#fff;"/><g id="beams"><g id="beam"><path id="beam1" serif:id="beam" d="M44.212,4.901c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,-0 -4.9,2.196 -4.9,4.901l-0,9.614c-0,2.705 2.196,4.901 4.9,4.901c2.705,0 4.901,-2.196 4.901,-4.901l0,-9.614Z" style="fill:#fff;"/></g><g id="beam2" serif:id="beam"><path id="beam3" serif:id="beam" d="M67.48,18.073c1.913,-1.912 1.913,-5.018 0,-6.931c-1.912,-1.912 -5.018,-1.912 -6.931,0l-6.798,6.799c-1.912,1.912 -1.912,5.018 0,6.931c1.913,1.912 5.018,1.912 6.931,-0l6.798,-6.799Z" style="fill:#fff;"/></g><g id="beam4" serif:id="beam"><path id="beam5" serif:id="beam" d="M25.728,61.108c1.912,-1.913 1.912,-5.018 -0,-6.931c-1.913,-1.913 -5.019,-1.913 -6.931,-0l-6.799,6.798c-1.912,1.913 -1.912,5.019 0,6.931c1.913,1.913 5.019,1.913 6.931,0l6.799,-6.798Z" style="fill:#fff;"/></g><g id="beam6" serif:id="beam"><path id="beam7" serif:id="beam" d="M60.682,54.177c-1.913,-1.913 -5.018,-1.913 -6.931,-0c-1.912,1.913 -1.912,5.018 0,6.931l6.798,6.798c1.913,1.913 5.019,1.913 6.931,0c1.913,-1.912 1.913,-5.018 0,-6.931l-6.798,-6.798Z" style="fill:#fff;"/></g><g id="beam8" serif:id="beam"><path id="beam9" serif:id="beam" d="M4.901,34.623c-2.705,0 -4.901,2.196 -4.901,4.901c0,2.705 2.196,4.901 4.901,4.901l9.614,0c2.705,0 4.901,-2.196 4.901,-4.901c0,-2.705 -2.196,-4.901 -4.901,-4.901l-9.614,0Z" style="fill:#fff;"/></g><g id="beam10" serif:id="beam"><path id="beam11" serif:id="beam" d="M44.212,64.534c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,-0 -4.9,2.196 -4.9,4.901l-0,9.614c-0,2.705 2.196,4.901 4.9,4.901c2.705,-0 4.901,-2.196 4.901,-4.901l0,-9.614Z" style="fill:#fff;"/></g><g id="beam12" serif:id="beam"><path id="beam13" serif:id="beam" d="M18.929,11.142c-1.912,-1.912 -5.018,-1.912 -6.931,0c-1.912,1.913 -1.912,5.019 0,6.931l6.799,6.799c1.912,1.912 5.018,1.912 6.931,-0c1.912,-1.913 1.912,-5.019 -0,-6.931l-6.799,-6.799Z" style="fill:#fff;"/></g><g id="beam14" serif:id="beam"><path id="beam15" serif:id="beam" d="M64.108,34.623c-2.705,0 -4.901,2.196 -4.901,4.901c-0,2.705 2.196,4.901 4.901,4.901l9.614,0c2.705,0 4.901,-2.196 4.901,-4.901c-0,-2.705 -2.196,-4.901 -4.901,-4.901l-9.614,0Z" style="fill:#fff;"/></g></g></g></svg>
+    </template>
+
+    <template v-if="mode == 'dark'">
+        <svg width="100%" height="100%" viewBox="0 0 79 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g id="mode_dark"><rect id="Bounds" x="0" y="-0" width="78.623" height="79.049" style="fill:none;"/><circle cx="39.311" cy="39.524" r="15.734" style="fill:#fff;"/><g id="beams"><g id="beam"><path id="beam1" serif:id="beam" d="M44.212,14.515c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,0 -4.901,2.196 -4.901,4.901c0,2.705 2.197,4.901 4.901,4.901c2.705,0 4.901,-2.196 4.901,-4.901Z" style="fill:#fff;"/></g><g id="beam2" serif:id="beam"><path id="beam3" serif:id="beam" d="M60.662,24.892c1.902,-1.902 1.902,-4.99 0,-6.892l-0.04,-0.039c-1.901,-1.902 -4.989,-1.902 -6.891,-0c-1.901,1.901 -1.901,4.989 0,6.891l0.04,0.04c1.902,1.901 4.989,1.901 6.891,-0Z" style="fill:#fff;"/></g><g id="beam4" serif:id="beam"><path id="beam5" serif:id="beam" d="M25.732,61.103c1.91,-1.91 1.91,-5.011 0,-6.921l-0.009,-0.01c-1.91,-1.91 -5.012,-1.91 -6.921,-0c-1.91,1.91 -1.91,5.011 -0,6.921l0.01,0.01c1.909,1.91 5.011,1.91 6.92,-0Z" style="fill:#fff;"/></g><g id="beam6" serif:id="beam"><path id="beam7" serif:id="beam" d="M60.672,54.167c-1.907,-1.907 -5.004,-1.907 -6.911,0l-0.02,0.02c-1.907,1.907 -1.907,5.004 0,6.911c1.907,1.907 5.004,1.907 6.911,-0l0.02,-0.02c1.907,-1.907 1.907,-5.004 0,-6.911Z" style="fill:#fff;"/></g><g id="beam8" serif:id="beam"><path id="beam9" serif:id="beam" d="M14.52,34.623c-2.702,0 -4.896,2.194 -4.896,4.896l0,0.01c0,2.702 2.194,4.896 4.896,4.896c2.702,0 4.896,-2.194 4.896,-4.896l-0,-0.01c-0,-2.702 -2.194,-4.896 -4.896,-4.896Z" style="fill:#fff;"/></g><g id="beam10" serif:id="beam"><path id="beam11" serif:id="beam" d="M44.212,64.534c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,-0 -4.901,2.196 -4.901,4.901c0,2.704 2.197,4.9 4.901,4.9c2.705,0 4.901,-2.196 4.901,-4.9Z" style="fill:#fff;"/></g><g id="beam12" serif:id="beam"><path id="beam13" serif:id="beam" d="M25.73,17.943c-1.911,-1.911 -5.015,-1.911 -6.926,0l-0.005,0.005c-1.911,1.911 -1.911,5.015 0,6.926c1.911,1.911 5.015,1.911 6.926,0l0.005,-0.005c1.911,-1.911 1.911,-5.014 -0,-6.926Z" style="fill:#fff;"/></g><g id="beam14" serif:id="beam"><path id="beam15" serif:id="beam" d="M64.098,34.623c-2.699,0 -4.891,2.192 -4.891,4.892l-0,0.019c-0,2.699 2.192,4.891 4.891,4.891c2.7,0 4.892,-2.192 4.892,-4.891l0,-0.019c0,-2.7 -2.192,-4.892 -4.892,-4.892Z" style="fill:#fff;"/></g></g></g></svg>
+    </template>
+
+    <template v-if="mode == 'darkest'">
+        <svg width="100%" height="100%" viewBox="0 0 79 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g id="mode_darkest"><rect id="Bounds" x="0" y="-0" width="78.623" height="79.049" style="fill:none;"/><path d="M39.315,23.791c8.684,-0 15.734,7.05 15.734,15.733c0,8.684 -7.05,15.734 -15.734,15.734c-8.683,0 -15.733,-7.05 -15.733,-15.734c-0,-8.683 7.05,-15.733 15.733,-15.733Zm0,4.737c6.069,0 10.997,4.927 10.997,10.996c-0,6.069 -4.928,10.996 -10.997,10.996c-6.068,0 -10.996,-4.927 -10.996,-10.996c0,-6.069 4.928,-10.996 10.996,-10.996Z" style="fill:#fff;"/><g id="beams"><g id="beam"><path id="beam1" serif:id="beam" d="M44.216,14.515c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,0 -4.9,2.196 -4.9,4.901c-0,2.705 2.196,4.901 4.9,4.901c2.705,0 4.901,-2.196 4.901,-4.901Z" style="fill:#fff;"/></g><g id="beam2" serif:id="beam"><path id="beam3" serif:id="beam" d="M60.666,24.892c1.902,-1.902 1.902,-4.99 0,-6.892l-0.04,-0.039c-1.901,-1.902 -4.989,-1.902 -6.891,-0c-1.901,1.901 -1.901,4.989 0,6.891l0.04,0.04c1.902,1.901 4.99,1.901 6.891,-0Z" style="fill:#fff;"/></g><g id="beam4" serif:id="beam"><path id="beam5" serif:id="beam" d="M25.737,61.103c1.909,-1.91 1.909,-5.011 -0,-6.921l-0.01,-0.01c-1.91,-1.91 -5.011,-1.91 -6.921,-0c-1.91,1.91 -1.91,5.011 -0,6.921l0.01,0.01c1.91,1.91 5.011,1.91 6.921,-0Z" style="fill:#fff;"/></g><g id="beam6" serif:id="beam"><path id="beam7" serif:id="beam" d="M60.676,54.167c-1.907,-1.907 -5.004,-1.907 -6.911,0l-0.02,0.02c-1.907,1.907 -1.907,5.004 0,6.911c1.907,1.907 5.004,1.907 6.911,-0l0.02,-0.02c1.907,-1.907 1.907,-5.004 0,-6.911Z" style="fill:#fff;"/></g><g id="beam8" serif:id="beam"><path id="beam9" serif:id="beam" d="M14.524,34.623c-2.702,0 -4.896,2.194 -4.896,4.896l0,0.01c0,2.702 2.194,4.896 4.896,4.896c2.702,0 4.896,-2.194 4.896,-4.896l0,-0.01c0,-2.702 -2.194,-4.896 -4.896,-4.896Z" style="fill:#fff;"/></g><g id="beam10" serif:id="beam"><path id="beam11" serif:id="beam" d="M44.216,64.534c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,-0 -4.9,2.196 -4.9,4.901c-0,2.704 2.196,4.9 4.9,4.9c2.705,0 4.901,-2.196 4.901,-4.9Z" style="fill:#fff;"/></g><g id="beam12" serif:id="beam"><path id="beam13" serif:id="beam" d="M25.734,17.943c-1.911,-1.911 -5.015,-1.911 -6.926,0l-0.005,0.005c-1.911,1.911 -1.911,5.015 0,6.926c1.911,1.911 5.015,1.911 6.926,0l0.005,-0.005c1.911,-1.911 1.911,-5.014 0,-6.926Z" style="fill:#fff;"/></g><g id="beam14" serif:id="beam"><path id="beam15" serif:id="beam" d="M64.103,34.623c-2.7,0 -4.892,2.192 -4.892,4.892l-0,0.019c-0,2.699 2.192,4.891 4.892,4.891c2.699,0 4.891,-2.192 4.891,-4.891l0,-0.019c0,-2.7 -2.192,-4.892 -4.891,-4.892Z" style="fill:#fff;"/></g></g></g></svg>
+    </template>
+</a>
+
+<script>
+(function() {
+    const LOCAL_STORAGE_KEY = 'piccoloThemeMode'
+
+    var initialMode = localStorage.getItem(LOCAL_STORAGE_KEY)
+
+    if (initialMode) {
+        // Make sure the value in local storage is valid
+        if (['light', 'dark', 'darkest'].indexOf(initialMode) == -1) {
+            initialMode = 'light'
+            localStorage.setItem(LOCAL_STORAGE_KEY, initialMode)
+        }
+    } else {
+        // Check if the client prefers dark mode
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            initialMode = 'dark'
+        } else {
+            initialMode = 'light'
+        }
+        localStorage.setItem(LOCAL_STORAGE_KEY, initialMode)
+    }
+
+    document.documentElement.dataset.mode = initialMode
+
+    PetiteVue.createApp({
+        'mode': initialMode,
+        handleClick() {
+            let currentMode = this.mode
+
+            if (currentMode == 'light') {
+                this.mode = 'dark'
+            } else if (currentMode == 'dark') {
+                this.mode = 'darkest'
+            } else if (currentMode == 'darkest') {
+                this.mode = 'light'
+            }
+
+            document.documentElement.dataset.mode = this.mode
+            localStorage.setItem(LOCAL_STORAGE_KEY, this.mode)
+
+            console.log(this.mode)
+        }
+    }).mount('#mode_toggle')
+})()
+</script>
+            <p class="mobile_search_link">
+                <a href="../../../search.html" title="Search">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 65 64" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2">
+                        <path d="M14.873 40.009c-2.315-3.943-3.642-8.532-3.642-13.429C11.231 11.91 23.141 0 37.811 0s26.58 11.91 26.58 26.58-11.91 26.58-26.58 26.58a26.44 26.44 0 0 1-14.277-4.161L9.739 62.794a3.12 3.12 0 0 1-4.413 0L.913 58.382c-1.217-1.218-1.217-3.196 0-4.413l13.96-13.96zM37.811 8.054c10.225 0 18.526 8.301 18.526 18.526s-8.301 18.526-18.526 18.526-18.526-8.301-18.526-18.526S27.586 8.054 37.811 8.054z" fill="#fff" />
+                    </svg>
+                </a>
+            </p>
+        
+
+        <div class="searchbox_wrapper">
+            
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+    </nav>
+</div>
+
+    
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper"><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">DEXPI Information Models</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../Builtin/model-index.html">Builtin</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Core/model-index.html">Core</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../model-index.html">Plant</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../Diagram/package-index.html">Diagram</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Enumerations/package-index.html">Enumerations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Instrumentation/package-index.html">Instrumentation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Piping/package-index.html">Piping</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../PlantModel.html">PlantModel</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../PlantStructure/package-index.html">PlantStructure</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">ProcessEquipment</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../Process/model-index.html">Process</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../disc-models/index.html">DISC Information Models</a></li>
+</ul>
+
+        </div>
+      </div>
+
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="processequipment">
+<h1>ProcessEquipment<a class="headerlink" href="#processequipment" title="Link to this heading">¶</a></h1>
+<p><a class="sp-element reference internal" href="../model-index.html"><span class="doc">Plant</span></a><span class="sp-element">::</span><span class="sp-element">ProcessEquipment</span></p>
+<section id="Overview">
+<h2>Overview<a class="headerlink" href="#Overview" title="Link to this heading">¶</a></h2>
+<p class="rubric">Package</p>
+</section>
+<section id="Members">
+<h2>Members<a class="headerlink" href="#Members" title="Link to this heading">¶</a></h2>
+<section id="member-list-section-Classes">
+<h3>Classes<a class="headerlink" href="#member-list-section-Classes" title="Link to this heading">¶</a></h3>
+</section>
+<table class="docutils align-left">
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Type</p></th>
+<th class="head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="AccessNozzle.html"><span class="doc">AccessNozzle</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A <a class="sp-element reference internal" href="Nozzle.html"><span class="doc">Nozzle</span></a> intended to enable or facilitate access to the interior of its owner.
+This comprises especially inspection holes like manholes, handholes, and sight holes (for equipment); see
+<a class="sp-element reference internal" href="../Piping/SightGlass.html"><span class="doc">SightGlass</span></a> for piping components.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="Agglomerator.html"><span class="doc">Agglomerator</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A machine that is capable of agglomerating. It is usually vertically
+aligned.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="Agitator.html"><span class="doc">Agitator</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>An Agitator is a dynamic mixer that stirs or shakes fluids by reaction
+force from moving vanes.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="AgitatorRotor.html"><span class="doc">AgitatorRotor</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>The machine component that is the rotating portion of an
+<a class="sp-element reference internal" href="Agitator.html"><span class="doc">Agitator</span></a>.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="AirCoolingSystem.html"><span class="doc">AirCoolingSystem</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A cooling system which uses air as the cooling medium.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="AirEjector.html"><span class="doc">AirEjector</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>An ejector intended to create vacuum using compressed air.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="AlternatingCurrentGenerator.html"><span class="doc">AlternatingCurrentGenerator</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>An electric generator for the production of alternating current and voltage.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="AlternatingCurrentMotor.html"><span class="doc">AlternatingCurrentMotor</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>An electric motor driven by alternating electric current</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="AlternatingCurrentMotorAsComponent.html"><span class="doc">AlternatingCurrentMotorAsComponent</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>An electric motor driven by alternating electric current that is used as
+a component of an apparatus or of a machine.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="AxialBlower.html"><span class="doc">AxialBlower</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A blower in which the flow direction is parallel to the shaft.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="AxialCompressor.html"><span class="doc">AxialCompressor</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A <a class="sp-element reference internal" href="Compressor.html"><span class="doc">Compressor</span></a> in which the gas is accelerated by the action
+of a bladed rotor and where the main flow is along the rotation axis of
+the rotor.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="AxialFan.html"><span class="doc">AxialFan</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A fan where the flow is along axis of shaft and the pressure ratio is relatively low.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="BatchWeigher.html"><span class="doc">BatchWeigher</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A <a class="sp-element reference internal" href="Weigher.html"><span class="doc">Weigher</span></a> that is operating in batch mode.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="Blower.html"><span class="doc">Blower</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A physical object intended to compress and supply air or gas at medium pressure and medium volume flow.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="Boiler.html"><span class="doc">Boiler</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A <a class="sp-element reference internal" href="Heater.html"><span class="doc">Heater</span></a> that brings a liquid to its boiling point.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="BriquettingRoller.html"><span class="doc">BriquettingRoller</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>An element of an <a class="sp-element reference internal" href="Agglomerator.html"><span class="doc">Agglomerator</span></a> that compresses bulk material
+into briquettes.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="Burner.html"><span class="doc">Burner</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A physical object that is intended to release thermal energy by burning a combustible mixture.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="CentrifugalBlower.html"><span class="doc">CentrifugalBlower</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A blower in which one ore more impellers accelerate the flow and where
+the main flow through the impeller is radial.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="CentrifugalCompressor.html"><span class="doc">CentrifugalCompressor</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A dynamic compressor in which one ore more impellers accelerate the gas and where the main flow through the impeller is radial.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="CentrifugalPump.html"><span class="doc">CentrifugalPump</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A dynamic pump utilizing impellers provided with vanes generating centrifugal force to achieve the required pressure head.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="Centrifuge.html"><span class="doc">Centrifuge</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A ‘separator’ and ‘machine’ that uses centrifugal force to separate phases of different densities.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="Chamber.html"><span class="doc">Chamber</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="ChamberOwner.html"><span class="doc">ChamberOwner</span></a></p></td>
+<td><p>Abstract Class</p></td>
+<td><p>An object that can have chambers.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="Chimney.html"><span class="doc">Chimney</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A <a class="sp-element reference internal" href="WasteGasEmitter.html"><span class="doc">WasteGasEmitter</span></a> that is intended to transport waste gas
+to a high location in the atmosphere.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="ColumnInternalsArrangement.html"><span class="doc">ColumnInternalsArrangement</span></a></p></td>
+<td><p>Abstract Class</p></td>
+<td><p>The internals of a column, e.g., trays or packings.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="ColumnPackingsArrangement.html"><span class="doc">ColumnPackingsArrangement</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>The packings of a column.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="ColumnSection.html"><span class="doc">ColumnSection</span></a></p></td>
+<td><p>Abstract Class</p></td>
+<td><p>A column section.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="ColumnTraysArrangement.html"><span class="doc">ColumnTraysArrangement</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>The trays of a column.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="CombustionEngine.html"><span class="doc">CombustionEngine</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>An engine intended to deliver power by means of burning fuels.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="CombustionEngineAsComponent.html"><span class="doc">CombustionEngineAsComponent</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>An engine intended to deliver power by means of burning fuels that is
+used as component of an apparatus or of a machine.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="Compressor.html"><span class="doc">Compressor</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A machine that has the capability of compressing a gas.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="ContinuousWeigher.html"><span class="doc">ContinuousWeigher</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A <a class="sp-element reference internal" href="Weigher.html"><span class="doc">Weigher</span></a> that weighs a mass flow rate in continuous mode.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="ConvectionDryer.html"><span class="doc">ConvectionDryer</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A <a class="sp-element reference internal" href="Dryer.html"><span class="doc">Dryer</span></a> that dries a material by bringing it in contact
+with a drying gas.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="Conveyor.html"><span class="doc">Conveyor</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A machine that is capable of conveying material.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="CoolingTower.html"><span class="doc">CoolingTower</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A cooler and an air cooled heat exchanger that is a tall structure through which air circulates by convection</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="CoolingTowerRotor.html"><span class="doc">CoolingTowerRotor</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A rotor of a cooling tower.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="Crusher.html"><span class="doc">Crusher</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A mill that uses pressure or impact to reduce the particle size of solid materials.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="CrusherElement.html"><span class="doc">CrusherElement</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A functional component of a <a class="sp-element reference internal" href="Crusher.html"><span class="doc">Crusher</span></a>.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="DirectCurrentGenerator.html"><span class="doc">DirectCurrentGenerator</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>An <a class="sp-element reference internal" href="ElectricGenerator.html"><span class="doc">ElectricGenerator</span></a> and current generator for the
+production of direct current (DC).</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="DirectCurrentMotor.html"><span class="doc">DirectCurrentMotor</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>An electric motor for operation by direct current.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="DirectCurrentMotorAsComponent.html"><span class="doc">DirectCurrentMotorAsComponent</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>An electric motor for operation by direct current that is used as
+component of an apparatus or of a machine.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="Displacer.html"><span class="doc">Displacer</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>An object that has the purpose of displacing a fluid.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="DryCoolingTower.html"><span class="doc">DryCoolingTower</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A <a class="sp-element reference internal" href="CoolingTower.html"><span class="doc">CoolingTower</span></a> that is an indirect contact heat exchanger
+where, by full utilization of dry surface coil sections, no direct
+contact (and no evaporation) occurs between air and water; hence the
+water is cooled totally by sensible heat transfer
+(from <a class="reference external" href="http://data.15926.org/rdl/RDS14072386">http://data.15926.org/rdl/RDS14072386</a>).</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="Dryer.html"><span class="doc">Dryer</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>An object that has the capability of drying (from
+<a class="reference external" href="http://data.15926.org/rdl/RDS1066939451">http://data.15926.org/rdl/RDS1066939451</a>).</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="DryingChamber.html"><span class="doc">DryingChamber</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A device that is a chamber, fixed or portable, for drying used as a
+component of an apparatus or a machine.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="EjectorPump.html"><span class="doc">EjectorPump</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A pump which uses pressurized gas or liquid passing through an ejector to transport liquid.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="ElectricGenerator.html"><span class="doc">ElectricGenerator</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>An electric rotating machine that transforms non-electric energy into electric energy</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="ElectricHeater.html"><span class="doc">ElectricHeater</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A heater in which electric energy is converted into heat for useful purposes.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="ElectricalSeparator.html"><span class="doc">ElectricalSeparator</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A separator that uses electromagnetic, magnetic or electrostatic
+forces to separate phases.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="EquipmentVent.html"><span class="doc">EquipmentVent</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A <a class="sp-element reference internal" href="Vent.html"><span class="doc">Vent</span></a> that is intended to release the pressure in a
+casing or to prevent airlocks in a fluid, and also acts as valve to release air trapped
+in the casing.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="Extruder.html"><span class="doc">Extruder</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A machine that has the capability of extruding (from
+<a class="reference external" href="http://data.15926.org/rdl/RDS394044551">http://data.15926.org/rdl/RDS394044551</a>).</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="Fan.html"><span class="doc">Fan</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>An ‘artefact’ and a ‘gas pressure increase device’ that is intended to deliver or exhaust volumes of vapour or gas at low differential pressure.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="Feeder.html"><span class="doc">Feeder</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A closed fluid transporter that is a gathering line tied into a trunk
+line (from
+<a class="reference external" href="http://data.15926.org/rdl/RDS300644">http://data.15926.org/rdl/RDS300644</a>).</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="Filter.html"><span class="doc">Filter</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>An apparatus or machine that is capable of filtering (from
+<a class="reference external" href="http://data.15926.org/rdl/RDS300689">http://data.15926.org/rdl/RDS300689</a>).</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="FilterUnit.html"><span class="doc">FilterUnit</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>The filtering unit as part of a filter.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="FilteringCentrifuge.html"><span class="doc">FilteringCentrifuge</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A centrifuge intended to separate solids from liquids by centrifugal
+process based on particle size.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="FilteringCentrifugeDrum.html"><span class="doc">FilteringCentrifugeDrum</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A drum being a component of a FilteringCentrifuge.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="Flare.html"><span class="doc">Flare</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>An artefact and waste gas emitter that is intended to burn waste gas in
+secure distance from the plant or platform.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="ForkliftTruck.html"><span class="doc">ForkliftTruck</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A <a class="sp-element reference internal" href="MobileTransportSystem.html"><span class="doc">MobileTransportSystem</span></a> and vehicle with power operated
+prongs that can be raised and lowered by will, for loading, transporting
+and unloading goods (from
+<a class="reference external" href="http://data.15926.org/rdl/RDS11590075">http://data.15926.org/rdl/RDS11590075</a>).</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="Furnace.html"><span class="doc">Furnace</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A physical object that is intended to induce a reaction in a process fluid by heating it.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="GasFilter.html"><span class="doc">GasFilter</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A filter that is specifically designed to filter a gas.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="GasTurbine.html"><span class="doc">GasTurbine</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A machine that is a rotary mechanical device extracting energy from a
+gas flow and converting it into useful work.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="GearBox.html"><span class="doc">GearBox</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>An artefact that consists of a gear casing with an arrangement of two or
+more gear-wheels transmitting rotating motion from the input shaft to
+the output shaft.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="GravitationalSeparator.html"><span class="doc">GravitationalSeparator</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A fluid separator that is based on the difference in specific gravity
+for the substances to be separated (from
+<a class="reference external" href="http://data.15926.org/rdl/RDS16042131">http://data.15926.org/rdl/RDS16042131</a>).</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="Grinder.html"><span class="doc">Grinder</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A <a class="sp-element reference internal" href="Mill.html"><span class="doc">Mill</span></a> that has the capability of grinding.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="GrindingElement.html"><span class="doc">GrindingElement</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A functional component of a <a class="sp-element reference internal" href="Grinder.html"><span class="doc">Grinder</span></a>.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="HeatExchanger.html"><span class="doc">HeatExchanger</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>An apparatus or machine that has the capability of heat exchanging (from
+<a class="reference external" href="http://data.15926.org/rdl/RDS304199">http://data.15926.org/rdl/RDS304199</a>).</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="HeatExchangerRotor.html"><span class="doc">HeatExchangerRotor</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A rotor as a component of a <a class="sp-element reference internal" href="HeatExchanger.html"><span class="doc">HeatExchanger</span></a>.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="HeatedSurfaceDryer.html"><span class="doc">HeatedSurfaceDryer</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A <a class="sp-element reference internal" href="Dryer.html"><span class="doc">Dryer</span></a> that dries a material by radiation and/or
+conduction caused by a heated surface (from
+<a class="reference external" href="http://data.15926.org/rdl/RDS2228449">http://data.15926.org/rdl/RDS2228449</a>).</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="Heater.html"><span class="doc">Heater</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>An apparatus or machine that has the capability of heating.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="Impeller.html"><span class="doc">Impeller</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>An energy converter component that is an assembly of rotating vanes
+within an enclosure which is used to impart energy to or derive energy
+from a fluid through dynamic force (from
+<a class="reference external" href="http://data.posccaesar.org/rdl/RDS414539">http://data.posccaesar.org/rdl/RDS414539</a>).</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="InstrumentNozzle.html"><span class="doc">InstrumentNozzle</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A <a class="sp-element reference internal" href="Nozzle.html"><span class="doc">Nozzle</span></a> intended for connecting an instrument
+(from
+<a class="reference external" href="http://data.posccaesar.org/rdl/RDS431675630">http://data.posccaesar.org/rdl/RDS431675630</a>).</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="Kneader.html"><span class="doc">Kneader</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A machine that is capable of mixing and working into a uniform mass by,
+or as if by, folding, pressing, and stretching.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="Lift.html"><span class="doc">Lift</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A <a class="sp-element reference internal" href="StationaryTransportSystem.html"><span class="doc">StationaryTransportSystem</span></a> for transporting persons or
+things from one level to another (from
+<a class="reference external" href="http://data.posccaesar.org/rdl/RDS13601120">http://data.posccaesar.org/rdl/RDS13601120</a>).</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="LiquidFilter.html"><span class="doc">LiquidFilter</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A filter that is specifically designed to filter a liquid.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="LoadingUnloadingSystem.html"><span class="doc">LoadingUnloadingSystem</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A transport system that is intended for loading and/or unloading products into/from vehicles, wagons or vessels.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="MechanicalSeparator.html"><span class="doc">MechanicalSeparator</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A fluid separator in which mechanical separation of fluids take place
+(from
+<a class="reference external" href="http://data.posccaesar.org/rdl/RDS279134">http://data.posccaesar.org/rdl/RDS279134</a>).</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="Mill.html"><span class="doc">Mill</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A physical object for grinding or pulverizing materials. Also a machine for shaping metal. In general a machine that manufactures by the continuous repetition of some simple action</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="Mixer.html"><span class="doc">Mixer</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>An apparatus or machine that has the capability of mixing (from
+<a class="reference external" href="http://data.15926.org/rdl/RDS222370">http://data.15926.org/rdl/RDS222370</a>).</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="MixingElementAssembly.html"><span class="doc">MixingElementAssembly</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>Assembly of mixing elements as part of a mixer.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="MobileTransportSystem.html"><span class="doc">MobileTransportSystem</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A mobile system that is intended to transport, store or load/unload
+material.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="Motor.html"><span class="doc">Motor</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A driver that is powered by electricity or internal combustion (from
+<a class="reference external" href="http://data.15926.org/rdl/RDS7191198">http://data.15926.org/rdl/RDS7191198</a>).</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="MotorAsComponent.html"><span class="doc">MotorAsComponent</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A driver that is powered by electricity or internal combustion and is
+used as component of an apparatus or of a machine.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="Mount.html"><span class="doc">Mount</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>An object that is capable of supporting something that is mounted on it.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="Nozzle.html"><span class="doc">Nozzle</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A projecting short piece of pipe that is attached to another (hollow) body.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="NozzleOwner.html"><span class="doc">NozzleOwner</span></a></p></td>
+<td><p>Abstract Class</p></td>
+<td><p>An object that can have nozzles.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="PackagingSystem.html"><span class="doc">PackagingSystem</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A system that is intended for the preparation of goods for transport,
+warehousing, logistics, sale, and end use (from
+<a class="reference external" href="http://data.15926.org/rdl/RDS2228725">http://data.15926.org/rdl/RDS2228725</a>).</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="PelletizerDisc.html"><span class="doc">PelletizerDisc</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A rotating disc as a component of an <a class="sp-element reference internal" href="Agglomerator.html"><span class="doc">Agglomerator</span></a>.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="PlateHeatExchanger.html"><span class="doc">PlateHeatExchanger</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A heat exchanger that uses metal plates to transfer heat between two fluids.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="PressureVessel.html"><span class="doc">PressureVessel</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="ProcessColumn.html"><span class="doc">ProcessColumn</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="ProcessEquipment.html"><span class="doc">ProcessEquipment</span></a></p></td>
+<td><p>Abstract Class</p></td>
+<td><p>An apparatus or machine.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="ProcessNozzle.html"><span class="doc">ProcessNozzle</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A <a class="sp-element reference internal" href="Nozzle.html"><span class="doc">Nozzle</span></a> intended to enable transfer of process material
+(from
+<a class="reference external" href="http://data.posccaesar.org/rdl/RDS4316825252">http://data.posccaesar.org/rdl/RDS4316825252</a>).</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="Pump.html"><span class="doc">Pump</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A machine that is capable of pumping but may require parts and
+subsystems for that capability.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="RadialFan.html"><span class="doc">RadialFan</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A ‘fan’ with axial inlet and radial outlet.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="RailWaggon.html"><span class="doc">RailWaggon</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A non self driving vehicle and mobile transport system intended to ride on rails.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="ReciprocatingCompressor.html"><span class="doc">ReciprocatingCompressor</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A positive displacement compressor in which forced reduction of gas volume takes place by the movement of a displacing element in a cylinder or enclosure.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="ReciprocatingExtruder.html"><span class="doc">ReciprocatingExtruder</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>An extruder that uses a piston in a batch process.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="ReciprocatingPressureAgglomerator.html"><span class="doc">ReciprocatingPressureAgglomerator</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>An <a class="sp-element reference internal" href="Agglomerator.html"><span class="doc">Agglomerator</span></a> which uses pistons to produce pressure and to form material
+(from
+<a class="reference external" href="http://data.15926.org/rdl/RDS2228720">http://data.15926.org/rdl/RDS2228720</a>).</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="ReciprocatingPump.html"><span class="doc">ReciprocatingPump</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>a positive displacement pump which contains a displacing element intended to be moved in a reciprocating movement to exert pressure on a fluid, typically moving within a cylindrical space.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="RevolvingSieve.html"><span class="doc">RevolvingSieve</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A revolving sieve that intends to sift out finer from
+coarser parts.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="RotaryCompressor.html"><span class="doc">RotaryCompressor</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A positive displacement compressor in which compression displacement is effected by the positive action of rotating elements.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="RotaryMixer.html"><span class="doc">RotaryMixer</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A <a class="sp-element reference internal" href="Mixer.html"><span class="doc">Mixer</span></a> machine that mixes by means of rotating components.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="RotaryPump.html"><span class="doc">RotaryPump</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A positive displacement pump that consists of a chamber containing gears, cams, screws, vanes, plungers or similar elements actuated by relative rotation of the drive shaft or casing and which has no separate inlet and outlet valves.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="RotatingExtruder.html"><span class="doc">RotatingExtruder</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>An extruder that operates in a continuous process. Typically using a screw to build up pressure in the melt. It can incorporate a mixing stage with a forming stage.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="RotatingGrowthAgglomerator.html"><span class="doc">RotatingGrowthAgglomerator</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>An <a class="sp-element reference internal" href="Agglomerator.html"><span class="doc">Agglomerator</span></a> which uses a pelletizer disc to produce pellets.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="RotatingPressureAgglomerator.html"><span class="doc">RotatingPressureAgglomerator</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>An <a class="sp-element reference internal" href="Agglomerator.html"><span class="doc">Agglomerator</span></a> which uses briquetting rollers to produce pressure
+and to form material.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="Screw.html"><span class="doc">Screw</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A shaft with a helical shaped shaft design.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="ScrubbingSeparator.html"><span class="doc">ScrubbingSeparator</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A separator that is intended to clean gas by washing the gas flow
+with water or with another liquid entering at the top of the vessel.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="SedimentalCentrifuge.html"><span class="doc">SedimentalCentrifuge</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A centrifuge that is intended to separate solids from liquids by
+a centrifugal process based on different densities.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="SedimentalCentrifugeDrum.html"><span class="doc">SedimentalCentrifugeDrum</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A <span class="sp-element">SedimentalCentrifugeDrum</span> is a drum and a component of a
+<a class="sp-element reference internal" href="SedimentalCentrifuge.html"><span class="doc">SedimentalCentrifuge</span></a>.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="Separator.html"><span class="doc">Separator</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A ‘device’ intended to separate different types of substances</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="Ship.html"><span class="doc">Ship</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A watercraft and <a class="sp-element reference internal" href="MobileTransportSystem.html"><span class="doc">MobileTransportSystem</span></a> that is a sea-going
+vessel of considerable size.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="Sieve.html"><span class="doc">Sieve</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A device that removes particles from a fluid when the fluid passes
+through or separates particles or molecules according to their size.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="SieveElement.html"><span class="doc">SieveElement</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A screening unit that is a component of a sieve.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="Silo.html"><span class="doc">Silo</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A <a class="sp-element reference internal" href="Vessel.html"><span class="doc">Vessel</span></a> with a conical shape that is intended to store
+solids in bulk (from
+<a class="reference external" href="http://data.15926.org/rdl/RDS1022399">http://data.15926.org/rdl/RDS1022399</a>).</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="SpiralHeatExchanger.html"><span class="doc">SpiralHeatExchanger</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A <a class="sp-element reference internal" href="HeatExchanger.html"><span class="doc">HeatExchanger</span></a> in which a pair of plates is formed into a
+spiral.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="SprayCooler.html"><span class="doc">SprayCooler</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A <a class="sp-element reference internal" href="CoolingTower.html"><span class="doc">CoolingTower</span></a> that is based on spraying a coolant on a
+heated surface to be cooled.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="SprayNozzle.html"><span class="doc">SprayNozzle</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A nozzle where liquid is introduced under pressure</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="StaticMixer.html"><span class="doc">StaticMixer</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A physical object that is intended to mix fluid by means of diverging
+the flow with static obstacles or by increasing locally the velocity.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="StationarySieve.html"><span class="doc">StationarySieve</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A <a class="sp-element reference internal" href="Sieve.html"><span class="doc">Sieve</span></a> consisting of rakes or sieves, that, during
+operation, remains in a fixed position (from
+<a class="reference external" href="http://data.15926.org/rdl/RDS2226669">http://data.15926.org/rdl/RDS2226669</a>).</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="StationaryTransportSystem.html"><span class="doc">StationaryTransportSystem</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A transport system that is intended to transport, store or load/unload
+material and that, as a whole, remains in one place.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="SteamGenerator.html"><span class="doc">SteamGenerator</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A boiler that is intended to generate steam.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="SteamTurbine.html"><span class="doc">SteamTurbine</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A turbine that is a heat engine in which energy of steam is transformed into kinetic energy by means of expansion through nozzles and the kinetic energy of the resulting jet is in turn converted into force doing work on rings of blading mounted on a rotating shaft.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="SubTaggedColumnSection.html"><span class="doc">SubTaggedColumnSection</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A sub tagged column section.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="TaggedColumnSection.html"><span class="doc">TaggedColumnSection</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A fully tagged column section.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="TaggedPlantItem.html"><span class="doc">TaggedPlantItem</span></a></p></td>
+<td><p>Abstract Class</p></td>
+<td><p>A fully tagged item in a plant.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="Tank.html"><span class="doc">Tank</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="ThinFilmEvaporator.html"><span class="doc">ThinFilmEvaporator</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A <a class="sp-element reference internal" href="HeatExchanger.html"><span class="doc">HeatExchanger</span></a> and evaporator for the purification of
+temperature-sensitive products by evaporation, where a thin film of the
+liquid product on the inner side of a vertical evaporation pipe is
+generated by a rotating wiper system.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="TransmissionDriver.html"><span class="doc">TransmissionDriver</span></a></p></td>
+<td><p>Abstract Class</p></td>
+<td><p>A Driver applied to drive <a class="sp-element reference internal" href="TransmissionSystem.html"><span class="doc">TransmissionSystems</span></a>.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="TransmissionSystem.html"><span class="doc">TransmissionSystem</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A rotating equipment system that can transmit mechanical power from its
+<a class="sp-element reference internal" href="TransmissionSystem.html#sp:plant.processequipment.transmissionsystem.driver"><span class="std std-ref">Driver</span></a> to driven <span class="sp-element sp-error">Plant.ProcessEquipment.Equipment</span>
+by means of an assembly of transmission components and auxiliaries.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="TransportableContainer.html"><span class="doc">TransportableContainer</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A ‘container’ that is a transportable, with strength suitable to withstand shipment, storage, and handling.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="Truck.html"><span class="doc">Truck</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>An automotive vehicle that is long, low and open intended for carrying goods by road.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="TubeBundle.html"><span class="doc">TubeBundle</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="TubularHeatExchanger.html"><span class="doc">TubularHeatExchanger</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="Turbine.html"><span class="doc">Turbine</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>An object that is a rotary mechanical device that extracts energy from a
+fluid flow and converts it into useful work (from
+<a class="reference external" href="http://data.15926.org/rdl/RDS313289">http://data.15926.org/rdl/RDS313289</a>).</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="Vent.html"><span class="doc">Vent</span></a></p></td>
+<td><p>Abstract Class</p></td>
+<td><p>An object that has the capability of venting by being or having an opening that allows
+air, smoke, or gas to enter or leave a closed space to relief pressure and prevent vacuum.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="Vessel.html"><span class="doc">Vessel</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A container intended for storage and/or processing of fluids or
+solids.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="VibratingSieve.html"><span class="doc">VibratingSieve</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A <a class="sp-element reference internal" href="Sieve.html"><span class="doc">Sieve</span></a> where the product to be sieved is transported over
+the mesh by vibration of the latter (from
+<a class="reference external" href="http://data.15926.org/rdl/RDS2226670">http://data.15926.org/rdl/RDS2226670</a>).</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="WasteGasEmitter.html"><span class="doc">WasteGasEmitter</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A physical object that is intended to release/emit waste gas from the
+process.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="Weigher.html"><span class="doc">Weigher</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A functional object that is capable of weighing.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="WetCoolingTower.html"><span class="doc">WetCoolingTower</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A <a class="sp-element reference internal" href="CoolingTower.html"><span class="doc">CoolingTower</span></a> that derives its primary cooling effect from
+the evaporation that takes place when air and water are brought into
+direct contact.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+    
+        <div id="show_right_sidebar">
+            <p><a class="toggle_right_sidebar" href="#"><span class="icon">&lt;</span><span>Page contents</span></a></p>
+        </div>
+
+        <div id="right_sidebar">
+            <p><a class="toggle_right_sidebar" href="#"><span class="icon">&gt;</span><span>Page contents:</span></a></p>
+            <div class="page_toc">
+                <ul>
+<li><a class="reference internal" href="#">ProcessEquipment</a><ul>
+<li><a class="reference internal" href="#Overview">Overview</a></li>
+<li><a class="reference internal" href="#Members">Members</a><ul>
+<li><a class="reference internal" href="#member-list-section-Classes">Classes</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            </div>
+        </div>
+    
+
+      <div class="clearer"></div>
+    </div>
+    <div class="button_nav_wrapper">
+        <div class="button_nav">
+            <div class="left">
+                
+                <a href="../PlantStructure/TechnicalItemParentStructure.html">
+                    <span class="icon">&lt;</span><span>TechnicalItemParentStructure</span></a>
+                
+            </div>
+
+            <div class="right">
+                
+                    <a href="AccessNozzle.html"><span>AccessNozzle</span><span class="icon">&gt;</span></a>
+                
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer" role="contentinfo">
+    &#169; Copyright .
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.1.3.
+    </div>
+
+<p id="theme_credit">Styled using the <a href="https://github.com/piccolo-orm/piccolo_theme">Piccolo Theme</a></p>
+  </body>
+</html>

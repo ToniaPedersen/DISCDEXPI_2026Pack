@@ -1,0 +1,5 @@
+OffPageConnectorNumberLabel
+===========================
+
+.. sp:internal-autoelement::
+   :element: Plant.Diagram.OffPageConnectorNumberLabel

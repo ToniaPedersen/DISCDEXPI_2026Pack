@@ -1,0 +1,5 @@
+PelletizerDisc
+==============
+
+.. sp:internal-autoelement::
+   :element: Plant.ProcessEquipment.PelletizerDisc

@@ -1,0 +1,5 @@
+PipingNodeOwner
+===============
+
+.. sp:internal-autoelement::
+   :element: Plant.Piping.PipingNodeOwner

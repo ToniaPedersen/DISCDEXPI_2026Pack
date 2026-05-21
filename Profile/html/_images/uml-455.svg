@@ -1,0 +1,81 @@
+<ns0:svg xmlns:ns0="http://www.w3.org/2000/svg" width="594.0646223958333px" height="390.5999999999999px" viewBox="0.0 0.0 594.0646223958333 390.5999999999999"><ns0:style>
+            .uml-foreground-stroke {
+                stroke: black;
+                stroke-width: 1px;
+            }
+            
+            .uml-foreground-fill {
+                fill: black;
+            }
+            
+            .uml-background_color-type {
+                fill: #ffffcc;
+            }
+            
+            .uml-background_color-main_type {
+                fill: #ffff66;
+            }
+            
+            .uml-background_color-instance {
+                fill: blue;
+            }
+            
+            .uml-background_color-background {
+                fill: white;
+            }
+            
+            .uml-background_color-foreground {
+                fill: black;
+            }
+            
+            .uml-font-normal {
+                font-family: Arial;
+            }
+            
+            .uml-font-element {
+                font-family: Arial;
+            }
+            
+            .uml-fontsize-normal {
+                font-size: 10px;
+            }
+
+            .uml-fontsize-large {
+                font-size: 12px;
+            }
+            
+            .uml-source_marker-closed_arrow {
+                marker-start: url(#uml-marker-closed_arrow);
+            }
+            
+            .uml-source_marker-open_arrow {
+                marker-start: url(#uml-marker-open_arrow);
+            }
+            
+            .uml-source_marker-filled_diamond {
+                marker-start: url(#uml-marker-filled_diamond);
+            }
+
+            .uml-target_marker-closed_arrow {
+                marker-end: url(#uml-marker-closed_arrow);
+            }
+            
+            .uml-target_marker-open_arrow {
+                marker-end: url(#uml-marker-open_arrow);
+            }
+            
+            .uml-target_marker-filled_diamond {
+                marker-end: url(#uml-marker-filled_diamond);
+            }
+
+            </ns0:style><ns0:defs>
+        <ns0:marker id="uml-marker-closed_arrow" viewBox="-2 -2 14 14" refX="10" refY="5.0" markerWidth="14" markerHeight="14" orient="auto-start-reverse">
+          <ns0:path d="M 0 0 L 10 5.0 L 0 10 Z" stroke-linejoin="round" stroke-linecap="round" class="uml-foreground-stroke uml-background_color-background"/>
+        </ns0:marker>
+        <ns0:marker id="uml-marker-open_arrow" viewBox="-2 -2 14 14" refX="10" refY="5.0" markerWidth="14" markerHeight="14" orient="auto-start-reverse">
+          <ns0:path d="M 0 0 L 10 5.0 L 0 10" stroke-linejoin="round" stroke-linecap="round" fill="none" class="uml-foreground-stroke"/>
+        </ns0:marker>
+        <ns0:marker id="uml-marker-filled_diamond" viewBox="-2 -2 14 14" refX="10" refY="5.0" markerWidth="14" markerHeight="14" orient="auto-start-reverse">
+          <ns0:path d="M 0 5.0 L      5.0 2.0        10 5.0      5.0 8.0 Z       " stroke-linejoin="round" stroke-linecap="round" class="uml-foreground-stroke uml-background_color-foreground"/>
+        </ns0:marker>
+      </ns0:defs><ns0:rect class="uml-background_color-type uml-foreground-stroke" x="373.37126302083334" y="125.19999999999999" width="200.0" height="23.799999999999997"/><ns0:text x="473.37126302083334" text-anchor="middle" font-size="0px" y="140.64"><ns0:a href="../dexpi-models/Core/ConceptualObject.html"><ns0:tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold" font-style="italic">ConceptualObject</ns0:tspan></ns0:a></ns0:text><ns0:rect class="uml-background_color-main_type uml-foreground-stroke" x="73.1349544270833" y="354.79999999999995" width="187.55804687500003" height="23.799999999999997"/><ns0:text x="166.91397786458333" text-anchor="middle" font-size="0px" y="370.23999999999995"><ns0:tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold" font-style="italic">CalculatingProcessVariable</ns0:tspan></ns0:text><ns0:rect class="uml-background_color-type uml-foreground-stroke" x="88.88149739583332" y="258.4" width="156.06496093750002" height="23.799999999999997"/><ns0:text x="166.91397786458333" text-anchor="middle" font-size="0px" y="273.84"><ns0:a href="../dexpi-models/Process/Process/InstrumentationActivity.html"><ns0:tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold" font-style="italic">InstrumentationActivity</ns0:tspan></ns0:a></ns0:text><ns0:rect class="uml-background_color-type uml-foreground-stroke" x="432.3627018229166" y="12.0" width="148.6837890625" height="23.799999999999997"/><ns0:text x="506.7045963541666" text-anchor="middle" font-size="0px" y="27.439999999999998"><ns0:a href="../dexpi-models/Core/Diagram/AttributeRepresentation.html"><ns0:tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold">AttributeRepresentation</ns0:tspan></ns0:a></ns0:text><ns0:rect class="uml-background_color-type uml-foreground-stroke" x="276.15059244791667" y="12.0" width="136.212109375" height="23.799999999999997"/><ns0:text x="344.25664713541664" text-anchor="middle" font-size="0px" y="27.439999999999998"><ns0:a href="../dexpi-models/Core/Diagram/RepresentationGroup.html"><ns0:tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold">RepresentationGroup</ns0:tspan></ns0:a></ns0:text><ns0:rect class="uml-background_color-type uml-foreground-stroke" x="508.37126302083334" y="258.4" width="50.0" height="23.799999999999997"/><ns0:text x="533.3712630208333" text-anchor="middle" font-size="0px" y="273.84"><ns0:a href="../dexpi-models/Core/Note.html"><ns0:tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold">Note</ns0:tspan></ns0:a></ns0:text><ns0:rect class="uml-background_color-type uml-foreground-stroke" x="350.32800130208335" y="258.4" width="119.3189453125" height="23.799999999999997"/><ns0:text x="409.98747395833334" text-anchor="middle" font-size="0px" y="273.84"><ns0:a href="../dexpi-models/Core/PersistentIdentifier.html"><ns0:tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold">PersistentIdentifier</ns0:tspan></ns0:a></ns0:text><ns0:rect class="uml-background_color-type uml-foreground-stroke" x="264.94645833333334" y="258.4" width="50.0" height="23.799999999999997"/><ns0:text x="289.94645833333334" text-anchor="middle" font-size="0px" y="273.84"><ns0:a href="../dexpi-models/Core/Role.html"><ns0:tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold">Role</ns0:tspan></ns0:a></ns0:text><ns0:rect class="uml-background_color-type uml-foreground-stroke" x="12.0" y="125.19999999999999" width="186.79492187500003" height="23.799999999999997"/><ns0:text x="105.39746093750001" text-anchor="middle" font-size="0px" y="140.64"><ns0:a href="../dexpi-models/Process/Process/InstrumentationSystemActivity.html"><ns0:tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold">InstrumentationSystemActivity</ns0:tspan></ns0:a></ns0:text><ns0:polyline class="uml-foreground-stroke uml-source_marker-closed_arrow" points="413.37126302083334,149.0 413.37126302083334,174.79999999999998 192.9248046875,174.79999999999998 192.9248046875,213.2 192.9248046875,214.2 192.9248046875,258.4" fill="none"/><ns0:polyline class="uml-foreground-stroke uml-source_marker-closed_arrow" points="166.91397786458333,282.2 166.91397786458333,317.99999999999994 166.91397786458333,318.99999999999994 166.91397786458333,354.79999999999995" fill="none"/><ns0:rect class="uml-background_color-background " x="244.59587239583334" y="204.79999999999998" width="90.701171875" height="17.799999999999997"/><ns0:text x="289.94645833333334" text-anchor="middle" font-size="0px" y="217.23999999999998"><ns0:a href="../dexpi-models/Core/ConceptualObject.html#sp:core.conceptualobject.performedroles"><ns0:tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">PerformedRoles</ns0:tspan></ns0:a></ns0:text><ns0:polyline class="uml-foreground-stroke" points="453.37126302083334,149.0 453.37126302083334,184.79999999999998 289.94645833333334,184.79999999999998 289.94645833333334,204.79999999999998" fill="none"/><ns0:polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="289.94645833333334,222.59999999999997 289.94645833333334,258.4" fill="none"/><ns0:text x="461.37126302083334" font-size="0px" y="161.2"><ns0:tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</ns0:tspan></ns0:text><ns0:text x="297.94645833333334" font-size="0px" y="252.79999999999995"><ns0:tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</ns0:tspan></ns0:text><ns0:rect class="uml-background_color-background " x="355.29704427083334" y="204.79999999999998" width="109.380859375" height="17.799999999999997"/><ns0:text x="409.98747395833334" text-anchor="middle" font-size="0px" y="217.23999999999998"><ns0:a href="../dexpi-models/Core/ConceptualObject.html#sp:core.conceptualobject.persistentidentifiers"><ns0:tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">PersistentIdentifiers</ns0:tspan></ns0:a></ns0:text><ns0:polyline class="uml-foreground-stroke uml-source_marker-filled_diamond" points="493.37126302083334,149.0 493.37126302083334,194.79999999999998 409.98747395833334,194.79999999999998 409.98747395833334,204.79999999999998" fill="none"/><ns0:polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="409.98747395833334,222.59999999999997 409.98747395833334,258.4" fill="none"/><ns0:text x="501.37126302083334" font-size="0px" y="161.2"><ns0:tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">0..1</ns0:tspan></ns0:text><ns0:text x="417.98747395833334" font-size="0px" y="252.79999999999995"><ns0:tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</ns0:tspan></ns0:text><ns0:rect class="uml-background_color-background " x="484.67790364583334" y="204.79999999999998" width="97.38671875" height="17.799999999999997"/><ns0:text x="533.3712630208333" text-anchor="middle" font-size="0px" y="217.23999999999998"><ns0:a href="../dexpi-models/Core/ConceptualObject.html#sp:core.conceptualobject.referencednotes"><ns0:tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">ReferencedNotes</ns0:tspan></ns0:a></ns0:text><ns0:polyline class="uml-foreground-stroke" points="533.3712630208333,149.0 533.3712630208333,204.79999999999998" fill="none"/><ns0:polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="533.3712630208333,222.59999999999997 533.3712630208333,258.4" fill="none"/><ns0:text x="541.3712630208333" font-size="0px" y="161.2"><ns0:tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</ns0:tspan></ns0:text><ns0:text x="541.3712630208333" font-size="0px" y="252.79999999999995"><ns0:tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</ns0:tspan></ns0:text><ns0:rect class="uml-background_color-background " x="487.36377604166665" y="71.6" width="38.681640625" height="17.799999999999997"/><ns0:text x="506.70459635416665" text-anchor="middle" font-size="0px" y="84.03999999999999"><ns0:a href="../dexpi-models/Core/Diagram/AttributeRepresentation.html#sp:core.diagram.attributerepresentation.object"><ns0:tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Object</ns0:tspan></ns0:a></ns0:text><ns0:polyline class="uml-foreground-stroke" points="506.7045963541666,35.8 506.70459635416665,71.6" fill="none"/><ns0:polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="506.70459635416665,89.39999999999999 506.70459635416665,125.19999999999999" fill="none"/><ns0:text x="514.7045963541666" font-size="0px" y="48.0"><ns0:tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</ns0:tspan></ns0:text><ns0:rect class="uml-background_color-background " x="311.57402994791664" y="71.6" width="65.365234375" height="17.799999999999997"/><ns0:text x="344.25664713541664" text-anchor="middle" font-size="0px" y="84.03999999999999"><ns0:a href="../dexpi-models/Core/Diagram/RepresentationGroup.html#sp:core.diagram.representationgroup.represents"><ns0:tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Represents</ns0:tspan></ns0:a></ns0:text><ns0:polyline class="uml-foreground-stroke" points="344.25664713541664,35.8 344.25664713541664,71.6" fill="none"/><ns0:polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="344.25664713541664,89.39999999999999 344.25664713541664,99.39999999999999 440.03792968749997,99.39999999999999 440.03792968749997,125.19999999999999" fill="none"/><ns0:text x="352.25664713541664" font-size="0px" y="48.0"><ns0:tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</ns0:tspan></ns0:text><ns0:rect class="uml-background_color-background " x="38.3701171875" y="204.79999999999998" width="134.0546875" height="17.799999999999997"/><ns0:text x="105.3974609375" text-anchor="middle" font-size="0px" y="217.23999999999998"><ns0:a href="../dexpi-models/Process/Process/InstrumentationSystemActivity.html#sp:process.process.instrumentationsystemactivity.instrumentationactivities"><ns0:tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">InstrumentationActivities</ns0:tspan></ns0:a></ns0:text><ns0:polyline class="uml-foreground-stroke uml-source_marker-filled_diamond" points="105.39746093750001,149.0 105.3974609375,204.79999999999998" fill="none"/><ns0:polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="105.3974609375,222.59999999999997 105.3974609375,232.59999999999997 140.90315104166666,232.59999999999997 140.90315104166666,258.4" fill="none"/><ns0:text x="113.3974609375" font-size="0px" y="161.2"><ns0:tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">0..1</ns0:tspan></ns0:text><ns0:text x="148.90315104166666" font-size="0px" y="252.79999999999995"><ns0:tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">1..*</ns0:tspan></ns0:text></ns0:svg>

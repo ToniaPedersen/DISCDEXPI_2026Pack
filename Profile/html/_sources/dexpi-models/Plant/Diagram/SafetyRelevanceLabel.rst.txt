@@ -1,0 +1,5 @@
+SafetyRelevanceLabel
+====================
+
+.. sp:internal-autoelement::
+   :element: Plant.Diagram.SafetyRelevanceLabel

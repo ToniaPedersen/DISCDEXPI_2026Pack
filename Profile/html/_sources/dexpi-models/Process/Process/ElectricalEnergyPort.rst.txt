@@ -1,0 +1,5 @@
+ElectricalEnergyPort
+====================
+
+.. sp:internal-autoelement::
+   :element: Process.Process.ElectricalEnergyPort

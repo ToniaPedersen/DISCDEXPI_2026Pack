@@ -1,0 +1,5 @@
+SignalConveyingTypeClassification
+=================================
+
+.. sp:internal-autoelement::
+   :element: Plant.Enumerations.SignalConveyingTypeClassification

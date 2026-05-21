@@ -1,0 +1,81 @@
+<ns0:svg xmlns:ns0="http://www.w3.org/2000/svg" width="362.53105468750005px" height="288.0px" viewBox="0.0 0.0 362.53105468750005 288.0"><ns0:style>
+            .uml-foreground-stroke {
+                stroke: black;
+                stroke-width: 1px;
+            }
+            
+            .uml-foreground-fill {
+                fill: black;
+            }
+            
+            .uml-background_color-type {
+                fill: #ffffcc;
+            }
+            
+            .uml-background_color-main_type {
+                fill: #ffff66;
+            }
+            
+            .uml-background_color-instance {
+                fill: blue;
+            }
+            
+            .uml-background_color-background {
+                fill: white;
+            }
+            
+            .uml-background_color-foreground {
+                fill: black;
+            }
+            
+            .uml-font-normal {
+                font-family: Arial;
+            }
+            
+            .uml-font-element {
+                font-family: Arial;
+            }
+            
+            .uml-fontsize-normal {
+                font-size: 10px;
+            }
+
+            .uml-fontsize-large {
+                font-size: 12px;
+            }
+            
+            .uml-source_marker-closed_arrow {
+                marker-start: url(#uml-marker-closed_arrow);
+            }
+            
+            .uml-source_marker-open_arrow {
+                marker-start: url(#uml-marker-open_arrow);
+            }
+            
+            .uml-source_marker-filled_diamond {
+                marker-start: url(#uml-marker-filled_diamond);
+            }
+
+            .uml-target_marker-closed_arrow {
+                marker-end: url(#uml-marker-closed_arrow);
+            }
+            
+            .uml-target_marker-open_arrow {
+                marker-end: url(#uml-marker-open_arrow);
+            }
+            
+            .uml-target_marker-filled_diamond {
+                marker-end: url(#uml-marker-filled_diamond);
+            }
+
+            </ns0:style><ns0:defs>
+        <ns0:marker id="uml-marker-closed_arrow" viewBox="-2 -2 14 14" refX="10" refY="5.0" markerWidth="14" markerHeight="14" orient="auto-start-reverse">
+          <ns0:path d="M 0 0 L 10 5.0 L 0 10 Z" stroke-linejoin="round" stroke-linecap="round" class="uml-foreground-stroke uml-background_color-background"/>
+        </ns0:marker>
+        <ns0:marker id="uml-marker-open_arrow" viewBox="-2 -2 14 14" refX="10" refY="5.0" markerWidth="14" markerHeight="14" orient="auto-start-reverse">
+          <ns0:path d="M 0 0 L 10 5.0 L 0 10" stroke-linejoin="round" stroke-linecap="round" fill="none" class="uml-foreground-stroke"/>
+        </ns0:marker>
+        <ns0:marker id="uml-marker-filled_diamond" viewBox="-2 -2 14 14" refX="10" refY="5.0" markerWidth="14" markerHeight="14" orient="auto-start-reverse">
+          <ns0:path d="M 0 5.0 L      5.0 2.0        10 5.0      5.0 8.0 Z       " stroke-linejoin="round" stroke-linecap="round" class="uml-foreground-stroke uml-background_color-foreground"/>
+        </ns0:marker>
+      </ns0:defs><ns0:rect class="uml-background_color-type uml-foreground-stroke" x="106.75774414062501" y="252.2" width="76.99193359375" height="23.799999999999997"/><ns0:text x="145.25371093750002" text-anchor="middle" font-size="0px" y="267.64"><ns0:a href="../disc-models/DiscProfile/InformationModel/TypeCode.html"><ns0:tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold" font-style="italic">TypeCode</ns0:tspan></ns0:a></ns0:text><ns0:rect class="uml-background_color-main_type uml-foreground-stroke" x="95.2537109375" y="125.19999999999999" width="150.0" height="23.799999999999997"/><ns0:text x="170.2537109375" text-anchor="middle" font-size="0px" y="140.64"><ns0:tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold">Symbol</ns0:tspan></ns0:text><ns0:rect class="uml-background_color-type uml-foreground-stroke" x="236.3361328125" y="12.0" width="114.194921875" height="23.799999999999997"/><ns0:text x="293.43359375" text-anchor="middle" font-size="0px" y="27.439999999999998"><ns0:a href="../disc-models/Profile/SymbolCatalogue.html"><ns0:tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold">SymbolCatalogue</ns0:tspan></ns0:a></ns0:text><ns0:rect class="uml-background_color-type uml-foreground-stroke" x="124.17128906250001" y="12.0" width="92.16484375" height="23.799999999999997"/><ns0:text x="170.25371093750002" text-anchor="middle" font-size="0px" y="27.439999999999998"><ns0:a href="../disc-models/Profile/SymbolStroke.html"><ns0:tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold">SymbolStroke</ns0:tspan></ns0:a></ns0:text><ns0:rect class="uml-background_color-type uml-foreground-stroke" x="12.0" y="12.0" width="92.17128906250001" height="23.799999999999997"/><ns0:text x="58.085644531250004" text-anchor="middle" font-size="0px" y="27.439999999999998"><ns0:a href="../disc-models/Profile/SymbolUsage.html"><ns0:tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold">SymbolUsage</ns0:tspan></ns0:a></ns0:text><ns0:rect class="uml-background_color-type uml-foreground-stroke" x="203.74967773437504" y="252.2" width="95.838671875" height="23.799999999999997"/><ns0:text x="251.66901367187504" text-anchor="middle" font-size="0px" y="267.64"><ns0:a href="../disc-models/Profile/SymbolVariant.html"><ns0:tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold">SymbolVariant</ns0:tspan></ns0:a></ns0:text><ns0:rect class="uml-background_color-background " x="91.559375" y="184.79999999999998" width="107.388671875" height="31.599999999999998"/><ns0:text x="145.2537109375" text-anchor="middle" font-size="0px" y="197.23999999999998"><ns0:a href="../disc-models/DiscProfile/InformationModel/SymbolExtension.html#sp:discprofile.informationmodel.symbolextension.allowedtypecodes"><ns0:tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">AllowedTypeCodes</ns0:tspan></ns0:a></ns0:text><ns0:text x="145.2537109375" text-anchor="middle" font-size="0px" y="211.04"><ns0:a href="../disc-models/DiscProfile/InformationModel/SymbolExtension.html#sp:discprofile.informationmodel.symbolextension.allowedtypecodes"><ns0:tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-style="italic">(from&#160;DiscProfile)</ns0:tspan></ns0:a></ns0:text><ns0:polyline class="uml-foreground-stroke" points="145.2537109375,149.0 145.2537109375,184.79999999999998" fill="none"/><ns0:polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="145.2537109375,216.39999999999998 145.25371093750002,252.2" fill="none"/><ns0:text x="153.2537109375" font-size="0px" y="161.2"><ns0:tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</ns0:tspan></ns0:text><ns0:text x="153.2537109375" font-size="0px" y="246.59999999999997"><ns0:tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</ns0:tspan></ns0:text><ns0:rect class="uml-background_color-background " x="227.658271484375" y="191.7" width="48.021484375" height="17.799999999999997"/><ns0:text x="251.669013671875" text-anchor="middle" font-size="0px" y="204.14"><ns0:a href="../disc-models/Profile/Symbol.html#sp:profile.symbol.variants"><ns0:tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Variants</ns0:tspan></ns0:a></ns0:text><ns0:polyline class="uml-foreground-stroke uml-source_marker-filled_diamond" points="195.2537109375,149.0 195.2537109375,174.79999999999998 251.669013671875,174.79999999999998 251.669013671875,191.7" fill="none"/><ns0:polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="251.669013671875,209.5 251.66901367187504,252.2" fill="none"/><ns0:text x="203.2537109375" font-size="0px" y="161.2"><ns0:tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">0..1</ns0:tspan></ns0:text><ns0:text x="259.669013671875" font-size="0px" y="246.59999999999997"><ns0:tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</ns0:tspan></ns0:text><ns0:rect class="uml-background_color-background " x="268.4267578125" y="71.6" width="50.013671875" height="17.799999999999997"/><ns0:text x="293.43359375" text-anchor="middle" font-size="0px" y="84.03999999999999"><ns0:a href="../disc-models/Profile/SymbolCatalogue.html#sp:profile.symbolcatalogue.symbols"><ns0:tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Symbols</ns0:tspan></ns0:a></ns0:text><ns0:polyline class="uml-foreground-stroke uml-source_marker-filled_diamond" points="293.43359375,35.8 293.43359375,71.6" fill="none"/><ns0:polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="293.43359375,89.39999999999999 293.43359375,99.39999999999999 207.7537109375,99.39999999999999 207.7537109375,125.19999999999999" fill="none"/><ns0:text x="301.43359375" font-size="0px" y="48.0"><ns0:tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">0..1</ns0:tspan></ns0:text><ns0:text x="215.7537109375" font-size="0px" y="119.6"><ns0:tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</ns0:tspan></ns0:text><ns0:rect class="uml-background_color-background " x="148.246875" y="71.6" width="44.013671875" height="17.799999999999997"/><ns0:text x="170.2537109375" text-anchor="middle" font-size="0px" y="84.03999999999999"><ns0:a href="../disc-models/Profile/SymbolStroke.html#sp:profile.symbolstroke.symbol"><ns0:tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Symbol</ns0:tspan></ns0:a></ns0:text><ns0:polyline class="uml-foreground-stroke" points="170.25371093750002,35.8 170.2537109375,71.6" fill="none"/><ns0:polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="170.2537109375,89.39999999999999 170.2537109375,125.19999999999999" fill="none"/><ns0:text x="178.2537109375" font-size="0px" y="48.0"><ns0:tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</ns0:tspan></ns0:text><ns0:rect class="uml-background_color-background " x="36.078808593750004" y="71.6" width="44.013671875" height="17.799999999999997"/><ns0:text x="58.085644531250004" text-anchor="middle" font-size="0px" y="84.03999999999999"><ns0:a href="../disc-models/Profile/SymbolUsage.html#sp:profile.symbolusage.symbol"><ns0:tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Symbol</ns0:tspan></ns0:a></ns0:text><ns0:polyline class="uml-foreground-stroke" points="58.085644531250004,35.8 58.085644531250004,71.6" fill="none"/><ns0:polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="58.085644531250004,89.39999999999999 58.085644531250004,99.39999999999999 132.7537109375,99.39999999999999 132.7537109375,125.19999999999999" fill="none"/><ns0:text x="66.08564453125001" font-size="0px" y="48.0"><ns0:tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</ns0:tspan></ns0:text></ns0:svg>

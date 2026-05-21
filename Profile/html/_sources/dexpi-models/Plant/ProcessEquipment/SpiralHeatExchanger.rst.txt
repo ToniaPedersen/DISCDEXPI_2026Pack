@@ -1,0 +1,5 @@
+SpiralHeatExchanger
+===================
+
+.. sp:internal-autoelement::
+   :element: Plant.ProcessEquipment.SpiralHeatExchanger

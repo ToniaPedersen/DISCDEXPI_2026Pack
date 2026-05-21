@@ -1,0 +1,5 @@
+AggregatedStroke
+================
+
+.. sp:internal-autoelement::
+   :element: Profile.AggregatedStroke

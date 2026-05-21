@@ -1,0 +1,5 @@
+ConnectorLine
+=============
+
+.. sp:internal-autoelement::
+   :element: Core.Diagram.ConnectorLine

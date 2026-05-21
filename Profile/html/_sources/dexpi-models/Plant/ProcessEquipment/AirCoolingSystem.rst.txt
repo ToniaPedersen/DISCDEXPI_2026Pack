@@ -1,0 +1,5 @@
+AirCoolingSystem
+================
+
+.. sp:internal-autoelement::
+   :element: Plant.ProcessEquipment.AirCoolingSystem

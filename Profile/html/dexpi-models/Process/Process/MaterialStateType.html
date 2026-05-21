@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en" data-content_root="../../../">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>MaterialStateType — DISC Profile 0.5</title>
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=b86133f3">
+    <link rel="stylesheet" type="text/css" href="../../../_static/basic_mod.css?v=9b2032db">
+    <link rel="stylesheet" type="text/css" href="../../../_static/sp.css">
+    <script src="../../../_static/documentation_options.js?v=db78e746"></script>
+    <script src="../../../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../_static/js/theme.js"></script>
+    <script src="../../../_static/js/petite-vue.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html">
+    <link rel="search" title="Search" href="../../../search.html">
+    <link rel="next" title="MaterialTemplate" href="MaterialTemplate.html">
+    <link rel="prev" title="MaterialState" href="MaterialState.html"> 
+  </head><body data-dark_mode_code_blocks="true">
+
+<div id="top_nav">
+    
+
+    <nav>
+        
+            
+        
+
+        <p id="toggle_sidebar">
+            <a href="#" title="Toggle sidebar">|||</a>
+        </p>
+        <h1><a href="../../../index.html" title="Go to homepage">DISC Profile 0.5</a></h1>
+
+        <a id="mode_toggle" href="#" @click.prevent="handleClick" :title="mode">
+    <template v-if="mode == 'light'">
+        <svg width="100%" height="100%" viewbox="0 0 79 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g id="mode_light"><rect id="Bounds" x="0" y="-0" width="78.623" height="79.049" style="fill:none;"></rect><circle cx="39.311" cy="39.524" r="15.734" style="fill:#fff;"></circle><g id="beams"><g id="beam"><path id="beam1" serif:id="beam" d="M44.212,4.901c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,-0 -4.9,2.196 -4.9,4.901l-0,9.614c-0,2.705 2.196,4.901 4.9,4.901c2.705,0 4.901,-2.196 4.901,-4.901l0,-9.614Z" style="fill:#fff;"></path></g><g id="beam2" serif:id="beam"><path id="beam3" serif:id="beam" d="M67.48,18.073c1.913,-1.912 1.913,-5.018 0,-6.931c-1.912,-1.912 -5.018,-1.912 -6.931,0l-6.798,6.799c-1.912,1.912 -1.912,5.018 0,6.931c1.913,1.912 5.018,1.912 6.931,-0l6.798,-6.799Z" style="fill:#fff;"></path></g><g id="beam4" serif:id="beam"><path id="beam5" serif:id="beam" d="M25.728,61.108c1.912,-1.913 1.912,-5.018 -0,-6.931c-1.913,-1.913 -5.019,-1.913 -6.931,-0l-6.799,6.798c-1.912,1.913 -1.912,5.019 0,6.931c1.913,1.913 5.019,1.913 6.931,0l6.799,-6.798Z" style="fill:#fff;"></path></g><g id="beam6" serif:id="beam"><path id="beam7" serif:id="beam" d="M60.682,54.177c-1.913,-1.913 -5.018,-1.913 -6.931,-0c-1.912,1.913 -1.912,5.018 0,6.931l6.798,6.798c1.913,1.913 5.019,1.913 6.931,0c1.913,-1.912 1.913,-5.018 0,-6.931l-6.798,-6.798Z" style="fill:#fff;"></path></g><g id="beam8" serif:id="beam"><path id="beam9" serif:id="beam" d="M4.901,34.623c-2.705,0 -4.901,2.196 -4.901,4.901c0,2.705 2.196,4.901 4.901,4.901l9.614,0c2.705,0 4.901,-2.196 4.901,-4.901c0,-2.705 -2.196,-4.901 -4.901,-4.901l-9.614,0Z" style="fill:#fff;"></path></g><g id="beam10" serif:id="beam"><path id="beam11" serif:id="beam" d="M44.212,64.534c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,-0 -4.9,2.196 -4.9,4.901l-0,9.614c-0,2.705 2.196,4.901 4.9,4.901c2.705,-0 4.901,-2.196 4.901,-4.901l0,-9.614Z" style="fill:#fff;"></path></g><g id="beam12" serif:id="beam"><path id="beam13" serif:id="beam" d="M18.929,11.142c-1.912,-1.912 -5.018,-1.912 -6.931,0c-1.912,1.913 -1.912,5.019 0,6.931l6.799,6.799c1.912,1.912 5.018,1.912 6.931,-0c1.912,-1.913 1.912,-5.019 -0,-6.931l-6.799,-6.799Z" style="fill:#fff;"></path></g><g id="beam14" serif:id="beam"><path id="beam15" serif:id="beam" d="M64.108,34.623c-2.705,0 -4.901,2.196 -4.901,4.901c-0,2.705 2.196,4.901 4.901,4.901l9.614,0c2.705,0 4.901,-2.196 4.901,-4.901c-0,-2.705 -2.196,-4.901 -4.901,-4.901l-9.614,0Z" style="fill:#fff;"></path></g></g></g></svg>
+    </template>
+
+    <template v-if="mode == 'dark'">
+        <svg width="100%" height="100%" viewbox="0 0 79 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g id="mode_dark"><rect id="Bounds" x="0" y="-0" width="78.623" height="79.049" style="fill:none;"></rect><circle cx="39.311" cy="39.524" r="15.734" style="fill:#fff;"></circle><g id="beams"><g id="beam"><path id="beam1" serif:id="beam" d="M44.212,14.515c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,0 -4.901,2.196 -4.901,4.901c0,2.705 2.197,4.901 4.901,4.901c2.705,0 4.901,-2.196 4.901,-4.901Z" style="fill:#fff;"></path></g><g id="beam2" serif:id="beam"><path id="beam3" serif:id="beam" d="M60.662,24.892c1.902,-1.902 1.902,-4.99 0,-6.892l-0.04,-0.039c-1.901,-1.902 -4.989,-1.902 -6.891,-0c-1.901,1.901 -1.901,4.989 0,6.891l0.04,0.04c1.902,1.901 4.989,1.901 6.891,-0Z" style="fill:#fff;"></path></g><g id="beam4" serif:id="beam"><path id="beam5" serif:id="beam" d="M25.732,61.103c1.91,-1.91 1.91,-5.011 0,-6.921l-0.009,-0.01c-1.91,-1.91 -5.012,-1.91 -6.921,-0c-1.91,1.91 -1.91,5.011 -0,6.921l0.01,0.01c1.909,1.91 5.011,1.91 6.92,-0Z" style="fill:#fff;"></path></g><g id="beam6" serif:id="beam"><path id="beam7" serif:id="beam" d="M60.672,54.167c-1.907,-1.907 -5.004,-1.907 -6.911,0l-0.02,0.02c-1.907,1.907 -1.907,5.004 0,6.911c1.907,1.907 5.004,1.907 6.911,-0l0.02,-0.02c1.907,-1.907 1.907,-5.004 0,-6.911Z" style="fill:#fff;"></path></g><g id="beam8" serif:id="beam"><path id="beam9" serif:id="beam" d="M14.52,34.623c-2.702,0 -4.896,2.194 -4.896,4.896l0,0.01c0,2.702 2.194,4.896 4.896,4.896c2.702,0 4.896,-2.194 4.896,-4.896l-0,-0.01c-0,-2.702 -2.194,-4.896 -4.896,-4.896Z" style="fill:#fff;"></path></g><g id="beam10" serif:id="beam"><path id="beam11" serif:id="beam" d="M44.212,64.534c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,-0 -4.901,2.196 -4.901,4.901c0,2.704 2.197,4.9 4.901,4.9c2.705,0 4.901,-2.196 4.901,-4.9Z" style="fill:#fff;"></path></g><g id="beam12" serif:id="beam"><path id="beam13" serif:id="beam" d="M25.73,17.943c-1.911,-1.911 -5.015,-1.911 -6.926,0l-0.005,0.005c-1.911,1.911 -1.911,5.015 0,6.926c1.911,1.911 5.015,1.911 6.926,0l0.005,-0.005c1.911,-1.911 1.911,-5.014 -0,-6.926Z" style="fill:#fff;"></path></g><g id="beam14" serif:id="beam"><path id="beam15" serif:id="beam" d="M64.098,34.623c-2.699,0 -4.891,2.192 -4.891,4.892l-0,0.019c-0,2.699 2.192,4.891 4.891,4.891c2.7,0 4.892,-2.192 4.892,-4.891l0,-0.019c0,-2.7 -2.192,-4.892 -4.892,-4.892Z" style="fill:#fff;"></path></g></g></g></svg>
+    </template>
+
+    <template v-if="mode == 'darkest'">
+        <svg width="100%" height="100%" viewbox="0 0 79 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g id="mode_darkest"><rect id="Bounds" x="0" y="-0" width="78.623" height="79.049" style="fill:none;"></rect><path d="M39.315,23.791c8.684,-0 15.734,7.05 15.734,15.733c0,8.684 -7.05,15.734 -15.734,15.734c-8.683,0 -15.733,-7.05 -15.733,-15.734c-0,-8.683 7.05,-15.733 15.733,-15.733Zm0,4.737c6.069,0 10.997,4.927 10.997,10.996c-0,6.069 -4.928,10.996 -10.997,10.996c-6.068,0 -10.996,-4.927 -10.996,-10.996c0,-6.069 4.928,-10.996 10.996,-10.996Z" style="fill:#fff;"></path><g id="beams"><g id="beam"><path id="beam1" serif:id="beam" d="M44.216,14.515c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,0 -4.9,2.196 -4.9,4.901c-0,2.705 2.196,4.901 4.9,4.901c2.705,0 4.901,-2.196 4.901,-4.901Z" style="fill:#fff;"></path></g><g id="beam2" serif:id="beam"><path id="beam3" serif:id="beam" d="M60.666,24.892c1.902,-1.902 1.902,-4.99 0,-6.892l-0.04,-0.039c-1.901,-1.902 -4.989,-1.902 -6.891,-0c-1.901,1.901 -1.901,4.989 0,6.891l0.04,0.04c1.902,1.901 4.99,1.901 6.891,-0Z" style="fill:#fff;"></path></g><g id="beam4" serif:id="beam"><path id="beam5" serif:id="beam" d="M25.737,61.103c1.909,-1.91 1.909,-5.011 -0,-6.921l-0.01,-0.01c-1.91,-1.91 -5.011,-1.91 -6.921,-0c-1.91,1.91 -1.91,5.011 -0,6.921l0.01,0.01c1.91,1.91 5.011,1.91 6.921,-0Z" style="fill:#fff;"></path></g><g id="beam6" serif:id="beam"><path id="beam7" serif:id="beam" d="M60.676,54.167c-1.907,-1.907 -5.004,-1.907 -6.911,0l-0.02,0.02c-1.907,1.907 -1.907,5.004 0,6.911c1.907,1.907 5.004,1.907 6.911,-0l0.02,-0.02c1.907,-1.907 1.907,-5.004 0,-6.911Z" style="fill:#fff;"></path></g><g id="beam8" serif:id="beam"><path id="beam9" serif:id="beam" d="M14.524,34.623c-2.702,0 -4.896,2.194 -4.896,4.896l0,0.01c0,2.702 2.194,4.896 4.896,4.896c2.702,0 4.896,-2.194 4.896,-4.896l0,-0.01c0,-2.702 -2.194,-4.896 -4.896,-4.896Z" style="fill:#fff;"></path></g><g id="beam10" serif:id="beam"><path id="beam11" serif:id="beam" d="M44.216,64.534c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,-0 -4.9,2.196 -4.9,4.901c-0,2.704 2.196,4.9 4.9,4.9c2.705,0 4.901,-2.196 4.901,-4.9Z" style="fill:#fff;"></path></g><g id="beam12" serif:id="beam"><path id="beam13" serif:id="beam" d="M25.734,17.943c-1.911,-1.911 -5.015,-1.911 -6.926,0l-0.005,0.005c-1.911,1.911 -1.911,5.015 0,6.926c1.911,1.911 5.015,1.911 6.926,0l0.005,-0.005c1.911,-1.911 1.911,-5.014 0,-6.926Z" style="fill:#fff;"></path></g><g id="beam14" serif:id="beam"><path id="beam15" serif:id="beam" d="M64.103,34.623c-2.7,0 -4.892,2.192 -4.892,4.892l-0,0.019c-0,2.699 2.192,4.891 4.892,4.891c2.699,0 4.891,-2.192 4.891,-4.891l0,-0.019c0,-2.7 -2.192,-4.892 -4.891,-4.892Z" style="fill:#fff;"></path></g></g></g></svg>
+    </template>
+</a>
+
+<script>
+(function() {
+    const LOCAL_STORAGE_KEY = 'piccoloThemeMode'
+
+    var initialMode = localStorage.getItem(LOCAL_STORAGE_KEY)
+
+    if (initialMode) {
+        // Make sure the value in local storage is valid
+        if (['light', 'dark', 'darkest'].indexOf(initialMode) == -1) {
+            initialMode = 'light'
+            localStorage.setItem(LOCAL_STORAGE_KEY, initialMode)
+        }
+    } else {
+        // Check if the client prefers dark mode
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            initialMode = 'dark'
+        } else {
+            initialMode = 'light'
+        }
+        localStorage.setItem(LOCAL_STORAGE_KEY, initialMode)
+    }
+
+    document.documentElement.dataset.mode = initialMode
+
+    PetiteVue.createApp({
+        'mode': initialMode,
+        handleClick() {
+            let currentMode = this.mode
+
+            if (currentMode == 'light') {
+                this.mode = 'dark'
+            } else if (currentMode == 'dark') {
+                this.mode = 'darkest'
+            } else if (currentMode == 'darkest') {
+                this.mode = 'light'
+            }
+
+            document.documentElement.dataset.mode = this.mode
+            localStorage.setItem(LOCAL_STORAGE_KEY, this.mode)
+
+            console.log(this.mode)
+        }
+    }).mount('#mode_toggle')
+})()
+</script>
+            <p class="mobile_search_link">
+                <a href="../../../search.html" title="Search">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 65 64" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2">
+                        <path d="M14.873 40.009c-2.315-3.943-3.642-8.532-3.642-13.429C11.231 11.91 23.141 0 37.811 0s26.58 11.91 26.58 26.58-11.91 26.58-26.58 26.58a26.44 26.44 0 0 1-14.277-4.161L9.739 62.794a3.12 3.12 0 0 1-4.413 0L.913 58.382c-1.217-1.218-1.217-3.196 0-4.413l13.96-13.96zM37.811 8.054c10.225 0 18.526 8.301 18.526 18.526s-8.301 18.526-18.526 18.526-18.526-8.301-18.526-18.526S27.586 8.054 37.811 8.054z" fill="#fff"></path>
+                    </svg>
+                </a>
+            </p>
+        
+
+        <div class="searchbox_wrapper">
+            
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+      <input type="submit" value="Go">
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+    </nav>
+</div>
+
+    
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper"><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">DEXPI Information Models</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../Builtin/model-index.html">Builtin</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Core/model-index.html">Core</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Plant/model-index.html">Plant</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../model-index.html">Process</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../Enumerations/package-index.html">Enumerations</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="package-index.html">Process</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../ProcessModel.html">ProcessModel</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../disc-models/index.html">DISC Information Models</a></li>
+</ul>
+
+        </div>
+      </div>
+
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="materialstatetype">
+<h1>MaterialStateType<a class="headerlink" href="#materialstatetype" title="Link to this heading">¶</a></h1>
+<p><a class="sp-element reference internal" href="../model-index.html"><span class="doc">Process</span></a><span class="sp-element">::</span><a class="sp-element reference internal" href="package-index.html"><span class="doc">Process</span></a><span class="sp-element">::</span><span class="sp-element">MaterialStateType</span></p>
+<section id="Overview">
+<h2>Overview<a class="headerlink" href="#Overview" title="Link to this heading">¶</a></h2>
+<p class="rubric">Concrete Class</p>
+<p>This data structure represents the properties of a material or a single material phase.
+The <a class="sp-element reference internal" href="MaterialState.html"><span class="doc">MaterialState</span></a> data structure for a
+<a class="sp-element reference internal" href="Stream.html"><span class="doc">Stream</span></a> is built up of one or more of these data
+structures: one for the total properties and then one for each of the phases present.</p>
+<p><span>(</span><a class="reference external" href="../../../_images/uml-510.svg">Fullscreen Diagram</a><span>)</span></p>
+<svg xmlns:ns0="http://www.w3.org/2000/svg" width="2302.3865234375px" viewBox="0.0 0.0 2302.3865234375 644.8" style="max-width: 100%; background-color: white;"><style>
+            .uml-foreground-stroke {
+                stroke: black;
+                stroke-width: 1px;
+            }
+            
+            .uml-foreground-fill {
+                fill: black;
+            }
+            
+            .uml-background_color-type {
+                fill: #ffffcc;
+            }
+            
+            .uml-background_color-main_type {
+                fill: #ffff66;
+            }
+            
+            .uml-background_color-instance {
+                fill: blue;
+            }
+            
+            .uml-background_color-background {
+                fill: white;
+            }
+            
+            .uml-background_color-foreground {
+                fill: black;
+            }
+            
+            .uml-font-normal {
+                font-family: Arial;
+            }
+            
+            .uml-font-element {
+                font-family: Arial;
+            }
+            
+            .uml-fontsize-normal {
+                font-size: 10px;
+            }
+
+            .uml-fontsize-large {
+                font-size: 12px;
+            }
+            
+            .uml-source_marker-closed_arrow {
+                marker-start: url(#uml-marker-closed_arrow);
+            }
+            
+            .uml-source_marker-open_arrow {
+                marker-start: url(#uml-marker-open_arrow);
+            }
+            
+            .uml-source_marker-filled_diamond {
+                marker-start: url(#uml-marker-filled_diamond);
+            }
+
+            .uml-target_marker-closed_arrow {
+                marker-end: url(#uml-marker-closed_arrow);
+            }
+            
+            .uml-target_marker-open_arrow {
+                marker-end: url(#uml-marker-open_arrow);
+            }
+            
+            .uml-target_marker-filled_diamond {
+                marker-end: url(#uml-marker-filled_diamond);
+            }
+
+            </style><defs>
+        <marker id="uml-marker-closed_arrow" viewBox="-2 -2 14 14" refX="10" refY="5.0" markerWidth="14" markerHeight="14" orient="auto-start-reverse">
+          <path d="M 0 0 L 10 5.0 L 0 10 Z" stroke-linejoin="round" stroke-linecap="round" class="uml-foreground-stroke uml-background_color-background"></path>
+        </marker>
+        <marker id="uml-marker-open_arrow" viewBox="-2 -2 14 14" refX="10" refY="5.0" markerWidth="14" markerHeight="14" orient="auto-start-reverse">
+          <path d="M 0 0 L 10 5.0 L 0 10" stroke-linejoin="round" stroke-linecap="round" fill="none" class="uml-foreground-stroke"></path>
+        </marker>
+        <marker id="uml-marker-filled_diamond" viewBox="-2 -2 14 14" refX="10" refY="5.0" markerWidth="14" markerHeight="14" orient="auto-start-reverse">
+          <path d="M 0 5.0 L      5.0 2.0        10 5.0      5.0 8.0 Z       " stroke-linejoin="round" stroke-linecap="round" class="uml-foreground-stroke uml-background_color-foreground"></path>
+        </marker>
+      </defs><rect class="uml-background_color-type uml-foreground-stroke" x="1638.560267857143" y="125.19999999999999" width="200.0" height="23.799999999999997"></rect><text x="1738.560267857143" text-anchor="middle" font-size="0px" y="140.64"><a href="../../../dexpi-models/Core/ConceptualObject.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold" font-style="italic">ConceptualObject</tspan></a></text><rect class="uml-background_color-type uml-foreground-stroke" x="1697.551706659226" y="12.0" width="148.6837890625" height="23.799999999999997"></rect><text x="1771.8936011904761" text-anchor="middle" font-size="0px" y="27.439999999999998"><a href="../../../dexpi-models/Core/Diagram/AttributeRepresentation.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold">AttributeRepresentation</tspan></a></text><rect class="uml-background_color-type uml-foreground-stroke" x="1541.339597284226" y="12.0" width="136.212109375" height="23.799999999999997"></rect><text x="1609.4456519717262" text-anchor="middle" font-size="0px" y="27.439999999999998"><a href="../../../dexpi-models/Core/Diagram/RepresentationGroup.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold">RepresentationGroup</tspan></a></text><rect class="uml-background_color-type uml-foreground-stroke" x="1704.366908482143" y="248.39999999999998" width="50.0" height="23.799999999999997"></rect><text x="1729.366908482143" text-anchor="middle" font-size="0px" y="263.84"><a href="../../../dexpi-models/Core/Note.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold">Note</tspan></a></text><rect class="uml-background_color-type uml-foreground-stroke" x="1546.3236467633928" y="248.39999999999998" width="119.3189453125" height="23.799999999999997"></rect><text x="1605.983119419643" text-anchor="middle" font-size="0px" y="263.84"><a href="../../../dexpi-models/Core/PersistentIdentifier.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold">PersistentIdentifier</tspan></a></text><rect class="uml-background_color-type uml-foreground-stroke" x="459.681640625" y="454.0" width="376.32421875" height="48.599999999999994"></rect><text x="647.84375" text-anchor="middle" font-size="0px" y="469.44"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-large">&lt;&lt;bind&gt;&gt;</tspan></text><polyline class="uml-foreground-stroke" points="459.681640625,477.8 836.005859375,477.8" fill="none"></polyline><text x="464.681640625" font-size="0px" y="494.24"><a href="../../../dexpi-models/Core/QualifiedValue.html#sp:core.qualifiedvalue.type"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Type</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> →</tspan></text><text x="508.693359375" font-size="0px" y="494.24"><a href="../../../dexpi-models/Builtin/Undefined.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Undefined</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> | </tspan><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">&lt;</tspan><a href="../../../dexpi-models/Core/PhysicalQuantities/PhysicalQuantity.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">PhysicalQuantity</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> with </tspan><a href="../../../dexpi-models/Core/PhysicalQuantities/PhysicalQuantity.html#sp:core.physicalquantities.physicalquantity.unittype"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">UnitType</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> → </tspan><a href="../../../dexpi-models/Core/PhysicalQuantities/DensityUnit.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">DensityUnit</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">&gt;</tspan></text><rect class="uml-background_color-type uml-foreground-stroke" x="959.3728515625" y="454.0" width="415.6640625" height="48.599999999999994"></rect><text x="1167.2048828125" text-anchor="middle" font-size="0px" y="469.44"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-large">&lt;&lt;bind&gt;&gt;</tspan></text><polyline class="uml-foreground-stroke" points="959.3728515625,477.8 1375.0369140625,477.8" fill="none"></polyline><text x="964.3728515625" font-size="0px" y="494.24"><a href="../../../dexpi-models/Core/QualifiedValue.html#sp:core.qualifiedvalue.type"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Type</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> →</tspan></text><text x="1008.3845703125" font-size="0px" y="494.24"><a href="../../../dexpi-models/Builtin/Undefined.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Undefined</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> | </tspan><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">&lt;</tspan><a href="../../../dexpi-models/Core/PhysicalQuantities/PhysicalQuantity.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">PhysicalQuantity</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> with </tspan><a href="../../../dexpi-models/Core/PhysicalQuantities/PhysicalQuantity.html#sp:core.physicalquantities.physicalquantity.unittype"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">UnitType</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> → </tspan><a href="../../../dexpi-models/Core/PhysicalQuantities/MassFlowRateUnit.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">MassFlowRateUnit</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">&gt;</tspan></text><rect class="uml-background_color-type uml-foreground-stroke" x="1395.0369140624998" y="454.0" width="445.01953125" height="48.599999999999994"></rect><text x="1617.5466796874998" text-anchor="middle" font-size="0px" y="469.44"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-large">&lt;&lt;bind&gt;&gt;</tspan></text><polyline class="uml-foreground-stroke" points="1395.0369140624998,477.8 1840.0564453124998,477.8" fill="none"></polyline><text x="1400.0369140624998" font-size="0px" y="494.24"><a href="../../../dexpi-models/Core/QualifiedValue.html#sp:core.qualifiedvalue.type"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Type</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> →</tspan></text><text x="1444.0486328124998" font-size="0px" y="494.24"><a href="../../../dexpi-models/Builtin/Undefined.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Undefined</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> | </tspan><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">&lt;</tspan><a href="../../../dexpi-models/Core/PhysicalQuantities/PhysicalQuantity.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">PhysicalQuantity</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> with </tspan><a href="../../../dexpi-models/Core/PhysicalQuantities/PhysicalQuantity.html#sp:core.physicalquantities.physicalquantity.unittype"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">UnitType</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> → </tspan><a href="../../../dexpi-models/Core/PhysicalQuantities/MassSpecificEnergyUnit.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">MassSpecificEnergyUnit</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">&gt;</tspan></text><rect class="uml-background_color-type uml-foreground-stroke" x="1860.0564453125" y="454.0" width="430.330078125" height="48.599999999999994"></rect><text x="2075.221484375" text-anchor="middle" font-size="0px" y="469.44"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-large">&lt;&lt;bind&gt;&gt;</tspan></text><polyline class="uml-foreground-stroke" points="1860.0564453125,477.8 2290.3865234375,477.8" fill="none"></polyline><text x="1865.0564453125" font-size="0px" y="494.24"><a href="../../../dexpi-models/Core/QualifiedValue.html#sp:core.qualifiedvalue.type"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Type</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> →</tspan></text><text x="1909.0681640625" font-size="0px" y="494.24"><a href="../../../dexpi-models/Builtin/Undefined.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Undefined</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> | </tspan><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">&lt;</tspan><a href="../../../dexpi-models/Core/PhysicalQuantities/PhysicalQuantity.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">PhysicalQuantity</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> with </tspan><a href="../../../dexpi-models/Core/PhysicalQuantities/PhysicalQuantity.html#sp:core.physicalquantities.physicalquantity.unittype"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">UnitType</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> → </tspan><a href="../../../dexpi-models/Core/PhysicalQuantities/DynamicViscosityUnit.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">DynamicViscosityUnit</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">&gt;</tspan></text><rect class="uml-background_color-type uml-foreground-stroke" x="12.0" y="454.0" width="427.681640625" height="48.599999999999994"></rect><text x="225.8408203125" text-anchor="middle" font-size="0px" y="469.44"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-large">&lt;&lt;bind&gt;&gt;</tspan></text><polyline class="uml-foreground-stroke" points="12.0,477.8 439.681640625,477.8" fill="none"></polyline><text x="17.0" font-size="0px" y="494.24"><a href="../../../dexpi-models/Core/QualifiedValue.html#sp:core.qualifiedvalue.type"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Type</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> →</tspan></text><text x="61.01171875" font-size="0px" y="494.24"><a href="../../../dexpi-models/Builtin/Undefined.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Undefined</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> | </tspan><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">&lt;</tspan><a href="../../../dexpi-models/Core/PhysicalQuantities/PhysicalQuantity.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">PhysicalQuantity</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> with </tspan><a href="../../../dexpi-models/Core/PhysicalQuantities/PhysicalQuantity.html#sp:core.physicalquantities.physicalquantity.unittype"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">UnitType</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> → </tspan><a href="../../../dexpi-models/Core/PhysicalQuantities/VolumeFlowRateUnit.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">VolumeFlowRateUnit</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">&gt;</tspan></text><rect class="uml-background_color-type uml-foreground-stroke" x="1042.2048828125" y="585.1999999999999" width="250.0" height="47.599999999999994"></rect><polyline class="uml-foreground-stroke" points="1110.1248046875,585.1999999999999 1110.1248046875,608.9999999999999 1292.2048828125,608.9999999999999" fill="none" stroke-dasharray="4 2"></polyline><text x="1115.1248046875" font-size="0px" y="600.64"><a href="../../../dexpi-models/Core/QualifiedValue.html#sp:core.qualifiedvalue.type"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Type</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> :</tspan></text><text x="1150.6365234375" font-size="0px" y="600.64"><a href="../../../dexpi-models/Core/PhysicalQuantities/PhysicalQuantity.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">PhysicalQuantity</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> | </tspan><a href="../../../dexpi-models/Builtin/Double.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Double</tspan></a></text><text x="1167.2048828125" text-anchor="middle" font-size="0px" y="624.4399999999999"><a href="../../../dexpi-models/Core/QualifiedValue.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold">QualifiedValue</tspan></a></text><rect class="uml-background_color-type uml-foreground-stroke" x="1460.942103794643" y="248.39999999999998" width="50.0" height="23.799999999999997"></rect><text x="1485.942103794643" text-anchor="middle" font-size="0px" y="263.84"><a href="../../../dexpi-models/Core/Role.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold">Role</tspan></a></text><rect class="uml-background_color-type uml-foreground-stroke" x="856.005859375" y="454.0" width="83.3669921875" height="23.799999999999997"></rect><text x="897.68935546875" text-anchor="middle" font-size="0px" y="469.44"><a href="../../../dexpi-models/Process/Process/Composition.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold">Composition</tspan></a></text><rect class="uml-background_color-type uml-foreground-stroke" x="1986.4344215029762" y="125.19999999999999" width="100.0" height="23.799999999999997"></rect><text x="2036.4344215029762" text-anchor="middle" font-size="0px" y="140.64"><a href="../../../dexpi-models/Process/Process/MaterialState.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold">MaterialState</tspan></a></text><rect class="uml-background_color-main_type uml-foreground-stroke" x="1818.078627232143" y="248.39999999999998" width="300.0" height="76.19999999999999"></rect><text x="1968.078627232143" text-anchor="middle" font-size="0px" y="263.84"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold">MaterialStateType</tspan></text><polyline class="uml-foreground-stroke" points="1818.078627232143,272.2 2118.078627232143,272.2" fill="none"></polyline><text x="1823.078627232143" font-size="0px" y="288.64"><a href="../../../dexpi-models/Process/Process/MaterialStateType.html#sp:process.process.materialstatetype.description"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Description</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> :</tspan></text><text x="1891.936049107143" font-size="0px" y="288.64"><a href="../../../dexpi-models/Core/DataTypes/MultiLanguageString.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">MultiLanguageString</tspan></a></text><text x="1823.078627232143" font-size="0px" y="302.44"><a href="../../../dexpi-models/Process/Process/MaterialStateType.html#sp:process.process.materialstatetype.identifier"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Identifier</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> :</tspan></text><text x="1891.936049107143" font-size="0px" y="302.44"><a href="../../../dexpi-models/Builtin/String.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">String</tspan></a></text><text x="1823.078627232143" font-size="0px" y="316.24"><a href="../../../dexpi-models/Process/Process/MaterialStateType.html#sp:process.process.materialstatetype.label"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Label</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> :</tspan></text><text x="1891.936049107143" font-size="0px" y="316.24"><a href="../../../dexpi-models/Builtin/String.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">String</tspan></a></text><rect class="uml-background_color-type uml-foreground-stroke" x="1858.560267857143" y="125.19999999999999" width="93.634375" height="23.799999999999997"></rect><text x="1905.377455357143" text-anchor="middle" font-size="0px" y="140.64"><a href="../../../dexpi-models/Process/ProcessModel.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold">ProcessModel</tspan></a></text><polyline class="uml-foreground-stroke uml-source_marker-closed_arrow" points="1798.560267857143,149.0 1798.560267857143,203.2 1798.560267857143,204.2 1798.560267857143,222.59999999999997 1878.078627232143,222.59999999999997 1878.078627232143,248.39999999999998" fill="none"></polyline><rect class="uml-background_color-background " x="1440.591517857143" y="194.79999999999998" width="90.701171875" height="17.799999999999997"></rect><text x="1485.942103794643" text-anchor="middle" font-size="0px" y="207.23999999999998"><a href="../../../dexpi-models/Core/ConceptualObject.html#sp:core.conceptualobject.performedroles"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">PerformedRoles</tspan></a></text><polyline class="uml-foreground-stroke" points="1678.560267857143,149.0 1678.560267857143,174.79999999999998 1485.942103794643,174.79999999999998 1485.942103794643,194.79999999999998" fill="none"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="1485.942103794643,212.59999999999997 1485.942103794643,248.39999999999998" fill="none"></polyline><text x="1686.560267857143" font-size="0px" y="161.2"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</tspan></text><text x="1493.942103794643" font-size="0px" y="242.79999999999995"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</tspan></text><rect class="uml-background_color-background " x="1551.292689732143" y="194.79999999999998" width="109.380859375" height="17.799999999999997"></rect><text x="1605.983119419643" text-anchor="middle" font-size="0px" y="207.23999999999998"><a href="../../../dexpi-models/Core/ConceptualObject.html#sp:core.conceptualobject.persistentidentifiers"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">PersistentIdentifiers</tspan></a></text><polyline class="uml-foreground-stroke uml-source_marker-filled_diamond" points="1718.560267857143,149.0 1718.560267857143,184.79999999999998 1605.983119419643,184.79999999999998 1605.983119419643,194.79999999999998" fill="none"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="1605.983119419643,212.59999999999997 1605.983119419643,248.39999999999998" fill="none"></polyline><text x="1726.560267857143" font-size="0px" y="161.2"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">0..1</tspan></text><text x="1613.983119419643" font-size="0px" y="242.79999999999995"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</tspan></text><rect class="uml-background_color-background " x="1680.673549107143" y="194.79999999999998" width="97.38671875" height="17.799999999999997"></rect><text x="1729.366908482143" text-anchor="middle" font-size="0px" y="207.23999999999998"><a href="../../../dexpi-models/Core/ConceptualObject.html#sp:core.conceptualobject.referencednotes"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">ReferencedNotes</tspan></a></text><polyline class="uml-foreground-stroke" points="1758.560267857143,149.0 1758.560267857143,174.79999999999998 1729.366908482143,174.79999999999998 1729.366908482143,194.79999999999998" fill="none"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="1729.366908482143,212.59999999999997 1729.366908482143,248.39999999999998" fill="none"></polyline><text x="1766.560267857143" font-size="0px" y="161.2"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</tspan></text><text x="1737.366908482143" font-size="0px" y="242.79999999999995"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</tspan></text><rect class="uml-background_color-background " x="1752.5527808779761" y="71.6" width="38.681640625" height="17.799999999999997"></rect><text x="1771.8936011904761" text-anchor="middle" font-size="0px" y="84.03999999999999"><a href="../../../dexpi-models/Core/Diagram/AttributeRepresentation.html#sp:core.diagram.attributerepresentation.object"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Object</tspan></a></text><polyline class="uml-foreground-stroke" points="1771.8936011904761,35.8 1771.8936011904761,71.6" fill="none"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="1771.8936011904761,89.39999999999999 1771.8936011904761,125.19999999999999" fill="none"></polyline><text x="1779.8936011904761" font-size="0px" y="48.0"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</tspan></text><rect class="uml-background_color-background " x="1576.7630347842262" y="71.6" width="65.365234375" height="17.799999999999997"></rect><text x="1609.4456519717262" text-anchor="middle" font-size="0px" y="84.03999999999999"><a href="../../../dexpi-models/Core/Diagram/RepresentationGroup.html#sp:core.diagram.representationgroup.represents"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Represents</tspan></a></text><polyline class="uml-foreground-stroke" points="1609.4456519717262,35.8 1609.4456519717262,71.6" fill="none"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="1609.4456519717262,89.39999999999999 1609.4456519717262,99.39999999999999 1705.2269345238096,99.39999999999999 1705.2269345238096,125.19999999999999" fill="none"></polyline><text x="1617.4456519717262" font-size="0px" y="48.0"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</tspan></text><rect class="uml-background_color-background " x="1979.065931919643" y="194.79999999999998" width="38.025390625" height="17.799999999999997"></rect><text x="1998.078627232143" text-anchor="middle" font-size="0px" y="207.23999999999998"><a href="../../../dexpi-models/Process/Process/MaterialState.html#sp:process.process.materialstate.phase"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Phase</tspan></a></text><polyline class="uml-foreground-stroke" points="2019.7677548363095,149.0 2019.7677548363095,174.79999999999998 1998.078627232143,174.79999999999998 1998.078627232143,194.79999999999998" fill="none"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="1998.078627232143,212.59999999999997 1998.078627232143,248.39999999999998" fill="none"></polyline><text x="2006.078627232143" font-size="0px" y="242.79999999999995"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</tspan></text><rect class="uml-background_color-background " x="2037.091322544643" y="194.79999999999998" width="32.01953125" height="17.799999999999997"></rect><text x="2053.101088169643" text-anchor="middle" font-size="0px" y="207.23999999999998"><a href="../../../dexpi-models/Process/Process/MaterialState.html#sp:process.process.materialstate.state"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">State</tspan></a></text><polyline class="uml-foreground-stroke" points="2053.101088169643,149.0 2053.101088169643,194.79999999999998" fill="none"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="2053.101088169643,212.59999999999997 2053.101088169643,222.59999999999997 2058.078627232143,222.59999999999997 2058.078627232143,248.39999999999998" fill="none"></polyline><text x="2066.078627232143" font-size="0px" y="242.79999999999995"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">0..1</tspan></text><rect class="uml-background_color-background " x="862.3407226562499" y="400.4" width="70.697265625" height="17.799999999999997"></rect><text x="897.6893554687499" text-anchor="middle" font-size="0px" y="412.84"><a href="../../../dexpi-models/Process/Process/MaterialStateType.html#sp:process.process.materialstatetype.composition"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Composition</tspan></a></text><polyline class="uml-foreground-stroke" points="1946.6500558035714,324.59999999999997 1946.6500558035714,370.4 897.6893554687499,370.4 897.6893554687499,400.4" fill="none"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="897.6893554687499,418.2 897.68935546875,454.0" fill="none"></polyline><rect class="uml-background_color-background " x="625.8369140625" y="400.4" width="44.013671875" height="17.799999999999997"></rect><text x="647.84375" text-anchor="middle" font-size="0px" y="412.84"><a href="../../../dexpi-models/Process/Process/MaterialStateType.html#sp:process.process.materialstatetype.density"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Density</tspan></a></text><polyline class="uml-foreground-stroke uml-source_marker-filled_diamond" points="1903.7929129464287,324.59999999999997 1903.7929129464285,360.4 647.84375,360.4 647.84375,400.4" fill="none"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="647.84375,418.2 647.84375,454.0" fill="none"></polyline><text x="1911.7929129464285" font-size="0px" y="336.79999999999995"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">0..1</tspan></text><text x="655.84375" font-size="0px" y="448.4"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</tspan></text><rect class="uml-background_color-background " x="1138.201953125" y="400.4" width="58.005859375" height="17.799999999999997"></rect><text x="1167.2048828125" text-anchor="middle" font-size="0px" y="412.84"><a href="../../../dexpi-models/Process/Process/MaterialStateType.html#sp:process.process.materialstatetype.massflow"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">MassFlow</tspan></a></text><polyline class="uml-foreground-stroke uml-source_marker-filled_diamond" points="1989.5071986607143,324.59999999999997 1989.5071986607143,380.4 1167.2048828125,380.4 1167.2048828125,400.4" fill="none"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="1167.2048828125,418.2 1167.2048828125,454.0" fill="none"></polyline><text x="1997.5071986607143" font-size="0px" y="336.79999999999995"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">0..1</tspan></text><text x="1175.2048828125" font-size="0px" y="448.4"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</tspan></text><rect class="uml-background_color-background " x="1571.1882812499998" y="400.4" width="92.716796875" height="17.799999999999997"></rect><text x="1617.5466796874998" text-anchor="middle" font-size="0px" y="412.84"><a href="../../../dexpi-models/Process/Process/MaterialStateType.html#sp:process.process.materialstatetype.specificenthalpy"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">SpecificEnthalpy</tspan></a></text><polyline class="uml-foreground-stroke uml-source_marker-filled_diamond" points="2032.3643415178572,324.59999999999997 2032.3643415178572,390.4 1617.5466796874998,390.4 1617.5466796874998,400.4" fill="none"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="1617.5466796874998,418.2 1617.5466796874998,454.0" fill="none"></polyline><text x="2040.3643415178572" font-size="0px" y="336.79999999999995"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">0..1</tspan></text><text x="1625.5466796874998" font-size="0px" y="448.4"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</tspan></text><rect class="uml-background_color-background " x="2049.549609375" y="400.4" width="51.34375" height="17.799999999999997"></rect><text x="2075.221484375" text-anchor="middle" font-size="0px" y="412.84"><a href="../../../dexpi-models/Process/Process/MaterialStateType.html#sp:process.process.materialstatetype.viscosity"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Viscosity</tspan></a></text><polyline class="uml-foreground-stroke uml-source_marker-filled_diamond" points="2075.221484375,324.59999999999997 2075.221484375,400.4" fill="none"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="2075.221484375,418.2 2075.221484375,454.0" fill="none"></polyline><text x="2083.221484375" font-size="0px" y="336.79999999999995"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">0..1</tspan></text><text x="2083.221484375" font-size="0px" y="448.4"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</tspan></text><rect class="uml-background_color-background " x="190.8291015625" y="400.4" width="70.0234375" height="17.799999999999997"></rect><text x="225.8408203125" text-anchor="middle" font-size="0px" y="412.84"><a href="../../../dexpi-models/Process/Process/MaterialStateType.html#sp:process.process.materialstatetype.volumeflow"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">VolumeFlow</tspan></a></text><polyline class="uml-foreground-stroke uml-source_marker-filled_diamond" points="1860.9357700892858,324.59999999999997 1860.9357700892856,350.4 225.8408203125,350.4 225.8408203125,400.4" fill="none"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="225.8408203125,418.2 225.8408203125,454.0" fill="none"></polyline><text x="1868.9357700892856" font-size="0px" y="336.79999999999995"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">0..1</tspan></text><text x="233.8408203125" font-size="0px" y="448.4"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</tspan></text><rect class="uml-background_color-background " x="1851.688978794643" y="194.79999999999998" width="107.376953125" height="17.799999999999997"></rect><text x="1905.377455357143" text-anchor="middle" font-size="0px" y="207.23999999999998"><a href="../../../dexpi-models/Process/ProcessModel.html#sp:process.processmodel.materialstatetypes"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">MaterialStateTypes</tspan></a></text><polyline class="uml-foreground-stroke uml-source_marker-filled_diamond" points="1905.377455357143,149.0 1905.377455357143,194.79999999999998" fill="none"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="1905.377455357143,212.59999999999997 1905.377455357143,222.59999999999997 1938.078627232143,222.59999999999997 1938.078627232143,248.39999999999998" fill="none"></polyline><text x="1913.377455357143" font-size="0px" y="161.2"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">0..1</tspan></text><text x="1946.078627232143" font-size="0px" y="242.79999999999995"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</tspan></text><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="647.84375,502.6 647.84375,538.4 647.84375,539.4 647.84375,549.4 1125.5382161458333,549.4 1125.5382161458333,585.1999999999999" fill="none" stroke-dasharray="4 2"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="1167.2048828125,502.6 1167.2048828125,538.4 1167.2048828125,539.4 1167.2048828125,585.1999999999999" fill="none" stroke-dasharray="4 2"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="1617.5466796874998,502.6 1617.5466796874998,538.4 1617.5466796874998,539.4 1617.5466796874998,549.4 1208.8715494791668,549.4 1208.8715494791668,585.1999999999999" fill="none" stroke-dasharray="4 2"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="2075.221484375,502.6 2075.221484375,538.4 2075.221484375,539.4 2075.221484375,559.4 1250.5382161458333,559.4 1250.5382161458333,585.1999999999999" fill="none" stroke-dasharray="4 2"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="225.8408203125,502.6 225.8408203125,538.4 225.8408203125,539.4 225.8408203125,559.4 1083.8715494791668,559.4 1083.8715494791668,585.1999999999999" fill="none" stroke-dasharray="4 2"></polyline></svg><p class="rubric">Supertypes</p>
+<ul class="simple">
+<li><p><a class="sp-element reference internal" href="../../Core/ConceptualObject.html"><span class="doc">ConceptualObject</span></a></p></li>
+</ul>
+</section>
+<section id="Members">
+<h2>Members<a class="headerlink" href="#Members" title="Link to this heading">¶</a></h2>
+<section id="member-list-section-Composition Properties">
+<h3>Composition Properties<a class="headerlink" href="#member-list-section-Composition%20Properties" title="Link to this heading">¶</a></h3>
+</section>
+<table class="docutils align-left">
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Multiplicity</p></th>
+<th class="head"><p>Type</p></th>
+<th class="head"><p>Ordered</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="#sp:process.process.materialstatetype.density"><span class="std std-ref">Density</span></a></p></td>
+<td><p>*</p></td>
+<td><p><span>&lt;</span><a class="sp-element reference internal" href="../../Core/QualifiedValue.html"><span class="doc">QualifiedValue</span></a><span> with </span><a class="sp-element reference internal" href="../../Core/QualifiedValue.html#sp:core.qualifiedvalue.type"><span class="std std-ref">Type</span></a><span> → </span><a class="sp-element reference internal" href="../../Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><span>&lt;</span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/PhysicalQuantity.html"><span class="doc">PhysicalQuantity</span></a><span> with </span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/PhysicalQuantity.html#sp:core.physicalquantities.physicalquantity.unittype"><span class="std std-ref">UnitType</span></a><span> → </span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/DensityUnit.html"><span class="doc">DensityUnit</span></a><span>&gt;</span><span>&gt;</span></p></td>
+<td><p>no</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="#sp:process.process.materialstatetype.massflow"><span class="std std-ref">MassFlow</span></a></p></td>
+<td><p>*</p></td>
+<td><p><span>&lt;</span><a class="sp-element reference internal" href="../../Core/QualifiedValue.html"><span class="doc">QualifiedValue</span></a><span> with </span><a class="sp-element reference internal" href="../../Core/QualifiedValue.html#sp:core.qualifiedvalue.type"><span class="std std-ref">Type</span></a><span> → </span><a class="sp-element reference internal" href="../../Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><span>&lt;</span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/PhysicalQuantity.html"><span class="doc">PhysicalQuantity</span></a><span> with </span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/PhysicalQuantity.html#sp:core.physicalquantities.physicalquantity.unittype"><span class="std std-ref">UnitType</span></a><span> → </span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/MassFlowRateUnit.html"><span class="doc">MassFlowRateUnit</span></a><span>&gt;</span><span>&gt;</span></p></td>
+<td><p>no</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="#sp:process.process.materialstatetype.specificenthalpy"><span class="std std-ref">SpecificEnthalpy</span></a></p></td>
+<td><p>*</p></td>
+<td><p><span>&lt;</span><a class="sp-element reference internal" href="../../Core/QualifiedValue.html"><span class="doc">QualifiedValue</span></a><span> with </span><a class="sp-element reference internal" href="../../Core/QualifiedValue.html#sp:core.qualifiedvalue.type"><span class="std std-ref">Type</span></a><span> → </span><a class="sp-element reference internal" href="../../Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><span>&lt;</span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/PhysicalQuantity.html"><span class="doc">PhysicalQuantity</span></a><span> with </span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/PhysicalQuantity.html#sp:core.physicalquantities.physicalquantity.unittype"><span class="std std-ref">UnitType</span></a><span> → </span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/MassSpecificEnergyUnit.html"><span class="doc">MassSpecificEnergyUnit</span></a><span>&gt;</span><span>&gt;</span></p></td>
+<td><p>no</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="#sp:process.process.materialstatetype.viscosity"><span class="std std-ref">Viscosity</span></a></p></td>
+<td><p>*</p></td>
+<td><p><span>&lt;</span><a class="sp-element reference internal" href="../../Core/QualifiedValue.html"><span class="doc">QualifiedValue</span></a><span> with </span><a class="sp-element reference internal" href="../../Core/QualifiedValue.html#sp:core.qualifiedvalue.type"><span class="std std-ref">Type</span></a><span> → </span><a class="sp-element reference internal" href="../../Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><span>&lt;</span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/PhysicalQuantity.html"><span class="doc">PhysicalQuantity</span></a><span> with </span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/PhysicalQuantity.html#sp:core.physicalquantities.physicalquantity.unittype"><span class="std std-ref">UnitType</span></a><span> → </span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/DynamicViscosityUnit.html"><span class="doc">DynamicViscosityUnit</span></a><span>&gt;</span><span>&gt;</span></p></td>
+<td><p>no</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="#sp:process.process.materialstatetype.volumeflow"><span class="std std-ref">VolumeFlow</span></a></p></td>
+<td><p>*</p></td>
+<td><p><span>&lt;</span><a class="sp-element reference internal" href="../../Core/QualifiedValue.html"><span class="doc">QualifiedValue</span></a><span> with </span><a class="sp-element reference internal" href="../../Core/QualifiedValue.html#sp:core.qualifiedvalue.type"><span class="std std-ref">Type</span></a><span> → </span><a class="sp-element reference internal" href="../../Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><span>&lt;</span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/PhysicalQuantity.html"><span class="doc">PhysicalQuantity</span></a><span> with </span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/PhysicalQuantity.html#sp:core.physicalquantities.physicalquantity.unittype"><span class="std std-ref">UnitType</span></a><span> → </span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/VolumeFlowRateUnit.html"><span class="doc">VolumeFlowRateUnit</span></a><span>&gt;</span><span>&gt;</span></p></td>
+<td><p>no</p></td>
+</tr>
+</tbody>
+</table>
+<section id="member-list-section-Reference Properties">
+<h3>Reference Properties<a class="headerlink" href="#member-list-section-Reference%20Properties" title="Link to this heading">¶</a></h3>
+</section>
+<table class="docutils align-left">
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Multiplicity</p></th>
+<th class="head"><p>Type</p></th>
+<th class="head"><p>Ordered</p></th>
+<th class="head"><p>Unique</p></th>
+<th class="head"><p>Opposite Multiplicity</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="#sp:process.process.materialstatetype.composition"><span class="std std-ref">Composition</span></a></p></td>
+<td><p>1</p></td>
+<td><p><a class="sp-element reference internal" href="Composition.html"><span class="doc">Composition</span></a></p></td>
+<td><p>no</p></td>
+<td><p>no</p></td>
+<td><p>1</p></td>
+</tr>
+</tbody>
+</table>
+<section id="member-list-section-Data Properties">
+<h3>Data Properties<a class="headerlink" href="#member-list-section-Data%20Properties" title="Link to this heading">¶</a></h3>
+</section>
+<table class="docutils align-left">
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Multiplicity</p></th>
+<th class="head"><p>Type</p></th>
+<th class="head"><p>Ordered</p></th>
+<th class="head"><p>Unique</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="#sp:process.process.materialstatetype.description"><span class="std std-ref">Description</span></a></p></td>
+<td><p>1</p></td>
+<td><p><a class="sp-element reference internal" href="../../Core/DataTypes/MultiLanguageString.html"><span class="doc">MultiLanguageString</span></a></p></td>
+<td><p>no</p></td>
+<td><p>no</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="#sp:process.process.materialstatetype.identifier"><span class="std std-ref">Identifier</span></a></p></td>
+<td><p>1</p></td>
+<td><p><a class="sp-element reference internal" href="../../Builtin/String.html"><span class="doc">String</span></a></p></td>
+<td><p>no</p></td>
+<td><p>no</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="#sp:process.process.materialstatetype.label"><span class="std std-ref">Label</span></a></p></td>
+<td><p>1</p></td>
+<td><p><a class="sp-element reference internal" href="../../Builtin/String.html"><span class="doc">String</span></a></p></td>
+<td><p>no</p></td>
+<td><p>no</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="sp:process.process.materialstatetype.composition">
+<h2>Composition<a class="headerlink" href="#sp:process.process.materialstatetype.composition" title="Link to this heading">¶</a></h2>
+<p class="rubric">Reference Property</p>
+<p><strong>Type:</strong><span> </span><a class="sp-element reference internal" href="Composition.html"><span class="doc">Composition</span></a></p>
+<p><strong>Multiplicity:</strong><span> </span><span>1</span></p>
+<p><strong>Ordered:</strong><span> </span><span>no</span></p>
+<p><strong>Unique:</strong><span> </span><span>no</span></p>
+<p><strong>Opposite Multiplicity:</strong><span> </span><span>1</span></p>
+</section>
+<section id="sp:process.process.materialstatetype.density">
+<h2>Density<a class="headerlink" href="#sp:process.process.materialstatetype.density" title="Link to this heading">¶</a></h2>
+<p class="rubric">Composition Property</p>
+<p><strong>Type:</strong><span> </span><span>&lt;</span><a class="sp-element reference internal" href="../../Core/QualifiedValue.html"><span class="doc">QualifiedValue</span></a><span> with </span><a class="sp-element reference internal" href="../../Core/QualifiedValue.html#sp:core.qualifiedvalue.type"><span class="std std-ref">Type</span></a><span> → </span><a class="sp-element reference internal" href="../../Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><span>&lt;</span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/PhysicalQuantity.html"><span class="doc">PhysicalQuantity</span></a><span> with </span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/PhysicalQuantity.html#sp:core.physicalquantities.physicalquantity.unittype"><span class="std std-ref">UnitType</span></a><span> → </span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/DensityUnit.html"><span class="doc">DensityUnit</span></a><span>&gt;</span><span>&gt;</span></p>
+<p><strong>Multiplicity:</strong><span> </span><span>*</span></p>
+<p><strong>Ordered:</strong><span> </span><span>no</span></p>
+<section id="sp:process.process.materialstatetype.density-example">
+<h3>Example<a class="headerlink" href="#sp:process.process.materialstatetype.density-example" title="Link to this heading">¶</a></h3>
+<p class="sp-dense"><span>[</span></p>
+<p class="sp-dense"><span>     </span><a class="sp-element reference internal" href="../../Core/QualifiedValue.html"><span class="doc">QualifiedValue</span></a><span>(</span></p>
+<p class="sp-dense"><span>          </span><a class="sp-element reference internal" href="../../Core/QualifiedValue.html#sp:core.qualifiedvalue.value"><span class="std std-ref">Value</span></a><span> = </span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/PhysicalQuantity.html"><span class="doc">PhysicalQuantity</span></a><span>(</span></p>
+<p class="sp-dense"><span>               </span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/PhysicalQuantity.html#sp:core.physicalquantities.physicalquantity.unit"><span class="std std-ref">Unit</span></a><span> = </span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/DensityUnit.html#sp:core.physicalquantities.densityunit.kilogrampermetrecubed"><span class="std std-ref">KilogramPerMetreCubed</span></a><span>,</span></p>
+<p class="sp-dense"><span>               </span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/PhysicalQuantity.html#sp:core.physicalquantities.physicalquantity.value"><span class="std std-ref">Value</span></a><span> = </span><code class="docutils literal notranslate"><span class="pre">5400.0</span></code><span>)</span><span>)</span></p>
+<p class="sp-dense"><span>]</span></p>
+</section>
+</section>
+<section id="sp:process.process.materialstatetype.description">
+<h2>Description<a class="headerlink" href="#sp:process.process.materialstatetype.description" title="Link to this heading">¶</a></h2>
+<p class="rubric">Data Property</p>
+<p><strong>Type:</strong><span> </span><a class="sp-element reference internal" href="../../Core/DataTypes/MultiLanguageString.html"><span class="doc">MultiLanguageString</span></a></p>
+<p><strong>Multiplicity:</strong><span> </span><span>1</span></p>
+<p><strong>Ordered:</strong><span> </span><span>no</span></p>
+<p><strong>Unique:</strong><span> </span><span>no</span></p>
+</section>
+<section id="sp:process.process.materialstatetype.identifier">
+<h2>Identifier<a class="headerlink" href="#sp:process.process.materialstatetype.identifier" title="Link to this heading">¶</a></h2>
+<p class="rubric">Data Property</p>
+<p><strong>Type:</strong><span> </span><a class="sp-element reference internal" href="../../Builtin/String.html"><span class="doc">String</span></a></p>
+<p><strong>Multiplicity:</strong><span> </span><span>1</span></p>
+<p><strong>Ordered:</strong><span> </span><span>no</span></p>
+<p><strong>Unique:</strong><span> </span><span>no</span></p>
+</section>
+<section id="sp:process.process.materialstatetype.label">
+<h2>Label<a class="headerlink" href="#sp:process.process.materialstatetype.label" title="Link to this heading">¶</a></h2>
+<p class="rubric">Data Property</p>
+<p><strong>Type:</strong><span> </span><a class="sp-element reference internal" href="../../Builtin/String.html"><span class="doc">String</span></a></p>
+<p><strong>Multiplicity:</strong><span> </span><span>1</span></p>
+<p><strong>Ordered:</strong><span> </span><span>no</span></p>
+<p><strong>Unique:</strong><span> </span><span>no</span></p>
+</section>
+<section id="sp:process.process.materialstatetype.massflow">
+<h2>MassFlow<a class="headerlink" href="#sp:process.process.materialstatetype.massflow" title="Link to this heading">¶</a></h2>
+<p class="rubric">Composition Property</p>
+<p><strong>Type:</strong><span> </span><span>&lt;</span><a class="sp-element reference internal" href="../../Core/QualifiedValue.html"><span class="doc">QualifiedValue</span></a><span> with </span><a class="sp-element reference internal" href="../../Core/QualifiedValue.html#sp:core.qualifiedvalue.type"><span class="std std-ref">Type</span></a><span> → </span><a class="sp-element reference internal" href="../../Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><span>&lt;</span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/PhysicalQuantity.html"><span class="doc">PhysicalQuantity</span></a><span> with </span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/PhysicalQuantity.html#sp:core.physicalquantities.physicalquantity.unittype"><span class="std std-ref">UnitType</span></a><span> → </span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/MassFlowRateUnit.html"><span class="doc">MassFlowRateUnit</span></a><span>&gt;</span><span>&gt;</span></p>
+<p><strong>Multiplicity:</strong><span> </span><span>*</span></p>
+<p><strong>Ordered:</strong><span> </span><span>no</span></p>
+<section id="sp:process.process.materialstatetype.massflow-example">
+<h3>Example<a class="headerlink" href="#sp:process.process.materialstatetype.massflow-example" title="Link to this heading">¶</a></h3>
+<p class="sp-dense"><span>[</span></p>
+<p class="sp-dense"><span>     </span><a class="sp-element reference internal" href="../../Core/QualifiedValue.html"><span class="doc">QualifiedValue</span></a><span>(</span></p>
+<p class="sp-dense"><span>          </span><a class="sp-element reference internal" href="../../Core/QualifiedValue.html#sp:core.qualifiedvalue.value"><span class="std std-ref">Value</span></a><span> = </span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/PhysicalQuantity.html"><span class="doc">PhysicalQuantity</span></a><span>(</span></p>
+<p class="sp-dense"><span>               </span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/PhysicalQuantity.html#sp:core.physicalquantities.physicalquantity.unit"><span class="std std-ref">Unit</span></a><span> = </span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/MassFlowRateUnit.html#sp:core.physicalquantities.massflowrateunit.kilogramperhour"><span class="std std-ref">KilogramPerHour</span></a><span>,</span></p>
+<p class="sp-dense"><span>               </span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/PhysicalQuantity.html#sp:core.physicalquantities.physicalquantity.value"><span class="std std-ref">Value</span></a><span> = </span><code class="docutils literal notranslate"><span class="pre">1820.0</span></code><span>)</span><span>)</span></p>
+<p class="sp-dense"><span>]</span></p>
+</section>
+</section>
+<section id="sp:process.process.materialstatetype.specificenthalpy">
+<h2>SpecificEnthalpy<a class="headerlink" href="#sp:process.process.materialstatetype.specificenthalpy" title="Link to this heading">¶</a></h2>
+<p class="rubric">Composition Property</p>
+<p><strong>Type:</strong><span> </span><span>&lt;</span><a class="sp-element reference internal" href="../../Core/QualifiedValue.html"><span class="doc">QualifiedValue</span></a><span> with </span><a class="sp-element reference internal" href="../../Core/QualifiedValue.html#sp:core.qualifiedvalue.type"><span class="std std-ref">Type</span></a><span> → </span><a class="sp-element reference internal" href="../../Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><span>&lt;</span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/PhysicalQuantity.html"><span class="doc">PhysicalQuantity</span></a><span> with </span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/PhysicalQuantity.html#sp:core.physicalquantities.physicalquantity.unittype"><span class="std std-ref">UnitType</span></a><span> → </span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/MassSpecificEnergyUnit.html"><span class="doc">MassSpecificEnergyUnit</span></a><span>&gt;</span><span>&gt;</span></p>
+<p><strong>Multiplicity:</strong><span> </span><span>*</span></p>
+<p><strong>Ordered:</strong><span> </span><span>no</span></p>
+<section id="sp:process.process.materialstatetype.specificenthalpy-example">
+<h3>Example<a class="headerlink" href="#sp:process.process.materialstatetype.specificenthalpy-example" title="Link to this heading">¶</a></h3>
+<p class="sp-dense"><span>[</span></p>
+<p class="sp-dense"><span>     </span><a class="sp-element reference internal" href="../../Core/QualifiedValue.html"><span class="doc">QualifiedValue</span></a><span>(</span></p>
+<p class="sp-dense"><span>          </span><a class="sp-element reference internal" href="../../Core/QualifiedValue.html#sp:core.qualifiedvalue.value"><span class="std std-ref">Value</span></a><span> = </span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/PhysicalQuantity.html"><span class="doc">PhysicalQuantity</span></a><span>(</span></p>
+<p class="sp-dense"><span>               </span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/PhysicalQuantity.html#sp:core.physicalquantities.physicalquantity.unit"><span class="std std-ref">Unit</span></a><span> = </span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/MassSpecificEnergyUnit.html#sp:core.physicalquantities.massspecificenergyunit.kilojouleperkilogram"><span class="std std-ref">KilojoulePerKilogram</span></a><span>,</span></p>
+<p class="sp-dense"><span>               </span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/PhysicalQuantity.html#sp:core.physicalquantities.physicalquantity.value"><span class="std std-ref">Value</span></a><span> = </span><code class="docutils literal notranslate"><span class="pre">419.0</span></code><span>)</span><span>)</span></p>
+<p class="sp-dense"><span>]</span></p>
+</section>
+</section>
+<section id="sp:process.process.materialstatetype.viscosity">
+<h2>Viscosity<a class="headerlink" href="#sp:process.process.materialstatetype.viscosity" title="Link to this heading">¶</a></h2>
+<p class="rubric">Composition Property</p>
+<p><strong>Type:</strong><span> </span><span>&lt;</span><a class="sp-element reference internal" href="../../Core/QualifiedValue.html"><span class="doc">QualifiedValue</span></a><span> with </span><a class="sp-element reference internal" href="../../Core/QualifiedValue.html#sp:core.qualifiedvalue.type"><span class="std std-ref">Type</span></a><span> → </span><a class="sp-element reference internal" href="../../Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><span>&lt;</span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/PhysicalQuantity.html"><span class="doc">PhysicalQuantity</span></a><span> with </span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/PhysicalQuantity.html#sp:core.physicalquantities.physicalquantity.unittype"><span class="std std-ref">UnitType</span></a><span> → </span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/DynamicViscosityUnit.html"><span class="doc">DynamicViscosityUnit</span></a><span>&gt;</span><span>&gt;</span></p>
+<p><strong>Multiplicity:</strong><span> </span><span>*</span></p>
+<p><strong>Ordered:</strong><span> </span><span>no</span></p>
+<section id="sp:process.process.materialstatetype.viscosity-example">
+<h3>Example<a class="headerlink" href="#sp:process.process.materialstatetype.viscosity-example" title="Link to this heading">¶</a></h3>
+<p class="sp-dense"><span>[</span></p>
+<p class="sp-dense"><span>     </span><a class="sp-element reference internal" href="../../Core/QualifiedValue.html"><span class="doc">QualifiedValue</span></a><span>(</span></p>
+<p class="sp-dense"><span>          </span><a class="sp-element reference internal" href="../../Core/QualifiedValue.html#sp:core.qualifiedvalue.value"><span class="std std-ref">Value</span></a><span> = </span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/PhysicalQuantity.html"><span class="doc">PhysicalQuantity</span></a><span>(</span></p>
+<p class="sp-dense"><span>               </span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/PhysicalQuantity.html#sp:core.physicalquantities.physicalquantity.unit"><span class="std std-ref">Unit</span></a><span> = </span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/DynamicViscosityUnit.html#sp:core.physicalquantities.dynamicviscosityunit.pascalsecond"><span class="std std-ref">PascalSecond</span></a><span>,</span></p>
+<p class="sp-dense"><span>               </span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/PhysicalQuantity.html#sp:core.physicalquantities.physicalquantity.value"><span class="std std-ref">Value</span></a><span> = </span><code class="docutils literal notranslate"><span class="pre">0.000281</span></code><span>)</span><span>)</span></p>
+<p class="sp-dense"><span>]</span></p>
+</section>
+</section>
+<section id="sp:process.process.materialstatetype.volumeflow">
+<h2>VolumeFlow<a class="headerlink" href="#sp:process.process.materialstatetype.volumeflow" title="Link to this heading">¶</a></h2>
+<p class="rubric">Composition Property</p>
+<p><strong>Type:</strong><span> </span><span>&lt;</span><a class="sp-element reference internal" href="../../Core/QualifiedValue.html"><span class="doc">QualifiedValue</span></a><span> with </span><a class="sp-element reference internal" href="../../Core/QualifiedValue.html#sp:core.qualifiedvalue.type"><span class="std std-ref">Type</span></a><span> → </span><a class="sp-element reference internal" href="../../Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><span>&lt;</span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/PhysicalQuantity.html"><span class="doc">PhysicalQuantity</span></a><span> with </span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/PhysicalQuantity.html#sp:core.physicalquantities.physicalquantity.unittype"><span class="std std-ref">UnitType</span></a><span> → </span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/VolumeFlowRateUnit.html"><span class="doc">VolumeFlowRateUnit</span></a><span>&gt;</span><span>&gt;</span></p>
+<p><strong>Multiplicity:</strong><span> </span><span>*</span></p>
+<p><strong>Ordered:</strong><span> </span><span>no</span></p>
+<section id="sp:process.process.materialstatetype.volumeflow-example">
+<h3>Example<a class="headerlink" href="#sp:process.process.materialstatetype.volumeflow-example" title="Link to this heading">¶</a></h3>
+<p class="sp-dense"><span>[</span></p>
+<p class="sp-dense"><span>     </span><a class="sp-element reference internal" href="../../Core/QualifiedValue.html"><span class="doc">QualifiedValue</span></a><span>(</span></p>
+<p class="sp-dense"><span>          </span><a class="sp-element reference internal" href="../../Core/QualifiedValue.html#sp:core.qualifiedvalue.value"><span class="std std-ref">Value</span></a><span> = </span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/PhysicalQuantity.html"><span class="doc">PhysicalQuantity</span></a><span>(</span></p>
+<p class="sp-dense"><span>               </span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/PhysicalQuantity.html#sp:core.physicalquantities.physicalquantity.unit"><span class="std std-ref">Unit</span></a><span> = </span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/VolumeFlowRateUnit.html#sp:core.physicalquantities.volumeflowrateunit.litrepersecond"><span class="std std-ref">LitrePerSecond</span></a><span>,</span></p>
+<p class="sp-dense"><span>               </span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/PhysicalQuantity.html#sp:core.physicalquantities.physicalquantity.value"><span class="std std-ref">Value</span></a><span> = </span><code class="docutils literal notranslate"><span class="pre">2.8</span></code><span>)</span><span>)</span></p>
+<p class="sp-dense"><span>]</span></p>
+</section>
+</section>
+<section id="Process.Process.MaterialStateType-example">
+<h2>Example in DEXPI XML<a class="headerlink" href="#Process.Process.MaterialStateType-example" title="Link to this heading">¶</a></h2>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;Object</span><span class="w"> </span><span class="na">type=</span><span class="s">"Process/Process.MaterialStateType"</span><span class="nt">&gt;</span>
+<span class="w">  </span><span class="nt">&lt;Components</span><span class="w"> </span><span class="na">property=</span><span class="s">"Density"</span><span class="nt">&gt;</span>
+<span class="w">    </span><span class="nt">&lt;Object</span><span class="w"> </span><span class="na">type=</span><span class="s">"Core/QualifiedValue"</span><span class="nt">&gt;</span>
+<span class="w">      </span><span class="nt">&lt;Data</span><span class="w"> </span><span class="na">property=</span><span class="s">"Value"</span><span class="nt">&gt;</span>
+<span class="w">        </span><span class="nt">&lt;AggregatedDataValue</span><span class="w"> </span><span class="na">type=</span><span class="s">"Core/PhysicalQuantities.PhysicalQuantity"</span><span class="nt">&gt;</span>
+<span class="w">          </span><span class="nt">&lt;Data</span><span class="w"> </span><span class="na">property=</span><span class="s">"Unit"</span><span class="nt">&gt;</span>
+<span class="w">            </span><span class="nt">&lt;DataReference</span><span class="w"> </span><span class="na">data=</span><span class="s">"Core/PhysicalQuantities.DensityUnit.KilogramPerMetreCubed"</span><span class="nt">/&gt;</span>
+<span class="w">          </span><span class="nt">&lt;/Data&gt;</span>
+<span class="w">          </span><span class="nt">&lt;Data</span><span class="w"> </span><span class="na">property=</span><span class="s">"Value"</span><span class="nt">&gt;</span>
+<span class="w">            </span><span class="nt">&lt;Double&gt;</span>5400.0<span class="nt">&lt;/Double&gt;</span>
+<span class="w">          </span><span class="nt">&lt;/Data&gt;</span>
+<span class="w">        </span><span class="nt">&lt;/AggregatedDataValue&gt;</span>
+<span class="w">      </span><span class="nt">&lt;/Data&gt;</span>
+<span class="w">    </span><span class="nt">&lt;/Object&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/Components&gt;</span>
+<span class="w">  </span><span class="nt">&lt;Components</span><span class="w"> </span><span class="na">property=</span><span class="s">"MassFlow"</span><span class="nt">&gt;</span>
+<span class="w">    </span><span class="nt">&lt;Object</span><span class="w"> </span><span class="na">type=</span><span class="s">"Core/QualifiedValue"</span><span class="nt">&gt;</span>
+<span class="w">      </span><span class="nt">&lt;Data</span><span class="w"> </span><span class="na">property=</span><span class="s">"Value"</span><span class="nt">&gt;</span>
+<span class="w">        </span><span class="nt">&lt;AggregatedDataValue</span><span class="w"> </span><span class="na">type=</span><span class="s">"Core/PhysicalQuantities.PhysicalQuantity"</span><span class="nt">&gt;</span>
+<span class="w">          </span><span class="nt">&lt;Data</span><span class="w"> </span><span class="na">property=</span><span class="s">"Unit"</span><span class="nt">&gt;</span>
+<span class="w">            </span><span class="nt">&lt;DataReference</span><span class="w"> </span><span class="na">data=</span><span class="s">"Core/PhysicalQuantities.MassFlowRateUnit.KilogramPerHour"</span><span class="nt">/&gt;</span>
+<span class="w">          </span><span class="nt">&lt;/Data&gt;</span>
+<span class="w">          </span><span class="nt">&lt;Data</span><span class="w"> </span><span class="na">property=</span><span class="s">"Value"</span><span class="nt">&gt;</span>
+<span class="w">            </span><span class="nt">&lt;Double&gt;</span>1820.0<span class="nt">&lt;/Double&gt;</span>
+<span class="w">          </span><span class="nt">&lt;/Data&gt;</span>
+<span class="w">        </span><span class="nt">&lt;/AggregatedDataValue&gt;</span>
+<span class="w">      </span><span class="nt">&lt;/Data&gt;</span>
+<span class="w">    </span><span class="nt">&lt;/Object&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/Components&gt;</span>
+<span class="w">  </span><span class="nt">&lt;Components</span><span class="w"> </span><span class="na">property=</span><span class="s">"SpecificEnthalpy"</span><span class="nt">&gt;</span>
+<span class="w">    </span><span class="nt">&lt;Object</span><span class="w"> </span><span class="na">type=</span><span class="s">"Core/QualifiedValue"</span><span class="nt">&gt;</span>
+<span class="w">      </span><span class="nt">&lt;Data</span><span class="w"> </span><span class="na">property=</span><span class="s">"Value"</span><span class="nt">&gt;</span>
+<span class="w">        </span><span class="nt">&lt;AggregatedDataValue</span><span class="w"> </span><span class="na">type=</span><span class="s">"Core/PhysicalQuantities.PhysicalQuantity"</span><span class="nt">&gt;</span>
+<span class="w">          </span><span class="nt">&lt;Data</span><span class="w"> </span><span class="na">property=</span><span class="s">"Unit"</span><span class="nt">&gt;</span>
+<span class="w">            </span><span class="nt">&lt;DataReference</span><span class="w"> </span><span class="na">data=</span><span class="s">"Core/PhysicalQuantities.MassSpecificEnergyUnit.KilojoulePerKilogram"</span><span class="nt">/&gt;</span>
+<span class="w">          </span><span class="nt">&lt;/Data&gt;</span>
+<span class="w">          </span><span class="nt">&lt;Data</span><span class="w"> </span><span class="na">property=</span><span class="s">"Value"</span><span class="nt">&gt;</span>
+<span class="w">            </span><span class="nt">&lt;Double&gt;</span>419.0<span class="nt">&lt;/Double&gt;</span>
+<span class="w">          </span><span class="nt">&lt;/Data&gt;</span>
+<span class="w">        </span><span class="nt">&lt;/AggregatedDataValue&gt;</span>
+<span class="w">      </span><span class="nt">&lt;/Data&gt;</span>
+<span class="w">    </span><span class="nt">&lt;/Object&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/Components&gt;</span>
+<span class="w">  </span><span class="nt">&lt;Components</span><span class="w"> </span><span class="na">property=</span><span class="s">"Viscosity"</span><span class="nt">&gt;</span>
+<span class="w">    </span><span class="nt">&lt;Object</span><span class="w"> </span><span class="na">type=</span><span class="s">"Core/QualifiedValue"</span><span class="nt">&gt;</span>
+<span class="w">      </span><span class="nt">&lt;Data</span><span class="w"> </span><span class="na">property=</span><span class="s">"Value"</span><span class="nt">&gt;</span>
+<span class="w">        </span><span class="nt">&lt;AggregatedDataValue</span><span class="w"> </span><span class="na">type=</span><span class="s">"Core/PhysicalQuantities.PhysicalQuantity"</span><span class="nt">&gt;</span>
+<span class="w">          </span><span class="nt">&lt;Data</span><span class="w"> </span><span class="na">property=</span><span class="s">"Unit"</span><span class="nt">&gt;</span>
+<span class="w">            </span><span class="nt">&lt;DataReference</span><span class="w"> </span><span class="na">data=</span><span class="s">"Core/PhysicalQuantities.DynamicViscosityUnit.PascalSecond"</span><span class="nt">/&gt;</span>
+<span class="w">          </span><span class="nt">&lt;/Data&gt;</span>
+<span class="w">          </span><span class="nt">&lt;Data</span><span class="w"> </span><span class="na">property=</span><span class="s">"Value"</span><span class="nt">&gt;</span>
+<span class="w">            </span><span class="nt">&lt;Double&gt;</span>0.000281<span class="nt">&lt;/Double&gt;</span>
+<span class="w">          </span><span class="nt">&lt;/Data&gt;</span>
+<span class="w">        </span><span class="nt">&lt;/AggregatedDataValue&gt;</span>
+<span class="w">      </span><span class="nt">&lt;/Data&gt;</span>
+<span class="w">    </span><span class="nt">&lt;/Object&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/Components&gt;</span>
+<span class="w">  </span><span class="nt">&lt;Components</span><span class="w"> </span><span class="na">property=</span><span class="s">"VolumeFlow"</span><span class="nt">&gt;</span>
+<span class="w">    </span><span class="nt">&lt;Object</span><span class="w"> </span><span class="na">type=</span><span class="s">"Core/QualifiedValue"</span><span class="nt">&gt;</span>
+<span class="w">      </span><span class="nt">&lt;Data</span><span class="w"> </span><span class="na">property=</span><span class="s">"Value"</span><span class="nt">&gt;</span>
+<span class="w">        </span><span class="nt">&lt;AggregatedDataValue</span><span class="w"> </span><span class="na">type=</span><span class="s">"Core/PhysicalQuantities.PhysicalQuantity"</span><span class="nt">&gt;</span>
+<span class="w">          </span><span class="nt">&lt;Data</span><span class="w"> </span><span class="na">property=</span><span class="s">"Unit"</span><span class="nt">&gt;</span>
+<span class="w">            </span><span class="nt">&lt;DataReference</span><span class="w"> </span><span class="na">data=</span><span class="s">"Core/PhysicalQuantities.VolumeFlowRateUnit.LitrePerSecond"</span><span class="nt">/&gt;</span>
+<span class="w">          </span><span class="nt">&lt;/Data&gt;</span>
+<span class="w">          </span><span class="nt">&lt;Data</span><span class="w"> </span><span class="na">property=</span><span class="s">"Value"</span><span class="nt">&gt;</span>
+<span class="w">            </span><span class="nt">&lt;Double&gt;</span>2.8<span class="nt">&lt;/Double&gt;</span>
+<span class="w">          </span><span class="nt">&lt;/Data&gt;</span>
+<span class="w">        </span><span class="nt">&lt;/AggregatedDataValue&gt;</span>
+<span class="w">      </span><span class="nt">&lt;/Data&gt;</span>
+<span class="w">    </span><span class="nt">&lt;/Object&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/Components&gt;</span>
+<span class="nt">&lt;/Object&gt;</span>
+</pre></div>
+</div>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+    
+        <div id="show_right_sidebar">
+            <p><a class="toggle_right_sidebar" href="#"><span class="icon">&lt;</span><span>Page contents</span></a></p>
+        </div>
+
+        <div id="right_sidebar">
+            <p><a class="toggle_right_sidebar" href="#"><span class="icon">&gt;</span><span>Page contents:</span></a></p>
+            <div class="page_toc">
+                <ul>
+<li><a class="reference internal" href="#">MaterialStateType</a><ul>
+<li><a class="reference internal" href="#Overview">Overview</a></li>
+<li><a class="reference internal" href="#Members">Members</a><ul>
+<li><a class="reference internal" href="#member-list-section-Composition%20Properties">Composition Properties</a></li>
+<li><a class="reference internal" href="#member-list-section-Reference%20Properties">Reference Properties</a></li>
+<li><a class="reference internal" href="#member-list-section-Data%20Properties">Data Properties</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#sp:process.process.materialstatetype.composition">Composition</a></li>
+<li><a class="reference internal" href="#sp:process.process.materialstatetype.density">Density</a><ul>
+<li><a class="reference internal" href="#sp:process.process.materialstatetype.density-example">Example</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#sp:process.process.materialstatetype.description">Description</a></li>
+<li><a class="reference internal" href="#sp:process.process.materialstatetype.identifier">Identifier</a></li>
+<li><a class="reference internal" href="#sp:process.process.materialstatetype.label">Label</a></li>
+<li><a class="reference internal" href="#sp:process.process.materialstatetype.massflow">MassFlow</a><ul>
+<li><a class="reference internal" href="#sp:process.process.materialstatetype.massflow-example">Example</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#sp:process.process.materialstatetype.specificenthalpy">SpecificEnthalpy</a><ul>
+<li><a class="reference internal" href="#sp:process.process.materialstatetype.specificenthalpy-example">Example</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#sp:process.process.materialstatetype.viscosity">Viscosity</a><ul>
+<li><a class="reference internal" href="#sp:process.process.materialstatetype.viscosity-example">Example</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#sp:process.process.materialstatetype.volumeflow">VolumeFlow</a><ul>
+<li><a class="reference internal" href="#sp:process.process.materialstatetype.volumeflow-example">Example</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#Process.Process.MaterialStateType-example">Example in DEXPI XML</a></li>
+</ul>
+</li>
+</ul>
+
+            </div>
+        </div>
+    
+
+      <div class="clearer"></div>
+    </div>
+    <div class="button_nav_wrapper">
+        <div class="button_nav">
+            <div class="left">
+                
+                <a href="MaterialState.html">
+                    <span class="icon">&lt;</span><span>MaterialState</span></a>
+                
+            </div>
+
+            <div class="right">
+                
+                    <a href="MaterialTemplate.html"><span>MaterialTemplate</span><span class="icon">&gt;</span></a>
+                
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer" role="contentinfo">
+    © Copyright .
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.1.3.
+    </div>
+
+<p id="theme_credit">Styled using the <a href="https://github.com/piccolo-orm/piccolo_theme">Piccolo Theme</a></p>
+  </body>
+</html>

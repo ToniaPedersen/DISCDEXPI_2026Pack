@@ -1,0 +1,5 @@
+ProcessInstrumentationFunctionLabel
+===================================
+
+.. sp:internal-autoelement::
+   :element: Plant.Diagram.ProcessInstrumentationFunctionLabel

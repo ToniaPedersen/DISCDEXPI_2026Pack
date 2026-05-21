@@ -1,0 +1,5 @@
+Expander
+========
+
+.. sp:internal-autoelement::
+   :element: DiscProfile.InformationModel.TurbineTypeCodes.Expander

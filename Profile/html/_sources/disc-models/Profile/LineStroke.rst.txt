@@ -1,0 +1,5 @@
+LineStroke
+==========
+
+.. sp:internal-autoelement::
+   :element: Profile.LineStroke

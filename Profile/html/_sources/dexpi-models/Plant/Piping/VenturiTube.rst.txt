@@ -1,0 +1,5 @@
+VenturiTube
+===========
+
+.. sp:internal-autoelement::
+   :element: Plant.Piping.VenturiTube

@@ -1,0 +1,5 @@
+LogicalBreak
+============
+
+.. sp:internal-autoelement::
+   :element: DiscProfile.InformationModel.LogicalBreak

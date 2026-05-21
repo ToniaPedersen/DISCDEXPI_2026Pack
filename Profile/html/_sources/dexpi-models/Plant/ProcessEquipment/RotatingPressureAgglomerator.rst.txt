@@ -1,0 +1,5 @@
+RotatingPressureAgglomerator
+============================
+
+.. sp:internal-autoelement::
+   :element: Plant.ProcessEquipment.RotatingPressureAgglomerator

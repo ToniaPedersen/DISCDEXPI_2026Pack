@@ -1,0 +1,5 @@
+PlantAreaLocatedStructure
+=========================
+
+.. sp:internal-autoelement::
+   :element: Plant.PlantStructure.PlantAreaLocatedStructure

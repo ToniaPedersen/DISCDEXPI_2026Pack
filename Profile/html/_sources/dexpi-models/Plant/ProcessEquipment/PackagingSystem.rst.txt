@@ -1,0 +1,5 @@
+PackagingSystem
+===============
+
+.. sp:internal-autoelement::
+   :element: Plant.ProcessEquipment.PackagingSystem

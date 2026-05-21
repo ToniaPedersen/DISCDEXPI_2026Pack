@@ -1,0 +1,5 @@
+Mixing
+======
+
+.. sp:internal-autoelement::
+   :element: Process.Process.Mixing

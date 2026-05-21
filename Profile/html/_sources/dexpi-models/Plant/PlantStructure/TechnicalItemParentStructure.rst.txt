@@ -1,0 +1,5 @@
+TechnicalItemParentStructure
+============================
+
+.. sp:internal-autoelement::
+   :element: Plant.PlantStructure.TechnicalItemParentStructure

@@ -1,0 +1,1169 @@
+<!DOCTYPE html>
+<html lang="en" data-content_root="../../../">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>PipingNetworkSegment — DISC Profile 0.5</title>
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=b86133f3">
+    <link rel="stylesheet" type="text/css" href="../../../_static/basic_mod.css?v=9b2032db">
+    <link rel="stylesheet" type="text/css" href="../../../_static/sp.css">
+    <script src="../../../_static/documentation_options.js?v=db78e746"></script>
+    <script src="../../../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../_static/js/theme.js"></script>
+    <script src="../../../_static/js/petite-vue.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html">
+    <link rel="search" title="Search" href="../../../search.html">
+    <link rel="next" title="PipingNetworkSegmentItem" href="PipingNetworkSegmentItem.html">
+    <link rel="prev" title="PipingConnection" href="PipingConnection.html"> 
+  </head><body data-dark_mode_code_blocks="true">
+
+<div id="top_nav">
+    
+
+    <nav>
+        
+            
+        
+
+        <p id="toggle_sidebar">
+            <a href="#" title="Toggle sidebar">|||</a>
+        </p>
+        <h1><a href="../../../index.html" title="Go to homepage">DISC Profile 0.5</a></h1>
+
+        <a id="mode_toggle" href="#" @click.prevent="handleClick" :title="mode">
+    <template v-if="mode == 'light'">
+        <svg width="100%" height="100%" viewbox="0 0 79 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g id="mode_light"><rect id="Bounds" x="0" y="-0" width="78.623" height="79.049" style="fill:none;"></rect><circle cx="39.311" cy="39.524" r="15.734" style="fill:#fff;"></circle><g id="beams"><g id="beam"><path id="beam1" serif:id="beam" d="M44.212,4.901c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,-0 -4.9,2.196 -4.9,4.901l-0,9.614c-0,2.705 2.196,4.901 4.9,4.901c2.705,0 4.901,-2.196 4.901,-4.901l0,-9.614Z" style="fill:#fff;"></path></g><g id="beam2" serif:id="beam"><path id="beam3" serif:id="beam" d="M67.48,18.073c1.913,-1.912 1.913,-5.018 0,-6.931c-1.912,-1.912 -5.018,-1.912 -6.931,0l-6.798,6.799c-1.912,1.912 -1.912,5.018 0,6.931c1.913,1.912 5.018,1.912 6.931,-0l6.798,-6.799Z" style="fill:#fff;"></path></g><g id="beam4" serif:id="beam"><path id="beam5" serif:id="beam" d="M25.728,61.108c1.912,-1.913 1.912,-5.018 -0,-6.931c-1.913,-1.913 -5.019,-1.913 -6.931,-0l-6.799,6.798c-1.912,1.913 -1.912,5.019 0,6.931c1.913,1.913 5.019,1.913 6.931,0l6.799,-6.798Z" style="fill:#fff;"></path></g><g id="beam6" serif:id="beam"><path id="beam7" serif:id="beam" d="M60.682,54.177c-1.913,-1.913 -5.018,-1.913 -6.931,-0c-1.912,1.913 -1.912,5.018 0,6.931l6.798,6.798c1.913,1.913 5.019,1.913 6.931,0c1.913,-1.912 1.913,-5.018 0,-6.931l-6.798,-6.798Z" style="fill:#fff;"></path></g><g id="beam8" serif:id="beam"><path id="beam9" serif:id="beam" d="M4.901,34.623c-2.705,0 -4.901,2.196 -4.901,4.901c0,2.705 2.196,4.901 4.901,4.901l9.614,0c2.705,0 4.901,-2.196 4.901,-4.901c0,-2.705 -2.196,-4.901 -4.901,-4.901l-9.614,0Z" style="fill:#fff;"></path></g><g id="beam10" serif:id="beam"><path id="beam11" serif:id="beam" d="M44.212,64.534c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,-0 -4.9,2.196 -4.9,4.901l-0,9.614c-0,2.705 2.196,4.901 4.9,4.901c2.705,-0 4.901,-2.196 4.901,-4.901l0,-9.614Z" style="fill:#fff;"></path></g><g id="beam12" serif:id="beam"><path id="beam13" serif:id="beam" d="M18.929,11.142c-1.912,-1.912 -5.018,-1.912 -6.931,0c-1.912,1.913 -1.912,5.019 0,6.931l6.799,6.799c1.912,1.912 5.018,1.912 6.931,-0c1.912,-1.913 1.912,-5.019 -0,-6.931l-6.799,-6.799Z" style="fill:#fff;"></path></g><g id="beam14" serif:id="beam"><path id="beam15" serif:id="beam" d="M64.108,34.623c-2.705,0 -4.901,2.196 -4.901,4.901c-0,2.705 2.196,4.901 4.901,4.901l9.614,0c2.705,0 4.901,-2.196 4.901,-4.901c-0,-2.705 -2.196,-4.901 -4.901,-4.901l-9.614,0Z" style="fill:#fff;"></path></g></g></g></svg>
+    </template>
+
+    <template v-if="mode == 'dark'">
+        <svg width="100%" height="100%" viewbox="0 0 79 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g id="mode_dark"><rect id="Bounds" x="0" y="-0" width="78.623" height="79.049" style="fill:none;"></rect><circle cx="39.311" cy="39.524" r="15.734" style="fill:#fff;"></circle><g id="beams"><g id="beam"><path id="beam1" serif:id="beam" d="M44.212,14.515c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,0 -4.901,2.196 -4.901,4.901c0,2.705 2.197,4.901 4.901,4.901c2.705,0 4.901,-2.196 4.901,-4.901Z" style="fill:#fff;"></path></g><g id="beam2" serif:id="beam"><path id="beam3" serif:id="beam" d="M60.662,24.892c1.902,-1.902 1.902,-4.99 0,-6.892l-0.04,-0.039c-1.901,-1.902 -4.989,-1.902 -6.891,-0c-1.901,1.901 -1.901,4.989 0,6.891l0.04,0.04c1.902,1.901 4.989,1.901 6.891,-0Z" style="fill:#fff;"></path></g><g id="beam4" serif:id="beam"><path id="beam5" serif:id="beam" d="M25.732,61.103c1.91,-1.91 1.91,-5.011 0,-6.921l-0.009,-0.01c-1.91,-1.91 -5.012,-1.91 -6.921,-0c-1.91,1.91 -1.91,5.011 -0,6.921l0.01,0.01c1.909,1.91 5.011,1.91 6.92,-0Z" style="fill:#fff;"></path></g><g id="beam6" serif:id="beam"><path id="beam7" serif:id="beam" d="M60.672,54.167c-1.907,-1.907 -5.004,-1.907 -6.911,0l-0.02,0.02c-1.907,1.907 -1.907,5.004 0,6.911c1.907,1.907 5.004,1.907 6.911,-0l0.02,-0.02c1.907,-1.907 1.907,-5.004 0,-6.911Z" style="fill:#fff;"></path></g><g id="beam8" serif:id="beam"><path id="beam9" serif:id="beam" d="M14.52,34.623c-2.702,0 -4.896,2.194 -4.896,4.896l0,0.01c0,2.702 2.194,4.896 4.896,4.896c2.702,0 4.896,-2.194 4.896,-4.896l-0,-0.01c-0,-2.702 -2.194,-4.896 -4.896,-4.896Z" style="fill:#fff;"></path></g><g id="beam10" serif:id="beam"><path id="beam11" serif:id="beam" d="M44.212,64.534c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,-0 -4.901,2.196 -4.901,4.901c0,2.704 2.197,4.9 4.901,4.9c2.705,0 4.901,-2.196 4.901,-4.9Z" style="fill:#fff;"></path></g><g id="beam12" serif:id="beam"><path id="beam13" serif:id="beam" d="M25.73,17.943c-1.911,-1.911 -5.015,-1.911 -6.926,0l-0.005,0.005c-1.911,1.911 -1.911,5.015 0,6.926c1.911,1.911 5.015,1.911 6.926,0l0.005,-0.005c1.911,-1.911 1.911,-5.014 -0,-6.926Z" style="fill:#fff;"></path></g><g id="beam14" serif:id="beam"><path id="beam15" serif:id="beam" d="M64.098,34.623c-2.699,0 -4.891,2.192 -4.891,4.892l-0,0.019c-0,2.699 2.192,4.891 4.891,4.891c2.7,0 4.892,-2.192 4.892,-4.891l0,-0.019c0,-2.7 -2.192,-4.892 -4.892,-4.892Z" style="fill:#fff;"></path></g></g></g></svg>
+    </template>
+
+    <template v-if="mode == 'darkest'">
+        <svg width="100%" height="100%" viewbox="0 0 79 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g id="mode_darkest"><rect id="Bounds" x="0" y="-0" width="78.623" height="79.049" style="fill:none;"></rect><path d="M39.315,23.791c8.684,-0 15.734,7.05 15.734,15.733c0,8.684 -7.05,15.734 -15.734,15.734c-8.683,0 -15.733,-7.05 -15.733,-15.734c-0,-8.683 7.05,-15.733 15.733,-15.733Zm0,4.737c6.069,0 10.997,4.927 10.997,10.996c-0,6.069 -4.928,10.996 -10.997,10.996c-6.068,0 -10.996,-4.927 -10.996,-10.996c0,-6.069 4.928,-10.996 10.996,-10.996Z" style="fill:#fff;"></path><g id="beams"><g id="beam"><path id="beam1" serif:id="beam" d="M44.216,14.515c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,0 -4.9,2.196 -4.9,4.901c-0,2.705 2.196,4.901 4.9,4.901c2.705,0 4.901,-2.196 4.901,-4.901Z" style="fill:#fff;"></path></g><g id="beam2" serif:id="beam"><path id="beam3" serif:id="beam" d="M60.666,24.892c1.902,-1.902 1.902,-4.99 0,-6.892l-0.04,-0.039c-1.901,-1.902 -4.989,-1.902 -6.891,-0c-1.901,1.901 -1.901,4.989 0,6.891l0.04,0.04c1.902,1.901 4.99,1.901 6.891,-0Z" style="fill:#fff;"></path></g><g id="beam4" serif:id="beam"><path id="beam5" serif:id="beam" d="M25.737,61.103c1.909,-1.91 1.909,-5.011 -0,-6.921l-0.01,-0.01c-1.91,-1.91 -5.011,-1.91 -6.921,-0c-1.91,1.91 -1.91,5.011 -0,6.921l0.01,0.01c1.91,1.91 5.011,1.91 6.921,-0Z" style="fill:#fff;"></path></g><g id="beam6" serif:id="beam"><path id="beam7" serif:id="beam" d="M60.676,54.167c-1.907,-1.907 -5.004,-1.907 -6.911,0l-0.02,0.02c-1.907,1.907 -1.907,5.004 0,6.911c1.907,1.907 5.004,1.907 6.911,-0l0.02,-0.02c1.907,-1.907 1.907,-5.004 0,-6.911Z" style="fill:#fff;"></path></g><g id="beam8" serif:id="beam"><path id="beam9" serif:id="beam" d="M14.524,34.623c-2.702,0 -4.896,2.194 -4.896,4.896l0,0.01c0,2.702 2.194,4.896 4.896,4.896c2.702,0 4.896,-2.194 4.896,-4.896l0,-0.01c0,-2.702 -2.194,-4.896 -4.896,-4.896Z" style="fill:#fff;"></path></g><g id="beam10" serif:id="beam"><path id="beam11" serif:id="beam" d="M44.216,64.534c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,-0 -4.9,2.196 -4.9,4.901c-0,2.704 2.196,4.9 4.9,4.9c2.705,0 4.901,-2.196 4.901,-4.9Z" style="fill:#fff;"></path></g><g id="beam12" serif:id="beam"><path id="beam13" serif:id="beam" d="M25.734,17.943c-1.911,-1.911 -5.015,-1.911 -6.926,0l-0.005,0.005c-1.911,1.911 -1.911,5.015 0,6.926c1.911,1.911 5.015,1.911 6.926,0l0.005,-0.005c1.911,-1.911 1.911,-5.014 0,-6.926Z" style="fill:#fff;"></path></g><g id="beam14" serif:id="beam"><path id="beam15" serif:id="beam" d="M64.103,34.623c-2.7,0 -4.892,2.192 -4.892,4.892l-0,0.019c-0,2.699 2.192,4.891 4.892,4.891c2.699,0 4.891,-2.192 4.891,-4.891l0,-0.019c0,-2.7 -2.192,-4.892 -4.891,-4.892Z" style="fill:#fff;"></path></g></g></g></svg>
+    </template>
+</a>
+
+<script>
+(function() {
+    const LOCAL_STORAGE_KEY = 'piccoloThemeMode'
+
+    var initialMode = localStorage.getItem(LOCAL_STORAGE_KEY)
+
+    if (initialMode) {
+        // Make sure the value in local storage is valid
+        if (['light', 'dark', 'darkest'].indexOf(initialMode) == -1) {
+            initialMode = 'light'
+            localStorage.setItem(LOCAL_STORAGE_KEY, initialMode)
+        }
+    } else {
+        // Check if the client prefers dark mode
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            initialMode = 'dark'
+        } else {
+            initialMode = 'light'
+        }
+        localStorage.setItem(LOCAL_STORAGE_KEY, initialMode)
+    }
+
+    document.documentElement.dataset.mode = initialMode
+
+    PetiteVue.createApp({
+        'mode': initialMode,
+        handleClick() {
+            let currentMode = this.mode
+
+            if (currentMode == 'light') {
+                this.mode = 'dark'
+            } else if (currentMode == 'dark') {
+                this.mode = 'darkest'
+            } else if (currentMode == 'darkest') {
+                this.mode = 'light'
+            }
+
+            document.documentElement.dataset.mode = this.mode
+            localStorage.setItem(LOCAL_STORAGE_KEY, this.mode)
+
+            console.log(this.mode)
+        }
+    }).mount('#mode_toggle')
+})()
+</script>
+            <p class="mobile_search_link">
+                <a href="../../../search.html" title="Search">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 65 64" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2">
+                        <path d="M14.873 40.009c-2.315-3.943-3.642-8.532-3.642-13.429C11.231 11.91 23.141 0 37.811 0s26.58 11.91 26.58 26.58-11.91 26.58-26.58 26.58a26.44 26.44 0 0 1-14.277-4.161L9.739 62.794a3.12 3.12 0 0 1-4.413 0L.913 58.382c-1.217-1.218-1.217-3.196 0-4.413l13.96-13.96zM37.811 8.054c10.225 0 18.526 8.301 18.526 18.526s-8.301 18.526-18.526 18.526-18.526-8.301-18.526-18.526S27.586 8.054 37.811 8.054z" fill="#fff"></path>
+                    </svg>
+                </a>
+            </p>
+        
+
+        <div class="searchbox_wrapper">
+            
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+      <input type="submit" value="Go">
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+    </nav>
+</div>
+
+    
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper"><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">DEXPI Information Models</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../Builtin/model-index.html">Builtin</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Core/model-index.html">Core</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../model-index.html">Plant</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../Diagram/package-index.html">Diagram</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Enumerations/package-index.html">Enumerations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Instrumentation/package-index.html">Instrumentation</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="package-index.html">Piping</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../PlantModel.html">PlantModel</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../PlantStructure/package-index.html">PlantStructure</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../ProcessEquipment/package-index.html">ProcessEquipment</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../Process/model-index.html">Process</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../disc-models/index.html">DISC Information Models</a></li>
+</ul>
+
+        </div>
+      </div>
+
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="pipingnetworksegment">
+<h1>PipingNetworkSegment<a class="headerlink" href="#pipingnetworksegment" title="Link to this heading">¶</a></h1>
+<p><a class="sp-element reference internal" href="../model-index.html"><span class="doc">Plant</span></a><span class="sp-element">::</span><a class="sp-element reference internal" href="package-index.html"><span class="doc">Piping</span></a><span class="sp-element">::</span><span class="sp-element">PipingNetworkSegment</span></p>
+<section id="Overview">
+<h2>Overview<a class="headerlink" href="#Overview" title="Link to this heading">¶</a></h2>
+<p class="rubric">Concrete Class</p>
+<p><strong>RDL:</strong><span> </span><a class="reference external" href="http://data.posccaesar.org/rdl/RDS267704">PIPING NETWORK SEGMENT (http://data.posccaesar.org/rdl/RDS267704)</a></p>
+<p><span>(</span><a class="reference external" href="../../../_images/uml-248.svg">Fullscreen Diagram</a><span>)</span></p>
+<svg xmlns:ns0="http://www.w3.org/2000/svg" width="1119.8649609375px" viewBox="0.0 0.0 1119.8649609375 829.4" style="max-width: 100%; background-color: white;"><style>
+            .uml-foreground-stroke {
+                stroke: black;
+                stroke-width: 1px;
+            }
+            
+            .uml-foreground-fill {
+                fill: black;
+            }
+            
+            .uml-background_color-type {
+                fill: #ffffcc;
+            }
+            
+            .uml-background_color-main_type {
+                fill: #ffff66;
+            }
+            
+            .uml-background_color-instance {
+                fill: blue;
+            }
+            
+            .uml-background_color-background {
+                fill: white;
+            }
+            
+            .uml-background_color-foreground {
+                fill: black;
+            }
+            
+            .uml-font-normal {
+                font-family: Arial;
+            }
+            
+            .uml-font-element {
+                font-family: Arial;
+            }
+            
+            .uml-fontsize-normal {
+                font-size: 10px;
+            }
+
+            .uml-fontsize-large {
+                font-size: 12px;
+            }
+            
+            .uml-source_marker-closed_arrow {
+                marker-start: url(#uml-marker-closed_arrow);
+            }
+            
+            .uml-source_marker-open_arrow {
+                marker-start: url(#uml-marker-open_arrow);
+            }
+            
+            .uml-source_marker-filled_diamond {
+                marker-start: url(#uml-marker-filled_diamond);
+            }
+
+            .uml-target_marker-closed_arrow {
+                marker-end: url(#uml-marker-closed_arrow);
+            }
+            
+            .uml-target_marker-open_arrow {
+                marker-end: url(#uml-marker-open_arrow);
+            }
+            
+            .uml-target_marker-filled_diamond {
+                marker-end: url(#uml-marker-filled_diamond);
+            }
+
+            </style><defs>
+        <marker id="uml-marker-closed_arrow" viewBox="-2 -2 14 14" refX="10" refY="5.0" markerWidth="14" markerHeight="14" orient="auto-start-reverse">
+          <path d="M 0 0 L 10 5.0 L 0 10 Z" stroke-linejoin="round" stroke-linecap="round" class="uml-foreground-stroke uml-background_color-background"></path>
+        </marker>
+        <marker id="uml-marker-open_arrow" viewBox="-2 -2 14 14" refX="10" refY="5.0" markerWidth="14" markerHeight="14" orient="auto-start-reverse">
+          <path d="M 0 0 L 10 5.0 L 0 10" stroke-linejoin="round" stroke-linecap="round" fill="none" class="uml-foreground-stroke"></path>
+        </marker>
+        <marker id="uml-marker-filled_diamond" viewBox="-2 -2 14 14" refX="10" refY="5.0" markerWidth="14" markerHeight="14" orient="auto-start-reverse">
+          <path d="M 0 5.0 L      5.0 2.0        10 5.0      5.0 8.0 Z       " stroke-linejoin="round" stroke-linecap="round" class="uml-foreground-stroke uml-background_color-foreground"></path>
+        </marker>
+      </defs><rect class="uml-background_color-type uml-foreground-stroke" x="232.4710937499999" y="125.19999999999999" width="200.0" height="23.799999999999997"></rect><text x="332.4710937499999" text-anchor="middle" font-size="0px" y="140.64"><a href="../../../dexpi-models/Core/ConceptualObject.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold" font-style="italic">ConceptualObject</tspan></a></text><rect class="uml-background_color-type uml-foreground-stroke" x="611.5835937499999" y="125.19999999999999" width="184.33925781250002" height="23.799999999999997"></rect><text x="703.7532226562498" text-anchor="middle" font-size="0px" y="140.64"><a href="../../../dexpi-models/Plant/Instrumentation/ActuatingElectricalLocation.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold" font-style="italic">ActuatingElectricalLocation</tspan></a></text><rect class="uml-background_color-type uml-foreground-stroke" x="854.8319140625" y="125.19999999999999" width="117.36859375000002" height="23.799999999999997"></rect><text x="913.5162109375" text-anchor="middle" font-size="0px" y="140.64"><a href="../../../dexpi-models/Plant/Instrumentation/SensingLocation.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold" font-style="italic">SensingLocation</tspan></a></text><rect class="uml-background_color-type uml-foreground-stroke" x="700.1738811383926" y="793.5999999999999" width="123.82035156250002" height="23.799999999999997"></rect><text x="762.0840569196426" text-anchor="middle" font-size="0px" y="809.04"><a href="../../../dexpi-models/Plant/Piping/PipingConnection.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold" font-style="italic">PipingConnection</tspan></a></text><rect class="uml-background_color-type uml-foreground-stroke" x="843.9942327008927" y="793.5999999999999" width="189.96859375000005" height="23.799999999999997"></rect><text x="938.9785295758927" text-anchor="middle" font-size="0px" y="809.04"><a href="../../../dexpi-models/Plant/Piping/PipingNetworkSegmentItem.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold" font-style="italic">PipingNetworkSegmentItem</tspan></a></text><rect class="uml-background_color-type uml-foreground-stroke" x="268.56745210193424" y="793.5999999999999" width="124.60732421875002" height="23.799999999999997"></rect><text x="330.87111421130925" text-anchor="middle" font-size="0px" y="809.04"><a href="../../../dexpi-models/Plant/Piping/PipingSourceItem.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold" font-style="italic">PipingSourceItem</tspan></a></text><rect class="uml-background_color-type uml-foreground-stroke" x="559.6077678571426" y="793.5999999999999" width="120.56611328125003" height="23.799999999999997"></rect><text x="619.8908244977675" text-anchor="middle" font-size="0px" y="809.04"><a href="../../../dexpi-models/Plant/Piping/PipingTargetItem.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold" font-style="italic">PipingTargetItem</tspan></a></text><rect class="uml-background_color-type uml-foreground-stroke" x="291.4625325520832" y="12.0" width="148.6837890625" height="23.799999999999997"></rect><text x="365.80442708333317" text-anchor="middle" font-size="0px" y="27.439999999999998"><a href="../../../dexpi-models/Core/Diagram/AttributeRepresentation.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold">AttributeRepresentation</tspan></a></text><rect class="uml-background_color-type uml-foreground-stroke" x="135.25042317708323" y="12.0" width="136.212109375" height="23.799999999999997"></rect><text x="203.35647786458324" text-anchor="middle" font-size="0px" y="27.439999999999998"><a href="../../../dexpi-models/Core/Diagram/RepresentationGroup.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold">RepresentationGroup</tspan></a></text><rect class="uml-background_color-type uml-foreground-stroke" x="35.693359375" y="268.4" width="50.0" height="23.799999999999997"></rect><text x="60.693359375" text-anchor="middle" font-size="0px" y="283.84"><a href="../../../dexpi-models/Core/Note.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold">Note</tspan></a></text><rect class="uml-background_color-type uml-foreground-stroke" x="235.11884765624995" y="268.4" width="119.3189453125" height="23.799999999999997"></rect><text x="294.77832031249994" text-anchor="middle" font-size="0px" y="283.84"><a href="../../../dexpi-models/Core/PersistentIdentifier.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold">PersistentIdentifier</tspan></a></text><rect class="uml-background_color-type uml-foreground-stroke" x="149.7373046875" y="268.4" width="50.0" height="23.799999999999997"></rect><text x="174.7373046875" text-anchor="middle" font-size="0px" y="283.84"><a href="../../../dexpi-models/Core/Role.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold">Role</tspan></a></text><rect class="uml-background_color-type uml-foreground-stroke" x="619.14716796875" y="12.0" width="169.212109375" height="23.799999999999997"></rect><text x="703.7532226562499" text-anchor="middle" font-size="0px" y="27.439999999999998"><a href="../../../dexpi-models/Plant/Instrumentation/ActuatingElectricalFunction.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold">ActuatingElectricalFunction</tspan></a></text><rect class="uml-background_color-type uml-foreground-stroke" x="992.2005078125" y="125.19999999999999" width="115.66445312500001" height="23.799999999999997"></rect><text x="1050.032734375" text-anchor="middle" font-size="0px" y="140.64"><a href="../../../dexpi-models/Plant/Instrumentation/ActuatingFunction.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold">ActuatingFunction</tspan></a></text><rect class="uml-background_color-type uml-foreground-stroke" x="808.3592773437499" y="12.0" width="210.31386718750002" height="23.799999999999997"></rect><text x="913.5162109374999" text-anchor="middle" font-size="0px" y="27.439999999999998"><a href="../../../dexpi-models/Plant/Instrumentation/ProcessSignalGeneratingFunction.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold">ProcessSignalGeneratingFunction</tspan></a></text><rect class="uml-background_color-main_type uml-foreground-stroke" x="374.43779296874993" y="268.4" width="658.630859375" height="395.8"></rect><text x="703.7532226562499" text-anchor="middle" font-size="0px" y="283.84"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold">PipingNetworkSegment</tspan></text><polyline class="uml-foreground-stroke" points="374.43779296874993,292.2 1033.0686523437498,292.2" fill="none"></polyline><text x="379.43779296874993" font-size="0px" y="308.64"><a href="../../../dexpi-models/Plant/Piping/PipingNetworkSegment.html#sp:plant.piping.pipingnetworksegment.colorcode"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">ColorCode</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> :</tspan></text><text x="647.0569335937499" font-size="0px" y="308.64"><a href="../../../dexpi-models/Builtin/Undefined.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Undefined</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> | </tspan><a href="../../../dexpi-models/Builtin/String.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">String</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> [0..1]</tspan></text><text x="379.43779296874993" font-size="0px" y="322.44"><a href="../../../dexpi-models/Plant/Piping/PipingNetworkSegment.html#sp:plant.piping.pipingnetworksegment.flowdirection"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">FlowDirection</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> :</tspan></text><text x="647.0569335937499" font-size="0px" y="322.44"><a href="../../../dexpi-models/Plant/Enumerations/PipingNetworkSegmentFlowClassification.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">PipingNetworkSegmentFlowClassification</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> [0..1]</tspan></text><text x="379.43779296874993" font-size="0px" y="336.24"><a href="../../../dexpi-models/Plant/Piping/PipingNetworkSegment.html#sp:plant.piping.pipingnetworksegment.fluidcode"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">FluidCode</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> :</tspan></text><text x="647.0569335937499" font-size="0px" y="336.24"><a href="../../../dexpi-models/Builtin/Undefined.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Undefined</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> | </tspan><a href="../../../dexpi-models/Builtin/String.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">String</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> [0..1]</tspan></text><text x="379.43779296874993" font-size="0px" y="350.04"><a href="../../../dexpi-models/Plant/Piping/PipingNetworkSegment.html#sp:plant.piping.pipingnetworksegment.heattracingtype"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">HeatTracingType</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> :</tspan></text><text x="647.0569335937499" font-size="0px" y="350.04"><a href="../../../dexpi-models/Plant/Enumerations/HeatTracingTypeClassification.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">HeatTracingTypeClassification</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> [0..1]</tspan></text><text x="379.43779296874993" font-size="0px" y="363.84000000000003"><a href="../../../dexpi-models/Plant/Piping/PipingNetworkSegment.html#sp:plant.piping.pipingnetworksegment.heattracingtyperepresentation"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">HeatTracingTypeRepresentation</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> :</tspan></text><text x="647.0569335937499" font-size="0px" y="363.84000000000003"><a href="../../../dexpi-models/Builtin/Undefined.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Undefined</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> | </tspan><a href="../../../dexpi-models/Builtin/String.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">String</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> [0..1]</tspan></text><text x="379.43779296874993" font-size="0px" y="377.64000000000004"><a href="../../../dexpi-models/Plant/Piping/PipingNetworkSegment.html#sp:plant.piping.pipingnetworksegment.inclination"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Inclination</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> :</tspan></text><text x="647.0569335937499" font-size="0px" y="377.64000000000004"><a href="../../../dexpi-models/Builtin/Undefined.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Undefined</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> | </tspan><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">&lt;</tspan><a href="../../../dexpi-models/Core/PhysicalQuantities/PhysicalQuantity.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">PhysicalQuantity</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> with </tspan><a href="../../../dexpi-models/Core/PhysicalQuantities/PhysicalQuantity.html#sp:core.physicalquantities.physicalquantity.unittype"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">UnitType</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> → </tspan><a href="../../../dexpi-models/Core/PhysicalQuantities/PercentageUnit.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">PercentageUnit</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">&gt;</tspan><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> [0..1]</tspan></text><text x="379.43779296874993" font-size="0px" y="391.44000000000005"><a href="../../../dexpi-models/Plant/Piping/PipingNetworkSegment.html#sp:plant.piping.pipingnetworksegment.insulationthickness"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">InsulationThickness</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> :</tspan></text><text x="647.0569335937499" font-size="0px" y="391.44000000000005"><a href="../../../dexpi-models/Builtin/Undefined.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Undefined</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> | </tspan><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">&lt;</tspan><a href="../../../dexpi-models/Core/PhysicalQuantities/PhysicalQuantity.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">PhysicalQuantity</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> with </tspan><a href="../../../dexpi-models/Core/PhysicalQuantities/PhysicalQuantity.html#sp:core.physicalquantities.physicalquantity.unittype"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">UnitType</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> → </tspan><a href="../../../dexpi-models/Core/PhysicalQuantities/LengthUnit.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">LengthUnit</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">&gt;</tspan><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> [0..1]</tspan></text><text x="379.43779296874993" font-size="0px" y="405.24000000000007"><a href="../../../dexpi-models/Plant/Piping/PipingNetworkSegment.html#sp:plant.piping.pipingnetworksegment.insulationtype"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">InsulationType</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> :</tspan></text><text x="647.0569335937499" font-size="0px" y="405.24000000000007"><a href="../../../dexpi-models/Builtin/Undefined.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Undefined</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> | </tspan><a href="../../../dexpi-models/Builtin/String.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">String</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> [0..1]</tspan></text><text x="379.43779296874993" font-size="0px" y="419.0400000000001"><a href="../../../dexpi-models/Plant/Piping/PipingNetworkSegment.html#sp:plant.piping.pipingnetworksegment.jacketedpipe"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">JacketedPipe</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> :</tspan></text><text x="647.0569335937499" font-size="0px" y="419.0400000000001"><a href="../../../dexpi-models/Plant/Enumerations/JacketedPipeClassification.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">JacketedPipeClassification</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> [0..1]</tspan></text><text x="379.43779296874993" font-size="0px" y="432.8400000000001"><a href="../../../dexpi-models/Plant/Piping/PipingNetworkSegment.html#sp:plant.piping.pipingnetworksegment.lowerlimitheattracingtemperature"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">LowerLimitHeatTracingTemperature</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> :</tspan></text><text x="647.0569335937499" font-size="0px" y="432.8400000000001"><a href="../../../dexpi-models/Builtin/Undefined.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Undefined</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> | </tspan><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">&lt;</tspan><a href="../../../dexpi-models/Core/PhysicalQuantities/PhysicalQuantity.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">PhysicalQuantity</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> with </tspan><a href="../../../dexpi-models/Core/PhysicalQuantities/PhysicalQuantity.html#sp:core.physicalquantities.physicalquantity.unittype"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">UnitType</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> → </tspan><a href="../../../dexpi-models/Core/PhysicalQuantities/TemperatureUnit.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">TemperatureUnit</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">&gt;</tspan><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> [0..1]</tspan></text><text x="379.43779296874993" font-size="0px" y="446.6400000000001"><a href="../../../dexpi-models/Plant/Piping/PipingNetworkSegment.html#sp:plant.piping.pipingnetworksegment.nominaldiameternumericalvaluerepresentation"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">NominalDiameterNumericalValueRepresentation</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> :</tspan></text><text x="647.0569335937499" font-size="0px" y="446.6400000000001"><a href="../../../dexpi-models/Builtin/Undefined.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Undefined</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> | </tspan><a href="../../../dexpi-models/Builtin/String.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">String</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> [0..1]</tspan></text><text x="379.43779296874993" font-size="0px" y="460.4400000000001"><a href="../../../dexpi-models/Plant/Piping/PipingNetworkSegment.html#sp:plant.piping.pipingnetworksegment.nominaldiameterrepresentation"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">NominalDiameterRepresentation</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> :</tspan></text><text x="647.0569335937499" font-size="0px" y="460.4400000000001"><a href="../../../dexpi-models/Builtin/Undefined.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Undefined</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> | </tspan><a href="../../../dexpi-models/Builtin/String.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">String</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> [0..1]</tspan></text><text x="379.43779296874993" font-size="0px" y="474.2400000000001"><a href="../../../dexpi-models/Plant/Piping/PipingNetworkSegment.html#sp:plant.piping.pipingnetworksegment.nominaldiameterstandard"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">NominalDiameterStandard</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> :</tspan></text><text x="647.0569335937499" font-size="0px" y="474.2400000000001"><a href="../../../dexpi-models/Plant/Enumerations/NominalDiameterStandardClassification.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">NominalDiameterStandardClassification</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> [0..1]</tspan></text><text x="379.43779296874993" font-size="0px" y="488.04000000000013"><a href="../../../dexpi-models/Plant/Piping/PipingNetworkSegment.html#sp:plant.piping.pipingnetworksegment.nominaldiametertyperepresentation"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">NominalDiameterTypeRepresentation</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> :</tspan></text><text x="647.0569335937499" font-size="0px" y="488.04000000000013"><a href="../../../dexpi-models/Builtin/Undefined.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Undefined</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> | </tspan><a href="../../../dexpi-models/Builtin/String.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">String</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> [0..1]</tspan></text><text x="379.43779296874993" font-size="0px" y="501.84000000000015"><a href="../../../dexpi-models/Plant/Piping/PipingNetworkSegment.html#sp:plant.piping.pipingnetworksegment.onhold"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">OnHold</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> :</tspan></text><text x="647.0569335937499" font-size="0px" y="501.84000000000015"><a href="../../../dexpi-models/Plant/Enumerations/OnHoldClassification.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">OnHoldClassification</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> [0..1]</tspan></text><text x="379.43779296874993" font-size="0px" y="515.6400000000002"><a href="../../../dexpi-models/Plant/Piping/PipingNetworkSegment.html#sp:plant.piping.pipingnetworksegment.operatingtemperature"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">OperatingTemperature</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> :</tspan></text><text x="647.0569335937499" font-size="0px" y="515.6400000000002"><a href="../../../dexpi-models/Builtin/Undefined.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Undefined</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> | </tspan><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">&lt;</tspan><a href="../../../dexpi-models/Core/PhysicalQuantities/PhysicalQuantity.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">PhysicalQuantity</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> with </tspan><a href="../../../dexpi-models/Core/PhysicalQuantities/PhysicalQuantity.html#sp:core.physicalquantities.physicalquantity.unittype"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">UnitType</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> → </tspan><a href="../../../dexpi-models/Core/PhysicalQuantities/TemperatureUnit.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">TemperatureUnit</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">&gt;</tspan><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> [0..1]</tspan></text><text x="379.43779296874993" font-size="0px" y="529.4400000000002"><a href="../../../dexpi-models/Plant/Piping/PipingNetworkSegment.html#sp:plant.piping.pipingnetworksegment.pipingclasscode"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">PipingClassCode</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> :</tspan></text><text x="647.0569335937499" font-size="0px" y="529.4400000000002"><a href="../../../dexpi-models/Builtin/Undefined.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Undefined</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> | </tspan><a href="../../../dexpi-models/Builtin/String.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">String</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> [0..1]</tspan></text><text x="379.43779296874993" font-size="0px" y="543.2400000000001"><a href="../../../dexpi-models/Plant/Piping/PipingNetworkSegment.html#sp:plant.piping.pipingnetworksegment.pressuretestcircuitnumber"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">PressureTestCircuitNumber</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> :</tspan></text><text x="647.0569335937499" font-size="0px" y="543.2400000000001"><a href="../../../dexpi-models/Builtin/Undefined.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Undefined</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> | </tspan><a href="../../../dexpi-models/Builtin/String.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">String</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> [0..1]</tspan></text><text x="379.43779296874993" font-size="0px" y="557.0400000000001"><a href="../../../dexpi-models/Plant/Piping/PipingNetworkSegment.html#sp:plant.piping.pipingnetworksegment.primarysecondarypipingnetworksegment"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">PrimarySecondaryPipingNetworkSegment</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> :</tspan></text><text x="647.0569335937499" font-size="0px" y="557.0400000000001"><a href="../../../dexpi-models/Plant/Enumerations/PrimarySecondaryPipingNetworkSegmentClassification.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">PrimarySecondaryPipingNetworkSegmentClassification</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> [0..1]</tspan></text><text x="379.43779296874993" font-size="0px" y="570.84"><a href="../../../dexpi-models/Plant/Piping/PipingNetworkSegment.html#sp:plant.piping.pipingnetworksegment.segmentnumber"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">SegmentNumber</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> :</tspan></text><text x="647.0569335937499" font-size="0px" y="570.84"><a href="../../../dexpi-models/Builtin/Undefined.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Undefined</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> | </tspan><a href="../../../dexpi-models/Builtin/String.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">String</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> [0..1]</tspan></text><text x="379.43779296874993" font-size="0px" y="584.64"><a href="../../../dexpi-models/Plant/Piping/PipingNetworkSegment.html#sp:plant.piping.pipingnetworksegment.siphon"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Siphon</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> :</tspan></text><text x="647.0569335937499" font-size="0px" y="584.64"><a href="../../../dexpi-models/Plant/Enumerations/SiphonClassification.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">SiphonClassification</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> [0..1]</tspan></text><text x="379.43779296874993" font-size="0px" y="598.4399999999999"><a href="../../../dexpi-models/Plant/Piping/PipingNetworkSegment.html#sp:plant.piping.pipingnetworksegment.slope"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Slope</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> :</tspan></text><text x="647.0569335937499" font-size="0px" y="598.4399999999999"><a href="../../../dexpi-models/Plant/Enumerations/PipingNetworkSegmentSlopeClassification.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">PipingNetworkSegmentSlopeClassification</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> [0..1]</tspan></text><polyline class="uml-foreground-stroke" points="374.43779296874993,606.8 1033.0686523437498,606.8" fill="none"></polyline><text x="379.43779296874993" font-size="0px" y="623.24"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-style="italic">from </tspan><a href="../../../disc-models/DiscProfile/model-index.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-style="italic">DiscProfile:</tspan></a></text><text x="379.43779296874993" font-size="0px" y="642.04"><a href="../../../disc-models/DiscProfile/InformationModel/PipingNetworkSegmentExtension.html#sp:discprofile.informationmodel.pipingnetworksegmentextension.heattracerequired"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">HeatTraceRequired</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> :</tspan></text><text x="567.0530273437499" font-size="0px" y="642.04"><a href="../../../dexpi-models/Builtin/Undefined.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Undefined</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> | </tspan><a href="../../../disc-models/DiscProfile/InformationModel/HeatTraceRequired.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">HeatTraceRequired</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> [0..1]</tspan></text><text x="379.43779296874993" font-size="0px" y="655.8399999999999"><a href="../../../disc-models/DiscProfile/InformationModel/PipingNetworkSegmentExtension.html#sp:discprofile.informationmodel.pipingnetworksegmentextension.segmentlinetyperepresentation"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">SegmentLineTypeRepresentation</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> :</tspan></text><text x="567.0530273437499" font-size="0px" y="655.8399999999999"><a href="../../../dexpi-models/Builtin/Undefined.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Undefined</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> | </tspan><a href="../../../dexpi-models/Builtin/String.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">String</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> [0..1]</tspan></text><rect class="uml-background_color-type uml-foreground-stroke" x="452.4710937499999" y="125.19999999999999" width="139.1125" height="23.799999999999997"></rect><text x="522.0273437499999" text-anchor="middle" font-size="0px" y="140.64"><a href="../../../dexpi-models/Plant/Piping/PipingNetworkSystem.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold">PipingNetworkSystem</tspan></a></text><rect class="uml-background_color-type uml-foreground-stroke" x="439.6077678571427" y="793.5999999999999" width="100.0" height="23.799999999999997"></rect><text x="489.6077678571427" text-anchor="middle" font-size="0px" y="809.04"><a href="../../../dexpi-models/Plant/Piping/PipingNode.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold">PipingNode</tspan></a></text><polyline class="uml-foreground-stroke uml-source_marker-closed_arrow" points="392.4710937499999,149.0 392.4710937499999,213.2 392.4710937499999,214.2 392.4710937499999,232.59999999999997 484.20960286458325,232.59999999999997 484.20960286458325,268.4" fill="none"></polyline><polyline class="uml-foreground-stroke uml-source_marker-closed_arrow" points="703.7532226562498,149.0 703.7532226562499,213.2 703.7532226562499,214.2 703.7532226562499,268.4" fill="none"></polyline><polyline class="uml-foreground-stroke uml-source_marker-closed_arrow" points="913.5162109375,149.0 913.5162109375,213.2 913.5162109375,214.2 913.5162109375,232.59999999999997 813.5250325520833,232.59999999999997 813.5250325520833,268.4" fill="none"></polyline><rect class="uml-background_color-background " x="129.38671875" y="204.79999999999998" width="90.701171875" height="17.799999999999997"></rect><text x="174.7373046875" text-anchor="middle" font-size="0px" y="217.23999999999998"><a href="../../../dexpi-models/Core/ConceptualObject.html#sp:core.conceptualobject.performedroles"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">PerformedRoles</tspan></a></text><polyline class="uml-foreground-stroke" points="312.4710937499999,149.0 312.4710937499999,184.79999999999998 174.7373046875,184.79999999999998 174.7373046875,204.79999999999998" fill="none"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="174.7373046875,222.59999999999997 174.7373046875,268.4" fill="none"></polyline><text x="320.4710937499999" font-size="0px" y="161.2"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</tspan></text><text x="182.7373046875" font-size="0px" y="262.79999999999995"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</tspan></text><rect class="uml-background_color-background " x="240.087890625" y="204.79999999999998" width="109.380859375" height="17.799999999999997"></rect><text x="294.7783203125" text-anchor="middle" font-size="0px" y="217.23999999999998"><a href="../../../dexpi-models/Core/ConceptualObject.html#sp:core.conceptualobject.persistentidentifiers"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">PersistentIdentifiers</tspan></a></text><polyline class="uml-foreground-stroke uml-source_marker-filled_diamond" points="352.4710937499999,149.0 352.4710937499999,194.79999999999998 294.7783203125,194.79999999999998 294.7783203125,204.79999999999998" fill="none"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="294.7783203125,222.59999999999997 294.77832031249994,268.4" fill="none"></polyline><text x="360.4710937499999" font-size="0px" y="161.2"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">0..1</tspan></text><text x="302.7783203125" font-size="0px" y="262.79999999999995"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</tspan></text><rect class="uml-background_color-background " x="12.0" y="204.79999999999998" width="97.38671875" height="17.799999999999997"></rect><text x="60.693359375" text-anchor="middle" font-size="0px" y="217.23999999999998"><a href="../../../dexpi-models/Core/ConceptualObject.html#sp:core.conceptualobject.referencednotes"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">ReferencedNotes</tspan></a></text><polyline class="uml-foreground-stroke" points="272.4710937499999,149.0 272.4710937499999,174.79999999999998 60.693359375,174.79999999999998 60.693359375,204.79999999999998" fill="none"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="60.693359375,222.59999999999997 60.693359375,268.4" fill="none"></polyline><text x="280.4710937499999" font-size="0px" y="161.2"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</tspan></text><text x="68.693359375" font-size="0px" y="262.79999999999995"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</tspan></text><rect class="uml-background_color-background " x="346.4636067708333" y="71.6" width="38.681640625" height="17.799999999999997"></rect><text x="365.8044270833333" text-anchor="middle" font-size="0px" y="84.03999999999999"><a href="../../../dexpi-models/Core/Diagram/AttributeRepresentation.html#sp:core.diagram.attributerepresentation.object"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Object</tspan></a></text><polyline class="uml-foreground-stroke" points="365.80442708333317,35.8 365.8044270833333,71.6" fill="none"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="365.8044270833333,89.39999999999999 365.8044270833332,125.19999999999999" fill="none"></polyline><text x="373.80442708333317" font-size="0px" y="48.0"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</tspan></text><rect class="uml-background_color-background " x="170.6738606770832" y="71.6" width="65.365234375" height="17.799999999999997"></rect><text x="203.3564778645832" text-anchor="middle" font-size="0px" y="84.03999999999999"><a href="../../../dexpi-models/Core/Diagram/RepresentationGroup.html#sp:core.diagram.representationgroup.represents"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Represents</tspan></a></text><polyline class="uml-foreground-stroke" points="203.35647786458324,35.8 203.3564778645832,71.6" fill="none"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="203.3564778645832,89.39999999999999 203.3564778645832,99.39999999999999 299.13776041666654,99.39999999999999 299.13776041666654,125.19999999999999" fill="none"></polyline><text x="211.3564778645832" font-size="0px" y="48.0"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</tspan></text><rect class="uml-background_color-background " x="629.7122070312499" y="71.6" width="148.08203125" height="17.799999999999997"></rect><text x="703.7532226562499" text-anchor="middle" font-size="0px" y="84.03999999999999"><a href="../../../dexpi-models/Plant/Instrumentation/ActuatingElectricalFunction.html#sp:plant.instrumentation.actuatingelectricalfunction.actuatingelectricallocation"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">ActuatingElectricalLocation</tspan></a></text><polyline class="uml-foreground-stroke" points="703.7532226562499,35.8 703.7532226562499,71.6" fill="none"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="703.7532226562499,89.39999999999999 703.7532226562498,125.19999999999999" fill="none"></polyline><text x="711.7532226562499" font-size="0px" y="48.0"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">0..1</tspan></text><text x="711.7532226562499" font-size="0px" y="119.6"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">0..1</tspan></text><rect class="uml-background_color-background " x="1000.3315625" y="204.79999999999998" width="99.40234375" height="17.799999999999997"></rect><text x="1050.032734375" text-anchor="middle" font-size="0px" y="217.23999999999998"><a href="../../../dexpi-models/Plant/Instrumentation/ActuatingFunction.html#sp:plant.instrumentation.actuatingfunction.actuatinglocation"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">ActuatingLocation</tspan></a></text><polyline class="uml-foreground-stroke" points="1050.032734375,149.0 1050.032734375,204.79999999999998" fill="none"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="1050.032734375,222.59999999999997 1050.032734375,242.59999999999997 923.2968424479166,242.59999999999997 923.2968424479166,268.4" fill="none"></polyline><text x="1058.032734375" font-size="0px" y="161.2"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">0..1</tspan></text><text x="931.2968424479166" font-size="0px" y="262.79999999999995"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">0..1</tspan></text><rect class="uml-background_color-background " x="867.1490234375" y="71.6" width="92.734375" height="17.799999999999997"></rect><text x="913.5162109375" text-anchor="middle" font-size="0px" y="84.03999999999999"><a href="../../../dexpi-models/Plant/Instrumentation/ProcessSignalGeneratingFunction.html#sp:plant.instrumentation.processsignalgeneratingfunction.sensinglocation"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">SensingLocation</tspan></a></text><polyline class="uml-foreground-stroke" points="913.5162109374999,35.8 913.5162109375,71.6" fill="none"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="913.5162109375,89.39999999999999 913.5162109375,125.19999999999999" fill="none"></polyline><text x="921.5162109375" font-size="0px" y="48.0"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</tspan></text><text x="921.5162109375" font-size="0px" y="119.6"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">0..1</tspan></text><rect class="uml-background_color-background " x="726.7295647321426" y="740.0" width="70.708984375" height="17.799999999999997"></rect><text x="762.0840569196426" text-anchor="middle" font-size="0px" y="752.44"><a href="../../../dexpi-models/Plant/Piping/PipingNetworkSegment.html#sp:plant.piping.pipingnetworksegment.connections"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Connections</tspan></a></text><polyline class="uml-foreground-stroke uml-source_marker-filled_diamond" points="844.8884068080356,664.2 844.8884068080356,730.0 762.0840569196426,730.0 762.0840569196426,740.0" fill="none"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="762.0840569196426,757.8 762.0840569196426,793.5999999999999" fill="none"></polyline><text x="852.8884068080356" font-size="0px" y="676.4000000000001"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">0..1</tspan></text><text x="770.0840569196426" font-size="0px" y="788.0"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</tspan></text><rect class="uml-background_color-background " x="922.3095842633927" y="740.0" width="33.337890625" height="17.799999999999997"></rect><text x="938.9785295758927" text-anchor="middle" font-size="0px" y="752.44"><a href="../../../dexpi-models/Plant/Piping/PipingNetworkSegment.html#sp:plant.piping.pipingnetworksegment.items"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Items</tspan></a></text><polyline class="uml-foreground-stroke uml-source_marker-filled_diamond" points="938.9785295758927,664.2 938.9785295758927,740.0" fill="none"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="938.9785295758927,757.8 938.9785295758927,793.5999999999999" fill="none"></polyline><text x="946.9785295758927" font-size="0px" y="676.4000000000001"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">0..1</tspan></text><text x="946.9785295758927" font-size="0px" y="788.0"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</tspan></text><rect class="uml-background_color-background " x="298.1914267113092" y="740.0" width="65.359375" height="17.799999999999997"></rect><text x="330.8711142113092" text-anchor="middle" font-size="0px" y="752.44"><a href="../../../dexpi-models/Plant/Piping/PipingNetworkSegment.html#sp:plant.piping.pipingnetworksegment.sourceitem"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">SourceItem</tspan></a></text><polyline class="uml-foreground-stroke" points="468.52791573660704,664.2 468.52791573660704,690.0 330.8711142113092,690.0 330.8711142113092,740.0" fill="none"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="330.8711142113092,757.8 330.87111421130925,793.5999999999999" fill="none"></polyline><text x="476.52791573660704" font-size="0px" y="676.4000000000001"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">0..1</tspan></text><text x="338.8711142113092" font-size="0px" y="788.0"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">0..1</tspan></text><rect class="uml-background_color-background " x="470.9199423363093" y="740.0" width="70.708984375" height="17.799999999999997"></rect><text x="506.2744345238093" text-anchor="middle" font-size="0px" y="752.44"><a href="../../../dexpi-models/Plant/Piping/PipingNetworkSegment.html#sp:plant.piping.pipingnetworksegment.sourcenode"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">SourceNode</tspan></a></text><polyline class="uml-foreground-stroke" points="656.7081612723214,664.2 656.7081612723214,710.0 506.2744345238093,710.0 506.2744345238093,740.0" fill="none"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="506.2744345238093,757.8 506.2744345238093,793.5999999999999" fill="none"></polyline><text x="664.7081612723214" font-size="0px" y="676.4000000000001"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">0..1</tspan></text><text x="514.2744345238093" font-size="0px" y="788.0"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">0..1</tspan></text><rect class="uml-background_color-background " x="588.8810588727677" y="740.0" width="62.01953125" height="17.799999999999997"></rect><text x="619.8908244977677" text-anchor="middle" font-size="0px" y="752.44"><a href="../../../dexpi-models/Plant/Piping/PipingNetworkSegment.html#sp:plant.piping.pipingnetworksegment.targetitem"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">TargetItem</tspan></a></text><polyline class="uml-foreground-stroke" points="750.7982840401785,664.2 750.7982840401785,720.0 619.8908244977677,720.0 619.8908244977677,740.0" fill="none"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="619.8908244977677,757.8 619.8908244977675,793.5999999999999" fill="none"></polyline><text x="758.7982840401785" font-size="0px" y="676.4000000000001"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">0..1</tspan></text><text x="627.8908244977677" font-size="0px" y="788.0"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">0..1</tspan></text><rect class="uml-background_color-background " x="383.5508017113093" y="740.0" width="67.369140625" height="17.799999999999997"></rect><text x="417.2353720238093" text-anchor="middle" font-size="0px" y="752.44"><a href="../../../dexpi-models/Plant/Piping/PipingNetworkSegment.html#sp:plant.piping.pipingnetworksegment.targetnode"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">TargetNode</tspan></a></text><polyline class="uml-foreground-stroke" points="562.6180385044643,664.2 562.6180385044643,700.0 417.2353720238093,700.0 417.2353720238093,740.0" fill="none"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="417.2353720238093,757.8 417.2353720238093,767.8 472.94110119047605,767.8 472.941101190476,793.5999999999999" fill="none"></polyline><text x="570.6180385044643" font-size="0px" y="676.4000000000001"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">0..1</tspan></text><text x="480.94110119047605" font-size="0px" y="788.0"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">0..1</tspan></text><rect class="uml-background_color-background " x="493.0126953124999" y="204.79999999999998" width="58.029296875" height="17.799999999999997"></rect><text x="522.0273437499999" text-anchor="middle" font-size="0px" y="217.23999999999998"><a href="../../../dexpi-models/Plant/Piping/PipingNetworkSystem.html#sp:plant.piping.pipingnetworksystem.segments"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Segments</tspan></a></text><polyline class="uml-foreground-stroke uml-source_marker-filled_diamond" points="522.0273437499999,149.0 522.0273437499999,204.79999999999998" fill="none"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="522.0273437499999,222.59999999999997 522.0273437499999,232.59999999999997 593.9814127604166,232.59999999999997 593.9814127604166,268.4" fill="none"></polyline><text x="530.0273437499999" font-size="0px" y="161.2"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">0..1</tspan></text><text x="601.9814127604166" font-size="0px" y="262.79999999999995"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</tspan></text></svg><p class="rubric">Supertypes</p>
+<ul class="simple">
+<li><p><a class="sp-element reference internal" href="../Instrumentation/ActuatingElectricalLocation.html"><span class="doc">ActuatingElectricalLocation</span></a></p></li>
+<li><p><a class="sp-element reference internal" href="../../Core/ConceptualObject.html"><span class="doc">ConceptualObject</span></a></p></li>
+<li><p><a class="sp-element reference internal" href="../Instrumentation/SensingLocation.html"><span class="doc">SensingLocation</span></a></p></li>
+</ul>
+<p class="rubric">Extensions</p>
+<ul class="simple">
+<li><p><a class="sp-element reference internal" href="../../../disc-models/DiscProfile/InformationModel/PipingNetworkSegmentExtension.html"><span class="doc">PipingNetworkSegmentExtension</span></a></p></li>
+</ul>
+</section>
+<section id="Members">
+<h2>Members<a class="headerlink" href="#Members" title="Link to this heading">¶</a></h2>
+<section id="member-list-section-Composition Properties">
+<h3>Composition Properties<a class="headerlink" href="#member-list-section-Composition%20Properties" title="Link to this heading">¶</a></h3>
+</section>
+<table class="docutils align-left">
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Multiplicity</p></th>
+<th class="head"><p>Type</p></th>
+<th class="head"><p>Ordered</p></th>
+<th class="head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="#sp:plant.piping.pipingnetworksegment.connections"><span class="std std-ref">Connections</span></a></p></td>
+<td><p>*</p></td>
+<td><p><a class="sp-element reference internal" href="PipingConnection.html"><span class="doc">PipingConnection</span></a></p></td>
+<td><p>no</p></td>
+<td><p>The connections of the <span class="sp-element">PipingNetworkSegment</span>.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="#sp:plant.piping.pipingnetworksegment.items"><span class="std std-ref">Items</span></a></p></td>
+<td><p>*</p></td>
+<td><p><a class="sp-element reference internal" href="PipingNetworkSegmentItem.html"><span class="doc">PipingNetworkSegmentItem</span></a></p></td>
+<td><p>no</p></td>
+<td><p>The items of the <span class="sp-element">PipingNetworkSegment</span>.</p></td>
+</tr>
+</tbody>
+</table>
+<section id="member-list-section-Reference Properties">
+<h3>Reference Properties<a class="headerlink" href="#member-list-section-Reference%20Properties" title="Link to this heading">¶</a></h3>
+</section>
+<table class="docutils align-left">
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Multiplicity</p></th>
+<th class="head"><p>Type</p></th>
+<th class="head"><p>Ordered</p></th>
+<th class="head"><p>Unique</p></th>
+<th class="head"><p>Opposite Multiplicity</p></th>
+<th class="head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="#sp:plant.piping.pipingnetworksegment.sourceitem"><span class="std std-ref">SourceItem</span></a></p></td>
+<td><p>0..1</p></td>
+<td><p><a class="sp-element reference internal" href="PipingSourceItem.html"><span class="doc">PipingSourceItem</span></a></p></td>
+<td><p>no</p></td>
+<td><p>no</p></td>
+<td><p>0..1</p></td>
+<td><p>The item at which the <span class="sp-element">PipingNetworkSegment</span> starts.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="#sp:plant.piping.pipingnetworksegment.sourcenode"><span class="std std-ref">SourceNode</span></a></p></td>
+<td><p>0..1</p></td>
+<td><p><a class="sp-element reference internal" href="PipingNode.html"><span class="doc">PipingNode</span></a></p></td>
+<td><p>no</p></td>
+<td><p>no</p></td>
+<td><p>0..1</p></td>
+<td><p>The <a class="sp-element reference internal" href="PipingNode.html"><span class="doc">PipingNode</span></a> at which the <span class="sp-element">PipingNetworkSegment</span> starts.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="#sp:plant.piping.pipingnetworksegment.targetitem"><span class="std std-ref">TargetItem</span></a></p></td>
+<td><p>0..1</p></td>
+<td><p><a class="sp-element reference internal" href="PipingTargetItem.html"><span class="doc">PipingTargetItem</span></a></p></td>
+<td><p>no</p></td>
+<td><p>no</p></td>
+<td><p>0..1</p></td>
+<td><p>The item at which the <span class="sp-element">PipingNetworkSegment</span> ends.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="#sp:plant.piping.pipingnetworksegment.targetnode"><span class="std std-ref">TargetNode</span></a></p></td>
+<td><p>0..1</p></td>
+<td><p><a class="sp-element reference internal" href="PipingNode.html"><span class="doc">PipingNode</span></a></p></td>
+<td><p>no</p></td>
+<td><p>no</p></td>
+<td><p>0..1</p></td>
+<td><p>The <a class="sp-element reference internal" href="PipingNode.html"><span class="doc">PipingNode</span></a> at which the <span class="sp-element">PipingNetworkSegment</span> ends.</p></td>
+</tr>
+</tbody>
+</table>
+<section id="member-list-section-Data Properties">
+<h3>Data Properties<a class="headerlink" href="#member-list-section-Data%20Properties" title="Link to this heading">¶</a></h3>
+</section>
+<table class="docutils align-left">
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Multiplicity</p></th>
+<th class="head"><p>Type</p></th>
+<th class="head"><p>Ordered</p></th>
+<th class="head"><p>Unique</p></th>
+<th class="head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="#sp:plant.piping.pipingnetworksegment.colorcode"><span class="std std-ref">ColorCode</span></a></p></td>
+<td><p>0..1</p></td>
+<td><p><a class="sp-element reference internal" href="../../Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><a class="sp-element reference internal" href="../../Builtin/String.html"><span class="doc">String</span></a></p></td>
+<td><p>no</p></td>
+<td><p>no</p></td>
+<td><p>The color code of the <a class="sp-element reference internal" href="#"><span class="doc">PipingNetworkSegment</span></a>, represented as a string.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="#sp:plant.piping.pipingnetworksegment.flowdirection"><span class="std std-ref">FlowDirection</span></a></p></td>
+<td><p>0..1</p></td>
+<td><p><a class="sp-element reference internal" href="../Enumerations/PipingNetworkSegmentFlowClassification.html"><span class="doc">PipingNetworkSegmentFlowClassification</span></a></p></td>
+<td><p>no</p></td>
+<td><p>no</p></td>
+<td><p>A specialization indicating if the <a class="sp-element reference internal" href="#"><span class="doc">PipingNetworkSegment</span></a> enables dual flow or not.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="#sp:plant.piping.pipingnetworksegment.fluidcode"><span class="std std-ref">FluidCode</span></a></p></td>
+<td><p>0..1</p></td>
+<td><p><a class="sp-element reference internal" href="../../Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><a class="sp-element reference internal" href="../../Builtin/String.html"><span class="doc">String</span></a></p></td>
+<td><p>no</p></td>
+<td><p>no</p></td>
+<td><p>The identification code of the fluid related to the <a class="sp-element reference internal" href="#"><span class="doc">PipingNetworkSegment</span></a>. So
+far, DEXPI does not define restrictions for valid values.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="#sp:plant.piping.pipingnetworksegment.heattracingtype"><span class="std std-ref">HeatTracingType</span></a></p></td>
+<td><p>0..1</p></td>
+<td><p><a class="sp-element reference internal" href="../Enumerations/HeatTracingTypeClassification.html"><span class="doc">HeatTracingTypeClassification</span></a></p></td>
+<td><p>no</p></td>
+<td><p>no</p></td>
+<td><p>A specialization indicating the heat tracing type related to the
+<a class="sp-element reference internal" href="#"><span class="doc">PipingNetworkSegment</span></a>.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="#sp:plant.piping.pipingnetworksegment.heattracingtyperepresentation"><span class="std std-ref">HeatTracingTypeRepresentation</span></a></p></td>
+<td><p>0..1</p></td>
+<td><p><a class="sp-element reference internal" href="../../Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><a class="sp-element reference internal" href="../../Builtin/String.html"><span class="doc">String</span></a></p></td>
+<td><p>no</p></td>
+<td><p>no</p></td>
+<td><p>The heat tracing type related to the <a class="sp-element reference internal" href="#"><span class="doc">PipingNetworkSegment</span></a>, represented as a string.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="#sp:plant.piping.pipingnetworksegment.inclination"><span class="std std-ref">Inclination</span></a></p></td>
+<td><p>0..1</p></td>
+<td><p><a class="sp-element reference internal" href="../../Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><span>&lt;</span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/PhysicalQuantity.html"><span class="doc">PhysicalQuantity</span></a><span> with </span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/PhysicalQuantity.html#sp:core.physicalquantities.physicalquantity.unittype"><span class="std std-ref">UnitType</span></a><span> → </span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/PercentageUnit.html"><span class="doc">PercentageUnit</span></a><span>&gt;</span></p></td>
+<td><p>no</p></td>
+<td><p>no</p></td>
+<td><p>The inclination (slope) of the <a class="sp-element reference internal" href="#"><span class="doc">PipingNetworkSegment</span></a> in percent.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="#sp:plant.piping.pipingnetworksegment.insulationthickness"><span class="std std-ref">InsulationThickness</span></a></p></td>
+<td><p>0..1</p></td>
+<td><p><a class="sp-element reference internal" href="../../Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><span>&lt;</span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/PhysicalQuantity.html"><span class="doc">PhysicalQuantity</span></a><span> with </span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/PhysicalQuantity.html#sp:core.physicalquantities.physicalquantity.unittype"><span class="std std-ref">UnitType</span></a><span> → </span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/LengthUnit.html"><span class="doc">LengthUnit</span></a><span>&gt;</span></p></td>
+<td><p>no</p></td>
+<td><p>no</p></td>
+<td><p>The insulation thickness of the <a class="sp-element reference internal" href="#"><span class="doc">PipingNetworkSegment</span></a>.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="#sp:plant.piping.pipingnetworksegment.insulationtype"><span class="std std-ref">InsulationType</span></a></p></td>
+<td><p>0..1</p></td>
+<td><p><a class="sp-element reference internal" href="../../Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><a class="sp-element reference internal" href="../../Builtin/String.html"><span class="doc">String</span></a></p></td>
+<td><p>no</p></td>
+<td><p>no</p></td>
+<td><p>The identification code for the insulation type related to the <a class="sp-element reference internal" href="#"><span class="doc">PipingNetworkSegment</span></a>. So far,
+DEXPI does not define restrictions for valid values.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="#sp:plant.piping.pipingnetworksegment.jacketedpipe"><span class="std std-ref">JacketedPipe</span></a></p></td>
+<td><p>0..1</p></td>
+<td><p><a class="sp-element reference internal" href="../Enumerations/JacketedPipeClassification.html"><span class="doc">JacketedPipeClassification</span></a></p></td>
+<td><p>no</p></td>
+<td><p>no</p></td>
+<td><p>A specialization indicating whether the <a class="sp-element reference internal" href="#"><span class="doc">PipingNetworkSegment</span></a> is jacketed.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="#sp:plant.piping.pipingnetworksegment.lowerlimitheattracingtemperature"><span class="std std-ref">LowerLimitHeatTracingTemperature</span></a></p></td>
+<td><p>0..1</p></td>
+<td><p><a class="sp-element reference internal" href="../../Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><span>&lt;</span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/PhysicalQuantity.html"><span class="doc">PhysicalQuantity</span></a><span> with </span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/PhysicalQuantity.html#sp:core.physicalquantities.physicalquantity.unittype"><span class="std std-ref">UnitType</span></a><span> → </span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/TemperatureUnit.html"><span class="doc">TemperatureUnit</span></a><span>&gt;</span></p></td>
+<td><p>no</p></td>
+<td><p>no</p></td>
+<td><p>The lower limit for the temperature that a heat tracing system must
+ensure for the <a class="sp-element reference internal" href="#"><span class="doc">PipingNetworkSegment</span></a>.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="#sp:plant.piping.pipingnetworksegment.nominaldiameternumericalvaluerepresentation"><span class="std std-ref">NominalDiameterNumericalValueRepresentation</span></a></p></td>
+<td><p>0..1</p></td>
+<td><p><a class="sp-element reference internal" href="../../Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><a class="sp-element reference internal" href="../../Builtin/String.html"><span class="doc">String</span></a></p></td>
+<td><p>no</p></td>
+<td><p>no</p></td>
+<td><p>A readable representation of the numerical value of the nominal
+diameter of the <a class="sp-element reference internal" href="#"><span class="doc">PipingNetworkSegment</span></a>, without any type or unit of measure.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="#sp:plant.piping.pipingnetworksegment.nominaldiameterrepresentation"><span class="std std-ref">NominalDiameterRepresentation</span></a></p></td>
+<td><p>0..1</p></td>
+<td><p><a class="sp-element reference internal" href="../../Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><a class="sp-element reference internal" href="../../Builtin/String.html"><span class="doc">String</span></a></p></td>
+<td><p>no</p></td>
+<td><p>no</p></td>
+<td><p>A readable representation of the nominal diameter of the <a class="sp-element reference internal" href="#"><span class="doc">PipingNetworkSegment</span></a>. It normally contains
+a numerical value and a type or unit of measure.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="#sp:plant.piping.pipingnetworksegment.nominaldiameterstandard"><span class="std std-ref">NominalDiameterStandard</span></a></p></td>
+<td><p>0..1</p></td>
+<td><p><a class="sp-element reference internal" href="../Enumerations/NominalDiameterStandardClassification.html"><span class="doc">NominalDiameterStandardClassification</span></a></p></td>
+<td><p>no</p></td>
+<td><p>no</p></td>
+<td><p>The nominal diameter of the <a class="sp-element reference internal" href="#"><span class="doc">PipingNetworkSegment</span></a>, given as a reference to a nominal
+diameter standard and value.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="#sp:plant.piping.pipingnetworksegment.nominaldiametertyperepresentation"><span class="std std-ref">NominalDiameterTypeRepresentation</span></a></p></td>
+<td><p>0..1</p></td>
+<td><p><a class="sp-element reference internal" href="../../Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><a class="sp-element reference internal" href="../../Builtin/String.html"><span class="doc">String</span></a></p></td>
+<td><p>no</p></td>
+<td><p>no</p></td>
+<td><p>A readable representation of the type or unit of measure of the nominal
+diameter of the <a class="sp-element reference internal" href="#"><span class="doc">PipingNetworkSegment</span></a>.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="#sp:plant.piping.pipingnetworksegment.onhold"><span class="std std-ref">OnHold</span></a></p></td>
+<td><p>0..1</p></td>
+<td><p><a class="sp-element reference internal" href="../Enumerations/OnHoldClassification.html"><span class="doc">OnHoldClassification</span></a></p></td>
+<td><p>no</p></td>
+<td><p>no</p></td>
+<td><p>A specialization indicating if the <a class="sp-element reference internal" href="#"><span class="doc">PipingNetworkSegment</span></a> is on hold or not.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="#sp:plant.piping.pipingnetworksegment.operatingtemperature"><span class="std std-ref">OperatingTemperature</span></a></p></td>
+<td><p>0..1</p></td>
+<td><p><a class="sp-element reference internal" href="../../Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><span>&lt;</span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/PhysicalQuantity.html"><span class="doc">PhysicalQuantity</span></a><span> with </span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/PhysicalQuantity.html#sp:core.physicalquantities.physicalquantity.unittype"><span class="std std-ref">UnitType</span></a><span> → </span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/TemperatureUnit.html"><span class="doc">TemperatureUnit</span></a><span>&gt;</span></p></td>
+<td><p>no</p></td>
+<td><p>no</p></td>
+<td><p>The operating temperature of the <a class="sp-element reference internal" href="#"><span class="doc">PipingNetworkSegment</span></a>.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="#sp:plant.piping.pipingnetworksegment.pipingclasscode"><span class="std std-ref">PipingClassCode</span></a></p></td>
+<td><p>0..1</p></td>
+<td><p><a class="sp-element reference internal" href="../../Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><a class="sp-element reference internal" href="../../Builtin/String.html"><span class="doc">String</span></a></p></td>
+<td><p>no</p></td>
+<td><p>no</p></td>
+<td><p>The identification code of the piping class of the <a class="sp-element reference internal" href="#"><span class="doc">PipingNetworkSegment</span></a>.
+So far, DEXPI does not define restrictions for valid values.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="#sp:plant.piping.pipingnetworksegment.pressuretestcircuitnumber"><span class="std std-ref">PressureTestCircuitNumber</span></a></p></td>
+<td><p>0..1</p></td>
+<td><p><a class="sp-element reference internal" href="../../Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><a class="sp-element reference internal" href="../../Builtin/String.html"><span class="doc">String</span></a></p></td>
+<td><p>no</p></td>
+<td><p>no</p></td>
+<td><p>The number of the pressure test circuit of the <a class="sp-element reference internal" href="#"><span class="doc">PipingNetworkSegment</span></a>.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="#sp:plant.piping.pipingnetworksegment.primarysecondarypipingnetworksegment"><span class="std std-ref">PrimarySecondaryPipingNetworkSegment</span></a></p></td>
+<td><p>0..1</p></td>
+<td><p><a class="sp-element reference internal" href="../Enumerations/PrimarySecondaryPipingNetworkSegmentClassification.html"><span class="doc">PrimarySecondaryPipingNetworkSegmentClassification</span></a></p></td>
+<td><p>no</p></td>
+<td><p>no</p></td>
+<td><p>A specialization indicating whether the <a class="sp-element reference internal" href="#"><span class="doc">PipingNetworkSegment</span></a> is a primary or
+secondary <a class="sp-element reference internal" href="#"><span class="doc">PipingNetworkSegment</span></a>.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="#sp:plant.piping.pipingnetworksegment.segmentnumber"><span class="std std-ref">SegmentNumber</span></a></p></td>
+<td><p>0..1</p></td>
+<td><p><a class="sp-element reference internal" href="../../Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><a class="sp-element reference internal" href="../../Builtin/String.html"><span class="doc">String</span></a></p></td>
+<td><p>no</p></td>
+<td><p>no</p></td>
+<td><p>The segment number of a <a class="sp-element reference internal" href="#"><span class="doc">PipingNetworkSegment</span></a>. Values are typically (but not
+necessarily) string representations of numbers with a prefix.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="#sp:plant.piping.pipingnetworksegment.siphon"><span class="std std-ref">Siphon</span></a></p></td>
+<td><p>0..1</p></td>
+<td><p><a class="sp-element reference internal" href="../Enumerations/SiphonClassification.html"><span class="doc">SiphonClassification</span></a></p></td>
+<td><p>no</p></td>
+<td><p>no</p></td>
+<td><p>A specialization indicating if the <a class="sp-element reference internal" href="#"><span class="doc">PipingNetworkSegment</span></a> is a siphon or not.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="#sp:plant.piping.pipingnetworksegment.slope"><span class="std std-ref">Slope</span></a></p></td>
+<td><p>0..1</p></td>
+<td><p><a class="sp-element reference internal" href="../Enumerations/PipingNetworkSegmentSlopeClassification.html"><span class="doc">PipingNetworkSegmentSlopeClassification</span></a></p></td>
+<td><p>no</p></td>
+<td><p>no</p></td>
+<td><p>A specialization indicating if the <a class="sp-element reference internal" href="#"><span class="doc">PipingNetworkSegment</span></a> is sloped or not.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="Constraints">
+<h2>Constraints<a class="headerlink" href="#Constraints" title="Link to this heading">¶</a></h2>
+<table class="docutils align-left">
+<thead>
+<tr class="row-odd"><th class="head"><p>Property</p></th>
+<th class="head"><p>Property</p></th>
+<th class="head"><p>Constraint</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="../../../disc-models/DiscProfile_FL0/model-index.html"><span class="doc">DiscProfile_FL0</span></a></p></td>
+<td><p><a class="sp-element reference internal" href="#sp:plant.piping.pipingnetworksegment.heattracingtype"><span class="std std-ref">HeatTracingType</span></a></p></td>
+<td><p>Lower = 1</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="../../../disc-models/DiscProfile_FL0/model-index.html"><span class="doc">DiscProfile_FL0</span></a></p></td>
+<td><p><a class="sp-element reference internal" href="../../../disc-models/DiscProfile/InformationModel/PipingNetworkSegmentExtension.html#sp:discprofile.informationmodel.pipingnetworksegmentextension.segmentlinetyperepresentation"><span class="std std-ref">SegmentLineTypeRepresentation</span></a></p></td>
+<td><p>Lower = 1</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="sp:plant.piping.pipingnetworksegment.colorcode">
+<h2>ColorCode<a class="headerlink" href="#sp:plant.piping.pipingnetworksegment.colorcode" title="Link to this heading">¶</a></h2>
+<p class="rubric">Data Property</p>
+<p>The color code of the <a class="sp-element reference internal" href="#"><span class="doc">PipingNetworkSegment</span></a>, represented as a string.</p>
+<p><strong>Type:</strong><span> </span><a class="sp-element reference internal" href="../../Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><a class="sp-element reference internal" href="../../Builtin/String.html"><span class="doc">String</span></a></p>
+<p><strong>Multiplicity:</strong><span> </span><span>0..1</span></p>
+<p><strong>Ordered:</strong><span> </span><span>no</span></p>
+<p><strong>Unique:</strong><span> </span><span>no</span></p>
+<p><strong>RDL:</strong><span> </span><a class="reference external" href="http://sandbox.dexpi.org/rdl/ColorCodeAssignmentClass">COLOR CODE ASSIGNMENT CLASS (http://sandbox.dexpi.org/rdl/ColorCodeAssignmentClass)</a></p>
+<section id="sp:plant.piping.pipingnetworksegment.colorcode-example">
+<h3>Example<a class="headerlink" href="#sp:plant.piping.pipingnetworksegment.colorcode-example" title="Link to this heading">¶</a></h3>
+<p class="sp-dense"><code class="docutils literal notranslate"><span class="pre">"C321"</span></code></p>
+</section>
+</section>
+<section id="sp:plant.piping.pipingnetworksegment.connections">
+<h2>Connections<a class="headerlink" href="#sp:plant.piping.pipingnetworksegment.connections" title="Link to this heading">¶</a></h2>
+<p class="rubric">Composition Property</p>
+<p>The connections of the <span class="sp-element">PipingNetworkSegment</span>.</p>
+<p><strong>Type:</strong><span> </span><a class="sp-element reference internal" href="PipingConnection.html"><span class="doc">PipingConnection</span></a></p>
+<p><strong>Multiplicity:</strong><span> </span><span>*</span></p>
+<p><strong>Ordered:</strong><span> </span><span>no</span></p>
+</section>
+<section id="sp:plant.piping.pipingnetworksegment.flowdirection">
+<h2>FlowDirection<a class="headerlink" href="#sp:plant.piping.pipingnetworksegment.flowdirection" title="Link to this heading">¶</a></h2>
+<p class="rubric">Data Property</p>
+<p>A specialization indicating if the <a class="sp-element reference internal" href="#"><span class="doc">PipingNetworkSegment</span></a> enables dual flow or not.</p>
+<p><strong>Type:</strong><span> </span><a class="sp-element reference internal" href="../Enumerations/PipingNetworkSegmentFlowClassification.html"><span class="doc">PipingNetworkSegmentFlowClassification</span></a></p>
+<p><strong>Multiplicity:</strong><span> </span><span>0..1</span></p>
+<p><strong>Ordered:</strong><span> </span><span>no</span></p>
+<p><strong>Unique:</strong><span> </span><span>no</span></p>
+<p><strong>RDL:</strong><span> </span><a class="reference external" href="http://sandbox.dexpi.org/rdl/FlowDirectionSpecialization">FLOW DIRECTION SPECIALIZATION (http://sandbox.dexpi.org/rdl/FlowDirectionSpecialization)</a></p>
+<section id="sp:plant.piping.pipingnetworksegment.flowdirection-example">
+<h3>Example<a class="headerlink" href="#sp:plant.piping.pipingnetworksegment.flowdirection-example" title="Link to this heading">¶</a></h3>
+<p class="sp-dense"><a class="sp-element reference internal" href="../Enumerations/PipingNetworkSegmentFlowClassification.html#sp:plant.enumerations.pipingnetworksegmentflowclassification.dualflowpipingnetworksegment"><span class="std std-ref">DualFlowPipingNetworkSegment</span></a></p>
+</section>
+</section>
+<section id="sp:plant.piping.pipingnetworksegment.fluidcode">
+<h2>FluidCode<a class="headerlink" href="#sp:plant.piping.pipingnetworksegment.fluidcode" title="Link to this heading">¶</a></h2>
+<p class="rubric">Data Property</p>
+<p>The identification code of the fluid related to the <a class="sp-element reference internal" href="#"><span class="doc">PipingNetworkSegment</span></a>. So
+far, DEXPI does not define restrictions for valid values.</p>
+<p><strong>Type:</strong><span> </span><a class="sp-element reference internal" href="../../Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><a class="sp-element reference internal" href="../../Builtin/String.html"><span class="doc">String</span></a></p>
+<p><strong>Multiplicity:</strong><span> </span><span>0..1</span></p>
+<p><strong>Ordered:</strong><span> </span><span>no</span></p>
+<p><strong>Unique:</strong><span> </span><span>no</span></p>
+<p><strong>RDL:</strong><span> </span><a class="reference external" href="http://sandbox.dexpi.org/rdl/FluidCodeAssignmentClass">FLUID CODE ASSIGNMENT CLASS (http://sandbox.dexpi.org/rdl/FluidCodeAssignmentClass)</a></p>
+<section id="sp:plant.piping.pipingnetworksegment.fluidcode-example">
+<h3>Example<a class="headerlink" href="#sp:plant.piping.pipingnetworksegment.fluidcode-example" title="Link to this heading">¶</a></h3>
+<p class="sp-dense"><code class="docutils literal notranslate"><span class="pre">"MNb"</span></code></p>
+</section>
+</section>
+<section id="sp:plant.piping.pipingnetworksegment.heattracingtype">
+<h2>HeatTracingType<a class="headerlink" href="#sp:plant.piping.pipingnetworksegment.heattracingtype" title="Link to this heading">¶</a></h2>
+<p class="rubric">Data Property</p>
+<p>A specialization indicating the heat tracing type related to the
+<a class="sp-element reference internal" href="#"><span class="doc">PipingNetworkSegment</span></a>.</p>
+<p><strong>Type:</strong><span> </span><a class="sp-element reference internal" href="../Enumerations/HeatTracingTypeClassification.html"><span class="doc">HeatTracingTypeClassification</span></a></p>
+<p><strong>Multiplicity:</strong><span> </span><span>0..1</span></p>
+<p><strong>Ordered:</strong><span> </span><span>no</span></p>
+<p><strong>Unique:</strong><span> </span><span>no</span></p>
+<p><strong>RDL:</strong><span> </span><a class="reference external" href="http://sandbox.dexpi.org/rdl/HeatTracingTypeSpecialization">HEAT TRACING TYPE SPECIALIZATION (http://sandbox.dexpi.org/rdl/HeatTracingTypeSpecialization)</a></p>
+<section id="sp:plant.piping.pipingnetworksegment.heattracingtype-example">
+<h3>Example<a class="headerlink" href="#sp:plant.piping.pipingnetworksegment.heattracingtype-example" title="Link to this heading">¶</a></h3>
+<p class="sp-dense"><a class="sp-element reference internal" href="../Enumerations/HeatTracingTypeClassification.html#sp:plant.enumerations.heattracingtypeclassification.electricalheattracingsystem"><span class="std std-ref">ElectricalHeatTracingSystem</span></a></p>
+</section>
+</section>
+<section id="sp:plant.piping.pipingnetworksegment.heattracingtyperepresentation">
+<h2>HeatTracingTypeRepresentation<a class="headerlink" href="#sp:plant.piping.pipingnetworksegment.heattracingtyperepresentation" title="Link to this heading">¶</a></h2>
+<p class="rubric">Data Property</p>
+<p>The heat tracing type related to the <a class="sp-element reference internal" href="#"><span class="doc">PipingNetworkSegment</span></a>, represented as a string.</p>
+<p><strong>Type:</strong><span> </span><a class="sp-element reference internal" href="../../Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><a class="sp-element reference internal" href="../../Builtin/String.html"><span class="doc">String</span></a></p>
+<p><strong>Multiplicity:</strong><span> </span><span>0..1</span></p>
+<p><strong>Ordered:</strong><span> </span><span>no</span></p>
+<p><strong>Unique:</strong><span> </span><span>no</span></p>
+<p><strong>RDL:</strong><span> </span><a class="reference external" href="http://sandbox.dexpi.org/rdl/HeatTracingTypeRepresentationAssignmentClass">HEAT TRACING TYPE REPRESENTATION ASSIGNMENT CLASS (http://sandbox.dexpi.org/rdl/HeatTracingTypeRepresentationAssignmentClass)</a></p>
+<section id="sp:plant.piping.pipingnetworksegment.heattracingtyperepresentation-example">
+<h3>Example<a class="headerlink" href="#sp:plant.piping.pipingnetworksegment.heattracingtyperepresentation-example" title="Link to this heading">¶</a></h3>
+<p class="sp-dense"><code class="docutils literal notranslate"><span class="pre">"E"</span></code></p>
+</section>
+</section>
+<section id="sp:plant.piping.pipingnetworksegment.inclination">
+<h2>Inclination<a class="headerlink" href="#sp:plant.piping.pipingnetworksegment.inclination" title="Link to this heading">¶</a></h2>
+<p class="rubric">Data Property</p>
+<p>The inclination (slope) of the <a class="sp-element reference internal" href="#"><span class="doc">PipingNetworkSegment</span></a> in percent.</p>
+<p><strong>Type:</strong><span> </span><a class="sp-element reference internal" href="../../Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><span>&lt;</span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/PhysicalQuantity.html"><span class="doc">PhysicalQuantity</span></a><span> with </span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/PhysicalQuantity.html#sp:core.physicalquantities.physicalquantity.unittype"><span class="std std-ref">UnitType</span></a><span> → </span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/PercentageUnit.html"><span class="doc">PercentageUnit</span></a><span>&gt;</span></p>
+<p><strong>Multiplicity:</strong><span> </span><span>0..1</span></p>
+<p><strong>Ordered:</strong><span> </span><span>no</span></p>
+<p><strong>Unique:</strong><span> </span><span>no</span></p>
+<p><strong>RDL:</strong><span> </span><a class="reference external" href="http://data.posccaesar.org/rdl/RDS17688057">INCLINATION (http://data.posccaesar.org/rdl/RDS17688057)</a></p>
+<section id="sp:plant.piping.pipingnetworksegment.inclination-example">
+<h3>Example<a class="headerlink" href="#sp:plant.piping.pipingnetworksegment.inclination-example" title="Link to this heading">¶</a></h3>
+<p class="sp-dense"><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/PhysicalQuantity.html"><span class="doc">PhysicalQuantity</span></a><span>(</span></p>
+<p class="sp-dense"><span>     </span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/PhysicalQuantity.html#sp:core.physicalquantities.physicalquantity.unit"><span class="std std-ref">Unit</span></a><span> = </span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/PercentageUnit.html#sp:core.physicalquantities.percentageunit.percent"><span class="std std-ref">Percent</span></a><span>,</span></p>
+<p class="sp-dense"><span>     </span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/PhysicalQuantity.html#sp:core.physicalquantities.physicalquantity.value"><span class="std std-ref">Value</span></a><span> = </span><code class="docutils literal notranslate"><span class="pre">10.0</span></code><span>)</span></p>
+</section>
+</section>
+<section id="sp:plant.piping.pipingnetworksegment.insulationthickness">
+<h2>InsulationThickness<a class="headerlink" href="#sp:plant.piping.pipingnetworksegment.insulationthickness" title="Link to this heading">¶</a></h2>
+<p class="rubric">Data Property</p>
+<p>The insulation thickness of the <a class="sp-element reference internal" href="#"><span class="doc">PipingNetworkSegment</span></a>.</p>
+<p><strong>Type:</strong><span> </span><a class="sp-element reference internal" href="../../Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><span>&lt;</span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/PhysicalQuantity.html"><span class="doc">PhysicalQuantity</span></a><span> with </span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/PhysicalQuantity.html#sp:core.physicalquantities.physicalquantity.unittype"><span class="std std-ref">UnitType</span></a><span> → </span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/LengthUnit.html"><span class="doc">LengthUnit</span></a><span>&gt;</span></p>
+<p><strong>Multiplicity:</strong><span> </span><span>0..1</span></p>
+<p><strong>Ordered:</strong><span> </span><span>no</span></p>
+<p><strong>Unique:</strong><span> </span><span>no</span></p>
+<p><strong>RDL:</strong><span> </span><a class="reference external" href="http://data.posccaesar.org/rdl/RDS4238040">INSULATION THICKNESS (http://data.posccaesar.org/rdl/RDS4238040)</a></p>
+<section id="sp:plant.piping.pipingnetworksegment.insulationthickness-example">
+<h3>Example<a class="headerlink" href="#sp:plant.piping.pipingnetworksegment.insulationthickness-example" title="Link to this heading">¶</a></h3>
+<p class="sp-dense"><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/PhysicalQuantity.html"><span class="doc">PhysicalQuantity</span></a><span>(</span></p>
+<p class="sp-dense"><span>     </span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/PhysicalQuantity.html#sp:core.physicalquantities.physicalquantity.unit"><span class="std std-ref">Unit</span></a><span> = </span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/LengthUnit.html#sp:core.physicalquantities.lengthunit.millimetre"><span class="std std-ref">Millimetre</span></a><span>,</span></p>
+<p class="sp-dense"><span>     </span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/PhysicalQuantity.html#sp:core.physicalquantities.physicalquantity.value"><span class="std std-ref">Value</span></a><span> = </span><code class="docutils literal notranslate"><span class="pre">40.0</span></code><span>)</span></p>
+</section>
+</section>
+<section id="sp:plant.piping.pipingnetworksegment.insulationtype">
+<h2>InsulationType<a class="headerlink" href="#sp:plant.piping.pipingnetworksegment.insulationtype" title="Link to this heading">¶</a></h2>
+<p class="rubric">Data Property</p>
+<p>The identification code for the insulation type related to the <a class="sp-element reference internal" href="#"><span class="doc">PipingNetworkSegment</span></a>. So far,
+DEXPI does not define restrictions for valid values.</p>
+<p><strong>Type:</strong><span> </span><a class="sp-element reference internal" href="../../Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><a class="sp-element reference internal" href="../../Builtin/String.html"><span class="doc">String</span></a></p>
+<p><strong>Multiplicity:</strong><span> </span><span>0..1</span></p>
+<p><strong>Ordered:</strong><span> </span><span>no</span></p>
+<p><strong>Unique:</strong><span> </span><span>no</span></p>
+<p><strong>RDL:</strong><span> </span><a class="reference external" href="http://sandbox.dexpi.org/rdl/InsulationTypeAssignmentClass">INSULATION TYPE ASSIGNMENT CLASS (http://sandbox.dexpi.org/rdl/InsulationTypeAssignmentClass)</a></p>
+<section id="sp:plant.piping.pipingnetworksegment.insulationtype-example">
+<h3>Example<a class="headerlink" href="#sp:plant.piping.pipingnetworksegment.insulationtype-example" title="Link to this heading">¶</a></h3>
+<p class="sp-dense"><code class="docutils literal notranslate"><span class="pre">"Q"</span></code></p>
+</section>
+</section>
+<section id="sp:plant.piping.pipingnetworksegment.items">
+<h2>Items<a class="headerlink" href="#sp:plant.piping.pipingnetworksegment.items" title="Link to this heading">¶</a></h2>
+<p class="rubric">Composition Property</p>
+<p>The items of the <span class="sp-element">PipingNetworkSegment</span>.</p>
+<p><strong>Type:</strong><span> </span><a class="sp-element reference internal" href="PipingNetworkSegmentItem.html"><span class="doc">PipingNetworkSegmentItem</span></a></p>
+<p><strong>Multiplicity:</strong><span> </span><span>*</span></p>
+<p><strong>Ordered:</strong><span> </span><span>no</span></p>
+</section>
+<section id="sp:plant.piping.pipingnetworksegment.jacketedpipe">
+<h2>JacketedPipe<a class="headerlink" href="#sp:plant.piping.pipingnetworksegment.jacketedpipe" title="Link to this heading">¶</a></h2>
+<p class="rubric">Data Property</p>
+<p>A specialization indicating whether the <a class="sp-element reference internal" href="#"><span class="doc">PipingNetworkSegment</span></a> is jacketed.</p>
+<p><strong>Type:</strong><span> </span><a class="sp-element reference internal" href="../Enumerations/JacketedPipeClassification.html"><span class="doc">JacketedPipeClassification</span></a></p>
+<p><strong>Multiplicity:</strong><span> </span><span>0..1</span></p>
+<p><strong>Ordered:</strong><span> </span><span>no</span></p>
+<p><strong>Unique:</strong><span> </span><span>no</span></p>
+<p><strong>RDL:</strong><span> </span><a class="reference external" href="http://sandbox.dexpi.org/rdl/JacketedPipeSpecialization">JACKETED PIPE SPECIALIZATION (http://sandbox.dexpi.org/rdl/JacketedPipeSpecialization)</a></p>
+<section id="sp:plant.piping.pipingnetworksegment.jacketedpipe-example">
+<h3>Example<a class="headerlink" href="#sp:plant.piping.pipingnetworksegment.jacketedpipe-example" title="Link to this heading">¶</a></h3>
+<p class="sp-dense"><a class="sp-element reference internal" href="../Enumerations/JacketedPipeClassification.html#sp:plant.enumerations.jacketedpipeclassification.jacketedpipe"><span class="std std-ref">JacketedPipe</span></a></p>
+</section>
+</section>
+<section id="sp:plant.piping.pipingnetworksegment.lowerlimitheattracingtemperature">
+<h2>LowerLimitHeatTracingTemperature<a class="headerlink" href="#sp:plant.piping.pipingnetworksegment.lowerlimitheattracingtemperature" title="Link to this heading">¶</a></h2>
+<p class="rubric">Data Property</p>
+<p>The lower limit for the temperature that a heat tracing system must
+ensure for the <a class="sp-element reference internal" href="#"><span class="doc">PipingNetworkSegment</span></a>.</p>
+<p><strong>Type:</strong><span> </span><a class="sp-element reference internal" href="../../Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><span>&lt;</span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/PhysicalQuantity.html"><span class="doc">PhysicalQuantity</span></a><span> with </span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/PhysicalQuantity.html#sp:core.physicalquantities.physicalquantity.unittype"><span class="std std-ref">UnitType</span></a><span> → </span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/TemperatureUnit.html"><span class="doc">TemperatureUnit</span></a><span>&gt;</span></p>
+<p><strong>Multiplicity:</strong><span> </span><span>0..1</span></p>
+<p><strong>Ordered:</strong><span> </span><span>no</span></p>
+<p><strong>Unique:</strong><span> </span><span>no</span></p>
+<p><strong>RDL:</strong><span> </span><a class="reference external" href="http://sandbox.dexpi.org/rdl/LowerLimitHeatTracingTemperature">LOWER LIMIT HEAT TRACING TEMPERATURE (http://sandbox.dexpi.org/rdl/LowerLimitHeatTracingTemperature)</a></p>
+<section id="sp:plant.piping.pipingnetworksegment.lowerlimitheattracingtemperature-example">
+<h3>Example<a class="headerlink" href="#sp:plant.piping.pipingnetworksegment.lowerlimitheattracingtemperature-example" title="Link to this heading">¶</a></h3>
+<p class="sp-dense"><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/PhysicalQuantity.html"><span class="doc">PhysicalQuantity</span></a><span>(</span></p>
+<p class="sp-dense"><span>     </span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/PhysicalQuantity.html#sp:core.physicalquantities.physicalquantity.unit"><span class="std std-ref">Unit</span></a><span> = </span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/TemperatureUnit.html#sp:core.physicalquantities.temperatureunit.degreecelsius"><span class="std std-ref">DegreeCelsius</span></a><span>,</span></p>
+<p class="sp-dense"><span>     </span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/PhysicalQuantity.html#sp:core.physicalquantities.physicalquantity.value"><span class="std std-ref">Value</span></a><span> = </span><code class="docutils literal notranslate"><span class="pre">100.0</span></code><span>)</span></p>
+</section>
+</section>
+<section id="sp:plant.piping.pipingnetworksegment.nominaldiameternumericalvaluerepresentation">
+<h2>NominalDiameterNumericalValueRepresentation<a class="headerlink" href="#sp:plant.piping.pipingnetworksegment.nominaldiameternumericalvaluerepresentation" title="Link to this heading">¶</a></h2>
+<p class="rubric">Data Property</p>
+<p>A readable representation of the numerical value of the nominal
+diameter of the <a class="sp-element reference internal" href="#"><span class="doc">PipingNetworkSegment</span></a>, without any type or unit of measure.</p>
+<p><strong>Type:</strong><span> </span><a class="sp-element reference internal" href="../../Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><a class="sp-element reference internal" href="../../Builtin/String.html"><span class="doc">String</span></a></p>
+<p><strong>Multiplicity:</strong><span> </span><span>0..1</span></p>
+<p><strong>Ordered:</strong><span> </span><span>no</span></p>
+<p><strong>Unique:</strong><span> </span><span>no</span></p>
+<p><strong>RDL:</strong><span> </span><a class="reference external" href="http://sandbox.dexpi.org/rdl/NominalDiameterNumericalValueRepresentationAssignmentClass">NOMINAL DIAMETER NUMERICAL VALUE REPRESENTATION ASSIGNMENT CLASS (http://sandbox.dexpi.org/rdl/NominalDiameterNumericalValueRepresentationAssignmentClass)</a></p>
+<section id="sp:plant.piping.pipingnetworksegment.nominaldiameternumericalvaluerepresentation-example">
+<h3>Example<a class="headerlink" href="#sp:plant.piping.pipingnetworksegment.nominaldiameternumericalvaluerepresentation-example" title="Link to this heading">¶</a></h3>
+<p class="sp-dense"><code class="docutils literal notranslate"><span class="pre">"25"</span></code></p>
+</section>
+</section>
+<section id="sp:plant.piping.pipingnetworksegment.nominaldiameterrepresentation">
+<h2>NominalDiameterRepresentation<a class="headerlink" href="#sp:plant.piping.pipingnetworksegment.nominaldiameterrepresentation" title="Link to this heading">¶</a></h2>
+<p class="rubric">Data Property</p>
+<p>A readable representation of the nominal diameter of the <a class="sp-element reference internal" href="#"><span class="doc">PipingNetworkSegment</span></a>. It normally contains
+a numerical value and a type or unit of measure.</p>
+<p><strong>Type:</strong><span> </span><a class="sp-element reference internal" href="../../Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><a class="sp-element reference internal" href="../../Builtin/String.html"><span class="doc">String</span></a></p>
+<p><strong>Multiplicity:</strong><span> </span><span>0..1</span></p>
+<p><strong>Ordered:</strong><span> </span><span>no</span></p>
+<p><strong>Unique:</strong><span> </span><span>no</span></p>
+<p><strong>RDL:</strong><span> </span><a class="reference external" href="http://sandbox.dexpi.org/rdl/NominalDiameterRepresentationAssignmentClass">NOMINAL DIAMETER REPRESENTATION ASSIGNMENT CLASS (http://sandbox.dexpi.org/rdl/NominalDiameterRepresentationAssignmentClass)</a></p>
+<section id="sp:plant.piping.pipingnetworksegment.nominaldiameterrepresentation-example">
+<h3>Example<a class="headerlink" href="#sp:plant.piping.pipingnetworksegment.nominaldiameterrepresentation-example" title="Link to this heading">¶</a></h3>
+<p class="sp-dense"><code class="docutils literal notranslate"><span class="pre">"DN</span> <span class="pre">25"</span></code></p>
+</section>
+</section>
+<section id="sp:plant.piping.pipingnetworksegment.nominaldiameterstandard">
+<h2>NominalDiameterStandard<a class="headerlink" href="#sp:plant.piping.pipingnetworksegment.nominaldiameterstandard" title="Link to this heading">¶</a></h2>
+<p class="rubric">Data Property</p>
+<p>The nominal diameter of the <a class="sp-element reference internal" href="#"><span class="doc">PipingNetworkSegment</span></a>, given as a reference to a nominal
+diameter standard and value.</p>
+<p><strong>Type:</strong><span> </span><a class="sp-element reference internal" href="../Enumerations/NominalDiameterStandardClassification.html"><span class="doc">NominalDiameterStandardClassification</span></a></p>
+<p><strong>Multiplicity:</strong><span> </span><span>0..1</span></p>
+<p><strong>Ordered:</strong><span> </span><span>no</span></p>
+<p><strong>Unique:</strong><span> </span><span>no</span></p>
+<p><strong>RDL:</strong><span> </span><a class="reference external" href="http://sandbox.dexpi.org/rdl/NominalDiameterStandardSpecialization">NOMINAL DIAMETER STANDARD SPECIALIZATION (http://sandbox.dexpi.org/rdl/NominalDiameterStandardSpecialization)</a></p>
+<section id="sp:plant.piping.pipingnetworksegment.nominaldiameterstandard-example">
+<h3>Example<a class="headerlink" href="#sp:plant.piping.pipingnetworksegment.nominaldiameterstandard-example" title="Link to this heading">¶</a></h3>
+<p class="sp-dense"><a class="sp-element reference internal" href="../Enumerations/NominalDiameterStandardClassification.html#sp:plant.enumerations.nominaldiameterstandardclassification.din2448objectdn25"><span class="std std-ref">Din2448ObjectDn25</span></a></p>
+</section>
+</section>
+<section id="sp:plant.piping.pipingnetworksegment.nominaldiametertyperepresentation">
+<h2>NominalDiameterTypeRepresentation<a class="headerlink" href="#sp:plant.piping.pipingnetworksegment.nominaldiametertyperepresentation" title="Link to this heading">¶</a></h2>
+<p class="rubric">Data Property</p>
+<p>A readable representation of the type or unit of measure of the nominal
+diameter of the <a class="sp-element reference internal" href="#"><span class="doc">PipingNetworkSegment</span></a>.</p>
+<p><strong>Type:</strong><span> </span><a class="sp-element reference internal" href="../../Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><a class="sp-element reference internal" href="../../Builtin/String.html"><span class="doc">String</span></a></p>
+<p><strong>Multiplicity:</strong><span> </span><span>0..1</span></p>
+<p><strong>Ordered:</strong><span> </span><span>no</span></p>
+<p><strong>Unique:</strong><span> </span><span>no</span></p>
+<p><strong>RDL:</strong><span> </span><a class="reference external" href="http://sandbox.dexpi.org/rdl/NominalDiameterTypeRepresentationAssignmentClass">NOMINAL DIAMETER TYPE REPRESENTATION ASSIGNMENT CLASS (http://sandbox.dexpi.org/rdl/NominalDiameterTypeRepresentationAssignmentClass)</a></p>
+<section id="sp:plant.piping.pipingnetworksegment.nominaldiametertyperepresentation-example">
+<h3>Example<a class="headerlink" href="#sp:plant.piping.pipingnetworksegment.nominaldiametertyperepresentation-example" title="Link to this heading">¶</a></h3>
+<p class="sp-dense"><code class="docutils literal notranslate"><span class="pre">"DN"</span></code></p>
+</section>
+</section>
+<section id="sp:plant.piping.pipingnetworksegment.onhold">
+<h2>OnHold<a class="headerlink" href="#sp:plant.piping.pipingnetworksegment.onhold" title="Link to this heading">¶</a></h2>
+<p class="rubric">Data Property</p>
+<p>A specialization indicating if the <a class="sp-element reference internal" href="#"><span class="doc">PipingNetworkSegment</span></a> is on hold or not.</p>
+<p><strong>Type:</strong><span> </span><a class="sp-element reference internal" href="../Enumerations/OnHoldClassification.html"><span class="doc">OnHoldClassification</span></a></p>
+<p><strong>Multiplicity:</strong><span> </span><span>0..1</span></p>
+<p><strong>Ordered:</strong><span> </span><span>no</span></p>
+<p><strong>Unique:</strong><span> </span><span>no</span></p>
+<p><strong>RDL:</strong><span> </span><a class="reference external" href="http://sandbox.dexpi.org/rdl/OnHoldSpecialization">ON HOLD SPECIALIZATION (http://sandbox.dexpi.org/rdl/OnHoldSpecialization)</a></p>
+<section id="sp:plant.piping.pipingnetworksegment.onhold-example">
+<h3>Example<a class="headerlink" href="#sp:plant.piping.pipingnetworksegment.onhold-example" title="Link to this heading">¶</a></h3>
+<p class="sp-dense"><a class="sp-element reference internal" href="../Enumerations/OnHoldClassification.html#sp:plant.enumerations.onholdclassification.onhold"><span class="std std-ref">OnHold</span></a></p>
+</section>
+</section>
+<section id="sp:plant.piping.pipingnetworksegment.operatingtemperature">
+<h2>OperatingTemperature<a class="headerlink" href="#sp:plant.piping.pipingnetworksegment.operatingtemperature" title="Link to this heading">¶</a></h2>
+<p class="rubric">Data Property</p>
+<p>The operating temperature of the <a class="sp-element reference internal" href="#"><span class="doc">PipingNetworkSegment</span></a>.</p>
+<p><strong>Type:</strong><span> </span><a class="sp-element reference internal" href="../../Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><span>&lt;</span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/PhysicalQuantity.html"><span class="doc">PhysicalQuantity</span></a><span> with </span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/PhysicalQuantity.html#sp:core.physicalquantities.physicalquantity.unittype"><span class="std std-ref">UnitType</span></a><span> → </span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/TemperatureUnit.html"><span class="doc">TemperatureUnit</span></a><span>&gt;</span></p>
+<p><strong>Multiplicity:</strong><span> </span><span>0..1</span></p>
+<p><strong>Ordered:</strong><span> </span><span>no</span></p>
+<p><strong>Unique:</strong><span> </span><span>no</span></p>
+<p><strong>RDL:</strong><span> </span><a class="reference external" href="http://data.posccaesar.org/rdl/RDS357119">OPERATING TEMPERATURE (http://data.posccaesar.org/rdl/RDS357119)</a></p>
+<section id="sp:plant.piping.pipingnetworksegment.operatingtemperature-example">
+<h3>Example<a class="headerlink" href="#sp:plant.piping.pipingnetworksegment.operatingtemperature-example" title="Link to this heading">¶</a></h3>
+<p class="sp-dense"><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/PhysicalQuantity.html"><span class="doc">PhysicalQuantity</span></a><span>(</span></p>
+<p class="sp-dense"><span>     </span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/PhysicalQuantity.html#sp:core.physicalquantities.physicalquantity.unit"><span class="std std-ref">Unit</span></a><span> = </span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/TemperatureUnit.html#sp:core.physicalquantities.temperatureunit.degreecelsius"><span class="std std-ref">DegreeCelsius</span></a><span>,</span></p>
+<p class="sp-dense"><span>     </span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/PhysicalQuantity.html#sp:core.physicalquantities.physicalquantity.value"><span class="std std-ref">Value</span></a><span> = </span><code class="docutils literal notranslate"><span class="pre">100.0</span></code><span>)</span></p>
+</section>
+</section>
+<section id="sp:plant.piping.pipingnetworksegment.pipingclasscode">
+<h2>PipingClassCode<a class="headerlink" href="#sp:plant.piping.pipingnetworksegment.pipingclasscode" title="Link to this heading">¶</a></h2>
+<p class="rubric">Data Property</p>
+<p>The identification code of the piping class of the <a class="sp-element reference internal" href="#"><span class="doc">PipingNetworkSegment</span></a>.
+So far, DEXPI does not define restrictions for valid values.</p>
+<p><strong>Type:</strong><span> </span><a class="sp-element reference internal" href="../../Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><a class="sp-element reference internal" href="../../Builtin/String.html"><span class="doc">String</span></a></p>
+<p><strong>Multiplicity:</strong><span> </span><span>0..1</span></p>
+<p><strong>Ordered:</strong><span> </span><span>no</span></p>
+<p><strong>Unique:</strong><span> </span><span>no</span></p>
+<p><strong>RDL:</strong><span> </span><a class="reference external" href="http://sandbox.dexpi.org/rdl/PipingClassCodeAssignmentClass">PIPING CLASS CODE ASSIGNMENT CLASS (http://sandbox.dexpi.org/rdl/PipingClassCodeAssignmentClass)</a></p>
+<section id="sp:plant.piping.pipingnetworksegment.pipingclasscode-example">
+<h3>Example<a class="headerlink" href="#sp:plant.piping.pipingnetworksegment.pipingclasscode-example" title="Link to this heading">¶</a></h3>
+<p class="sp-dense"><code class="docutils literal notranslate"><span class="pre">"75HB13"</span></code></p>
+</section>
+</section>
+<section id="sp:plant.piping.pipingnetworksegment.pressuretestcircuitnumber">
+<h2>PressureTestCircuitNumber<a class="headerlink" href="#sp:plant.piping.pipingnetworksegment.pressuretestcircuitnumber" title="Link to this heading">¶</a></h2>
+<p class="rubric">Data Property</p>
+<p>The number of the pressure test circuit of the <a class="sp-element reference internal" href="#"><span class="doc">PipingNetworkSegment</span></a>.</p>
+<p><strong>Type:</strong><span> </span><a class="sp-element reference internal" href="../../Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><a class="sp-element reference internal" href="../../Builtin/String.html"><span class="doc">String</span></a></p>
+<p><strong>Multiplicity:</strong><span> </span><span>0..1</span></p>
+<p><strong>Ordered:</strong><span> </span><span>no</span></p>
+<p><strong>Unique:</strong><span> </span><span>no</span></p>
+<p><strong>RDL:</strong><span> </span><a class="reference external" href="http://sandbox.dexpi.org/rdl/PressureTestCircuitNumberAssignmentClass">PRESSURE TEST CIRCUIT NUMBER ASSIGNMENT CLASS (http://sandbox.dexpi.org/rdl/PressureTestCircuitNumberAssignmentClass)</a></p>
+<section id="sp:plant.piping.pipingnetworksegment.pressuretestcircuitnumber-example">
+<h3>Example<a class="headerlink" href="#sp:plant.piping.pipingnetworksegment.pressuretestcircuitnumber-example" title="Link to this heading">¶</a></h3>
+<p class="sp-dense"><code class="docutils literal notranslate"><span class="pre">"TC123"</span></code></p>
+</section>
+</section>
+<section id="sp:plant.piping.pipingnetworksegment.primarysecondarypipingnetworksegment">
+<h2>PrimarySecondaryPipingNetworkSegment<a class="headerlink" href="#sp:plant.piping.pipingnetworksegment.primarysecondarypipingnetworksegment" title="Link to this heading">¶</a></h2>
+<p class="rubric">Data Property</p>
+<p>A specialization indicating whether the <a class="sp-element reference internal" href="#"><span class="doc">PipingNetworkSegment</span></a> is a primary or
+secondary <a class="sp-element reference internal" href="#"><span class="doc">PipingNetworkSegment</span></a>.</p>
+<p><strong>Type:</strong><span> </span><a class="sp-element reference internal" href="../Enumerations/PrimarySecondaryPipingNetworkSegmentClassification.html"><span class="doc">PrimarySecondaryPipingNetworkSegmentClassification</span></a></p>
+<p><strong>Multiplicity:</strong><span> </span><span>0..1</span></p>
+<p><strong>Ordered:</strong><span> </span><span>no</span></p>
+<p><strong>Unique:</strong><span> </span><span>no</span></p>
+<p><strong>RDL:</strong><span> </span><a class="reference external" href="http://sandbox.dexpi.org/rdl/PrimarySecondaryPipingNetworkSegmentSpecialization">PRIMARY SECONDARY PIPING NETWORK SEGMENT SPECIALIZATION (http://sandbox.dexpi.org/rdl/PrimarySecondaryPipingNetworkSegmentSpecialization)</a></p>
+<section id="sp:plant.piping.pipingnetworksegment.primarysecondarypipingnetworksegment-example">
+<h3>Example<a class="headerlink" href="#sp:plant.piping.pipingnetworksegment.primarysecondarypipingnetworksegment-example" title="Link to this heading">¶</a></h3>
+<p class="sp-dense"><a class="sp-element reference internal" href="../Enumerations/PrimarySecondaryPipingNetworkSegmentClassification.html#sp:plant.enumerations.primarysecondarypipingnetworksegmentclassification.primarypipingnetworksegment"><span class="std std-ref">PrimaryPipingNetworkSegment</span></a></p>
+</section>
+</section>
+<section id="sp:plant.piping.pipingnetworksegment.segmentnumber">
+<h2>SegmentNumber<a class="headerlink" href="#sp:plant.piping.pipingnetworksegment.segmentnumber" title="Link to this heading">¶</a></h2>
+<p class="rubric">Data Property</p>
+<p>The segment number of a <a class="sp-element reference internal" href="#"><span class="doc">PipingNetworkSegment</span></a>. Values are typically (but not
+necessarily) string representations of numbers with a prefix.</p>
+<p><strong>Type:</strong><span> </span><a class="sp-element reference internal" href="../../Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><a class="sp-element reference internal" href="../../Builtin/String.html"><span class="doc">String</span></a></p>
+<p><strong>Multiplicity:</strong><span> </span><span>0..1</span></p>
+<p><strong>Ordered:</strong><span> </span><span>no</span></p>
+<p><strong>Unique:</strong><span> </span><span>no</span></p>
+<p><strong>RDL:</strong><span> </span><a class="reference external" href="http://sandbox.dexpi.org/rdl/SegmentNumberAssignmentClass">SEGMENT NUMBER ASSIGNMENT CLASS (http://sandbox.dexpi.org/rdl/SegmentNumberAssignmentClass)</a></p>
+<section id="sp:plant.piping.pipingnetworksegment.segmentnumber-example">
+<h3>Example<a class="headerlink" href="#sp:plant.piping.pipingnetworksegment.segmentnumber-example" title="Link to this heading">¶</a></h3>
+<p class="sp-dense"><code class="docutils literal notranslate"><span class="pre">"S3"</span></code></p>
+</section>
+</section>
+<section id="sp:plant.piping.pipingnetworksegment.siphon">
+<h2>Siphon<a class="headerlink" href="#sp:plant.piping.pipingnetworksegment.siphon" title="Link to this heading">¶</a></h2>
+<p class="rubric">Data Property</p>
+<p>A specialization indicating if the <a class="sp-element reference internal" href="#"><span class="doc">PipingNetworkSegment</span></a> is a siphon or not.</p>
+<p><strong>Type:</strong><span> </span><a class="sp-element reference internal" href="../Enumerations/SiphonClassification.html"><span class="doc">SiphonClassification</span></a></p>
+<p><strong>Multiplicity:</strong><span> </span><span>0..1</span></p>
+<p><strong>Ordered:</strong><span> </span><span>no</span></p>
+<p><strong>Unique:</strong><span> </span><span>no</span></p>
+<p><strong>RDL:</strong><span> </span><a class="reference external" href="http://sandbox.dexpi.org/rdl/SiphonSpecialization">SIPHON SPECIALIZATION (http://sandbox.dexpi.org/rdl/SiphonSpecialization)</a></p>
+<section id="sp:plant.piping.pipingnetworksegment.siphon-example">
+<h3>Example<a class="headerlink" href="#sp:plant.piping.pipingnetworksegment.siphon-example" title="Link to this heading">¶</a></h3>
+<p class="sp-dense"><a class="sp-element reference internal" href="../Enumerations/SiphonClassification.html#sp:plant.enumerations.siphonclassification.siphon"><span class="std std-ref">Siphon</span></a></p>
+</section>
+</section>
+<section id="sp:plant.piping.pipingnetworksegment.slope">
+<h2>Slope<a class="headerlink" href="#sp:plant.piping.pipingnetworksegment.slope" title="Link to this heading">¶</a></h2>
+<p class="rubric">Data Property</p>
+<p>A specialization indicating if the <a class="sp-element reference internal" href="#"><span class="doc">PipingNetworkSegment</span></a> is sloped or not.</p>
+<p><strong>Type:</strong><span> </span><a class="sp-element reference internal" href="../Enumerations/PipingNetworkSegmentSlopeClassification.html"><span class="doc">PipingNetworkSegmentSlopeClassification</span></a></p>
+<p><strong>Multiplicity:</strong><span> </span><span>0..1</span></p>
+<p><strong>Ordered:</strong><span> </span><span>no</span></p>
+<p><strong>Unique:</strong><span> </span><span>no</span></p>
+<p><strong>RDL:</strong><span> </span><a class="reference external" href="http://sandbox.dexpi.org/rdl/SlopeSpecialization">SLOPE SPECIALIZATION (http://sandbox.dexpi.org/rdl/SlopeSpecialization)</a></p>
+<section id="sp:plant.piping.pipingnetworksegment.slope-example">
+<h3>Example<a class="headerlink" href="#sp:plant.piping.pipingnetworksegment.slope-example" title="Link to this heading">¶</a></h3>
+<p class="sp-dense"><a class="sp-element reference internal" href="../Enumerations/PipingNetworkSegmentSlopeClassification.html#sp:plant.enumerations.pipingnetworksegmentslopeclassification.slopedpipingnetworksegment"><span class="std std-ref">SlopedPipingNetworkSegment</span></a></p>
+</section>
+</section>
+<section id="sp:plant.piping.pipingnetworksegment.sourceitem">
+<h2>SourceItem<a class="headerlink" href="#sp:plant.piping.pipingnetworksegment.sourceitem" title="Link to this heading">¶</a></h2>
+<p class="rubric">Reference Property</p>
+<p>The item at which the <span class="sp-element">PipingNetworkSegment</span> starts.</p>
+<p><strong>Type:</strong><span> </span><a class="sp-element reference internal" href="PipingSourceItem.html"><span class="doc">PipingSourceItem</span></a></p>
+<p><strong>Multiplicity:</strong><span> </span><span>0..1</span></p>
+<p><strong>Ordered:</strong><span> </span><span>no</span></p>
+<p><strong>Unique:</strong><span> </span><span>no</span></p>
+<p><strong>Opposite Multiplicity:</strong><span> </span><span>0..1</span></p>
+</section>
+<section id="sp:plant.piping.pipingnetworksegment.sourcenode">
+<h2>SourceNode<a class="headerlink" href="#sp:plant.piping.pipingnetworksegment.sourcenode" title="Link to this heading">¶</a></h2>
+<p class="rubric">Reference Property</p>
+<p>The <a class="sp-element reference internal" href="PipingNode.html"><span class="doc">PipingNode</span></a> at which the <span class="sp-element">PipingNetworkSegment</span> starts.</p>
+<p><strong>Type:</strong><span> </span><a class="sp-element reference internal" href="PipingNode.html"><span class="doc">PipingNode</span></a></p>
+<p><strong>Multiplicity:</strong><span> </span><span>0..1</span></p>
+<p><strong>Ordered:</strong><span> </span><span>no</span></p>
+<p><strong>Unique:</strong><span> </span><span>no</span></p>
+<p><strong>Opposite Multiplicity:</strong><span> </span><span>0..1</span></p>
+</section>
+<section id="sp:plant.piping.pipingnetworksegment.targetitem">
+<h2>TargetItem<a class="headerlink" href="#sp:plant.piping.pipingnetworksegment.targetitem" title="Link to this heading">¶</a></h2>
+<p class="rubric">Reference Property</p>
+<p>The item at which the <span class="sp-element">PipingNetworkSegment</span> ends.</p>
+<p><strong>Type:</strong><span> </span><a class="sp-element reference internal" href="PipingTargetItem.html"><span class="doc">PipingTargetItem</span></a></p>
+<p><strong>Multiplicity:</strong><span> </span><span>0..1</span></p>
+<p><strong>Ordered:</strong><span> </span><span>no</span></p>
+<p><strong>Unique:</strong><span> </span><span>no</span></p>
+<p><strong>Opposite Multiplicity:</strong><span> </span><span>0..1</span></p>
+</section>
+<section id="sp:plant.piping.pipingnetworksegment.targetnode">
+<h2>TargetNode<a class="headerlink" href="#sp:plant.piping.pipingnetworksegment.targetnode" title="Link to this heading">¶</a></h2>
+<p class="rubric">Reference Property</p>
+<p>The <a class="sp-element reference internal" href="PipingNode.html"><span class="doc">PipingNode</span></a> at which the <span class="sp-element">PipingNetworkSegment</span> ends.</p>
+<p><strong>Type:</strong><span> </span><a class="sp-element reference internal" href="PipingNode.html"><span class="doc">PipingNode</span></a></p>
+<p><strong>Multiplicity:</strong><span> </span><span>0..1</span></p>
+<p><strong>Ordered:</strong><span> </span><span>no</span></p>
+<p><strong>Unique:</strong><span> </span><span>no</span></p>
+<p><strong>Opposite Multiplicity:</strong><span> </span><span>0..1</span></p>
+</section>
+<section id="Plant.Piping.PipingNetworkSegment-example">
+<h2>Example in DEXPI XML<a class="headerlink" href="#Plant.Piping.PipingNetworkSegment-example" title="Link to this heading">¶</a></h2>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;Object</span><span class="w"> </span><span class="na">type=</span><span class="s">"Plant/Piping.PipingNetworkSegment"</span><span class="nt">&gt;</span>
+<span class="w">  </span><span class="nt">&lt;Data</span><span class="w"> </span><span class="na">property=</span><span class="s">"ColorCode"</span><span class="nt">&gt;</span>
+<span class="w">    </span><span class="nt">&lt;String&gt;</span>C321<span class="nt">&lt;/String&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/Data&gt;</span>
+<span class="w">  </span><span class="nt">&lt;Data</span><span class="w"> </span><span class="na">property=</span><span class="s">"FlowDirection"</span><span class="nt">&gt;</span>
+<span class="w">    </span><span class="nt">&lt;DataReference</span><span class="w"> </span><span class="na">data=</span><span class="s">"Plant/Enumerations.PipingNetworkSegmentFlowClassification.DualFlowPipingNetworkSegment"</span><span class="nt">/&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/Data&gt;</span>
+<span class="w">  </span><span class="nt">&lt;Data</span><span class="w"> </span><span class="na">property=</span><span class="s">"FluidCode"</span><span class="nt">&gt;</span>
+<span class="w">    </span><span class="nt">&lt;String&gt;</span>MNb<span class="nt">&lt;/String&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/Data&gt;</span>
+<span class="w">  </span><span class="nt">&lt;Data</span><span class="w"> </span><span class="na">property=</span><span class="s">"HeatTracingType"</span><span class="nt">&gt;</span>
+<span class="w">    </span><span class="nt">&lt;DataReference</span><span class="w"> </span><span class="na">data=</span><span class="s">"Plant/Enumerations.HeatTracingTypeClassification.ElectricalHeatTracingSystem"</span><span class="nt">/&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/Data&gt;</span>
+<span class="w">  </span><span class="nt">&lt;Data</span><span class="w"> </span><span class="na">property=</span><span class="s">"HeatTracingTypeRepresentation"</span><span class="nt">&gt;</span>
+<span class="w">    </span><span class="nt">&lt;String&gt;</span>E<span class="nt">&lt;/String&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/Data&gt;</span>
+<span class="w">  </span><span class="nt">&lt;Data</span><span class="w"> </span><span class="na">property=</span><span class="s">"Inclination"</span><span class="nt">&gt;</span>
+<span class="w">    </span><span class="nt">&lt;AggregatedDataValue</span><span class="w"> </span><span class="na">type=</span><span class="s">"Core/PhysicalQuantities.PhysicalQuantity"</span><span class="nt">&gt;</span>
+<span class="w">      </span><span class="nt">&lt;Data</span><span class="w"> </span><span class="na">property=</span><span class="s">"Unit"</span><span class="nt">&gt;</span>
+<span class="w">        </span><span class="nt">&lt;DataReference</span><span class="w"> </span><span class="na">data=</span><span class="s">"Core/PhysicalQuantities.PercentageUnit.Percent"</span><span class="nt">/&gt;</span>
+<span class="w">      </span><span class="nt">&lt;/Data&gt;</span>
+<span class="w">      </span><span class="nt">&lt;Data</span><span class="w"> </span><span class="na">property=</span><span class="s">"Value"</span><span class="nt">&gt;</span>
+<span class="w">        </span><span class="nt">&lt;Double&gt;</span>10.0<span class="nt">&lt;/Double&gt;</span>
+<span class="w">      </span><span class="nt">&lt;/Data&gt;</span>
+<span class="w">    </span><span class="nt">&lt;/AggregatedDataValue&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/Data&gt;</span>
+<span class="w">  </span><span class="nt">&lt;Data</span><span class="w"> </span><span class="na">property=</span><span class="s">"InsulationThickness"</span><span class="nt">&gt;</span>
+<span class="w">    </span><span class="nt">&lt;AggregatedDataValue</span><span class="w"> </span><span class="na">type=</span><span class="s">"Core/PhysicalQuantities.PhysicalQuantity"</span><span class="nt">&gt;</span>
+<span class="w">      </span><span class="nt">&lt;Data</span><span class="w"> </span><span class="na">property=</span><span class="s">"Unit"</span><span class="nt">&gt;</span>
+<span class="w">        </span><span class="nt">&lt;DataReference</span><span class="w"> </span><span class="na">data=</span><span class="s">"Core/PhysicalQuantities.LengthUnit.Millimetre"</span><span class="nt">/&gt;</span>
+<span class="w">      </span><span class="nt">&lt;/Data&gt;</span>
+<span class="w">      </span><span class="nt">&lt;Data</span><span class="w"> </span><span class="na">property=</span><span class="s">"Value"</span><span class="nt">&gt;</span>
+<span class="w">        </span><span class="nt">&lt;Double&gt;</span>40.0<span class="nt">&lt;/Double&gt;</span>
+<span class="w">      </span><span class="nt">&lt;/Data&gt;</span>
+<span class="w">    </span><span class="nt">&lt;/AggregatedDataValue&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/Data&gt;</span>
+<span class="w">  </span><span class="nt">&lt;Data</span><span class="w"> </span><span class="na">property=</span><span class="s">"InsulationType"</span><span class="nt">&gt;</span>
+<span class="w">    </span><span class="nt">&lt;String&gt;</span>Q<span class="nt">&lt;/String&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/Data&gt;</span>
+<span class="w">  </span><span class="nt">&lt;Data</span><span class="w"> </span><span class="na">property=</span><span class="s">"JacketedPipe"</span><span class="nt">&gt;</span>
+<span class="w">    </span><span class="nt">&lt;DataReference</span><span class="w"> </span><span class="na">data=</span><span class="s">"Plant/Enumerations.JacketedPipeClassification.JacketedPipe"</span><span class="nt">/&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/Data&gt;</span>
+<span class="w">  </span><span class="nt">&lt;Data</span><span class="w"> </span><span class="na">property=</span><span class="s">"LowerLimitHeatTracingTemperature"</span><span class="nt">&gt;</span>
+<span class="w">    </span><span class="nt">&lt;AggregatedDataValue</span><span class="w"> </span><span class="na">type=</span><span class="s">"Core/PhysicalQuantities.PhysicalQuantity"</span><span class="nt">&gt;</span>
+<span class="w">      </span><span class="nt">&lt;Data</span><span class="w"> </span><span class="na">property=</span><span class="s">"Unit"</span><span class="nt">&gt;</span>
+<span class="w">        </span><span class="nt">&lt;DataReference</span><span class="w"> </span><span class="na">data=</span><span class="s">"Core/PhysicalQuantities.TemperatureUnit.DegreeCelsius"</span><span class="nt">/&gt;</span>
+<span class="w">      </span><span class="nt">&lt;/Data&gt;</span>
+<span class="w">      </span><span class="nt">&lt;Data</span><span class="w"> </span><span class="na">property=</span><span class="s">"Value"</span><span class="nt">&gt;</span>
+<span class="w">        </span><span class="nt">&lt;Double&gt;</span>100.0<span class="nt">&lt;/Double&gt;</span>
+<span class="w">      </span><span class="nt">&lt;/Data&gt;</span>
+<span class="w">    </span><span class="nt">&lt;/AggregatedDataValue&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/Data&gt;</span>
+<span class="w">  </span><span class="nt">&lt;Data</span><span class="w"> </span><span class="na">property=</span><span class="s">"NominalDiameterNumericalValueRepresentation"</span><span class="nt">&gt;</span>
+<span class="w">    </span><span class="nt">&lt;String&gt;</span>25<span class="nt">&lt;/String&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/Data&gt;</span>
+<span class="w">  </span><span class="nt">&lt;Data</span><span class="w"> </span><span class="na">property=</span><span class="s">"NominalDiameterRepresentation"</span><span class="nt">&gt;</span>
+<span class="w">    </span><span class="nt">&lt;String&gt;</span>DN<span class="w"> </span>25<span class="nt">&lt;/String&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/Data&gt;</span>
+<span class="w">  </span><span class="nt">&lt;Data</span><span class="w"> </span><span class="na">property=</span><span class="s">"NominalDiameterStandard"</span><span class="nt">&gt;</span>
+<span class="w">    </span><span class="nt">&lt;DataReference</span><span class="w"> </span><span class="na">data=</span><span class="s">"Plant/Enumerations.NominalDiameterStandardClassification.Din2448ObjectDn25"</span><span class="nt">/&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/Data&gt;</span>
+<span class="w">  </span><span class="nt">&lt;Data</span><span class="w"> </span><span class="na">property=</span><span class="s">"NominalDiameterTypeRepresentation"</span><span class="nt">&gt;</span>
+<span class="w">    </span><span class="nt">&lt;String&gt;</span>DN<span class="nt">&lt;/String&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/Data&gt;</span>
+<span class="w">  </span><span class="nt">&lt;Data</span><span class="w"> </span><span class="na">property=</span><span class="s">"OnHold"</span><span class="nt">&gt;</span>
+<span class="w">    </span><span class="nt">&lt;DataReference</span><span class="w"> </span><span class="na">data=</span><span class="s">"Plant/Enumerations.OnHoldClassification.OnHold"</span><span class="nt">/&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/Data&gt;</span>
+<span class="w">  </span><span class="nt">&lt;Data</span><span class="w"> </span><span class="na">property=</span><span class="s">"OperatingTemperature"</span><span class="nt">&gt;</span>
+<span class="w">    </span><span class="nt">&lt;AggregatedDataValue</span><span class="w"> </span><span class="na">type=</span><span class="s">"Core/PhysicalQuantities.PhysicalQuantity"</span><span class="nt">&gt;</span>
+<span class="w">      </span><span class="nt">&lt;Data</span><span class="w"> </span><span class="na">property=</span><span class="s">"Unit"</span><span class="nt">&gt;</span>
+<span class="w">        </span><span class="nt">&lt;DataReference</span><span class="w"> </span><span class="na">data=</span><span class="s">"Core/PhysicalQuantities.TemperatureUnit.DegreeCelsius"</span><span class="nt">/&gt;</span>
+<span class="w">      </span><span class="nt">&lt;/Data&gt;</span>
+<span class="w">      </span><span class="nt">&lt;Data</span><span class="w"> </span><span class="na">property=</span><span class="s">"Value"</span><span class="nt">&gt;</span>
+<span class="w">        </span><span class="nt">&lt;Double&gt;</span>100.0<span class="nt">&lt;/Double&gt;</span>
+<span class="w">      </span><span class="nt">&lt;/Data&gt;</span>
+<span class="w">    </span><span class="nt">&lt;/AggregatedDataValue&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/Data&gt;</span>
+<span class="w">  </span><span class="nt">&lt;Data</span><span class="w"> </span><span class="na">property=</span><span class="s">"PipingClassCode"</span><span class="nt">&gt;</span>
+<span class="w">    </span><span class="nt">&lt;String&gt;</span>75HB13<span class="nt">&lt;/String&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/Data&gt;</span>
+<span class="w">  </span><span class="nt">&lt;Data</span><span class="w"> </span><span class="na">property=</span><span class="s">"PressureTestCircuitNumber"</span><span class="nt">&gt;</span>
+<span class="w">    </span><span class="nt">&lt;String&gt;</span>TC123<span class="nt">&lt;/String&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/Data&gt;</span>
+<span class="w">  </span><span class="nt">&lt;Data</span><span class="w"> </span><span class="na">property=</span><span class="s">"PrimarySecondaryPipingNetworkSegment"</span><span class="nt">&gt;</span>
+<span class="w">    </span><span class="nt">&lt;DataReference</span><span class="w"> </span><span class="na">data=</span><span class="s">"Plant/Enumerations.PrimarySecondaryPipingNetworkSegmentClassification.PrimaryPipingNetworkSegment"</span><span class="nt">/&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/Data&gt;</span>
+<span class="w">  </span><span class="nt">&lt;Data</span><span class="w"> </span><span class="na">property=</span><span class="s">"SegmentNumber"</span><span class="nt">&gt;</span>
+<span class="w">    </span><span class="nt">&lt;String&gt;</span>S3<span class="nt">&lt;/String&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/Data&gt;</span>
+<span class="w">  </span><span class="nt">&lt;Data</span><span class="w"> </span><span class="na">property=</span><span class="s">"Siphon"</span><span class="nt">&gt;</span>
+<span class="w">    </span><span class="nt">&lt;DataReference</span><span class="w"> </span><span class="na">data=</span><span class="s">"Plant/Enumerations.SiphonClassification.Siphon"</span><span class="nt">/&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/Data&gt;</span>
+<span class="w">  </span><span class="nt">&lt;Data</span><span class="w"> </span><span class="na">property=</span><span class="s">"Slope"</span><span class="nt">&gt;</span>
+<span class="w">    </span><span class="nt">&lt;DataReference</span><span class="w"> </span><span class="na">data=</span><span class="s">"Plant/Enumerations.PipingNetworkSegmentSlopeClassification.SlopedPipingNetworkSegment"</span><span class="nt">/&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/Data&gt;</span>
+<span class="nt">&lt;/Object&gt;</span>
+</pre></div>
+</div>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+    
+        <div id="show_right_sidebar">
+            <p><a class="toggle_right_sidebar" href="#"><span class="icon">&lt;</span><span>Page contents</span></a></p>
+        </div>
+
+        <div id="right_sidebar">
+            <p><a class="toggle_right_sidebar" href="#"><span class="icon">&gt;</span><span>Page contents:</span></a></p>
+            <div class="page_toc">
+                <ul>
+<li><a class="reference internal" href="#">PipingNetworkSegment</a><ul>
+<li><a class="reference internal" href="#Overview">Overview</a></li>
+<li><a class="reference internal" href="#Members">Members</a><ul>
+<li><a class="reference internal" href="#member-list-section-Composition%20Properties">Composition Properties</a></li>
+<li><a class="reference internal" href="#member-list-section-Reference%20Properties">Reference Properties</a></li>
+<li><a class="reference internal" href="#member-list-section-Data%20Properties">Data Properties</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#Constraints">Constraints</a></li>
+<li><a class="reference internal" href="#sp:plant.piping.pipingnetworksegment.colorcode">ColorCode</a><ul>
+<li><a class="reference internal" href="#sp:plant.piping.pipingnetworksegment.colorcode-example">Example</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#sp:plant.piping.pipingnetworksegment.connections">Connections</a></li>
+<li><a class="reference internal" href="#sp:plant.piping.pipingnetworksegment.flowdirection">FlowDirection</a><ul>
+<li><a class="reference internal" href="#sp:plant.piping.pipingnetworksegment.flowdirection-example">Example</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#sp:plant.piping.pipingnetworksegment.fluidcode">FluidCode</a><ul>
+<li><a class="reference internal" href="#sp:plant.piping.pipingnetworksegment.fluidcode-example">Example</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#sp:plant.piping.pipingnetworksegment.heattracingtype">HeatTracingType</a><ul>
+<li><a class="reference internal" href="#sp:plant.piping.pipingnetworksegment.heattracingtype-example">Example</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#sp:plant.piping.pipingnetworksegment.heattracingtyperepresentation">HeatTracingTypeRepresentation</a><ul>
+<li><a class="reference internal" href="#sp:plant.piping.pipingnetworksegment.heattracingtyperepresentation-example">Example</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#sp:plant.piping.pipingnetworksegment.inclination">Inclination</a><ul>
+<li><a class="reference internal" href="#sp:plant.piping.pipingnetworksegment.inclination-example">Example</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#sp:plant.piping.pipingnetworksegment.insulationthickness">InsulationThickness</a><ul>
+<li><a class="reference internal" href="#sp:plant.piping.pipingnetworksegment.insulationthickness-example">Example</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#sp:plant.piping.pipingnetworksegment.insulationtype">InsulationType</a><ul>
+<li><a class="reference internal" href="#sp:plant.piping.pipingnetworksegment.insulationtype-example">Example</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#sp:plant.piping.pipingnetworksegment.items">Items</a></li>
+<li><a class="reference internal" href="#sp:plant.piping.pipingnetworksegment.jacketedpipe">JacketedPipe</a><ul>
+<li><a class="reference internal" href="#sp:plant.piping.pipingnetworksegment.jacketedpipe-example">Example</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#sp:plant.piping.pipingnetworksegment.lowerlimitheattracingtemperature">LowerLimitHeatTracingTemperature</a><ul>
+<li><a class="reference internal" href="#sp:plant.piping.pipingnetworksegment.lowerlimitheattracingtemperature-example">Example</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#sp:plant.piping.pipingnetworksegment.nominaldiameternumericalvaluerepresentation">NominalDiameterNumericalValueRepresentation</a><ul>
+<li><a class="reference internal" href="#sp:plant.piping.pipingnetworksegment.nominaldiameternumericalvaluerepresentation-example">Example</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#sp:plant.piping.pipingnetworksegment.nominaldiameterrepresentation">NominalDiameterRepresentation</a><ul>
+<li><a class="reference internal" href="#sp:plant.piping.pipingnetworksegment.nominaldiameterrepresentation-example">Example</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#sp:plant.piping.pipingnetworksegment.nominaldiameterstandard">NominalDiameterStandard</a><ul>
+<li><a class="reference internal" href="#sp:plant.piping.pipingnetworksegment.nominaldiameterstandard-example">Example</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#sp:plant.piping.pipingnetworksegment.nominaldiametertyperepresentation">NominalDiameterTypeRepresentation</a><ul>
+<li><a class="reference internal" href="#sp:plant.piping.pipingnetworksegment.nominaldiametertyperepresentation-example">Example</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#sp:plant.piping.pipingnetworksegment.onhold">OnHold</a><ul>
+<li><a class="reference internal" href="#sp:plant.piping.pipingnetworksegment.onhold-example">Example</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#sp:plant.piping.pipingnetworksegment.operatingtemperature">OperatingTemperature</a><ul>
+<li><a class="reference internal" href="#sp:plant.piping.pipingnetworksegment.operatingtemperature-example">Example</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#sp:plant.piping.pipingnetworksegment.pipingclasscode">PipingClassCode</a><ul>
+<li><a class="reference internal" href="#sp:plant.piping.pipingnetworksegment.pipingclasscode-example">Example</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#sp:plant.piping.pipingnetworksegment.pressuretestcircuitnumber">PressureTestCircuitNumber</a><ul>
+<li><a class="reference internal" href="#sp:plant.piping.pipingnetworksegment.pressuretestcircuitnumber-example">Example</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#sp:plant.piping.pipingnetworksegment.primarysecondarypipingnetworksegment">PrimarySecondaryPipingNetworkSegment</a><ul>
+<li><a class="reference internal" href="#sp:plant.piping.pipingnetworksegment.primarysecondarypipingnetworksegment-example">Example</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#sp:plant.piping.pipingnetworksegment.segmentnumber">SegmentNumber</a><ul>
+<li><a class="reference internal" href="#sp:plant.piping.pipingnetworksegment.segmentnumber-example">Example</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#sp:plant.piping.pipingnetworksegment.siphon">Siphon</a><ul>
+<li><a class="reference internal" href="#sp:plant.piping.pipingnetworksegment.siphon-example">Example</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#sp:plant.piping.pipingnetworksegment.slope">Slope</a><ul>
+<li><a class="reference internal" href="#sp:plant.piping.pipingnetworksegment.slope-example">Example</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#sp:plant.piping.pipingnetworksegment.sourceitem">SourceItem</a></li>
+<li><a class="reference internal" href="#sp:plant.piping.pipingnetworksegment.sourcenode">SourceNode</a></li>
+<li><a class="reference internal" href="#sp:plant.piping.pipingnetworksegment.targetitem">TargetItem</a></li>
+<li><a class="reference internal" href="#sp:plant.piping.pipingnetworksegment.targetnode">TargetNode</a></li>
+<li><a class="reference internal" href="#Plant.Piping.PipingNetworkSegment-example">Example in DEXPI XML</a></li>
+</ul>
+</li>
+</ul>
+
+            </div>
+        </div>
+    
+
+      <div class="clearer"></div>
+    </div>
+    <div class="button_nav_wrapper">
+        <div class="button_nav">
+            <div class="left">
+                
+                <a href="PipingConnection.html">
+                    <span class="icon">&lt;</span><span>PipingConnection</span></a>
+                
+            </div>
+
+            <div class="right">
+                
+                    <a href="PipingNetworkSegmentItem.html"><span>PipingNetworkSegmentItem</span><span class="icon">&gt;</span></a>
+                
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer" role="contentinfo">
+    © Copyright .
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.1.3.
+    </div>
+
+<p id="theme_credit">Styled using the <a href="https://github.com/piccolo-orm/piccolo_theme">Piccolo Theme</a></p>
+  </body>
+</html>

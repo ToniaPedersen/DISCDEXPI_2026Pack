@@ -1,0 +1,5 @@
+ProcessInstrumentationFunction
+==============================
+
+.. sp:internal-autoelement::
+   :element: Plant.Instrumentation.ProcessInstrumentationFunction

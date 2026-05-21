@@ -1,0 +1,5 @@
+DateTime
+========
+
+.. sp:internal-autoelement::
+   :element: Builtin.DateTime

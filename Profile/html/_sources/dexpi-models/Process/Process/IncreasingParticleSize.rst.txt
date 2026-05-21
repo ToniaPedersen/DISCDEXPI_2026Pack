@@ -1,0 +1,5 @@
+IncreasingParticleSize
+======================
+
+.. sp:internal-autoelement::
+   :element: Process.Process.IncreasingParticleSize

@@ -1,0 +1,5 @@
+PlateHeatExchanger
+==================
+
+.. sp:internal-autoelement::
+   :element: Plant.ProcessEquipment.PlateHeatExchanger

@@ -1,0 +1,5 @@
+Agitating
+=========
+
+.. sp:internal-autoelement::
+   :element: Process.Process.Agitating

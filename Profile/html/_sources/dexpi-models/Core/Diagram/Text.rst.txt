@@ -1,0 +1,5 @@
+Text
+====
+
+.. sp:internal-autoelement::
+   :element: Core.Diagram.Text

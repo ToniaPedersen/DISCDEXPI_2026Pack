@@ -1,0 +1,5 @@
+TaggedColumnSection
+===================
+
+.. sp:internal-autoelement::
+   :element: Plant.ProcessEquipment.TaggedColumnSection

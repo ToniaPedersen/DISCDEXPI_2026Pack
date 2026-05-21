@@ -1,0 +1,5 @@
+InlineMeasuringElement
+======================
+
+.. sp:internal-autoelement::
+   :element: Plant.Piping.InlineMeasuringElement

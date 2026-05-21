@@ -1,0 +1,5 @@
+VortexFlowMeter
+===============
+
+.. sp:internal-autoelement::
+   :element: DiscProfile.InformationModel.VortexFlowMeter

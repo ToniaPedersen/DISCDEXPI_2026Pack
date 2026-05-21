@@ -1,0 +1,81 @@
+<ns0:svg xmlns:ns0="http://www.w3.org/2000/svg" width="203.41796875px" height="210.39999999999998px" viewBox="0.0 0.0 203.41796875 210.39999999999998"><ns0:style>
+            .uml-foreground-stroke {
+                stroke: black;
+                stroke-width: 1px;
+            }
+            
+            .uml-foreground-fill {
+                fill: black;
+            }
+            
+            .uml-background_color-type {
+                fill: #ffffcc;
+            }
+            
+            .uml-background_color-main_type {
+                fill: #ffff66;
+            }
+            
+            .uml-background_color-instance {
+                fill: blue;
+            }
+            
+            .uml-background_color-background {
+                fill: white;
+            }
+            
+            .uml-background_color-foreground {
+                fill: black;
+            }
+            
+            .uml-font-normal {
+                font-family: Arial;
+            }
+            
+            .uml-font-element {
+                font-family: Arial;
+            }
+            
+            .uml-fontsize-normal {
+                font-size: 10px;
+            }
+
+            .uml-fontsize-large {
+                font-size: 12px;
+            }
+            
+            .uml-source_marker-closed_arrow {
+                marker-start: url(#uml-marker-closed_arrow);
+            }
+            
+            .uml-source_marker-open_arrow {
+                marker-start: url(#uml-marker-open_arrow);
+            }
+            
+            .uml-source_marker-filled_diamond {
+                marker-start: url(#uml-marker-filled_diamond);
+            }
+
+            .uml-target_marker-closed_arrow {
+                marker-end: url(#uml-marker-closed_arrow);
+            }
+            
+            .uml-target_marker-open_arrow {
+                marker-end: url(#uml-marker-open_arrow);
+            }
+            
+            .uml-target_marker-filled_diamond {
+                marker-end: url(#uml-marker-filled_diamond);
+            }
+
+            </ns0:style><ns0:defs>
+        <ns0:marker id="uml-marker-closed_arrow" viewBox="-2 -2 14 14" refX="10" refY="5.0" markerWidth="14" markerHeight="14" orient="auto-start-reverse">
+          <ns0:path d="M 0 0 L 10 5.0 L 0 10 Z" stroke-linejoin="round" stroke-linecap="round" class="uml-foreground-stroke uml-background_color-background"/>
+        </ns0:marker>
+        <ns0:marker id="uml-marker-open_arrow" viewBox="-2 -2 14 14" refX="10" refY="5.0" markerWidth="14" markerHeight="14" orient="auto-start-reverse">
+          <ns0:path d="M 0 0 L 10 5.0 L 0 10" stroke-linejoin="round" stroke-linecap="round" fill="none" class="uml-foreground-stroke"/>
+        </ns0:marker>
+        <ns0:marker id="uml-marker-filled_diamond" viewBox="-2 -2 14 14" refX="10" refY="5.0" markerWidth="14" markerHeight="14" orient="auto-start-reverse">
+          <ns0:path d="M 0 5.0 L      5.0 2.0        10 5.0      5.0 8.0 Z       " stroke-linejoin="round" stroke-linecap="round" class="uml-foreground-stroke uml-background_color-foreground"/>
+        </ns0:marker>
+      </ns0:defs><ns0:rect class="uml-background_color-type uml-foreground-stroke" x="29.72768554687498" y="12.0" width="143.96259765625004" height="37.599999999999994"/><ns0:text x="101.708984375" text-anchor="middle" font-size="0px" y="27.439999999999998"><ns0:tspan class="uml-foreground-fill uml-font-normal uml-fontsize-large">&lt;&lt;datatype&gt;&gt;</ns0:tspan></ns0:text><ns0:text x="101.708984375" text-anchor="middle" font-size="0px" y="41.239999999999995"><ns0:a href="../dexpi-models/Core/PhysicalQuantities/PhysicalQuantityUnit.html"><ns0:tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold" font-style="italic">PhysicalQuantityUnit</ns0:tspan></ns0:a></ns0:text><ns0:rect class="uml-background_color-main_type uml-foreground-stroke" x="12.0" y="122.19999999999999" width="179.41796875" height="76.19999999999999"/><ns0:text x="101.708984375" text-anchor="middle" font-size="0px" y="137.64"><ns0:tspan class="uml-foreground-fill uml-font-normal uml-fontsize-large">&lt;&lt;enumeration&gt;&gt;</ns0:tspan></ns0:text><ns0:text x="101.708984375" text-anchor="middle" font-size="0px" y="151.44"><ns0:tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold">HeatTransferCoefficientUnit</ns0:tspan></ns0:text><ns0:polyline class="uml-foreground-stroke" points="12.0,159.79999999999998 191.41796875,159.79999999999998" fill="none"/><ns0:text x="17.0" font-size="0px" y="176.23999999999998"><ns0:a href="../dexpi-models/Core/PhysicalQuantities/HeatTransferCoefficientUnit.html#sp:core.physicalquantities.heattransfercoefficientunit.kilowattpermetresquaredkelvin"><ns0:tspan class="uml-foreground-fill uml-font-normal uml-fontsize-large">KilowattPerMetreSquaredKelvin</ns0:tspan></ns0:a></ns0:text><ns0:text x="17.0" font-size="0px" y="190.04"><ns0:a href="../dexpi-models/Core/PhysicalQuantities/HeatTransferCoefficientUnit.html#sp:core.physicalquantities.heattransfercoefficientunit.wattpermetresquaredkelvin"><ns0:tspan class="uml-foreground-fill uml-font-normal uml-fontsize-large">WattPerMetreSquaredKelvin</ns0:tspan></ns0:a></ns0:text><ns0:polyline class="uml-foreground-stroke uml-source_marker-closed_arrow" points="101.708984375,49.599999999999994 101.708984375,85.39999999999999 101.708984375,86.39999999999999 101.708984375,122.19999999999999" fill="none"/></ns0:svg>

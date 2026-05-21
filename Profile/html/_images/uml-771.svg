@@ -1,0 +1,81 @@
+<ns0:svg xmlns:ns0="http://www.w3.org/2000/svg" width="237.31149739583333px" height="351.20000000000005px" viewBox="0.0 0.0 237.31149739583333 351.20000000000005"><ns0:style>
+            .uml-foreground-stroke {
+                stroke: black;
+                stroke-width: 1px;
+            }
+            
+            .uml-foreground-fill {
+                fill: black;
+            }
+            
+            .uml-background_color-type {
+                fill: #ffffcc;
+            }
+            
+            .uml-background_color-main_type {
+                fill: #ffff66;
+            }
+            
+            .uml-background_color-instance {
+                fill: blue;
+            }
+            
+            .uml-background_color-background {
+                fill: white;
+            }
+            
+            .uml-background_color-foreground {
+                fill: black;
+            }
+            
+            .uml-font-normal {
+                font-family: Arial;
+            }
+            
+            .uml-font-element {
+                font-family: Arial;
+            }
+            
+            .uml-fontsize-normal {
+                font-size: 10px;
+            }
+
+            .uml-fontsize-large {
+                font-size: 12px;
+            }
+            
+            .uml-source_marker-closed_arrow {
+                marker-start: url(#uml-marker-closed_arrow);
+            }
+            
+            .uml-source_marker-open_arrow {
+                marker-start: url(#uml-marker-open_arrow);
+            }
+            
+            .uml-source_marker-filled_diamond {
+                marker-start: url(#uml-marker-filled_diamond);
+            }
+
+            .uml-target_marker-closed_arrow {
+                marker-end: url(#uml-marker-closed_arrow);
+            }
+            
+            .uml-target_marker-open_arrow {
+                marker-end: url(#uml-marker-open_arrow);
+            }
+            
+            .uml-target_marker-filled_diamond {
+                marker-end: url(#uml-marker-filled_diamond);
+            }
+
+            </ns0:style><ns0:defs>
+        <ns0:marker id="uml-marker-closed_arrow" viewBox="-2 -2 14 14" refX="10" refY="5.0" markerWidth="14" markerHeight="14" orient="auto-start-reverse">
+          <ns0:path d="M 0 0 L 10 5.0 L 0 10 Z" stroke-linejoin="round" stroke-linecap="round" class="uml-foreground-stroke uml-background_color-background"/>
+        </ns0:marker>
+        <ns0:marker id="uml-marker-open_arrow" viewBox="-2 -2 14 14" refX="10" refY="5.0" markerWidth="14" markerHeight="14" orient="auto-start-reverse">
+          <ns0:path d="M 0 0 L 10 5.0 L 0 10" stroke-linejoin="round" stroke-linecap="round" fill="none" class="uml-foreground-stroke"/>
+        </ns0:marker>
+        <ns0:marker id="uml-marker-filled_diamond" viewBox="-2 -2 14 14" refX="10" refY="5.0" markerWidth="14" markerHeight="14" orient="auto-start-reverse">
+          <ns0:path d="M 0 5.0 L      5.0 2.0        10 5.0      5.0 8.0 Z       " stroke-linejoin="round" stroke-linecap="round" class="uml-foreground-stroke uml-background_color-foreground"/>
+        </ns0:marker>
+      </ns0:defs><ns0:rect class="uml-background_color-type uml-foreground-stroke" x="61.81054687500001" y="125.19999999999999" width="100.0" height="23.799999999999997"/><ns0:text x="111.810546875" text-anchor="middle" font-size="0px" y="140.64"><ns0:a href="../disc-models/Profile/SimpleStroke.html"><ns0:tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold" font-style="italic">SimpleStroke</ns0:tspan></ns0:a></ns0:text><ns0:rect class="uml-background_color-type uml-foreground-stroke" x="173.34671223958333" y="12.0" width="51.96478515625" height="23.799999999999997"/><ns0:text x="199.32910481770833" text-anchor="middle" font-size="0px" y="27.439999999999998"><ns0:a href="../disc-models/Profile/Stroke.html"><ns0:tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold" font-style="italic">Stroke</ns0:tspan></ns0:a></ns0:text><ns0:rect class="uml-background_color-type uml-foreground-stroke" x="36.94104817708333" y="12.0" width="116.40566406250001" height="23.799999999999997"/><ns0:text x="95.14388020833334" text-anchor="middle" font-size="0px" y="27.439999999999998"><ns0:a href="../disc-models/Profile/AggregatedStroke.html"><ns0:tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold">AggregatedStroke</ns0:tspan></ns0:a></ns0:text><ns0:rect class="uml-background_color-main_type uml-foreground-stroke" x="12.0" y="221.6" width="199.62109375" height="117.6"/><ns0:text x="111.810546875" text-anchor="middle" font-size="0px" y="237.04"><ns0:tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold">LineStroke</ns0:tspan></ns0:text><ns0:polyline class="uml-foreground-stroke" points="12.0,245.39999999999998 211.62109375,245.39999999999998" fill="none"/><ns0:text x="17.0" font-size="0px" y="261.84"><ns0:a href="../disc-models/Profile/LineStroke.html#sp:profile.linestroke.color"><ns0:tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Color</ns0:tspan></ns0:a><ns0:tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">&#160;:</ns0:tspan></ns0:text><ns0:text x="99.896484375" font-size="0px" y="261.84"><ns0:a href="../dexpi-models/Core/Diagram/Color.html"><ns0:tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Color</ns0:tspan></ns0:a></ns0:text><ns0:text x="17.0" font-size="0px" y="275.64"><ns0:a href="../disc-models/Profile/LineStroke.html#sp:profile.linestroke.dasharray"><ns0:tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">DashArray</ns0:tspan></ns0:a><ns0:tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">&#160;:</ns0:tspan></ns0:text><ns0:text x="99.896484375" font-size="0px" y="275.64"><ns0:a href="../dexpi-models/Builtin/Double.html"><ns0:tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Double</ns0:tspan></ns0:a><ns0:tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">&#160;[*]&#160;{ordered}</ns0:tspan></ns0:text><ns0:text x="17.0" font-size="0px" y="289.44"><ns0:a href="../disc-models/Profile/LineStroke.html#sp:profile.linestroke.lateraloffset"><ns0:tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">LateralOffset</ns0:tspan></ns0:a><ns0:tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">&#160;:</ns0:tspan></ns0:text><ns0:text x="99.896484375" font-size="0px" y="289.44"><ns0:a href="../dexpi-models/Builtin/Double.html"><ns0:tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Double</ns0:tspan></ns0:a></ns0:text><ns0:text x="17.0" font-size="0px" y="303.24"><ns0:a href="../disc-models/Profile/LineStroke.html#sp:profile.linestroke.linerounding"><ns0:tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">LineRounding</ns0:tspan></ns0:a><ns0:tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">&#160;:</ns0:tspan></ns0:text><ns0:text x="99.896484375" font-size="0px" y="303.24"><ns0:a href="../disc-models/Profile/LineRounding.html"><ns0:tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">LineRounding</ns0:tspan></ns0:a></ns0:text><ns0:text x="17.0" font-size="0px" y="317.04"><ns0:a href="../disc-models/Profile/LineStroke.html#sp:profile.linestroke.offset"><ns0:tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Offset</ns0:tspan></ns0:a><ns0:tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">&#160;:</ns0:tspan></ns0:text><ns0:text x="99.896484375" font-size="0px" y="317.04"><ns0:a href="../dexpi-models/Builtin/Double.html"><ns0:tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Double</ns0:tspan></ns0:a></ns0:text><ns0:text x="17.0" font-size="0px" y="330.84000000000003"><ns0:a href="../disc-models/Profile/LineStroke.html#sp:profile.linestroke.width"><ns0:tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Width</ns0:tspan></ns0:a><ns0:tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">&#160;:</ns0:tspan></ns0:text><ns0:text x="99.896484375" font-size="0px" y="330.84000000000003"><ns0:a href="../dexpi-models/Builtin/Double.html"><ns0:tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Double</ns0:tspan></ns0:a></ns0:text><ns0:polyline class="uml-foreground-stroke uml-source_marker-closed_arrow" points="111.810546875,149.0 111.810546875,184.79999999999998 111.810546875,185.79999999999998 111.810546875,221.6" fill="none"/><ns0:polyline class="uml-foreground-stroke uml-source_marker-closed_arrow" points="199.32910481770833,35.8 199.32910481770833,80.0 199.32910481770833,81.0 199.32910481770833,99.39999999999999 128.47721354166666,99.39999999999999 128.47721354166666,125.19999999999999" fill="none"/><ns0:rect class="uml-background_color-background " x="54.463216145833336" y="71.6" width="81.361328125" height="17.799999999999997"/><ns0:text x="95.14388020833334" text-anchor="middle" font-size="0px" y="84.03999999999999"><ns0:a href="../disc-models/Profile/AggregatedStroke.html#sp:profile.aggregatedstroke.simplestrokes"><ns0:tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">SimpleStrokes</ns0:tspan></ns0:a></ns0:text><ns0:polyline class="uml-foreground-stroke" points="95.14388020833334,35.8 95.14388020833334,71.6" fill="none"/><ns0:polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="95.14388020833334,89.39999999999999 95.14388020833334,125.19999999999999" fill="none"/><ns0:text x="103.14388020833334" font-size="0px" y="48.0"><ns0:tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</ns0:tspan></ns0:text><ns0:text x="103.14388020833334" font-size="0px" y="119.6"><ns0:tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</ns0:tspan></ns0:text></ns0:svg>

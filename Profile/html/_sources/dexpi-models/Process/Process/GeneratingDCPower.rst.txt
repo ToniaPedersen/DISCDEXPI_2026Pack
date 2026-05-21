@@ -1,0 +1,5 @@
+GeneratingDCPower
+=================
+
+.. sp:internal-autoelement::
+   :element: Process.Process.GeneratingDCPower

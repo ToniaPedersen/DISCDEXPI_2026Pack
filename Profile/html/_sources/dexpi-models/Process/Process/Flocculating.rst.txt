@@ -1,0 +1,5 @@
+Flocculating
+============
+
+.. sp:internal-autoelement::
+   :element: Process.Process.Flocculating

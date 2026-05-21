@@ -1,0 +1,5 @@
+ReciprocatingCompressor
+=======================
+
+.. sp:internal-autoelement::
+   :element: Plant.ProcessEquipment.ReciprocatingCompressor

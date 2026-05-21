@@ -1,0 +1,5 @@
+DensityUnit
+===========
+
+.. sp:internal-autoelement::
+   :element: Core.PhysicalQuantities.DensityUnit

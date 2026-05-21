@@ -1,0 +1,5 @@
+PhysicalQuantityUnit
+====================
+
+.. sp:internal-autoelement::
+   :element: Core.PhysicalQuantities.PhysicalQuantityUnit

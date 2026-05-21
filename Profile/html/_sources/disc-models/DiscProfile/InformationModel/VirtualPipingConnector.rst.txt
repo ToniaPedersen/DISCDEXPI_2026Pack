@@ -1,0 +1,5 @@
+VirtualPipingConnector
+======================
+
+.. sp:internal-autoelement::
+   :element: DiscProfile.InformationModel.VirtualPipingConnector

@@ -1,0 +1,5 @@
+ExplosionProofArtefactClassification
+====================================
+
+.. sp:internal-autoelement::
+   :element: Plant.Enumerations.ExplosionProofArtefactClassification

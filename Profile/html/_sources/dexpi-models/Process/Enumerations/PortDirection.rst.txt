@@ -1,0 +1,5 @@
+PortDirection
+=============
+
+.. sp:internal-autoelement::
+   :element: Process.Enumerations.PortDirection

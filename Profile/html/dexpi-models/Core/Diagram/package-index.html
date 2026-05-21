@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en" data-content_root="../../../">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Diagram — DISC Profile 0.5</title>
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=b86133f3">
+    <link rel="stylesheet" type="text/css" href="../../../_static/basic_mod.css?v=9b2032db">
+    <link rel="stylesheet" type="text/css" href="../../../_static/sp.css">
+    <script src="../../../_static/documentation_options.js?v=db78e746"></script>
+    <script src="../../../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="../../../_static/js/theme.js"></script>
+    <script src="../../../_static/js/petite-vue.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html">
+    <link rel="search" title="Search" href="../../../search.html">
+    <link rel="next" title="AttributeRepresentation" href="AttributeRepresentation.html">
+    <link rel="prev" title="SingleLanguageString" href="../DataTypes/SingleLanguageString.html"> 
+  </head><body data-dark_mode_code_blocks="true">
+
+<div id="top_nav">
+    
+
+    <nav>
+        
+            
+        
+
+        <p id="toggle_sidebar">
+            <a href="#" title="Toggle sidebar">|||</a>
+        </p>
+        <h1><a href="../../../index.html" title="Go to homepage">DISC Profile 0.5</a></h1>
+
+        <a id="mode_toggle" href="#" @click.prevent="handleClick" :title="mode">
+    <template v-if="mode == 'light'">
+        <svg width="100%" height="100%" viewbox="0 0 79 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g id="mode_light"><rect id="Bounds" x="0" y="-0" width="78.623" height="79.049" style="fill:none;"></rect><circle cx="39.311" cy="39.524" r="15.734" style="fill:#fff;"></circle><g id="beams"><g id="beam"><path id="beam1" serif:id="beam" d="M44.212,4.901c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,-0 -4.9,2.196 -4.9,4.901l-0,9.614c-0,2.705 2.196,4.901 4.9,4.901c2.705,0 4.901,-2.196 4.901,-4.901l0,-9.614Z" style="fill:#fff;"></path></g><g id="beam2" serif:id="beam"><path id="beam3" serif:id="beam" d="M67.48,18.073c1.913,-1.912 1.913,-5.018 0,-6.931c-1.912,-1.912 -5.018,-1.912 -6.931,0l-6.798,6.799c-1.912,1.912 -1.912,5.018 0,6.931c1.913,1.912 5.018,1.912 6.931,-0l6.798,-6.799Z" style="fill:#fff;"></path></g><g id="beam4" serif:id="beam"><path id="beam5" serif:id="beam" d="M25.728,61.108c1.912,-1.913 1.912,-5.018 -0,-6.931c-1.913,-1.913 -5.019,-1.913 -6.931,-0l-6.799,6.798c-1.912,1.913 -1.912,5.019 0,6.931c1.913,1.913 5.019,1.913 6.931,0l6.799,-6.798Z" style="fill:#fff;"></path></g><g id="beam6" serif:id="beam"><path id="beam7" serif:id="beam" d="M60.682,54.177c-1.913,-1.913 -5.018,-1.913 -6.931,-0c-1.912,1.913 -1.912,5.018 0,6.931l6.798,6.798c1.913,1.913 5.019,1.913 6.931,0c1.913,-1.912 1.913,-5.018 0,-6.931l-6.798,-6.798Z" style="fill:#fff;"></path></g><g id="beam8" serif:id="beam"><path id="beam9" serif:id="beam" d="M4.901,34.623c-2.705,0 -4.901,2.196 -4.901,4.901c0,2.705 2.196,4.901 4.901,4.901l9.614,0c2.705,0 4.901,-2.196 4.901,-4.901c0,-2.705 -2.196,-4.901 -4.901,-4.901l-9.614,0Z" style="fill:#fff;"></path></g><g id="beam10" serif:id="beam"><path id="beam11" serif:id="beam" d="M44.212,64.534c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,-0 -4.9,2.196 -4.9,4.901l-0,9.614c-0,2.705 2.196,4.901 4.9,4.901c2.705,-0 4.901,-2.196 4.901,-4.901l0,-9.614Z" style="fill:#fff;"></path></g><g id="beam12" serif:id="beam"><path id="beam13" serif:id="beam" d="M18.929,11.142c-1.912,-1.912 -5.018,-1.912 -6.931,0c-1.912,1.913 -1.912,5.019 0,6.931l6.799,6.799c1.912,1.912 5.018,1.912 6.931,-0c1.912,-1.913 1.912,-5.019 -0,-6.931l-6.799,-6.799Z" style="fill:#fff;"></path></g><g id="beam14" serif:id="beam"><path id="beam15" serif:id="beam" d="M64.108,34.623c-2.705,0 -4.901,2.196 -4.901,4.901c-0,2.705 2.196,4.901 4.901,4.901l9.614,0c2.705,0 4.901,-2.196 4.901,-4.901c-0,-2.705 -2.196,-4.901 -4.901,-4.901l-9.614,0Z" style="fill:#fff;"></path></g></g></g></svg>
+    </template>
+
+    <template v-if="mode == 'dark'">
+        <svg width="100%" height="100%" viewbox="0 0 79 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g id="mode_dark"><rect id="Bounds" x="0" y="-0" width="78.623" height="79.049" style="fill:none;"></rect><circle cx="39.311" cy="39.524" r="15.734" style="fill:#fff;"></circle><g id="beams"><g id="beam"><path id="beam1" serif:id="beam" d="M44.212,14.515c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,0 -4.901,2.196 -4.901,4.901c0,2.705 2.197,4.901 4.901,4.901c2.705,0 4.901,-2.196 4.901,-4.901Z" style="fill:#fff;"></path></g><g id="beam2" serif:id="beam"><path id="beam3" serif:id="beam" d="M60.662,24.892c1.902,-1.902 1.902,-4.99 0,-6.892l-0.04,-0.039c-1.901,-1.902 -4.989,-1.902 -6.891,-0c-1.901,1.901 -1.901,4.989 0,6.891l0.04,0.04c1.902,1.901 4.989,1.901 6.891,-0Z" style="fill:#fff;"></path></g><g id="beam4" serif:id="beam"><path id="beam5" serif:id="beam" d="M25.732,61.103c1.91,-1.91 1.91,-5.011 0,-6.921l-0.009,-0.01c-1.91,-1.91 -5.012,-1.91 -6.921,-0c-1.91,1.91 -1.91,5.011 -0,6.921l0.01,0.01c1.909,1.91 5.011,1.91 6.92,-0Z" style="fill:#fff;"></path></g><g id="beam6" serif:id="beam"><path id="beam7" serif:id="beam" d="M60.672,54.167c-1.907,-1.907 -5.004,-1.907 -6.911,0l-0.02,0.02c-1.907,1.907 -1.907,5.004 0,6.911c1.907,1.907 5.004,1.907 6.911,-0l0.02,-0.02c1.907,-1.907 1.907,-5.004 0,-6.911Z" style="fill:#fff;"></path></g><g id="beam8" serif:id="beam"><path id="beam9" serif:id="beam" d="M14.52,34.623c-2.702,0 -4.896,2.194 -4.896,4.896l0,0.01c0,2.702 2.194,4.896 4.896,4.896c2.702,0 4.896,-2.194 4.896,-4.896l-0,-0.01c-0,-2.702 -2.194,-4.896 -4.896,-4.896Z" style="fill:#fff;"></path></g><g id="beam10" serif:id="beam"><path id="beam11" serif:id="beam" d="M44.212,64.534c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,-0 -4.901,2.196 -4.901,4.901c0,2.704 2.197,4.9 4.901,4.9c2.705,0 4.901,-2.196 4.901,-4.9Z" style="fill:#fff;"></path></g><g id="beam12" serif:id="beam"><path id="beam13" serif:id="beam" d="M25.73,17.943c-1.911,-1.911 -5.015,-1.911 -6.926,0l-0.005,0.005c-1.911,1.911 -1.911,5.015 0,6.926c1.911,1.911 5.015,1.911 6.926,0l0.005,-0.005c1.911,-1.911 1.911,-5.014 -0,-6.926Z" style="fill:#fff;"></path></g><g id="beam14" serif:id="beam"><path id="beam15" serif:id="beam" d="M64.098,34.623c-2.699,0 -4.891,2.192 -4.891,4.892l-0,0.019c-0,2.699 2.192,4.891 4.891,4.891c2.7,0 4.892,-2.192 4.892,-4.891l0,-0.019c0,-2.7 -2.192,-4.892 -4.892,-4.892Z" style="fill:#fff;"></path></g></g></g></svg>
+    </template>
+
+    <template v-if="mode == 'darkest'">
+        <svg width="100%" height="100%" viewbox="0 0 79 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g id="mode_darkest"><rect id="Bounds" x="0" y="-0" width="78.623" height="79.049" style="fill:none;"></rect><path d="M39.315,23.791c8.684,-0 15.734,7.05 15.734,15.733c0,8.684 -7.05,15.734 -15.734,15.734c-8.683,0 -15.733,-7.05 -15.733,-15.734c-0,-8.683 7.05,-15.733 15.733,-15.733Zm0,4.737c6.069,0 10.997,4.927 10.997,10.996c-0,6.069 -4.928,10.996 -10.997,10.996c-6.068,0 -10.996,-4.927 -10.996,-10.996c0,-6.069 4.928,-10.996 10.996,-10.996Z" style="fill:#fff;"></path><g id="beams"><g id="beam"><path id="beam1" serif:id="beam" d="M44.216,14.515c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,0 -4.9,2.196 -4.9,4.901c-0,2.705 2.196,4.901 4.9,4.901c2.705,0 4.901,-2.196 4.901,-4.901Z" style="fill:#fff;"></path></g><g id="beam2" serif:id="beam"><path id="beam3" serif:id="beam" d="M60.666,24.892c1.902,-1.902 1.902,-4.99 0,-6.892l-0.04,-0.039c-1.901,-1.902 -4.989,-1.902 -6.891,-0c-1.901,1.901 -1.901,4.989 0,6.891l0.04,0.04c1.902,1.901 4.99,1.901 6.891,-0Z" style="fill:#fff;"></path></g><g id="beam4" serif:id="beam"><path id="beam5" serif:id="beam" d="M25.737,61.103c1.909,-1.91 1.909,-5.011 -0,-6.921l-0.01,-0.01c-1.91,-1.91 -5.011,-1.91 -6.921,-0c-1.91,1.91 -1.91,5.011 -0,6.921l0.01,0.01c1.91,1.91 5.011,1.91 6.921,-0Z" style="fill:#fff;"></path></g><g id="beam6" serif:id="beam"><path id="beam7" serif:id="beam" d="M60.676,54.167c-1.907,-1.907 -5.004,-1.907 -6.911,0l-0.02,0.02c-1.907,1.907 -1.907,5.004 0,6.911c1.907,1.907 5.004,1.907 6.911,-0l0.02,-0.02c1.907,-1.907 1.907,-5.004 0,-6.911Z" style="fill:#fff;"></path></g><g id="beam8" serif:id="beam"><path id="beam9" serif:id="beam" d="M14.524,34.623c-2.702,0 -4.896,2.194 -4.896,4.896l0,0.01c0,2.702 2.194,4.896 4.896,4.896c2.702,0 4.896,-2.194 4.896,-4.896l0,-0.01c0,-2.702 -2.194,-4.896 -4.896,-4.896Z" style="fill:#fff;"></path></g><g id="beam10" serif:id="beam"><path id="beam11" serif:id="beam" d="M44.216,64.534c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,-0 -4.9,2.196 -4.9,4.901c-0,2.704 2.196,4.9 4.9,4.9c2.705,0 4.901,-2.196 4.901,-4.9Z" style="fill:#fff;"></path></g><g id="beam12" serif:id="beam"><path id="beam13" serif:id="beam" d="M25.734,17.943c-1.911,-1.911 -5.015,-1.911 -6.926,0l-0.005,0.005c-1.911,1.911 -1.911,5.015 0,6.926c1.911,1.911 5.015,1.911 6.926,0l0.005,-0.005c1.911,-1.911 1.911,-5.014 0,-6.926Z" style="fill:#fff;"></path></g><g id="beam14" serif:id="beam"><path id="beam15" serif:id="beam" d="M64.103,34.623c-2.7,0 -4.892,2.192 -4.892,4.892l-0,0.019c-0,2.699 2.192,4.891 4.892,4.891c2.699,0 4.891,-2.192 4.891,-4.891l0,-0.019c0,-2.7 -2.192,-4.892 -4.891,-4.892Z" style="fill:#fff;"></path></g></g></g></svg>
+    </template>
+</a>
+
+<script>
+(function() {
+    const LOCAL_STORAGE_KEY = 'piccoloThemeMode'
+
+    var initialMode = localStorage.getItem(LOCAL_STORAGE_KEY)
+
+    if (initialMode) {
+        // Make sure the value in local storage is valid
+        if (['light', 'dark', 'darkest'].indexOf(initialMode) == -1) {
+            initialMode = 'light'
+            localStorage.setItem(LOCAL_STORAGE_KEY, initialMode)
+        }
+    } else {
+        // Check if the client prefers dark mode
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            initialMode = 'dark'
+        } else {
+            initialMode = 'light'
+        }
+        localStorage.setItem(LOCAL_STORAGE_KEY, initialMode)
+    }
+
+    document.documentElement.dataset.mode = initialMode
+
+    PetiteVue.createApp({
+        'mode': initialMode,
+        handleClick() {
+            let currentMode = this.mode
+
+            if (currentMode == 'light') {
+                this.mode = 'dark'
+            } else if (currentMode == 'dark') {
+                this.mode = 'darkest'
+            } else if (currentMode == 'darkest') {
+                this.mode = 'light'
+            }
+
+            document.documentElement.dataset.mode = this.mode
+            localStorage.setItem(LOCAL_STORAGE_KEY, this.mode)
+
+            console.log(this.mode)
+        }
+    }).mount('#mode_toggle')
+})()
+</script>
+            <p class="mobile_search_link">
+                <a href="../../../search.html" title="Search">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 65 64" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2">
+                        <path d="M14.873 40.009c-2.315-3.943-3.642-8.532-3.642-13.429C11.231 11.91 23.141 0 37.811 0s26.58 11.91 26.58 26.58-11.91 26.58-26.58 26.58a26.44 26.44 0 0 1-14.277-4.161L9.739 62.794a3.12 3.12 0 0 1-4.413 0L.913 58.382c-1.217-1.218-1.217-3.196 0-4.413l13.96-13.96zM37.811 8.054c10.225 0 18.526 8.301 18.526 18.526s-8.301 18.526-18.526 18.526-18.526-8.301-18.526-18.526S27.586 8.054 37.811 8.054z" fill="#fff"></path>
+                    </svg>
+                </a>
+            </p>
+        
+
+        <div class="searchbox_wrapper">
+            
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+      <input type="submit" value="Go">
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+    </nav>
+</div>
+
+    
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper"><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">DEXPI Information Models</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../Builtin/model-index.html">Builtin</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../model-index.html">Core</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../ConceptualModel.html">ConceptualModel</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../ConceptualObject.html">ConceptualObject</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../DataTypes/package-index.html">DataTypes</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Diagram</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../EngineeringModel.html">EngineeringModel</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Note.html">Note</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../PersistentIdentifier.html">PersistentIdentifier</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../PhysicalQuantities/package-index.html">PhysicalQuantities</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../QualifiedValue.html">QualifiedValue</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Role.html">Role</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../Plant/model-index.html">Plant</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Process/model-index.html">Process</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../disc-models/index.html">DISC Information Models</a></li>
+</ul>
+
+        </div>
+      </div>
+
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="diagram">
+<h1>Diagram<a class="headerlink" href="#diagram" title="Link to this heading">¶</a></h1>
+<p><a class="sp-element reference internal" href="../model-index.html"><span class="doc">Core</span></a><span class="sp-element">::</span><span class="sp-element">Diagram</span></p>
+<section id="Overview">
+<h2>Overview<a class="headerlink" href="#Overview" title="Link to this heading">¶</a></h2>
+<p class="rubric">Package</p>
+<p>Two-dimensional engineering diagrams.</p>
+<p>The <span class="sp-element">Diagram</span> package provides concepts</p>
+<ol class="arabic simple">
+<li><p>for the graphical representation of a <a class="sp-element reference internal" href="../ConceptualObject.html"><span class="doc">ConceptualObject</span></a>,</p></li>
+<li><p>for linking parts of this graphical representation to parts of the
+<span class="sp-element">ConceptualObject</span>, and</p></li>
+<li><p>for semantic annotations of the graphical representation.</p></li>
+</ol>
+<div class="admonition-technical admonition">
+<p class="admonition-title">Technical</p>
+<p>This specification is not a drawing standard. It does not prescribe any drawing style or
+standard and it does not prescribe which information in a
+<span class="sp-element">ConceptualObject</span> has to be represented in a <a class="sp-element reference internal" href="Diagram.html"><span class="doc">Diagram</span></a>.</p>
+</div>
+<div class="admonition-technical admonition">
+<p class="admonition-title">Technical</p>
+<p>Until version 1.2, graphics has not been in the scope of the DEXPI P&amp;ID Specification.
+Graphics was handled as prescribed by <span class="xref std std-ref">standard-proteus</span>. Over the years, some best
+practices concerning graphics have evolved in the DEXPI community, and fragmentary
+annotations have been added to the DEXPI P&amp;ID Specification.</p>
+<p>In DEXPI P&amp;ID Specification 1.3, an informative Graphics package was added to cover
+conceptual and graphics information in a single comprehensive model.</p>
+<p>For the P&amp;ID Specification 1.4, the Graphics package was further
+elaborated, and it is now a normative part of the specification. It serves to document
+the best practices that have emerged in the past, but no new features have been added.</p>
+<p>The Graphics package is independent from Proteus Schema in the sense that it is a pure
+UML package. But, like for all other packages in this specification, mappings to Proteus
+Schema are defined that describe how instances of the package’s types are serialized.
+In consequence, the features of the Graphics package are constrained to what is supported
+by Proteus Schema. Future versions of the DEXPI P&amp;ID Specification will skip support for
+Proteus Schema, such that additional features can be added to the Graphics package
+depending on the DEXPI community’s needs.</p>
+<p>Since DEXPI 2.0, the Graphics package can be used for both P&amp;IDs and process models.</p>
+</div>
+<section id="example">
+<h3>Example<a class="headerlink" href="#example" title="Link to this heading">¶</a></h3>
+<p>We consider a simple <a class="sp-element reference internal" href="../ConceptualModel.html"><span class="doc">ConceptualModel</span></a> <span class="sp-element">cm</span> that contains a
+single <a class="sp-element reference internal" href="../../Plant/ProcessEquipment/CentrifugalPump.html"><span class="doc">CentrifugalPump</span></a> with two
+<a class="sp-element reference internal" href="../../Plant/ProcessEquipment/ProcessNozzle.html"><span class="doc">ProcessNozzles</span></a> and a
+<a class="sp-element reference internal" href="../../Plant/ProcessEquipment/Chamber.html"><span class="doc">Chamber</span></a>; in total, there are five
+<a class="sp-element reference internal" href="../ConceptualObject.html"><span class="doc">ConceptualObjects</span></a>:</p>
+<img alt="../../../_images/img0.svg" src="../../../_images/img0.svg">
+<p>A typical graphical representation of this model may look like this:</p>
+<img alt="../../../_images/img1.svg" src="../../../_images/img1.svg">
+<section id="linking-graphics-and-conceptual-objects">
+<h4>Linking Graphics and Conceptual Objects<a class="headerlink" href="#linking-graphics-and-conceptual-objects" title="Link to this heading">¶</a></h4>
+<p>The graphics can be decomposed in parts each of which represents one of the
+<a class="sp-element reference internal" href="../ConceptualObject.html"><span class="doc">ConceptualObjects</span></a>. For each of these parts, we use a
+<a class="sp-element reference internal" href="RepresentationGroup.html"><span class="doc">RepresentationGroup</span></a>:</p>
+<img alt="../../../_images/img2.svg" src="../../../_images/img2.svg">
+<ul class="simple">
+<li><p>The <a class="sp-element reference internal" href="Diagram.html"><span class="doc">Diagram</span></a> <span class="sp-element">d</span> represents the entire <a class="sp-element reference internal" href="../ConceptualModel.html"><span class="doc">ConceptualModel</span></a>.
+<span class="sp-element">Diagram</span> is a subclass of <a class="sp-element reference internal" href="RepresentationGroup.html"><span class="doc">RepresentationGroup</span></a> that is meant to be used for
+the entire graphics. In addition to a conventional <a class="sp-element reference internal" href="RepresentationGroup.html"><span class="doc">RepresentationGroup</span></a>, a
+<a class="sp-element reference internal" href="Diagram.html"><span class="doc">Diagram</span></a> has a size (width and height) and a background color.</p></li>
+<li><p><span class="sp-element">cp_grp</span> is the <a class="sp-element reference internal" href="RepresentationGroup.html"><span class="doc">RepresentationGroup</span></a> for the
+<a class="sp-element reference internal" href="../../Plant/ProcessEquipment/CentrifugalPump.html"><span class="doc">CentrifugalPump</span></a> <span class="sp-element">cp</span>.</p></li>
+<li><p><span class="sp-element">pn1_grp</span> and <span class="sp-element">pn2_grp</span> represent the two
+<a class="sp-element reference internal" href="../../Plant/ProcessEquipment/ProcessNozzle.html"><span class="doc">ProcessNozzles</span></a> <span class="sp-element">pn1</span> and
+<span class="sp-element">pn2</span>.</p></li>
+</ul>
+<p>Note that the composition hierarchy of the <span class="sp-element">Diagram</span> corresponds exactly to the
+composition hierarchy of the <a class="sp-element reference internal" href="../ConceptualModel.html"><span class="doc">ConceptualModel</span></a>. In the
+<a class="sp-element reference internal" href="../ConceptualModel.html"><span class="doc">ConceptualModel</span></a>, <span class="sp-element">pn1</span> is a component of <span class="sp-element">cp</span>, and in
+the <span class="sp-element">Diagram</span>, <span class="sp-element">pn1_grp</span> is a component of <span class="sp-element">cp_grp</span>.</p>
+<p>However, if a <a class="sp-element reference internal" href="../ConceptualObject.html"><span class="doc">ConceptualObject</span></a> (including all its descendants) has no
+graphical representation at all, no <a class="sp-element reference internal" href="RepresentationGroup.html"><span class="doc">RepresentationGroup</span></a> is required: In the example
+above, there is no <a class="sp-element reference internal" href="RepresentationGroup.html"><span class="doc">RepresentationGroup</span></a> for the <a class="sp-element reference internal" href="../../Plant/ProcessEquipment/Chamber.html"><span class="doc">Chamber</span></a>
+<span class="sp-element">ch</span>.</p>
+</section>
+<section id="adding-semantics">
+<h4>Adding Semantics<a class="headerlink" href="#adding-semantics" title="Link to this heading">¶</a></h4>
+<p>So far, we have decomposed the overall graphics in
+<a class="sp-element reference internal" href="RepresentationGroup.html"><span class="doc">RepresentationGroups</span></a> that correspond to
+certain <a class="sp-element reference internal" href="../ConceptualObject.html"><span class="doc">ConceptualObjects</span></a>. On a finer level of
+granularity, we can identify parts with different meanings. These meanings are covered by
+different subclasses of the abstract class <a class="sp-element reference internal" href="RepresentationTypeGroup.html"><span class="doc">RepresentationTypeGroup</span></a>. In the example,
+two of these subclasses are used: <a class="sp-element reference internal" href="Static.html"><span class="doc">Static</span></a> and
+<a class="sp-element reference internal" href="../../Plant/Diagram/EquipmentTagNameLabel.html"><span class="doc">EquipmentTagNameLabel</span></a>.</p>
+<img alt="../../../_images/img3.svg" src="../../../_images/img3.svg">
+<ul class="simple">
+<li><p>Consider <span class="sp-element">cp_grp</span>, the <a class="sp-element reference internal" href="RepresentationGroup.html"><span class="doc">RepresentationGroup</span></a> of the
+<a class="sp-element reference internal" href="../../Plant/ProcessEquipment/CentrifugalPump.html"><span class="doc">CentrifugalPump</span></a> <span class="sp-element">cp</span>. In addition to the two
+groups for the <a class="sp-element reference internal" href="../../Plant/ProcessEquipment/ProcessNozzle.html"><span class="doc">ProcessNozzles</span></a>,
+<span class="sp-element">cp_grp</span> now contains two
+<a class="sp-element reference internal" href="RepresentationTypeGroup.html"><span class="doc">RepresentationTypeGroups</span></a>.</p>
+<ul>
+<li><p>The <a class="sp-element reference internal" href="Static.html"><span class="doc">Static</span></a> group contains the actual
+<a class="sp-element reference internal" href="../../Plant/ProcessEquipment/CentrifugalPump.html"><span class="doc">CentrifugalPump</span></a> graphics without any annotations, labels,
+etc.</p></li>
+<li><p>The <a class="sp-element reference internal" href="../../Plant/Diagram/EquipmentTagNameLabel.html"><span class="doc">EquipmentTagNameLabel</span></a> group displays the tag name of
+the <a class="sp-element reference internal" href="../../Plant/ProcessEquipment/CentrifugalPump.html"><span class="doc">CentrifugalPump</span></a>.</p></li>
+</ul>
+</li>
+<li><p><span class="sp-element">pn1_grp</span> contains a <a class="sp-element reference internal" href="Static.html"><span class="doc">Static</span></a> group for the basic symbol of the
+<a class="sp-element reference internal" href="../../Plant/ProcessEquipment/ProcessNozzle.html"><span class="doc">ProcessNozzle</span></a>.</p></li>
+<li><p><span class="sp-element">pn2_grp</span> contains another <a class="sp-element reference internal" href="Static.html"><span class="doc">Static</span></a> group for the second
+<a class="sp-element reference internal" href="../../Plant/ProcessEquipment/ProcessNozzle.html"><span class="doc">ProcessNozzle</span></a> symbol.</p></li>
+</ul>
+<p>Whereas <a class="sp-element reference internal" href="RepresentationGroup.html"><span class="doc">RepresentationGroups</span></a> can be
+decomposed in further groups,
+<a class="sp-element reference internal" href="RepresentationTypeGroup.html"><span class="doc">RepresentationTypeGroups</span></a> cannot contain
+further groups.</p>
+</section>
+<section id="adding-graphical-elements">
+<h4>Adding Graphical Elements<a class="headerlink" href="#adding-graphical-elements" title="Link to this heading">¶</a></h4>
+<p><a class="sp-element reference internal" href="RepresentationTypeGroup.html"><span class="doc">RepresentationTypeGroups</span></a> rather contain
+<a class="sp-element reference internal" href="GraphicalElement.html"><span class="doc">GraphicalElements</span></a> such as geometric
+primitives, texts, or <a class="sp-element reference internal" href="ShapeUsage.html"><span class="doc">ShapeUsages</span></a>.</p>
+<img alt="../../../_images/img4.svg" src="../../../_images/img4.svg">
+<ul class="simple">
+<li><p>The <a class="sp-element reference internal" href="Static.html"><span class="doc">Static</span></a> group for the <a class="sp-element reference internal" href="../../Plant/ProcessEquipment/CentrifugalPump.html"><span class="doc">CentrifugalPump</span></a> contains a
+<a class="sp-element reference internal" href="ShapeUsage.html"><span class="doc">ShapeUsage</span></a>, i.e., a reference to a reusable <a class="sp-element reference internal" href="Shape.html"><span class="doc">Shape</span></a> with information about
+this specific usage (scaling, rotation, position).</p></li>
+<li><p>The <a class="sp-element reference internal" href="../../Plant/Diagram/EquipmentTagNameLabel.html"><span class="doc">EquipmentTagNameLabel</span></a> for the
+<a class="sp-element reference internal" href="../../Plant/ProcessEquipment/CentrifugalPump.html"><span class="doc">CentrifugalPump</span></a> contains a <a class="sp-element reference internal" href="Text.html"><span class="doc">Text</span></a>.</p></li>
+<li><p>Both <a class="sp-element reference internal" href="Static.html"><span class="doc">Static</span></a> groups for the two
+<a class="sp-element reference internal" href="../../Plant/ProcessEquipment/ProcessNozzle.html"><span class="doc">ProcessNozzles</span></a> contain a <a class="sp-element reference internal" href="ShapeUsage.html"><span class="doc">ShapeUsage</span></a>.</p></li>
+</ul>
+</section>
+</section>
+<section id="coordinate-system">
+<h3>Coordinate System<a class="headerlink" href="#coordinate-system" title="Link to this heading">¶</a></h3>
+<p>The coordinate system used is a 2D Cartesian system whose horizontal axis is oriented to the right and whose vertical axis is oriented to the bottom. In consequence, angles are measured clockwise.</p>
+<p>Lengths are dimensionless. In the examples, we assume they are in millimeters.</p>
+<p>In Proteus Schema, the vertical axis to the top, and angles are measured anti-clockwise.</p>
+</section>
+<section id="mapping-to-svg">
+<h3>Mapping to SVG<a class="headerlink" href="#mapping-to-svg" title="Link to this heading">¶</a></h3>
+<p>The purpose of these mappings is to define the visualization of instances of the types in
+this package, i.e., “how they look like”.</p>
+<p>In order to keep the mappings simple, the SVG mappings for all
+<a class="sp-element reference internal" href="GraphicalPrimitive.html"><span class="doc">GraphicalPrimitives</span></a> are defined such that
+they can be easily scaled when they appear in a <a class="sp-element reference internal" href="Shape.html"><span class="doc">Shape</span></a> (in particular, they use
+<code class="docutils literal notranslate"><span class="pre">vector-effect</span> <span class="pre">=</span> <span class="pre">"non-scaling-stroke"</span></code>). In consequence, further scaling, e.g., in an
+application, will lead to unacceptable results.</p>
+<p>The SVG mappings in this specification must not be misunderstood as a proposal for
+exchanging P&amp;ID graphics via SVG.</p>
+</section>
+<section id="modulo-operator">
+<span id="id1"></span><h3>Modulo Operator<a class="headerlink" href="#modulo-operator" title="Link to this heading">¶</a></h3>
+<p>In some calculations for the SVG and Proteus mappings, the <em>modulo operator</em> (or <em>remainder
+of division</em>) is used. As the modulo operator can be defined in different ways, we give a
+definition of how the operator is used in this specification. We content ourselves with a
+definition for positive quotients.</p>
+<p>Let <span class="math notranslate nohighlight">\(q &gt; 0, a \in \mathbb R\)</span>. Then</p>
+<div class="math notranslate nohighlight">
+\[a\,\textrm{mod}\,q = a - \left\lfloor \frac a q \right\rfloor \cdot q \quad .\]</div>
+<p><span class="math notranslate nohighlight">\(\lfloor.\rfloor\)</span> is the <em>floor function</em> that for <span class="math notranslate nohighlight">\(x \in \mathbb R\)</span> yields the largest integer <span class="math notranslate nohighlight">\(n\)</span> such that <span class="math notranslate nohighlight">\(n \leq x\)</span>.</p>
+<p>For example,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}0\,\textrm{mod}\,360 &amp;= 0 - \left\lfloor \frac {0} {360} \right\rfloor \cdot 360 = 0 - 0 \cdot 360 = 0 \quad, \\
+100\,\textrm{mod}\,360 &amp;= 100 - \left\lfloor \frac {100} {360} \right\rfloor \cdot 360 = 100 - 0 \cdot 360 = 100 \quad, \\
+359\,\textrm{mod}\,360 &amp;= 359 - \left\lfloor \frac {359} {360} \right\rfloor \cdot 360 = 359 - 0 \cdot 360 = 359 \quad, \\
+360\,\textrm{mod}\,360 &amp;= 360 - \left\lfloor \frac {360} {360} \right\rfloor \cdot 360 = 360 - 1 \cdot 360 = 0 \quad, \\
+(-100)\,\textrm{mod}\,360 &amp;= -100 - \left\lfloor \frac {-100} {360} \right\rfloor \cdot 360 = -100 - (-1) \cdot 360 = 260 \quad. \\\end{split}\]</div>
+<div class="admonition-technical admonition">
+<p class="admonition-title">Technical</p>
+<p>The definition of the modulo operator differs between programming languages. For example, the modulo operator in Python, written <code class="code docutils literal notranslate"><span class="pre">%</span></code>, coincides with the definition above. The modulo operator in JavaScript (ECMAScript), also written <code class="code docutils literal notranslate"><span class="pre">%</span></code>, behaves differently for negative dividends: <code class="code docutils literal notranslate"><span class="pre">-100</span> <span class="pre">%</span> <span class="pre">360</span></code> is evaluated to <code class="code docutils literal notranslate"><span class="pre">-100</span></code>.</p>
+</div>
+</section>
+</section>
+<section id="Members">
+<h2>Members<a class="headerlink" href="#Members" title="Link to this heading">¶</a></h2>
+<section id="member-list-section-Classes">
+<h3>Classes<a class="headerlink" href="#member-list-section-Classes" title="Link to this heading">¶</a></h3>
+</section>
+<table class="docutils align-left">
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Type</p></th>
+<th class="head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="AttributeRepresentation.html"><span class="doc">AttributeRepresentation</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="Border.html"><span class="doc">Border</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="ConnectorLine.html"><span class="doc">ConnectorLine</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="CustomSymbol.html"><span class="doc">CustomSymbol</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="Diagram.html"><span class="doc">Diagram</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="Ellipse.html"><span class="doc">Ellipse</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>An ellipse.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="EllipseArc.html"><span class="doc">EllipseArc</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="GraphicalElement.html"><span class="doc">GraphicalElement</span></a></p></td>
+<td><p>Abstract Class</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="GraphicalPrimitive.html"><span class="doc">GraphicalPrimitive</span></a></p></td>
+<td><p>Abstract Class</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="GraphicsGroup.html"><span class="doc">GraphicsGroup</span></a></p></td>
+<td><p>Abstract Class</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="InsulationSymbol.html"><span class="doc">InsulationSymbol</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="Label.html"><span class="doc">Label</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="LiteralText.html"><span class="doc">LiteralText</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="MetaData.html"><span class="doc">MetaData</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>Meta data about a <span class="sp-element sp-error">Core.Container</span>.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="NodePosition.html"><span class="doc">NodePosition</span></a></p></td>
+<td><p>Abstract Class</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="PipeFlowArrow.html"><span class="doc">PipeFlowArrow</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="PipeSlopeSymbol.html"><span class="doc">PipeSlopeSymbol</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="PolyLine.html"><span class="doc">PolyLine</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A curve that consists of one or more chained straight sections.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="Polygon.html"><span class="doc">Polygon</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A figure that is delimited by a closed chain of three or more straight sections.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="RepresentationGroup.html"><span class="doc">RepresentationGroup</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A <span class="sp-element">RepresentationGroup</span> is a graphical representation of a <a class="sp-element reference internal" href="../ConceptualObject.html"><span class="doc">ConceptualObject</span></a>.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="RepresentationTypeGroup.html"><span class="doc">RepresentationTypeGroup</span></a></p></td>
+<td><p>Abstract Class</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="Shape.html"><span class="doc">Shape</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="ShapeCatalogue.html"><span class="doc">ShapeCatalogue</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="ShapeUsage.html"><span class="doc">ShapeUsage</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="Static.html"><span class="doc">Static</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="Symbol.html"><span class="doc">Symbol</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="Text.html"><span class="doc">Text</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="TextTemplate.html"><span class="doc">TextTemplate</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="TextTemplateFragment.html"><span class="doc">TextTemplateFragment</span></a></p></td>
+<td><p>Abstract Class</p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+<section id="member-list-section-Data Types">
+<h3>Data Types<a class="headerlink" href="#member-list-section-Data%20Types" title="Link to this heading">¶</a></h3>
+</section>
+<table class="docutils align-left">
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Type</p></th>
+<th class="head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="AttributeRepresentationType.html"><span class="doc">AttributeRepresentationType</span></a></p></td>
+<td><p>Enumeration</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="Color.html"><span class="doc">Color</span></a></p></td>
+<td><p>Aggregated Data Type</p></td>
+<td><p>A color.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="ConfidentialityClassification.html"><span class="doc">ConfidentialityClassification</span></a></p></td>
+<td><p>Enumeration</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="DashStyle.html"><span class="doc">DashStyle</span></a></p></td>
+<td><p>Enumeration</p></td>
+<td><p>A <span class="sp-element">DashStyle</span> describes a pattern for drawing a stroke. The
+pattern gives the lengths of those parts of a stroke that are actually
+drawn and of those parts that are not drawn.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="FillStyle.html"><span class="doc">FillStyle</span></a></p></td>
+<td><p>Enumeration</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="Point.html"><span class="doc">Point</span></a></p></td>
+<td><p>Aggregated Data Type</p></td>
+<td><p>A point in the X-Y-plane.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="Stroke.html"><span class="doc">Stroke</span></a></p></td>
+<td><p>Aggregated Data Type</p></td>
+<td><p>A stroke defines the visual appearance of a line.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="TextAlignment.html"><span class="doc">TextAlignment</span></a></p></td>
+<td><p>Enumeration</p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+    
+        <div id="show_right_sidebar">
+            <p><a class="toggle_right_sidebar" href="#"><span class="icon">&lt;</span><span>Page contents</span></a></p>
+        </div>
+
+        <div id="right_sidebar">
+            <p><a class="toggle_right_sidebar" href="#"><span class="icon">&gt;</span><span>Page contents:</span></a></p>
+            <div class="page_toc">
+                <ul>
+<li><a class="reference internal" href="#">Diagram</a><ul>
+<li><a class="reference internal" href="#Overview">Overview</a><ul>
+<li><a class="reference internal" href="#example">Example</a><ul>
+<li><a class="reference internal" href="#linking-graphics-and-conceptual-objects">Linking Graphics and Conceptual Objects</a></li>
+<li><a class="reference internal" href="#adding-semantics">Adding Semantics</a></li>
+<li><a class="reference internal" href="#adding-graphical-elements">Adding Graphical Elements</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#coordinate-system">Coordinate System</a></li>
+<li><a class="reference internal" href="#mapping-to-svg">Mapping to SVG</a></li>
+<li><a class="reference internal" href="#modulo-operator">Modulo Operator</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#Members">Members</a><ul>
+<li><a class="reference internal" href="#member-list-section-Classes">Classes</a></li>
+<li><a class="reference internal" href="#member-list-section-Data%20Types">Data Types</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            </div>
+        </div>
+    
+
+      <div class="clearer"></div>
+    </div>
+    <div class="button_nav_wrapper">
+        <div class="button_nav">
+            <div class="left">
+                
+                <a href="../DataTypes/SingleLanguageString.html">
+                    <span class="icon">&lt;</span><span>SingleLanguageString</span></a>
+                
+            </div>
+
+            <div class="right">
+                
+                    <a href="AttributeRepresentation.html"><span>AttributeRepresentation</span><span class="icon">&gt;</span></a>
+                
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer" role="contentinfo">
+    © Copyright .
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.1.3.
+    </div>
+
+<p id="theme_credit">Styled using the <a href="https://github.com/piccolo-orm/piccolo_theme">Piccolo Theme</a></p>
+  </body>
+</html>

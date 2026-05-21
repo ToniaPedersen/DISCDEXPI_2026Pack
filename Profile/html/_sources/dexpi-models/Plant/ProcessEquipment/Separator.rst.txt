@@ -1,0 +1,5 @@
+Separator
+=========
+
+.. sp:internal-autoelement::
+   :element: Plant.ProcessEquipment.Separator

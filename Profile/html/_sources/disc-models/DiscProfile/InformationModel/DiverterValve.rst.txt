@@ -1,0 +1,5 @@
+DiverterValve
+=============
+
+.. sp:internal-autoelement::
+   :element: DiscProfile.InformationModel.DiverterValve

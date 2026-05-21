@@ -1,0 +1,5 @@
+AxialFan
+========
+
+.. sp:internal-autoelement::
+   :element: Plant.ProcessEquipment.AxialFan

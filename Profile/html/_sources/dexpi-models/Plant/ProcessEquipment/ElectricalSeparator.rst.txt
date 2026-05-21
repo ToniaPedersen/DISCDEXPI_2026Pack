@@ -1,0 +1,5 @@
+ElectricalSeparator
+===================
+
+.. sp:internal-autoelement::
+   :element: Plant.ProcessEquipment.ElectricalSeparator

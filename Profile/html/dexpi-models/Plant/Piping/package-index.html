@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Piping &#8212; DISC Profile 0.5</title>
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=b86133f3" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/basic_mod.css?v=9b2032db" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sp.css" />
+    <script src="../../../_static/documentation_options.js?v=db78e746"></script>
+    <script src="../../../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../_static/js/theme.js"></script>
+    <script src="../../../_static/js/petite-vue.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="AngleBallValve" href="AngleBallValve.html" />
+    <link rel="prev" title="Transmitter" href="../Instrumentation/Transmitter.html" /> 
+  </head><body data-dark_mode_code_blocks="true">
+
+<div id="top_nav">
+    
+
+    <nav>
+        
+            
+        
+
+        <p id="toggle_sidebar">
+            <a href="#" title="Toggle sidebar">|||</a>
+        </p>
+        <h1><a href="../../../index.html" title="Go to homepage">DISC Profile 0.5</a></h1>
+
+        <a id="mode_toggle" href="#" @click.prevent="handleClick" :title="mode">
+    <template v-if="mode == 'light'">
+        <svg width="100%" height="100%" viewBox="0 0 79 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g id="mode_light"><rect id="Bounds" x="0" y="-0" width="78.623" height="79.049" style="fill:none;"/><circle cx="39.311" cy="39.524" r="15.734" style="fill:#fff;"/><g id="beams"><g id="beam"><path id="beam1" serif:id="beam" d="M44.212,4.901c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,-0 -4.9,2.196 -4.9,4.901l-0,9.614c-0,2.705 2.196,4.901 4.9,4.901c2.705,0 4.901,-2.196 4.901,-4.901l0,-9.614Z" style="fill:#fff;"/></g><g id="beam2" serif:id="beam"><path id="beam3" serif:id="beam" d="M67.48,18.073c1.913,-1.912 1.913,-5.018 0,-6.931c-1.912,-1.912 -5.018,-1.912 -6.931,0l-6.798,6.799c-1.912,1.912 -1.912,5.018 0,6.931c1.913,1.912 5.018,1.912 6.931,-0l6.798,-6.799Z" style="fill:#fff;"/></g><g id="beam4" serif:id="beam"><path id="beam5" serif:id="beam" d="M25.728,61.108c1.912,-1.913 1.912,-5.018 -0,-6.931c-1.913,-1.913 -5.019,-1.913 -6.931,-0l-6.799,6.798c-1.912,1.913 -1.912,5.019 0,6.931c1.913,1.913 5.019,1.913 6.931,0l6.799,-6.798Z" style="fill:#fff;"/></g><g id="beam6" serif:id="beam"><path id="beam7" serif:id="beam" d="M60.682,54.177c-1.913,-1.913 -5.018,-1.913 -6.931,-0c-1.912,1.913 -1.912,5.018 0,6.931l6.798,6.798c1.913,1.913 5.019,1.913 6.931,0c1.913,-1.912 1.913,-5.018 0,-6.931l-6.798,-6.798Z" style="fill:#fff;"/></g><g id="beam8" serif:id="beam"><path id="beam9" serif:id="beam" d="M4.901,34.623c-2.705,0 -4.901,2.196 -4.901,4.901c0,2.705 2.196,4.901 4.901,4.901l9.614,0c2.705,0 4.901,-2.196 4.901,-4.901c0,-2.705 -2.196,-4.901 -4.901,-4.901l-9.614,0Z" style="fill:#fff;"/></g><g id="beam10" serif:id="beam"><path id="beam11" serif:id="beam" d="M44.212,64.534c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,-0 -4.9,2.196 -4.9,4.901l-0,9.614c-0,2.705 2.196,4.901 4.9,4.901c2.705,-0 4.901,-2.196 4.901,-4.901l0,-9.614Z" style="fill:#fff;"/></g><g id="beam12" serif:id="beam"><path id="beam13" serif:id="beam" d="M18.929,11.142c-1.912,-1.912 -5.018,-1.912 -6.931,0c-1.912,1.913 -1.912,5.019 0,6.931l6.799,6.799c1.912,1.912 5.018,1.912 6.931,-0c1.912,-1.913 1.912,-5.019 -0,-6.931l-6.799,-6.799Z" style="fill:#fff;"/></g><g id="beam14" serif:id="beam"><path id="beam15" serif:id="beam" d="M64.108,34.623c-2.705,0 -4.901,2.196 -4.901,4.901c-0,2.705 2.196,4.901 4.901,4.901l9.614,0c2.705,0 4.901,-2.196 4.901,-4.901c-0,-2.705 -2.196,-4.901 -4.901,-4.901l-9.614,0Z" style="fill:#fff;"/></g></g></g></svg>
+    </template>
+
+    <template v-if="mode == 'dark'">
+        <svg width="100%" height="100%" viewBox="0 0 79 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g id="mode_dark"><rect id="Bounds" x="0" y="-0" width="78.623" height="79.049" style="fill:none;"/><circle cx="39.311" cy="39.524" r="15.734" style="fill:#fff;"/><g id="beams"><g id="beam"><path id="beam1" serif:id="beam" d="M44.212,14.515c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,0 -4.901,2.196 -4.901,4.901c0,2.705 2.197,4.901 4.901,4.901c2.705,0 4.901,-2.196 4.901,-4.901Z" style="fill:#fff;"/></g><g id="beam2" serif:id="beam"><path id="beam3" serif:id="beam" d="M60.662,24.892c1.902,-1.902 1.902,-4.99 0,-6.892l-0.04,-0.039c-1.901,-1.902 -4.989,-1.902 -6.891,-0c-1.901,1.901 -1.901,4.989 0,6.891l0.04,0.04c1.902,1.901 4.989,1.901 6.891,-0Z" style="fill:#fff;"/></g><g id="beam4" serif:id="beam"><path id="beam5" serif:id="beam" d="M25.732,61.103c1.91,-1.91 1.91,-5.011 0,-6.921l-0.009,-0.01c-1.91,-1.91 -5.012,-1.91 -6.921,-0c-1.91,1.91 -1.91,5.011 -0,6.921l0.01,0.01c1.909,1.91 5.011,1.91 6.92,-0Z" style="fill:#fff;"/></g><g id="beam6" serif:id="beam"><path id="beam7" serif:id="beam" d="M60.672,54.167c-1.907,-1.907 -5.004,-1.907 -6.911,0l-0.02,0.02c-1.907,1.907 -1.907,5.004 0,6.911c1.907,1.907 5.004,1.907 6.911,-0l0.02,-0.02c1.907,-1.907 1.907,-5.004 0,-6.911Z" style="fill:#fff;"/></g><g id="beam8" serif:id="beam"><path id="beam9" serif:id="beam" d="M14.52,34.623c-2.702,0 -4.896,2.194 -4.896,4.896l0,0.01c0,2.702 2.194,4.896 4.896,4.896c2.702,0 4.896,-2.194 4.896,-4.896l-0,-0.01c-0,-2.702 -2.194,-4.896 -4.896,-4.896Z" style="fill:#fff;"/></g><g id="beam10" serif:id="beam"><path id="beam11" serif:id="beam" d="M44.212,64.534c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,-0 -4.901,2.196 -4.901,4.901c0,2.704 2.197,4.9 4.901,4.9c2.705,0 4.901,-2.196 4.901,-4.9Z" style="fill:#fff;"/></g><g id="beam12" serif:id="beam"><path id="beam13" serif:id="beam" d="M25.73,17.943c-1.911,-1.911 -5.015,-1.911 -6.926,0l-0.005,0.005c-1.911,1.911 -1.911,5.015 0,6.926c1.911,1.911 5.015,1.911 6.926,0l0.005,-0.005c1.911,-1.911 1.911,-5.014 -0,-6.926Z" style="fill:#fff;"/></g><g id="beam14" serif:id="beam"><path id="beam15" serif:id="beam" d="M64.098,34.623c-2.699,0 -4.891,2.192 -4.891,4.892l-0,0.019c-0,2.699 2.192,4.891 4.891,4.891c2.7,0 4.892,-2.192 4.892,-4.891l0,-0.019c0,-2.7 -2.192,-4.892 -4.892,-4.892Z" style="fill:#fff;"/></g></g></g></svg>
+    </template>
+
+    <template v-if="mode == 'darkest'">
+        <svg width="100%" height="100%" viewBox="0 0 79 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g id="mode_darkest"><rect id="Bounds" x="0" y="-0" width="78.623" height="79.049" style="fill:none;"/><path d="M39.315,23.791c8.684,-0 15.734,7.05 15.734,15.733c0,8.684 -7.05,15.734 -15.734,15.734c-8.683,0 -15.733,-7.05 -15.733,-15.734c-0,-8.683 7.05,-15.733 15.733,-15.733Zm0,4.737c6.069,0 10.997,4.927 10.997,10.996c-0,6.069 -4.928,10.996 -10.997,10.996c-6.068,0 -10.996,-4.927 -10.996,-10.996c0,-6.069 4.928,-10.996 10.996,-10.996Z" style="fill:#fff;"/><g id="beams"><g id="beam"><path id="beam1" serif:id="beam" d="M44.216,14.515c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,0 -4.9,2.196 -4.9,4.901c-0,2.705 2.196,4.901 4.9,4.901c2.705,0 4.901,-2.196 4.901,-4.901Z" style="fill:#fff;"/></g><g id="beam2" serif:id="beam"><path id="beam3" serif:id="beam" d="M60.666,24.892c1.902,-1.902 1.902,-4.99 0,-6.892l-0.04,-0.039c-1.901,-1.902 -4.989,-1.902 -6.891,-0c-1.901,1.901 -1.901,4.989 0,6.891l0.04,0.04c1.902,1.901 4.99,1.901 6.891,-0Z" style="fill:#fff;"/></g><g id="beam4" serif:id="beam"><path id="beam5" serif:id="beam" d="M25.737,61.103c1.909,-1.91 1.909,-5.011 -0,-6.921l-0.01,-0.01c-1.91,-1.91 -5.011,-1.91 -6.921,-0c-1.91,1.91 -1.91,5.011 -0,6.921l0.01,0.01c1.91,1.91 5.011,1.91 6.921,-0Z" style="fill:#fff;"/></g><g id="beam6" serif:id="beam"><path id="beam7" serif:id="beam" d="M60.676,54.167c-1.907,-1.907 -5.004,-1.907 -6.911,0l-0.02,0.02c-1.907,1.907 -1.907,5.004 0,6.911c1.907,1.907 5.004,1.907 6.911,-0l0.02,-0.02c1.907,-1.907 1.907,-5.004 0,-6.911Z" style="fill:#fff;"/></g><g id="beam8" serif:id="beam"><path id="beam9" serif:id="beam" d="M14.524,34.623c-2.702,0 -4.896,2.194 -4.896,4.896l0,0.01c0,2.702 2.194,4.896 4.896,4.896c2.702,0 4.896,-2.194 4.896,-4.896l0,-0.01c0,-2.702 -2.194,-4.896 -4.896,-4.896Z" style="fill:#fff;"/></g><g id="beam10" serif:id="beam"><path id="beam11" serif:id="beam" d="M44.216,64.534c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,-0 -4.9,2.196 -4.9,4.901c-0,2.704 2.196,4.9 4.9,4.9c2.705,0 4.901,-2.196 4.901,-4.9Z" style="fill:#fff;"/></g><g id="beam12" serif:id="beam"><path id="beam13" serif:id="beam" d="M25.734,17.943c-1.911,-1.911 -5.015,-1.911 -6.926,0l-0.005,0.005c-1.911,1.911 -1.911,5.015 0,6.926c1.911,1.911 5.015,1.911 6.926,0l0.005,-0.005c1.911,-1.911 1.911,-5.014 0,-6.926Z" style="fill:#fff;"/></g><g id="beam14" serif:id="beam"><path id="beam15" serif:id="beam" d="M64.103,34.623c-2.7,0 -4.892,2.192 -4.892,4.892l-0,0.019c-0,2.699 2.192,4.891 4.892,4.891c2.699,0 4.891,-2.192 4.891,-4.891l0,-0.019c0,-2.7 -2.192,-4.892 -4.891,-4.892Z" style="fill:#fff;"/></g></g></g></svg>
+    </template>
+</a>
+
+<script>
+(function() {
+    const LOCAL_STORAGE_KEY = 'piccoloThemeMode'
+
+    var initialMode = localStorage.getItem(LOCAL_STORAGE_KEY)
+
+    if (initialMode) {
+        // Make sure the value in local storage is valid
+        if (['light', 'dark', 'darkest'].indexOf(initialMode) == -1) {
+            initialMode = 'light'
+            localStorage.setItem(LOCAL_STORAGE_KEY, initialMode)
+        }
+    } else {
+        // Check if the client prefers dark mode
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            initialMode = 'dark'
+        } else {
+            initialMode = 'light'
+        }
+        localStorage.setItem(LOCAL_STORAGE_KEY, initialMode)
+    }
+
+    document.documentElement.dataset.mode = initialMode
+
+    PetiteVue.createApp({
+        'mode': initialMode,
+        handleClick() {
+            let currentMode = this.mode
+
+            if (currentMode == 'light') {
+                this.mode = 'dark'
+            } else if (currentMode == 'dark') {
+                this.mode = 'darkest'
+            } else if (currentMode == 'darkest') {
+                this.mode = 'light'
+            }
+
+            document.documentElement.dataset.mode = this.mode
+            localStorage.setItem(LOCAL_STORAGE_KEY, this.mode)
+
+            console.log(this.mode)
+        }
+    }).mount('#mode_toggle')
+})()
+</script>
+            <p class="mobile_search_link">
+                <a href="../../../search.html" title="Search">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 65 64" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2">
+                        <path d="M14.873 40.009c-2.315-3.943-3.642-8.532-3.642-13.429C11.231 11.91 23.141 0 37.811 0s26.58 11.91 26.58 26.58-11.91 26.58-26.58 26.58a26.44 26.44 0 0 1-14.277-4.161L9.739 62.794a3.12 3.12 0 0 1-4.413 0L.913 58.382c-1.217-1.218-1.217-3.196 0-4.413l13.96-13.96zM37.811 8.054c10.225 0 18.526 8.301 18.526 18.526s-8.301 18.526-18.526 18.526-18.526-8.301-18.526-18.526S27.586 8.054 37.811 8.054z" fill="#fff" />
+                    </svg>
+                </a>
+            </p>
+        
+
+        <div class="searchbox_wrapper">
+            
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+    </nav>
+</div>
+
+    
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper"><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">DEXPI Information Models</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../Builtin/model-index.html">Builtin</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Core/model-index.html">Core</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../model-index.html">Plant</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../Diagram/package-index.html">Diagram</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Enumerations/package-index.html">Enumerations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Instrumentation/package-index.html">Instrumentation</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Piping</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../PlantModel.html">PlantModel</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../PlantStructure/package-index.html">PlantStructure</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../ProcessEquipment/package-index.html">ProcessEquipment</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../Process/model-index.html">Process</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../disc-models/index.html">DISC Information Models</a></li>
+</ul>
+
+        </div>
+      </div>
+
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="piping">
+<h1>Piping<a class="headerlink" href="#piping" title="Link to this heading">¶</a></h1>
+<p><a class="sp-element reference internal" href="../model-index.html"><span class="doc">Plant</span></a><span class="sp-element">::</span><span class="sp-element">Piping</span></p>
+<section id="Overview">
+<h2>Overview<a class="headerlink" href="#Overview" title="Link to this heading">¶</a></h2>
+<p class="rubric">Package</p>
+</section>
+<section id="Members">
+<h2>Members<a class="headerlink" href="#Members" title="Link to this heading">¶</a></h2>
+<section id="member-list-section-Classes">
+<h3>Classes<a class="headerlink" href="#member-list-section-Classes" title="Link to this heading">¶</a></h3>
+</section>
+<table class="docutils align-left">
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Type</p></th>
+<th class="head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="AngleBallValve.html"><span class="doc">AngleBallValve</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A valve that has valve ports which are not in-line and that has a ball closure member.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="AngleGlobeValve.html"><span class="doc">AngleGlobeValve</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A globe valve that deviates from the in-line design, i.e. with a body shape designed to adjust the flow direction with a specified angle relative to the straight through-flow an in-line valve would have provided for.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="AnglePlugValve.html"><span class="doc">AnglePlugValve</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A valve that has valve ports which are not in-line and that
+has a quarter turn action in which the closure member is a cylindrical
+or tapered plug which operates by rotating on its axis and sealing
+against a downstream seat.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="AngleValve.html"><span class="doc">AngleValve</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A valve that has valve ports which are not in-line.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="BallValve.html"><span class="doc">BallValve</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A rotary valve that has a ball closure member.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="BlindFlange.html"><span class="doc">BlindFlange</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A pipe flange that is without a central opening and used to shut off a flanged pipe end.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="BreatherValve.html"><span class="doc">BreatherValve</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A BreatherValve is PRESSURE RELIEF DEVICE and a VACUUM RELIEF DEVICE that
+automatically releases excess pressure or admits pressure to prevent
+a vacuum (from
+<a class="reference external" href="http://data.15926.org/rdl/RDS6330659">http://data.15926.org/rdl/RDS6330659</a>).</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="ButterflyValve.html"><span class="doc">ButterflyValve</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A rotary valve that has a closure member of a disc type with a shaft parallel, or near parallel, to the plane of the disc, with an axis of rotation transverse to the flow direction.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="CheckValve.html"><span class="doc">CheckValve</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A valve that permits fluid to flow in one direction only.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="ClampedFlangeCoupling.html"><span class="doc">ClampedFlangeCoupling</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A clamped flange coupling.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="Compensator.html"><span class="doc">Compensator</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A device compensating for axial or radial movement between two elements that is connected.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="ConicalStrainer.html"><span class="doc">ConicalStrainer</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A strainer where the screen has a conical tubular shape.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="DirectPipingConnection.html"><span class="doc">DirectPipingConnection</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A direct connection between two piping items, i.e. a connection that is
+not realized by a pipe.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="ElectromagneticFlowMeter.html"><span class="doc">ElectromagneticFlowMeter</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A velocity flow meter that is measuring flow rate of a conductive fluid running through a magnetic field by measuring the charge created when fluid interacting with the field.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="FlameArrestor.html"><span class="doc">FlameArrestor</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>An ‘arrestor’ which is a trap covering an opening, e.g of a ventilation system or a pipe, to prevent flames from entering the system.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="Flange.html"><span class="doc">Flange</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A physical object that is a projecting flat rim, plate,collar, or rib</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="FlangedConnection.html"><span class="doc">FlangedConnection</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A flanged connection.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="FlowInPipeOffPageConnector.html"><span class="doc">FlowInPipeOffPageConnector</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A pipe connector that indicates that a preceding part of a
+piping network segment is represented somewhere else, either
+on the same PID, or on some other PID.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="FlowMeasuringElement.html"><span class="doc">FlowMeasuringElement</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A FLOW MEASURING ELEMENT is a MEASURING ELEMENT that is used to measure FLOW RATE.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="FlowNozzle.html"><span class="doc">FlowNozzle</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A nozzle with a smooth entry and a sharp exit</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="FlowOutPipeOffPageConnector.html"><span class="doc">FlowOutPipeOffPageConnector</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A pipe connector that indicates that a subsequent part of a
+piping network segment is represented somewhere else, either
+on the same PID, or on some other PID.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="Funnel.html"><span class="doc">Funnel</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A hollow cone with a tube extending from the smaller end and that is designed to catch and direct a downward flow</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="GateValve.html"><span class="doc">GateValve</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A valve that is a valve where the closure member is a gate or disc with a linear motion parallel, or nearly parallel, to the plane of flat seats, which are transverse to the direction of flow.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="GlobeCheckValve.html"><span class="doc">GlobeCheckValve</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A globe check valve.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="GlobeValve.html"><span class="doc">GlobeValve</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A valve that is a valve where the closure member is a disc or piston operating with linear motion normal to the flat or shaped seat.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="Hose.html"><span class="doc">Hose</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A tubular which is flexible and capable of conveying liquids under pressure.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="IlluminatedSightGlass.html"><span class="doc">IlluminatedSightGlass</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>An illuminated sight glass.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="InLineMixer.html"><span class="doc">InLineMixer</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A static mixer that is intended to be supported by connected equipment. Typically supported by piping</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="InlineMeasuringElement.html"><span class="doc">InlineMeasuringElement</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>An inline measuring element.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="LineBlind.html"><span class="doc">LineBlind</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A functional unit used to blind off a process stream.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="MassFlowMeasuringElement.html"><span class="doc">MassFlowMeasuringElement</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A MASS FLOW MEASURING ELEMENT is a FLOW MEASURING ELEMENT that is used to measure MASS FLOW RATE.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="NeedleValve.html"><span class="doc">NeedleValve</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A globe valve that has a closure member with the shape of a conical plug (needle) which closes into a small seat.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="OperatedValve.html"><span class="doc">OperatedValve</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A valve that includes an external means of operation. (E.g. handwheel / lever / actuator.)</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="Penetration.html"><span class="doc">Penetration</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A device intended to provide a penetration.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="Pipe.html"><span class="doc">Pipe</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>An elementary piece of piping, i.e., not interrupted by any item.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="PipeCoupling.html"><span class="doc">PipeCoupling</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>An ‘artefact’ that is a one-piece cylindrical section intended to join pipes and/or piping components.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="PipeFitting.html"><span class="doc">PipeFitting</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A pipe fitting.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="PipeFlangeSpacer.html"><span class="doc">PipeFlangeSpacer</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A ‘spacer’ and an ‘artefact’ that is intended to be inserted between two pipe flanged ends to provide the distance between the flanges required to insert a ‘pipe flange spade’.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="PipeFlangeSpade.html"><span class="doc">PipeFlangeSpade</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A ‘line blind’ and an ‘artefact’ that is a circular plate with no central opening and holes to match mating flanged ends. It is also equipped with a handle.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="PipeOffPageConnector.html"><span class="doc">PipeOffPageConnector</span></a></p></td>
+<td><p>Abstract Class</p></td>
+<td><p>A connector that indicates that a piping network segment is
+continued elsewhere, either on the same PID or on another PID.
+Graphically, it is usually represented as an arrow.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="PipeOffPageConnectorObjectReference.html"><span class="doc">PipeOffPageConnectorObjectReference</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A reference to a <a class="sp-element reference internal" href="PipeOffPageConnector.html"><span class="doc">PipeOffPageConnector</span></a> by an association.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="PipeOffPageConnectorReference.html"><span class="doc">PipeOffPageConnectorReference</span></a></p></td>
+<td><p>Abstract Class</p></td>
+<td><p>A reference to a <a class="sp-element reference internal" href="PipeOffPageConnector.html"><span class="doc">PipeOffPageConnector</span></a>.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="PipeOffPageConnectorReferenceByNumber.html"><span class="doc">PipeOffPageConnectorReferenceByNumber</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A reference to a <a class="sp-element reference internal" href="PipeOffPageConnector.html"><span class="doc">PipeOffPageConnector</span></a> by drawing and
+connector number.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="PipeReducer.html"><span class="doc">PipeReducer</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>An ‘artefact’ that has different nominal pipe size at the two ends, intended to connect pipes or piping components.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="PipeTee.html"><span class="doc">PipeTee</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>An ‘artefact’ that has three piping ends in T-shape, including a branch at 90 degrees.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="PipingComponent.html"><span class="doc">PipingComponent</span></a></p></td>
+<td><p>Abstract Class</p></td>
+<td><p>A piping component</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="PipingConnection.html"><span class="doc">PipingConnection</span></a></p></td>
+<td><p>Abstract Class</p></td>
+<td><p>An elementary connection between two piping items.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="PipingNetworkSegment.html"><span class="doc">PipingNetworkSegment</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="PipingNetworkSegmentItem.html"><span class="doc">PipingNetworkSegmentItem</span></a></p></td>
+<td><p>Abstract Class</p></td>
+<td><p>An item that can be part of a <a class="sp-element reference internal" href="PipingNetworkSegment.html"><span class="doc">PipingNetworkSegment</span></a>.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="PipingNetworkSystem.html"><span class="doc">PipingNetworkSystem</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="PipingNode.html"><span class="doc">PipingNode</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A possible connection point for a <a class="sp-element reference internal" href="PipingConnection.html"><span class="doc">PipingConnection</span></a>.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="PipingNodeOwner.html"><span class="doc">PipingNodeOwner</span></a></p></td>
+<td><p>Abstract Class</p></td>
+<td><p>An object that can have <a class="sp-element reference internal" href="PipingNode.html"><span class="doc">PipingNodes</span></a>.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="PipingSourceItem.html"><span class="doc">PipingSourceItem</span></a></p></td>
+<td><p>Abstract Class</p></td>
+<td><p>An item that can be the source of a <a class="sp-element reference internal" href="PipingConnection.html"><span class="doc">PipingConnection</span></a>
+(attribute <a class="sp-element reference internal" href="PipingConnection.html#sp:plant.piping.pipingconnection.sourceitem"><span class="std std-ref">SourceItem</span></a>) or a
+<a class="sp-element reference internal" href="PipingNetworkSegment.html"><span class="doc">PipingNetworkSegment</span></a> (attribute
+<a class="sp-element reference internal" href="PipingNetworkSegment.html#sp:plant.piping.pipingnetworksegment.sourceitem"><span class="std std-ref">SourceItem</span></a>).</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="PipingTargetItem.html"><span class="doc">PipingTargetItem</span></a></p></td>
+<td><p>Abstract Class</p></td>
+<td><p>An item that can be the target of a <a class="sp-element reference internal" href="PipingConnection.html"><span class="doc">PipingConnection</span></a>
+(attribute <a class="sp-element reference internal" href="PipingConnection.html#sp:plant.piping.pipingconnection.targetitem"><span class="std std-ref">TargetItem</span></a>) or a
+<a class="sp-element reference internal" href="PipingNetworkSegment.html"><span class="doc">PipingNetworkSegment</span></a> (attribute
+<a class="sp-element reference internal" href="PipingNetworkSegment.html#sp:plant.piping.pipingnetworksegment.targetitem"><span class="std std-ref">TargetItem</span></a>).</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="PlugValve.html"><span class="doc">PlugValve</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A rotary valve that has a quarter turn action in which the closure member is a cylindrical or tapered plug which operates by rotating on its axis and sealing against a downstream seat.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="PositiveDisplacementFlowMeter.html"><span class="doc">PositiveDisplacementFlowMeter</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A flow meter that measures the volumetric flow rate of a liquid or gas by separating the flow stream into known volumes and counting them over time.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="PropertyBreak.html"><span class="doc">PropertyBreak</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>An explicit indication of a change of piping properties.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="RestrictionOrifice.html"><span class="doc">RestrictionOrifice</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A RESTRICTION ORIFICE is an ORIFICE PLATE that is intended for use as a restrictor.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="RuptureDisc.html"><span class="doc">RuptureDisc</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A physical object that is designed to burst at a certain excess pressure. It is part of a rupture disc assembly.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="SafetyValveOrFitting.html"><span class="doc">SafetyValveOrFitting</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A safety valve or fitting.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="Sensorwell.html"><span class="doc">Sensorwell</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A <span class="sp-element">Sensorwell</span> is a pressure-tight receptacle adapted to receive a
+sensing element, provided with external threads or other means for
+pressure-tight attachment to a vessel or pipe.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="SightGlass.html"><span class="doc">SightGlass</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A physical object that is transparent and intended for viewing a vessel or piping system interior.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="Silencer.html"><span class="doc">Silencer</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A device intended to reduce a noise level.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="SpringLoadedAngleGlobeSafetyValve.html"><span class="doc">SpringLoadedAngleGlobeSafetyValve</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A spring-loaded angle globe safety valve.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="SpringLoadedGlobeSafetyValve.html"><span class="doc">SpringLoadedGlobeSafetyValve</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A spring-loaded globe safety valve.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="SteamTrap.html"><span class="doc">SteamTrap</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A trap that consists of a chamber into which condensed steam from steam pipes etc. is allowed to drain, and which automatically ejects it without permitting the escape of steam.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="StraightwayValve.html"><span class="doc">StraightwayValve</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A valve that is straight, i.e. the centerlines perpendicular to the ends are in-line with no offset.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="Strainer.html"><span class="doc">Strainer</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A mechanical separator that is separating solid particles from a fluid by passing the fluid through a wire mesh, screen or metal plates containing perforations or slits.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="SwingCheckValve.html"><span class="doc">SwingCheckValve</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A check valve that is a check valve where the closure member is a disc which swings freely on a hinge and which opens automatically when flow is established and closes automatically when flow ceases or is reversed.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="TurbineFlowMeter.html"><span class="doc">TurbineFlowMeter</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A velocity flow meter that uses a multi bladed rotor to measure fluid flow rate in units of volumetric flow through a closed conduit.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="VariableAreaFlowMeter.html"><span class="doc">VariableAreaFlowMeter</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A flow meter consisting of a vertical tube with a conically shaped bore which widens to the top in which a solid body (float) is supported by the force exerted by the fluid stream.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="VentLine.html"><span class="doc">VentLine</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A <a class="sp-element reference internal" href="../ProcessEquipment/Vent.html"><span class="doc">Vent</span></a> that is intended for transport of vented gas from a
+fluid container, e.g. a vessel or a pipeline, to a vent stack or to a safe area.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="VenturiTube.html"><span class="doc">VenturiTube</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A ‘measuring device’ that has a constriction with a relative long passage with a smooth coned entry and exit.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="VolumeFlowMeasuringElement.html"><span class="doc">VolumeFlowMeasuringElement</span></a></p></td>
+<td><p>Concrete Class</p></td>
+<td><p>A VOLUME FLOW MEASURING ELEMENT is a FLOW MEASURING ELEMENT that is used to measure VOLUME FLOW RATE.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+    
+        <div id="show_right_sidebar">
+            <p><a class="toggle_right_sidebar" href="#"><span class="icon">&lt;</span><span>Page contents</span></a></p>
+        </div>
+
+        <div id="right_sidebar">
+            <p><a class="toggle_right_sidebar" href="#"><span class="icon">&gt;</span><span>Page contents:</span></a></p>
+            <div class="page_toc">
+                <ul>
+<li><a class="reference internal" href="#">Piping</a><ul>
+<li><a class="reference internal" href="#Overview">Overview</a></li>
+<li><a class="reference internal" href="#Members">Members</a><ul>
+<li><a class="reference internal" href="#member-list-section-Classes">Classes</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            </div>
+        </div>
+    
+
+      <div class="clearer"></div>
+    </div>
+    <div class="button_nav_wrapper">
+        <div class="button_nav">
+            <div class="left">
+                
+                <a href="../Instrumentation/Transmitter.html">
+                    <span class="icon">&lt;</span><span>Transmitter</span></a>
+                
+            </div>
+
+            <div class="right">
+                
+                    <a href="AngleBallValve.html"><span>AngleBallValve</span><span class="icon">&gt;</span></a>
+                
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer" role="contentinfo">
+    &#169; Copyright .
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.1.3.
+    </div>
+
+<p id="theme_credit">Styled using the <a href="https://github.com/piccolo-orm/piccolo_theme">Piccolo Theme</a></p>
+  </body>
+</html>

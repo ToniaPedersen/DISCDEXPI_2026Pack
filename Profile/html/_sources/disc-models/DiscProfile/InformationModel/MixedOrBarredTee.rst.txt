@@ -1,0 +1,5 @@
+MixedOrBarredTee
+================
+
+.. sp:internal-autoelement::
+   :element: DiscProfile.InformationModel.MixedOrBarredTee

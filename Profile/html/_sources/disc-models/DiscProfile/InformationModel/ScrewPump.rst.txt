@@ -1,0 +1,5 @@
+ScrewPump
+=========
+
+.. sp:internal-autoelement::
+   :element: DiscProfile.InformationModel.ScrewPump

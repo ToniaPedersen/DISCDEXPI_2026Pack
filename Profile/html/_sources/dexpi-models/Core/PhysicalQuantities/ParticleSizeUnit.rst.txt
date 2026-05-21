@@ -1,0 +1,5 @@
+ParticleSizeUnit
+================
+
+.. sp:internal-autoelement::
+   :element: Core.PhysicalQuantities.ParticleSizeUnit

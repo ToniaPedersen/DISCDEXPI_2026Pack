@@ -1,0 +1,5 @@
+Stroke
+======
+
+.. sp:internal-autoelement::
+   :element: Profile.Stroke

@@ -1,0 +1,5 @@
+LocationClassification
+======================
+
+.. sp:internal-autoelement::
+   :element: Plant.Enumerations.LocationClassification

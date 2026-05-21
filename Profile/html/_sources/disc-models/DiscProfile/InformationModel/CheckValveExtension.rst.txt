@@ -1,0 +1,5 @@
+CheckValveExtension
+===================
+
+.. sp:internal-autoelement::
+   :element: DiscProfile.InformationModel.CheckValveExtension

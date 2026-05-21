@@ -1,0 +1,5 @@
+EnergyDensityUnit
+=================
+
+.. sp:internal-autoelement::
+   :element: Core.PhysicalQuantities.EnergyDensityUnit

@@ -1,0 +1,5 @@
+LengthUnit
+==========
+
+.. sp:internal-autoelement::
+   :element: Core.PhysicalQuantities.LengthUnit

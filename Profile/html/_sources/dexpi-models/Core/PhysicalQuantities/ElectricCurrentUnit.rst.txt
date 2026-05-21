@@ -1,0 +1,5 @@
+ElectricCurrentUnit
+===================
+
+.. sp:internal-autoelement::
+   :element: Core.PhysicalQuantities.ElectricCurrentUnit

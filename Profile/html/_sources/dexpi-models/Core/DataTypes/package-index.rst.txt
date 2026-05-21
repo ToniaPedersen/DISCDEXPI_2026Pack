@@ -1,0 +1,5 @@
+DataTypes
+=========
+
+.. sp:internal-autoelement::
+   :element: Core.DataTypes

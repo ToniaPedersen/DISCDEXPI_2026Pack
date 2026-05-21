@@ -1,0 +1,5 @@
+Transmitter
+===========
+
+.. sp:internal-autoelement::
+   :element: Plant.Instrumentation.Transmitter

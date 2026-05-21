@@ -1,0 +1,12 @@
+DISC Information Models
+=======================
+
+:sp:element:`DiscProfile` is the actual DISC Profile, :sp:element:`Profile` is WIP for an information model for DEXPI profiles in general.
+
+.. toctree::
+   :maxdepth: 1
+   
+   <#AUTOMODEL Profile#>
+   <#AUTOMODEL DiscProfile#>
+   <#AUTOMODEL DiscProfile_FL0#>
+   <#AUTOMODEL DiscProfile_FL10#>

@@ -1,0 +1,5 @@
+ScrewCompressor
+===============
+
+.. sp:internal-autoelement::
+   :element: DiscProfile.InformationModel.ScrewCompressor

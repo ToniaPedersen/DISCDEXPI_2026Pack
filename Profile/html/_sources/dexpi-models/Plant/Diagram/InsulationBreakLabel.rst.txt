@@ -1,0 +1,5 @@
+InsulationBreakLabel
+====================
+
+.. sp:internal-autoelement::
+   :element: Plant.Diagram.InsulationBreakLabel

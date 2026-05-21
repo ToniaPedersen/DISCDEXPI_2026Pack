@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en" data-content_root="../../../">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>OperatedValve — DISC Profile 0.5</title>
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=b86133f3">
+    <link rel="stylesheet" type="text/css" href="../../../_static/basic_mod.css?v=9b2032db">
+    <link rel="stylesheet" type="text/css" href="../../../_static/sp.css">
+    <script src="../../../_static/documentation_options.js?v=db78e746"></script>
+    <script src="../../../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../_static/js/theme.js"></script>
+    <script src="../../../_static/js/petite-vue.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html">
+    <link rel="search" title="Search" href="../../../search.html">
+    <link rel="next" title="Penetration" href="Penetration.html">
+    <link rel="prev" title="NeedleValve" href="NeedleValve.html"> 
+  </head><body data-dark_mode_code_blocks="true">
+
+<div id="top_nav">
+    
+
+    <nav>
+        
+            
+        
+
+        <p id="toggle_sidebar">
+            <a href="#" title="Toggle sidebar">|||</a>
+        </p>
+        <h1><a href="../../../index.html" title="Go to homepage">DISC Profile 0.5</a></h1>
+
+        <a id="mode_toggle" href="#" @click.prevent="handleClick" :title="mode">
+    <template v-if="mode == 'light'">
+        <svg width="100%" height="100%" viewbox="0 0 79 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g id="mode_light"><rect id="Bounds" x="0" y="-0" width="78.623" height="79.049" style="fill:none;"></rect><circle cx="39.311" cy="39.524" r="15.734" style="fill:#fff;"></circle><g id="beams"><g id="beam"><path id="beam1" serif:id="beam" d="M44.212,4.901c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,-0 -4.9,2.196 -4.9,4.901l-0,9.614c-0,2.705 2.196,4.901 4.9,4.901c2.705,0 4.901,-2.196 4.901,-4.901l0,-9.614Z" style="fill:#fff;"></path></g><g id="beam2" serif:id="beam"><path id="beam3" serif:id="beam" d="M67.48,18.073c1.913,-1.912 1.913,-5.018 0,-6.931c-1.912,-1.912 -5.018,-1.912 -6.931,0l-6.798,6.799c-1.912,1.912 -1.912,5.018 0,6.931c1.913,1.912 5.018,1.912 6.931,-0l6.798,-6.799Z" style="fill:#fff;"></path></g><g id="beam4" serif:id="beam"><path id="beam5" serif:id="beam" d="M25.728,61.108c1.912,-1.913 1.912,-5.018 -0,-6.931c-1.913,-1.913 -5.019,-1.913 -6.931,-0l-6.799,6.798c-1.912,1.913 -1.912,5.019 0,6.931c1.913,1.913 5.019,1.913 6.931,0l6.799,-6.798Z" style="fill:#fff;"></path></g><g id="beam6" serif:id="beam"><path id="beam7" serif:id="beam" d="M60.682,54.177c-1.913,-1.913 -5.018,-1.913 -6.931,-0c-1.912,1.913 -1.912,5.018 0,6.931l6.798,6.798c1.913,1.913 5.019,1.913 6.931,0c1.913,-1.912 1.913,-5.018 0,-6.931l-6.798,-6.798Z" style="fill:#fff;"></path></g><g id="beam8" serif:id="beam"><path id="beam9" serif:id="beam" d="M4.901,34.623c-2.705,0 -4.901,2.196 -4.901,4.901c0,2.705 2.196,4.901 4.901,4.901l9.614,0c2.705,0 4.901,-2.196 4.901,-4.901c0,-2.705 -2.196,-4.901 -4.901,-4.901l-9.614,0Z" style="fill:#fff;"></path></g><g id="beam10" serif:id="beam"><path id="beam11" serif:id="beam" d="M44.212,64.534c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,-0 -4.9,2.196 -4.9,4.901l-0,9.614c-0,2.705 2.196,4.901 4.9,4.901c2.705,-0 4.901,-2.196 4.901,-4.901l0,-9.614Z" style="fill:#fff;"></path></g><g id="beam12" serif:id="beam"><path id="beam13" serif:id="beam" d="M18.929,11.142c-1.912,-1.912 -5.018,-1.912 -6.931,0c-1.912,1.913 -1.912,5.019 0,6.931l6.799,6.799c1.912,1.912 5.018,1.912 6.931,-0c1.912,-1.913 1.912,-5.019 -0,-6.931l-6.799,-6.799Z" style="fill:#fff;"></path></g><g id="beam14" serif:id="beam"><path id="beam15" serif:id="beam" d="M64.108,34.623c-2.705,0 -4.901,2.196 -4.901,4.901c-0,2.705 2.196,4.901 4.901,4.901l9.614,0c2.705,0 4.901,-2.196 4.901,-4.901c-0,-2.705 -2.196,-4.901 -4.901,-4.901l-9.614,0Z" style="fill:#fff;"></path></g></g></g></svg>
+    </template>
+
+    <template v-if="mode == 'dark'">
+        <svg width="100%" height="100%" viewbox="0 0 79 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g id="mode_dark"><rect id="Bounds" x="0" y="-0" width="78.623" height="79.049" style="fill:none;"></rect><circle cx="39.311" cy="39.524" r="15.734" style="fill:#fff;"></circle><g id="beams"><g id="beam"><path id="beam1" serif:id="beam" d="M44.212,14.515c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,0 -4.901,2.196 -4.901,4.901c0,2.705 2.197,4.901 4.901,4.901c2.705,0 4.901,-2.196 4.901,-4.901Z" style="fill:#fff;"></path></g><g id="beam2" serif:id="beam"><path id="beam3" serif:id="beam" d="M60.662,24.892c1.902,-1.902 1.902,-4.99 0,-6.892l-0.04,-0.039c-1.901,-1.902 -4.989,-1.902 -6.891,-0c-1.901,1.901 -1.901,4.989 0,6.891l0.04,0.04c1.902,1.901 4.989,1.901 6.891,-0Z" style="fill:#fff;"></path></g><g id="beam4" serif:id="beam"><path id="beam5" serif:id="beam" d="M25.732,61.103c1.91,-1.91 1.91,-5.011 0,-6.921l-0.009,-0.01c-1.91,-1.91 -5.012,-1.91 -6.921,-0c-1.91,1.91 -1.91,5.011 -0,6.921l0.01,0.01c1.909,1.91 5.011,1.91 6.92,-0Z" style="fill:#fff;"></path></g><g id="beam6" serif:id="beam"><path id="beam7" serif:id="beam" d="M60.672,54.167c-1.907,-1.907 -5.004,-1.907 -6.911,0l-0.02,0.02c-1.907,1.907 -1.907,5.004 0,6.911c1.907,1.907 5.004,1.907 6.911,-0l0.02,-0.02c1.907,-1.907 1.907,-5.004 0,-6.911Z" style="fill:#fff;"></path></g><g id="beam8" serif:id="beam"><path id="beam9" serif:id="beam" d="M14.52,34.623c-2.702,0 -4.896,2.194 -4.896,4.896l0,0.01c0,2.702 2.194,4.896 4.896,4.896c2.702,0 4.896,-2.194 4.896,-4.896l-0,-0.01c-0,-2.702 -2.194,-4.896 -4.896,-4.896Z" style="fill:#fff;"></path></g><g id="beam10" serif:id="beam"><path id="beam11" serif:id="beam" d="M44.212,64.534c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,-0 -4.901,2.196 -4.901,4.901c0,2.704 2.197,4.9 4.901,4.9c2.705,0 4.901,-2.196 4.901,-4.9Z" style="fill:#fff;"></path></g><g id="beam12" serif:id="beam"><path id="beam13" serif:id="beam" d="M25.73,17.943c-1.911,-1.911 -5.015,-1.911 -6.926,0l-0.005,0.005c-1.911,1.911 -1.911,5.015 0,6.926c1.911,1.911 5.015,1.911 6.926,0l0.005,-0.005c1.911,-1.911 1.911,-5.014 -0,-6.926Z" style="fill:#fff;"></path></g><g id="beam14" serif:id="beam"><path id="beam15" serif:id="beam" d="M64.098,34.623c-2.699,0 -4.891,2.192 -4.891,4.892l-0,0.019c-0,2.699 2.192,4.891 4.891,4.891c2.7,0 4.892,-2.192 4.892,-4.891l0,-0.019c0,-2.7 -2.192,-4.892 -4.892,-4.892Z" style="fill:#fff;"></path></g></g></g></svg>
+    </template>
+
+    <template v-if="mode == 'darkest'">
+        <svg width="100%" height="100%" viewbox="0 0 79 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g id="mode_darkest"><rect id="Bounds" x="0" y="-0" width="78.623" height="79.049" style="fill:none;"></rect><path d="M39.315,23.791c8.684,-0 15.734,7.05 15.734,15.733c0,8.684 -7.05,15.734 -15.734,15.734c-8.683,0 -15.733,-7.05 -15.733,-15.734c-0,-8.683 7.05,-15.733 15.733,-15.733Zm0,4.737c6.069,0 10.997,4.927 10.997,10.996c-0,6.069 -4.928,10.996 -10.997,10.996c-6.068,0 -10.996,-4.927 -10.996,-10.996c0,-6.069 4.928,-10.996 10.996,-10.996Z" style="fill:#fff;"></path><g id="beams"><g id="beam"><path id="beam1" serif:id="beam" d="M44.216,14.515c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,0 -4.9,2.196 -4.9,4.901c-0,2.705 2.196,4.901 4.9,4.901c2.705,0 4.901,-2.196 4.901,-4.901Z" style="fill:#fff;"></path></g><g id="beam2" serif:id="beam"><path id="beam3" serif:id="beam" d="M60.666,24.892c1.902,-1.902 1.902,-4.99 0,-6.892l-0.04,-0.039c-1.901,-1.902 -4.989,-1.902 -6.891,-0c-1.901,1.901 -1.901,4.989 0,6.891l0.04,0.04c1.902,1.901 4.99,1.901 6.891,-0Z" style="fill:#fff;"></path></g><g id="beam4" serif:id="beam"><path id="beam5" serif:id="beam" d="M25.737,61.103c1.909,-1.91 1.909,-5.011 -0,-6.921l-0.01,-0.01c-1.91,-1.91 -5.011,-1.91 -6.921,-0c-1.91,1.91 -1.91,5.011 -0,6.921l0.01,0.01c1.91,1.91 5.011,1.91 6.921,-0Z" style="fill:#fff;"></path></g><g id="beam6" serif:id="beam"><path id="beam7" serif:id="beam" d="M60.676,54.167c-1.907,-1.907 -5.004,-1.907 -6.911,0l-0.02,0.02c-1.907,1.907 -1.907,5.004 0,6.911c1.907,1.907 5.004,1.907 6.911,-0l0.02,-0.02c1.907,-1.907 1.907,-5.004 0,-6.911Z" style="fill:#fff;"></path></g><g id="beam8" serif:id="beam"><path id="beam9" serif:id="beam" d="M14.524,34.623c-2.702,0 -4.896,2.194 -4.896,4.896l0,0.01c0,2.702 2.194,4.896 4.896,4.896c2.702,0 4.896,-2.194 4.896,-4.896l0,-0.01c0,-2.702 -2.194,-4.896 -4.896,-4.896Z" style="fill:#fff;"></path></g><g id="beam10" serif:id="beam"><path id="beam11" serif:id="beam" d="M44.216,64.534c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,-0 -4.9,2.196 -4.9,4.901c-0,2.704 2.196,4.9 4.9,4.9c2.705,0 4.901,-2.196 4.901,-4.9Z" style="fill:#fff;"></path></g><g id="beam12" serif:id="beam"><path id="beam13" serif:id="beam" d="M25.734,17.943c-1.911,-1.911 -5.015,-1.911 -6.926,0l-0.005,0.005c-1.911,1.911 -1.911,5.015 0,6.926c1.911,1.911 5.015,1.911 6.926,0l0.005,-0.005c1.911,-1.911 1.911,-5.014 0,-6.926Z" style="fill:#fff;"></path></g><g id="beam14" serif:id="beam"><path id="beam15" serif:id="beam" d="M64.103,34.623c-2.7,0 -4.892,2.192 -4.892,4.892l-0,0.019c-0,2.699 2.192,4.891 4.892,4.891c2.699,0 4.891,-2.192 4.891,-4.891l0,-0.019c0,-2.7 -2.192,-4.892 -4.891,-4.892Z" style="fill:#fff;"></path></g></g></g></svg>
+    </template>
+</a>
+
+<script>
+(function() {
+    const LOCAL_STORAGE_KEY = 'piccoloThemeMode'
+
+    var initialMode = localStorage.getItem(LOCAL_STORAGE_KEY)
+
+    if (initialMode) {
+        // Make sure the value in local storage is valid
+        if (['light', 'dark', 'darkest'].indexOf(initialMode) == -1) {
+            initialMode = 'light'
+            localStorage.setItem(LOCAL_STORAGE_KEY, initialMode)
+        }
+    } else {
+        // Check if the client prefers dark mode
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            initialMode = 'dark'
+        } else {
+            initialMode = 'light'
+        }
+        localStorage.setItem(LOCAL_STORAGE_KEY, initialMode)
+    }
+
+    document.documentElement.dataset.mode = initialMode
+
+    PetiteVue.createApp({
+        'mode': initialMode,
+        handleClick() {
+            let currentMode = this.mode
+
+            if (currentMode == 'light') {
+                this.mode = 'dark'
+            } else if (currentMode == 'dark') {
+                this.mode = 'darkest'
+            } else if (currentMode == 'darkest') {
+                this.mode = 'light'
+            }
+
+            document.documentElement.dataset.mode = this.mode
+            localStorage.setItem(LOCAL_STORAGE_KEY, this.mode)
+
+            console.log(this.mode)
+        }
+    }).mount('#mode_toggle')
+})()
+</script>
+            <p class="mobile_search_link">
+                <a href="../../../search.html" title="Search">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 65 64" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2">
+                        <path d="M14.873 40.009c-2.315-3.943-3.642-8.532-3.642-13.429C11.231 11.91 23.141 0 37.811 0s26.58 11.91 26.58 26.58-11.91 26.58-26.58 26.58a26.44 26.44 0 0 1-14.277-4.161L9.739 62.794a3.12 3.12 0 0 1-4.413 0L.913 58.382c-1.217-1.218-1.217-3.196 0-4.413l13.96-13.96zM37.811 8.054c10.225 0 18.526 8.301 18.526 18.526s-8.301 18.526-18.526 18.526-18.526-8.301-18.526-18.526S27.586 8.054 37.811 8.054z" fill="#fff"></path>
+                    </svg>
+                </a>
+            </p>
+        
+
+        <div class="searchbox_wrapper">
+            
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+      <input type="submit" value="Go">
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+    </nav>
+</div>
+
+    
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper"><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">DEXPI Information Models</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../Builtin/model-index.html">Builtin</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Core/model-index.html">Core</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../model-index.html">Plant</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../Diagram/package-index.html">Diagram</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Enumerations/package-index.html">Enumerations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Instrumentation/package-index.html">Instrumentation</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="package-index.html">Piping</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../PlantModel.html">PlantModel</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../PlantStructure/package-index.html">PlantStructure</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../ProcessEquipment/package-index.html">ProcessEquipment</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../Process/model-index.html">Process</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../disc-models/index.html">DISC Information Models</a></li>
+</ul>
+
+        </div>
+      </div>
+
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="operatedvalve">
+<h1>OperatedValve<a class="headerlink" href="#operatedvalve" title="Link to this heading">¶</a></h1>
+<p><a class="sp-element reference internal" href="../model-index.html"><span class="doc">Plant</span></a><span class="sp-element">::</span><a class="sp-element reference internal" href="package-index.html"><span class="doc">Piping</span></a><span class="sp-element">::</span><span class="sp-element">OperatedValve</span></p>
+<section id="Overview">
+<h2>Overview<a class="headerlink" href="#Overview" title="Link to this heading">¶</a></h2>
+<p class="rubric">Concrete Class</p>
+<p><strong>RDL:</strong><span> </span><a class="reference external" href="http://data.posccaesar.org/rdl/RDS11141590">OPERATED VALVE (http://data.posccaesar.org/rdl/RDS11141590)</a></p>
+<p>A valve that includes an external means of operation. (E.g. handwheel / lever / actuator.)</p>
+<p><span>(</span><a class="reference external" href="../../../_images/uml-233.svg">Fullscreen Diagram</a><span>)</span></p>
+<svg xmlns:ns0="http://www.w3.org/2000/svg" width="1183.426451822917px" viewBox="0.0 0.0 1183.426451822917 764.1999999999999" style="max-width: 100%; background-color: white;"><style>
+            .uml-foreground-stroke {
+                stroke: black;
+                stroke-width: 1px;
+            }
+            
+            .uml-foreground-fill {
+                fill: black;
+            }
+            
+            .uml-background_color-type {
+                fill: #ffffcc;
+            }
+            
+            .uml-background_color-main_type {
+                fill: #ffff66;
+            }
+            
+            .uml-background_color-instance {
+                fill: blue;
+            }
+            
+            .uml-background_color-background {
+                fill: white;
+            }
+            
+            .uml-background_color-foreground {
+                fill: black;
+            }
+            
+            .uml-font-normal {
+                font-family: Arial;
+            }
+            
+            .uml-font-element {
+                font-family: Arial;
+            }
+            
+            .uml-fontsize-normal {
+                font-size: 10px;
+            }
+
+            .uml-fontsize-large {
+                font-size: 12px;
+            }
+            
+            .uml-source_marker-closed_arrow {
+                marker-start: url(#uml-marker-closed_arrow);
+            }
+            
+            .uml-source_marker-open_arrow {
+                marker-start: url(#uml-marker-open_arrow);
+            }
+            
+            .uml-source_marker-filled_diamond {
+                marker-start: url(#uml-marker-filled_diamond);
+            }
+
+            .uml-target_marker-closed_arrow {
+                marker-end: url(#uml-marker-closed_arrow);
+            }
+            
+            .uml-target_marker-open_arrow {
+                marker-end: url(#uml-marker-open_arrow);
+            }
+            
+            .uml-target_marker-filled_diamond {
+                marker-end: url(#uml-marker-filled_diamond);
+            }
+
+            </style><defs>
+        <marker id="uml-marker-closed_arrow" viewBox="-2 -2 14 14" refX="10" refY="5.0" markerWidth="14" markerHeight="14" orient="auto-start-reverse">
+          <path d="M 0 0 L 10 5.0 L 0 10 Z" stroke-linejoin="round" stroke-linecap="round" class="uml-foreground-stroke uml-background_color-background"></path>
+        </marker>
+        <marker id="uml-marker-open_arrow" viewBox="-2 -2 14 14" refX="10" refY="5.0" markerWidth="14" markerHeight="14" orient="auto-start-reverse">
+          <path d="M 0 0 L 10 5.0 L 0 10" stroke-linejoin="round" stroke-linecap="round" fill="none" class="uml-foreground-stroke"></path>
+        </marker>
+        <marker id="uml-marker-filled_diamond" viewBox="-2 -2 14 14" refX="10" refY="5.0" markerWidth="14" markerHeight="14" orient="auto-start-reverse">
+          <path d="M 0 5.0 L      5.0 2.0        10 5.0      5.0 8.0 Z       " stroke-linejoin="round" stroke-linecap="round" class="uml-foreground-stroke uml-background_color-foreground"></path>
+        </marker>
+      </defs><rect class="uml-background_color-type uml-foreground-stroke" x="17.3505859375" y="145.2" width="200.0" height="23.799999999999997"></rect><text x="117.3505859375" text-anchor="middle" font-size="0px" y="160.64"><a href="../../../dexpi-models/Core/ConceptualObject.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold" font-style="italic">ConceptualObject</tspan></a></text><rect class="uml-background_color-type uml-foreground-stroke" x="387.27973307291666" y="145.2" width="117.36859375000002" height="23.799999999999997"></rect><text x="445.9640299479167" text-anchor="middle" font-size="0px" y="160.64"><a href="../../../dexpi-models/Plant/Instrumentation/SensingLocation.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold" font-style="italic">SensingLocation</tspan></a></text><rect class="uml-background_color-type uml-foreground-stroke" x="491.0611951264882" y="298.4" width="300.0" height="23.799999999999997"></rect><text x="641.0611951264882" text-anchor="middle" font-size="0px" y="313.84"><a href="../../../dexpi-models/Plant/Piping/PipingComponent.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold" font-style="italic">PipingComponent</tspan></a></text><rect class="uml-background_color-type uml-foreground-stroke" x="815.5517057291669" y="12.0" width="123.82035156250002" height="23.799999999999997"></rect><text x="877.4618815104169" text-anchor="middle" font-size="0px" y="27.439999999999998"><a href="../../../dexpi-models/Plant/Piping/PipingConnection.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold" font-style="italic">PipingConnection</tspan></a></text><rect class="uml-background_color-type uml-foreground-stroke" x="524.6483268229167" y="145.2" width="189.96859375000005" height="23.799999999999997"></rect><text x="619.6326236979168" text-anchor="middle" font-size="0px" y="160.64"><a href="../../../dexpi-models/Plant/Piping/PipingNetworkSegmentItem.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold" font-style="italic">PipingNetworkSegmentItem</tspan></a></text><rect class="uml-background_color-type uml-foreground-stroke" x="1043.586158854167" y="145.2" width="127.84029296875002" height="23.799999999999997"></rect><text x="1107.506305338542" text-anchor="middle" font-size="0px" y="160.64"><a href="../../../dexpi-models/Plant/Piping/PipingNodeOwner.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold" font-style="italic">PipingNodeOwner</tspan></a></text><rect class="uml-background_color-type uml-foreground-stroke" x="898.9788346354169" y="145.2" width="124.60732421875002" height="23.799999999999997"></rect><text x="961.2824967447918" text-anchor="middle" font-size="0px" y="160.64"><a href="../../../dexpi-models/Plant/Piping/PipingSourceItem.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold" font-style="italic">PipingSourceItem</tspan></a></text><rect class="uml-background_color-type uml-foreground-stroke" x="734.6169205729168" y="145.2" width="120.56611328125003" height="23.799999999999997"></rect><text x="794.8999772135418" text-anchor="middle" font-size="0px" y="160.64"><a href="../../../dexpi-models/Plant/Piping/PipingTargetItem.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold" font-style="italic">PipingTargetItem</tspan></a></text><rect class="uml-background_color-type uml-foreground-stroke" x="172.12330729166666" y="12.0" width="148.6837890625" height="23.799999999999997"></rect><text x="246.46520182291667" text-anchor="middle" font-size="0px" y="27.439999999999998"><a href="../../../dexpi-models/Core/Diagram/AttributeRepresentation.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold">AttributeRepresentation</tspan></a></text><rect class="uml-background_color-type uml-foreground-stroke" x="15.911197916666652" y="12.0" width="136.212109375" height="23.799999999999997"></rect><text x="84.01725260416666" text-anchor="middle" font-size="0px" y="27.439999999999998"><a href="../../../dexpi-models/Core/Diagram/RepresentationGroup.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold">RepresentationGroup</tspan></a></text><rect class="uml-background_color-type uml-foreground-stroke" x="275.775390625" y="298.4" width="50.0" height="23.799999999999997"></rect><text x="300.775390625" text-anchor="middle" font-size="0px" y="313.84"><a href="../../../dexpi-models/Core/Note.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold">Note</tspan></a></text><rect class="uml-background_color-type uml-foreground-stroke" x="117.73212890625" y="298.4" width="119.3189453125" height="23.799999999999997"></rect><text x="177.3916015625" text-anchor="middle" font-size="0px" y="313.84"><a href="../../../dexpi-models/Core/PersistentIdentifier.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold">PersistentIdentifier</tspan></a></text><rect class="uml-background_color-type uml-foreground-stroke" x="32.3505859375" y="298.4" width="50.0" height="23.799999999999997"></rect><text x="57.3505859375" text-anchor="middle" font-size="0px" y="313.84"><a href="../../../dexpi-models/Core/Role.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold">Role</tspan></a></text><rect class="uml-background_color-type uml-foreground-stroke" x="811.0611951264882" y="298.4" width="158.9576171875" height="23.799999999999997"></rect><text x="890.5400037202382" text-anchor="middle" font-size="0px" y="313.84"><a href="../../../dexpi-models/Plant/Instrumentation/OperatedValveReference.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold">OperatedValveReference</tspan></a></text><rect class="uml-background_color-type uml-foreground-stroke" x="340.8070963541667" y="12.0" width="210.31386718750002" height="23.799999999999997"></rect><text x="445.9640299479167" text-anchor="middle" font-size="0px" y="27.439999999999998"><a href="../../../dexpi-models/Plant/Instrumentation/ProcessSignalGeneratingFunction.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold">ProcessSignalGeneratingFunction</tspan></a></text><rect class="uml-background_color-main_type uml-foreground-stroke" x="472.4179659598215" y="411.59999999999997" width="505.9296875" height="340.59999999999997"></rect><text x="725.3828097098215" text-anchor="middle" font-size="0px" y="427.03999999999996"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold">OperatedValve</tspan></text><polyline class="uml-foreground-stroke" points="472.4179659598215,435.4 978.3476534598215,435.4" fill="none"></polyline><text x="477.4179659598215" font-size="0px" y="451.84"><a href="../../../dexpi-models/Plant/Piping/OperatedValve.html#sp:plant.piping.operatedvalve.insulationthickness"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">InsulationThickness</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> :</tspan></text><text x="624.3281222098215" font-size="0px" y="451.84"><a href="../../../dexpi-models/Builtin/Undefined.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Undefined</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> | </tspan><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">&lt;</tspan><a href="../../../dexpi-models/Core/PhysicalQuantities/PhysicalQuantity.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">PhysicalQuantity</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> with </tspan><a href="../../../dexpi-models/Core/PhysicalQuantities/PhysicalQuantity.html#sp:core.physicalquantities.physicalquantity.unittype"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">UnitType</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> → </tspan><a href="../../../dexpi-models/Core/PhysicalQuantities/LengthUnit.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">LengthUnit</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">&gt;</tspan><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> [0..1]</tspan></text><text x="477.4179659598215" font-size="0px" y="465.64"><a href="../../../dexpi-models/Plant/Piping/OperatedValve.html#sp:plant.piping.operatedvalve.insulationtype"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">InsulationType</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> :</tspan></text><text x="624.3281222098215" font-size="0px" y="465.64"><a href="../../../dexpi-models/Builtin/Undefined.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Undefined</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> | </tspan><a href="../../../dexpi-models/Builtin/String.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">String</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> [0..1]</tspan></text><text x="477.4179659598215" font-size="0px" y="479.44"><a href="../../../dexpi-models/Plant/Piping/OperatedValve.html#sp:plant.piping.operatedvalve.numberofports"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">NumberOfPorts</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> :</tspan></text><text x="624.3281222098215" font-size="0px" y="479.44"><a href="../../../dexpi-models/Plant/Enumerations/NumberOfPortsClassification.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">NumberOfPortsClassification</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> [0..1]</tspan></text><text x="477.4179659598215" font-size="0px" y="493.24"><a href="../../../dexpi-models/Plant/Piping/OperatedValve.html#sp:plant.piping.operatedvalve.operation"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Operation</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> :</tspan></text><text x="624.3281222098215" font-size="0px" y="493.24"><a href="../../../dexpi-models/Plant/Enumerations/OperationClassification.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">OperationClassification</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> [0..1]</tspan></text><text x="477.4179659598215" font-size="0px" y="507.04"><a href="../../../dexpi-models/Plant/Piping/OperatedValve.html#sp:plant.piping.operatedvalve.pipingclasscode"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">PipingClassCode</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> :</tspan></text><text x="624.3281222098215" font-size="0px" y="507.04"><a href="../../../dexpi-models/Builtin/Undefined.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Undefined</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> | </tspan><a href="../../../dexpi-models/Builtin/String.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">String</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> [0..1]</tspan></text><text x="477.4179659598215" font-size="0px" y="520.84"><a href="../../../dexpi-models/Plant/Piping/OperatedValve.html#sp:plant.piping.operatedvalve.pipingcomponentname"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">PipingComponentName</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> :</tspan></text><text x="624.3281222098215" font-size="0px" y="520.84"><a href="../../../dexpi-models/Builtin/Undefined.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Undefined</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> | </tspan><a href="../../../dexpi-models/Builtin/String.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">String</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> [0..1]</tspan></text><text x="477.4179659598215" font-size="0px" y="534.6400000000001"><a href="../../../dexpi-models/Plant/Piping/OperatedValve.html#sp:plant.piping.operatedvalve.pipingcomponentnumber"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">PipingComponentNumber</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> :</tspan></text><text x="624.3281222098215" font-size="0px" y="534.6400000000001"><a href="../../../dexpi-models/Builtin/Undefined.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Undefined</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> | </tspan><a href="../../../dexpi-models/Builtin/String.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">String</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> [0..1]</tspan></text><polyline class="uml-foreground-stroke" points="472.4179659598215,543.0 978.3476534598215,543.0" fill="none"></polyline><text x="477.4179659598215" font-size="0px" y="559.44"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-style="italic">from </tspan><a href="../../../disc-models/DiscProfile/model-index.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-style="italic">DiscProfile:</tspan></a></text><text x="477.4179659598215" font-size="0px" y="578.24"><a href="../../../disc-models/DiscProfile/InformationModel/OperatedValveExtension.html#sp:discprofile.informationmodel.operatedvalveextension.barrierinformationflowin"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">BarrierInformationFlowIn</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> :</tspan></text><text x="660.3339815848215" font-size="0px" y="578.24"><a href="../../../dexpi-models/Builtin/Undefined.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Undefined</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> | </tspan><a href="../../../dexpi-models/Builtin/String.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">String</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> [0..1]</tspan></text><text x="477.4179659598215" font-size="0px" y="592.04"><a href="../../../disc-models/DiscProfile/InformationModel/OperatedValveExtension.html#sp:discprofile.informationmodel.operatedvalveextension.barrierinformationflowout"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">BarrierInformationFlowOut</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> :</tspan></text><text x="660.3339815848215" font-size="0px" y="592.04"><a href="../../../dexpi-models/Builtin/Undefined.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Undefined</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> | </tspan><a href="../../../dexpi-models/Builtin/String.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">String</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> [0..1]</tspan></text><text x="477.4179659598215" font-size="0px" y="605.8399999999999"><a href="../../../disc-models/DiscProfile/InformationModel/OperatedValveExtension.html#sp:discprofile.informationmodel.operatedvalveextension.itemtag"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">ItemTag</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> :</tspan></text><text x="660.3339815848215" font-size="0px" y="605.8399999999999"><a href="../../../dexpi-models/Builtin/Undefined.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Undefined</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> | </tspan><a href="../../../dexpi-models/Builtin/String.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">String</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> [0..1]</tspan></text><text x="477.4179659598215" font-size="0px" y="619.6399999999999"><a href="../../../disc-models/DiscProfile/InformationModel/OperatedValveExtension.html#sp:discprofile.informationmodel.operatedvalveextension.lockmechanism"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">LockMechanism</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> :</tspan></text><text x="660.3339815848215" font-size="0px" y="619.6399999999999"><a href="../../../dexpi-models/Builtin/Undefined.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Undefined</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> | </tspan><a href="../../../dexpi-models/Builtin/String.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">String</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> [0..1]</tspan></text><text x="477.4179659598215" font-size="0px" y="633.4399999999998"><a href="../../../disc-models/DiscProfile/InformationModel/OperatedValveExtension.html#sp:discprofile.informationmodel.operatedvalveextension.nominaldiameterrepresentation"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">NominalDiameterRepresentation</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> :</tspan></text><text x="660.3339815848215" font-size="0px" y="633.4399999999998"><a href="../../../dexpi-models/Builtin/Undefined.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Undefined</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> | </tspan><a href="../../../dexpi-models/Builtin/String.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">String</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> [0..1]</tspan></text><text x="477.4179659598215" font-size="0px" y="647.2399999999998"><a href="../../../disc-models/DiscProfile/InformationModel/OperatedValveExtension.html#sp:discprofile.informationmodel.operatedvalveextension.sequence"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Sequence</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> :</tspan></text><text x="660.3339815848215" font-size="0px" y="647.2399999999998"><a href="../../../dexpi-models/Builtin/Undefined.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Undefined</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> | </tspan><a href="../../../dexpi-models/Builtin/String.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">String</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> [0..1]</tspan></text><text x="477.4179659598215" font-size="0px" y="661.0399999999997"><a href="../../../disc-models/DiscProfile/InformationModel/OperatedValveExtension.html#sp:discprofile.informationmodel.operatedvalveextension.setpoint"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">SetPoint</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> :</tspan></text><text x="660.3339815848215" font-size="0px" y="661.0399999999997"><a href="../../../dexpi-models/Builtin/Undefined.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Undefined</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> | </tspan><a href="../../../dexpi-models/Core/PhysicalQuantities/PhysicalQuantity.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">PhysicalQuantity</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> [0..1]</tspan></text><text x="477.4179659598215" font-size="0px" y="674.8399999999997"><a href="../../../disc-models/DiscProfile/InformationModel/OperatedValveExtension.html#sp:discprofile.informationmodel.operatedvalveextension.tagsuffix"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">TagSuffix</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> :</tspan></text><text x="660.3339815848215" font-size="0px" y="674.8399999999997"><a href="../../../dexpi-models/Builtin/Undefined.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Undefined</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> | </tspan><a href="../../../dexpi-models/Builtin/String.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">String</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> [0..1]</tspan></text><text x="477.4179659598215" font-size="0px" y="688.6399999999996"><a href="../../../disc-models/DiscProfile/InformationModel/OperatedValveExtension.html#sp:discprofile.informationmodel.operatedvalveextension.tagtype"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">TagType</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> :</tspan></text><text x="660.3339815848215" font-size="0px" y="688.6399999999996"><a href="../../../dexpi-models/Builtin/Undefined.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Undefined</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> | </tspan><a href="../../../dexpi-models/Builtin/String.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">String</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> [0..1]</tspan></text><text x="477.4179659598215" font-size="0px" y="702.4399999999996"><a href="../../../disc-models/DiscProfile/InformationModel/OperatedValveExtension.html#sp:discprofile.informationmodel.operatedvalveextension.trimtype"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">TrimType</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> :</tspan></text><text x="660.3339815848215" font-size="0px" y="702.4399999999996"><a href="../../../dexpi-models/Builtin/Undefined.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Undefined</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> | </tspan><a href="../../../dexpi-models/Builtin/String.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">String</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> [0..1]</tspan></text><text x="477.4179659598215" font-size="0px" y="716.2399999999996"><a href="../../../disc-models/DiscProfile/InformationModel/OperatedValveExtension.html#sp:discprofile.informationmodel.operatedvalveextension.typicalreference"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">TypicalReference</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> :</tspan></text><text x="660.3339815848215" font-size="0px" y="716.2399999999996"><a href="../../../dexpi-models/Builtin/Undefined.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Undefined</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> | </tspan><a href="../../../dexpi-models/Builtin/String.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">String</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> [0..1]</tspan></text><text x="477.4179659598215" font-size="0px" y="730.0399999999995"><a href="../../../disc-models/DiscProfile/InformationModel/OperatedValveExtension.html#sp:discprofile.informationmodel.operatedvalveextension.valvedatasheet"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">ValveDataSheet</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> :</tspan></text><text x="660.3339815848215" font-size="0px" y="730.0399999999995"><a href="../../../dexpi-models/Builtin/Undefined.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Undefined</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> | </tspan><a href="../../../dexpi-models/Builtin/String.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">String</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> [0..1]</tspan></text><text x="477.4179659598215" font-size="0px" y="743.8399999999995"><a href="../../../disc-models/DiscProfile/InformationModel/OperatedValveExtension.html#sp:discprofile.informationmodel.operatedvalveextension.valveposition"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">ValvePosition</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> :</tspan></text><text x="660.3339815848215" font-size="0px" y="743.8399999999995"><a href="../../../dexpi-models/Builtin/Undefined.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Undefined</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> | </tspan><a href="../../../disc-models/DiscProfile/InformationModel/ValvePosition.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">ValvePosition</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> [0..1]</tspan></text><rect class="uml-background_color-type uml-foreground-stroke" x="582.1326236979168" y="12.0" width="150.0" height="23.799999999999997"></rect><text x="657.1326236979168" text-anchor="middle" font-size="0px" y="27.439999999999998"><a href="../../../dexpi-models/Plant/Piping/PipingNetworkSegment.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold">PipingNetworkSegment</tspan></a></text><rect class="uml-background_color-type uml-foreground-stroke" x="1089.6883138020837" y="298.4" width="78.24941406250001" height="23.799999999999997"></rect><text x="1128.8130208333337" text-anchor="middle" font-size="0px" y="313.84"><a href="../../../dexpi-models/Plant/Piping/PipingNode.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold">PipingNode</tspan></a></text><polyline class="uml-foreground-stroke uml-source_marker-closed_arrow" points="177.3505859375,169.0 177.3505859375,194.79999999999998 369.96875,194.79999999999998 369.96875,233.2 369.96875,234.2 369.96875,262.59999999999997 533.9183379836311,262.59999999999997 533.9183379836311,298.4" fill="none"></polyline><polyline class="uml-foreground-stroke uml-source_marker-closed_arrow" points="445.9640299479167,169.0 445.9640299479167,233.2 445.9640299479167,234.2 445.9640299479167,252.59999999999997 576.7754808407739,252.59999999999997 576.7754808407739,298.4" fill="none"></polyline><polyline class="uml-foreground-stroke uml-source_marker-closed_arrow" points="641.0611951264882,322.2 641.0611951264882,366.3999999999999 641.0611951264882,367.3999999999999 641.0611951264882,411.59999999999997" fill="none"></polyline><polyline class="uml-foreground-stroke uml-source_marker-closed_arrow" points="619.6326236979168,169.0 619.6326236979168,233.2 619.6326236979168,234.2 619.6326236979168,298.4" fill="none"></polyline><polyline class="uml-foreground-stroke uml-source_marker-closed_arrow" points="1086.1995898437503,169.0 1086.1995898437503,233.2 1086.1995898437503,234.2 1086.1995898437503,272.59999999999997 748.2040522693453,272.59999999999997 748.2040522693453,298.4" fill="none"></polyline><polyline class="uml-foreground-stroke uml-source_marker-closed_arrow" points="961.2824967447918,169.0 961.2824967447918,233.2 961.2824967447918,234.2 961.2824967447918,262.59999999999997 705.3469094122024,262.59999999999997 705.3469094122024,298.4" fill="none"></polyline><polyline class="uml-foreground-stroke uml-source_marker-closed_arrow" points="794.8999772135418,169.0 794.8999772135418,233.2 794.8999772135418,234.2 794.8999772135418,252.59999999999997 662.4897665550596,252.59999999999997 662.4897665550596,298.4" fill="none"></polyline><rect class="uml-background_color-background " x="12.0" y="224.79999999999998" width="90.701171875" height="17.799999999999997"></rect><text x="57.3505859375" text-anchor="middle" font-size="0px" y="237.23999999999998"><a href="../../../dexpi-models/Core/ConceptualObject.html#sp:core.conceptualobject.performedroles"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">PerformedRoles</tspan></a></text><polyline class="uml-foreground-stroke" points="57.3505859375,169.0 57.3505859375,224.79999999999998" fill="none"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="57.3505859375,242.59999999999997 57.3505859375,298.4" fill="none"></polyline><text x="65.3505859375" font-size="0px" y="181.2"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</tspan></text><text x="65.3505859375" font-size="0px" y="292.79999999999995"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</tspan></text><rect class="uml-background_color-background " x="122.701171875" y="224.79999999999998" width="109.380859375" height="17.799999999999997"></rect><text x="177.3916015625" text-anchor="middle" font-size="0px" y="237.23999999999998"><a href="../../../dexpi-models/Core/ConceptualObject.html#sp:core.conceptualobject.persistentidentifiers"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">PersistentIdentifiers</tspan></a></text><polyline class="uml-foreground-stroke uml-source_marker-filled_diamond" points="97.3505859375,169.0 97.3505859375,214.79999999999998 177.3916015625,214.79999999999998 177.3916015625,224.79999999999998" fill="none"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="177.3916015625,242.59999999999997 177.3916015625,298.4" fill="none"></polyline><text x="105.3505859375" font-size="0px" y="181.2"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">0..1</tspan></text><text x="185.3916015625" font-size="0px" y="292.79999999999995"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</tspan></text><rect class="uml-background_color-background " x="252.08203125" y="224.79999999999998" width="97.38671875" height="17.799999999999997"></rect><text x="300.775390625" text-anchor="middle" font-size="0px" y="237.23999999999998"><a href="../../../dexpi-models/Core/ConceptualObject.html#sp:core.conceptualobject.referencednotes"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">ReferencedNotes</tspan></a></text><polyline class="uml-foreground-stroke" points="137.3505859375,169.0 137.3505859375,204.79999999999998 300.775390625,204.79999999999998 300.775390625,224.79999999999998" fill="none"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="300.775390625,242.59999999999997 300.775390625,298.4" fill="none"></polyline><text x="145.3505859375" font-size="0px" y="181.2"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</tspan></text><text x="308.775390625" font-size="0px" y="292.79999999999995"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</tspan></text><rect class="uml-background_color-background " x="227.12438151041667" y="91.6" width="38.681640625" height="17.799999999999997"></rect><text x="246.46520182291667" text-anchor="middle" font-size="0px" y="104.03999999999999"><a href="../../../dexpi-models/Core/Diagram/AttributeRepresentation.html#sp:core.diagram.attributerepresentation.object"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Object</tspan></a></text><polyline class="uml-foreground-stroke" points="246.46520182291667,35.8 246.46520182291667,91.6" fill="none"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="246.46520182291667,109.39999999999999 246.46520182291667,119.39999999999999 150.68391927083331,119.39999999999999 150.68391927083331,145.2" fill="none"></polyline><text x="254.46520182291667" font-size="0px" y="48.0"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</tspan></text><rect class="uml-background_color-background " x="51.33463541666666" y="91.6" width="65.365234375" height="17.799999999999997"></rect><text x="84.01725260416666" text-anchor="middle" font-size="0px" y="104.03999999999999"><a href="../../../dexpi-models/Core/Diagram/RepresentationGroup.html#sp:core.diagram.representationgroup.represents"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Represents</tspan></a></text><polyline class="uml-foreground-stroke" points="84.01725260416666,35.8 84.01725260416666,91.6" fill="none"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="84.01725260416666,109.39999999999999 84.01725260416666,145.2" fill="none"></polyline><text x="92.01725260416666" font-size="0px" y="48.0"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</tspan></text><rect class="uml-background_color-background " x="873.5312146577382" y="357.99999999999994" width="34.017578125" height="17.799999999999997"></rect><text x="890.5400037202382" text-anchor="middle" font-size="0px" y="370.43999999999994"><a href="../../../dexpi-models/Plant/Instrumentation/OperatedValveReference.html#sp:plant.instrumentation.operatedvalvereference.valve"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Valve</tspan></a></text><polyline class="uml-foreground-stroke" points="890.5400037202382,322.2 890.5400037202382,357.99999999999994" fill="none"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="890.5400037202382,375.79999999999995 890.5400037202382,385.79999999999995 809.7044242931548,385.79999999999995 809.7044242931548,411.59999999999997" fill="none"></polyline><text x="898.5400037202382" font-size="0px" y="334.4"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">0..1</tspan></text><text x="817.7044242931548" font-size="0px" y="405.99999999999994"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">0..1</tspan></text><rect class="uml-background_color-background " x="399.5968424479167" y="91.6" width="92.734375" height="17.799999999999997"></rect><text x="445.9640299479167" text-anchor="middle" font-size="0px" y="104.03999999999999"><a href="../../../dexpi-models/Plant/Instrumentation/ProcessSignalGeneratingFunction.html#sp:plant.instrumentation.processsignalgeneratingfunction.sensinglocation"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">SensingLocation</tspan></a></text><polyline class="uml-foreground-stroke" points="445.9640299479167,35.8 445.9640299479167,91.6" fill="none"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="445.9640299479167,109.39999999999999 445.9640299479167,145.2" fill="none"></polyline><text x="453.9640299479167" font-size="0px" y="48.0"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</tspan></text><text x="453.9640299479167" font-size="0px" y="139.59999999999997"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">0..1</tspan></text><rect class="uml-background_color-background " x="993.1942968750002" y="91.6" width="65.359375" height="17.799999999999997"></rect><text x="1025.8739843750002" text-anchor="middle" font-size="0px" y="104.03999999999999"><a href="../../../dexpi-models/Plant/Piping/PipingConnection.html#sp:plant.piping.pipingconnection.sourceitem"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">SourceItem</tspan></a></text><polyline class="uml-foreground-stroke" points="898.0986067708336,35.8 898.0986067708336,61.599999999999994 1025.8739843750002,61.599999999999994 1025.8739843750002,91.6" fill="none"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="1025.8739843750002,109.39999999999999 1025.8739843750002,119.39999999999999 982.0503841145836,119.39999999999999 982.0503841145836,145.2" fill="none"></polyline><text x="906.0986067708336" font-size="0px" y="48.0"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">0..1</tspan></text><text x="990.0503841145836" font-size="0px" y="139.59999999999997"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">0..1</tspan></text><rect class="uml-background_color-background " x="825.8153906250002" y="91.6" width="62.01953125" height="17.799999999999997"></rect><text x="856.8251562500002" text-anchor="middle" font-size="0px" y="104.03999999999999"><a href="../../../dexpi-models/Plant/Piping/PipingConnection.html#sp:plant.piping.pipingconnection.targetitem"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">TargetItem</tspan></a></text><polyline class="uml-foreground-stroke" points="856.8251562500002,35.8 856.8251562500002,91.6" fill="none"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="856.8251562500002,109.39999999999999 856.8251562500002,119.39999999999999 814.9943294270835,119.39999999999999 814.9943294270835,145.2" fill="none"></polyline><text x="864.8251562500002" font-size="0px" y="48.0"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">0..1</tspan></text><text x="822.9943294270835" font-size="0px" y="139.59999999999997"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">0..1</tspan></text><rect class="uml-background_color-background " x="602.9636783854168" y="91.6" width="33.337890625" height="17.799999999999997"></rect><text x="619.6326236979168" text-anchor="middle" font-size="0px" y="104.03999999999999"><a href="../../../dexpi-models/Plant/Piping/PipingNetworkSegment.html#sp:plant.piping.pipingnetworksegment.items"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Items</tspan></a></text><polyline class="uml-foreground-stroke uml-source_marker-filled_diamond" points="619.6326236979168,35.8 619.6326236979168,91.6" fill="none"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="619.6326236979168,109.39999999999999 619.6326236979168,145.2" fill="none"></polyline><text x="627.6326236979168" font-size="0px" y="48.0"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">0..1</tspan></text><text x="627.6326236979168" font-size="0px" y="139.59999999999997"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</tspan></text><rect class="uml-background_color-background " x="907.8349218750002" y="91.6" width="65.359375" height="17.799999999999997"></rect><text x="940.5146093750002" text-anchor="middle" font-size="0px" y="104.03999999999999"><a href="../../../dexpi-models/Plant/Piping/PipingNetworkSegment.html#sp:plant.piping.pipingnetworksegment.sourceitem"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">SourceItem</tspan></a></text><polyline class="uml-foreground-stroke" points="694.6326236979168,35.8 694.6326236979168,71.6 940.5146093750002,71.6 940.5146093750002,91.6" fill="none"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="940.5146093750002,109.39999999999999 940.5146093750002,145.2" fill="none"></polyline><text x="702.6326236979168" font-size="0px" y="48.0"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">0..1</tspan></text><text x="948.5146093750002" font-size="0px" y="139.59999999999997"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">0..1</tspan></text><rect class="uml-background_color-background " x="743.7958593750002" y="91.6" width="62.01953125" height="17.799999999999997"></rect><text x="774.8056250000002" text-anchor="middle" font-size="0px" y="104.03999999999999"><a href="../../../dexpi-models/Plant/Piping/PipingNetworkSegment.html#sp:plant.piping.pipingnetworksegment.targetitem"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">TargetItem</tspan></a></text><polyline class="uml-foreground-stroke" points="657.1326236979168,35.8 657.1326236979168,81.6 774.8056250000002,81.6 774.8056250000002,91.6" fill="none"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="774.8056250000002,109.39999999999999 774.8056250000002,145.2" fill="none"></polyline><text x="665.1326236979168" font-size="0px" y="48.0"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">0..1</tspan></text><text x="782.8056250000002" font-size="0px" y="139.59999999999997"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">0..1</tspan></text><rect class="uml-background_color-background " x="1109.4692708333337" y="224.79999999999998" width="38.6875" height="17.799999999999997"></rect><text x="1128.8130208333337" text-anchor="middle" font-size="0px" y="237.23999999999998"><a href="../../../dexpi-models/Plant/Piping/PipingNodeOwner.html#sp:plant.piping.pipingnodeowner.nodes"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Nodes</tspan></a></text><polyline class="uml-foreground-stroke uml-source_marker-filled_diamond" points="1128.8130208333337,169.0 1128.8130208333337,224.79999999999998" fill="none"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="1128.8130208333337,242.59999999999997 1128.8130208333337,298.4" fill="none"></polyline><text x="1136.8130208333337" font-size="0px" y="181.2"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">0..1</tspan></text><text x="1136.8130208333337" font-size="0px" y="292.79999999999995"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</tspan></text></svg><p class="rubric">Supertypes</p>
+<ul class="simple">
+<li><p><a class="sp-element reference internal" href="PipingComponent.html"><span class="doc">PipingComponent</span></a></p></li>
+</ul>
+<p class="rubric">Extensions</p>
+<ul class="simple">
+<li><p><a class="sp-element reference internal" href="../../../disc-models/DiscProfile/InformationModel/OperatedValveExtension.html"><span class="doc">OperatedValveExtension</span></a></p></li>
+</ul>
+<p class="rubric">Subtypes</p>
+<ul class="simple">
+<li><p><a class="sp-element reference internal" href="AngleBallValve.html"><span class="doc">AngleBallValve</span></a></p></li>
+<li><p><a class="sp-element reference internal" href="AngleGlobeValve.html"><span class="doc">AngleGlobeValve</span></a></p></li>
+<li><p><a class="sp-element reference internal" href="AnglePlugValve.html"><span class="doc">AnglePlugValve</span></a></p></li>
+<li><p><a class="sp-element reference internal" href="AngleValve.html"><span class="doc">AngleValve</span></a></p></li>
+<li><p><a class="sp-element reference internal" href="../../../disc-models/DiscProfile/InformationModel/AxialValve.html"><span class="doc">AxialValve</span></a></p></li>
+<li><p><a class="sp-element reference internal" href="BallValve.html"><span class="doc">BallValve</span></a></p></li>
+<li><p><a class="sp-element reference internal" href="../../../disc-models/DiscProfile/InformationModel/BlockAndBleedValve.html"><span class="doc">BlockAndBleedValve</span></a></p></li>
+<li><p><a class="sp-element reference internal" href="ButterflyValve.html"><span class="doc">ButterflyValve</span></a></p></li>
+<li><p><a class="sp-element reference internal" href="../../../disc-models/DiscProfile/InformationModel/ChokeValve.html"><span class="doc">ChokeValve</span></a></p></li>
+<li><p><a class="sp-element reference internal" href="../../../disc-models/DiscProfile/InformationModel/DiaphragmValve.html"><span class="doc">DiaphragmValve</span></a></p></li>
+<li><p><a class="sp-element reference internal" href="../../../disc-models/DiscProfile/InformationModel/DiverterValve.html"><span class="doc">DiverterValve</span></a></p></li>
+<li><p><a class="sp-element reference internal" href="../../../disc-models/DiscProfile/InformationModel/DoubleBlockAndBleedAndCheckValve.html"><span class="doc">DoubleBlockAndBleedAndCheckValve</span></a></p></li>
+<li><p><a class="sp-element reference internal" href="../../../disc-models/DiscProfile/InformationModel/DoubleBlockAndBleedValve.html"><span class="doc">DoubleBlockAndBleedValve</span></a></p></li>
+<li><p><a class="sp-element reference internal" href="../../../disc-models/DiscProfile/InformationModel/DoubleIsolationBallValve1.html"><span class="doc">DoubleIsolationBallValve1</span></a></p></li>
+<li><p><a class="sp-element reference internal" href="../../../disc-models/DiscProfile/InformationModel/DoubleIsolationBallValve2.html"><span class="doc">DoubleIsolationBallValve2</span></a></p></li>
+<li><p><a class="sp-element reference internal" href="../../../disc-models/DiscProfile/InformationModel/FloatValve.html"><span class="doc">FloatValve</span></a></p></li>
+<li><p><a class="sp-element reference internal" href="../../../disc-models/DiscProfile/InformationModel/FlowControlAndCheckValve.html"><span class="doc">FlowControlAndCheckValve</span></a></p></li>
+<li><p><a class="sp-element reference internal" href="../../../disc-models/DiscProfile/InformationModel/FourWayValve.html"><span class="doc">FourWayValve</span></a></p></li>
+<li><p><a class="sp-element reference internal" href="GateValve.html"><span class="doc">GateValve</span></a></p></li>
+<li><p><a class="sp-element reference internal" href="GlobeValve.html"><span class="doc">GlobeValve</span></a></p></li>
+<li><p><a class="sp-element reference internal" href="../../../disc-models/DiscProfile/InformationModel/MinimumFlowAndCheckValve.html"><span class="doc">MinimumFlowAndCheckValve</span></a></p></li>
+<li><p><a class="sp-element reference internal" href="../../../disc-models/DiscProfile/InformationModel/MonoflangeValve.html"><span class="doc">MonoflangeValve</span></a></p></li>
+<li><p><a class="sp-element reference internal" href="NeedleValve.html"><span class="doc">NeedleValve</span></a></p></li>
+<li><p><a class="sp-element reference internal" href="../../../disc-models/DiscProfile/InformationModel/PinchValve.html"><span class="doc">PinchValve</span></a></p></li>
+<li><p><a class="sp-element reference internal" href="PlugValve.html"><span class="doc">PlugValve</span></a></p></li>
+<li><p><a class="sp-element reference internal" href="../../../disc-models/DiscProfile/InformationModel/RotaryValve.html"><span class="doc">RotaryValve</span></a></p></li>
+<li><p><a class="sp-element reference internal" href="../../../disc-models/DiscProfile/InformationModel/SlideGateValve.html"><span class="doc">SlideGateValve</span></a></p></li>
+<li><p><a class="sp-element reference internal" href="StraightwayValve.html"><span class="doc">StraightwayValve</span></a></p></li>
+<li><p><a class="sp-element reference internal" href="../../../disc-models/DiscProfile/InformationModel/ThreeWayValve.html"><span class="doc">ThreeWayValve</span></a></p></li>
+<li><p><a class="sp-element reference internal" href="../../../disc-models/DiscProfile/InformationModel/WedgeGateValve.html"><span class="doc">WedgeGateValve</span></a></p></li>
+</ul>
+</section>
+<section id="Members">
+<h2>Members<a class="headerlink" href="#Members" title="Link to this heading">¶</a></h2>
+<section id="member-list-section-Data Properties">
+<h3>Data Properties<a class="headerlink" href="#member-list-section-Data%20Properties" title="Link to this heading">¶</a></h3>
+</section>
+<table class="docutils align-left">
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Multiplicity</p></th>
+<th class="head"><p>Type</p></th>
+<th class="head"><p>Ordered</p></th>
+<th class="head"><p>Unique</p></th>
+<th class="head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="#sp:plant.piping.operatedvalve.insulationthickness"><span class="std std-ref">InsulationThickness</span></a></p></td>
+<td><p>0..1</p></td>
+<td><p><a class="sp-element reference internal" href="../../Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><span>&lt;</span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/PhysicalQuantity.html"><span class="doc">PhysicalQuantity</span></a><span> with </span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/PhysicalQuantity.html#sp:core.physicalquantities.physicalquantity.unittype"><span class="std std-ref">UnitType</span></a><span> → </span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/LengthUnit.html"><span class="doc">LengthUnit</span></a><span>&gt;</span></p></td>
+<td><p>no</p></td>
+<td><p>no</p></td>
+<td><p>The insulation thickness of the <a class="sp-element reference internal" href="#"><span class="doc">OperatedValve</span></a>.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="#sp:plant.piping.operatedvalve.insulationtype"><span class="std std-ref">InsulationType</span></a></p></td>
+<td><p>0..1</p></td>
+<td><p><a class="sp-element reference internal" href="../../Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><a class="sp-element reference internal" href="../../Builtin/String.html"><span class="doc">String</span></a></p></td>
+<td><p>no</p></td>
+<td><p>no</p></td>
+<td><p>The identification code for the insulation type related to the <a class="sp-element reference internal" href="#"><span class="doc">OperatedValve</span></a>. So far,
+DEXPI does not define restrictions for valid values.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="#sp:plant.piping.operatedvalve.numberofports"><span class="std std-ref">NumberOfPorts</span></a></p></td>
+<td><p>0..1</p></td>
+<td><p><a class="sp-element reference internal" href="../Enumerations/NumberOfPortsClassification.html"><span class="doc">NumberOfPortsClassification</span></a></p></td>
+<td><p>no</p></td>
+<td><p>no</p></td>
+<td><p>A specialization indicating the number of ports of the <a class="sp-element reference internal" href="#"><span class="doc">OperatedValve</span></a>.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="#sp:plant.piping.operatedvalve.operation"><span class="std std-ref">Operation</span></a></p></td>
+<td><p>0..1</p></td>
+<td><p><a class="sp-element reference internal" href="../Enumerations/OperationClassification.html"><span class="doc">OperationClassification</span></a></p></td>
+<td><p>no</p></td>
+<td><p>no</p></td>
+<td><p>A specialization indicating the operation of the <a class="sp-element reference internal" href="#"><span class="doc">OperatedValve</span></a>.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="#sp:plant.piping.operatedvalve.pipingclasscode"><span class="std std-ref">PipingClassCode</span></a></p></td>
+<td><p>0..1</p></td>
+<td><p><a class="sp-element reference internal" href="../../Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><a class="sp-element reference internal" href="../../Builtin/String.html"><span class="doc">String</span></a></p></td>
+<td><p>no</p></td>
+<td><p>no</p></td>
+<td><p>The identification code of the piping class of the <a class="sp-element reference internal" href="#"><span class="doc">OperatedValve</span></a>.
+So far, DEXPI does not define restrictions for valid values.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="#sp:plant.piping.operatedvalve.pipingcomponentname"><span class="std std-ref">PipingComponentName</span></a></p></td>
+<td><p>0..1</p></td>
+<td><p><a class="sp-element reference internal" href="../../Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><a class="sp-element reference internal" href="../../Builtin/String.html"><span class="doc">String</span></a></p></td>
+<td><p>no</p></td>
+<td><p>no</p></td>
+<td><p>A string to classify the <a class="sp-element reference internal" href="#"><span class="doc">OperatedValve</span></a>. DEXPI does not prescribe the
+classification system. Typically, company or site site standards are
+used.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="#sp:plant.piping.operatedvalve.pipingcomponentnumber"><span class="std std-ref">PipingComponentNumber</span></a></p></td>
+<td><p>0..1</p></td>
+<td><p><a class="sp-element reference internal" href="../../Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><a class="sp-element reference internal" href="../../Builtin/String.html"><span class="doc">String</span></a></p></td>
+<td><p>no</p></td>
+<td><p>no</p></td>
+<td><p>An identifier of the <a class="sp-element reference internal" href="#"><span class="doc">OperatedValve</span></a>. DEXPI does not prescribe the scope of the
+identifier, i.e., whether it should be unique in, e.g., a
+<a class="sp-element reference internal" href="PipingNetworkSegment.html"><span class="doc">PipingNetworkSegment</span></a> or a
+<a class="sp-element reference internal" href="PipingNetworkSystem.html"><span class="doc">PipingNetworkSystem</span></a>.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="Constraints">
+<h2>Constraints<a class="headerlink" href="#Constraints" title="Link to this heading">¶</a></h2>
+<table class="docutils align-left">
+<thead>
+<tr class="row-odd"><th class="head"><p>Property</p></th>
+<th class="head"><p>Property</p></th>
+<th class="head"><p>Constraint</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="../../../disc-models/DiscProfile_FL10/model-index.html"><span class="doc">DiscProfile_FL10</span></a></p></td>
+<td><p><a class="sp-element reference internal" href="../../../disc-models/DiscProfile/InformationModel/OperatedValveExtension.html#sp:discprofile.informationmodel.operatedvalveextension.valveposition"><span class="std std-ref">ValvePosition</span></a></p></td>
+<td><p>Lower = 1</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="sp:plant.piping.operatedvalve.insulationthickness">
+<h2>InsulationThickness<a class="headerlink" href="#sp:plant.piping.operatedvalve.insulationthickness" title="Link to this heading">¶</a></h2>
+<p class="rubric">Data Property</p>
+<p>The insulation thickness of the <a class="sp-element reference internal" href="#"><span class="doc">OperatedValve</span></a>.</p>
+<p><strong>Type:</strong><span> </span><a class="sp-element reference internal" href="../../Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><span>&lt;</span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/PhysicalQuantity.html"><span class="doc">PhysicalQuantity</span></a><span> with </span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/PhysicalQuantity.html#sp:core.physicalquantities.physicalquantity.unittype"><span class="std std-ref">UnitType</span></a><span> → </span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/LengthUnit.html"><span class="doc">LengthUnit</span></a><span>&gt;</span></p>
+<p><strong>Multiplicity:</strong><span> </span><span>0..1</span></p>
+<p><strong>Ordered:</strong><span> </span><span>no</span></p>
+<p><strong>Unique:</strong><span> </span><span>no</span></p>
+<p><strong>RDL:</strong><span> </span><a class="reference external" href="http://data.posccaesar.org/rdl/RDS4238040">INSULATION THICKNESS (http://data.posccaesar.org/rdl/RDS4238040)</a></p>
+<section id="sp:plant.piping.operatedvalve.insulationthickness-example">
+<h3>Example<a class="headerlink" href="#sp:plant.piping.operatedvalve.insulationthickness-example" title="Link to this heading">¶</a></h3>
+<p class="sp-dense"><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/PhysicalQuantity.html"><span class="doc">PhysicalQuantity</span></a><span>(</span></p>
+<p class="sp-dense"><span>     </span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/PhysicalQuantity.html#sp:core.physicalquantities.physicalquantity.unit"><span class="std std-ref">Unit</span></a><span> = </span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/LengthUnit.html#sp:core.physicalquantities.lengthunit.millimetre"><span class="std std-ref">Millimetre</span></a><span>,</span></p>
+<p class="sp-dense"><span>     </span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/PhysicalQuantity.html#sp:core.physicalquantities.physicalquantity.value"><span class="std std-ref">Value</span></a><span> = </span><code class="docutils literal notranslate"><span class="pre">40.0</span></code><span>)</span></p>
+</section>
+</section>
+<section id="sp:plant.piping.operatedvalve.insulationtype">
+<h2>InsulationType<a class="headerlink" href="#sp:plant.piping.operatedvalve.insulationtype" title="Link to this heading">¶</a></h2>
+<p class="rubric">Data Property</p>
+<p>The identification code for the insulation type related to the <a class="sp-element reference internal" href="#"><span class="doc">OperatedValve</span></a>. So far,
+DEXPI does not define restrictions for valid values.</p>
+<p><strong>Type:</strong><span> </span><a class="sp-element reference internal" href="../../Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><a class="sp-element reference internal" href="../../Builtin/String.html"><span class="doc">String</span></a></p>
+<p><strong>Multiplicity:</strong><span> </span><span>0..1</span></p>
+<p><strong>Ordered:</strong><span> </span><span>no</span></p>
+<p><strong>Unique:</strong><span> </span><span>no</span></p>
+<p><strong>RDL:</strong><span> </span><a class="reference external" href="http://sandbox.dexpi.org/rdl/InsulationTypeAssignmentClass">INSULATION TYPE ASSIGNMENT CLASS (http://sandbox.dexpi.org/rdl/InsulationTypeAssignmentClass)</a></p>
+<section id="sp:plant.piping.operatedvalve.insulationtype-example">
+<h3>Example<a class="headerlink" href="#sp:plant.piping.operatedvalve.insulationtype-example" title="Link to this heading">¶</a></h3>
+<p class="sp-dense"><code class="docutils literal notranslate"><span class="pre">"Q"</span></code></p>
+</section>
+</section>
+<section id="sp:plant.piping.operatedvalve.numberofports">
+<h2>NumberOfPorts<a class="headerlink" href="#sp:plant.piping.operatedvalve.numberofports" title="Link to this heading">¶</a></h2>
+<p class="rubric">Data Property</p>
+<p>A specialization indicating the number of ports of the <a class="sp-element reference internal" href="#"><span class="doc">OperatedValve</span></a>.</p>
+<p><strong>Type:</strong><span> </span><a class="sp-element reference internal" href="../Enumerations/NumberOfPortsClassification.html"><span class="doc">NumberOfPortsClassification</span></a></p>
+<p><strong>Multiplicity:</strong><span> </span><span>0..1</span></p>
+<p><strong>Ordered:</strong><span> </span><span>no</span></p>
+<p><strong>Unique:</strong><span> </span><span>no</span></p>
+<p><strong>RDL:</strong><span> </span><a class="reference external" href="http://sandbox.dexpi.org/rdl/NumberOfPortsSpecialization">NUMBER OF PORTS SPECIALIZATION (http://sandbox.dexpi.org/rdl/NumberOfPortsSpecialization)</a></p>
+<section id="sp:plant.piping.operatedvalve.numberofports-example">
+<h3>Example<a class="headerlink" href="#sp:plant.piping.operatedvalve.numberofports-example" title="Link to this heading">¶</a></h3>
+<p class="sp-dense"><a class="sp-element reference internal" href="../Enumerations/NumberOfPortsClassification.html#sp:plant.enumerations.numberofportsclassification.twoportvalve"><span class="std std-ref">TwoPortValve</span></a></p>
+</section>
+</section>
+<section id="sp:plant.piping.operatedvalve.operation">
+<h2>Operation<a class="headerlink" href="#sp:plant.piping.operatedvalve.operation" title="Link to this heading">¶</a></h2>
+<p class="rubric">Data Property</p>
+<p>A specialization indicating the operation of the <a class="sp-element reference internal" href="#"><span class="doc">OperatedValve</span></a>.</p>
+<p><strong>Type:</strong><span> </span><a class="sp-element reference internal" href="../Enumerations/OperationClassification.html"><span class="doc">OperationClassification</span></a></p>
+<p><strong>Multiplicity:</strong><span> </span><span>0..1</span></p>
+<p><strong>Ordered:</strong><span> </span><span>no</span></p>
+<p><strong>Unique:</strong><span> </span><span>no</span></p>
+<p><strong>RDL:</strong><span> </span><a class="reference external" href="http://sandbox.dexpi.org/rdl/OperationSpecialization">OPERATION SPECIALIZATION (http://sandbox.dexpi.org/rdl/OperationSpecialization)</a></p>
+<section id="sp:plant.piping.operatedvalve.operation-example">
+<h3>Example<a class="headerlink" href="#sp:plant.piping.operatedvalve.operation-example" title="Link to this heading">¶</a></h3>
+<p class="sp-dense"><a class="sp-element reference internal" href="../Enumerations/OperationClassification.html#sp:plant.enumerations.operationclassification.continuousoperation"><span class="std std-ref">ContinuousOperation</span></a></p>
+</section>
+</section>
+<section id="sp:plant.piping.operatedvalve.pipingclasscode">
+<h2>PipingClassCode<a class="headerlink" href="#sp:plant.piping.operatedvalve.pipingclasscode" title="Link to this heading">¶</a></h2>
+<p class="rubric">Data Property</p>
+<p>The identification code of the piping class of the <a class="sp-element reference internal" href="#"><span class="doc">OperatedValve</span></a>.
+So far, DEXPI does not define restrictions for valid values.</p>
+<p><strong>Type:</strong><span> </span><a class="sp-element reference internal" href="../../Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><a class="sp-element reference internal" href="../../Builtin/String.html"><span class="doc">String</span></a></p>
+<p><strong>Multiplicity:</strong><span> </span><span>0..1</span></p>
+<p><strong>Ordered:</strong><span> </span><span>no</span></p>
+<p><strong>Unique:</strong><span> </span><span>no</span></p>
+<p><strong>RDL:</strong><span> </span><a class="reference external" href="http://sandbox.dexpi.org/rdl/PipingClassCodeAssignmentClass">PIPING CLASS CODE ASSIGNMENT CLASS (http://sandbox.dexpi.org/rdl/PipingClassCodeAssignmentClass)</a></p>
+<section id="sp:plant.piping.operatedvalve.pipingclasscode-example">
+<h3>Example<a class="headerlink" href="#sp:plant.piping.operatedvalve.pipingclasscode-example" title="Link to this heading">¶</a></h3>
+<p class="sp-dense"><code class="docutils literal notranslate"><span class="pre">"75HB13"</span></code></p>
+</section>
+</section>
+<section id="sp:plant.piping.operatedvalve.pipingcomponentname">
+<h2>PipingComponentName<a class="headerlink" href="#sp:plant.piping.operatedvalve.pipingcomponentname" title="Link to this heading">¶</a></h2>
+<p class="rubric">Data Property</p>
+<p>A string to classify the <a class="sp-element reference internal" href="#"><span class="doc">OperatedValve</span></a>. DEXPI does not prescribe the
+classification system. Typically, company or site site standards are
+used.</p>
+<p><strong>Type:</strong><span> </span><a class="sp-element reference internal" href="../../Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><a class="sp-element reference internal" href="../../Builtin/String.html"><span class="doc">String</span></a></p>
+<p><strong>Multiplicity:</strong><span> </span><span>0..1</span></p>
+<p><strong>Ordered:</strong><span> </span><span>no</span></p>
+<p><strong>Unique:</strong><span> </span><span>no</span></p>
+<p><strong>RDL:</strong><span> </span><a class="reference external" href="http://sandbox.dexpi.org/rdl/PipingComponentNameAssignmentClass">PIPING COMPONENT NAME ASSIGNMENT CLASS (http://sandbox.dexpi.org/rdl/PipingComponentNameAssignmentClass)</a></p>
+<section id="sp:plant.piping.operatedvalve.pipingcomponentname-example">
+<h3>Example<a class="headerlink" href="#sp:plant.piping.operatedvalve.pipingcomponentname-example" title="Link to this heading">¶</a></h3>
+<p class="sp-dense"><code class="docutils literal notranslate"><span class="pre">"73KH12"</span></code></p>
+</section>
+</section>
+<section id="sp:plant.piping.operatedvalve.pipingcomponentnumber">
+<h2>PipingComponentNumber<a class="headerlink" href="#sp:plant.piping.operatedvalve.pipingcomponentnumber" title="Link to this heading">¶</a></h2>
+<p class="rubric">Data Property</p>
+<p>An identifier of the <a class="sp-element reference internal" href="#"><span class="doc">OperatedValve</span></a>. DEXPI does not prescribe the scope of the
+identifier, i.e., whether it should be unique in, e.g., a
+<a class="sp-element reference internal" href="PipingNetworkSegment.html"><span class="doc">PipingNetworkSegment</span></a> or a
+<a class="sp-element reference internal" href="PipingNetworkSystem.html"><span class="doc">PipingNetworkSystem</span></a>.</p>
+<p><strong>Type:</strong><span> </span><a class="sp-element reference internal" href="../../Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><a class="sp-element reference internal" href="../../Builtin/String.html"><span class="doc">String</span></a></p>
+<p><strong>Multiplicity:</strong><span> </span><span>0..1</span></p>
+<p><strong>Ordered:</strong><span> </span><span>no</span></p>
+<p><strong>Unique:</strong><span> </span><span>no</span></p>
+<p><strong>RDL:</strong><span> </span><a class="reference external" href="http://sandbox.dexpi.org/rdl/PipingComponentNumberAssignmentClass">PIPING COMPONENT NUMBER ASSIGNMENT CLASS (http://sandbox.dexpi.org/rdl/PipingComponentNumberAssignmentClass)</a></p>
+<section id="sp:plant.piping.operatedvalve.pipingcomponentnumber-example">
+<h3>Example<a class="headerlink" href="#sp:plant.piping.operatedvalve.pipingcomponentnumber-example" title="Link to this heading">¶</a></h3>
+<p class="sp-dense"><code class="docutils literal notranslate"><span class="pre">"C2"</span></code></p>
+</section>
+</section>
+<section id="Plant.Piping.OperatedValve-example">
+<h2>Example in DEXPI XML<a class="headerlink" href="#Plant.Piping.OperatedValve-example" title="Link to this heading">¶</a></h2>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;Object</span><span class="w"> </span><span class="na">type=</span><span class="s">"Plant/Piping.OperatedValve"</span><span class="nt">&gt;</span>
+<span class="w">  </span><span class="nt">&lt;Data</span><span class="w"> </span><span class="na">property=</span><span class="s">"InsulationThickness"</span><span class="nt">&gt;</span>
+<span class="w">    </span><span class="nt">&lt;AggregatedDataValue</span><span class="w"> </span><span class="na">type=</span><span class="s">"Core/PhysicalQuantities.PhysicalQuantity"</span><span class="nt">&gt;</span>
+<span class="w">      </span><span class="nt">&lt;Data</span><span class="w"> </span><span class="na">property=</span><span class="s">"Unit"</span><span class="nt">&gt;</span>
+<span class="w">        </span><span class="nt">&lt;DataReference</span><span class="w"> </span><span class="na">data=</span><span class="s">"Core/PhysicalQuantities.LengthUnit.Millimetre"</span><span class="nt">/&gt;</span>
+<span class="w">      </span><span class="nt">&lt;/Data&gt;</span>
+<span class="w">      </span><span class="nt">&lt;Data</span><span class="w"> </span><span class="na">property=</span><span class="s">"Value"</span><span class="nt">&gt;</span>
+<span class="w">        </span><span class="nt">&lt;Double&gt;</span>40.0<span class="nt">&lt;/Double&gt;</span>
+<span class="w">      </span><span class="nt">&lt;/Data&gt;</span>
+<span class="w">    </span><span class="nt">&lt;/AggregatedDataValue&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/Data&gt;</span>
+<span class="w">  </span><span class="nt">&lt;Data</span><span class="w"> </span><span class="na">property=</span><span class="s">"InsulationType"</span><span class="nt">&gt;</span>
+<span class="w">    </span><span class="nt">&lt;String&gt;</span>Q<span class="nt">&lt;/String&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/Data&gt;</span>
+<span class="w">  </span><span class="nt">&lt;Data</span><span class="w"> </span><span class="na">property=</span><span class="s">"NumberOfPorts"</span><span class="nt">&gt;</span>
+<span class="w">    </span><span class="nt">&lt;DataReference</span><span class="w"> </span><span class="na">data=</span><span class="s">"Plant/Enumerations.NumberOfPortsClassification.TwoPortValve"</span><span class="nt">/&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/Data&gt;</span>
+<span class="w">  </span><span class="nt">&lt;Data</span><span class="w"> </span><span class="na">property=</span><span class="s">"Operation"</span><span class="nt">&gt;</span>
+<span class="w">    </span><span class="nt">&lt;DataReference</span><span class="w"> </span><span class="na">data=</span><span class="s">"Plant/Enumerations.OperationClassification.ContinuousOperation"</span><span class="nt">/&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/Data&gt;</span>
+<span class="w">  </span><span class="nt">&lt;Data</span><span class="w"> </span><span class="na">property=</span><span class="s">"PipingClassCode"</span><span class="nt">&gt;</span>
+<span class="w">    </span><span class="nt">&lt;String&gt;</span>75HB13<span class="nt">&lt;/String&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/Data&gt;</span>
+<span class="w">  </span><span class="nt">&lt;Data</span><span class="w"> </span><span class="na">property=</span><span class="s">"PipingComponentName"</span><span class="nt">&gt;</span>
+<span class="w">    </span><span class="nt">&lt;String&gt;</span>73KH12<span class="nt">&lt;/String&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/Data&gt;</span>
+<span class="w">  </span><span class="nt">&lt;Data</span><span class="w"> </span><span class="na">property=</span><span class="s">"PipingComponentNumber"</span><span class="nt">&gt;</span>
+<span class="w">    </span><span class="nt">&lt;String&gt;</span>C2<span class="nt">&lt;/String&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/Data&gt;</span>
+<span class="nt">&lt;/Object&gt;</span>
+</pre></div>
+</div>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+    
+        <div id="show_right_sidebar">
+            <p><a class="toggle_right_sidebar" href="#"><span class="icon">&lt;</span><span>Page contents</span></a></p>
+        </div>
+
+        <div id="right_sidebar">
+            <p><a class="toggle_right_sidebar" href="#"><span class="icon">&gt;</span><span>Page contents:</span></a></p>
+            <div class="page_toc">
+                <ul>
+<li><a class="reference internal" href="#">OperatedValve</a><ul>
+<li><a class="reference internal" href="#Overview">Overview</a></li>
+<li><a class="reference internal" href="#Members">Members</a><ul>
+<li><a class="reference internal" href="#member-list-section-Data%20Properties">Data Properties</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#Constraints">Constraints</a></li>
+<li><a class="reference internal" href="#sp:plant.piping.operatedvalve.insulationthickness">InsulationThickness</a><ul>
+<li><a class="reference internal" href="#sp:plant.piping.operatedvalve.insulationthickness-example">Example</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#sp:plant.piping.operatedvalve.insulationtype">InsulationType</a><ul>
+<li><a class="reference internal" href="#sp:plant.piping.operatedvalve.insulationtype-example">Example</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#sp:plant.piping.operatedvalve.numberofports">NumberOfPorts</a><ul>
+<li><a class="reference internal" href="#sp:plant.piping.operatedvalve.numberofports-example">Example</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#sp:plant.piping.operatedvalve.operation">Operation</a><ul>
+<li><a class="reference internal" href="#sp:plant.piping.operatedvalve.operation-example">Example</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#sp:plant.piping.operatedvalve.pipingclasscode">PipingClassCode</a><ul>
+<li><a class="reference internal" href="#sp:plant.piping.operatedvalve.pipingclasscode-example">Example</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#sp:plant.piping.operatedvalve.pipingcomponentname">PipingComponentName</a><ul>
+<li><a class="reference internal" href="#sp:plant.piping.operatedvalve.pipingcomponentname-example">Example</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#sp:plant.piping.operatedvalve.pipingcomponentnumber">PipingComponentNumber</a><ul>
+<li><a class="reference internal" href="#sp:plant.piping.operatedvalve.pipingcomponentnumber-example">Example</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#Plant.Piping.OperatedValve-example">Example in DEXPI XML</a></li>
+</ul>
+</li>
+</ul>
+
+            </div>
+        </div>
+    
+
+      <div class="clearer"></div>
+    </div>
+    <div class="button_nav_wrapper">
+        <div class="button_nav">
+            <div class="left">
+                
+                <a href="NeedleValve.html">
+                    <span class="icon">&lt;</span><span>NeedleValve</span></a>
+                
+            </div>
+
+            <div class="right">
+                
+                    <a href="Penetration.html"><span>Penetration</span><span class="icon">&gt;</span></a>
+                
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer" role="contentinfo">
+    © Copyright .
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.1.3.
+    </div>
+
+<p id="theme_credit">Styled using the <a href="https://github.com/piccolo-orm/piccolo_theme">Piccolo Theme</a></p>
+  </body>
+</html>

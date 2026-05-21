@@ -1,0 +1,5 @@
+MultiPhaseFlowMeter
+===================
+
+.. sp:internal-autoelement::
+   :element: DiscProfile.InformationModel.InlineMeasuringElementTypeCodes.MultiPhaseFlowMeter

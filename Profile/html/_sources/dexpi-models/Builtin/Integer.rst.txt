@@ -1,0 +1,5 @@
+Integer
+=======
+
+.. sp:internal-autoelement::
+   :element: Builtin.Integer

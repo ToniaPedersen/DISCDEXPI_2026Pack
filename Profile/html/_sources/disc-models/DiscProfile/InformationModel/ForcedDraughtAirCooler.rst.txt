@@ -1,0 +1,5 @@
+ForcedDraughtAirCooler
+======================
+
+.. sp:internal-autoelement::
+   :element: DiscProfile.InformationModel.ForcedDraughtAirCooler

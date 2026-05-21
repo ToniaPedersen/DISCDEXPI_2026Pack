@@ -1,0 +1,5 @@
+BatchWeigher
+============
+
+.. sp:internal-autoelement::
+   :element: Plant.ProcessEquipment.BatchWeigher

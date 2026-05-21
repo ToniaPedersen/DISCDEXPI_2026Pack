@@ -1,0 +1,5 @@
+RotationalFrequencyUnit
+=======================
+
+.. sp:internal-autoelement::
+   :element: Core.PhysicalQuantities.RotationalFrequencyUnit

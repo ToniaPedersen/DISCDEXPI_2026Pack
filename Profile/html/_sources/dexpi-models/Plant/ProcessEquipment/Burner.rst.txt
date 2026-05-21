@@ -1,0 +1,5 @@
+Burner
+======
+
+.. sp:internal-autoelement::
+   :element: Plant.ProcessEquipment.Burner

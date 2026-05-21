@@ -1,0 +1,5 @@
+PipingClassBreakClassification
+==============================
+
+.. sp:internal-autoelement::
+   :element: Plant.Enumerations.PipingClassBreakClassification

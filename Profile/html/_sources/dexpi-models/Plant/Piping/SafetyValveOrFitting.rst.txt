@@ -1,0 +1,5 @@
+SafetyValveOrFitting
+====================
+
+.. sp:internal-autoelement::
+   :element: Plant.Piping.SafetyValveOrFitting

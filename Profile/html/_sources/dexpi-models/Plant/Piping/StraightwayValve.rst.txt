@@ -1,0 +1,5 @@
+StraightwayValve
+================
+
+.. sp:internal-autoelement::
+   :element: Plant.Piping.StraightwayValve

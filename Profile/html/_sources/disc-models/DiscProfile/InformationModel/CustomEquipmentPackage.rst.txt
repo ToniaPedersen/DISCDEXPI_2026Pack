@@ -1,0 +1,5 @@
+CustomEquipmentPackage
+======================
+
+.. sp:internal-autoelement::
+   :element: DiscProfile.InformationModel.CustomEquipmentPackage

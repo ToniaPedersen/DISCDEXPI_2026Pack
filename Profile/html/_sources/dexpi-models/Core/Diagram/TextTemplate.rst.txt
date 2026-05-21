@@ -1,0 +1,5 @@
+TextTemplate
+============
+
+.. sp:internal-autoelement::
+   :element: Core.Diagram.TextTemplate

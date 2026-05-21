@@ -1,0 +1,5 @@
+DryingChamber
+=============
+
+.. sp:internal-autoelement::
+   :element: Plant.ProcessEquipment.DryingChamber

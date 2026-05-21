@@ -1,0 +1,5 @@
+Electrical
+==========
+
+.. sp:internal-autoelement::
+   :element: DiscProfile.InformationModel.ControlledActuatorTypeCodes.Electrical

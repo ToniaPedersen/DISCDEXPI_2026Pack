@@ -1,0 +1,5 @@
+Digital
+=======
+
+.. sp:internal-autoelement::
+   :element: DiscProfile.InformationModel.ControlledActuatorTypeCodes.Digital

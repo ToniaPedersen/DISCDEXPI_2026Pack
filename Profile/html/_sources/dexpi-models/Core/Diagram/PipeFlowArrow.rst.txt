@@ -1,0 +1,5 @@
+PipeFlowArrow
+=============
+
+.. sp:internal-autoelement::
+   :element: Core.Diagram.PipeFlowArrow

@@ -1,0 +1,5 @@
+StoringInBattery
+================
+
+.. sp:internal-autoelement::
+   :element: Process.Process.StoringInBattery

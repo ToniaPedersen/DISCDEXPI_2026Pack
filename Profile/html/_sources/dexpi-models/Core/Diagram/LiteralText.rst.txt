@@ -1,0 +1,5 @@
+LiteralText
+===========
+
+.. sp:internal-autoelement::
+   :element: Core.Diagram.LiteralText

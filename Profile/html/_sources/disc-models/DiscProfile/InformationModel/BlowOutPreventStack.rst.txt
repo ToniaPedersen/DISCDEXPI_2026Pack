@@ -1,0 +1,5 @@
+BlowOutPreventStack
+===================
+
+.. sp:internal-autoelement::
+   :element: DiscProfile.InformationModel.BlowOutPreventStack

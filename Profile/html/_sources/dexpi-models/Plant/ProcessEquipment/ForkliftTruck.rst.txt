@@ -1,0 +1,5 @@
+ForkliftTruck
+=============
+
+.. sp:internal-autoelement::
+   :element: Plant.ProcessEquipment.ForkliftTruck

@@ -1,0 +1,5 @@
+MassFlowRateUnit
+================
+
+.. sp:internal-autoelement::
+   :element: Core.PhysicalQuantities.MassFlowRateUnit

@@ -1,0 +1,5 @@
+CoolingTower
+============
+
+.. sp:internal-autoelement::
+   :element: Plant.ProcessEquipment.CoolingTower

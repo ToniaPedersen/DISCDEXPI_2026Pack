@@ -1,0 +1,5 @@
+CustomLabel
+===========
+
+.. sp:internal-autoelement::
+   :element: Plant.Diagram.CustomLabel

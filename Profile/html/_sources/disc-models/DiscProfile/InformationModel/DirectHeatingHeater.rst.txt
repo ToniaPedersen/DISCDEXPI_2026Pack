@@ -1,0 +1,5 @@
+DirectHeatingHeater
+===================
+
+.. sp:internal-autoelement::
+   :element: DiscProfile.InformationModel.DirectHeatingHeater

@@ -1,0 +1,5 @@
+RotaryMixer
+===========
+
+.. sp:internal-autoelement::
+   :element: Plant.ProcessEquipment.RotaryMixer

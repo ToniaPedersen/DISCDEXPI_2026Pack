@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en" data-content_root="../../../">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>BatchWeigher — DISC Profile 0.5</title>
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=b86133f3">
+    <link rel="stylesheet" type="text/css" href="../../../_static/basic_mod.css?v=9b2032db">
+    <link rel="stylesheet" type="text/css" href="../../../_static/sp.css">
+    <script src="../../../_static/documentation_options.js?v=db78e746"></script>
+    <script src="../../../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../_static/js/theme.js"></script>
+    <script src="../../../_static/js/petite-vue.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html">
+    <link rel="search" title="Search" href="../../../search.html">
+    <link rel="next" title="Blower" href="Blower.html">
+    <link rel="prev" title="AxialFan" href="AxialFan.html"> 
+  </head><body data-dark_mode_code_blocks="true">
+
+<div id="top_nav">
+    
+
+    <nav>
+        
+            
+        
+
+        <p id="toggle_sidebar">
+            <a href="#" title="Toggle sidebar">|||</a>
+        </p>
+        <h1><a href="../../../index.html" title="Go to homepage">DISC Profile 0.5</a></h1>
+
+        <a id="mode_toggle" href="#" @click.prevent="handleClick" :title="mode">
+    <template v-if="mode == 'light'">
+        <svg width="100%" height="100%" viewbox="0 0 79 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g id="mode_light"><rect id="Bounds" x="0" y="-0" width="78.623" height="79.049" style="fill:none;"></rect><circle cx="39.311" cy="39.524" r="15.734" style="fill:#fff;"></circle><g id="beams"><g id="beam"><path id="beam1" serif:id="beam" d="M44.212,4.901c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,-0 -4.9,2.196 -4.9,4.901l-0,9.614c-0,2.705 2.196,4.901 4.9,4.901c2.705,0 4.901,-2.196 4.901,-4.901l0,-9.614Z" style="fill:#fff;"></path></g><g id="beam2" serif:id="beam"><path id="beam3" serif:id="beam" d="M67.48,18.073c1.913,-1.912 1.913,-5.018 0,-6.931c-1.912,-1.912 -5.018,-1.912 -6.931,0l-6.798,6.799c-1.912,1.912 -1.912,5.018 0,6.931c1.913,1.912 5.018,1.912 6.931,-0l6.798,-6.799Z" style="fill:#fff;"></path></g><g id="beam4" serif:id="beam"><path id="beam5" serif:id="beam" d="M25.728,61.108c1.912,-1.913 1.912,-5.018 -0,-6.931c-1.913,-1.913 -5.019,-1.913 -6.931,-0l-6.799,6.798c-1.912,1.913 -1.912,5.019 0,6.931c1.913,1.913 5.019,1.913 6.931,0l6.799,-6.798Z" style="fill:#fff;"></path></g><g id="beam6" serif:id="beam"><path id="beam7" serif:id="beam" d="M60.682,54.177c-1.913,-1.913 -5.018,-1.913 -6.931,-0c-1.912,1.913 -1.912,5.018 0,6.931l6.798,6.798c1.913,1.913 5.019,1.913 6.931,0c1.913,-1.912 1.913,-5.018 0,-6.931l-6.798,-6.798Z" style="fill:#fff;"></path></g><g id="beam8" serif:id="beam"><path id="beam9" serif:id="beam" d="M4.901,34.623c-2.705,0 -4.901,2.196 -4.901,4.901c0,2.705 2.196,4.901 4.901,4.901l9.614,0c2.705,0 4.901,-2.196 4.901,-4.901c0,-2.705 -2.196,-4.901 -4.901,-4.901l-9.614,0Z" style="fill:#fff;"></path></g><g id="beam10" serif:id="beam"><path id="beam11" serif:id="beam" d="M44.212,64.534c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,-0 -4.9,2.196 -4.9,4.901l-0,9.614c-0,2.705 2.196,4.901 4.9,4.901c2.705,-0 4.901,-2.196 4.901,-4.901l0,-9.614Z" style="fill:#fff;"></path></g><g id="beam12" serif:id="beam"><path id="beam13" serif:id="beam" d="M18.929,11.142c-1.912,-1.912 -5.018,-1.912 -6.931,0c-1.912,1.913 -1.912,5.019 0,6.931l6.799,6.799c1.912,1.912 5.018,1.912 6.931,-0c1.912,-1.913 1.912,-5.019 -0,-6.931l-6.799,-6.799Z" style="fill:#fff;"></path></g><g id="beam14" serif:id="beam"><path id="beam15" serif:id="beam" d="M64.108,34.623c-2.705,0 -4.901,2.196 -4.901,4.901c-0,2.705 2.196,4.901 4.901,4.901l9.614,0c2.705,0 4.901,-2.196 4.901,-4.901c-0,-2.705 -2.196,-4.901 -4.901,-4.901l-9.614,0Z" style="fill:#fff;"></path></g></g></g></svg>
+    </template>
+
+    <template v-if="mode == 'dark'">
+        <svg width="100%" height="100%" viewbox="0 0 79 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g id="mode_dark"><rect id="Bounds" x="0" y="-0" width="78.623" height="79.049" style="fill:none;"></rect><circle cx="39.311" cy="39.524" r="15.734" style="fill:#fff;"></circle><g id="beams"><g id="beam"><path id="beam1" serif:id="beam" d="M44.212,14.515c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,0 -4.901,2.196 -4.901,4.901c0,2.705 2.197,4.901 4.901,4.901c2.705,0 4.901,-2.196 4.901,-4.901Z" style="fill:#fff;"></path></g><g id="beam2" serif:id="beam"><path id="beam3" serif:id="beam" d="M60.662,24.892c1.902,-1.902 1.902,-4.99 0,-6.892l-0.04,-0.039c-1.901,-1.902 -4.989,-1.902 -6.891,-0c-1.901,1.901 -1.901,4.989 0,6.891l0.04,0.04c1.902,1.901 4.989,1.901 6.891,-0Z" style="fill:#fff;"></path></g><g id="beam4" serif:id="beam"><path id="beam5" serif:id="beam" d="M25.732,61.103c1.91,-1.91 1.91,-5.011 0,-6.921l-0.009,-0.01c-1.91,-1.91 -5.012,-1.91 -6.921,-0c-1.91,1.91 -1.91,5.011 -0,6.921l0.01,0.01c1.909,1.91 5.011,1.91 6.92,-0Z" style="fill:#fff;"></path></g><g id="beam6" serif:id="beam"><path id="beam7" serif:id="beam" d="M60.672,54.167c-1.907,-1.907 -5.004,-1.907 -6.911,0l-0.02,0.02c-1.907,1.907 -1.907,5.004 0,6.911c1.907,1.907 5.004,1.907 6.911,-0l0.02,-0.02c1.907,-1.907 1.907,-5.004 0,-6.911Z" style="fill:#fff;"></path></g><g id="beam8" serif:id="beam"><path id="beam9" serif:id="beam" d="M14.52,34.623c-2.702,0 -4.896,2.194 -4.896,4.896l0,0.01c0,2.702 2.194,4.896 4.896,4.896c2.702,0 4.896,-2.194 4.896,-4.896l-0,-0.01c-0,-2.702 -2.194,-4.896 -4.896,-4.896Z" style="fill:#fff;"></path></g><g id="beam10" serif:id="beam"><path id="beam11" serif:id="beam" d="M44.212,64.534c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,-0 -4.901,2.196 -4.901,4.901c0,2.704 2.197,4.9 4.901,4.9c2.705,0 4.901,-2.196 4.901,-4.9Z" style="fill:#fff;"></path></g><g id="beam12" serif:id="beam"><path id="beam13" serif:id="beam" d="M25.73,17.943c-1.911,-1.911 -5.015,-1.911 -6.926,0l-0.005,0.005c-1.911,1.911 -1.911,5.015 0,6.926c1.911,1.911 5.015,1.911 6.926,0l0.005,-0.005c1.911,-1.911 1.911,-5.014 -0,-6.926Z" style="fill:#fff;"></path></g><g id="beam14" serif:id="beam"><path id="beam15" serif:id="beam" d="M64.098,34.623c-2.699,0 -4.891,2.192 -4.891,4.892l-0,0.019c-0,2.699 2.192,4.891 4.891,4.891c2.7,0 4.892,-2.192 4.892,-4.891l0,-0.019c0,-2.7 -2.192,-4.892 -4.892,-4.892Z" style="fill:#fff;"></path></g></g></g></svg>
+    </template>
+
+    <template v-if="mode == 'darkest'">
+        <svg width="100%" height="100%" viewbox="0 0 79 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g id="mode_darkest"><rect id="Bounds" x="0" y="-0" width="78.623" height="79.049" style="fill:none;"></rect><path d="M39.315,23.791c8.684,-0 15.734,7.05 15.734,15.733c0,8.684 -7.05,15.734 -15.734,15.734c-8.683,0 -15.733,-7.05 -15.733,-15.734c-0,-8.683 7.05,-15.733 15.733,-15.733Zm0,4.737c6.069,0 10.997,4.927 10.997,10.996c-0,6.069 -4.928,10.996 -10.997,10.996c-6.068,0 -10.996,-4.927 -10.996,-10.996c0,-6.069 4.928,-10.996 10.996,-10.996Z" style="fill:#fff;"></path><g id="beams"><g id="beam"><path id="beam1" serif:id="beam" d="M44.216,14.515c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,0 -4.9,2.196 -4.9,4.901c-0,2.705 2.196,4.901 4.9,4.901c2.705,0 4.901,-2.196 4.901,-4.901Z" style="fill:#fff;"></path></g><g id="beam2" serif:id="beam"><path id="beam3" serif:id="beam" d="M60.666,24.892c1.902,-1.902 1.902,-4.99 0,-6.892l-0.04,-0.039c-1.901,-1.902 -4.989,-1.902 -6.891,-0c-1.901,1.901 -1.901,4.989 0,6.891l0.04,0.04c1.902,1.901 4.99,1.901 6.891,-0Z" style="fill:#fff;"></path></g><g id="beam4" serif:id="beam"><path id="beam5" serif:id="beam" d="M25.737,61.103c1.909,-1.91 1.909,-5.011 -0,-6.921l-0.01,-0.01c-1.91,-1.91 -5.011,-1.91 -6.921,-0c-1.91,1.91 -1.91,5.011 -0,6.921l0.01,0.01c1.91,1.91 5.011,1.91 6.921,-0Z" style="fill:#fff;"></path></g><g id="beam6" serif:id="beam"><path id="beam7" serif:id="beam" d="M60.676,54.167c-1.907,-1.907 -5.004,-1.907 -6.911,0l-0.02,0.02c-1.907,1.907 -1.907,5.004 0,6.911c1.907,1.907 5.004,1.907 6.911,-0l0.02,-0.02c1.907,-1.907 1.907,-5.004 0,-6.911Z" style="fill:#fff;"></path></g><g id="beam8" serif:id="beam"><path id="beam9" serif:id="beam" d="M14.524,34.623c-2.702,0 -4.896,2.194 -4.896,4.896l0,0.01c0,2.702 2.194,4.896 4.896,4.896c2.702,0 4.896,-2.194 4.896,-4.896l0,-0.01c0,-2.702 -2.194,-4.896 -4.896,-4.896Z" style="fill:#fff;"></path></g><g id="beam10" serif:id="beam"><path id="beam11" serif:id="beam" d="M44.216,64.534c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,-0 -4.9,2.196 -4.9,4.901c-0,2.704 2.196,4.9 4.9,4.9c2.705,0 4.901,-2.196 4.901,-4.9Z" style="fill:#fff;"></path></g><g id="beam12" serif:id="beam"><path id="beam13" serif:id="beam" d="M25.734,17.943c-1.911,-1.911 -5.015,-1.911 -6.926,0l-0.005,0.005c-1.911,1.911 -1.911,5.015 0,6.926c1.911,1.911 5.015,1.911 6.926,0l0.005,-0.005c1.911,-1.911 1.911,-5.014 0,-6.926Z" style="fill:#fff;"></path></g><g id="beam14" serif:id="beam"><path id="beam15" serif:id="beam" d="M64.103,34.623c-2.7,0 -4.892,2.192 -4.892,4.892l-0,0.019c-0,2.699 2.192,4.891 4.892,4.891c2.699,0 4.891,-2.192 4.891,-4.891l0,-0.019c0,-2.7 -2.192,-4.892 -4.891,-4.892Z" style="fill:#fff;"></path></g></g></g></svg>
+    </template>
+</a>
+
+<script>
+(function() {
+    const LOCAL_STORAGE_KEY = 'piccoloThemeMode'
+
+    var initialMode = localStorage.getItem(LOCAL_STORAGE_KEY)
+
+    if (initialMode) {
+        // Make sure the value in local storage is valid
+        if (['light', 'dark', 'darkest'].indexOf(initialMode) == -1) {
+            initialMode = 'light'
+            localStorage.setItem(LOCAL_STORAGE_KEY, initialMode)
+        }
+    } else {
+        // Check if the client prefers dark mode
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            initialMode = 'dark'
+        } else {
+            initialMode = 'light'
+        }
+        localStorage.setItem(LOCAL_STORAGE_KEY, initialMode)
+    }
+
+    document.documentElement.dataset.mode = initialMode
+
+    PetiteVue.createApp({
+        'mode': initialMode,
+        handleClick() {
+            let currentMode = this.mode
+
+            if (currentMode == 'light') {
+                this.mode = 'dark'
+            } else if (currentMode == 'dark') {
+                this.mode = 'darkest'
+            } else if (currentMode == 'darkest') {
+                this.mode = 'light'
+            }
+
+            document.documentElement.dataset.mode = this.mode
+            localStorage.setItem(LOCAL_STORAGE_KEY, this.mode)
+
+            console.log(this.mode)
+        }
+    }).mount('#mode_toggle')
+})()
+</script>
+            <p class="mobile_search_link">
+                <a href="../../../search.html" title="Search">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 65 64" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2">
+                        <path d="M14.873 40.009c-2.315-3.943-3.642-8.532-3.642-13.429C11.231 11.91 23.141 0 37.811 0s26.58 11.91 26.58 26.58-11.91 26.58-26.58 26.58a26.44 26.44 0 0 1-14.277-4.161L9.739 62.794a3.12 3.12 0 0 1-4.413 0L.913 58.382c-1.217-1.218-1.217-3.196 0-4.413l13.96-13.96zM37.811 8.054c10.225 0 18.526 8.301 18.526 18.526s-8.301 18.526-18.526 18.526-18.526-8.301-18.526-18.526S27.586 8.054 37.811 8.054z" fill="#fff"></path>
+                    </svg>
+                </a>
+            </p>
+        
+
+        <div class="searchbox_wrapper">
+            
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+      <input type="submit" value="Go">
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+    </nav>
+</div>
+
+    
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper"><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">DEXPI Information Models</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../Builtin/model-index.html">Builtin</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Core/model-index.html">Core</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../model-index.html">Plant</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../Diagram/package-index.html">Diagram</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Enumerations/package-index.html">Enumerations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Instrumentation/package-index.html">Instrumentation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Piping/package-index.html">Piping</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../PlantModel.html">PlantModel</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../PlantStructure/package-index.html">PlantStructure</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="package-index.html">ProcessEquipment</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../Process/model-index.html">Process</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../disc-models/index.html">DISC Information Models</a></li>
+</ul>
+
+        </div>
+      </div>
+
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="batchweigher">
+<h1>BatchWeigher<a class="headerlink" href="#batchweigher" title="Link to this heading">¶</a></h1>
+<p><a class="sp-element reference internal" href="../model-index.html"><span class="doc">Plant</span></a><span class="sp-element">::</span><a class="sp-element reference internal" href="package-index.html"><span class="doc">ProcessEquipment</span></a><span class="sp-element">::</span><span class="sp-element">BatchWeigher</span></p>
+<section id="Overview">
+<h2>Overview<a class="headerlink" href="#Overview" title="Link to this heading">¶</a></h2>
+<p class="rubric">Concrete Class</p>
+<p><strong>RDL:</strong><span> </span><a class="reference external" href="http://sandbox.dexpi.org/rdl/BatchWeigher">BATCH WEIGHER (http://sandbox.dexpi.org/rdl/BatchWeigher)</a></p>
+<p>A <a class="sp-element reference internal" href="Weigher.html"><span class="doc">Weigher</span></a> that is operating in batch mode.</p>
+<p><span>(</span><a class="reference external" href="../../../_images/uml-305.svg">Fullscreen Diagram</a><span>)</span></p>
+<svg xmlns:ns0="http://www.w3.org/2000/svg" width="1283.3420247395834px" viewBox="0.0 0.0 1283.3420247395834 733.4" style="max-width: 100%; background-color: white;"><style>
+            .uml-foreground-stroke {
+                stroke: black;
+                stroke-width: 1px;
+            }
+            
+            .uml-foreground-fill {
+                fill: black;
+            }
+            
+            .uml-background_color-type {
+                fill: #ffffcc;
+            }
+            
+            .uml-background_color-main_type {
+                fill: #ffff66;
+            }
+            
+            .uml-background_color-instance {
+                fill: blue;
+            }
+            
+            .uml-background_color-background {
+                fill: white;
+            }
+            
+            .uml-background_color-foreground {
+                fill: black;
+            }
+            
+            .uml-font-normal {
+                font-family: Arial;
+            }
+            
+            .uml-font-element {
+                font-family: Arial;
+            }
+            
+            .uml-fontsize-normal {
+                font-size: 10px;
+            }
+
+            .uml-fontsize-large {
+                font-size: 12px;
+            }
+            
+            .uml-source_marker-closed_arrow {
+                marker-start: url(#uml-marker-closed_arrow);
+            }
+            
+            .uml-source_marker-open_arrow {
+                marker-start: url(#uml-marker-open_arrow);
+            }
+            
+            .uml-source_marker-filled_diamond {
+                marker-start: url(#uml-marker-filled_diamond);
+            }
+
+            .uml-target_marker-closed_arrow {
+                marker-end: url(#uml-marker-closed_arrow);
+            }
+            
+            .uml-target_marker-open_arrow {
+                marker-end: url(#uml-marker-open_arrow);
+            }
+            
+            .uml-target_marker-filled_diamond {
+                marker-end: url(#uml-marker-filled_diamond);
+            }
+
+            </style><defs>
+        <marker id="uml-marker-closed_arrow" viewBox="-2 -2 14 14" refX="10" refY="5.0" markerWidth="14" markerHeight="14" orient="auto-start-reverse">
+          <path d="M 0 0 L 10 5.0 L 0 10 Z" stroke-linejoin="round" stroke-linecap="round" class="uml-foreground-stroke uml-background_color-background"></path>
+        </marker>
+        <marker id="uml-marker-open_arrow" viewBox="-2 -2 14 14" refX="10" refY="5.0" markerWidth="14" markerHeight="14" orient="auto-start-reverse">
+          <path d="M 0 0 L 10 5.0 L 0 10" stroke-linejoin="round" stroke-linecap="round" fill="none" class="uml-foreground-stroke"></path>
+        </marker>
+        <marker id="uml-marker-filled_diamond" viewBox="-2 -2 14 14" refX="10" refY="5.0" markerWidth="14" markerHeight="14" orient="auto-start-reverse">
+          <path d="M 0 5.0 L      5.0 2.0        10 5.0      5.0 8.0 Z       " stroke-linejoin="round" stroke-linecap="round" class="uml-foreground-stroke uml-background_color-foreground"></path>
+        </marker>
+      </defs><rect class="uml-background_color-type uml-foreground-stroke" x="979.2648763020834" y="135.2" width="200.0" height="23.799999999999997"></rect><text x="1079.2648763020834" text-anchor="middle" font-size="0px" y="150.64"><a href="../../../dexpi-models/Core/ConceptualObject.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold" font-style="italic">ConceptualObject</tspan></a></text><rect class="uml-background_color-type uml-foreground-stroke" x="257.13530598958334" y="12.0" width="184.34634765625003" height="23.799999999999997"></rect><text x="349.30847981770836" text-anchor="middle" font-size="0px" y="27.439999999999998"><a href="../../../dexpi-models/Plant/PlantStructure/PlantAreaLocatedStructure.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold" font-style="italic">PlantAreaLocatedStructure</tspan></a></text><rect class="uml-background_color-type uml-foreground-stroke" x="461.4816536458334" y="12.0" width="202.08513671875002" height="23.799999999999997"></rect><text x="562.5242220052083" text-anchor="middle" font-size="0px" y="27.439999999999998"><a href="../../../dexpi-models/Plant/PlantStructure/PlantSystemLocatedStructure.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold" font-style="italic">PlantSystemLocatedStructure</tspan></a></text><rect class="uml-background_color-type uml-foreground-stroke" x="50.3784114583334" y="12.0" width="186.75689453125003" height="23.799999999999997"></rect><text x="143.75685872395843" text-anchor="middle" font-size="0px" y="27.439999999999998"><a href="../../../dexpi-models/Plant/PlantStructure/PlantTrainLocatedStructure.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold" font-style="italic">PlantTrainLocatedStructure</tspan></a></text><rect class="uml-background_color-type uml-foreground-stroke" x="384.15742187500007" y="135.2" width="150.0" height="23.799999999999997"></rect><text x="459.15742187500007" text-anchor="middle" font-size="0px" y="150.64"><a href="../../../dexpi-models/Plant/PlantStructure/TechnicalItem.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold" font-style="italic">TechnicalItem</tspan></a></text><rect class="uml-background_color-type uml-foreground-stroke" x="312.89544921875006" y="268.4" width="202.07095703125003" height="23.799999999999997"></rect><text x="413.9309277343751" text-anchor="middle" font-size="0px" y="283.84"><a href="../../../dexpi-models/Plant/PlantStructure/TechnicalItemParentStructure.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold" font-style="italic">TechnicalItemParentStructure</tspan></a></text><rect class="uml-background_color-type uml-foreground-stroke" x="907.1217122395834" y="268.4" width="112.48369140625002" height="23.799999999999997"></rect><text x="963.3635579427084" text-anchor="middle" font-size="0px" y="283.84"><a href="../../../dexpi-models/Plant/ProcessEquipment/ChamberOwner.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold" font-style="italic">ChamberOwner</tspan></a></text><rect class="uml-background_color-type uml-foreground-stroke" x="534.9664062500001" y="268.4" width="100.0" height="23.799999999999997"></rect><text x="584.9664062500001" text-anchor="middle" font-size="0px" y="283.84"><a href="../../../dexpi-models/Plant/ProcessEquipment/NozzleOwner.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold" font-style="italic">NozzleOwner</tspan></a></text><rect class="uml-background_color-type uml-foreground-stroke" x="529.9664062500001" y="381.59999999999997" width="400.0" height="23.799999999999997"></rect><text x="729.9664062500001" text-anchor="middle" font-size="0px" y="397.03999999999996"><a href="../../../dexpi-models/Plant/ProcessEquipment/ProcessEquipment.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold" font-style="italic">ProcessEquipment</tspan></a></text><rect class="uml-background_color-type uml-foreground-stroke" x="654.9664062500001" y="268.4" width="150.0" height="23.799999999999997"></rect><text x="729.9664062500001" text-anchor="middle" font-size="0px" y="283.84"><a href="../../../dexpi-models/Plant/ProcessEquipment/TaggedPlantItem.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold" font-style="italic">TaggedPlantItem</tspan></a></text><rect class="uml-background_color-type uml-foreground-stroke" x="904.0659114583334" y="649.4" width="135.0506640625" height="23.799999999999997"></rect><text x="971.5912434895833" text-anchor="middle" font-size="0px" y="664.84"><a href="../../../dexpi-models/Plant/ProcessEquipment/TransmissionDriver.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold" font-style="italic">TransmissionDriver</tspan></a></text><rect class="uml-background_color-type uml-foreground-stroke" x="1038.2563151041668" y="12.0" width="148.6837890625" height="23.799999999999997"></rect><text x="1112.5982096354169" text-anchor="middle" font-size="0px" y="27.439999999999998"><a href="../../../dexpi-models/Core/Diagram/AttributeRepresentation.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold">AttributeRepresentation</tspan></a></text><rect class="uml-background_color-type uml-foreground-stroke" x="882.0442057291667" y="12.0" width="136.212109375" height="23.799999999999997"></rect><text x="950.1502604166667" text-anchor="middle" font-size="0px" y="27.439999999999998"><a href="../../../dexpi-models/Core/Diagram/RepresentationGroup.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold">RepresentationGroup</tspan></a></text><rect class="uml-background_color-type uml-foreground-stroke" x="1197.6486653645834" y="268.4" width="50.0" height="23.799999999999997"></rect><text x="1222.6486653645834" text-anchor="middle" font-size="0px" y="283.84"><a href="../../../dexpi-models/Core/Note.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold">Note</tspan></a></text><rect class="uml-background_color-type uml-foreground-stroke" x="1039.6054036458333" y="268.4" width="119.3189453125" height="23.799999999999997"></rect><text x="1099.2648763020834" text-anchor="middle" font-size="0px" y="283.84"><a href="../../../dexpi-models/Core/PersistentIdentifier.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold">PersistentIdentifier</tspan></a></text><rect class="uml-background_color-type uml-foreground-stroke" x="837.1217122395834" y="268.4" width="50.0" height="23.799999999999997"></rect><text x="862.1217122395834" text-anchor="middle" font-size="0px" y="283.84"><a href="../../../dexpi-models/Core/Role.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold">Role</tspan></a></text><rect class="uml-background_color-type uml-foreground-stroke" x="658.252734375" y="135.2" width="76.038671875" height="23.799999999999997"></rect><text x="696.2720703125001" text-anchor="middle" font-size="0px" y="150.64"><a href="../../../dexpi-models/Plant/PlantModel.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold">PlantModel</tspan></a></text><rect class="uml-background_color-type uml-foreground-stroke" x="284.59951822916673" y="135.2" width="67.969140625" height="23.799999999999997"></rect><text x="318.58408854166674" text-anchor="middle" font-size="0px" y="150.64"><a href="../../../dexpi-models/Plant/PlantStructure/PlantArea.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold">PlantArea</tspan></a></text><rect class="uml-background_color-type uml-foreground-stroke" x="554.1574218750001" y="135.2" width="84.0953125" height="23.799999999999997"></rect><text x="596.2050781250001" text-anchor="middle" font-size="0px" y="150.64"><a href="../../../dexpi-models/Plant/PlantStructure/PlantSystem.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold">PlantSystem</tspan></a></text><rect class="uml-background_color-type uml-foreground-stroke" x="77.55043619791684" y="135.2" width="70.160546875" height="23.799999999999997"></rect><text x="112.63070963541684" text-anchor="middle" font-size="0px" y="150.64"><a href="../../../dexpi-models/Plant/PlantStructure/PlantTrain.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold">PlantTrain</tspan></a></text><rect class="uml-background_color-main_type uml-foreground-stroke" x="108.34726562500009" y="637.9999999999999" width="646.619140625" height="62.4"></rect><text x="431.6568359375001" text-anchor="middle" font-size="0px" y="653.4399999999999"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold">BatchWeigher</tspan></text><polyline class="uml-foreground-stroke" points="108.34726562500009,661.7999999999998 754.9664062500001,661.7999999999998" fill="none"></polyline><text x="113.34726562500009" font-size="0px" y="678.2399999999999"><a href="../../../dexpi-models/Plant/ProcessEquipment/BatchWeigher.html#sp:plant.processequipment.batchweigher.designcapacityweighingquantities"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">DesignCapacityWeighingQuantities</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> :</tspan></text><text x="310.2789062500001" font-size="0px" y="678.2399999999999"><a href="../../../dexpi-models/Builtin/Undefined.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Undefined</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> | </tspan><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">&lt;</tspan><a href="../../../dexpi-models/Core/PhysicalQuantities/PhysicalQuantity.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">PhysicalQuantity</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> with </tspan><a href="../../../dexpi-models/Core/PhysicalQuantities/PhysicalQuantity.html#sp:core.physicalquantities.physicalquantity.unittype"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">UnitType</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> → </tspan><a href="../../../dexpi-models/Core/PhysicalQuantities/NumberPerTimeIntervalUnit.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">NumberPerTimeIntervalUnit</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">&gt;</tspan><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> [0..1]</tspan></text><text x="113.34726562500009" font-size="0px" y="692.0399999999998"><a href="../../../dexpi-models/Plant/ProcessEquipment/BatchWeigher.html#sp:plant.processequipment.batchweigher.upperlimitdesignload"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">UpperLimitDesignLoad</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> :</tspan></text><text x="310.2789062500001" font-size="0px" y="692.0399999999998"><a href="../../../dexpi-models/Builtin/Undefined.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Undefined</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> | </tspan><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">&lt;</tspan><a href="../../../dexpi-models/Core/PhysicalQuantities/PhysicalQuantity.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">PhysicalQuantity</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> with </tspan><a href="../../../dexpi-models/Core/PhysicalQuantities/PhysicalQuantity.html#sp:core.physicalquantities.physicalquantity.unittype"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">UnitType</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> → </tspan><a href="../../../dexpi-models/Core/PhysicalQuantities/MassUnit.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">MassUnit</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">&gt;</tspan><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> [0..1]</tspan></text><rect class="uml-background_color-type uml-foreground-stroke" x="949.9664062500001" y="381.59999999999997" width="64.2888671875" height="23.799999999999997"></rect><text x="982.1108398437501" text-anchor="middle" font-size="0px" y="397.03999999999996"><a href="../../../dexpi-models/Plant/ProcessEquipment/Chamber.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold">Chamber</tspan></a></text><rect class="uml-background_color-type uml-foreground-stroke" x="279.64863281250007" y="524.8" width="102.4322265625" height="23.799999999999997"></rect><text x="330.86474609375006" text-anchor="middle" font-size="0px" y="540.24"><a href="../../../dexpi-models/Plant/ProcessEquipment/DryingChamber.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold">DryingChamber</tspan></a></text><rect class="uml-background_color-type uml-foreground-stroke" x="159.38847656250005" y="524.8" width="100.26015625000001" height="23.799999999999997"></rect><text x="209.51855468750006" text-anchor="middle" font-size="0px" y="540.24"><a href="../../../dexpi-models/Plant/ProcessEquipment/EquipmentVent.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold">EquipmentVent</tspan></a></text><rect class="uml-background_color-type uml-foreground-stroke" x="12.0" y="524.8" width="127.3884765625" height="23.799999999999997"></rect><text x="75.69423828125" text-anchor="middle" font-size="0px" y="540.24"><a href="../../../dexpi-models/Plant/ProcessEquipment/MotorAsComponent.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold">MotorAsComponent</tspan></a></text><rect class="uml-background_color-type uml-foreground-stroke" x="704.9664062500001" y="524.8" width="50.0" height="23.799999999999997"></rect><text x="729.9664062500001" text-anchor="middle" font-size="0px" y="540.24"><a href="../../../dexpi-models/Plant/ProcessEquipment/Mount.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold">Mount</tspan></a></text><rect class="uml-background_color-type uml-foreground-stroke" x="459.6187500000001" y="381.59999999999997" width="50.34765625" height="23.799999999999997"></rect><text x="484.7925781250001" text-anchor="middle" font-size="0px" y="397.03999999999996"><a href="../../../dexpi-models/Plant/ProcessEquipment/Nozzle.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold">Nozzle</tspan></a></text><rect class="uml-background_color-type uml-foreground-stroke" x="1086.6216796875" y="524.8" width="84.830078125" height="23.799999999999997"></rect><text x="1129.03671875" text-anchor="middle" font-size="0px" y="540.24"><a href="../../../dexpi-models/Plant/ProcessEquipment/SprayNozzle.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold">SprayNozzle</tspan></a></text><rect class="uml-background_color-type uml-foreground-stroke" x="905.3446614583333" y="524.8" width="132.4931640625" height="23.799999999999997"></rect><text x="971.5912434895833" text-anchor="middle" font-size="0px" y="540.24"><a href="../../../dexpi-models/Plant/ProcessEquipment/TransmissionSystem.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold">TransmissionSystem</tspan></a></text><rect class="uml-background_color-type uml-foreground-stroke" x="402.08085937500005" y="524.8" width="59.151953125000006" height="23.799999999999997"></rect><text x="431.65683593750003" text-anchor="middle" font-size="0px" y="540.24"><a href="../../../dexpi-models/Plant/ProcessEquipment/Weigher.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold">Weigher</tspan></a></text><polyline class="uml-foreground-stroke uml-source_marker-closed_arrow" points="1019.2648763020834,159.0 1019.2648763020834,184.79999999999998 767.4664062500001,184.79999999999998 767.4664062500001,213.2 767.4664062500001,214.2 767.4664062500001,268.4" fill="none"></polyline><polyline class="uml-foreground-stroke uml-source_marker-closed_arrow" points="380.03287109375003,35.8 380.03287109375003,80.0 380.03287109375003,81.0 380.03287109375003,99.39999999999999 459.15742187500007,99.39999999999999 459.15742187500007,135.2" fill="none"></polyline><polyline class="uml-foreground-stroke uml-source_marker-closed_arrow" points="528.8433658854167,35.8 528.8433658854167,61.599999999999994 496.65742187500007,61.599999999999994 496.65742187500007,80.0 496.65742187500007,81.0 496.65742187500007,135.2" fill="none"></polyline><polyline class="uml-foreground-stroke uml-source_marker-closed_arrow" points="174.88300781250007,35.8 174.88300781250007,80.0 174.88300781250007,81.0 174.88300781250007,109.39999999999999 421.65742187500007,109.39999999999999 421.65742187500007,135.2" fill="none"></polyline><polyline class="uml-foreground-stroke uml-source_marker-closed_arrow" points="484.15742187500007,159.0 484.15742187500007,213.2 484.15742187500007,214.2 484.15742187500007,242.59999999999997 692.4664062500001,242.59999999999997 692.4664062500001,268.4" fill="none"></polyline><polyline class="uml-foreground-stroke uml-source_marker-closed_arrow" points="944.6162760416668,292.2 944.6162760416668,317.99999999999994 829.9664062500001,317.99999999999994 829.9664062500001,336.3999999999999 829.9664062500001,337.3999999999999 829.9664062500001,381.59999999999997" fill="none"></polyline><polyline class="uml-foreground-stroke uml-source_marker-closed_arrow" points="601.6330729166667,292.2 601.6330729166667,336.3999999999999 601.6330729166667,337.3999999999999 601.6330729166667,355.79999999999995 629.9664062500001,355.79999999999995 629.9664062500001,381.59999999999997" fill="none"></polyline><polyline class="uml-foreground-stroke uml-source_marker-closed_arrow" points="689.9664062500001,405.4 689.9664062500001,461.19999999999993 431.6568359375001,461.19999999999993 431.6568359375001,479.5999999999999 431.6568359375001,480.5999999999999 431.65683593750003,524.8" fill="none"></polyline><polyline class="uml-foreground-stroke uml-source_marker-closed_arrow" points="729.9664062500001,292.2 729.9664062500001,336.3999999999999 729.9664062500001,337.3999999999999 729.9664062500001,381.59999999999997" fill="none"></polyline><polyline class="uml-foreground-stroke uml-source_marker-closed_arrow" points="971.5912434895833,673.1999999999999 971.5912434895833,720.4 971.2579101562501,720.4 971.2579101562501,710.4 764.9664062500001,710.4 764.9664062500001,431.19999999999993 769.9664062500001,431.19999999999993 769.9664062500001,405.4" fill="none"></polyline><polyline class="uml-foreground-stroke uml-source_marker-closed_arrow" points="431.65683593750003,548.5999999999999 431.6568359375001,592.8 431.6568359375001,593.8 431.6568359375001,637.9999999999999" fill="none"></polyline><rect class="uml-background_color-background " x="816.7711263020834" y="204.79999999999998" width="90.701171875" height="17.799999999999997"></rect><text x="862.1217122395834" text-anchor="middle" font-size="0px" y="217.23999999999998"><a href="../../../dexpi-models/Core/ConceptualObject.html#sp:core.conceptualobject.performedroles"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">PerformedRoles</tspan></a></text><polyline class="uml-foreground-stroke" points="1059.2648763020834,159.0 1059.2648763020834,194.79999999999998 862.1217122395834,194.79999999999998 862.1217122395834,204.79999999999998" fill="none"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="862.1217122395834,222.59999999999997 862.1217122395834,268.4" fill="none"></polyline><text x="1067.2648763020834" font-size="0px" y="171.2"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</tspan></text><text x="870.1217122395834" font-size="0px" y="262.79999999999995"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</tspan></text><rect class="uml-background_color-background " x="1044.5744466145834" y="204.79999999999998" width="109.380859375" height="17.799999999999997"></rect><text x="1099.2648763020834" text-anchor="middle" font-size="0px" y="217.23999999999998"><a href="../../../dexpi-models/Core/ConceptualObject.html#sp:core.conceptualobject.persistentidentifiers"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">PersistentIdentifiers</tspan></a></text><polyline class="uml-foreground-stroke uml-source_marker-filled_diamond" points="1099.2648763020834,159.0 1099.2648763020834,204.79999999999998" fill="none"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="1099.2648763020834,222.59999999999997 1099.2648763020834,268.4" fill="none"></polyline><text x="1107.2648763020834" font-size="0px" y="171.2"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">0..1</tspan></text><text x="1107.2648763020834" font-size="0px" y="262.79999999999995"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</tspan></text><rect class="uml-background_color-background " x="1173.9553059895834" y="204.79999999999998" width="97.38671875" height="17.799999999999997"></rect><text x="1222.6486653645834" text-anchor="middle" font-size="0px" y="217.23999999999998"><a href="../../../dexpi-models/Core/ConceptualObject.html#sp:core.conceptualobject.referencednotes"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">ReferencedNotes</tspan></a></text><polyline class="uml-foreground-stroke" points="1139.2648763020834,159.0 1139.2648763020834,184.79999999999998 1222.6486653645834,184.79999999999998 1222.6486653645834,204.79999999999998" fill="none"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="1222.6486653645834,222.59999999999997 1222.6486653645834,268.4" fill="none"></polyline><text x="1147.2648763020834" font-size="0px" y="171.2"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</tspan></text><text x="1230.6486653645834" font-size="0px" y="262.79999999999995"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</tspan></text><rect class="uml-background_color-background " x="1093.2573893229167" y="71.6" width="38.681640625" height="17.799999999999997"></rect><text x="1112.5982096354167" text-anchor="middle" font-size="0px" y="84.03999999999999"><a href="../../../dexpi-models/Core/Diagram/AttributeRepresentation.html#sp:core.diagram.attributerepresentation.object"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Object</tspan></a></text><polyline class="uml-foreground-stroke" points="1112.5982096354169,35.8 1112.5982096354167,71.6" fill="none"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="1112.5982096354167,89.39999999999999 1112.5982096354167,135.2" fill="none"></polyline><text x="1120.5982096354167" font-size="0px" y="48.0"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</tspan></text><rect class="uml-background_color-background " x="917.4676432291667" y="71.6" width="65.365234375" height="17.799999999999997"></rect><text x="950.1502604166667" text-anchor="middle" font-size="0px" y="84.03999999999999"><a href="../../../dexpi-models/Core/Diagram/RepresentationGroup.html#sp:core.diagram.representationgroup.represents"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Represents</tspan></a></text><polyline class="uml-foreground-stroke" points="950.1502604166667,35.8 950.1502604166667,71.6" fill="none"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="950.1502604166667,89.39999999999999 950.1502604166667,99.39999999999999 1045.9315429687501,99.39999999999999 1045.9315429687501,135.2" fill="none"></polyline><text x="958.1502604166667" font-size="0px" y="48.0"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</tspan></text><rect class="uml-background_color-background " x="645.5777343750001" y="204.79999999999998" width="101.388671875" height="17.799999999999997"></rect><text x="696.2720703125001" text-anchor="middle" font-size="0px" y="217.23999999999998"><a href="../../../dexpi-models/Plant/PlantModel.html#sp:plant.plantmodel.taggedplantitems"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">TaggedPlantItems</tspan></a></text><polyline class="uml-foreground-stroke uml-source_marker-filled_diamond" points="696.2720703125001,159.0 696.2720703125001,204.79999999999998" fill="none"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="696.2720703125001,222.59999999999997 696.2720703125001,232.59999999999997 729.9664062500001,232.59999999999997 729.9664062500001,268.4" fill="none"></polyline><text x="704.2720703125001" font-size="0px" y="171.2"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">0..1</tspan></text><text x="737.9664062500001" font-size="0px" y="262.79999999999995"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</tspan></text><rect class="uml-background_color-background " x="290.2344791666667" y="71.6" width="56.69921875" height="17.799999999999997"></rect><text x="318.5840885416667" text-anchor="middle" font-size="0px" y="84.03999999999999"><a href="../../../dexpi-models/Plant/PlantStructure/PlantAreaLocatedStructure.html#sp:plant.plantstructure.plantarealocatedstructure.plantarea"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">PlantArea</tspan></a></text><polyline class="uml-foreground-stroke" points="318.5840885416667,35.8 318.5840885416667,71.6" fill="none"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="318.5840885416667,89.39999999999999 318.58408854166674,135.2" fill="none"></polyline><text x="326.5840885416667" font-size="0px" y="48.0"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</tspan></text><text x="326.5840885416667" font-size="0px" y="129.6"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">0..1</tspan></text><rect class="uml-background_color-background " x="560.525390625" y="71.6" width="71.359375" height="17.799999999999997"></rect><text x="596.205078125" text-anchor="middle" font-size="0px" y="84.03999999999999"><a href="../../../dexpi-models/Plant/PlantStructure/PlantSystemLocatedStructure.html#sp:plant.plantstructure.plantsystemlocatedstructure.plantsystem"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">PlantSystem</tspan></a></text><polyline class="uml-foreground-stroke" points="596.205078125,35.8 596.205078125,71.6" fill="none"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="596.205078125,89.39999999999999 596.2050781250001,135.2" fill="none"></polyline><text x="604.205078125" font-size="0px" y="48.0"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</tspan></text><text x="604.205078125" font-size="0px" y="129.6"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">0..1</tspan></text><rect class="uml-background_color-background " x="83.28500651041679" y="71.6" width="58.69140625" height="17.799999999999997"></rect><text x="112.63070963541679" text-anchor="middle" font-size="0px" y="84.03999999999999"><a href="../../../dexpi-models/Plant/PlantStructure/PlantTrainLocatedStructure.html#sp:plant.plantstructure.planttrainlocatedstructure.planttrain"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">PlantTrain</tspan></a></text><polyline class="uml-foreground-stroke" points="112.63070963541674,35.8 112.63070963541679,71.6" fill="none"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="112.63070963541679,89.39999999999999 112.63070963541684,135.2" fill="none"></polyline><text x="120.63070963541668" font-size="0px" y="48.0"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</tspan></text><text x="120.63070963541679" font-size="0px" y="129.6"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">0..1</tspan></text><rect class="uml-background_color-background " x="369.910419921875" y="204.79999999999998" width="88.041015625" height="17.799999999999997"></rect><text x="413.930927734375" text-anchor="middle" font-size="0px" y="217.23999999999998"><a href="../../../dexpi-models/Plant/PlantStructure/TechnicalItem.html#sp:plant.plantstructure.technicalitem.parentstructure"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">ParentStructure</tspan></a></text><polyline class="uml-foreground-stroke" points="434.15742187500007,159.0 434.15742187500007,184.79999999999998 413.930927734375,184.79999999999998 413.930927734375,204.79999999999998" fill="none"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="413.930927734375,222.59999999999997 413.9309277343751,268.4" fill="none"></polyline><text x="442.15742187500007" font-size="0px" y="171.2"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</tspan></text><text x="421.930927734375" font-size="0px" y="262.79999999999995"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">0..1</tspan></text><rect class="uml-background_color-background " x="952.4340820312501" y="327.99999999999994" width="59.353515625" height="17.799999999999997"></rect><text x="982.1108398437501" text-anchor="middle" font-size="0px" y="340.43999999999994"><a href="../../../dexpi-models/Plant/ProcessEquipment/ChamberOwner.html#sp:plant.processequipment.chamberowner.chambers"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Chambers</tspan></a></text><polyline class="uml-foreground-stroke uml-source_marker-filled_diamond" points="982.1108398437501,292.2 982.1108398437501,327.99999999999994" fill="none"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="982.1108398437501,345.79999999999995 982.1108398437501,381.59999999999997" fill="none"></polyline><text x="990.1108398437501" font-size="0px" y="304.4"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">0..1</tspan></text><text x="990.1108398437501" font-size="0px" y="375.99999999999994"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</tspan></text><rect class="uml-background_color-background " x="461.4527343750001" y="327.99999999999994" width="46.6796875" height="17.799999999999997"></rect><text x="484.7925781250001" text-anchor="middle" font-size="0px" y="340.43999999999994"><a href="../../../dexpi-models/Plant/ProcessEquipment/NozzleOwner.html#sp:plant.processequipment.nozzleowner.nozzles"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Nozzles</tspan></a></text><polyline class="uml-foreground-stroke uml-source_marker-filled_diamond" points="568.2997395833335,292.2 568.2997395833335,317.99999999999994 484.7925781250001,317.99999999999994 484.7925781250001,327.99999999999994" fill="none"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="484.7925781250001,345.79999999999995 484.7925781250001,381.59999999999997" fill="none"></polyline><text x="576.2997395833335" font-size="0px" y="304.4"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">0..1</tspan></text><text x="492.7925781250001" font-size="0px" y="375.99999999999994"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</tspan></text><rect class="uml-background_color-background " x="917.3238281250001" y="471.19999999999993" width="152.69921875" height="17.799999999999997"></rect><text x="993.6734375000001" text-anchor="middle" font-size="0px" y="483.63999999999993"><a href="../../../dexpi-models/Plant/ProcessEquipment/ProcessEquipment.html#sp:plant.processequipment.processequipment.drivingtransmissionsystem"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">DrivingTransmissionSystem</tspan></a></text><polyline class="uml-foreground-stroke" points="849.9664062500001,405.4 849.9664062500001,441.19999999999993 993.6734375000001,441.19999999999993 993.6734375000001,471.19999999999993" fill="none"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="993.6734375000001,488.99999999999994 993.6734375,524.8" fill="none"></polyline><text x="857.9664062500001" font-size="0px" y="417.59999999999997"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">0..1</tspan></text><text x="1001.6734375000001" font-size="0px" y="519.1999999999999"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">0..1</tspan></text><rect class="uml-background_color-background " x="283.8500976562501" y="471.19999999999993" width="94.029296875" height="17.799999999999997"></rect><text x="330.8647460937501" text-anchor="middle" font-size="0px" y="483.63999999999993"><a href="../../../dexpi-models/Plant/ProcessEquipment/ProcessEquipment.html#sp:plant.processequipment.processequipment.dryingchambers"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">DryingChambers</tspan></a></text><polyline class="uml-foreground-stroke uml-source_marker-filled_diamond" points="649.9664062500001,405.4 649.9664062500001,451.19999999999993 330.8647460937501,451.19999999999993 330.8647460937501,471.19999999999993" fill="none"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="330.8647460937501,488.99999999999994 330.86474609375006,524.8" fill="none"></polyline><text x="657.9664062500001" font-size="0px" y="417.59999999999997"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">0..1</tspan></text><text x="338.8647460937501" font-size="0px" y="519.1999999999999"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</tspan></text><rect class="uml-background_color-background " x="55.35732421874991" y="471.19999999999993" width="40.673828125" height="17.799999999999997"></rect><text x="75.69423828124991" text-anchor="middle" font-size="0px" y="483.63999999999993"><a href="../../../dexpi-models/Plant/ProcessEquipment/ProcessEquipment.html#sp:plant.processequipment.processequipment.motors"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Motors</tspan></a></text><polyline class="uml-foreground-stroke uml-source_marker-filled_diamond" points="569.9664062500001,405.4 569.9664062500001,431.19999999999993 75.69423828124991,431.19999999999993 75.69423828124991,471.19999999999993" fill="none"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="75.69423828124991,488.99999999999994 75.69423828125,524.8" fill="none"></polyline><text x="577.9664062500001" font-size="0px" y="417.59999999999997"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">0..1</tspan></text><text x="83.69423828125002" font-size="0px" y="519.1999999999999"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</tspan></text><rect class="uml-background_color-background " x="708.2906250000001" y="471.19999999999993" width="43.3515625" height="17.799999999999997"></rect><text x="729.9664062500001" text-anchor="middle" font-size="0px" y="483.63999999999993"><a href="../../../dexpi-models/Plant/ProcessEquipment/ProcessEquipment.html#sp:plant.processequipment.processequipment.mounts"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Mounts</tspan></a></text><polyline class="uml-foreground-stroke uml-source_marker-filled_diamond" points="729.9664062500001,405.4 729.9664062500001,471.19999999999993" fill="none"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="729.9664062500001,488.99999999999994 729.9664062500001,524.8" fill="none"></polyline><text x="737.9664062500001" font-size="0px" y="417.59999999999997"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">0..1</tspan></text><text x="737.9664062500001" font-size="0px" y="519.1999999999999"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</tspan></text><rect class="uml-background_color-background " x="1090.023046875" y="471.19999999999993" width="78.02734375" height="17.799999999999997"></rect><text x="1129.03671875" text-anchor="middle" font-size="0px" y="483.63999999999993"><a href="../../../dexpi-models/Plant/ProcessEquipment/ProcessEquipment.html#sp:plant.processequipment.processequipment.spraynozzles"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">SprayNozzles</tspan></a></text><polyline class="uml-foreground-stroke uml-source_marker-filled_diamond" points="889.9664062500001,405.4 889.9664062500001,431.19999999999993 1129.03671875,431.19999999999993 1129.03671875,471.19999999999993" fill="none"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="1129.03671875,488.99999999999994 1129.03671875,524.8" fill="none"></polyline><text x="897.9664062500001" font-size="0px" y="417.59999999999997"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">0..1</tspan></text><text x="1137.03671875" font-size="0px" y="519.1999999999999"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</tspan></text><rect class="uml-background_color-background " x="775.9664062500001" y="471.19999999999993" width="121.357421875" height="17.799999999999997"></rect><text x="836.6451171875001" text-anchor="middle" font-size="0px" y="483.63999999999993"><a href="../../../dexpi-models/Plant/ProcessEquipment/ProcessEquipment.html#sp:plant.processequipment.processequipment.transmissionsystems"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">TransmissionSystems</tspan></a></text><polyline class="uml-foreground-stroke uml-source_marker-filled_diamond" points="809.9664062500001,405.4 809.9664062500001,431.19999999999993 836.6451171875001,431.19999999999993 836.6451171875001,471.19999999999993" fill="none"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="836.6451171875001,488.99999999999994 836.6451171875001,498.99999999999994 949.5090494791667,498.99999999999994 949.5090494791667,524.8" fill="none"></polyline><text x="817.9664062500001" font-size="0px" y="417.59999999999997"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">0..1</tspan></text><text x="957.5090494791667" font-size="0px" y="519.1999999999999"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</tspan></text><rect class="uml-background_color-background " x="192.17578125" y="471.19999999999993" width="34.685546875" height="17.799999999999997"></rect><text x="209.5185546875" text-anchor="middle" font-size="0px" y="483.63999999999993"><a href="../../../dexpi-models/Plant/ProcessEquipment/ProcessEquipment.html#sp:plant.processequipment.processequipment.vents"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Vents</tspan></a></text><polyline class="uml-foreground-stroke uml-source_marker-filled_diamond" points="609.9664062500001,405.4 609.9664062500001,441.19999999999993 209.5185546875,441.19999999999993 209.5185546875,471.19999999999993" fill="none"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="209.5185546875,488.99999999999994 209.51855468750006,524.8" fill="none"></polyline><text x="617.9664062500001" font-size="0px" y="417.59999999999997"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">0..1</tspan></text><text x="217.5185546875" font-size="0px" y="519.1999999999999"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</tspan></text><rect class="uml-background_color-background " x="953.5922200520833" y="584.4" width="35.998046875" height="17.799999999999997"></rect><text x="971.5912434895833" text-anchor="middle" font-size="0px" y="596.84"><a href="../../../dexpi-models/Plant/ProcessEquipment/TransmissionSystem.html#sp:plant.processequipment.transmissionsystem.driver"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Driver</tspan></a></text><polyline class="uml-foreground-stroke" points="971.5912434895833,548.5999999999999 971.5912434895833,584.4" fill="none"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="971.5912434895833,602.1999999999999 971.5912434895833,649.4" fill="none"></polyline><text x="979.5912434895833" font-size="0px" y="560.8"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">0..1</tspan></text><text x="979.5912434895833" font-size="0px" y="643.8000000000001"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">0..1</tspan></text></svg><p class="rubric">Supertypes</p>
+<ul class="simple">
+<li><p><a class="sp-element reference internal" href="Weigher.html"><span class="doc">Weigher</span></a></p></li>
+</ul>
+</section>
+<section id="Members">
+<h2>Members<a class="headerlink" href="#Members" title="Link to this heading">¶</a></h2>
+<section id="member-list-section-Data Properties">
+<h3>Data Properties<a class="headerlink" href="#member-list-section-Data%20Properties" title="Link to this heading">¶</a></h3>
+</section>
+<table class="docutils align-left">
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Multiplicity</p></th>
+<th class="head"><p>Type</p></th>
+<th class="head"><p>Ordered</p></th>
+<th class="head"><p>Unique</p></th>
+<th class="head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="#sp:plant.processequipment.batchweigher.designcapacityweighingquantities"><span class="std std-ref">DesignCapacityWeighingQuantities</span></a></p></td>
+<td><p>0..1</p></td>
+<td><p><a class="sp-element reference internal" href="../../Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><span>&lt;</span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/PhysicalQuantity.html"><span class="doc">PhysicalQuantity</span></a><span> with </span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/PhysicalQuantity.html#sp:core.physicalquantities.physicalquantity.unittype"><span class="std std-ref">UnitType</span></a><span> → </span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/NumberPerTimeIntervalUnit.html"><span class="doc">NumberPerTimeIntervalUnit</span></a><span>&gt;</span></p></td>
+<td><p>no</p></td>
+<td><p>no</p></td>
+<td><p>The capacity for the number of weighing quantities per time for which the
+<a class="sp-element reference internal" href="#"><span class="doc">BatchWeigher</span></a> is designed.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="#sp:plant.processequipment.batchweigher.upperlimitdesignload"><span class="std std-ref">UpperLimitDesignLoad</span></a></p></td>
+<td><p>0..1</p></td>
+<td><p><a class="sp-element reference internal" href="../../Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><span>&lt;</span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/PhysicalQuantity.html"><span class="doc">PhysicalQuantity</span></a><span> with </span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/PhysicalQuantity.html#sp:core.physicalquantities.physicalquantity.unittype"><span class="std std-ref">UnitType</span></a><span> → </span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/MassUnit.html"><span class="doc">MassUnit</span></a><span>&gt;</span></p></td>
+<td><p>no</p></td>
+<td><p>no</p></td>
+<td><p>The upper limit for the load for which the <a class="sp-element reference internal" href="#"><span class="doc">BatchWeigher</span></a> is designed.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="sp:plant.processequipment.batchweigher.designcapacityweighingquantities">
+<h2>DesignCapacityWeighingQuantities<a class="headerlink" href="#sp:plant.processequipment.batchweigher.designcapacityweighingquantities" title="Link to this heading">¶</a></h2>
+<p class="rubric">Data Property</p>
+<p>The capacity for the number of weighing quantities per time for which the
+<a class="sp-element reference internal" href="#"><span class="doc">BatchWeigher</span></a> is designed.</p>
+<p><strong>Type:</strong><span> </span><a class="sp-element reference internal" href="../../Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><span>&lt;</span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/PhysicalQuantity.html"><span class="doc">PhysicalQuantity</span></a><span> with </span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/PhysicalQuantity.html#sp:core.physicalquantities.physicalquantity.unittype"><span class="std std-ref">UnitType</span></a><span> → </span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/NumberPerTimeIntervalUnit.html"><span class="doc">NumberPerTimeIntervalUnit</span></a><span>&gt;</span></p>
+<p><strong>Multiplicity:</strong><span> </span><span>0..1</span></p>
+<p><strong>Ordered:</strong><span> </span><span>no</span></p>
+<p><strong>Unique:</strong><span> </span><span>no</span></p>
+<p><strong>RDL:</strong><span> </span><a class="reference external" href="http://sandbox.dexpi.org/rdl/DesignCapacityWeighingQuantities">DESIGN CAPACITY WEIGHING QUANTITIES (http://sandbox.dexpi.org/rdl/DesignCapacityWeighingQuantities)</a></p>
+<section id="sp:plant.processequipment.batchweigher.designcapacityweighingquantities-example">
+<h3>Example<a class="headerlink" href="#sp:plant.processequipment.batchweigher.designcapacityweighingquantities-example" title="Link to this heading">¶</a></h3>
+<p class="sp-dense"><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/PhysicalQuantity.html"><span class="doc">PhysicalQuantity</span></a><span>(</span></p>
+<p class="sp-dense"><span>     </span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/PhysicalQuantity.html#sp:core.physicalquantities.physicalquantity.unit"><span class="std std-ref">Unit</span></a><span> = </span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/NumberPerTimeIntervalUnit.html#sp:core.physicalquantities.numberpertimeintervalunit.reciprocalsecond"><span class="std std-ref">ReciprocalSecond</span></a><span>,</span></p>
+<p class="sp-dense"><span>     </span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/PhysicalQuantity.html#sp:core.physicalquantities.physicalquantity.value"><span class="std std-ref">Value</span></a><span> = </span><code class="docutils literal notranslate"><span class="pre">42.0</span></code><span>)</span></p>
+</section>
+</section>
+<section id="sp:plant.processequipment.batchweigher.upperlimitdesignload">
+<h2>UpperLimitDesignLoad<a class="headerlink" href="#sp:plant.processequipment.batchweigher.upperlimitdesignload" title="Link to this heading">¶</a></h2>
+<p class="rubric">Data Property</p>
+<p>The upper limit for the load for which the <a class="sp-element reference internal" href="#"><span class="doc">BatchWeigher</span></a> is designed.</p>
+<p><strong>Type:</strong><span> </span><a class="sp-element reference internal" href="../../Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><span>&lt;</span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/PhysicalQuantity.html"><span class="doc">PhysicalQuantity</span></a><span> with </span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/PhysicalQuantity.html#sp:core.physicalquantities.physicalquantity.unittype"><span class="std std-ref">UnitType</span></a><span> → </span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/MassUnit.html"><span class="doc">MassUnit</span></a><span>&gt;</span></p>
+<p><strong>Multiplicity:</strong><span> </span><span>0..1</span></p>
+<p><strong>Ordered:</strong><span> </span><span>no</span></p>
+<p><strong>Unique:</strong><span> </span><span>no</span></p>
+<p><strong>RDL:</strong><span> </span><a class="reference external" href="http://sandbox.dexpi.org/rdl/UpperLimitDesignLoad">UPPER LIMIT DESIGN LOAD (http://sandbox.dexpi.org/rdl/UpperLimitDesignLoad)</a></p>
+<section id="sp:plant.processequipment.batchweigher.upperlimitdesignload-example">
+<h3>Example<a class="headerlink" href="#sp:plant.processequipment.batchweigher.upperlimitdesignload-example" title="Link to this heading">¶</a></h3>
+<p class="sp-dense"><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/PhysicalQuantity.html"><span class="doc">PhysicalQuantity</span></a><span>(</span></p>
+<p class="sp-dense"><span>     </span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/PhysicalQuantity.html#sp:core.physicalquantities.physicalquantity.unit"><span class="std std-ref">Unit</span></a><span> = </span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/MassUnit.html#sp:core.physicalquantities.massunit.kilogram"><span class="std std-ref">Kilogram</span></a><span>,</span></p>
+<p class="sp-dense"><span>     </span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/PhysicalQuantity.html#sp:core.physicalquantities.physicalquantity.value"><span class="std std-ref">Value</span></a><span> = </span><code class="docutils literal notranslate"><span class="pre">900.0</span></code><span>)</span></p>
+</section>
+</section>
+<section id="Plant.ProcessEquipment.BatchWeigher-example">
+<h2>Example in DEXPI XML<a class="headerlink" href="#Plant.ProcessEquipment.BatchWeigher-example" title="Link to this heading">¶</a></h2>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;Object</span><span class="w"> </span><span class="na">type=</span><span class="s">"Plant/ProcessEquipment.BatchWeigher"</span><span class="nt">&gt;</span>
+<span class="w">  </span><span class="nt">&lt;Data</span><span class="w"> </span><span class="na">property=</span><span class="s">"DesignCapacityWeighingQuantities"</span><span class="nt">&gt;</span>
+<span class="w">    </span><span class="nt">&lt;AggregatedDataValue</span><span class="w"> </span><span class="na">type=</span><span class="s">"Core/PhysicalQuantities.PhysicalQuantity"</span><span class="nt">&gt;</span>
+<span class="w">      </span><span class="nt">&lt;Data</span><span class="w"> </span><span class="na">property=</span><span class="s">"Unit"</span><span class="nt">&gt;</span>
+<span class="w">        </span><span class="nt">&lt;DataReference</span><span class="w"> </span><span class="na">data=</span><span class="s">"Core/PhysicalQuantities.NumberPerTimeIntervalUnit.ReciprocalSecond"</span><span class="nt">/&gt;</span>
+<span class="w">      </span><span class="nt">&lt;/Data&gt;</span>
+<span class="w">      </span><span class="nt">&lt;Data</span><span class="w"> </span><span class="na">property=</span><span class="s">"Value"</span><span class="nt">&gt;</span>
+<span class="w">        </span><span class="nt">&lt;Double&gt;</span>42.0<span class="nt">&lt;/Double&gt;</span>
+<span class="w">      </span><span class="nt">&lt;/Data&gt;</span>
+<span class="w">    </span><span class="nt">&lt;/AggregatedDataValue&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/Data&gt;</span>
+<span class="w">  </span><span class="nt">&lt;Data</span><span class="w"> </span><span class="na">property=</span><span class="s">"UpperLimitDesignLoad"</span><span class="nt">&gt;</span>
+<span class="w">    </span><span class="nt">&lt;AggregatedDataValue</span><span class="w"> </span><span class="na">type=</span><span class="s">"Core/PhysicalQuantities.PhysicalQuantity"</span><span class="nt">&gt;</span>
+<span class="w">      </span><span class="nt">&lt;Data</span><span class="w"> </span><span class="na">property=</span><span class="s">"Unit"</span><span class="nt">&gt;</span>
+<span class="w">        </span><span class="nt">&lt;DataReference</span><span class="w"> </span><span class="na">data=</span><span class="s">"Core/PhysicalQuantities.MassUnit.Kilogram"</span><span class="nt">/&gt;</span>
+<span class="w">      </span><span class="nt">&lt;/Data&gt;</span>
+<span class="w">      </span><span class="nt">&lt;Data</span><span class="w"> </span><span class="na">property=</span><span class="s">"Value"</span><span class="nt">&gt;</span>
+<span class="w">        </span><span class="nt">&lt;Double&gt;</span>900.0<span class="nt">&lt;/Double&gt;</span>
+<span class="w">      </span><span class="nt">&lt;/Data&gt;</span>
+<span class="w">    </span><span class="nt">&lt;/AggregatedDataValue&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/Data&gt;</span>
+<span class="nt">&lt;/Object&gt;</span>
+</pre></div>
+</div>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+    
+        <div id="show_right_sidebar">
+            <p><a class="toggle_right_sidebar" href="#"><span class="icon">&lt;</span><span>Page contents</span></a></p>
+        </div>
+
+        <div id="right_sidebar">
+            <p><a class="toggle_right_sidebar" href="#"><span class="icon">&gt;</span><span>Page contents:</span></a></p>
+            <div class="page_toc">
+                <ul>
+<li><a class="reference internal" href="#">BatchWeigher</a><ul>
+<li><a class="reference internal" href="#Overview">Overview</a></li>
+<li><a class="reference internal" href="#Members">Members</a><ul>
+<li><a class="reference internal" href="#member-list-section-Data%20Properties">Data Properties</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#sp:plant.processequipment.batchweigher.designcapacityweighingquantities">DesignCapacityWeighingQuantities</a><ul>
+<li><a class="reference internal" href="#sp:plant.processequipment.batchweigher.designcapacityweighingquantities-example">Example</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#sp:plant.processequipment.batchweigher.upperlimitdesignload">UpperLimitDesignLoad</a><ul>
+<li><a class="reference internal" href="#sp:plant.processequipment.batchweigher.upperlimitdesignload-example">Example</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#Plant.ProcessEquipment.BatchWeigher-example">Example in DEXPI XML</a></li>
+</ul>
+</li>
+</ul>
+
+            </div>
+        </div>
+    
+
+      <div class="clearer"></div>
+    </div>
+    <div class="button_nav_wrapper">
+        <div class="button_nav">
+            <div class="left">
+                
+                <a href="AxialFan.html">
+                    <span class="icon">&lt;</span><span>AxialFan</span></a>
+                
+            </div>
+
+            <div class="right">
+                
+                    <a href="Blower.html"><span>Blower</span><span class="icon">&gt;</span></a>
+                
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer" role="contentinfo">
+    © Copyright .
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.1.3.
+    </div>
+
+<p id="theme_credit">Styled using the <a href="https://github.com/piccolo-orm/piccolo_theme">Piccolo Theme</a></p>
+  </body>
+</html>

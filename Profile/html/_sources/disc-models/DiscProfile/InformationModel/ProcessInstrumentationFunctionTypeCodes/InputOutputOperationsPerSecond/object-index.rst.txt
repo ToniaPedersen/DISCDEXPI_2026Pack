@@ -1,0 +1,5 @@
+InputOutputOperationsPerSecond
+==============================
+
+.. sp:internal-autoelement::
+   :element: DiscProfile.InformationModel.ProcessInstrumentationFunctionTypeCodes.InputOutputOperationsPerSecond

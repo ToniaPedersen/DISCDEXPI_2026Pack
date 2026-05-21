@@ -1,0 +1,5 @@
+MultiLanguageString
+===================
+
+.. sp:internal-autoelement::
+   :element: Core.DataTypes.MultiLanguageString

@@ -1,0 +1,5 @@
+HeatedSurfaceDryer
+==================
+
+.. sp:internal-autoelement::
+   :element: Plant.ProcessEquipment.HeatedSurfaceDryer

@@ -1,0 +1,5 @@
+SignalLineFunction
+==================
+
+.. sp:internal-autoelement::
+   :element: Plant.Instrumentation.SignalLineFunction

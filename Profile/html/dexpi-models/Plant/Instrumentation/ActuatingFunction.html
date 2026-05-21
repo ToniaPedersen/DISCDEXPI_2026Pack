@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en" data-content_root="../../../">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>ActuatingFunction — DISC Profile 0.5</title>
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=b86133f3">
+    <link rel="stylesheet" type="text/css" href="../../../_static/basic_mod.css?v=9b2032db">
+    <link rel="stylesheet" type="text/css" href="../../../_static/sp.css">
+    <script src="../../../_static/documentation_options.js?v=db78e746"></script>
+    <script src="../../../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../_static/js/theme.js"></script>
+    <script src="../../../_static/js/petite-vue.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html">
+    <link rel="search" title="Search" href="../../../search.html">
+    <link rel="next" title="ActuatingSystem" href="ActuatingSystem.html">
+    <link rel="prev" title="ActuatingElectricalSystem" href="ActuatingElectricalSystem.html"> 
+  </head><body data-dark_mode_code_blocks="true">
+
+<div id="top_nav">
+    
+
+    <nav>
+        
+            
+        
+
+        <p id="toggle_sidebar">
+            <a href="#" title="Toggle sidebar">|||</a>
+        </p>
+        <h1><a href="../../../index.html" title="Go to homepage">DISC Profile 0.5</a></h1>
+
+        <a id="mode_toggle" href="#" @click.prevent="handleClick" :title="mode">
+    <template v-if="mode == 'light'">
+        <svg width="100%" height="100%" viewbox="0 0 79 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g id="mode_light"><rect id="Bounds" x="0" y="-0" width="78.623" height="79.049" style="fill:none;"></rect><circle cx="39.311" cy="39.524" r="15.734" style="fill:#fff;"></circle><g id="beams"><g id="beam"><path id="beam1" serif:id="beam" d="M44.212,4.901c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,-0 -4.9,2.196 -4.9,4.901l-0,9.614c-0,2.705 2.196,4.901 4.9,4.901c2.705,0 4.901,-2.196 4.901,-4.901l0,-9.614Z" style="fill:#fff;"></path></g><g id="beam2" serif:id="beam"><path id="beam3" serif:id="beam" d="M67.48,18.073c1.913,-1.912 1.913,-5.018 0,-6.931c-1.912,-1.912 -5.018,-1.912 -6.931,0l-6.798,6.799c-1.912,1.912 -1.912,5.018 0,6.931c1.913,1.912 5.018,1.912 6.931,-0l6.798,-6.799Z" style="fill:#fff;"></path></g><g id="beam4" serif:id="beam"><path id="beam5" serif:id="beam" d="M25.728,61.108c1.912,-1.913 1.912,-5.018 -0,-6.931c-1.913,-1.913 -5.019,-1.913 -6.931,-0l-6.799,6.798c-1.912,1.913 -1.912,5.019 0,6.931c1.913,1.913 5.019,1.913 6.931,0l6.799,-6.798Z" style="fill:#fff;"></path></g><g id="beam6" serif:id="beam"><path id="beam7" serif:id="beam" d="M60.682,54.177c-1.913,-1.913 -5.018,-1.913 -6.931,-0c-1.912,1.913 -1.912,5.018 0,6.931l6.798,6.798c1.913,1.913 5.019,1.913 6.931,0c1.913,-1.912 1.913,-5.018 0,-6.931l-6.798,-6.798Z" style="fill:#fff;"></path></g><g id="beam8" serif:id="beam"><path id="beam9" serif:id="beam" d="M4.901,34.623c-2.705,0 -4.901,2.196 -4.901,4.901c0,2.705 2.196,4.901 4.901,4.901l9.614,0c2.705,0 4.901,-2.196 4.901,-4.901c0,-2.705 -2.196,-4.901 -4.901,-4.901l-9.614,0Z" style="fill:#fff;"></path></g><g id="beam10" serif:id="beam"><path id="beam11" serif:id="beam" d="M44.212,64.534c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,-0 -4.9,2.196 -4.9,4.901l-0,9.614c-0,2.705 2.196,4.901 4.9,4.901c2.705,-0 4.901,-2.196 4.901,-4.901l0,-9.614Z" style="fill:#fff;"></path></g><g id="beam12" serif:id="beam"><path id="beam13" serif:id="beam" d="M18.929,11.142c-1.912,-1.912 -5.018,-1.912 -6.931,0c-1.912,1.913 -1.912,5.019 0,6.931l6.799,6.799c1.912,1.912 5.018,1.912 6.931,-0c1.912,-1.913 1.912,-5.019 -0,-6.931l-6.799,-6.799Z" style="fill:#fff;"></path></g><g id="beam14" serif:id="beam"><path id="beam15" serif:id="beam" d="M64.108,34.623c-2.705,0 -4.901,2.196 -4.901,4.901c-0,2.705 2.196,4.901 4.901,4.901l9.614,0c2.705,0 4.901,-2.196 4.901,-4.901c-0,-2.705 -2.196,-4.901 -4.901,-4.901l-9.614,0Z" style="fill:#fff;"></path></g></g></g></svg>
+    </template>
+
+    <template v-if="mode == 'dark'">
+        <svg width="100%" height="100%" viewbox="0 0 79 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g id="mode_dark"><rect id="Bounds" x="0" y="-0" width="78.623" height="79.049" style="fill:none;"></rect><circle cx="39.311" cy="39.524" r="15.734" style="fill:#fff;"></circle><g id="beams"><g id="beam"><path id="beam1" serif:id="beam" d="M44.212,14.515c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,0 -4.901,2.196 -4.901,4.901c0,2.705 2.197,4.901 4.901,4.901c2.705,0 4.901,-2.196 4.901,-4.901Z" style="fill:#fff;"></path></g><g id="beam2" serif:id="beam"><path id="beam3" serif:id="beam" d="M60.662,24.892c1.902,-1.902 1.902,-4.99 0,-6.892l-0.04,-0.039c-1.901,-1.902 -4.989,-1.902 -6.891,-0c-1.901,1.901 -1.901,4.989 0,6.891l0.04,0.04c1.902,1.901 4.989,1.901 6.891,-0Z" style="fill:#fff;"></path></g><g id="beam4" serif:id="beam"><path id="beam5" serif:id="beam" d="M25.732,61.103c1.91,-1.91 1.91,-5.011 0,-6.921l-0.009,-0.01c-1.91,-1.91 -5.012,-1.91 -6.921,-0c-1.91,1.91 -1.91,5.011 -0,6.921l0.01,0.01c1.909,1.91 5.011,1.91 6.92,-0Z" style="fill:#fff;"></path></g><g id="beam6" serif:id="beam"><path id="beam7" serif:id="beam" d="M60.672,54.167c-1.907,-1.907 -5.004,-1.907 -6.911,0l-0.02,0.02c-1.907,1.907 -1.907,5.004 0,6.911c1.907,1.907 5.004,1.907 6.911,-0l0.02,-0.02c1.907,-1.907 1.907,-5.004 0,-6.911Z" style="fill:#fff;"></path></g><g id="beam8" serif:id="beam"><path id="beam9" serif:id="beam" d="M14.52,34.623c-2.702,0 -4.896,2.194 -4.896,4.896l0,0.01c0,2.702 2.194,4.896 4.896,4.896c2.702,0 4.896,-2.194 4.896,-4.896l-0,-0.01c-0,-2.702 -2.194,-4.896 -4.896,-4.896Z" style="fill:#fff;"></path></g><g id="beam10" serif:id="beam"><path id="beam11" serif:id="beam" d="M44.212,64.534c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,-0 -4.901,2.196 -4.901,4.901c0,2.704 2.197,4.9 4.901,4.9c2.705,0 4.901,-2.196 4.901,-4.9Z" style="fill:#fff;"></path></g><g id="beam12" serif:id="beam"><path id="beam13" serif:id="beam" d="M25.73,17.943c-1.911,-1.911 -5.015,-1.911 -6.926,0l-0.005,0.005c-1.911,1.911 -1.911,5.015 0,6.926c1.911,1.911 5.015,1.911 6.926,0l0.005,-0.005c1.911,-1.911 1.911,-5.014 -0,-6.926Z" style="fill:#fff;"></path></g><g id="beam14" serif:id="beam"><path id="beam15" serif:id="beam" d="M64.098,34.623c-2.699,0 -4.891,2.192 -4.891,4.892l-0,0.019c-0,2.699 2.192,4.891 4.891,4.891c2.7,0 4.892,-2.192 4.892,-4.891l0,-0.019c0,-2.7 -2.192,-4.892 -4.892,-4.892Z" style="fill:#fff;"></path></g></g></g></svg>
+    </template>
+
+    <template v-if="mode == 'darkest'">
+        <svg width="100%" height="100%" viewbox="0 0 79 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g id="mode_darkest"><rect id="Bounds" x="0" y="-0" width="78.623" height="79.049" style="fill:none;"></rect><path d="M39.315,23.791c8.684,-0 15.734,7.05 15.734,15.733c0,8.684 -7.05,15.734 -15.734,15.734c-8.683,0 -15.733,-7.05 -15.733,-15.734c-0,-8.683 7.05,-15.733 15.733,-15.733Zm0,4.737c6.069,0 10.997,4.927 10.997,10.996c-0,6.069 -4.928,10.996 -10.997,10.996c-6.068,0 -10.996,-4.927 -10.996,-10.996c0,-6.069 4.928,-10.996 10.996,-10.996Z" style="fill:#fff;"></path><g id="beams"><g id="beam"><path id="beam1" serif:id="beam" d="M44.216,14.515c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,0 -4.9,2.196 -4.9,4.901c-0,2.705 2.196,4.901 4.9,4.901c2.705,0 4.901,-2.196 4.901,-4.901Z" style="fill:#fff;"></path></g><g id="beam2" serif:id="beam"><path id="beam3" serif:id="beam" d="M60.666,24.892c1.902,-1.902 1.902,-4.99 0,-6.892l-0.04,-0.039c-1.901,-1.902 -4.989,-1.902 -6.891,-0c-1.901,1.901 -1.901,4.989 0,6.891l0.04,0.04c1.902,1.901 4.99,1.901 6.891,-0Z" style="fill:#fff;"></path></g><g id="beam4" serif:id="beam"><path id="beam5" serif:id="beam" d="M25.737,61.103c1.909,-1.91 1.909,-5.011 -0,-6.921l-0.01,-0.01c-1.91,-1.91 -5.011,-1.91 -6.921,-0c-1.91,1.91 -1.91,5.011 -0,6.921l0.01,0.01c1.91,1.91 5.011,1.91 6.921,-0Z" style="fill:#fff;"></path></g><g id="beam6" serif:id="beam"><path id="beam7" serif:id="beam" d="M60.676,54.167c-1.907,-1.907 -5.004,-1.907 -6.911,0l-0.02,0.02c-1.907,1.907 -1.907,5.004 0,6.911c1.907,1.907 5.004,1.907 6.911,-0l0.02,-0.02c1.907,-1.907 1.907,-5.004 0,-6.911Z" style="fill:#fff;"></path></g><g id="beam8" serif:id="beam"><path id="beam9" serif:id="beam" d="M14.524,34.623c-2.702,0 -4.896,2.194 -4.896,4.896l0,0.01c0,2.702 2.194,4.896 4.896,4.896c2.702,0 4.896,-2.194 4.896,-4.896l0,-0.01c0,-2.702 -2.194,-4.896 -4.896,-4.896Z" style="fill:#fff;"></path></g><g id="beam10" serif:id="beam"><path id="beam11" serif:id="beam" d="M44.216,64.534c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,-0 -4.9,2.196 -4.9,4.901c-0,2.704 2.196,4.9 4.9,4.9c2.705,0 4.901,-2.196 4.901,-4.9Z" style="fill:#fff;"></path></g><g id="beam12" serif:id="beam"><path id="beam13" serif:id="beam" d="M25.734,17.943c-1.911,-1.911 -5.015,-1.911 -6.926,0l-0.005,0.005c-1.911,1.911 -1.911,5.015 0,6.926c1.911,1.911 5.015,1.911 6.926,0l0.005,-0.005c1.911,-1.911 1.911,-5.014 0,-6.926Z" style="fill:#fff;"></path></g><g id="beam14" serif:id="beam"><path id="beam15" serif:id="beam" d="M64.103,34.623c-2.7,0 -4.892,2.192 -4.892,4.892l-0,0.019c-0,2.699 2.192,4.891 4.892,4.891c2.699,0 4.891,-2.192 4.891,-4.891l0,-0.019c0,-2.7 -2.192,-4.892 -4.891,-4.892Z" style="fill:#fff;"></path></g></g></g></svg>
+    </template>
+</a>
+
+<script>
+(function() {
+    const LOCAL_STORAGE_KEY = 'piccoloThemeMode'
+
+    var initialMode = localStorage.getItem(LOCAL_STORAGE_KEY)
+
+    if (initialMode) {
+        // Make sure the value in local storage is valid
+        if (['light', 'dark', 'darkest'].indexOf(initialMode) == -1) {
+            initialMode = 'light'
+            localStorage.setItem(LOCAL_STORAGE_KEY, initialMode)
+        }
+    } else {
+        // Check if the client prefers dark mode
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            initialMode = 'dark'
+        } else {
+            initialMode = 'light'
+        }
+        localStorage.setItem(LOCAL_STORAGE_KEY, initialMode)
+    }
+
+    document.documentElement.dataset.mode = initialMode
+
+    PetiteVue.createApp({
+        'mode': initialMode,
+        handleClick() {
+            let currentMode = this.mode
+
+            if (currentMode == 'light') {
+                this.mode = 'dark'
+            } else if (currentMode == 'dark') {
+                this.mode = 'darkest'
+            } else if (currentMode == 'darkest') {
+                this.mode = 'light'
+            }
+
+            document.documentElement.dataset.mode = this.mode
+            localStorage.setItem(LOCAL_STORAGE_KEY, this.mode)
+
+            console.log(this.mode)
+        }
+    }).mount('#mode_toggle')
+})()
+</script>
+            <p class="mobile_search_link">
+                <a href="../../../search.html" title="Search">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 65 64" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2">
+                        <path d="M14.873 40.009c-2.315-3.943-3.642-8.532-3.642-13.429C11.231 11.91 23.141 0 37.811 0s26.58 11.91 26.58 26.58-11.91 26.58-26.58 26.58a26.44 26.44 0 0 1-14.277-4.161L9.739 62.794a3.12 3.12 0 0 1-4.413 0L.913 58.382c-1.217-1.218-1.217-3.196 0-4.413l13.96-13.96zM37.811 8.054c10.225 0 18.526 8.301 18.526 18.526s-8.301 18.526-18.526 18.526-18.526-8.301-18.526-18.526S27.586 8.054 37.811 8.054z" fill="#fff"></path>
+                    </svg>
+                </a>
+            </p>
+        
+
+        <div class="searchbox_wrapper">
+            
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+      <input type="submit" value="Go">
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+    </nav>
+</div>
+
+    
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper"><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">DEXPI Information Models</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../Builtin/model-index.html">Builtin</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Core/model-index.html">Core</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../model-index.html">Plant</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../Diagram/package-index.html">Diagram</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Enumerations/package-index.html">Enumerations</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="package-index.html">Instrumentation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Piping/package-index.html">Piping</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../PlantModel.html">PlantModel</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../PlantStructure/package-index.html">PlantStructure</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../ProcessEquipment/package-index.html">ProcessEquipment</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../Process/model-index.html">Process</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../disc-models/index.html">DISC Information Models</a></li>
+</ul>
+
+        </div>
+      </div>
+
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="actuatingfunction">
+<h1>ActuatingFunction<a class="headerlink" href="#actuatingfunction" title="Link to this heading">¶</a></h1>
+<p><a class="sp-element reference internal" href="../model-index.html"><span class="doc">Plant</span></a><span class="sp-element">::</span><a class="sp-element reference internal" href="package-index.html"><span class="doc">Instrumentation</span></a><span class="sp-element">::</span><span class="sp-element">ActuatingFunction</span></p>
+<section id="Overview">
+<h2>Overview<a class="headerlink" href="#Overview" title="Link to this heading">¶</a></h2>
+<p class="rubric">Concrete Class</p>
+<p><strong>RDL:</strong><span> </span><a class="reference external" href="http://sandbox.dexpi.org/rdl/ActuatingFunction">ACTUATING FUNCTION (http://sandbox.dexpi.org/rdl/ActuatingFunction)</a></p>
+<p>A function for acting control structures relating to the process.</p>
+<p><span>(</span><a class="reference external" href="../../../_images/uml-172.svg">Fullscreen Diagram</a><span>)</span></p>
+<svg xmlns:ns0="http://www.w3.org/2000/svg" width="1640.6105989583334px" viewBox="0.0 0.0 1640.6105989583334 442.19999999999993" style="max-width: 100%; background-color: white;"><style>
+            .uml-foreground-stroke {
+                stroke: black;
+                stroke-width: 1px;
+            }
+            
+            .uml-foreground-fill {
+                fill: black;
+            }
+            
+            .uml-background_color-type {
+                fill: #ffffcc;
+            }
+            
+            .uml-background_color-main_type {
+                fill: #ffff66;
+            }
+            
+            .uml-background_color-instance {
+                fill: blue;
+            }
+            
+            .uml-background_color-background {
+                fill: white;
+            }
+            
+            .uml-background_color-foreground {
+                fill: black;
+            }
+            
+            .uml-font-normal {
+                font-family: Arial;
+            }
+            
+            .uml-font-element {
+                font-family: Arial;
+            }
+            
+            .uml-fontsize-normal {
+                font-size: 10px;
+            }
+
+            .uml-fontsize-large {
+                font-size: 12px;
+            }
+            
+            .uml-source_marker-closed_arrow {
+                marker-start: url(#uml-marker-closed_arrow);
+            }
+            
+            .uml-source_marker-open_arrow {
+                marker-start: url(#uml-marker-open_arrow);
+            }
+            
+            .uml-source_marker-filled_diamond {
+                marker-start: url(#uml-marker-filled_diamond);
+            }
+
+            .uml-target_marker-closed_arrow {
+                marker-end: url(#uml-marker-closed_arrow);
+            }
+            
+            .uml-target_marker-open_arrow {
+                marker-end: url(#uml-marker-open_arrow);
+            }
+            
+            .uml-target_marker-filled_diamond {
+                marker-end: url(#uml-marker-filled_diamond);
+            }
+
+            </style><defs>
+        <marker id="uml-marker-closed_arrow" viewBox="-2 -2 14 14" refX="10" refY="5.0" markerWidth="14" markerHeight="14" orient="auto-start-reverse">
+          <path d="M 0 0 L 10 5.0 L 0 10 Z" stroke-linejoin="round" stroke-linecap="round" class="uml-foreground-stroke uml-background_color-background"></path>
+        </marker>
+        <marker id="uml-marker-open_arrow" viewBox="-2 -2 14 14" refX="10" refY="5.0" markerWidth="14" markerHeight="14" orient="auto-start-reverse">
+          <path d="M 0 0 L 10 5.0 L 0 10" stroke-linejoin="round" stroke-linecap="round" fill="none" class="uml-foreground-stroke"></path>
+        </marker>
+        <marker id="uml-marker-filled_diamond" viewBox="-2 -2 14 14" refX="10" refY="5.0" markerWidth="14" markerHeight="14" orient="auto-start-reverse">
+          <path d="M 0 5.0 L      5.0 2.0        10 5.0      5.0 8.0 Z       " stroke-linejoin="round" stroke-linecap="round" class="uml-foreground-stroke uml-background_color-foreground"></path>
+        </marker>
+      </defs><rect class="uml-background_color-type uml-foreground-stroke" x="20.693359375" y="125.19999999999999" width="200.0" height="23.799999999999997"></rect><text x="120.693359375" text-anchor="middle" font-size="0px" y="140.64"><a href="../../../dexpi-models/Core/ConceptualObject.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold" font-style="italic">ConceptualObject</tspan></a></text><rect class="uml-background_color-type uml-foreground-stroke" x="1171.3165755208333" y="125.19999999999999" width="220.66761718750004" height="23.799999999999997"></rect><text x="1281.6503841145834" text-anchor="middle" font-size="0px" y="140.64"><a href="../../../dexpi-models/Plant/Instrumentation/SignalConveyingFunctionSource.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold" font-style="italic">SignalConveyingFunctionSource</tspan></a></text><rect class="uml-background_color-type uml-foreground-stroke" x="1411.9841927083335" y="125.19999999999999" width="216.62640625000003" height="23.799999999999997"></rect><text x="1520.2973958333334" text-anchor="middle" font-size="0px" y="140.64"><a href="../../../dexpi-models/Plant/Instrumentation/SignalConveyingFunctionTarget.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold" font-style="italic">SignalConveyingFunctionTarget</tspan></a></text><rect class="uml-background_color-type uml-foreground-stroke" x="550.9067643229167" y="12.0" width="184.34634765625003" height="23.799999999999997"></rect><text x="643.0799381510417" text-anchor="middle" font-size="0px" y="27.439999999999998"><a href="../../../dexpi-models/Plant/PlantStructure/PlantAreaLocatedStructure.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold" font-style="italic">PlantAreaLocatedStructure</tspan></a></text><rect class="uml-background_color-type uml-foreground-stroke" x="755.2531119791668" y="12.0" width="202.08513671875002" height="23.799999999999997"></rect><text x="856.2956803385417" text-anchor="middle" font-size="0px" y="27.439999999999998"><a href="../../../dexpi-models/Plant/PlantStructure/PlantSystemLocatedStructure.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold" font-style="italic">PlantSystemLocatedStructure</tspan></a></text><rect class="uml-background_color-type uml-foreground-stroke" x="344.1498697916667" y="12.0" width="186.75689453125003" height="23.799999999999997"></rect><text x="437.5283170572917" text-anchor="middle" font-size="0px" y="27.439999999999998"><a href="../../../dexpi-models/Plant/PlantStructure/PlantTrainLocatedStructure.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold" font-style="italic">PlantTrainLocatedStructure</tspan></a></text><rect class="uml-background_color-type uml-foreground-stroke" x="666.3401171875003" y="125.19999999999999" width="150.0" height="23.799999999999997"></rect><text x="741.3401171875003" text-anchor="middle" font-size="0px" y="140.64"><a href="../../../dexpi-models/Plant/PlantStructure/TechnicalItem.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold" font-style="italic">TechnicalItem</tspan></a></text><rect class="uml-background_color-type uml-foreground-stroke" x="615.3046386718752" y="268.4" width="202.07095703125003" height="23.799999999999997"></rect><text x="716.3401171875003" text-anchor="middle" font-size="0px" y="283.84"><a href="../../../dexpi-models/Plant/PlantStructure/TechnicalItemParentStructure.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold" font-style="italic">TechnicalItemParentStructure</tspan></a></text><rect class="uml-background_color-type uml-foreground-stroke" x="175.46608072916666" y="12.0" width="148.6837890625" height="23.799999999999997"></rect><text x="249.80797526041667" text-anchor="middle" font-size="0px" y="27.439999999999998"><a href="../../../dexpi-models/Core/Diagram/AttributeRepresentation.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold">AttributeRepresentation</tspan></a></text><rect class="uml-background_color-type uml-foreground-stroke" x="19.25397135416665" y="12.0" width="136.212109375" height="23.799999999999997"></rect><text x="87.36002604166666" text-anchor="middle" font-size="0px" y="27.439999999999998"><a href="../../../dexpi-models/Core/Diagram/RepresentationGroup.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold">RepresentationGroup</tspan></a></text><rect class="uml-background_color-type uml-foreground-stroke" x="35.693359375" y="268.4" width="50.0" height="23.799999999999997"></rect><text x="60.693359375" text-anchor="middle" font-size="0px" y="283.84"><a href="../../../dexpi-models/Core/Note.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold">Note</tspan></a></text><rect class="uml-background_color-type uml-foreground-stroke" x="235.11884765625" y="268.4" width="119.3189453125" height="23.799999999999997"></rect><text x="294.7783203125" text-anchor="middle" font-size="0px" y="283.84"><a href="../../../dexpi-models/Core/PersistentIdentifier.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold">PersistentIdentifier</tspan></a></text><rect class="uml-background_color-type uml-foreground-stroke" x="149.7373046875" y="268.4" width="50.0" height="23.799999999999997"></rect><text x="174.7373046875" text-anchor="middle" font-size="0px" y="283.84"><a href="../../../dexpi-models/Core/Role.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold">Role</tspan></a></text><rect class="uml-background_color-main_type uml-foreground-stroke" x="910.2631575520834" y="268.4" width="282.814453125" height="48.599999999999994"></rect><text x="1051.6703841145834" text-anchor="middle" font-size="0px" y="283.84"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold">ActuatingFunction</tspan></text><polyline class="uml-foreground-stroke" points="910.2631575520834,292.2 1193.0776106770834,292.2" fill="none"></polyline><text x="915.2631575520834" font-size="0px" y="308.64"><a href="../../../dexpi-models/Plant/Instrumentation/ActuatingFunction.html#sp:plant.instrumentation.actuatingfunction.actuatingfunctionnumber"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">ActuatingFunctionNumber</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> :</tspan></text><text x="1062.8354231770834" font-size="0px" y="308.64"><a href="../../../dexpi-models/Builtin/Undefined.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Undefined</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> | </tspan><a href="../../../dexpi-models/Builtin/String.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">String</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> [0..1]</tspan></text><rect class="uml-background_color-type uml-foreground-stroke" x="950.0120833333334" y="406.4" width="109.04511718750001" height="23.799999999999997"></rect><text x="1004.5346419270834" text-anchor="middle" font-size="0px" y="421.84"><a href="../../../dexpi-models/Plant/Instrumentation/ActuatingSystem.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold">ActuatingSystem</tspan></a></text><rect class="uml-background_color-type uml-foreground-stroke" x="952.0241927083334" y="125.19999999999999" width="199.29238281250002" height="23.799999999999997"></rect><text x="1051.6703841145834" text-anchor="middle" font-size="0px" y="140.64"><a href="../../../dexpi-models/Plant/Instrumentation/ProcessInstrumentationFunction.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold">ProcessInstrumentationFunction</tspan></a></text><rect class="uml-background_color-type uml-foreground-stroke" x="1228.41958984375" y="12.0" width="159.6923828125" height="23.799999999999997"></rect><text x="1308.26578125" text-anchor="middle" font-size="0px" y="27.439999999999998"><a href="../../../dexpi-models/Plant/Instrumentation/SignalConveyingFunction.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold">SignalConveyingFunction</tspan></a></text><rect class="uml-background_color-type uml-foreground-stroke" x="1079.0572005208335" y="406.4" width="147.9361328125" height="23.799999999999997"></rect><text x="1153.0252669270835" text-anchor="middle" font-size="0px" y="421.84"><a href="../../../dexpi-models/Plant/Piping/PipingNetworkSegment.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold">PipingNetworkSegment</tspan></a></text><rect class="uml-background_color-type uml-foreground-stroke" x="578.3709765625001" y="125.19999999999999" width="67.969140625" height="23.799999999999997"></rect><text x="612.3555468750001" text-anchor="middle" font-size="0px" y="140.64"><a href="../../../dexpi-models/Plant/PlantStructure/PlantArea.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold">PlantArea</tspan></a></text><rect class="uml-background_color-type uml-foreground-stroke" x="847.9288802083333" y="125.19999999999999" width="84.0953125" height="23.799999999999997"></rect><text x="889.9765364583334" text-anchor="middle" font-size="0px" y="140.64"><a href="../../../dexpi-models/Plant/PlantStructure/PlantSystem.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold">PlantSystem</tspan></a></text><rect class="uml-background_color-type uml-foreground-stroke" x="371.32189453125" y="125.19999999999999" width="70.160546875" height="23.799999999999997"></rect><text x="406.40216796875" text-anchor="middle" font-size="0px" y="140.64"><a href="../../../dexpi-models/Plant/PlantStructure/PlantTrain.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold">PlantTrain</tspan></a></text><polyline class="uml-foreground-stroke uml-source_marker-closed_arrow" points="180.693359375,149.0 180.693359375,174.79999999999998 369.96875,174.79999999999998 369.96875,213.2 369.96875,214.2 369.96875,242.59999999999997 957.3988997395834,242.59999999999997 957.3988997395834,268.4" fill="none"></polyline><polyline class="uml-foreground-stroke uml-source_marker-closed_arrow" points="1281.6503841145834,149.0 1281.6503841145834,213.2 1281.6503841145834,214.2 1281.6503841145834,232.59999999999997 1098.8061263020834,232.59999999999997 1098.8061263020834,268.4" fill="none"></polyline><polyline class="uml-foreground-stroke uml-source_marker-closed_arrow" points="1520.2973958333334,149.0 1520.2973958333334,213.2 1520.2973958333334,214.2 1520.2973958333334,242.59999999999997 1145.9418684895834,242.59999999999997 1145.9418684895834,268.4" fill="none"></polyline><polyline class="uml-foreground-stroke uml-source_marker-closed_arrow" points="673.8043294270834,35.8 673.8043294270834,61.599999999999994 741.3401171875003,61.599999999999994 741.3401171875003,80.0 741.3401171875003,81.0 741.3401171875003,125.19999999999999" fill="none"></polyline><polyline class="uml-foreground-stroke uml-source_marker-closed_arrow" points="822.6148242187501,35.8 822.6148242187501,80.0 822.6148242187501,81.0 822.6148242187501,99.39999999999999 778.8401171875003,99.39999999999999 778.8401171875003,125.19999999999999" fill="none"></polyline><polyline class="uml-foreground-stroke uml-source_marker-closed_arrow" points="468.65446614583334,35.8 468.65446614583334,80.0 468.65446614583334,81.0 468.65446614583334,99.39999999999999 703.8401171875003,99.39999999999999 703.8401171875003,125.19999999999999" fill="none"></polyline><polyline class="uml-foreground-stroke uml-source_marker-closed_arrow" points="766.3401171875003,149.0 766.3401171875003,174.79999999999998 780.8606250000003,174.79999999999998 780.8606250000003,213.2 780.8606250000003,214.2 780.8606250000003,232.59999999999997 1004.5346419270834,232.59999999999997 1004.5346419270834,268.4" fill="none"></polyline><rect class="uml-background_color-background " x="129.38671875" y="204.79999999999998" width="90.701171875" height="17.799999999999997"></rect><text x="174.7373046875" text-anchor="middle" font-size="0px" y="217.23999999999998"><a href="../../../dexpi-models/Core/ConceptualObject.html#sp:core.conceptualobject.performedroles"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">PerformedRoles</tspan></a></text><polyline class="uml-foreground-stroke" points="100.693359375,149.0 100.693359375,194.79999999999998 174.7373046875,194.79999999999998 174.7373046875,204.79999999999998" fill="none"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="174.7373046875,222.59999999999997 174.7373046875,268.4" fill="none"></polyline><text x="108.693359375" font-size="0px" y="161.2"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</tspan></text><text x="182.7373046875" font-size="0px" y="262.79999999999995"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</tspan></text><rect class="uml-background_color-background " x="240.087890625" y="204.79999999999998" width="109.380859375" height="17.799999999999997"></rect><text x="294.7783203125" text-anchor="middle" font-size="0px" y="217.23999999999998"><a href="../../../dexpi-models/Core/ConceptualObject.html#sp:core.conceptualobject.persistentidentifiers"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">PersistentIdentifiers</tspan></a></text><polyline class="uml-foreground-stroke uml-source_marker-filled_diamond" points="140.693359375,149.0 140.693359375,184.79999999999998 294.7783203125,184.79999999999998 294.7783203125,204.79999999999998" fill="none"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="294.7783203125,222.59999999999997 294.7783203125,268.4" fill="none"></polyline><text x="148.693359375" font-size="0px" y="161.2"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">0..1</tspan></text><text x="302.7783203125" font-size="0px" y="262.79999999999995"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</tspan></text><rect class="uml-background_color-background " x="12.0" y="204.79999999999998" width="97.38671875" height="17.799999999999997"></rect><text x="60.693359375" text-anchor="middle" font-size="0px" y="217.23999999999998"><a href="../../../dexpi-models/Core/ConceptualObject.html#sp:core.conceptualobject.referencednotes"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">ReferencedNotes</tspan></a></text><polyline class="uml-foreground-stroke" points="60.693359375,149.0 60.693359375,204.79999999999998" fill="none"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="60.693359375,222.59999999999997 60.693359375,268.4" fill="none"></polyline><text x="68.693359375" font-size="0px" y="161.2"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</tspan></text><text x="68.693359375" font-size="0px" y="262.79999999999995"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</tspan></text><rect class="uml-background_color-background " x="230.46715494791667" y="71.6" width="38.681640625" height="17.799999999999997"></rect><text x="249.80797526041667" text-anchor="middle" font-size="0px" y="84.03999999999999"><a href="../../../dexpi-models/Core/Diagram/AttributeRepresentation.html#sp:core.diagram.attributerepresentation.object"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Object</tspan></a></text><polyline class="uml-foreground-stroke" points="249.80797526041667,35.8 249.80797526041667,71.6" fill="none"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="249.80797526041667,89.39999999999999 249.80797526041667,99.39999999999999 154.02669270833331,99.39999999999999 154.02669270833331,125.19999999999999" fill="none"></polyline><text x="257.8079752604167" font-size="0px" y="48.0"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</tspan></text><rect class="uml-background_color-background " x="54.67740885416666" y="71.6" width="65.365234375" height="17.799999999999997"></rect><text x="87.36002604166666" text-anchor="middle" font-size="0px" y="84.03999999999999"><a href="../../../dexpi-models/Core/Diagram/RepresentationGroup.html#sp:core.diagram.representationgroup.represents"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Represents</tspan></a></text><polyline class="uml-foreground-stroke" points="87.36002604166666,35.8 87.36002604166666,71.6" fill="none"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="87.36002604166666,89.39999999999999 87.36002604166666,125.19999999999999" fill="none"></polyline><text x="95.36002604166666" font-size="0px" y="48.0"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</tspan></text><rect class="uml-background_color-background " x="1103.3240950520835" y="352.79999999999995" width="99.40234375" height="17.799999999999997"></rect><text x="1153.0252669270835" text-anchor="middle" font-size="0px" y="365.23999999999995"><a href="../../../dexpi-models/Plant/Instrumentation/ActuatingFunction.html#sp:plant.instrumentation.actuatingfunction.actuatinglocation"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">ActuatingLocation</tspan></a></text><polyline class="uml-foreground-stroke" points="1098.8061263020834,317.0 1098.8061263020834,342.79999999999995 1153.0252669270835,342.79999999999995 1153.0252669270835,352.79999999999995" fill="none"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="1153.0252669270835,370.59999999999997 1153.0252669270835,406.4" fill="none"></polyline><text x="1106.8061263020834" font-size="0px" y="329.2"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">0..1</tspan></text><text x="1161.0252669270835" font-size="0px" y="400.79999999999995"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">0..1</tspan></text><rect class="uml-background_color-background " x="979.5307356770834" y="352.79999999999995" width="50.0078125" height="17.799999999999997"></rect><text x="1004.5346419270834" text-anchor="middle" font-size="0px" y="365.23999999999995"><a href="../../../dexpi-models/Plant/Instrumentation/ActuatingFunction.html#sp:plant.instrumentation.actuatingfunction.systems"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Systems</tspan></a></text><polyline class="uml-foreground-stroke" points="1004.5346419270834,317.0 1004.5346419270834,352.79999999999995" fill="none"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="1004.5346419270834,370.59999999999997 1004.5346419270834,406.4" fill="none"></polyline><text x="1012.5346419270834" font-size="0px" y="329.2"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">0..1</tspan></text><text x="1012.5346419270834" font-size="0px" y="400.79999999999995"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">0..1</tspan></text><rect class="uml-background_color-background " x="998.6410872395834" y="204.79999999999998" width="106.05859375" height="17.799999999999997"></rect><text x="1051.6703841145834" text-anchor="middle" font-size="0px" y="217.23999999999998"><a href="../../../dexpi-models/Plant/Instrumentation/ProcessInstrumentationFunction.html#sp:plant.instrumentation.processinstrumentationfunction.actuatingfunctions"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">ActuatingFunctions</tspan></a></text><polyline class="uml-foreground-stroke uml-source_marker-filled_diamond" points="1051.6703841145834,149.0 1051.6703841145834,204.79999999999998" fill="none"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="1051.6703841145834,222.59999999999997 1051.6703841145834,268.4" fill="none"></polyline><text x="1059.6703841145834" font-size="0px" y="161.2"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">0..1</tspan></text><text x="1059.6703841145834" font-size="0px" y="262.79999999999995"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</tspan></text><rect class="uml-background_color-background " x="1260.6396419270834" y="71.6" width="42.021484375" height="17.799999999999997"></rect><text x="1281.6503841145834" text-anchor="middle" font-size="0px" y="84.03999999999999"><a href="../../../dexpi-models/Plant/Instrumentation/SignalConveyingFunction.html#sp:plant.instrumentation.signalconveyingfunction.source"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Source</tspan></a></text><polyline class="uml-foreground-stroke" points="1281.6503841145832,35.8 1281.6503841145834,71.6" fill="none"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="1281.6503841145834,89.39999999999999 1281.6503841145834,125.19999999999999" fill="none"></polyline><text x="1289.6503841145832" font-size="0px" y="48.0"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</tspan></text><text x="1289.6503841145834" font-size="0px" y="119.6"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">0..1</tspan></text><rect class="uml-background_color-background " x="1500.9565755208334" y="71.6" width="38.681640625" height="17.799999999999997"></rect><text x="1520.2973958333334" text-anchor="middle" font-size="0px" y="84.03999999999999"><a href="../../../dexpi-models/Plant/Instrumentation/SignalConveyingFunction.html#sp:plant.instrumentation.signalconveyingfunction.target"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Target</tspan></a></text><polyline class="uml-foreground-stroke" points="1334.8811783854167,35.8 1334.8811783854167,61.599999999999994 1520.2973958333334,61.599999999999994 1520.2973958333334,71.6" fill="none"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="1520.2973958333334,89.39999999999999 1520.2973958333334,125.19999999999999" fill="none"></polyline><text x="1342.8811783854167" font-size="0px" y="48.0"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</tspan></text><text x="1528.2973958333334" font-size="0px" y="119.6"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">0..1</tspan></text><rect class="uml-background_color-background " x="584.0059375000001" y="71.6" width="56.69921875" height="17.799999999999997"></rect><text x="612.3555468750001" text-anchor="middle" font-size="0px" y="84.03999999999999"><a href="../../../dexpi-models/Plant/PlantStructure/PlantAreaLocatedStructure.html#sp:plant.plantstructure.plantarealocatedstructure.plantarea"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">PlantArea</tspan></a></text><polyline class="uml-foreground-stroke" points="612.3555468750001,35.8 612.3555468750001,71.6" fill="none"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="612.3555468750001,89.39999999999999 612.3555468750001,125.19999999999999" fill="none"></polyline><text x="620.3555468750001" font-size="0px" y="48.0"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</tspan></text><text x="620.3555468750001" font-size="0px" y="119.6"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">0..1</tspan></text><rect class="uml-background_color-background " x="854.2968489583334" y="71.6" width="71.359375" height="17.799999999999997"></rect><text x="889.9765364583334" text-anchor="middle" font-size="0px" y="84.03999999999999"><a href="../../../dexpi-models/Plant/PlantStructure/PlantSystemLocatedStructure.html#sp:plant.plantstructure.plantsystemlocatedstructure.plantsystem"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">PlantSystem</tspan></a></text><polyline class="uml-foreground-stroke" points="889.9765364583334,35.8 889.9765364583334,71.6" fill="none"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="889.9765364583334,89.39999999999999 889.9765364583334,125.19999999999999" fill="none"></polyline><text x="897.9765364583334" font-size="0px" y="48.0"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</tspan></text><text x="897.9765364583334" font-size="0px" y="119.6"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">0..1</tspan></text><rect class="uml-background_color-background " x="377.05646484375" y="71.6" width="58.69140625" height="17.799999999999997"></rect><text x="406.40216796875" text-anchor="middle" font-size="0px" y="84.03999999999999"><a href="../../../dexpi-models/Plant/PlantStructure/PlantTrainLocatedStructure.html#sp:plant.plantstructure.planttrainlocatedstructure.planttrain"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">PlantTrain</tspan></a></text><polyline class="uml-foreground-stroke" points="406.40216796875,35.8 406.40216796875,71.6" fill="none"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="406.40216796875,89.39999999999999 406.40216796875,125.19999999999999" fill="none"></polyline><text x="414.40216796875" font-size="0px" y="48.0"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</tspan></text><text x="414.40216796875" font-size="0px" y="119.6"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">0..1</tspan></text><rect class="uml-background_color-background " x="672.3196093750003" y="204.79999999999998" width="88.041015625" height="17.799999999999997"></rect><text x="716.3401171875003" text-anchor="middle" font-size="0px" y="217.23999999999998"><a href="../../../dexpi-models/Plant/PlantStructure/TechnicalItem.html#sp:plant.plantstructure.technicalitem.parentstructure"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">ParentStructure</tspan></a></text><polyline class="uml-foreground-stroke" points="716.3401171875003,149.0 716.3401171875003,204.79999999999998" fill="none"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="716.3401171875003,222.59999999999997 716.3401171875003,268.4" fill="none"></polyline><text x="724.3401171875003" font-size="0px" y="161.2"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</tspan></text><text x="724.3401171875003" font-size="0px" y="262.79999999999995"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">0..1</tspan></text></svg><p class="rubric">Supertypes</p>
+<ul class="simple">
+<li><p><a class="sp-element reference internal" href="../../Core/ConceptualObject.html"><span class="doc">ConceptualObject</span></a></p></li>
+<li><p><a class="sp-element reference internal" href="SignalConveyingFunctionSource.html"><span class="doc">SignalConveyingFunctionSource</span></a></p></li>
+<li><p><a class="sp-element reference internal" href="SignalConveyingFunctionTarget.html"><span class="doc">SignalConveyingFunctionTarget</span></a></p></li>
+<li><p><a class="sp-element reference internal" href="../PlantStructure/TechnicalItem.html"><span class="doc">TechnicalItem</span></a></p></li>
+</ul>
+</section>
+<section id="Members">
+<h2>Members<a class="headerlink" href="#Members" title="Link to this heading">¶</a></h2>
+<section id="member-list-section-Reference Properties">
+<h3>Reference Properties<a class="headerlink" href="#member-list-section-Reference%20Properties" title="Link to this heading">¶</a></h3>
+</section>
+<table class="docutils align-left">
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Multiplicity</p></th>
+<th class="head"><p>Type</p></th>
+<th class="head"><p>Ordered</p></th>
+<th class="head"><p>Unique</p></th>
+<th class="head"><p>Opposite Multiplicity</p></th>
+<th class="head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="#sp:plant.instrumentation.actuatingfunction.actuatinglocation"><span class="std std-ref">ActuatingLocation</span></a></p></td>
+<td><p>0..1</p></td>
+<td><p><a class="sp-element reference internal" href="../Piping/PipingNetworkSegment.html"><span class="doc">PipingNetworkSegment</span></a></p></td>
+<td><p>no</p></td>
+<td><p>no</p></td>
+<td><p>0..1</p></td>
+<td><p>The actuating location of the <span class="sp-element">ActuatingFunction</span>.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="#sp:plant.instrumentation.actuatingfunction.systems"><span class="std std-ref">Systems</span></a></p></td>
+<td><p>0..1</p></td>
+<td><p><a class="sp-element reference internal" href="ActuatingSystem.html"><span class="doc">ActuatingSystem</span></a></p></td>
+<td><p>no</p></td>
+<td><p>no</p></td>
+<td><p>0..1</p></td>
+<td><p>The <span class="sp-element">ActuatingSystem</span> that implements the <span class="sp-element">ActuatingFunction</span>.</p></td>
+</tr>
+</tbody>
+</table>
+<section id="member-list-section-Data Properties">
+<h3>Data Properties<a class="headerlink" href="#member-list-section-Data%20Properties" title="Link to this heading">¶</a></h3>
+</section>
+<table class="docutils align-left">
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Multiplicity</p></th>
+<th class="head"><p>Type</p></th>
+<th class="head"><p>Ordered</p></th>
+<th class="head"><p>Unique</p></th>
+<th class="head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="#sp:plant.instrumentation.actuatingfunction.actuatingfunctionnumber"><span class="std std-ref">ActuatingFunctionNumber</span></a></p></td>
+<td><p>0..1</p></td>
+<td><p><a class="sp-element reference internal" href="../../Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><a class="sp-element reference internal" href="../../Builtin/String.html"><span class="doc">String</span></a></p></td>
+<td><p>no</p></td>
+<td><p>no</p></td>
+<td><p>An identifier for the <a class="sp-element reference internal" href="#"><span class="doc">ActuatingFunction</span></a>. It usually contains the
+identifier of the <a class="sp-element reference internal" href="ProcessInstrumentationFunction.html"><span class="doc">ProcessInstrumentationFunction</span></a> that
+includes the <a class="sp-element reference internal" href="#"><span class="doc">ActuatingFunction</span></a> (see
+<a class="sp-element reference internal" href="ProcessInstrumentationFunction.html#sp:plant.instrumentation.processinstrumentationfunction.processinstrumentationfunctionnumber"><span class="std std-ref">ProcessInstrumentationFunctionNumber</span></a>).</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="sp:plant.instrumentation.actuatingfunction.actuatingfunctionnumber">
+<h2>ActuatingFunctionNumber<a class="headerlink" href="#sp:plant.instrumentation.actuatingfunction.actuatingfunctionnumber" title="Link to this heading">¶</a></h2>
+<p class="rubric">Data Property</p>
+<p>An identifier for the <a class="sp-element reference internal" href="#"><span class="doc">ActuatingFunction</span></a>. It usually contains the
+identifier of the <a class="sp-element reference internal" href="ProcessInstrumentationFunction.html"><span class="doc">ProcessInstrumentationFunction</span></a> that
+includes the <a class="sp-element reference internal" href="#"><span class="doc">ActuatingFunction</span></a> (see
+<a class="sp-element reference internal" href="ProcessInstrumentationFunction.html#sp:plant.instrumentation.processinstrumentationfunction.processinstrumentationfunctionnumber"><span class="std std-ref">ProcessInstrumentationFunctionNumber</span></a>).</p>
+<p><strong>Type:</strong><span> </span><a class="sp-element reference internal" href="../../Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><a class="sp-element reference internal" href="../../Builtin/String.html"><span class="doc">String</span></a></p>
+<p><strong>Multiplicity:</strong><span> </span><span>0..1</span></p>
+<p><strong>Ordered:</strong><span> </span><span>no</span></p>
+<p><strong>Unique:</strong><span> </span><span>no</span></p>
+<p><strong>RDL:</strong><span> </span><a class="reference external" href="http://sandbox.dexpi.org/rdl/ActuatingFunctionNumberAssignmentClass">ACTUATING FUNCTION NUMBER ASSIGNMENT CLASS (http://sandbox.dexpi.org/rdl/ActuatingFunctionNumberAssignmentClass)</a></p>
+<section id="sp:plant.instrumentation.actuatingfunction.actuatingfunctionnumber-example">
+<h3>Example<a class="headerlink" href="#sp:plant.instrumentation.actuatingfunction.actuatingfunctionnumber-example" title="Link to this heading">¶</a></h3>
+<p class="sp-dense"><code class="docutils literal notranslate"><span class="pre">"HV4750.01"</span></code></p>
+</section>
+</section>
+<section id="sp:plant.instrumentation.actuatingfunction.actuatinglocation">
+<h2>ActuatingLocation<a class="headerlink" href="#sp:plant.instrumentation.actuatingfunction.actuatinglocation" title="Link to this heading">¶</a></h2>
+<p class="rubric">Reference Property</p>
+<p>The actuating location of the <span class="sp-element">ActuatingFunction</span>.</p>
+<p><strong>Type:</strong><span> </span><a class="sp-element reference internal" href="../Piping/PipingNetworkSegment.html"><span class="doc">PipingNetworkSegment</span></a></p>
+<p><strong>Multiplicity:</strong><span> </span><span>0..1</span></p>
+<p><strong>Ordered:</strong><span> </span><span>no</span></p>
+<p><strong>Unique:</strong><span> </span><span>no</span></p>
+<p><strong>Opposite Multiplicity:</strong><span> </span><span>0..1</span></p>
+</section>
+<section id="sp:plant.instrumentation.actuatingfunction.systems">
+<h2>Systems<a class="headerlink" href="#sp:plant.instrumentation.actuatingfunction.systems" title="Link to this heading">¶</a></h2>
+<p class="rubric">Reference Property</p>
+<p>The <span class="sp-element">ActuatingSystem</span> that implements the <span class="sp-element">ActuatingFunction</span>.</p>
+<p><strong>Type:</strong><span> </span><a class="sp-element reference internal" href="ActuatingSystem.html"><span class="doc">ActuatingSystem</span></a></p>
+<p><strong>Multiplicity:</strong><span> </span><span>0..1</span></p>
+<p><strong>Ordered:</strong><span> </span><span>no</span></p>
+<p><strong>Unique:</strong><span> </span><span>no</span></p>
+<p><strong>Opposite Multiplicity:</strong><span> </span><span>0..1</span></p>
+</section>
+<section id="Plant.Instrumentation.ActuatingFunction-example">
+<h2>Example in DEXPI XML<a class="headerlink" href="#Plant.Instrumentation.ActuatingFunction-example" title="Link to this heading">¶</a></h2>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;Object</span><span class="w"> </span><span class="na">type=</span><span class="s">"Plant/Instrumentation.ActuatingFunction"</span><span class="nt">&gt;</span>
+<span class="w">  </span><span class="nt">&lt;Data</span><span class="w"> </span><span class="na">property=</span><span class="s">"ActuatingFunctionNumber"</span><span class="nt">&gt;</span>
+<span class="w">    </span><span class="nt">&lt;String&gt;</span>HV4750.01<span class="nt">&lt;/String&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/Data&gt;</span>
+<span class="nt">&lt;/Object&gt;</span>
+</pre></div>
+</div>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+    
+        <div id="show_right_sidebar">
+            <p><a class="toggle_right_sidebar" href="#"><span class="icon">&lt;</span><span>Page contents</span></a></p>
+        </div>
+
+        <div id="right_sidebar">
+            <p><a class="toggle_right_sidebar" href="#"><span class="icon">&gt;</span><span>Page contents:</span></a></p>
+            <div class="page_toc">
+                <ul>
+<li><a class="reference internal" href="#">ActuatingFunction</a><ul>
+<li><a class="reference internal" href="#Overview">Overview</a></li>
+<li><a class="reference internal" href="#Members">Members</a><ul>
+<li><a class="reference internal" href="#member-list-section-Reference%20Properties">Reference Properties</a></li>
+<li><a class="reference internal" href="#member-list-section-Data%20Properties">Data Properties</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#sp:plant.instrumentation.actuatingfunction.actuatingfunctionnumber">ActuatingFunctionNumber</a><ul>
+<li><a class="reference internal" href="#sp:plant.instrumentation.actuatingfunction.actuatingfunctionnumber-example">Example</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#sp:plant.instrumentation.actuatingfunction.actuatinglocation">ActuatingLocation</a></li>
+<li><a class="reference internal" href="#sp:plant.instrumentation.actuatingfunction.systems">Systems</a></li>
+<li><a class="reference internal" href="#Plant.Instrumentation.ActuatingFunction-example">Example in DEXPI XML</a></li>
+</ul>
+</li>
+</ul>
+
+            </div>
+        </div>
+    
+
+      <div class="clearer"></div>
+    </div>
+    <div class="button_nav_wrapper">
+        <div class="button_nav">
+            <div class="left">
+                
+                <a href="ActuatingElectricalSystem.html">
+                    <span class="icon">&lt;</span><span>ActuatingElectricalSystem</span></a>
+                
+            </div>
+
+            <div class="right">
+                
+                    <a href="ActuatingSystem.html"><span>ActuatingSystem</span><span class="icon">&gt;</span></a>
+                
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer" role="contentinfo">
+    © Copyright .
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.1.3.
+    </div>
+
+<p id="theme_credit">Styled using the <a href="https://github.com/piccolo-orm/piccolo_theme">Piccolo Theme</a></p>
+  </body>
+</html>

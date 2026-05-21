@@ -1,0 +1,81 @@
+<ns0:svg xmlns:ns0="http://www.w3.org/2000/svg" width="186.09765625px" height="375.79999999999995px" viewBox="0.0 0.0 186.09765625 375.79999999999995"><ns0:style>
+            .uml-foreground-stroke {
+                stroke: black;
+                stroke-width: 1px;
+            }
+            
+            .uml-foreground-fill {
+                fill: black;
+            }
+            
+            .uml-background_color-type {
+                fill: #ffffcc;
+            }
+            
+            .uml-background_color-main_type {
+                fill: #ffff66;
+            }
+            
+            .uml-background_color-instance {
+                fill: blue;
+            }
+            
+            .uml-background_color-background {
+                fill: white;
+            }
+            
+            .uml-background_color-foreground {
+                fill: black;
+            }
+            
+            .uml-font-normal {
+                font-family: Arial;
+            }
+            
+            .uml-font-element {
+                font-family: Arial;
+            }
+            
+            .uml-fontsize-normal {
+                font-size: 10px;
+            }
+
+            .uml-fontsize-large {
+                font-size: 12px;
+            }
+            
+            .uml-source_marker-closed_arrow {
+                marker-start: url(#uml-marker-closed_arrow);
+            }
+            
+            .uml-source_marker-open_arrow {
+                marker-start: url(#uml-marker-open_arrow);
+            }
+            
+            .uml-source_marker-filled_diamond {
+                marker-start: url(#uml-marker-filled_diamond);
+            }
+
+            .uml-target_marker-closed_arrow {
+                marker-end: url(#uml-marker-closed_arrow);
+            }
+            
+            .uml-target_marker-open_arrow {
+                marker-end: url(#uml-marker-open_arrow);
+            }
+            
+            .uml-target_marker-filled_diamond {
+                marker-end: url(#uml-marker-filled_diamond);
+            }
+
+            </ns0:style><ns0:defs>
+        <ns0:marker id="uml-marker-closed_arrow" viewBox="-2 -2 14 14" refX="10" refY="5.0" markerWidth="14" markerHeight="14" orient="auto-start-reverse">
+          <ns0:path d="M 0 0 L 10 5.0 L 0 10 Z" stroke-linejoin="round" stroke-linecap="round" class="uml-foreground-stroke uml-background_color-background"/>
+        </ns0:marker>
+        <ns0:marker id="uml-marker-open_arrow" viewBox="-2 -2 14 14" refX="10" refY="5.0" markerWidth="14" markerHeight="14" orient="auto-start-reverse">
+          <ns0:path d="M 0 0 L 10 5.0 L 0 10" stroke-linejoin="round" stroke-linecap="round" fill="none" class="uml-foreground-stroke"/>
+        </ns0:marker>
+        <ns0:marker id="uml-marker-filled_diamond" viewBox="-2 -2 14 14" refX="10" refY="5.0" markerWidth="14" markerHeight="14" orient="auto-start-reverse">
+          <ns0:path d="M 0 5.0 L      5.0 2.0        10 5.0      5.0 8.0 Z       " stroke-linejoin="round" stroke-linecap="round" class="uml-foreground-stroke uml-background_color-foreground"/>
+        </ns0:marker>
+      </ns0:defs><ns0:rect class="uml-background_color-type uml-foreground-stroke" x="21.06752929687498" y="12.0" width="143.96259765625004" height="37.599999999999994"/><ns0:text x="93.048828125" text-anchor="middle" font-size="0px" y="27.439999999999998"><ns0:tspan class="uml-foreground-fill uml-font-normal uml-fontsize-large">&lt;&lt;datatype&gt;&gt;</ns0:tspan></ns0:text><ns0:text x="93.048828125" text-anchor="middle" font-size="0px" y="41.239999999999995"><ns0:a href="../dexpi-models/Core/PhysicalQuantities/PhysicalQuantityUnit.html"><ns0:tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold" font-style="italic">PhysicalQuantityUnit</ns0:tspan></ns0:a></ns0:text><ns0:rect class="uml-background_color-type uml-foreground-stroke" x="46.08758789062499" y="122.19999999999999" width="93.92248046875002" height="37.599999999999994"/><ns0:text x="93.048828125" text-anchor="middle" font-size="0px" y="137.64"><ns0:tspan class="uml-foreground-fill uml-font-normal uml-fontsize-large">&lt;&lt;datatype&gt;&gt;</ns0:tspan></ns0:text><ns0:text x="93.048828125" text-anchor="middle" font-size="0px" y="151.44"><ns0:a href="../dexpi-models/Core/PhysicalQuantities/PressureUnit.html"><ns0:tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold" font-style="italic">PressureUnit</ns0:tspan></ns0:a></ns0:text><ns0:rect class="uml-background_color-main_type uml-foreground-stroke" x="12.0" y="232.39999999999998" width="162.09765625" height="131.39999999999998"/><ns0:text x="93.048828125" text-anchor="middle" font-size="0px" y="247.83999999999997"><ns0:tspan class="uml-foreground-fill uml-font-normal uml-fontsize-large">&lt;&lt;enumeration&gt;&gt;</ns0:tspan></ns0:text><ns0:text x="93.048828125" text-anchor="middle" font-size="0px" y="261.64"><ns0:tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold">PressureGaugeUnit</ns0:tspan></ns0:text><ns0:polyline class="uml-foreground-stroke" points="12.0,270.0 174.09765625,270.0" fill="none"/><ns0:text x="17.0" font-size="0px" y="286.44"><ns0:a href="../dexpi-models/Core/PhysicalQuantities/PressureGaugeUnit.html#sp:core.physicalquantities.pressuregaugeunit.bar"><ns0:tspan class="uml-foreground-fill uml-font-normal uml-fontsize-large">Bar</ns0:tspan></ns0:a></ns0:text><ns0:text x="17.0" font-size="0px" y="300.24"><ns0:a href="../dexpi-models/Core/PhysicalQuantities/PressureGaugeUnit.html#sp:core.physicalquantities.pressuregaugeunit.kilopascal"><ns0:tspan class="uml-foreground-fill uml-font-normal uml-fontsize-large">Kilopascal</ns0:tspan></ns0:a></ns0:text><ns0:text x="17.0" font-size="0px" y="314.04"><ns0:a href="../dexpi-models/Core/PhysicalQuantities/PressureGaugeUnit.html#sp:core.physicalquantities.pressuregaugeunit.megapascal"><ns0:tspan class="uml-foreground-fill uml-font-normal uml-fontsize-large">Megapascal</ns0:tspan></ns0:a></ns0:text><ns0:text x="17.0" font-size="0px" y="327.84000000000003"><ns0:a href="../dexpi-models/Core/PhysicalQuantities/PressureGaugeUnit.html#sp:core.physicalquantities.pressuregaugeunit.millibar"><ns0:tspan class="uml-foreground-fill uml-font-normal uml-fontsize-large">Millibar</ns0:tspan></ns0:a></ns0:text><ns0:text x="17.0" font-size="0px" y="341.64000000000004"><ns0:a href="../dexpi-models/Core/PhysicalQuantities/PressureGaugeUnit.html#sp:core.physicalquantities.pressuregaugeunit.pascal"><ns0:tspan class="uml-foreground-fill uml-font-normal uml-fontsize-large">Pascal</ns0:tspan></ns0:a></ns0:text><ns0:text x="17.0" font-size="0px" y="355.44000000000005"><ns0:a href="../dexpi-models/Core/PhysicalQuantities/PressureGaugeUnit.html#sp:core.physicalquantities.pressuregaugeunit.poundforceperinchsquared"><ns0:tspan class="uml-foreground-fill uml-font-normal uml-fontsize-large">PoundForcePerInchSquared</ns0:tspan></ns0:a></ns0:text><ns0:polyline class="uml-foreground-stroke uml-source_marker-closed_arrow" points="93.048828125,49.599999999999994 93.048828125,85.39999999999999 93.048828125,86.39999999999999 93.048828125,122.19999999999999" fill="none"/><ns0:polyline class="uml-foreground-stroke uml-source_marker-closed_arrow" points="93.048828125,159.79999999999998 93.048828125,195.59999999999997 93.048828125,196.59999999999997 93.048828125,232.39999999999998" fill="none"/></ns0:svg>

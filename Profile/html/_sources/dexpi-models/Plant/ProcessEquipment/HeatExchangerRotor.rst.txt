@@ -1,0 +1,5 @@
+HeatExchangerRotor
+==================
+
+.. sp:internal-autoelement::
+   :element: Plant.ProcessEquipment.HeatExchangerRotor

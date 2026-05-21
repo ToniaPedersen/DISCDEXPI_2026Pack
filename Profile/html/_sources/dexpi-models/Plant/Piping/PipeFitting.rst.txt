@@ -1,0 +1,5 @@
+PipeFitting
+===========
+
+.. sp:internal-autoelement::
+   :element: Plant.Piping.PipeFitting

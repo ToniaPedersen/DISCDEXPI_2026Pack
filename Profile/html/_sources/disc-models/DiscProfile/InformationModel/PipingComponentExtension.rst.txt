@@ -1,0 +1,5 @@
+PipingComponentExtension
+========================
+
+.. sp:internal-autoelement::
+   :element: DiscProfile.InformationModel.PipingComponentExtension

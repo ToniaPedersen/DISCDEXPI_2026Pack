@@ -1,0 +1,5 @@
+PlantModel
+==========
+
+.. sp:internal-autoelement::
+   :element: Plant.PlantModel

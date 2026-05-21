@@ -1,0 +1,5 @@
+PropertyBreakExtension
+======================
+
+.. sp:internal-autoelement::
+   :element: DiscProfile.InformationModel.PropertyBreakExtension

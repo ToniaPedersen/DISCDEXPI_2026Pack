@@ -1,0 +1,5 @@
+FrequencyUnit
+=============
+
+.. sp:internal-autoelement::
+   :element: Core.PhysicalQuantities.FrequencyUnit

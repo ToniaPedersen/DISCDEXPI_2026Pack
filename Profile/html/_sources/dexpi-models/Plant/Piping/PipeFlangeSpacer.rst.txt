@@ -1,0 +1,5 @@
+PipeFlangeSpacer
+================
+
+.. sp:internal-autoelement::
+   :element: Plant.Piping.PipeFlangeSpacer

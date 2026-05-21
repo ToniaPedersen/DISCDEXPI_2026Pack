@@ -1,0 +1,5 @@
+TransportingFluidsInChannel
+===========================
+
+.. sp:internal-autoelement::
+   :element: Process.Process.TransportingFluidsInChannel

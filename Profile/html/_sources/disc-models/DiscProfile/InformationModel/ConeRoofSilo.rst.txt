@@ -1,0 +1,5 @@
+ConeRoofSilo
+============
+
+.. sp:internal-autoelement::
+   :element: DiscProfile.InformationModel.ConeRoofSilo

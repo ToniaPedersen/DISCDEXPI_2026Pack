@@ -1,0 +1,5 @@
+OperatedValveReference
+======================
+
+.. sp:internal-autoelement::
+   :element: Plant.Instrumentation.OperatedValveReference

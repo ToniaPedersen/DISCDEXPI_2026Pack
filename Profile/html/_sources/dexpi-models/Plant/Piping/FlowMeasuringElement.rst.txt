@@ -1,0 +1,5 @@
+FlowMeasuringElement
+====================
+
+.. sp:internal-autoelement::
+   :element: Plant.Piping.FlowMeasuringElement

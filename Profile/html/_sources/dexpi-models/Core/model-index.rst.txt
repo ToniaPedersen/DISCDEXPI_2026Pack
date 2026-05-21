@@ -1,0 +1,5 @@
+Core
+====
+
+.. sp:internal-autoelement::
+   :element: Core

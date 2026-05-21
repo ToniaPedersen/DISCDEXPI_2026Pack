@@ -1,0 +1,5 @@
+SiphonClassification
+====================
+
+.. sp:internal-autoelement::
+   :element: Plant.Enumerations.SiphonClassification

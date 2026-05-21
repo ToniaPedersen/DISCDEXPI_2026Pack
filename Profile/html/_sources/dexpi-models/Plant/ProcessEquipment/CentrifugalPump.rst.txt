@@ -1,0 +1,5 @@
+CentrifugalPump
+===============
+
+.. sp:internal-autoelement::
+   :element: Plant.ProcessEquipment.CentrifugalPump

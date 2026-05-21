@@ -1,0 +1,5 @@
+SprayCooler
+===========
+
+.. sp:internal-autoelement::
+   :element: Plant.ProcessEquipment.SprayCooler

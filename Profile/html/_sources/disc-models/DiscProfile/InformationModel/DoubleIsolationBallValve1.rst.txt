@@ -1,0 +1,5 @@
+DoubleIsolationBallValve1
+=========================
+
+.. sp:internal-autoelement::
+   :element: DiscProfile.InformationModel.DoubleIsolationBallValve1

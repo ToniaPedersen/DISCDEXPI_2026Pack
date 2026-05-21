@@ -1,0 +1,5 @@
+OfflineMeasuringElement
+=======================
+
+.. sp:internal-autoelement::
+   :element: Plant.Instrumentation.OfflineMeasuringElement

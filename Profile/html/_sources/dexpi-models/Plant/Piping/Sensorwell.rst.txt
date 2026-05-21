@@ -1,0 +1,5 @@
+Sensorwell
+==========
+
+.. sp:internal-autoelement::
+   :element: Plant.Piping.Sensorwell

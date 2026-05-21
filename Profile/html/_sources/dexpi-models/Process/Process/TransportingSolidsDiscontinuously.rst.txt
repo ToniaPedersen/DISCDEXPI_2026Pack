@@ -1,0 +1,5 @@
+TransportingSolidsDiscontinuously
+=================================
+
+.. sp:internal-autoelement::
+   :element: Process.Process.TransportingSolidsDiscontinuously

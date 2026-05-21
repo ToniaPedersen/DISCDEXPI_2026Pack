@@ -1,0 +1,5 @@
+Stroke
+======
+
+.. sp:internal-autoelement::
+   :element: Core.Diagram.Stroke

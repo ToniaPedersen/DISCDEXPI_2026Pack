@@ -1,0 +1,5 @@
+GeneratingInFuelCell
+====================
+
+.. sp:internal-autoelement::
+   :element: Process.Process.GeneratingInFuelCell

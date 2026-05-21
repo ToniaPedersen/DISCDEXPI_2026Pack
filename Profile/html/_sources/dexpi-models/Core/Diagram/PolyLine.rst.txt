@@ -1,0 +1,5 @@
+PolyLine
+========
+
+.. sp:internal-autoelement::
+   :element: Core.Diagram.PolyLine

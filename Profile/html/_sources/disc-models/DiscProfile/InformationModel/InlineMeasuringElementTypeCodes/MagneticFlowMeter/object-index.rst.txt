@@ -1,0 +1,5 @@
+MagneticFlowMeter
+=================
+
+.. sp:internal-autoelement::
+   :element: DiscProfile.InformationModel.InlineMeasuringElementTypeCodes.MagneticFlowMeter

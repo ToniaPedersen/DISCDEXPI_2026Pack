@@ -1,0 +1,5 @@
+Chimney
+=======
+
+.. sp:internal-autoelement::
+   :element: Plant.ProcessEquipment.Chimney

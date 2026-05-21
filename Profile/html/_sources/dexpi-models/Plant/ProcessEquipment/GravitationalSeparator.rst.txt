@@ -1,0 +1,5 @@
+GravitationalSeparator
+======================
+
+.. sp:internal-autoelement::
+   :element: Plant.ProcessEquipment.GravitationalSeparator

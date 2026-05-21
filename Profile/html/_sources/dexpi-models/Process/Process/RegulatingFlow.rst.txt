@@ -1,0 +1,5 @@
+RegulatingFlow
+==============
+
+.. sp:internal-autoelement::
+   :element: Process.Process.RegulatingFlow

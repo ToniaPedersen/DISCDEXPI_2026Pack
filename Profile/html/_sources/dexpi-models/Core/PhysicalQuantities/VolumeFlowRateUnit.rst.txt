@@ -1,0 +1,5 @@
+VolumeFlowRateUnit
+==================
+
+.. sp:internal-autoelement::
+   :element: Core.PhysicalQuantities.VolumeFlowRateUnit

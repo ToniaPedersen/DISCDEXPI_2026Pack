@@ -1,0 +1,5 @@
+SymbolExtension
+===============
+
+.. sp:internal-autoelement::
+   :element: DiscProfile.InformationModel.SymbolExtension

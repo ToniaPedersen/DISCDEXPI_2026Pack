@@ -1,0 +1,5 @@
+GraphicsGroup
+=============
+
+.. sp:internal-autoelement::
+   :element: Core.Diagram.GraphicsGroup

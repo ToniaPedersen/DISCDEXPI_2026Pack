@@ -1,0 +1,5 @@
+ReducerLabel
+============
+
+.. sp:internal-autoelement::
+   :element: Plant.Diagram.ReducerLabel

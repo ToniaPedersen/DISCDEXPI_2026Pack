@@ -1,0 +1,5 @@
+FlameArrestor
+=============
+
+.. sp:internal-autoelement::
+   :element: Plant.Piping.FlameArrestor

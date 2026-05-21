@@ -1,0 +1,5 @@
+OperatedValve
+=============
+
+.. sp:internal-autoelement::
+   :element: Plant.Piping.OperatedValve

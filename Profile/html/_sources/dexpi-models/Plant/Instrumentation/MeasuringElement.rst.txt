@@ -1,0 +1,5 @@
+MeasuringElement
+================
+
+.. sp:internal-autoelement::
+   :element: Plant.Instrumentation.MeasuringElement

@@ -1,0 +1,11 @@
+DISC Profile 0.5
+================
+
+This is a human-readably rendering of the machine-readable DISC Profile 0.3 that is part
+of the deliverables of the DISC II DEXPI Project.
+
+.. toctree::
+   :maxdepth: 1
+   
+   dexpi-models/index.rst
+   disc-models/index.rst

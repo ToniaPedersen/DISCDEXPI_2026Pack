@@ -1,0 +1,5 @@
+SightGlass
+==========
+
+.. sp:internal-autoelement::
+   :element: Plant.Piping.SightGlass

@@ -1,0 +1,81 @@
+<ns0:svg xmlns:ns0="http://www.w3.org/2000/svg" width="254.81238281250003px" height="467.0px" viewBox="0.0 0.0 254.81238281250003 467.0"><ns0:style>
+            .uml-foreground-stroke {
+                stroke: black;
+                stroke-width: 1px;
+            }
+            
+            .uml-foreground-fill {
+                fill: black;
+            }
+            
+            .uml-background_color-type {
+                fill: #ffffcc;
+            }
+            
+            .uml-background_color-main_type {
+                fill: #ffff66;
+            }
+            
+            .uml-background_color-instance {
+                fill: blue;
+            }
+            
+            .uml-background_color-background {
+                fill: white;
+            }
+            
+            .uml-background_color-foreground {
+                fill: black;
+            }
+            
+            .uml-font-normal {
+                font-family: Arial;
+            }
+            
+            .uml-font-element {
+                font-family: Arial;
+            }
+            
+            .uml-fontsize-normal {
+                font-size: 10px;
+            }
+
+            .uml-fontsize-large {
+                font-size: 12px;
+            }
+            
+            .uml-source_marker-closed_arrow {
+                marker-start: url(#uml-marker-closed_arrow);
+            }
+            
+            .uml-source_marker-open_arrow {
+                marker-start: url(#uml-marker-open_arrow);
+            }
+            
+            .uml-source_marker-filled_diamond {
+                marker-start: url(#uml-marker-filled_diamond);
+            }
+
+            .uml-target_marker-closed_arrow {
+                marker-end: url(#uml-marker-closed_arrow);
+            }
+            
+            .uml-target_marker-open_arrow {
+                marker-end: url(#uml-marker-open_arrow);
+            }
+            
+            .uml-target_marker-filled_diamond {
+                marker-end: url(#uml-marker-filled_diamond);
+            }
+
+            </ns0:style><ns0:defs>
+        <ns0:marker id="uml-marker-closed_arrow" viewBox="-2 -2 14 14" refX="10" refY="5.0" markerWidth="14" markerHeight="14" orient="auto-start-reverse">
+          <ns0:path d="M 0 0 L 10 5.0 L 0 10 Z" stroke-linejoin="round" stroke-linecap="round" class="uml-foreground-stroke uml-background_color-background"/>
+        </ns0:marker>
+        <ns0:marker id="uml-marker-open_arrow" viewBox="-2 -2 14 14" refX="10" refY="5.0" markerWidth="14" markerHeight="14" orient="auto-start-reverse">
+          <ns0:path d="M 0 0 L 10 5.0 L 0 10" stroke-linejoin="round" stroke-linecap="round" fill="none" class="uml-foreground-stroke"/>
+        </ns0:marker>
+        <ns0:marker id="uml-marker-filled_diamond" viewBox="-2 -2 14 14" refX="10" refY="5.0" markerWidth="14" markerHeight="14" orient="auto-start-reverse">
+          <ns0:path d="M 0 5.0 L      5.0 2.0        10 5.0      5.0 8.0 Z       " stroke-linejoin="round" stroke-linecap="round" class="uml-foreground-stroke uml-background_color-foreground"/>
+        </ns0:marker>
+      </ns0:defs><ns0:rect class="uml-background_color-type uml-foreground-stroke" x="12.0" y="334.8" width="125.40847656250001" height="23.799999999999997"/><ns0:text x="74.70423828125001" text-anchor="middle" font-size="0px" y="350.24"><ns0:a href="../dexpi-models/Core/Diagram/GraphicalElement.html"><ns0:tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold" font-style="italic">GraphicalElement</ns0:tspan></ns0:a></ns0:text><ns0:rect class="uml-background_color-type uml-foreground-stroke" x="50.661471354166665" y="125.19999999999999" width="108.45666015625002" height="23.799999999999997"/><ns0:text x="104.88980143229168" text-anchor="middle" font-size="0px" y="140.64"><ns0:a href="../dexpi-models/Core/Diagram/GraphicsGroup.html"><ns0:tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold" font-style="italic">GraphicsGroup</ns0:tspan></ns0:a></ns0:text><ns0:rect class="uml-background_color-type uml-foreground-stroke" x="14.333111979166674" y="221.59999999999997" width="181.11337890625" height="23.799999999999997"/><ns0:text x="104.88980143229168" text-anchor="middle" font-size="0px" y="237.03999999999996"><ns0:a href="../dexpi-models/Core/Diagram/RepresentationTypeGroup.html"><ns0:tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold" font-style="italic">RepresentationTypeGroup</ns0:tspan></ns0:a></ns0:text><ns0:rect class="uml-background_color-type uml-foreground-stroke" x="157.40847656250003" y="334.8" width="50.0" height="23.799999999999997"/><ns0:text x="182.40847656250003" text-anchor="middle" font-size="0px" y="350.24"><ns0:a href="../dexpi-models/Core/Diagram/Label.html"><ns0:tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold">Label</ns0:tspan></ns0:a></ns0:text><ns0:rect class="uml-background_color-type uml-foreground-stroke" x="36.78374674479167" y="12.0" width="136.212109375" height="23.799999999999997"/><ns0:text x="104.88980143229168" text-anchor="middle" font-size="0px" y="27.439999999999998"><ns0:a href="../dexpi-models/Core/Diagram/RepresentationGroup.html"><ns0:tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold">RepresentationGroup</ns0:tspan></ns0:a></ns0:text><ns0:rect class="uml-background_color-main_type uml-foreground-stroke" x="122.00457031250002" y="431.2" width="120.80781250000001" height="23.799999999999997"/><ns0:text x="182.40847656250003" text-anchor="middle" font-size="0px" y="446.64"><ns0:tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold">NoteIdentifierLabel</ns0:tspan></ns0:text><ns0:polyline class="uml-foreground-stroke uml-source_marker-closed_arrow" points="104.88980143229168,149.0 104.88980143229168,184.79999999999998 104.88980143229168,185.79999999999998 104.88980143229168,221.59999999999997" fill="none"/><ns0:polyline class="uml-foreground-stroke uml-source_marker-closed_arrow" points="135.07536458333334,245.39999999999998 135.07536458333334,271.2 182.40847656250003,271.2 182.40847656250003,289.59999999999997 182.40847656250003,290.59999999999997 182.40847656250003,334.8" fill="none"/><ns0:polyline class="uml-foreground-stroke uml-source_marker-closed_arrow" points="182.40847656250003,358.6 182.40847656250003,394.4 182.40847656250003,395.4 182.40847656250003,431.2" fill="none"/><ns0:rect class="uml-background_color-background " x="83.21402018229168" y="71.6" width="43.3515625" height="17.799999999999997"/><ns0:text x="104.88980143229168" text-anchor="middle" font-size="0px" y="84.03999999999999"><ns0:a href="../dexpi-models/Core/Diagram/RepresentationGroup.html#sp:core.diagram.representationgroup.groups"><ns0:tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Groups</ns0:tspan></ns0:a></ns0:text><ns0:polyline class="uml-foreground-stroke uml-source_marker-filled_diamond" points="104.88980143229168,35.8 104.88980143229168,71.6" fill="none"/><ns0:polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="104.88980143229168,89.39999999999999 104.88980143229168,125.19999999999999" fill="none"/><ns0:text x="112.88980143229168" font-size="0px" y="48.0"><ns0:tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">0..1</ns0:tspan></ns0:text><ns0:text x="112.88980143229168" font-size="0px" y="119.6"><ns0:tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</ns0:tspan></ns0:text><ns0:rect class="uml-background_color-background " x="47.69349609375001" y="281.2" width="54.021484375" height="17.799999999999997"/><ns0:text x="74.70423828125001" text-anchor="middle" font-size="0px" y="293.64"><ns0:a href="../dexpi-models/Core/Diagram/RepresentationTypeGroup.html#sp:core.diagram.representationtypegroup.elements"><ns0:tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Elements</ns0:tspan></ns0:a></ns0:text><ns0:polyline class="uml-foreground-stroke uml-source_marker-filled_diamond" points="74.70423828125001,245.39999999999998 74.70423828125001,281.2" fill="none"/><ns0:polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="74.70423828125001,299.0 74.70423828125001,334.8" fill="none"/><ns0:text x="82.70423828125001" font-size="0px" y="257.59999999999997"><ns0:tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">0..1</ns0:tspan></ns0:text><ns0:text x="82.70423828125001" font-size="0px" y="329.2"><ns0:tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</ns0:tspan></ns0:text></ns0:svg>

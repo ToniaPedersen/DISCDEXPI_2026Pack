@@ -1,0 +1,5 @@
+ProcessConnection
+=================
+
+.. sp:internal-autoelement::
+   :element: Process.Process.ProcessConnection

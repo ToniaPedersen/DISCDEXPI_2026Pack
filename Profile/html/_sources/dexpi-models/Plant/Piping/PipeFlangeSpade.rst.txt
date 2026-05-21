@@ -1,0 +1,5 @@
+PipeFlangeSpade
+===============
+
+.. sp:internal-autoelement::
+   :element: Plant.Piping.PipeFlangeSpade

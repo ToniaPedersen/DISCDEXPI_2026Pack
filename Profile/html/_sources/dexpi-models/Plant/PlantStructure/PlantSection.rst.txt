@@ -1,0 +1,5 @@
+PlantSection
+============
+
+.. sp:internal-autoelement::
+   :element: Plant.PlantStructure.PlantSection

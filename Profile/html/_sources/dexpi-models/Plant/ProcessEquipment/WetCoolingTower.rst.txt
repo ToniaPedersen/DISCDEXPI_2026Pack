@@ -1,0 +1,5 @@
+WetCoolingTower
+===============
+
+.. sp:internal-autoelement::
+   :element: Plant.ProcessEquipment.WetCoolingTower

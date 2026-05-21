@@ -1,0 +1,5 @@
+PressureUnit
+============
+
+.. sp:internal-autoelement::
+   :element: Core.PhysicalQuantities.PressureUnit

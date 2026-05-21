@@ -1,0 +1,5 @@
+ProcessColumn
+=============
+
+.. sp:internal-autoelement::
+   :element: Plant.ProcessEquipment.ProcessColumn

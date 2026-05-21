@@ -1,0 +1,5 @@
+StoringThermalEnergy
+====================
+
+.. sp:internal-autoelement::
+   :element: Process.Process.StoringThermalEnergy

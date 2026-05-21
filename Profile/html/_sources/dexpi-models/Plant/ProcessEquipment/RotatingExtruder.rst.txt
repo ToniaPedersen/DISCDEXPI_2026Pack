@@ -1,0 +1,5 @@
+RotatingExtruder
+================
+
+.. sp:internal-autoelement::
+   :element: Plant.ProcessEquipment.RotatingExtruder

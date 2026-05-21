@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en" data-content_root="../../">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>ConceptualModel — DISC Profile 0.5</title>
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=b86133f3">
+    <link rel="stylesheet" type="text/css" href="../../_static/basic_mod.css?v=9b2032db">
+    <link rel="stylesheet" type="text/css" href="../../_static/sp.css">
+    <script src="../../_static/documentation_options.js?v=db78e746"></script>
+    <script src="../../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <script src="../../_static/js/petite-vue.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html">
+    <link rel="search" title="Search" href="../../search.html">
+    <link rel="next" title="ConceptualObject" href="ConceptualObject.html">
+    <link rel="prev" title="Core" href="model-index.html"> 
+  </head><body data-dark_mode_code_blocks="true">
+
+<div id="top_nav">
+    
+
+    <nav>
+        
+            
+        
+
+        <p id="toggle_sidebar">
+            <a href="#" title="Toggle sidebar">|||</a>
+        </p>
+        <h1><a href="../../index.html" title="Go to homepage">DISC Profile 0.5</a></h1>
+
+        <a id="mode_toggle" href="#" @click.prevent="handleClick" :title="mode">
+    <template v-if="mode == 'light'">
+        <svg width="100%" height="100%" viewbox="0 0 79 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g id="mode_light"><rect id="Bounds" x="0" y="-0" width="78.623" height="79.049" style="fill:none;"></rect><circle cx="39.311" cy="39.524" r="15.734" style="fill:#fff;"></circle><g id="beams"><g id="beam"><path id="beam1" serif:id="beam" d="M44.212,4.901c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,-0 -4.9,2.196 -4.9,4.901l-0,9.614c-0,2.705 2.196,4.901 4.9,4.901c2.705,0 4.901,-2.196 4.901,-4.901l0,-9.614Z" style="fill:#fff;"></path></g><g id="beam2" serif:id="beam"><path id="beam3" serif:id="beam" d="M67.48,18.073c1.913,-1.912 1.913,-5.018 0,-6.931c-1.912,-1.912 -5.018,-1.912 -6.931,0l-6.798,6.799c-1.912,1.912 -1.912,5.018 0,6.931c1.913,1.912 5.018,1.912 6.931,-0l6.798,-6.799Z" style="fill:#fff;"></path></g><g id="beam4" serif:id="beam"><path id="beam5" serif:id="beam" d="M25.728,61.108c1.912,-1.913 1.912,-5.018 -0,-6.931c-1.913,-1.913 -5.019,-1.913 -6.931,-0l-6.799,6.798c-1.912,1.913 -1.912,5.019 0,6.931c1.913,1.913 5.019,1.913 6.931,0l6.799,-6.798Z" style="fill:#fff;"></path></g><g id="beam6" serif:id="beam"><path id="beam7" serif:id="beam" d="M60.682,54.177c-1.913,-1.913 -5.018,-1.913 -6.931,-0c-1.912,1.913 -1.912,5.018 0,6.931l6.798,6.798c1.913,1.913 5.019,1.913 6.931,0c1.913,-1.912 1.913,-5.018 0,-6.931l-6.798,-6.798Z" style="fill:#fff;"></path></g><g id="beam8" serif:id="beam"><path id="beam9" serif:id="beam" d="M4.901,34.623c-2.705,0 -4.901,2.196 -4.901,4.901c0,2.705 2.196,4.901 4.901,4.901l9.614,0c2.705,0 4.901,-2.196 4.901,-4.901c0,-2.705 -2.196,-4.901 -4.901,-4.901l-9.614,0Z" style="fill:#fff;"></path></g><g id="beam10" serif:id="beam"><path id="beam11" serif:id="beam" d="M44.212,64.534c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,-0 -4.9,2.196 -4.9,4.901l-0,9.614c-0,2.705 2.196,4.901 4.9,4.901c2.705,-0 4.901,-2.196 4.901,-4.901l0,-9.614Z" style="fill:#fff;"></path></g><g id="beam12" serif:id="beam"><path id="beam13" serif:id="beam" d="M18.929,11.142c-1.912,-1.912 -5.018,-1.912 -6.931,0c-1.912,1.913 -1.912,5.019 0,6.931l6.799,6.799c1.912,1.912 5.018,1.912 6.931,-0c1.912,-1.913 1.912,-5.019 -0,-6.931l-6.799,-6.799Z" style="fill:#fff;"></path></g><g id="beam14" serif:id="beam"><path id="beam15" serif:id="beam" d="M64.108,34.623c-2.705,0 -4.901,2.196 -4.901,4.901c-0,2.705 2.196,4.901 4.901,4.901l9.614,0c2.705,0 4.901,-2.196 4.901,-4.901c-0,-2.705 -2.196,-4.901 -4.901,-4.901l-9.614,0Z" style="fill:#fff;"></path></g></g></g></svg>
+    </template>
+
+    <template v-if="mode == 'dark'">
+        <svg width="100%" height="100%" viewbox="0 0 79 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g id="mode_dark"><rect id="Bounds" x="0" y="-0" width="78.623" height="79.049" style="fill:none;"></rect><circle cx="39.311" cy="39.524" r="15.734" style="fill:#fff;"></circle><g id="beams"><g id="beam"><path id="beam1" serif:id="beam" d="M44.212,14.515c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,0 -4.901,2.196 -4.901,4.901c0,2.705 2.197,4.901 4.901,4.901c2.705,0 4.901,-2.196 4.901,-4.901Z" style="fill:#fff;"></path></g><g id="beam2" serif:id="beam"><path id="beam3" serif:id="beam" d="M60.662,24.892c1.902,-1.902 1.902,-4.99 0,-6.892l-0.04,-0.039c-1.901,-1.902 -4.989,-1.902 -6.891,-0c-1.901,1.901 -1.901,4.989 0,6.891l0.04,0.04c1.902,1.901 4.989,1.901 6.891,-0Z" style="fill:#fff;"></path></g><g id="beam4" serif:id="beam"><path id="beam5" serif:id="beam" d="M25.732,61.103c1.91,-1.91 1.91,-5.011 0,-6.921l-0.009,-0.01c-1.91,-1.91 -5.012,-1.91 -6.921,-0c-1.91,1.91 -1.91,5.011 -0,6.921l0.01,0.01c1.909,1.91 5.011,1.91 6.92,-0Z" style="fill:#fff;"></path></g><g id="beam6" serif:id="beam"><path id="beam7" serif:id="beam" d="M60.672,54.167c-1.907,-1.907 -5.004,-1.907 -6.911,0l-0.02,0.02c-1.907,1.907 -1.907,5.004 0,6.911c1.907,1.907 5.004,1.907 6.911,-0l0.02,-0.02c1.907,-1.907 1.907,-5.004 0,-6.911Z" style="fill:#fff;"></path></g><g id="beam8" serif:id="beam"><path id="beam9" serif:id="beam" d="M14.52,34.623c-2.702,0 -4.896,2.194 -4.896,4.896l0,0.01c0,2.702 2.194,4.896 4.896,4.896c2.702,0 4.896,-2.194 4.896,-4.896l-0,-0.01c-0,-2.702 -2.194,-4.896 -4.896,-4.896Z" style="fill:#fff;"></path></g><g id="beam10" serif:id="beam"><path id="beam11" serif:id="beam" d="M44.212,64.534c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,-0 -4.901,2.196 -4.901,4.901c0,2.704 2.197,4.9 4.901,4.9c2.705,0 4.901,-2.196 4.901,-4.9Z" style="fill:#fff;"></path></g><g id="beam12" serif:id="beam"><path id="beam13" serif:id="beam" d="M25.73,17.943c-1.911,-1.911 -5.015,-1.911 -6.926,0l-0.005,0.005c-1.911,1.911 -1.911,5.015 0,6.926c1.911,1.911 5.015,1.911 6.926,0l0.005,-0.005c1.911,-1.911 1.911,-5.014 -0,-6.926Z" style="fill:#fff;"></path></g><g id="beam14" serif:id="beam"><path id="beam15" serif:id="beam" d="M64.098,34.623c-2.699,0 -4.891,2.192 -4.891,4.892l-0,0.019c-0,2.699 2.192,4.891 4.891,4.891c2.7,0 4.892,-2.192 4.892,-4.891l0,-0.019c0,-2.7 -2.192,-4.892 -4.892,-4.892Z" style="fill:#fff;"></path></g></g></g></svg>
+    </template>
+
+    <template v-if="mode == 'darkest'">
+        <svg width="100%" height="100%" viewbox="0 0 79 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g id="mode_darkest"><rect id="Bounds" x="0" y="-0" width="78.623" height="79.049" style="fill:none;"></rect><path d="M39.315,23.791c8.684,-0 15.734,7.05 15.734,15.733c0,8.684 -7.05,15.734 -15.734,15.734c-8.683,0 -15.733,-7.05 -15.733,-15.734c-0,-8.683 7.05,-15.733 15.733,-15.733Zm0,4.737c6.069,0 10.997,4.927 10.997,10.996c-0,6.069 -4.928,10.996 -10.997,10.996c-6.068,0 -10.996,-4.927 -10.996,-10.996c0,-6.069 4.928,-10.996 10.996,-10.996Z" style="fill:#fff;"></path><g id="beams"><g id="beam"><path id="beam1" serif:id="beam" d="M44.216,14.515c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,0 -4.9,2.196 -4.9,4.901c-0,2.705 2.196,4.901 4.9,4.901c2.705,0 4.901,-2.196 4.901,-4.901Z" style="fill:#fff;"></path></g><g id="beam2" serif:id="beam"><path id="beam3" serif:id="beam" d="M60.666,24.892c1.902,-1.902 1.902,-4.99 0,-6.892l-0.04,-0.039c-1.901,-1.902 -4.989,-1.902 -6.891,-0c-1.901,1.901 -1.901,4.989 0,6.891l0.04,0.04c1.902,1.901 4.99,1.901 6.891,-0Z" style="fill:#fff;"></path></g><g id="beam4" serif:id="beam"><path id="beam5" serif:id="beam" d="M25.737,61.103c1.909,-1.91 1.909,-5.011 -0,-6.921l-0.01,-0.01c-1.91,-1.91 -5.011,-1.91 -6.921,-0c-1.91,1.91 -1.91,5.011 -0,6.921l0.01,0.01c1.91,1.91 5.011,1.91 6.921,-0Z" style="fill:#fff;"></path></g><g id="beam6" serif:id="beam"><path id="beam7" serif:id="beam" d="M60.676,54.167c-1.907,-1.907 -5.004,-1.907 -6.911,0l-0.02,0.02c-1.907,1.907 -1.907,5.004 0,6.911c1.907,1.907 5.004,1.907 6.911,-0l0.02,-0.02c1.907,-1.907 1.907,-5.004 0,-6.911Z" style="fill:#fff;"></path></g><g id="beam8" serif:id="beam"><path id="beam9" serif:id="beam" d="M14.524,34.623c-2.702,0 -4.896,2.194 -4.896,4.896l0,0.01c0,2.702 2.194,4.896 4.896,4.896c2.702,0 4.896,-2.194 4.896,-4.896l0,-0.01c0,-2.702 -2.194,-4.896 -4.896,-4.896Z" style="fill:#fff;"></path></g><g id="beam10" serif:id="beam"><path id="beam11" serif:id="beam" d="M44.216,64.534c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,-0 -4.9,2.196 -4.9,4.901c-0,2.704 2.196,4.9 4.9,4.9c2.705,0 4.901,-2.196 4.901,-4.9Z" style="fill:#fff;"></path></g><g id="beam12" serif:id="beam"><path id="beam13" serif:id="beam" d="M25.734,17.943c-1.911,-1.911 -5.015,-1.911 -6.926,0l-0.005,0.005c-1.911,1.911 -1.911,5.015 0,6.926c1.911,1.911 5.015,1.911 6.926,0l0.005,-0.005c1.911,-1.911 1.911,-5.014 0,-6.926Z" style="fill:#fff;"></path></g><g id="beam14" serif:id="beam"><path id="beam15" serif:id="beam" d="M64.103,34.623c-2.7,0 -4.892,2.192 -4.892,4.892l-0,0.019c-0,2.699 2.192,4.891 4.892,4.891c2.699,0 4.891,-2.192 4.891,-4.891l0,-0.019c0,-2.7 -2.192,-4.892 -4.891,-4.892Z" style="fill:#fff;"></path></g></g></g></svg>
+    </template>
+</a>
+
+<script>
+(function() {
+    const LOCAL_STORAGE_KEY = 'piccoloThemeMode'
+
+    var initialMode = localStorage.getItem(LOCAL_STORAGE_KEY)
+
+    if (initialMode) {
+        // Make sure the value in local storage is valid
+        if (['light', 'dark', 'darkest'].indexOf(initialMode) == -1) {
+            initialMode = 'light'
+            localStorage.setItem(LOCAL_STORAGE_KEY, initialMode)
+        }
+    } else {
+        // Check if the client prefers dark mode
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            initialMode = 'dark'
+        } else {
+            initialMode = 'light'
+        }
+        localStorage.setItem(LOCAL_STORAGE_KEY, initialMode)
+    }
+
+    document.documentElement.dataset.mode = initialMode
+
+    PetiteVue.createApp({
+        'mode': initialMode,
+        handleClick() {
+            let currentMode = this.mode
+
+            if (currentMode == 'light') {
+                this.mode = 'dark'
+            } else if (currentMode == 'dark') {
+                this.mode = 'darkest'
+            } else if (currentMode == 'darkest') {
+                this.mode = 'light'
+            }
+
+            document.documentElement.dataset.mode = this.mode
+            localStorage.setItem(LOCAL_STORAGE_KEY, this.mode)
+
+            console.log(this.mode)
+        }
+    }).mount('#mode_toggle')
+})()
+</script>
+            <p class="mobile_search_link">
+                <a href="../../search.html" title="Search">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 65 64" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2">
+                        <path d="M14.873 40.009c-2.315-3.943-3.642-8.532-3.642-13.429C11.231 11.91 23.141 0 37.811 0s26.58 11.91 26.58 26.58-11.91 26.58-26.58 26.58a26.44 26.44 0 0 1-14.277-4.161L9.739 62.794a3.12 3.12 0 0 1-4.413 0L.913 58.382c-1.217-1.218-1.217-3.196 0-4.413l13.96-13.96zM37.811 8.054c10.225 0 18.526 8.301 18.526 18.526s-8.301 18.526-18.526 18.526-18.526-8.301-18.526-18.526S27.586 8.054 37.811 8.054z" fill="#fff"></path>
+                    </svg>
+                </a>
+            </p>
+        
+
+        <div class="searchbox_wrapper">
+            
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+      <input type="submit" value="Go">
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+    </nav>
+</div>
+
+    
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper"><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">DEXPI Information Models</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../Builtin/model-index.html">Builtin</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="model-index.html">Core</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">ConceptualModel</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ConceptualObject.html">ConceptualObject</a></li>
+<li class="toctree-l3"><a class="reference internal" href="DataTypes/package-index.html">DataTypes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Diagram/package-index.html">Diagram</a></li>
+<li class="toctree-l3"><a class="reference internal" href="EngineeringModel.html">EngineeringModel</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Note.html">Note</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PersistentIdentifier.html">PersistentIdentifier</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PhysicalQuantities/package-index.html">PhysicalQuantities</a></li>
+<li class="toctree-l3"><a class="reference internal" href="QualifiedValue.html">QualifiedValue</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Role.html">Role</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../Plant/model-index.html">Plant</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Process/model-index.html">Process</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../disc-models/index.html">DISC Information Models</a></li>
+</ul>
+
+        </div>
+      </div>
+
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="conceptualmodel">
+<h1>ConceptualModel<a class="headerlink" href="#conceptualmodel" title="Link to this heading">¶</a></h1>
+<p><a class="sp-element reference internal" href="model-index.html"><span class="doc">Core</span></a><span class="sp-element">::</span><span class="sp-element">ConceptualModel</span></p>
+<section id="Overview">
+<h2>Overview<a class="headerlink" href="#Overview" title="Link to this heading">¶</a></h2>
+<p class="rubric">Abstract Class</p>
+<p>The conceptual content of an <a class="sp-element reference internal" href="EngineeringModel.html"><span class="doc">EngineeringModel</span></a>, i.e., engineering information
+independent from its graphical representation.</p>
+<p><span>(</span><a class="reference external" href="../../_images/uml-9.svg">Fullscreen Diagram</a><span>)</span></p>
+<svg xmlns:ns0="http://www.w3.org/2000/svg" width="566.3605143229167px" viewBox="0.0 0.0 566.3605143229167 397.4" style="max-width: 100%; background-color: white;"><style>
+            .uml-foreground-stroke {
+                stroke: black;
+                stroke-width: 1px;
+            }
+            
+            .uml-foreground-fill {
+                fill: black;
+            }
+            
+            .uml-background_color-type {
+                fill: #ffffcc;
+            }
+            
+            .uml-background_color-main_type {
+                fill: #ffff66;
+            }
+            
+            .uml-background_color-instance {
+                fill: blue;
+            }
+            
+            .uml-background_color-background {
+                fill: white;
+            }
+            
+            .uml-background_color-foreground {
+                fill: black;
+            }
+            
+            .uml-font-normal {
+                font-family: Arial;
+            }
+            
+            .uml-font-element {
+                font-family: Arial;
+            }
+            
+            .uml-fontsize-normal {
+                font-size: 10px;
+            }
+
+            .uml-fontsize-large {
+                font-size: 12px;
+            }
+            
+            .uml-source_marker-closed_arrow {
+                marker-start: url(#uml-marker-closed_arrow);
+            }
+            
+            .uml-source_marker-open_arrow {
+                marker-start: url(#uml-marker-open_arrow);
+            }
+            
+            .uml-source_marker-filled_diamond {
+                marker-start: url(#uml-marker-filled_diamond);
+            }
+
+            .uml-target_marker-closed_arrow {
+                marker-end: url(#uml-marker-closed_arrow);
+            }
+            
+            .uml-target_marker-open_arrow {
+                marker-end: url(#uml-marker-open_arrow);
+            }
+            
+            .uml-target_marker-filled_diamond {
+                marker-end: url(#uml-marker-filled_diamond);
+            }
+
+            </style><defs>
+        <marker id="uml-marker-closed_arrow" viewBox="-2 -2 14 14" refX="10" refY="5.0" markerWidth="14" markerHeight="14" orient="auto-start-reverse">
+          <path d="M 0 0 L 10 5.0 L 0 10 Z" stroke-linejoin="round" stroke-linecap="round" class="uml-foreground-stroke uml-background_color-background"></path>
+        </marker>
+        <marker id="uml-marker-open_arrow" viewBox="-2 -2 14 14" refX="10" refY="5.0" markerWidth="14" markerHeight="14" orient="auto-start-reverse">
+          <path d="M 0 0 L 10 5.0 L 0 10" stroke-linejoin="round" stroke-linecap="round" fill="none" class="uml-foreground-stroke"></path>
+        </marker>
+        <marker id="uml-marker-filled_diamond" viewBox="-2 -2 14 14" refX="10" refY="5.0" markerWidth="14" markerHeight="14" orient="auto-start-reverse">
+          <path d="M 0 5.0 L      5.0 2.0        10 5.0      5.0 8.0 Z       " stroke-linejoin="round" stroke-linecap="round" class="uml-foreground-stroke uml-background_color-foreground"></path>
+        </marker>
+      </defs><rect class="uml-background_color-main_type uml-foreground-stroke" x="293.65934244791674" y="248.39999999999998" width="150.0" height="23.799999999999997"></rect><text x="368.65934244791674" text-anchor="middle" font-size="0px" y="263.84"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold" font-style="italic">ConceptualModel</tspan></text><rect class="uml-background_color-type uml-foreground-stroke" x="115.45651041666673" y="125.19999999999999" width="200.0" height="23.799999999999997"></rect><text x="215.45651041666673" text-anchor="middle" font-size="0px" y="140.64"><a href="../../dexpi-models/Core/ConceptualObject.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold" font-style="italic">ConceptualObject</tspan></a></text><rect class="uml-background_color-type uml-foreground-stroke" x="12.0" y="12.0" width="148.6837890625" height="23.799999999999997"></rect><text x="86.34189453125" text-anchor="middle" font-size="0px" y="27.439999999999998"><a href="../../dexpi-models/Core/Diagram/AttributeRepresentation.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold">AttributeRepresentation</tspan></a></text><rect class="uml-background_color-type uml-foreground-stroke" x="335.04537760416673" y="361.59999999999997" width="67.2279296875" height="23.799999999999997"></rect><text x="368.65934244791674" text-anchor="middle" font-size="0px" y="377.03999999999996"><a href="../../dexpi-models/Core/Diagram/MetaData.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold">MetaData</tspan></a></text><rect class="uml-background_color-type uml-foreground-stroke" x="180.6837890625" y="12.0" width="136.212109375" height="23.799999999999997"></rect><text x="248.78984375000002" text-anchor="middle" font-size="0px" y="27.439999999999998"><a href="../../dexpi-models/Core/Diagram/RepresentationGroup.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold">RepresentationGroup</tspan></a></text><rect class="uml-background_color-type uml-foreground-stroke" x="335.4565104166667" y="125.19999999999999" width="116.40566406250001" height="23.799999999999997"></rect><text x="393.6593424479167" text-anchor="middle" font-size="0px" y="140.64"><a href="../../dexpi-models/Core/EngineeringModel.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold">EngineeringModel</tspan></a></text><rect class="uml-background_color-type uml-foreground-stroke" x="215.04537760416673" y="361.59999999999997" width="100.0" height="23.799999999999997"></rect><text x="265.04537760416673" text-anchor="middle" font-size="0px" y="377.03999999999996"><a href="../../dexpi-models/Core/Note.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold">Note</tspan></a></text><rect class="uml-background_color-type uml-foreground-stroke" x="35.944205729166754" y="248.39999999999998" width="119.3189453125" height="23.799999999999997"></rect><text x="95.60367838541676" text-anchor="middle" font-size="0px" y="263.84"><a href="../../dexpi-models/Core/PersistentIdentifier.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold">PersistentIdentifier</tspan></a></text><rect class="uml-background_color-type uml-foreground-stroke" x="442.34326171875006" y="361.59999999999997" width="100.0" height="23.799999999999997"></rect><text x="492.34326171875006" text-anchor="middle" font-size="0px" y="377.03999999999996"><a href="../../dexpi-models/Core/Role.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold">Role</tspan></a></text><polyline class="uml-foreground-stroke uml-source_marker-closed_arrow" points="235.45651041666673,149.0 235.45651041666673,193.2 235.45651041666673,194.2 235.45651041666673,222.59999999999997 343.65934244791674,222.59999999999997 343.65934244791674,248.39999999999998" fill="none"></polyline><rect class="uml-background_color-background " x="340.64664713541674" y="307.99999999999994" width="56.025390625" height="17.799999999999997"></rect><text x="368.65934244791674" text-anchor="middle" font-size="0px" y="320.43999999999994"><a href="../../dexpi-models/Core/ConceptualModel.html#sp:core.conceptualmodel.metadata"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">MetaData</tspan></a></text><polyline class="uml-foreground-stroke uml-source_marker-filled_diamond" points="368.65934244791674,272.2 368.65934244791674,307.99999999999994" fill="none"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="368.65934244791674,325.79999999999995 368.65934244791674,361.59999999999997" fill="none"></polyline><text x="376.65934244791674" font-size="0px" y="284.4"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">0..1</tspan></text><text x="376.65934244791674" font-size="0px" y="355.99999999999994"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">0..1</tspan></text><rect class="uml-background_color-background " x="264.0382161458334" y="307.99999999999994" width="35.34765625" height="17.799999999999997"></rect><text x="281.7120442708334" text-anchor="middle" font-size="0px" y="320.43999999999994"><a href="../../dexpi-models/Core/ConceptualModel.html#sp:core.conceptualmodel.notes"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Notes</tspan></a></text><polyline class="uml-foreground-stroke uml-source_marker-filled_diamond" points="331.15934244791674,272.2 331.15934244791674,297.99999999999994 281.7120442708334,297.99999999999994 281.7120442708334,307.99999999999994" fill="none"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="281.7120442708334,325.79999999999995 281.7120442708334,361.59999999999997" fill="none"></polyline><text x="339.15934244791674" font-size="0px" y="284.4"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">0..1</tspan></text><text x="289.7120442708334" font-size="0px" y="355.99999999999994"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</tspan></text><rect class="uml-background_color-background " x="458.33675130208337" y="307.99999999999994" width="34.6796875" height="17.799999999999997"></rect><text x="475.67659505208337" text-anchor="middle" font-size="0px" y="320.43999999999994"><a href="../../dexpi-models/Core/ConceptualModel.html#sp:core.conceptualmodel.roles"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Roles</tspan></a></text><polyline class="uml-foreground-stroke uml-source_marker-filled_diamond" points="406.15934244791674,272.2 406.15934244791674,297.99999999999994 475.67659505208337,297.99999999999994 475.67659505208337,307.99999999999994" fill="none"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="475.67659505208337,325.79999999999995 475.67659505208337,361.59999999999997" fill="none"></polyline><text x="414.15934244791674" font-size="0px" y="284.4"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">0..1</tspan></text><text x="483.67659505208337" font-size="0px" y="355.99999999999994"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</tspan></text><rect class="uml-background_color-background " x="463.65934244791674" y="251.39999999999998" width="90.701171875" height="17.799999999999997"></rect><text x="509.00992838541674" text-anchor="middle" font-size="0px" y="263.84"><a href="../../dexpi-models/Core/ConceptualObject.html#sp:core.conceptualobject.performedroles"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">PerformedRoles</tspan></a></text><polyline class="uml-foreground-stroke" points="275.45651041666673,149.0 275.45651041666673,174.79999999999998 333.96305338541674,174.79999999999998 333.96305338541674,212.59999999999997 509.00992838541674,212.59999999999997 509.00992838541674,251.39999999999998" fill="none"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="509.00992838541674,269.2 509.00992838541674,361.59999999999997" fill="none"></polyline><text x="283.45651041666673" font-size="0px" y="161.2"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</tspan></text><text x="517.0099283854167" font-size="0px" y="355.99999999999994"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</tspan></text><rect class="uml-background_color-background " x="40.91324869791674" y="184.79999999999998" width="109.380859375" height="17.799999999999997"></rect><text x="95.60367838541674" text-anchor="middle" font-size="0px" y="197.23999999999998"><a href="../../dexpi-models/Core/ConceptualObject.html#sp:core.conceptualobject.persistentidentifiers"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">PersistentIdentifiers</tspan></a></text><polyline class="uml-foreground-stroke uml-source_marker-filled_diamond" points="155.45651041666673,149.0 155.45651041666673,174.79999999999998 95.60367838541674,174.79999999999998 95.60367838541674,184.79999999999998" fill="none"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="95.60367838541674,202.59999999999997 95.60367838541676,248.39999999999998" fill="none"></polyline><text x="163.45651041666673" font-size="0px" y="161.2"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">0..1</tspan></text><text x="103.60367838541674" font-size="0px" y="242.79999999999995"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</tspan></text><rect class="uml-background_color-background " x="175.26315104166673" y="251.39999999999998" width="97.38671875" height="17.799999999999997"></rect><text x="223.95651041666673" text-anchor="middle" font-size="0px" y="263.84"><a href="../../dexpi-models/Core/ConceptualObject.html#sp:core.conceptualobject.referencednotes"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">ReferencedNotes</tspan></a></text><polyline class="uml-foreground-stroke" points="195.45651041666673,149.0 195.45651041666673,174.79999999999998 223.95651041666673,174.79999999999998 223.95651041666673,251.39999999999998" fill="none"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="223.95651041666673,269.2 223.95651041666673,335.79999999999995 248.37871093750005,335.79999999999995 248.37871093750005,361.59999999999997" fill="none"></polyline><text x="203.45651041666673" font-size="0px" y="161.2"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</tspan></text><text x="256.37871093750005" font-size="0px" y="355.99999999999994"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</tspan></text><rect class="uml-background_color-background " x="67.00107421875003" y="71.6" width="38.681640625" height="17.799999999999997"></rect><text x="86.34189453125003" text-anchor="middle" font-size="0px" y="84.03999999999999"><a href="../../dexpi-models/Core/Diagram/AttributeRepresentation.html#sp:core.diagram.attributerepresentation.object"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Object</tspan></a></text><polyline class="uml-foreground-stroke" points="86.34189453125,35.8 86.34189453125003,71.6" fill="none"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="86.34189453125003,89.39999999999999 86.34189453125003,99.39999999999999 182.12317708333336,99.39999999999999 182.1231770833334,125.19999999999999" fill="none"></polyline><text x="94.34189453125003" font-size="0px" y="48.0"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</tspan></text><rect class="uml-background_color-background " x="216.10722656250005" y="71.6" width="65.365234375" height="17.799999999999997"></rect><text x="248.78984375000005" text-anchor="middle" font-size="0px" y="84.03999999999999"><a href="../../dexpi-models/Core/Diagram/RepresentationGroup.html#sp:core.diagram.representationgroup.represents"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Represents</tspan></a></text><polyline class="uml-foreground-stroke" points="248.78984375000002,35.8 248.78984375000005,71.6" fill="none"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="248.78984375000005,89.39999999999999 248.78984375000005,125.19999999999999" fill="none"></polyline><text x="256.78984375000005" font-size="0px" y="48.0"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</tspan></text><rect class="uml-background_color-background " x="344.96305338541674" y="184.79999999999998" width="97.392578125" height="17.799999999999997"></rect><text x="393.65934244791674" text-anchor="middle" font-size="0px" y="197.23999999999998"><a href="../../dexpi-models/Core/EngineeringModel.html#sp:core.engineeringmodel.conceptualmodel"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">ConceptualModel</tspan></a></text><polyline class="uml-foreground-stroke uml-source_marker-filled_diamond" points="393.6593424479167,149.0 393.65934244791674,184.79999999999998" fill="none"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="393.65934244791674,202.59999999999997 393.65934244791674,248.39999999999998" fill="none"></polyline><text x="401.6593424479167" font-size="0px" y="161.2"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">0..1</tspan></text><text x="401.65934244791674" font-size="0px" y="242.79999999999995"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">0..1</tspan></text></svg><p class="rubric">Supertypes</p>
+<ul class="simple">
+<li><p><a class="sp-element reference internal" href="ConceptualObject.html"><span class="doc">ConceptualObject</span></a></p></li>
+</ul>
+<p class="rubric">Subtypes</p>
+<ul class="simple">
+<li><p><a class="sp-element reference internal" href="../Plant/PlantModel.html"><span class="doc">PlantModel</span></a></p></li>
+<li><p><a class="sp-element reference internal" href="../Process/ProcessModel.html"><span class="doc">ProcessModel</span></a></p></li>
+</ul>
+</section>
+<section id="Members">
+<h2>Members<a class="headerlink" href="#Members" title="Link to this heading">¶</a></h2>
+<section id="member-list-section-Composition Properties">
+<h3>Composition Properties<a class="headerlink" href="#member-list-section-Composition%20Properties" title="Link to this heading">¶</a></h3>
+</section>
+<table class="docutils align-left">
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Multiplicity</p></th>
+<th class="head"><p>Type</p></th>
+<th class="head"><p>Ordered</p></th>
+<th class="head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="#sp:core.conceptualmodel.metadata"><span class="std std-ref">MetaData</span></a></p></td>
+<td><p>0..1</p></td>
+<td><p><a class="sp-element reference internal" href="Diagram/MetaData.html"><span class="doc">MetaData</span></a></p></td>
+<td><p>no</p></td>
+<td><p>The <a class="sp-element reference internal" href="Diagram/MetaData.html"><span class="doc">MetaData</span></a> of the <a class="sp-element reference internal" href="#"><span class="doc">ConceptualModel</span></a>.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="#sp:core.conceptualmodel.notes"><span class="std std-ref">Notes</span></a></p></td>
+<td><p>*</p></td>
+<td><p><a class="sp-element reference internal" href="Note.html"><span class="doc">Note</span></a></p></td>
+<td><p>no</p></td>
+<td><p>The <a class="sp-element reference internal" href="Note.html"><span class="doc">Notes</span></a> of the <a class="sp-element reference internal" href="#"><span class="doc">ConceptualModel</span></a>.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="#sp:core.conceptualmodel.roles"><span class="std std-ref">Roles</span></a></p></td>
+<td><p>*</p></td>
+<td><p><a class="sp-element reference internal" href="Role.html"><span class="doc">Role</span></a></p></td>
+<td><p>no</p></td>
+<td><p>The <a class="sp-element reference internal" href="Role.html"><span class="doc">Roles</span></a> of the <a class="sp-element reference internal" href="#"><span class="doc">ConceptualModel</span></a>.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="sp:core.conceptualmodel.metadata">
+<h2>MetaData<a class="headerlink" href="#sp:core.conceptualmodel.metadata" title="Link to this heading">¶</a></h2>
+<p class="rubric">Composition Property</p>
+<p>The <a class="sp-element reference internal" href="Diagram/MetaData.html"><span class="doc">MetaData</span></a> of the <a class="sp-element reference internal" href="#"><span class="doc">ConceptualModel</span></a>.</p>
+<p><strong>Type:</strong><span> </span><a class="sp-element reference internal" href="Diagram/MetaData.html"><span class="doc">MetaData</span></a></p>
+<p><strong>Multiplicity:</strong><span> </span><span>0..1</span></p>
+<p><strong>Ordered:</strong><span> </span><span>no</span></p>
+</section>
+<section id="sp:core.conceptualmodel.notes">
+<h2>Notes<a class="headerlink" href="#sp:core.conceptualmodel.notes" title="Link to this heading">¶</a></h2>
+<p class="rubric">Composition Property</p>
+<p>The <a class="sp-element reference internal" href="Note.html"><span class="doc">Notes</span></a> of the <a class="sp-element reference internal" href="#"><span class="doc">ConceptualModel</span></a>.</p>
+<p><strong>Type:</strong><span> </span><a class="sp-element reference internal" href="Note.html"><span class="doc">Note</span></a></p>
+<p><strong>Multiplicity:</strong><span> </span><span>*</span></p>
+<p><strong>Ordered:</strong><span> </span><span>no</span></p>
+</section>
+<section id="sp:core.conceptualmodel.roles">
+<h2>Roles<a class="headerlink" href="#sp:core.conceptualmodel.roles" title="Link to this heading">¶</a></h2>
+<p class="rubric">Composition Property</p>
+<p>The <a class="sp-element reference internal" href="Role.html"><span class="doc">Roles</span></a> of the <a class="sp-element reference internal" href="#"><span class="doc">ConceptualModel</span></a>.</p>
+<p><strong>Type:</strong><span> </span><a class="sp-element reference internal" href="Role.html"><span class="doc">Role</span></a></p>
+<p><strong>Multiplicity:</strong><span> </span><span>*</span></p>
+<p><strong>Ordered:</strong><span> </span><span>no</span></p>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+    
+        <div id="show_right_sidebar">
+            <p><a class="toggle_right_sidebar" href="#"><span class="icon">&lt;</span><span>Page contents</span></a></p>
+        </div>
+
+        <div id="right_sidebar">
+            <p><a class="toggle_right_sidebar" href="#"><span class="icon">&gt;</span><span>Page contents:</span></a></p>
+            <div class="page_toc">
+                <ul>
+<li><a class="reference internal" href="#">ConceptualModel</a><ul>
+<li><a class="reference internal" href="#Overview">Overview</a></li>
+<li><a class="reference internal" href="#Members">Members</a><ul>
+<li><a class="reference internal" href="#member-list-section-Composition%20Properties">Composition Properties</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#sp:core.conceptualmodel.metadata">MetaData</a></li>
+<li><a class="reference internal" href="#sp:core.conceptualmodel.notes">Notes</a></li>
+<li><a class="reference internal" href="#sp:core.conceptualmodel.roles">Roles</a></li>
+</ul>
+</li>
+</ul>
+
+            </div>
+        </div>
+    
+
+      <div class="clearer"></div>
+    </div>
+    <div class="button_nav_wrapper">
+        <div class="button_nav">
+            <div class="left">
+                
+                <a href="model-index.html">
+                    <span class="icon">&lt;</span><span>Core</span></a>
+                
+            </div>
+
+            <div class="right">
+                
+                    <a href="ConceptualObject.html"><span>ConceptualObject</span><span class="icon">&gt;</span></a>
+                
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer" role="contentinfo">
+    © Copyright .
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.1.3.
+    </div>
+
+<p id="theme_credit">Styled using the <a href="https://github.com/piccolo-orm/piccolo_theme">Piccolo Theme</a></p>
+  </body>
+</html>

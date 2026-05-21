@@ -1,0 +1,5 @@
+SeparatingByCentrifugalForce
+============================
+
+.. sp:internal-autoelement::
+   :element: Process.Process.SeparatingByCentrifugalForce

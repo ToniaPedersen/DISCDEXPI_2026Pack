@@ -1,0 +1,5 @@
+UnsignedByte
+============
+
+.. sp:internal-autoelement::
+   :element: Builtin.UnsignedByte

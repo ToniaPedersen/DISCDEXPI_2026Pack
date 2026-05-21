@@ -1,0 +1,5 @@
+ElectromagneticFlowMeter
+========================
+
+.. sp:internal-autoelement::
+   :element: Plant.Piping.ElectromagneticFlowMeter

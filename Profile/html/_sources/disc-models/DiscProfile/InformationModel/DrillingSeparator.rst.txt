@@ -1,0 +1,5 @@
+DrillingSeparator
+=================
+
+.. sp:internal-autoelement::
+   :element: DiscProfile.InformationModel.DrillingSeparator

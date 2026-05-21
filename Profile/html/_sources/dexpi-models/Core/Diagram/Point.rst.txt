@@ -1,0 +1,5 @@
+Point
+=====
+
+.. sp:internal-autoelement::
+   :element: Core.Diagram.Point

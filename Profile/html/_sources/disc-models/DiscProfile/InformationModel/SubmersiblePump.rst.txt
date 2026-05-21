@@ -1,0 +1,5 @@
+SubmersiblePump
+===============
+
+.. sp:internal-autoelement::
+   :element: DiscProfile.InformationModel.SubmersiblePump

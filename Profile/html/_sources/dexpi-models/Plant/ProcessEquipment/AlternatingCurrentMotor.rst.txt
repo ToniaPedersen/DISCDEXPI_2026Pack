@@ -1,0 +1,5 @@
+AlternatingCurrentMotor
+=======================
+
+.. sp:internal-autoelement::
+   :element: Plant.ProcessEquipment.AlternatingCurrentMotor

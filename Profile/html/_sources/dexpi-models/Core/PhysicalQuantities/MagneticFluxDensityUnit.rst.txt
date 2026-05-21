@@ -1,0 +1,5 @@
+MagneticFluxDensityUnit
+=======================
+
+.. sp:internal-autoelement::
+   :element: Core.PhysicalQuantities.MagneticFluxDensityUnit

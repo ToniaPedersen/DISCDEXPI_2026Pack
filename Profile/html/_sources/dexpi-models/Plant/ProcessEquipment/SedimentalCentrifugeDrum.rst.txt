@@ -1,0 +1,5 @@
+SedimentalCentrifugeDrum
+========================
+
+.. sp:internal-autoelement::
+   :element: Plant.ProcessEquipment.SedimentalCentrifugeDrum

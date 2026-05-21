@@ -1,0 +1,5 @@
+MeasuringLineFunction
+=====================
+
+.. sp:internal-autoelement::
+   :element: Plant.Instrumentation.MeasuringLineFunction

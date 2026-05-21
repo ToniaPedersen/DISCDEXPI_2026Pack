@@ -1,0 +1,5 @@
+MeasuringProcessVariable
+========================
+
+.. sp:internal-autoelement::
+   :element: Process.Process.MeasuringProcessVariable

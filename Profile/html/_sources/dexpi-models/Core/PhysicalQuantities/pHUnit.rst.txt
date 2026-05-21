@@ -1,0 +1,5 @@
+pHUnit
+======
+
+.. sp:internal-autoelement::
+   :element: Core.PhysicalQuantities.pHUnit

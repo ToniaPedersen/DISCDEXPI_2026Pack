@@ -1,0 +1,5 @@
+MetaData
+========
+
+.. sp:internal-autoelement::
+   :element: Core.Diagram.MetaData

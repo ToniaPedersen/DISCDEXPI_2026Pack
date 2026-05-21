@@ -1,0 +1,5 @@
+GlobeValve
+==========
+
+.. sp:internal-autoelement::
+   :element: Plant.Piping.GlobeValve

@@ -1,0 +1,5 @@
+StaticMixer
+===========
+
+.. sp:internal-autoelement::
+   :element: Plant.ProcessEquipment.StaticMixer

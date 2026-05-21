@@ -1,0 +1,5 @@
+ElectronicFrequencyConverter
+============================
+
+.. sp:internal-autoelement::
+   :element: Plant.Instrumentation.ElectronicFrequencyConverter

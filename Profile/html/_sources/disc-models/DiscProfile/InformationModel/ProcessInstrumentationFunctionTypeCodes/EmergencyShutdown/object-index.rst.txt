@@ -1,0 +1,5 @@
+EmergencyShutdown
+=================
+
+.. sp:internal-autoelement::
+   :element: DiscProfile.InformationModel.ProcessInstrumentationFunctionTypeCodes.EmergencyShutdown

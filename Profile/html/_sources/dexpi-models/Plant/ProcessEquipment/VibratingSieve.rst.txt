@@ -1,0 +1,5 @@
+VibratingSieve
+==============
+
+.. sp:internal-autoelement::
+   :element: Plant.ProcessEquipment.VibratingSieve

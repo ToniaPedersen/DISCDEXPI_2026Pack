@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en" data-content_root="../../../">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>RemovingThermalEnergy — DISC Profile 0.5</title>
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=b86133f3">
+    <link rel="stylesheet" type="text/css" href="../../../_static/basic_mod.css?v=9b2032db">
+    <link rel="stylesheet" type="text/css" href="../../../_static/sp.css">
+    <script src="../../../_static/documentation_options.js?v=db78e746"></script>
+    <script src="../../../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../_static/js/theme.js"></script>
+    <script src="../../../_static/js/petite-vue.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html">
+    <link rel="search" title="Search" href="../../../search.html">
+    <link rel="next" title="RotaryMixing" href="RotaryMixing.html">
+    <link rel="prev" title="RelievingVacuumAndOverpressure" href="RelievingVacuumAndOverpressure.html"> 
+  </head><body data-dark_mode_code_blocks="true">
+
+<div id="top_nav">
+    
+
+    <nav>
+        
+            
+        
+
+        <p id="toggle_sidebar">
+            <a href="#" title="Toggle sidebar">|||</a>
+        </p>
+        <h1><a href="../../../index.html" title="Go to homepage">DISC Profile 0.5</a></h1>
+
+        <a id="mode_toggle" href="#" @click.prevent="handleClick" :title="mode">
+    <template v-if="mode == 'light'">
+        <svg width="100%" height="100%" viewbox="0 0 79 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g id="mode_light"><rect id="Bounds" x="0" y="-0" width="78.623" height="79.049" style="fill:none;"></rect><circle cx="39.311" cy="39.524" r="15.734" style="fill:#fff;"></circle><g id="beams"><g id="beam"><path id="beam1" serif:id="beam" d="M44.212,4.901c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,-0 -4.9,2.196 -4.9,4.901l-0,9.614c-0,2.705 2.196,4.901 4.9,4.901c2.705,0 4.901,-2.196 4.901,-4.901l0,-9.614Z" style="fill:#fff;"></path></g><g id="beam2" serif:id="beam"><path id="beam3" serif:id="beam" d="M67.48,18.073c1.913,-1.912 1.913,-5.018 0,-6.931c-1.912,-1.912 -5.018,-1.912 -6.931,0l-6.798,6.799c-1.912,1.912 -1.912,5.018 0,6.931c1.913,1.912 5.018,1.912 6.931,-0l6.798,-6.799Z" style="fill:#fff;"></path></g><g id="beam4" serif:id="beam"><path id="beam5" serif:id="beam" d="M25.728,61.108c1.912,-1.913 1.912,-5.018 -0,-6.931c-1.913,-1.913 -5.019,-1.913 -6.931,-0l-6.799,6.798c-1.912,1.913 -1.912,5.019 0,6.931c1.913,1.913 5.019,1.913 6.931,0l6.799,-6.798Z" style="fill:#fff;"></path></g><g id="beam6" serif:id="beam"><path id="beam7" serif:id="beam" d="M60.682,54.177c-1.913,-1.913 -5.018,-1.913 -6.931,-0c-1.912,1.913 -1.912,5.018 0,6.931l6.798,6.798c1.913,1.913 5.019,1.913 6.931,0c1.913,-1.912 1.913,-5.018 0,-6.931l-6.798,-6.798Z" style="fill:#fff;"></path></g><g id="beam8" serif:id="beam"><path id="beam9" serif:id="beam" d="M4.901,34.623c-2.705,0 -4.901,2.196 -4.901,4.901c0,2.705 2.196,4.901 4.901,4.901l9.614,0c2.705,0 4.901,-2.196 4.901,-4.901c0,-2.705 -2.196,-4.901 -4.901,-4.901l-9.614,0Z" style="fill:#fff;"></path></g><g id="beam10" serif:id="beam"><path id="beam11" serif:id="beam" d="M44.212,64.534c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,-0 -4.9,2.196 -4.9,4.901l-0,9.614c-0,2.705 2.196,4.901 4.9,4.901c2.705,-0 4.901,-2.196 4.901,-4.901l0,-9.614Z" style="fill:#fff;"></path></g><g id="beam12" serif:id="beam"><path id="beam13" serif:id="beam" d="M18.929,11.142c-1.912,-1.912 -5.018,-1.912 -6.931,0c-1.912,1.913 -1.912,5.019 0,6.931l6.799,6.799c1.912,1.912 5.018,1.912 6.931,-0c1.912,-1.913 1.912,-5.019 -0,-6.931l-6.799,-6.799Z" style="fill:#fff;"></path></g><g id="beam14" serif:id="beam"><path id="beam15" serif:id="beam" d="M64.108,34.623c-2.705,0 -4.901,2.196 -4.901,4.901c-0,2.705 2.196,4.901 4.901,4.901l9.614,0c2.705,0 4.901,-2.196 4.901,-4.901c-0,-2.705 -2.196,-4.901 -4.901,-4.901l-9.614,0Z" style="fill:#fff;"></path></g></g></g></svg>
+    </template>
+
+    <template v-if="mode == 'dark'">
+        <svg width="100%" height="100%" viewbox="0 0 79 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g id="mode_dark"><rect id="Bounds" x="0" y="-0" width="78.623" height="79.049" style="fill:none;"></rect><circle cx="39.311" cy="39.524" r="15.734" style="fill:#fff;"></circle><g id="beams"><g id="beam"><path id="beam1" serif:id="beam" d="M44.212,14.515c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,0 -4.901,2.196 -4.901,4.901c0,2.705 2.197,4.901 4.901,4.901c2.705,0 4.901,-2.196 4.901,-4.901Z" style="fill:#fff;"></path></g><g id="beam2" serif:id="beam"><path id="beam3" serif:id="beam" d="M60.662,24.892c1.902,-1.902 1.902,-4.99 0,-6.892l-0.04,-0.039c-1.901,-1.902 -4.989,-1.902 -6.891,-0c-1.901,1.901 -1.901,4.989 0,6.891l0.04,0.04c1.902,1.901 4.989,1.901 6.891,-0Z" style="fill:#fff;"></path></g><g id="beam4" serif:id="beam"><path id="beam5" serif:id="beam" d="M25.732,61.103c1.91,-1.91 1.91,-5.011 0,-6.921l-0.009,-0.01c-1.91,-1.91 -5.012,-1.91 -6.921,-0c-1.91,1.91 -1.91,5.011 -0,6.921l0.01,0.01c1.909,1.91 5.011,1.91 6.92,-0Z" style="fill:#fff;"></path></g><g id="beam6" serif:id="beam"><path id="beam7" serif:id="beam" d="M60.672,54.167c-1.907,-1.907 -5.004,-1.907 -6.911,0l-0.02,0.02c-1.907,1.907 -1.907,5.004 0,6.911c1.907,1.907 5.004,1.907 6.911,-0l0.02,-0.02c1.907,-1.907 1.907,-5.004 0,-6.911Z" style="fill:#fff;"></path></g><g id="beam8" serif:id="beam"><path id="beam9" serif:id="beam" d="M14.52,34.623c-2.702,0 -4.896,2.194 -4.896,4.896l0,0.01c0,2.702 2.194,4.896 4.896,4.896c2.702,0 4.896,-2.194 4.896,-4.896l-0,-0.01c-0,-2.702 -2.194,-4.896 -4.896,-4.896Z" style="fill:#fff;"></path></g><g id="beam10" serif:id="beam"><path id="beam11" serif:id="beam" d="M44.212,64.534c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,-0 -4.901,2.196 -4.901,4.901c0,2.704 2.197,4.9 4.901,4.9c2.705,0 4.901,-2.196 4.901,-4.9Z" style="fill:#fff;"></path></g><g id="beam12" serif:id="beam"><path id="beam13" serif:id="beam" d="M25.73,17.943c-1.911,-1.911 -5.015,-1.911 -6.926,0l-0.005,0.005c-1.911,1.911 -1.911,5.015 0,6.926c1.911,1.911 5.015,1.911 6.926,0l0.005,-0.005c1.911,-1.911 1.911,-5.014 -0,-6.926Z" style="fill:#fff;"></path></g><g id="beam14" serif:id="beam"><path id="beam15" serif:id="beam" d="M64.098,34.623c-2.699,0 -4.891,2.192 -4.891,4.892l-0,0.019c-0,2.699 2.192,4.891 4.891,4.891c2.7,0 4.892,-2.192 4.892,-4.891l0,-0.019c0,-2.7 -2.192,-4.892 -4.892,-4.892Z" style="fill:#fff;"></path></g></g></g></svg>
+    </template>
+
+    <template v-if="mode == 'darkest'">
+        <svg width="100%" height="100%" viewbox="0 0 79 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g id="mode_darkest"><rect id="Bounds" x="0" y="-0" width="78.623" height="79.049" style="fill:none;"></rect><path d="M39.315,23.791c8.684,-0 15.734,7.05 15.734,15.733c0,8.684 -7.05,15.734 -15.734,15.734c-8.683,0 -15.733,-7.05 -15.733,-15.734c-0,-8.683 7.05,-15.733 15.733,-15.733Zm0,4.737c6.069,0 10.997,4.927 10.997,10.996c-0,6.069 -4.928,10.996 -10.997,10.996c-6.068,0 -10.996,-4.927 -10.996,-10.996c0,-6.069 4.928,-10.996 10.996,-10.996Z" style="fill:#fff;"></path><g id="beams"><g id="beam"><path id="beam1" serif:id="beam" d="M44.216,14.515c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,0 -4.9,2.196 -4.9,4.901c-0,2.705 2.196,4.901 4.9,4.901c2.705,0 4.901,-2.196 4.901,-4.901Z" style="fill:#fff;"></path></g><g id="beam2" serif:id="beam"><path id="beam3" serif:id="beam" d="M60.666,24.892c1.902,-1.902 1.902,-4.99 0,-6.892l-0.04,-0.039c-1.901,-1.902 -4.989,-1.902 -6.891,-0c-1.901,1.901 -1.901,4.989 0,6.891l0.04,0.04c1.902,1.901 4.99,1.901 6.891,-0Z" style="fill:#fff;"></path></g><g id="beam4" serif:id="beam"><path id="beam5" serif:id="beam" d="M25.737,61.103c1.909,-1.91 1.909,-5.011 -0,-6.921l-0.01,-0.01c-1.91,-1.91 -5.011,-1.91 -6.921,-0c-1.91,1.91 -1.91,5.011 -0,6.921l0.01,0.01c1.91,1.91 5.011,1.91 6.921,-0Z" style="fill:#fff;"></path></g><g id="beam6" serif:id="beam"><path id="beam7" serif:id="beam" d="M60.676,54.167c-1.907,-1.907 -5.004,-1.907 -6.911,0l-0.02,0.02c-1.907,1.907 -1.907,5.004 0,6.911c1.907,1.907 5.004,1.907 6.911,-0l0.02,-0.02c1.907,-1.907 1.907,-5.004 0,-6.911Z" style="fill:#fff;"></path></g><g id="beam8" serif:id="beam"><path id="beam9" serif:id="beam" d="M14.524,34.623c-2.702,0 -4.896,2.194 -4.896,4.896l0,0.01c0,2.702 2.194,4.896 4.896,4.896c2.702,0 4.896,-2.194 4.896,-4.896l0,-0.01c0,-2.702 -2.194,-4.896 -4.896,-4.896Z" style="fill:#fff;"></path></g><g id="beam10" serif:id="beam"><path id="beam11" serif:id="beam" d="M44.216,64.534c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,-0 -4.9,2.196 -4.9,4.901c-0,2.704 2.196,4.9 4.9,4.9c2.705,0 4.901,-2.196 4.901,-4.9Z" style="fill:#fff;"></path></g><g id="beam12" serif:id="beam"><path id="beam13" serif:id="beam" d="M25.734,17.943c-1.911,-1.911 -5.015,-1.911 -6.926,0l-0.005,0.005c-1.911,1.911 -1.911,5.015 0,6.926c1.911,1.911 5.015,1.911 6.926,0l0.005,-0.005c1.911,-1.911 1.911,-5.014 0,-6.926Z" style="fill:#fff;"></path></g><g id="beam14" serif:id="beam"><path id="beam15" serif:id="beam" d="M64.103,34.623c-2.7,0 -4.892,2.192 -4.892,4.892l-0,0.019c-0,2.699 2.192,4.891 4.892,4.891c2.699,0 4.891,-2.192 4.891,-4.891l0,-0.019c0,-2.7 -2.192,-4.892 -4.891,-4.892Z" style="fill:#fff;"></path></g></g></g></svg>
+    </template>
+</a>
+
+<script>
+(function() {
+    const LOCAL_STORAGE_KEY = 'piccoloThemeMode'
+
+    var initialMode = localStorage.getItem(LOCAL_STORAGE_KEY)
+
+    if (initialMode) {
+        // Make sure the value in local storage is valid
+        if (['light', 'dark', 'darkest'].indexOf(initialMode) == -1) {
+            initialMode = 'light'
+            localStorage.setItem(LOCAL_STORAGE_KEY, initialMode)
+        }
+    } else {
+        // Check if the client prefers dark mode
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            initialMode = 'dark'
+        } else {
+            initialMode = 'light'
+        }
+        localStorage.setItem(LOCAL_STORAGE_KEY, initialMode)
+    }
+
+    document.documentElement.dataset.mode = initialMode
+
+    PetiteVue.createApp({
+        'mode': initialMode,
+        handleClick() {
+            let currentMode = this.mode
+
+            if (currentMode == 'light') {
+                this.mode = 'dark'
+            } else if (currentMode == 'dark') {
+                this.mode = 'darkest'
+            } else if (currentMode == 'darkest') {
+                this.mode = 'light'
+            }
+
+            document.documentElement.dataset.mode = this.mode
+            localStorage.setItem(LOCAL_STORAGE_KEY, this.mode)
+
+            console.log(this.mode)
+        }
+    }).mount('#mode_toggle')
+})()
+</script>
+            <p class="mobile_search_link">
+                <a href="../../../search.html" title="Search">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 65 64" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2">
+                        <path d="M14.873 40.009c-2.315-3.943-3.642-8.532-3.642-13.429C11.231 11.91 23.141 0 37.811 0s26.58 11.91 26.58 26.58-11.91 26.58-26.58 26.58a26.44 26.44 0 0 1-14.277-4.161L9.739 62.794a3.12 3.12 0 0 1-4.413 0L.913 58.382c-1.217-1.218-1.217-3.196 0-4.413l13.96-13.96zM37.811 8.054c10.225 0 18.526 8.301 18.526 18.526s-8.301 18.526-18.526 18.526-18.526-8.301-18.526-18.526S27.586 8.054 37.811 8.054z" fill="#fff"></path>
+                    </svg>
+                </a>
+            </p>
+        
+
+        <div class="searchbox_wrapper">
+            
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+      <input type="submit" value="Go">
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+    </nav>
+</div>
+
+    
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper"><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">DEXPI Information Models</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../Builtin/model-index.html">Builtin</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Core/model-index.html">Core</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Plant/model-index.html">Plant</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../model-index.html">Process</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../Enumerations/package-index.html">Enumerations</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="package-index.html">Process</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../ProcessModel.html">ProcessModel</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../disc-models/index.html">DISC Information Models</a></li>
+</ul>
+
+        </div>
+      </div>
+
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="removingthermalenergy">
+<h1>RemovingThermalEnergy<a class="headerlink" href="#removingthermalenergy" title="Link to this heading">¶</a></h1>
+<p><a class="sp-element reference internal" href="../model-index.html"><span class="doc">Process</span></a><span class="sp-element">::</span><a class="sp-element reference internal" href="package-index.html"><span class="doc">Process</span></a><span class="sp-element">::</span><span class="sp-element">RemovingThermalEnergy</span></p>
+<section id="Overview">
+<h2>Overview<a class="headerlink" href="#Overview" title="Link to this heading">¶</a></h2>
+<p class="rubric">Concrete Class</p>
+<p>This process removes enthalpy from a material in order to reduce temperature or change
+the state of the material. See also <a class="sp-element reference internal" href="Cooling.html"><span class="doc">Cooling</span></a>.</p>
+<p><span>(</span><a class="reference external" href="../../../_images/uml-533.svg">Fullscreen Diagram</a><span>)</span></p>
+<svg xmlns:ns0="http://www.w3.org/2000/svg" width="4354.72873046875px" viewBox="0.0 0.0 4354.72873046875 820.4" style="max-width: 100%; background-color: white;"><style>
+            .uml-foreground-stroke {
+                stroke: black;
+                stroke-width: 1px;
+            }
+            
+            .uml-foreground-fill {
+                fill: black;
+            }
+            
+            .uml-background_color-type {
+                fill: #ffffcc;
+            }
+            
+            .uml-background_color-main_type {
+                fill: #ffff66;
+            }
+            
+            .uml-background_color-instance {
+                fill: blue;
+            }
+            
+            .uml-background_color-background {
+                fill: white;
+            }
+            
+            .uml-background_color-foreground {
+                fill: black;
+            }
+            
+            .uml-font-normal {
+                font-family: Arial;
+            }
+            
+            .uml-font-element {
+                font-family: Arial;
+            }
+            
+            .uml-fontsize-normal {
+                font-size: 10px;
+            }
+
+            .uml-fontsize-large {
+                font-size: 12px;
+            }
+            
+            .uml-source_marker-closed_arrow {
+                marker-start: url(#uml-marker-closed_arrow);
+            }
+            
+            .uml-source_marker-open_arrow {
+                marker-start: url(#uml-marker-open_arrow);
+            }
+            
+            .uml-source_marker-filled_diamond {
+                marker-start: url(#uml-marker-filled_diamond);
+            }
+
+            .uml-target_marker-closed_arrow {
+                marker-end: url(#uml-marker-closed_arrow);
+            }
+            
+            .uml-target_marker-open_arrow {
+                marker-end: url(#uml-marker-open_arrow);
+            }
+            
+            .uml-target_marker-filled_diamond {
+                marker-end: url(#uml-marker-filled_diamond);
+            }
+
+            </style><defs>
+        <marker id="uml-marker-closed_arrow" viewBox="-2 -2 14 14" refX="10" refY="5.0" markerWidth="14" markerHeight="14" orient="auto-start-reverse">
+          <path d="M 0 0 L 10 5.0 L 0 10 Z" stroke-linejoin="round" stroke-linecap="round" class="uml-foreground-stroke uml-background_color-background"></path>
+        </marker>
+        <marker id="uml-marker-open_arrow" viewBox="-2 -2 14 14" refX="10" refY="5.0" markerWidth="14" markerHeight="14" orient="auto-start-reverse">
+          <path d="M 0 0 L 10 5.0 L 0 10" stroke-linejoin="round" stroke-linecap="round" fill="none" class="uml-foreground-stroke"></path>
+        </marker>
+        <marker id="uml-marker-filled_diamond" viewBox="-2 -2 14 14" refX="10" refY="5.0" markerWidth="14" markerHeight="14" orient="auto-start-reverse">
+          <path d="M 0 5.0 L      5.0 2.0        10 5.0      5.0 8.0 Z       " stroke-linejoin="round" stroke-linecap="round" class="uml-foreground-stroke uml-background_color-foreground"></path>
+        </marker>
+      </defs><rect class="uml-background_color-type uml-foreground-stroke" x="439.93185546875" y="125.19999999999999" width="200.0" height="23.799999999999997"></rect><text x="539.93185546875" text-anchor="middle" font-size="0px" y="140.64"><a href="../../../dexpi-models/Core/ConceptualObject.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold" font-style="italic">ConceptualObject</tspan></a></text><rect class="uml-background_color-type uml-foreground-stroke" x="161.44259765625003" y="401.59999999999997" width="50.0" height="23.799999999999997"></rect><text x="186.44259765625003" text-anchor="middle" font-size="0px" y="417.03999999999996"><a href="../../../dexpi-models/Process/Process/Port.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold" font-style="italic">Port</tspan></a></text><rect class="uml-background_color-type uml-foreground-stroke" x="684.97287109375" y="268.4" width="400.0" height="23.799999999999997"></rect><text x="884.97287109375" text-anchor="middle" font-size="0px" y="283.84"><a href="../../../dexpi-models/Process/Process/ProcessStep.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold" font-style="italic">ProcessStep</tspan></a></text><rect class="uml-background_color-type uml-foreground-stroke" x="12.0" y="401.59999999999997" width="129.44259765625003" height="23.799999999999997"></rect><text x="76.72129882812501" text-anchor="middle" font-size="0px" y="417.03999999999996"><a href="../../../dexpi-models/Process/Process/ProcessStepDetail.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold" font-style="italic">ProcessStepDetail</tspan></a></text><rect class="uml-background_color-type uml-foreground-stroke" x="594.7045768229166" y="12.0" width="148.6837890625" height="23.799999999999997"></rect><text x="669.0464713541666" text-anchor="middle" font-size="0px" y="27.439999999999998"><a href="../../../dexpi-models/Core/Diagram/AttributeRepresentation.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold">AttributeRepresentation</tspan></a></text><rect class="uml-background_color-type uml-foreground-stroke" x="438.4924674479166" y="12.0" width="136.212109375" height="23.799999999999997"></rect><text x="506.5985221354166" text-anchor="middle" font-size="0px" y="27.439999999999998"><a href="../../../dexpi-models/Core/Diagram/RepresentationGroup.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold">RepresentationGroup</tspan></a></text><rect class="uml-background_color-type uml-foreground-stroke" x="371.54806640625" y="268.4" width="50.0" height="23.799999999999997"></rect><text x="396.54806640625" text-anchor="middle" font-size="0px" y="283.84"><a href="../../../dexpi-models/Core/Note.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold">Note</tspan></a></text><rect class="uml-background_color-type uml-foreground-stroke" x="460.2723828125" y="268.4" width="119.3189453125" height="23.799999999999997"></rect><text x="519.93185546875" text-anchor="middle" font-size="0px" y="283.84"><a href="../../../dexpi-models/Core/PersistentIdentifier.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold">PersistentIdentifier</tspan></a></text><rect class="uml-background_color-type uml-foreground-stroke" x="231.44259765625003" y="401.59999999999997" width="431.02734375" height="48.599999999999994"></rect><text x="446.95626953125003" text-anchor="middle" font-size="0px" y="417.03999999999996"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-large">&lt;&lt;bind&gt;&gt;</tspan></text><polyline class="uml-foreground-stroke" points="231.44259765625003,425.4 662.46994140625,425.4" fill="none"></polyline><text x="236.44259765625003" font-size="0px" y="441.84"><a href="../../../dexpi-models/Core/QualifiedValue.html#sp:core.qualifiedvalue.type"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Type</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> →</tspan></text><text x="280.45431640625003" font-size="0px" y="441.84"><a href="../../../dexpi-models/Builtin/Undefined.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Undefined</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> | </tspan><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">&lt;</tspan><a href="../../../dexpi-models/Core/PhysicalQuantities/PhysicalQuantity.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">PhysicalQuantity</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> with </tspan><a href="../../../dexpi-models/Core/PhysicalQuantities/PhysicalQuantity.html#sp:core.physicalquantities.physicalquantity.unittype"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">UnitType</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> → </tspan><a href="../../../dexpi-models/Core/PhysicalQuantities/PressureAbsoluteUnit.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">PressureAbsoluteUnit</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">&gt;</tspan></text><rect class="uml-background_color-type uml-foreground-stroke" x="682.46994140625" y="401.59999999999997" width="405.005859375" height="48.599999999999994"></rect><text x="884.97287109375" text-anchor="middle" font-size="0px" y="417.03999999999996"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-large">&lt;&lt;bind&gt;&gt;</tspan></text><polyline class="uml-foreground-stroke" points="682.46994140625,425.4 1087.47580078125,425.4" fill="none"></polyline><text x="687.46994140625" font-size="0px" y="441.84"><a href="../../../dexpi-models/Core/QualifiedValue.html#sp:core.qualifiedvalue.type"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Type</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> →</tspan></text><text x="731.48166015625" font-size="0px" y="441.84"><a href="../../../dexpi-models/Builtin/Undefined.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Undefined</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> | </tspan><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">&lt;</tspan><a href="../../../dexpi-models/Core/PhysicalQuantities/PhysicalQuantity.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">PhysicalQuantity</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> with </tspan><a href="../../../dexpi-models/Core/PhysicalQuantities/PhysicalQuantity.html#sp:core.physicalquantities.physicalquantity.unittype"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">UnitType</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> → </tspan><a href="../../../dexpi-models/Core/PhysicalQuantities/TemperatureUnit.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">TemperatureUnit</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">&gt;</tspan></text><rect class="uml-background_color-type uml-foreground-stroke" x="1107.47580078125" y="401.59999999999997" width="431.02734375" height="48.599999999999994"></rect><text x="1322.98947265625" text-anchor="middle" font-size="0px" y="417.03999999999996"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-large">&lt;&lt;bind&gt;&gt;</tspan></text><polyline class="uml-foreground-stroke" points="1107.47580078125,425.4 1538.50314453125,425.4" fill="none"></polyline><text x="1112.47580078125" font-size="0px" y="441.84"><a href="../../../dexpi-models/Core/QualifiedValue.html#sp:core.qualifiedvalue.type"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Type</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> →</tspan></text><text x="1156.48751953125" font-size="0px" y="441.84"><a href="../../../dexpi-models/Builtin/Undefined.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Undefined</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> | </tspan><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">&lt;</tspan><a href="../../../dexpi-models/Core/PhysicalQuantities/PhysicalQuantity.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">PhysicalQuantity</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> with </tspan><a href="../../../dexpi-models/Core/PhysicalQuantities/PhysicalQuantity.html#sp:core.physicalquantities.physicalquantity.unittype"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">UnitType</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> → </tspan><a href="../../../dexpi-models/Core/PhysicalQuantities/PressureAbsoluteUnit.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">PressureAbsoluteUnit</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">&gt;</tspan></text><rect class="uml-background_color-type uml-foreground-stroke" x="1558.50314453125" y="401.59999999999997" width="405.005859375" height="48.599999999999994"></rect><text x="1761.00607421875" text-anchor="middle" font-size="0px" y="417.03999999999996"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-large">&lt;&lt;bind&gt;&gt;</tspan></text><polyline class="uml-foreground-stroke" points="1558.50314453125,425.4 1963.50900390625,425.4" fill="none"></polyline><text x="1563.50314453125" font-size="0px" y="441.84"><a href="../../../dexpi-models/Core/QualifiedValue.html#sp:core.qualifiedvalue.type"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Type</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> →</tspan></text><text x="1607.51486328125" font-size="0px" y="441.84"><a href="../../../dexpi-models/Builtin/Undefined.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Undefined</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> | </tspan><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">&lt;</tspan><a href="../../../dexpi-models/Core/PhysicalQuantities/PhysicalQuantity.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">PhysicalQuantity</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> with </tspan><a href="../../../dexpi-models/Core/PhysicalQuantities/PhysicalQuantity.html#sp:core.physicalquantities.physicalquantity.unittype"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">UnitType</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> → </tspan><a href="../../../dexpi-models/Core/PhysicalQuantities/TemperatureUnit.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">TemperatureUnit</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">&gt;</tspan></text><rect class="uml-background_color-type uml-foreground-stroke" x="2197.0119335937497" y="559.5999999999999" width="361.658203125" height="48.599999999999994"></rect><text x="2377.8410351562497" text-anchor="middle" font-size="0px" y="575.04"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-large">&lt;&lt;bind&gt;&gt;</tspan></text><polyline class="uml-foreground-stroke" points="2197.0119335937497,583.3999999999999 2558.6701367187497,583.3999999999999" fill="none"></polyline><text x="2202.0119335937497" font-size="0px" y="599.8399999999999"><a href="../../../dexpi-models/Core/QualifiedValue.html#sp:core.qualifiedvalue.type"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Type</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> →</tspan></text><text x="2246.0236523437497" font-size="0px" y="599.8399999999999"><a href="../../../dexpi-models/Builtin/Undefined.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Undefined</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> | </tspan><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">&lt;</tspan><a href="../../../dexpi-models/Core/PhysicalQuantities/PhysicalQuantity.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">PhysicalQuantity</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> with </tspan><a href="../../../dexpi-models/Core/PhysicalQuantities/PhysicalQuantity.html#sp:core.physicalquantities.physicalquantity.unittype"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">UnitType</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> → </tspan><a href="../../../dexpi-models/Core/PhysicalQuantities/AreaUnit.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">AreaUnit</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">&gt;</tspan></text><rect class="uml-background_color-type uml-foreground-stroke" x="2578.6701367187497" y="559.5999999999999" width="370.32421875" height="48.599999999999994"></rect><text x="2763.8322460937497" text-anchor="middle" font-size="0px" y="575.04"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-large">&lt;&lt;bind&gt;&gt;</tspan></text><polyline class="uml-foreground-stroke" points="2578.6701367187497,583.3999999999999 2948.9943554687497,583.3999999999999" fill="none"></polyline><text x="2583.6701367187497" font-size="0px" y="599.8399999999999"><a href="../../../dexpi-models/Core/QualifiedValue.html#sp:core.qualifiedvalue.type"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Type</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> →</tspan></text><text x="2627.6818554687497" font-size="0px" y="599.8399999999999"><a href="../../../dexpi-models/Builtin/Undefined.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Undefined</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> | </tspan><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">&lt;</tspan><a href="../../../dexpi-models/Core/PhysicalQuantities/PhysicalQuantity.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">PhysicalQuantity</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> with </tspan><a href="../../../dexpi-models/Core/PhysicalQuantities/PhysicalQuantity.html#sp:core.physicalquantities.physicalquantity.unittype"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">UnitType</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> → </tspan><a href="../../../dexpi-models/Core/PhysicalQuantities/PowerUnit.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">PowerUnit</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">&gt;</tspan></text><rect class="uml-background_color-type uml-foreground-stroke" x="2968.9943554687497" y="559.5999999999999" width="463.03125" height="48.599999999999994"></rect><text x="3200.5099804687497" text-anchor="middle" font-size="0px" y="575.04"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-large">&lt;&lt;bind&gt;&gt;</tspan></text><polyline class="uml-foreground-stroke" points="2968.9943554687497,583.3999999999999 3432.0256054687497,583.3999999999999" fill="none"></polyline><text x="2973.9943554687497" font-size="0px" y="599.8399999999999"><a href="../../../dexpi-models/Core/QualifiedValue.html#sp:core.qualifiedvalue.type"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Type</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> →</tspan></text><text x="3018.0060742187497" font-size="0px" y="599.8399999999999"><a href="../../../dexpi-models/Builtin/Undefined.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Undefined</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> | </tspan><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">&lt;</tspan><a href="../../../dexpi-models/Core/PhysicalQuantities/PhysicalQuantity.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">PhysicalQuantity</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> with </tspan><a href="../../../dexpi-models/Core/PhysicalQuantities/PhysicalQuantity.html#sp:core.physicalquantities.physicalquantity.unittype"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">UnitType</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> → </tspan><a href="../../../dexpi-models/Core/PhysicalQuantities/HeatTransferCoefficientUnit.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">HeatTransferCoefficientUnit</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">&gt;</tspan></text><rect class="uml-background_color-type uml-foreground-stroke" x="3452.0256054687497" y="559.5999999999999" width="465.697265625" height="48.599999999999994"></rect><text x="3684.8742382812497" text-anchor="middle" font-size="0px" y="575.04"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-large">&lt;&lt;bind&gt;&gt;</tspan></text><polyline class="uml-foreground-stroke" points="3452.0256054687497,583.3999999999999 3917.7228710937497,583.3999999999999" fill="none"></polyline><text x="3457.0256054687497" font-size="0px" y="599.8399999999999"><a href="../../../dexpi-models/Core/QualifiedValue.html#sp:core.qualifiedvalue.type"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Type</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> →</tspan></text><text x="3501.0373242187497" font-size="0px" y="599.8399999999999"><a href="../../../dexpi-models/Builtin/Undefined.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Undefined</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> | </tspan><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">&lt;</tspan><a href="../../../dexpi-models/Core/PhysicalQuantities/PhysicalQuantity.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">PhysicalQuantity</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> with </tspan><a href="../../../dexpi-models/Core/PhysicalQuantities/PhysicalQuantity.html#sp:core.physicalquantities.physicalquantity.unittype"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">UnitType</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> → </tspan><a href="../../../dexpi-models/Core/PhysicalQuantities/HeatTransferResistanceUnit.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">HeatTransferResistanceUnit</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">&gt;</tspan></text><rect class="uml-background_color-type uml-foreground-stroke" x="3937.7228710937497" y="559.5999999999999" width="405.005859375" height="48.599999999999994"></rect><text x="4140.22580078125" text-anchor="middle" font-size="0px" y="575.04"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-large">&lt;&lt;bind&gt;&gt;</tspan></text><polyline class="uml-foreground-stroke" points="3937.7228710937497,583.3999999999999 4342.72873046875,583.3999999999999" fill="none"></polyline><text x="3942.7228710937497" font-size="0px" y="599.8399999999999"><a href="../../../dexpi-models/Core/QualifiedValue.html#sp:core.qualifiedvalue.type"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Type</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> →</tspan></text><text x="3986.7345898437497" font-size="0px" y="599.8399999999999"><a href="../../../dexpi-models/Builtin/Undefined.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Undefined</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> | </tspan><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">&lt;</tspan><a href="../../../dexpi-models/Core/PhysicalQuantities/PhysicalQuantity.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">PhysicalQuantity</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> with </tspan><a href="../../../dexpi-models/Core/PhysicalQuantities/PhysicalQuantity.html#sp:core.physicalquantities.physicalquantity.unittype"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">UnitType</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> → </tspan><a href="../../../dexpi-models/Core/PhysicalQuantities/TemperatureUnit.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">TemperatureUnit</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">&gt;</tspan></text><rect class="uml-background_color-type uml-foreground-stroke" x="1772.00607421875" y="559.5999999999999" width="405.005859375" height="48.599999999999994"></rect><text x="1974.50900390625" text-anchor="middle" font-size="0px" y="575.04"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-large">&lt;&lt;bind&gt;&gt;</tspan></text><polyline class="uml-foreground-stroke" points="1772.00607421875,583.3999999999999 2177.0119335937497,583.3999999999999" fill="none"></polyline><text x="1777.00607421875" font-size="0px" y="599.8399999999999"><a href="../../../dexpi-models/Core/QualifiedValue.html#sp:core.qualifiedvalue.type"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Type</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> →</tspan></text><text x="1821.01779296875" font-size="0px" y="599.8399999999999"><a href="../../../dexpi-models/Builtin/Undefined.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Undefined</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> | </tspan><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">&lt;</tspan><a href="../../../dexpi-models/Core/PhysicalQuantities/PhysicalQuantity.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">PhysicalQuantity</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> with </tspan><a href="../../../dexpi-models/Core/PhysicalQuantities/PhysicalQuantity.html#sp:core.physicalquantities.physicalquantity.unittype"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">UnitType</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> → </tspan><a href="../../../dexpi-models/Core/PhysicalQuantities/TemperatureUnit.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">TemperatureUnit</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">&gt;</tspan></text><rect class="uml-background_color-type uml-foreground-stroke" x="401.5017240767046" y="760.8" width="500.0" height="47.599999999999994"></rect><polyline class="uml-foreground-stroke" points="719.4216459517046,760.8 719.4216459517046,784.5999999999999 901.5017240767046,784.5999999999999" fill="none" stroke-dasharray="4 2"></polyline><text x="724.4216459517046" font-size="0px" y="776.24"><a href="../../../dexpi-models/Core/QualifiedValue.html#sp:core.qualifiedvalue.type"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Type</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> :</tspan></text><text x="759.9333647017046" font-size="0px" y="776.24"><a href="../../../dexpi-models/Core/PhysicalQuantities/PhysicalQuantity.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">PhysicalQuantity</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> | </tspan><a href="../../../dexpi-models/Builtin/Double.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Double</tspan></a></text><text x="651.5017240767046" text-anchor="middle" font-size="0px" y="800.04"><a href="../../../dexpi-models/Core/QualifiedValue.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold">QualifiedValue</tspan></a></text><rect class="uml-background_color-type uml-foreground-stroke" x="614.97287109375" y="268.4" width="50.0" height="23.799999999999997"></rect><text x="639.97287109375" text-anchor="middle" font-size="0px" y="283.84"><a href="../../../dexpi-models/Core/Role.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold">Role</tspan></a></text><rect class="uml-background_color-type uml-foreground-stroke" x="885.1233919270832" y="125.19999999999999" width="167.74257812500002" height="23.799999999999997"></rect><text x="968.9946809895832" text-anchor="middle" font-size="0px" y="140.64"><a href="../../../dexpi-models/Process/Process/MeasuringProcessVariable.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold">MeasuringProcessVariable</tspan></a></text><rect class="uml-background_color-main_type uml-foreground-stroke" x="2635.2608175223213" y="401.59999999999997" width="300.0" height="48.599999999999994"></rect><text x="2785.2608175223213" text-anchor="middle" font-size="0px" y="417.03999999999996"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold">RemovingThermalEnergy</tspan></text><polyline class="uml-foreground-stroke" points="2635.2608175223213,425.4 2935.2608175223213,425.4" fill="none"></polyline><text x="2640.2608175223213" font-size="0px" y="441.84"><a href="../../../dexpi-models/Process/Process/RemovingThermalEnergy.html#sp:process.process.removingthermalenergy.method"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Method</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> :</tspan></text><text x="2689.1201925223213" font-size="0px" y="441.84"><a href="../../../dexpi-models/Process/Enumerations/HeatExchangeMethod.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">HeatExchangeMethod</tspan></a></text><rect class="uml-background_color-type uml-foreground-stroke" x="771.4890169270832" y="125.19999999999999" width="93.634375" height="23.799999999999997"></rect><text x="818.3062044270832" text-anchor="middle" font-size="0px" y="140.64"><a href="../../../dexpi-models/Process/ProcessModel.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold">ProcessModel</tspan></a></text><polyline class="uml-foreground-stroke uml-source_marker-closed_arrow" points="599.93185546875,149.0 599.93185546875,174.79999999999998 751.6395377604166,174.79999999999998 751.6395377604166,203.2 751.6395377604166,204.2 751.6395377604166,268.4" fill="none"></polyline><polyline class="uml-foreground-stroke uml-source_marker-closed_arrow" points="1034.97287109375,292.2 1034.97287109375,317.99999999999994 2785.2608175223213,317.99999999999994 2785.2608175223213,356.3999999999999 2785.2608175223213,357.3999999999999 2785.2608175223213,401.59999999999997" fill="none"></polyline><rect class="uml-background_color-background " x="594.62228515625" y="194.79999999999998" width="90.701171875" height="17.799999999999997"></rect><text x="639.97287109375" text-anchor="middle" font-size="0px" y="207.23999999999998"><a href="../../../dexpi-models/Core/ConceptualObject.html#sp:core.conceptualobject.performedroles"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">PerformedRoles</tspan></a></text><polyline class="uml-foreground-stroke" points="559.93185546875,149.0 559.93185546875,184.79999999999998 639.97287109375,184.79999999999998 639.97287109375,194.79999999999998" fill="none"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="639.97287109375,212.59999999999997 639.97287109375,268.4" fill="none"></polyline><text x="567.93185546875" font-size="0px" y="161.2"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</tspan></text><text x="647.97287109375" font-size="0px" y="262.79999999999995"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</tspan></text><rect class="uml-background_color-background " x="465.24142578125" y="194.79999999999998" width="109.380859375" height="17.799999999999997"></rect><text x="519.93185546875" text-anchor="middle" font-size="0px" y="207.23999999999998"><a href="../../../dexpi-models/Core/ConceptualObject.html#sp:core.conceptualobject.persistentidentifiers"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">PersistentIdentifiers</tspan></a></text><polyline class="uml-foreground-stroke uml-source_marker-filled_diamond" points="519.93185546875,149.0 519.93185546875,194.79999999999998" fill="none"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="519.93185546875,212.59999999999997 519.93185546875,268.4" fill="none"></polyline><text x="527.93185546875" font-size="0px" y="161.2"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">0..1</tspan></text><text x="527.93185546875" font-size="0px" y="262.79999999999995"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</tspan></text><rect class="uml-background_color-background " x="347.85470703125" y="194.79999999999998" width="97.38671875" height="17.799999999999997"></rect><text x="396.54806640625" text-anchor="middle" font-size="0px" y="207.23999999999998"><a href="../../../dexpi-models/Core/ConceptualObject.html#sp:core.conceptualobject.referencednotes"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">ReferencedNotes</tspan></a></text><polyline class="uml-foreground-stroke" points="479.93185546875,149.0 479.93185546875,174.79999999999998 396.54806640625,174.79999999999998 396.54806640625,194.79999999999998" fill="none"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="396.54806640625,212.59999999999997 396.54806640625,268.4" fill="none"></polyline><text x="487.93185546875" font-size="0px" y="161.2"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</tspan></text><text x="404.54806640625" font-size="0px" y="262.79999999999995"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</tspan></text><rect class="uml-background_color-background " x="649.7056510416666" y="71.6" width="38.681640625" height="17.799999999999997"></rect><text x="669.0464713541666" text-anchor="middle" font-size="0px" y="84.03999999999999"><a href="../../../dexpi-models/Core/Diagram/AttributeRepresentation.html#sp:core.diagram.attributerepresentation.object"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Object</tspan></a></text><polyline class="uml-foreground-stroke" points="669.0464713541666,35.8 669.0464713541666,71.6" fill="none"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="669.0464713541666,89.39999999999999 669.0464713541666,99.39999999999999 573.2651888020832,99.39999999999999 573.2651888020832,125.19999999999999" fill="none"></polyline><text x="677.0464713541666" font-size="0px" y="48.0"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</tspan></text><rect class="uml-background_color-background " x="473.9159049479166" y="71.6" width="65.365234375" height="17.799999999999997"></rect><text x="506.5985221354166" text-anchor="middle" font-size="0px" y="84.03999999999999"><a href="../../../dexpi-models/Core/Diagram/RepresentationGroup.html#sp:core.diagram.representationgroup.represents"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Represents</tspan></a></text><polyline class="uml-foreground-stroke" points="506.5985221354166,35.8 506.5985221354166,71.6" fill="none"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="506.5985221354166,89.39999999999999 506.5985221354166,125.19999999999999" fill="none"></polyline><text x="514.5985221354166" font-size="0px" y="48.0"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</tspan></text><rect class="uml-background_color-background " x="905.2954622395832" y="194.79999999999998" width="127.3984375" height="17.799999999999997"></rect><text x="968.9946809895832" text-anchor="middle" font-size="0px" y="207.23999999999998"><a href="../../../dexpi-models/Process/Process/MeasuringProcessVariable.html#sp:process.process.measuringprocessvariable.processstepreference"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">ProcessStepReference</tspan></a></text><polyline class="uml-foreground-stroke" points="968.9946809895832,149.0 968.9946809895832,194.79999999999998" fill="none"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="968.9946809895832,212.59999999999997 968.9946809895832,222.59999999999997 884.97287109375,222.59999999999997 884.97287109375,268.4" fill="none"></polyline><text x="976.9946809895832" font-size="0px" y="161.2"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</tspan></text><text x="892.97287109375" font-size="0px" y="262.79999999999995"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">0..1</tspan></text><rect class="uml-background_color-background " x="398.93673828125003" y="347.99999999999994" width="96.0390625" height="17.799999999999997"></rect><text x="446.95626953125003" text-anchor="middle" font-size="0px" y="360.43999999999994"><a href="../../../dexpi-models/Process/Process/ProcessStep.html#sp:process.process.processstep.ambientpressure"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">AmbientPressure</tspan></a></text><polyline class="uml-foreground-stroke uml-source_marker-filled_diamond" points="834.97287109375,292.2 834.97287109375,337.99999999999994 446.95626953125003,337.99999999999994 446.95626953125003,347.99999999999994" fill="none"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="446.95626953125003,365.79999999999995 446.95626953125003,401.59999999999997" fill="none"></polyline><text x="842.97287109375" font-size="0px" y="304.4"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">0..1</tspan></text><text x="454.95626953125003" font-size="0px" y="395.99999999999994"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</tspan></text><rect class="uml-background_color-background " x="826.61447265625" y="347.99999999999994" width="116.716796875" height="17.799999999999997"></rect><text x="884.97287109375" text-anchor="middle" font-size="0px" y="360.43999999999994"><a href="../../../dexpi-models/Process/Process/ProcessStep.html#sp:process.process.processstep.ambienttemperature"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">AmbientTemperature</tspan></a></text><polyline class="uml-foreground-stroke uml-source_marker-filled_diamond" points="884.97287109375,292.2 884.97287109375,347.99999999999994" fill="none"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="884.97287109375,365.79999999999995 884.97287109375,401.59999999999997" fill="none"></polyline><text x="892.97287109375" font-size="0px" y="304.4"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">0..1</tspan></text><text x="892.97287109375" font-size="0px" y="395.99999999999994"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</tspan></text><rect class="uml-background_color-background " x="170.43869140625003" y="347.99999999999994" width="32.0078125" height="17.799999999999997"></rect><text x="186.44259765625003" text-anchor="middle" font-size="0px" y="360.43999999999994"><a href="../../../dexpi-models/Process/Process/ProcessStep.html#sp:process.process.processstep.ports"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Ports</tspan></a></text><polyline class="uml-foreground-stroke uml-source_marker-filled_diamond" points="784.97287109375,292.2 784.97287109375,327.99999999999994 186.44259765625003,327.99999999999994 186.44259765625003,347.99999999999994" fill="none"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="186.44259765625003,365.79999999999995 186.44259765625003,401.59999999999997" fill="none"></polyline><text x="792.97287109375" font-size="0px" y="304.4"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">0..1</tspan></text><text x="194.44259765625003" font-size="0px" y="395.99999999999994"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</tspan></text><rect class="uml-background_color-background " x="1296.98068359375" y="347.99999999999994" width="52.017578125" height="17.799999999999997"></rect><text x="1322.98947265625" text-anchor="middle" font-size="0px" y="360.43999999999994"><a href="../../../dexpi-models/Process/Process/ProcessStep.html#sp:process.process.processstep.pressure"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Pressure</tspan></a></text><polyline class="uml-foreground-stroke uml-source_marker-filled_diamond" points="934.97287109375,292.2 934.97287109375,337.99999999999994 1322.98947265625,337.99999999999994 1322.98947265625,347.99999999999994" fill="none"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="1322.98947265625,365.79999999999995 1322.98947265625,401.59999999999997" fill="none"></polyline><text x="942.97287109375" font-size="0px" y="304.4"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">0..1</tspan></text><text x="1330.98947265625" font-size="0px" y="395.99999999999994"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</tspan></text><rect class="uml-background_color-background " x="22.364853515625015" y="347.99999999999994" width="108.712890625" height="17.799999999999997"></rect><text x="76.72129882812501" text-anchor="middle" font-size="0px" y="360.43999999999994"><a href="../../../dexpi-models/Process/Process/ProcessStep.html#sp:process.process.processstep.processstepdetails"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">ProcessStepDetails</tspan></a></text><polyline class="uml-foreground-stroke uml-source_marker-filled_diamond" points="734.97287109375,292.2 734.97287109375,317.99999999999994 76.72129882812501,317.99999999999994 76.72129882812501,347.99999999999994" fill="none"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="76.72129882812501,365.79999999999995 76.72129882812501,401.59999999999997" fill="none"></polyline><text x="742.97287109375" font-size="0px" y="304.4"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">0..1</tspan></text><text x="84.72129882812501" font-size="0px" y="395.99999999999994"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</tspan></text><rect class="uml-background_color-background " x="1052.6938997395832" y="194.79999999999998" width="99.384765625" height="17.799999999999997"></rect><text x="1102.3862825520832" text-anchor="middle" font-size="0px" y="207.23999999999998"><a href="../../../dexpi-models/Process/Process/ProcessStep.html#sp:process.process.processstep.subprocesssteps"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">SubProcessSteps</tspan></a></text><polyline class="uml-foreground-stroke uml-source_marker-filled_diamond" points="951.6395377604166,268.4 951.6395377604166,232.59999999999997 1085.8221549479165,232.59999999999997 1085.8221549479165,212.59999999999997" fill="none"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="1118.95041015625,212.59999999999997 1118.95041015625,242.59999999999997 1018.3062044270832,242.59999999999997 1018.3062044270832,268.4" fill="none"></polyline><text x="959.6395377604166" font-size="0px" y="262.79999999999995"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">0..1</tspan></text><text x="1026.3062044270832" font-size="0px" y="262.79999999999995"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</tspan></text><rect class="uml-background_color-background " x="1724.65841796875" y="347.99999999999994" width="72.6953125" height="17.799999999999997"></rect><text x="1761.00607421875" text-anchor="middle" font-size="0px" y="360.43999999999994"><a href="../../../dexpi-models/Process/Process/ProcessStep.html#sp:process.process.processstep.temperature"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Temperature</tspan></a></text><polyline class="uml-foreground-stroke uml-source_marker-filled_diamond" points="984.97287109375,292.2 984.97287109375,327.99999999999994 1761.00607421875,327.99999999999994 1761.00607421875,347.99999999999994" fill="none"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="1761.00607421875,365.79999999999995 1761.00607421875,401.59999999999997" fill="none"></polyline><text x="992.97287109375" font-size="0px" y="304.4"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">0..1</tspan></text><text x="1769.00607421875" font-size="0px" y="395.99999999999994"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</tspan></text><rect class="uml-background_color-background " x="2363.1672070312497" y="505.99999999999994" width="29.34765625" height="17.799999999999997"></rect><text x="2377.8410351562497" text-anchor="middle" font-size="0px" y="518.4399999999999"><a href="../../../dexpi-models/Process/Process/RemovingThermalEnergy.html#sp:process.process.removingthermalenergy.area"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Area</tspan></a></text><polyline class="uml-foreground-stroke uml-source_marker-filled_diamond" points="2720.975103236607,450.19999999999993 2720.975103236607,485.99999999999994 2377.8410351562497,485.99999999999994 2377.8410351562497,505.99999999999994" fill="none"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="2377.8410351562497,523.8 2377.8410351562497,559.5999999999999" fill="none"></polyline><text x="2728.975103236607" font-size="0px" y="462.3999999999999"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">0..1</tspan></text><text x="2385.8410351562497" font-size="0px" y="554.0"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</tspan></text><rect class="uml-background_color-background " x="2749.4953320312497" y="505.99999999999994" width="28.673828125" height="17.799999999999997"></rect><text x="2763.8322460937497" text-anchor="middle" font-size="0px" y="518.4399999999999"><a href="../../../dexpi-models/Process/Process/RemovingThermalEnergy.html#sp:process.process.removingthermalenergy.duty"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Duty</tspan></a></text><polyline class="uml-foreground-stroke uml-source_marker-filled_diamond" points="2763.8322460937497,450.19999999999993 2763.8322460937497,505.99999999999994" fill="none"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="2763.8322460937497,523.8 2763.8322460937497,559.5999999999999" fill="none"></polyline><text x="2771.8322460937497" font-size="0px" y="462.3999999999999"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">0..1</tspan></text><text x="2771.8322460937497" font-size="0px" y="554.0"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</tspan></text><rect class="uml-background_color-background " x="3135.1496289062497" y="505.99999999999994" width="130.720703125" height="17.799999999999997"></rect><text x="3200.5099804687497" text-anchor="middle" font-size="0px" y="518.4399999999999"><a href="../../../dexpi-models/Process/Process/RemovingThermalEnergy.html#sp:process.process.removingthermalenergy.heattransfercoefficient"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">HeatTransferCoefficient</tspan></a></text><polyline class="uml-foreground-stroke uml-source_marker-filled_diamond" points="2806.689388950893,450.19999999999993 2806.689388950893,495.99999999999994 3200.5099804687497,495.99999999999994 3200.5099804687497,505.99999999999994" fill="none"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="3200.5099804687497,523.8 3200.5099804687497,559.5999999999999" fill="none"></polyline><text x="2814.689388950893" font-size="0px" y="462.3999999999999"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">0..1</tspan></text><text x="3208.5099804687497" font-size="0px" y="554.0"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</tspan></text><rect class="uml-background_color-background " x="3618.1808789062497" y="505.99999999999994" width="133.38671875" height="17.799999999999997"></rect><text x="3684.8742382812497" text-anchor="middle" font-size="0px" y="518.4399999999999"><a href="../../../dexpi-models/Process/Process/RemovingThermalEnergy.html#sp:process.process.removingthermalenergy.heattransferresistance"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">HeatTransferResistance</tspan></a></text><polyline class="uml-foreground-stroke uml-source_marker-filled_diamond" points="2849.5465318080355,450.19999999999993 2849.5465318080355,485.99999999999994 3684.8742382812497,485.99999999999994 3684.8742382812497,505.99999999999994" fill="none"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="3684.8742382812497,523.8 3684.8742382812497,559.5999999999999" fill="none"></polyline><text x="2857.5465318080355" font-size="0px" y="462.3999999999999"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">0..1</tspan></text><text x="3692.8742382812497" font-size="0px" y="554.0"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</tspan></text><rect class="uml-background_color-background " x="4092.2062695312497" y="505.99999999999994" width="96.0390625" height="17.799999999999997"></rect><text x="4140.22580078125" text-anchor="middle" font-size="0px" y="518.4399999999999"><a href="../../../dexpi-models/Process/Process/RemovingThermalEnergy.html#sp:process.process.removingthermalenergy.skintemperature"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">SkinTemperature</tspan></a></text><polyline class="uml-foreground-stroke uml-source_marker-filled_diamond" points="2892.403674665178,450.19999999999993 2892.403674665178,475.99999999999994 4140.22580078125,475.99999999999994 4140.22580078125,505.99999999999994" fill="none"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="4140.22580078125,523.8 4140.22580078125,559.5999999999999" fill="none"></polyline><text x="2900.403674665178" font-size="0px" y="462.3999999999999"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">0..1</tspan></text><text x="4148.22580078125" font-size="0px" y="554.0"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</tspan></text><rect class="uml-background_color-background " x="1910.81564453125" y="505.99999999999994" width="127.38671875" height="17.799999999999997"></rect><text x="1974.50900390625" text-anchor="middle" font-size="0px" y="518.4399999999999"><a href="../../../dexpi-models/Process/Process/RemovingThermalEnergy.html#sp:process.process.removingthermalenergy.temperaturedifference"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">TemperatureDifference</tspan></a></text><polyline class="uml-foreground-stroke uml-source_marker-filled_diamond" points="2678.117960379464,450.19999999999993 2678.117960379464,475.99999999999994 1974.50900390625,475.99999999999994 1974.50900390625,505.99999999999994" fill="none"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="1974.50900390625,523.8 1974.50900390625,559.5999999999999" fill="none"></polyline><text x="2686.117960379464" font-size="0px" y="462.3999999999999"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">0..1</tspan></text><text x="1982.50900390625" font-size="0px" y="554.0"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</tspan></text><rect class="uml-background_color-background " x="779.2896028645832" y="194.79999999999998" width="78.033203125" height="17.799999999999997"></rect><text x="818.3062044270832" text-anchor="middle" font-size="0px" y="207.23999999999998"><a href="../../../dexpi-models/Process/ProcessModel.html#sp:process.processmodel.processsteps"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">ProcessSteps</tspan></a></text><polyline class="uml-foreground-stroke uml-source_marker-filled_diamond" points="818.3062044270832,149.0 818.3062044270832,194.79999999999998" fill="none"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="818.3062044270832,212.59999999999997 818.3062044270832,268.4" fill="none"></polyline><text x="826.3062044270832" font-size="0px" y="161.2"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">0..1</tspan></text><text x="826.3062044270832" font-size="0px" y="262.79999999999995"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</tspan></text><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="446.95626953125003,450.19999999999993 446.95626953125003,583.4 446.95626953125003,584.4 446.95626953125003,760.8" fill="none" stroke-dasharray="4 2"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="884.97287109375,450.19999999999993 884.97287109375,644.0 884.97287109375,645.0 884.97287109375,655.0 492.41081498579547,655.0 492.41081498579547,760.8" fill="none" stroke-dasharray="4 2"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="1322.98947265625,450.19999999999993 1322.98947265625,583.4 1322.98947265625,584.4 1322.98947265625,665.0 537.865360440341,665.0 537.865360440341,760.8" fill="none" stroke-dasharray="4 2"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="1761.00607421875,450.19999999999993 1761.00607421875,514.3999999999999 1761.00607421875,515.3999999999999 1761.00607421875,675.0 583.3199058948865,675.0 583.3199058948865,760.8" fill="none" stroke-dasharray="4 2"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="2377.8410351562497,608.1999999999999 2377.8410351562497,644.0 2377.8410351562497,645.0 2377.8410351562497,695.0 674.2289968039772,695.0 674.2289968039772,760.8" fill="none" stroke-dasharray="4 2"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="2763.8322460937497,608.1999999999999 2763.8322460937497,644.0 2763.8322460937497,645.0 2763.8322460937497,705.0 719.6835422585227,705.0 719.6835422585227,760.8" fill="none" stroke-dasharray="4 2"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="3200.5099804687497,608.1999999999999 3200.5099804687497,644.0 3200.5099804687497,645.0 3200.5099804687497,715.0 765.1380877130682,715.0 765.1380877130682,760.8" fill="none" stroke-dasharray="4 2"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="3684.8742382812497,608.1999999999999 3684.8742382812497,644.0 3684.8742382812497,645.0 3684.8742382812497,725.0 810.5926331676136,725.0 810.5926331676136,760.8" fill="none" stroke-dasharray="4 2"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="4140.22580078125,608.1999999999999 4140.22580078125,644.0 4140.22580078125,645.0 4140.22580078125,735.0 856.047178622159,735.0 856.047178622159,760.8" fill="none" stroke-dasharray="4 2"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="1974.50900390625,608.1999999999999 1974.50900390625,644.0 1974.50900390625,645.0 1974.50900390625,685.0 628.7744513494318,685.0 628.7744513494318,760.8" fill="none" stroke-dasharray="4 2"></polyline></svg><p class="rubric">Supertypes</p>
+<ul class="simple">
+<li><p><a class="sp-element reference internal" href="ProcessStep.html"><span class="doc">ProcessStep</span></a></p></li>
+</ul>
+<p class="rubric">Subtypes</p>
+<ul class="simple">
+<li><p><a class="sp-element reference internal" href="Cooling.html"><span class="doc">Cooling</span></a></p></li>
+</ul>
+</section>
+<section id="Members">
+<h2>Members<a class="headerlink" href="#Members" title="Link to this heading">¶</a></h2>
+<section id="member-list-section-Composition Properties">
+<h3>Composition Properties<a class="headerlink" href="#member-list-section-Composition%20Properties" title="Link to this heading">¶</a></h3>
+</section>
+<table class="docutils align-left">
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Multiplicity</p></th>
+<th class="head"><p>Type</p></th>
+<th class="head"><p>Ordered</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="#sp:process.process.removingthermalenergy.area"><span class="std std-ref">Area</span></a></p></td>
+<td><p>*</p></td>
+<td><p><span>&lt;</span><a class="sp-element reference internal" href="../../Core/QualifiedValue.html"><span class="doc">QualifiedValue</span></a><span> with </span><a class="sp-element reference internal" href="../../Core/QualifiedValue.html#sp:core.qualifiedvalue.type"><span class="std std-ref">Type</span></a><span> → </span><a class="sp-element reference internal" href="../../Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><span>&lt;</span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/PhysicalQuantity.html"><span class="doc">PhysicalQuantity</span></a><span> with </span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/PhysicalQuantity.html#sp:core.physicalquantities.physicalquantity.unittype"><span class="std std-ref">UnitType</span></a><span> → </span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/AreaUnit.html"><span class="doc">AreaUnit</span></a><span>&gt;</span><span>&gt;</span></p></td>
+<td><p>no</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="#sp:process.process.removingthermalenergy.duty"><span class="std std-ref">Duty</span></a></p></td>
+<td><p>*</p></td>
+<td><p><span>&lt;</span><a class="sp-element reference internal" href="../../Core/QualifiedValue.html"><span class="doc">QualifiedValue</span></a><span> with </span><a class="sp-element reference internal" href="../../Core/QualifiedValue.html#sp:core.qualifiedvalue.type"><span class="std std-ref">Type</span></a><span> → </span><a class="sp-element reference internal" href="../../Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><span>&lt;</span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/PhysicalQuantity.html"><span class="doc">PhysicalQuantity</span></a><span> with </span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/PhysicalQuantity.html#sp:core.physicalquantities.physicalquantity.unittype"><span class="std std-ref">UnitType</span></a><span> → </span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/PowerUnit.html"><span class="doc">PowerUnit</span></a><span>&gt;</span><span>&gt;</span></p></td>
+<td><p>no</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="#sp:process.process.removingthermalenergy.heattransfercoefficient"><span class="std std-ref">HeatTransferCoefficient</span></a></p></td>
+<td><p>*</p></td>
+<td><p><span>&lt;</span><a class="sp-element reference internal" href="../../Core/QualifiedValue.html"><span class="doc">QualifiedValue</span></a><span> with </span><a class="sp-element reference internal" href="../../Core/QualifiedValue.html#sp:core.qualifiedvalue.type"><span class="std std-ref">Type</span></a><span> → </span><a class="sp-element reference internal" href="../../Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><span>&lt;</span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/PhysicalQuantity.html"><span class="doc">PhysicalQuantity</span></a><span> with </span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/PhysicalQuantity.html#sp:core.physicalquantities.physicalquantity.unittype"><span class="std std-ref">UnitType</span></a><span> → </span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/HeatTransferCoefficientUnit.html"><span class="doc">HeatTransferCoefficientUnit</span></a><span>&gt;</span><span>&gt;</span></p></td>
+<td><p>no</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="#sp:process.process.removingthermalenergy.heattransferresistance"><span class="std std-ref">HeatTransferResistance</span></a></p></td>
+<td><p>*</p></td>
+<td><p><span>&lt;</span><a class="sp-element reference internal" href="../../Core/QualifiedValue.html"><span class="doc">QualifiedValue</span></a><span> with </span><a class="sp-element reference internal" href="../../Core/QualifiedValue.html#sp:core.qualifiedvalue.type"><span class="std std-ref">Type</span></a><span> → </span><a class="sp-element reference internal" href="../../Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><span>&lt;</span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/PhysicalQuantity.html"><span class="doc">PhysicalQuantity</span></a><span> with </span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/PhysicalQuantity.html#sp:core.physicalquantities.physicalquantity.unittype"><span class="std std-ref">UnitType</span></a><span> → </span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/HeatTransferResistanceUnit.html"><span class="doc">HeatTransferResistanceUnit</span></a><span>&gt;</span><span>&gt;</span></p></td>
+<td><p>no</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="#sp:process.process.removingthermalenergy.skintemperature"><span class="std std-ref">SkinTemperature</span></a></p></td>
+<td><p>*</p></td>
+<td><p><span>&lt;</span><a class="sp-element reference internal" href="../../Core/QualifiedValue.html"><span class="doc">QualifiedValue</span></a><span> with </span><a class="sp-element reference internal" href="../../Core/QualifiedValue.html#sp:core.qualifiedvalue.type"><span class="std std-ref">Type</span></a><span> → </span><a class="sp-element reference internal" href="../../Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><span>&lt;</span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/PhysicalQuantity.html"><span class="doc">PhysicalQuantity</span></a><span> with </span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/PhysicalQuantity.html#sp:core.physicalquantities.physicalquantity.unittype"><span class="std std-ref">UnitType</span></a><span> → </span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/TemperatureUnit.html"><span class="doc">TemperatureUnit</span></a><span>&gt;</span><span>&gt;</span></p></td>
+<td><p>no</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="#sp:process.process.removingthermalenergy.temperaturedifference"><span class="std std-ref">TemperatureDifference</span></a></p></td>
+<td><p>*</p></td>
+<td><p><span>&lt;</span><a class="sp-element reference internal" href="../../Core/QualifiedValue.html"><span class="doc">QualifiedValue</span></a><span> with </span><a class="sp-element reference internal" href="../../Core/QualifiedValue.html#sp:core.qualifiedvalue.type"><span class="std std-ref">Type</span></a><span> → </span><a class="sp-element reference internal" href="../../Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><span>&lt;</span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/PhysicalQuantity.html"><span class="doc">PhysicalQuantity</span></a><span> with </span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/PhysicalQuantity.html#sp:core.physicalquantities.physicalquantity.unittype"><span class="std std-ref">UnitType</span></a><span> → </span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/TemperatureUnit.html"><span class="doc">TemperatureUnit</span></a><span>&gt;</span><span>&gt;</span></p></td>
+<td><p>no</p></td>
+</tr>
+</tbody>
+</table>
+<section id="member-list-section-Data Properties">
+<h3>Data Properties<a class="headerlink" href="#member-list-section-Data%20Properties" title="Link to this heading">¶</a></h3>
+</section>
+<table class="docutils align-left">
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Multiplicity</p></th>
+<th class="head"><p>Type</p></th>
+<th class="head"><p>Ordered</p></th>
+<th class="head"><p>Unique</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="#sp:process.process.removingthermalenergy.method"><span class="std std-ref">Method</span></a></p></td>
+<td><p>1</p></td>
+<td><p><a class="sp-element reference internal" href="../Enumerations/HeatExchangeMethod.html"><span class="doc">HeatExchangeMethod</span></a></p></td>
+<td><p>no</p></td>
+<td><p>no</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="sp:process.process.removingthermalenergy.area">
+<h2>Area<a class="headerlink" href="#sp:process.process.removingthermalenergy.area" title="Link to this heading">¶</a></h2>
+<p class="rubric">Composition Property</p>
+<p><strong>Type:</strong><span> </span><span>&lt;</span><a class="sp-element reference internal" href="../../Core/QualifiedValue.html"><span class="doc">QualifiedValue</span></a><span> with </span><a class="sp-element reference internal" href="../../Core/QualifiedValue.html#sp:core.qualifiedvalue.type"><span class="std std-ref">Type</span></a><span> → </span><a class="sp-element reference internal" href="../../Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><span>&lt;</span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/PhysicalQuantity.html"><span class="doc">PhysicalQuantity</span></a><span> with </span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/PhysicalQuantity.html#sp:core.physicalquantities.physicalquantity.unittype"><span class="std std-ref">UnitType</span></a><span> → </span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/AreaUnit.html"><span class="doc">AreaUnit</span></a><span>&gt;</span><span>&gt;</span></p>
+<p><strong>Multiplicity:</strong><span> </span><span>*</span></p>
+<p><strong>Ordered:</strong><span> </span><span>no</span></p>
+<section id="sp:process.process.removingthermalenergy.area-example">
+<h3>Example<a class="headerlink" href="#sp:process.process.removingthermalenergy.area-example" title="Link to this heading">¶</a></h3>
+<p class="sp-dense"><span>[</span></p>
+<p class="sp-dense"><span>     </span><a class="sp-element reference internal" href="../../Core/QualifiedValue.html"><span class="doc">QualifiedValue</span></a><span>(</span></p>
+<p class="sp-dense"><span>          </span><a class="sp-element reference internal" href="../../Core/QualifiedValue.html#sp:core.qualifiedvalue.value"><span class="std std-ref">Value</span></a><span> = </span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/PhysicalQuantity.html"><span class="doc">PhysicalQuantity</span></a><span>(</span></p>
+<p class="sp-dense"><span>               </span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/PhysicalQuantity.html#sp:core.physicalquantities.physicalquantity.unit"><span class="std std-ref">Unit</span></a><span> = </span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/AreaUnit.html#sp:core.physicalquantities.areaunit.centimetresquared"><span class="std std-ref">CentimetreSquared</span></a><span>,</span></p>
+<p class="sp-dense"><span>               </span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/PhysicalQuantity.html#sp:core.physicalquantities.physicalquantity.value"><span class="std std-ref">Value</span></a><span> = </span><code class="docutils literal notranslate"><span class="pre">7500.0</span></code><span>)</span><span>)</span></p>
+<p class="sp-dense"><span>]</span></p>
+</section>
+</section>
+<section id="sp:process.process.removingthermalenergy.duty">
+<h2>Duty<a class="headerlink" href="#sp:process.process.removingthermalenergy.duty" title="Link to this heading">¶</a></h2>
+<p class="rubric">Composition Property</p>
+<p><strong>Type:</strong><span> </span><span>&lt;</span><a class="sp-element reference internal" href="../../Core/QualifiedValue.html"><span class="doc">QualifiedValue</span></a><span> with </span><a class="sp-element reference internal" href="../../Core/QualifiedValue.html#sp:core.qualifiedvalue.type"><span class="std std-ref">Type</span></a><span> → </span><a class="sp-element reference internal" href="../../Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><span>&lt;</span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/PhysicalQuantity.html"><span class="doc">PhysicalQuantity</span></a><span> with </span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/PhysicalQuantity.html#sp:core.physicalquantities.physicalquantity.unittype"><span class="std std-ref">UnitType</span></a><span> → </span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/PowerUnit.html"><span class="doc">PowerUnit</span></a><span>&gt;</span><span>&gt;</span></p>
+<p><strong>Multiplicity:</strong><span> </span><span>*</span></p>
+<p><strong>Ordered:</strong><span> </span><span>no</span></p>
+<section id="sp:process.process.removingthermalenergy.duty-example">
+<h3>Example<a class="headerlink" href="#sp:process.process.removingthermalenergy.duty-example" title="Link to this heading">¶</a></h3>
+<p class="sp-dense"><span>[</span></p>
+<p class="sp-dense"><span>     </span><a class="sp-element reference internal" href="../../Core/QualifiedValue.html"><span class="doc">QualifiedValue</span></a><span>(</span></p>
+<p class="sp-dense"><span>          </span><a class="sp-element reference internal" href="../../Core/QualifiedValue.html#sp:core.qualifiedvalue.value"><span class="std std-ref">Value</span></a><span> = </span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/PhysicalQuantity.html"><span class="doc">PhysicalQuantity</span></a><span>(</span></p>
+<p class="sp-dense"><span>               </span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/PhysicalQuantity.html#sp:core.physicalquantities.physicalquantity.unit"><span class="std std-ref">Unit</span></a><span> = </span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/PowerUnit.html#sp:core.physicalquantities.powerunit.kilowatt"><span class="std std-ref">Kilowatt</span></a><span>,</span></p>
+<p class="sp-dense"><span>               </span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/PhysicalQuantity.html#sp:core.physicalquantities.physicalquantity.value"><span class="std std-ref">Value</span></a><span> = </span><code class="docutils literal notranslate"><span class="pre">120.0</span></code><span>)</span><span>)</span></p>
+<p class="sp-dense"><span>]</span></p>
+</section>
+</section>
+<section id="sp:process.process.removingthermalenergy.heattransfercoefficient">
+<h2>HeatTransferCoefficient<a class="headerlink" href="#sp:process.process.removingthermalenergy.heattransfercoefficient" title="Link to this heading">¶</a></h2>
+<p class="rubric">Composition Property</p>
+<p><strong>Type:</strong><span> </span><span>&lt;</span><a class="sp-element reference internal" href="../../Core/QualifiedValue.html"><span class="doc">QualifiedValue</span></a><span> with </span><a class="sp-element reference internal" href="../../Core/QualifiedValue.html#sp:core.qualifiedvalue.type"><span class="std std-ref">Type</span></a><span> → </span><a class="sp-element reference internal" href="../../Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><span>&lt;</span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/PhysicalQuantity.html"><span class="doc">PhysicalQuantity</span></a><span> with </span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/PhysicalQuantity.html#sp:core.physicalquantities.physicalquantity.unittype"><span class="std std-ref">UnitType</span></a><span> → </span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/HeatTransferCoefficientUnit.html"><span class="doc">HeatTransferCoefficientUnit</span></a><span>&gt;</span><span>&gt;</span></p>
+<p><strong>Multiplicity:</strong><span> </span><span>*</span></p>
+<p><strong>Ordered:</strong><span> </span><span>no</span></p>
+<section id="sp:process.process.removingthermalenergy.heattransfercoefficient-example">
+<h3>Example<a class="headerlink" href="#sp:process.process.removingthermalenergy.heattransfercoefficient-example" title="Link to this heading">¶</a></h3>
+<p class="sp-dense"><span>[</span></p>
+<p class="sp-dense"><span>     </span><a class="sp-element reference internal" href="../../Core/QualifiedValue.html"><span class="doc">QualifiedValue</span></a><span>(</span></p>
+<p class="sp-dense"><span>          </span><a class="sp-element reference internal" href="../../Core/QualifiedValue.html#sp:core.qualifiedvalue.value"><span class="std std-ref">Value</span></a><span> = </span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/PhysicalQuantity.html"><span class="doc">PhysicalQuantity</span></a><span>(</span></p>
+<p class="sp-dense"><span>               </span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/PhysicalQuantity.html#sp:core.physicalquantities.physicalquantity.unit"><span class="std std-ref">Unit</span></a><span> = </span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/HeatTransferCoefficientUnit.html#sp:core.physicalquantities.heattransfercoefficientunit.kilowattpermetresquaredkelvin"><span class="std std-ref">KilowattPerMetreSquaredKelvin</span></a><span>,</span></p>
+<p class="sp-dense"><span>               </span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/PhysicalQuantity.html#sp:core.physicalquantities.physicalquantity.value"><span class="std std-ref">Value</span></a><span> = </span><code class="docutils literal notranslate"><span class="pre">25.5</span></code><span>)</span><span>)</span></p>
+<p class="sp-dense"><span>]</span></p>
+</section>
+</section>
+<section id="sp:process.process.removingthermalenergy.heattransferresistance">
+<h2>HeatTransferResistance<a class="headerlink" href="#sp:process.process.removingthermalenergy.heattransferresistance" title="Link to this heading">¶</a></h2>
+<p class="rubric">Composition Property</p>
+<p><strong>Type:</strong><span> </span><span>&lt;</span><a class="sp-element reference internal" href="../../Core/QualifiedValue.html"><span class="doc">QualifiedValue</span></a><span> with </span><a class="sp-element reference internal" href="../../Core/QualifiedValue.html#sp:core.qualifiedvalue.type"><span class="std std-ref">Type</span></a><span> → </span><a class="sp-element reference internal" href="../../Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><span>&lt;</span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/PhysicalQuantity.html"><span class="doc">PhysicalQuantity</span></a><span> with </span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/PhysicalQuantity.html#sp:core.physicalquantities.physicalquantity.unittype"><span class="std std-ref">UnitType</span></a><span> → </span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/HeatTransferResistanceUnit.html"><span class="doc">HeatTransferResistanceUnit</span></a><span>&gt;</span><span>&gt;</span></p>
+<p><strong>Multiplicity:</strong><span> </span><span>*</span></p>
+<p><strong>Ordered:</strong><span> </span><span>no</span></p>
+<section id="sp:process.process.removingthermalenergy.heattransferresistance-example">
+<h3>Example<a class="headerlink" href="#sp:process.process.removingthermalenergy.heattransferresistance-example" title="Link to this heading">¶</a></h3>
+<p class="sp-dense"><span>[</span></p>
+<p class="sp-dense"><span>     </span><a class="sp-element reference internal" href="../../Core/QualifiedValue.html"><span class="doc">QualifiedValue</span></a><span>(</span></p>
+<p class="sp-dense"><span>          </span><a class="sp-element reference internal" href="../../Core/QualifiedValue.html#sp:core.qualifiedvalue.value"><span class="std std-ref">Value</span></a><span> = </span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/PhysicalQuantity.html"><span class="doc">PhysicalQuantity</span></a><span>(</span></p>
+<p class="sp-dense"><span>               </span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/PhysicalQuantity.html#sp:core.physicalquantities.physicalquantity.unit"><span class="std std-ref">Unit</span></a><span> = </span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/HeatTransferResistanceUnit.html#sp:core.physicalquantities.heattransferresistanceunit.metresquaredkelvinperwatt"><span class="std std-ref">MetreSquaredKelvinPerWatt</span></a><span>,</span></p>
+<p class="sp-dense"><span>               </span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/PhysicalQuantity.html#sp:core.physicalquantities.physicalquantity.value"><span class="std std-ref">Value</span></a><span> = </span><code class="docutils literal notranslate"><span class="pre">3.92e-05</span></code><span>)</span><span>)</span></p>
+<p class="sp-dense"><span>]</span></p>
+</section>
+</section>
+<section id="sp:process.process.removingthermalenergy.method">
+<h2>Method<a class="headerlink" href="#sp:process.process.removingthermalenergy.method" title="Link to this heading">¶</a></h2>
+<p class="rubric">Data Property</p>
+<p><strong>Type:</strong><span> </span><a class="sp-element reference internal" href="../Enumerations/HeatExchangeMethod.html"><span class="doc">HeatExchangeMethod</span></a></p>
+<p><strong>Multiplicity:</strong><span> </span><span>1</span></p>
+<p><strong>Ordered:</strong><span> </span><span>no</span></p>
+<p><strong>Unique:</strong><span> </span><span>no</span></p>
+</section>
+<section id="sp:process.process.removingthermalenergy.skintemperature">
+<h2>SkinTemperature<a class="headerlink" href="#sp:process.process.removingthermalenergy.skintemperature" title="Link to this heading">¶</a></h2>
+<p class="rubric">Composition Property</p>
+<p><strong>Type:</strong><span> </span><span>&lt;</span><a class="sp-element reference internal" href="../../Core/QualifiedValue.html"><span class="doc">QualifiedValue</span></a><span> with </span><a class="sp-element reference internal" href="../../Core/QualifiedValue.html#sp:core.qualifiedvalue.type"><span class="std std-ref">Type</span></a><span> → </span><a class="sp-element reference internal" href="../../Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><span>&lt;</span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/PhysicalQuantity.html"><span class="doc">PhysicalQuantity</span></a><span> with </span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/PhysicalQuantity.html#sp:core.physicalquantities.physicalquantity.unittype"><span class="std std-ref">UnitType</span></a><span> → </span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/TemperatureUnit.html"><span class="doc">TemperatureUnit</span></a><span>&gt;</span><span>&gt;</span></p>
+<p><strong>Multiplicity:</strong><span> </span><span>*</span></p>
+<p><strong>Ordered:</strong><span> </span><span>no</span></p>
+<section id="sp:process.process.removingthermalenergy.skintemperature-example">
+<h3>Example<a class="headerlink" href="#sp:process.process.removingthermalenergy.skintemperature-example" title="Link to this heading">¶</a></h3>
+<p class="sp-dense"><span>[</span></p>
+<p class="sp-dense"><span>     </span><a class="sp-element reference internal" href="../../Core/QualifiedValue.html"><span class="doc">QualifiedValue</span></a><span>(</span></p>
+<p class="sp-dense"><span>          </span><a class="sp-element reference internal" href="../../Core/QualifiedValue.html#sp:core.qualifiedvalue.value"><span class="std std-ref">Value</span></a><span> = </span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/PhysicalQuantity.html"><span class="doc">PhysicalQuantity</span></a><span>(</span></p>
+<p class="sp-dense"><span>               </span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/PhysicalQuantity.html#sp:core.physicalquantities.physicalquantity.unit"><span class="std std-ref">Unit</span></a><span> = </span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/TemperatureUnit.html#sp:core.physicalquantities.temperatureunit.degreecelsius"><span class="std std-ref">DegreeCelsius</span></a><span>,</span></p>
+<p class="sp-dense"><span>               </span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/PhysicalQuantity.html#sp:core.physicalquantities.physicalquantity.value"><span class="std std-ref">Value</span></a><span> = </span><code class="docutils literal notranslate"><span class="pre">320.0</span></code><span>)</span><span>)</span></p>
+<p class="sp-dense"><span>]</span></p>
+</section>
+</section>
+<section id="sp:process.process.removingthermalenergy.temperaturedifference">
+<h2>TemperatureDifference<a class="headerlink" href="#sp:process.process.removingthermalenergy.temperaturedifference" title="Link to this heading">¶</a></h2>
+<p class="rubric">Composition Property</p>
+<p><strong>Type:</strong><span> </span><span>&lt;</span><a class="sp-element reference internal" href="../../Core/QualifiedValue.html"><span class="doc">QualifiedValue</span></a><span> with </span><a class="sp-element reference internal" href="../../Core/QualifiedValue.html#sp:core.qualifiedvalue.type"><span class="std std-ref">Type</span></a><span> → </span><a class="sp-element reference internal" href="../../Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><span>&lt;</span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/PhysicalQuantity.html"><span class="doc">PhysicalQuantity</span></a><span> with </span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/PhysicalQuantity.html#sp:core.physicalquantities.physicalquantity.unittype"><span class="std std-ref">UnitType</span></a><span> → </span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/TemperatureUnit.html"><span class="doc">TemperatureUnit</span></a><span>&gt;</span><span>&gt;</span></p>
+<p><strong>Multiplicity:</strong><span> </span><span>*</span></p>
+<p><strong>Ordered:</strong><span> </span><span>no</span></p>
+<section id="sp:process.process.removingthermalenergy.temperaturedifference-example">
+<h3>Example<a class="headerlink" href="#sp:process.process.removingthermalenergy.temperaturedifference-example" title="Link to this heading">¶</a></h3>
+<p class="sp-dense"><span>[</span></p>
+<p class="sp-dense"><span>     </span><a class="sp-element reference internal" href="../../Core/QualifiedValue.html"><span class="doc">QualifiedValue</span></a><span>(</span></p>
+<p class="sp-dense"><span>          </span><a class="sp-element reference internal" href="../../Core/QualifiedValue.html#sp:core.qualifiedvalue.value"><span class="std std-ref">Value</span></a><span> = </span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/PhysicalQuantity.html"><span class="doc">PhysicalQuantity</span></a><span>(</span></p>
+<p class="sp-dense"><span>               </span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/PhysicalQuantity.html#sp:core.physicalquantities.physicalquantity.unit"><span class="std std-ref">Unit</span></a><span> = </span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/TemperatureUnit.html#sp:core.physicalquantities.temperatureunit.kelvin"><span class="std std-ref">Kelvin</span></a><span>,</span></p>
+<p class="sp-dense"><span>               </span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/PhysicalQuantity.html#sp:core.physicalquantities.physicalquantity.value"><span class="std std-ref">Value</span></a><span> = </span><code class="docutils literal notranslate"><span class="pre">95.0</span></code><span>)</span><span>)</span></p>
+<p class="sp-dense"><span>]</span></p>
+</section>
+</section>
+<section id="Process.Process.RemovingThermalEnergy-example">
+<h2>Example in DEXPI XML<a class="headerlink" href="#Process.Process.RemovingThermalEnergy-example" title="Link to this heading">¶</a></h2>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;Object</span><span class="w"> </span><span class="na">type=</span><span class="s">"Process/Process.RemovingThermalEnergy"</span><span class="nt">&gt;</span>
+<span class="w">  </span><span class="nt">&lt;Components</span><span class="w"> </span><span class="na">property=</span><span class="s">"Area"</span><span class="nt">&gt;</span>
+<span class="w">    </span><span class="nt">&lt;Object</span><span class="w"> </span><span class="na">type=</span><span class="s">"Core/QualifiedValue"</span><span class="nt">&gt;</span>
+<span class="w">      </span><span class="nt">&lt;Data</span><span class="w"> </span><span class="na">property=</span><span class="s">"Value"</span><span class="nt">&gt;</span>
+<span class="w">        </span><span class="nt">&lt;AggregatedDataValue</span><span class="w"> </span><span class="na">type=</span><span class="s">"Core/PhysicalQuantities.PhysicalQuantity"</span><span class="nt">&gt;</span>
+<span class="w">          </span><span class="nt">&lt;Data</span><span class="w"> </span><span class="na">property=</span><span class="s">"Unit"</span><span class="nt">&gt;</span>
+<span class="w">            </span><span class="nt">&lt;DataReference</span><span class="w"> </span><span class="na">data=</span><span class="s">"Core/PhysicalQuantities.AreaUnit.CentimetreSquared"</span><span class="nt">/&gt;</span>
+<span class="w">          </span><span class="nt">&lt;/Data&gt;</span>
+<span class="w">          </span><span class="nt">&lt;Data</span><span class="w"> </span><span class="na">property=</span><span class="s">"Value"</span><span class="nt">&gt;</span>
+<span class="w">            </span><span class="nt">&lt;Double&gt;</span>7500.0<span class="nt">&lt;/Double&gt;</span>
+<span class="w">          </span><span class="nt">&lt;/Data&gt;</span>
+<span class="w">        </span><span class="nt">&lt;/AggregatedDataValue&gt;</span>
+<span class="w">      </span><span class="nt">&lt;/Data&gt;</span>
+<span class="w">    </span><span class="nt">&lt;/Object&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/Components&gt;</span>
+<span class="w">  </span><span class="nt">&lt;Components</span><span class="w"> </span><span class="na">property=</span><span class="s">"Duty"</span><span class="nt">&gt;</span>
+<span class="w">    </span><span class="nt">&lt;Object</span><span class="w"> </span><span class="na">type=</span><span class="s">"Core/QualifiedValue"</span><span class="nt">&gt;</span>
+<span class="w">      </span><span class="nt">&lt;Data</span><span class="w"> </span><span class="na">property=</span><span class="s">"Value"</span><span class="nt">&gt;</span>
+<span class="w">        </span><span class="nt">&lt;AggregatedDataValue</span><span class="w"> </span><span class="na">type=</span><span class="s">"Core/PhysicalQuantities.PhysicalQuantity"</span><span class="nt">&gt;</span>
+<span class="w">          </span><span class="nt">&lt;Data</span><span class="w"> </span><span class="na">property=</span><span class="s">"Unit"</span><span class="nt">&gt;</span>
+<span class="w">            </span><span class="nt">&lt;DataReference</span><span class="w"> </span><span class="na">data=</span><span class="s">"Core/PhysicalQuantities.PowerUnit.Kilowatt"</span><span class="nt">/&gt;</span>
+<span class="w">          </span><span class="nt">&lt;/Data&gt;</span>
+<span class="w">          </span><span class="nt">&lt;Data</span><span class="w"> </span><span class="na">property=</span><span class="s">"Value"</span><span class="nt">&gt;</span>
+<span class="w">            </span><span class="nt">&lt;Double&gt;</span>120.0<span class="nt">&lt;/Double&gt;</span>
+<span class="w">          </span><span class="nt">&lt;/Data&gt;</span>
+<span class="w">        </span><span class="nt">&lt;/AggregatedDataValue&gt;</span>
+<span class="w">      </span><span class="nt">&lt;/Data&gt;</span>
+<span class="w">    </span><span class="nt">&lt;/Object&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/Components&gt;</span>
+<span class="w">  </span><span class="nt">&lt;Components</span><span class="w"> </span><span class="na">property=</span><span class="s">"HeatTransferCoefficient"</span><span class="nt">&gt;</span>
+<span class="w">    </span><span class="nt">&lt;Object</span><span class="w"> </span><span class="na">type=</span><span class="s">"Core/QualifiedValue"</span><span class="nt">&gt;</span>
+<span class="w">      </span><span class="nt">&lt;Data</span><span class="w"> </span><span class="na">property=</span><span class="s">"Value"</span><span class="nt">&gt;</span>
+<span class="w">        </span><span class="nt">&lt;AggregatedDataValue</span><span class="w"> </span><span class="na">type=</span><span class="s">"Core/PhysicalQuantities.PhysicalQuantity"</span><span class="nt">&gt;</span>
+<span class="w">          </span><span class="nt">&lt;Data</span><span class="w"> </span><span class="na">property=</span><span class="s">"Unit"</span><span class="nt">&gt;</span>
+<span class="w">            </span><span class="nt">&lt;DataReference</span><span class="w"> </span><span class="na">data=</span><span class="s">"Core/PhysicalQuantities.HeatTransferCoefficientUnit.KilowattPerMetreSquaredKelvin"</span><span class="nt">/&gt;</span>
+<span class="w">          </span><span class="nt">&lt;/Data&gt;</span>
+<span class="w">          </span><span class="nt">&lt;Data</span><span class="w"> </span><span class="na">property=</span><span class="s">"Value"</span><span class="nt">&gt;</span>
+<span class="w">            </span><span class="nt">&lt;Double&gt;</span>25.5<span class="nt">&lt;/Double&gt;</span>
+<span class="w">          </span><span class="nt">&lt;/Data&gt;</span>
+<span class="w">        </span><span class="nt">&lt;/AggregatedDataValue&gt;</span>
+<span class="w">      </span><span class="nt">&lt;/Data&gt;</span>
+<span class="w">    </span><span class="nt">&lt;/Object&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/Components&gt;</span>
+<span class="w">  </span><span class="nt">&lt;Components</span><span class="w"> </span><span class="na">property=</span><span class="s">"HeatTransferResistance"</span><span class="nt">&gt;</span>
+<span class="w">    </span><span class="nt">&lt;Object</span><span class="w"> </span><span class="na">type=</span><span class="s">"Core/QualifiedValue"</span><span class="nt">&gt;</span>
+<span class="w">      </span><span class="nt">&lt;Data</span><span class="w"> </span><span class="na">property=</span><span class="s">"Value"</span><span class="nt">&gt;</span>
+<span class="w">        </span><span class="nt">&lt;AggregatedDataValue</span><span class="w"> </span><span class="na">type=</span><span class="s">"Core/PhysicalQuantities.PhysicalQuantity"</span><span class="nt">&gt;</span>
+<span class="w">          </span><span class="nt">&lt;Data</span><span class="w"> </span><span class="na">property=</span><span class="s">"Unit"</span><span class="nt">&gt;</span>
+<span class="w">            </span><span class="nt">&lt;DataReference</span><span class="w"> </span><span class="na">data=</span><span class="s">"Core/PhysicalQuantities.HeatTransferResistanceUnit.MetreSquaredKelvinPerWatt"</span><span class="nt">/&gt;</span>
+<span class="w">          </span><span class="nt">&lt;/Data&gt;</span>
+<span class="w">          </span><span class="nt">&lt;Data</span><span class="w"> </span><span class="na">property=</span><span class="s">"Value"</span><span class="nt">&gt;</span>
+<span class="w">            </span><span class="nt">&lt;Double&gt;</span>3.92e-05<span class="nt">&lt;/Double&gt;</span>
+<span class="w">          </span><span class="nt">&lt;/Data&gt;</span>
+<span class="w">        </span><span class="nt">&lt;/AggregatedDataValue&gt;</span>
+<span class="w">      </span><span class="nt">&lt;/Data&gt;</span>
+<span class="w">    </span><span class="nt">&lt;/Object&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/Components&gt;</span>
+<span class="w">  </span><span class="nt">&lt;Components</span><span class="w"> </span><span class="na">property=</span><span class="s">"SkinTemperature"</span><span class="nt">&gt;</span>
+<span class="w">    </span><span class="nt">&lt;Object</span><span class="w"> </span><span class="na">type=</span><span class="s">"Core/QualifiedValue"</span><span class="nt">&gt;</span>
+<span class="w">      </span><span class="nt">&lt;Data</span><span class="w"> </span><span class="na">property=</span><span class="s">"Value"</span><span class="nt">&gt;</span>
+<span class="w">        </span><span class="nt">&lt;AggregatedDataValue</span><span class="w"> </span><span class="na">type=</span><span class="s">"Core/PhysicalQuantities.PhysicalQuantity"</span><span class="nt">&gt;</span>
+<span class="w">          </span><span class="nt">&lt;Data</span><span class="w"> </span><span class="na">property=</span><span class="s">"Unit"</span><span class="nt">&gt;</span>
+<span class="w">            </span><span class="nt">&lt;DataReference</span><span class="w"> </span><span class="na">data=</span><span class="s">"Core/PhysicalQuantities.TemperatureUnit.DegreeCelsius"</span><span class="nt">/&gt;</span>
+<span class="w">          </span><span class="nt">&lt;/Data&gt;</span>
+<span class="w">          </span><span class="nt">&lt;Data</span><span class="w"> </span><span class="na">property=</span><span class="s">"Value"</span><span class="nt">&gt;</span>
+<span class="w">            </span><span class="nt">&lt;Double&gt;</span>320.0<span class="nt">&lt;/Double&gt;</span>
+<span class="w">          </span><span class="nt">&lt;/Data&gt;</span>
+<span class="w">        </span><span class="nt">&lt;/AggregatedDataValue&gt;</span>
+<span class="w">      </span><span class="nt">&lt;/Data&gt;</span>
+<span class="w">    </span><span class="nt">&lt;/Object&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/Components&gt;</span>
+<span class="w">  </span><span class="nt">&lt;Components</span><span class="w"> </span><span class="na">property=</span><span class="s">"TemperatureDifference"</span><span class="nt">&gt;</span>
+<span class="w">    </span><span class="nt">&lt;Object</span><span class="w"> </span><span class="na">type=</span><span class="s">"Core/QualifiedValue"</span><span class="nt">&gt;</span>
+<span class="w">      </span><span class="nt">&lt;Data</span><span class="w"> </span><span class="na">property=</span><span class="s">"Value"</span><span class="nt">&gt;</span>
+<span class="w">        </span><span class="nt">&lt;AggregatedDataValue</span><span class="w"> </span><span class="na">type=</span><span class="s">"Core/PhysicalQuantities.PhysicalQuantity"</span><span class="nt">&gt;</span>
+<span class="w">          </span><span class="nt">&lt;Data</span><span class="w"> </span><span class="na">property=</span><span class="s">"Unit"</span><span class="nt">&gt;</span>
+<span class="w">            </span><span class="nt">&lt;DataReference</span><span class="w"> </span><span class="na">data=</span><span class="s">"Core/PhysicalQuantities.TemperatureUnit.Kelvin"</span><span class="nt">/&gt;</span>
+<span class="w">          </span><span class="nt">&lt;/Data&gt;</span>
+<span class="w">          </span><span class="nt">&lt;Data</span><span class="w"> </span><span class="na">property=</span><span class="s">"Value"</span><span class="nt">&gt;</span>
+<span class="w">            </span><span class="nt">&lt;Double&gt;</span>95.0<span class="nt">&lt;/Double&gt;</span>
+<span class="w">          </span><span class="nt">&lt;/Data&gt;</span>
+<span class="w">        </span><span class="nt">&lt;/AggregatedDataValue&gt;</span>
+<span class="w">      </span><span class="nt">&lt;/Data&gt;</span>
+<span class="w">    </span><span class="nt">&lt;/Object&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/Components&gt;</span>
+<span class="nt">&lt;/Object&gt;</span>
+</pre></div>
+</div>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+    
+        <div id="show_right_sidebar">
+            <p><a class="toggle_right_sidebar" href="#"><span class="icon">&lt;</span><span>Page contents</span></a></p>
+        </div>
+
+        <div id="right_sidebar">
+            <p><a class="toggle_right_sidebar" href="#"><span class="icon">&gt;</span><span>Page contents:</span></a></p>
+            <div class="page_toc">
+                <ul>
+<li><a class="reference internal" href="#">RemovingThermalEnergy</a><ul>
+<li><a class="reference internal" href="#Overview">Overview</a></li>
+<li><a class="reference internal" href="#Members">Members</a><ul>
+<li><a class="reference internal" href="#member-list-section-Composition%20Properties">Composition Properties</a></li>
+<li><a class="reference internal" href="#member-list-section-Data%20Properties">Data Properties</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#sp:process.process.removingthermalenergy.area">Area</a><ul>
+<li><a class="reference internal" href="#sp:process.process.removingthermalenergy.area-example">Example</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#sp:process.process.removingthermalenergy.duty">Duty</a><ul>
+<li><a class="reference internal" href="#sp:process.process.removingthermalenergy.duty-example">Example</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#sp:process.process.removingthermalenergy.heattransfercoefficient">HeatTransferCoefficient</a><ul>
+<li><a class="reference internal" href="#sp:process.process.removingthermalenergy.heattransfercoefficient-example">Example</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#sp:process.process.removingthermalenergy.heattransferresistance">HeatTransferResistance</a><ul>
+<li><a class="reference internal" href="#sp:process.process.removingthermalenergy.heattransferresistance-example">Example</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#sp:process.process.removingthermalenergy.method">Method</a></li>
+<li><a class="reference internal" href="#sp:process.process.removingthermalenergy.skintemperature">SkinTemperature</a><ul>
+<li><a class="reference internal" href="#sp:process.process.removingthermalenergy.skintemperature-example">Example</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#sp:process.process.removingthermalenergy.temperaturedifference">TemperatureDifference</a><ul>
+<li><a class="reference internal" href="#sp:process.process.removingthermalenergy.temperaturedifference-example">Example</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#Process.Process.RemovingThermalEnergy-example">Example in DEXPI XML</a></li>
+</ul>
+</li>
+</ul>
+
+            </div>
+        </div>
+    
+
+      <div class="clearer"></div>
+    </div>
+    <div class="button_nav_wrapper">
+        <div class="button_nav">
+            <div class="left">
+                
+                <a href="RelievingVacuumAndOverpressure.html">
+                    <span class="icon">&lt;</span><span>RelievingVacuumAndOverpressure</span></a>
+                
+            </div>
+
+            <div class="right">
+                
+                    <a href="RotaryMixing.html"><span>RotaryMixing</span><span class="icon">&gt;</span></a>
+                
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer" role="contentinfo">
+    © Copyright .
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.1.3.
+    </div>
+
+<p id="theme_credit">Styled using the <a href="https://github.com/piccolo-orm/piccolo_theme">Piccolo Theme</a></p>
+  </body>
+</html>

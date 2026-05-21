@@ -1,0 +1,5 @@
+AnyURI
+======
+
+.. sp:internal-autoelement::
+   :element: Builtin.AnyURI

@@ -1,0 +1,5 @@
+DirectPipingConnection
+======================
+
+.. sp:internal-autoelement::
+   :element: Plant.Piping.DirectPipingConnection

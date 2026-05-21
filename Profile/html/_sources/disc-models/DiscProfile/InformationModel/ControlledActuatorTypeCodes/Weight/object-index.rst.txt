@@ -1,0 +1,5 @@
+Weight
+======
+
+.. sp:internal-autoelement::
+   :element: DiscProfile.InformationModel.ControlledActuatorTypeCodes.Weight

@@ -1,0 +1,5 @@
+Compressor
+==========
+
+.. sp:internal-autoelement::
+   :element: Plant.ProcessEquipment.Compressor

@@ -1,0 +1,5 @@
+Trap
+====
+
+.. sp:internal-autoelement::
+   :element: DiscProfile.InformationModel.Trap

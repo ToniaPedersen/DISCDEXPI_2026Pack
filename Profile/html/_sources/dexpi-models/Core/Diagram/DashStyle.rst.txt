@@ -1,0 +1,5 @@
+DashStyle
+=========
+
+.. sp:internal-autoelement::
+   :element: Core.Diagram.DashStyle

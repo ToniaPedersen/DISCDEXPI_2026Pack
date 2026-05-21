@@ -1,0 +1,5 @@
+VelocityUnit
+============
+
+.. sp:internal-autoelement::
+   :element: Core.PhysicalQuantities.VelocityUnit

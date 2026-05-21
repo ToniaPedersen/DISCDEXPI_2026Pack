@@ -1,0 +1,5 @@
+VariableAreaFlowMeter
+=====================
+
+.. sp:internal-autoelement::
+   :element: Plant.Piping.VariableAreaFlowMeter

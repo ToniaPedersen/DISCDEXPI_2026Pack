@@ -1,0 +1,5 @@
+MoleSpecificEnergyUnit
+======================
+
+.. sp:internal-autoelement::
+   :element: Core.PhysicalQuantities.MoleSpecificEnergyUnit

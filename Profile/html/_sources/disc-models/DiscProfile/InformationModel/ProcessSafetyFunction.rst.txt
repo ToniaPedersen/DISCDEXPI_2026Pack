@@ -1,0 +1,5 @@
+ProcessSafetyFunction
+=====================
+
+.. sp:internal-autoelement::
+   :element: DiscProfile.InformationModel.ProcessSafetyFunction

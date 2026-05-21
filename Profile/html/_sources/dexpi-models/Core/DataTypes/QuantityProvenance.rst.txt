@@ -1,0 +1,5 @@
+QuantityProvenance
+==================
+
+.. sp:internal-autoelement::
+   :element: Core.DataTypes.QuantityProvenance

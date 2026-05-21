@@ -1,0 +1,5 @@
+DrillingHydroCyclone
+====================
+
+.. sp:internal-autoelement::
+   :element: DiscProfile.InformationModel.DrillingHydroCyclone

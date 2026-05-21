@@ -1,0 +1,5 @@
+VortexBreaker
+=============
+
+.. sp:internal-autoelement::
+   :element: DiscProfile.InformationModel.VortexBreaker

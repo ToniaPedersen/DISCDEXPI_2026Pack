@@ -1,0 +1,5 @@
+SurfaceTensionUnit
+==================
+
+.. sp:internal-autoelement::
+   :element: Core.PhysicalQuantities.SurfaceTensionUnit

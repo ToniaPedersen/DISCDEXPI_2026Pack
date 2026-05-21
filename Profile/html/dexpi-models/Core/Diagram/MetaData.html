@@ -1,0 +1,1317 @@
+<!DOCTYPE html>
+<html lang="en" data-content_root="../../../">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>MetaData — DISC Profile 0.5</title>
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=b86133f3">
+    <link rel="stylesheet" type="text/css" href="../../../_static/basic_mod.css?v=9b2032db">
+    <link rel="stylesheet" type="text/css" href="../../../_static/sp.css">
+    <script src="../../../_static/documentation_options.js?v=db78e746"></script>
+    <script src="../../../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../_static/js/theme.js"></script>
+    <script src="../../../_static/js/petite-vue.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html">
+    <link rel="search" title="Search" href="../../../search.html">
+    <link rel="next" title="NodePosition" href="NodePosition.html">
+    <link rel="prev" title="LiteralText" href="LiteralText.html"> 
+  </head><body data-dark_mode_code_blocks="true">
+
+<div id="top_nav">
+    
+
+    <nav>
+        
+            
+        
+
+        <p id="toggle_sidebar">
+            <a href="#" title="Toggle sidebar">|||</a>
+        </p>
+        <h1><a href="../../../index.html" title="Go to homepage">DISC Profile 0.5</a></h1>
+
+        <a id="mode_toggle" href="#" @click.prevent="handleClick" :title="mode">
+    <template v-if="mode == 'light'">
+        <svg width="100%" height="100%" viewbox="0 0 79 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g id="mode_light"><rect id="Bounds" x="0" y="-0" width="78.623" height="79.049" style="fill:none;"></rect><circle cx="39.311" cy="39.524" r="15.734" style="fill:#fff;"></circle><g id="beams"><g id="beam"><path id="beam1" serif:id="beam" d="M44.212,4.901c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,-0 -4.9,2.196 -4.9,4.901l-0,9.614c-0,2.705 2.196,4.901 4.9,4.901c2.705,0 4.901,-2.196 4.901,-4.901l0,-9.614Z" style="fill:#fff;"></path></g><g id="beam2" serif:id="beam"><path id="beam3" serif:id="beam" d="M67.48,18.073c1.913,-1.912 1.913,-5.018 0,-6.931c-1.912,-1.912 -5.018,-1.912 -6.931,0l-6.798,6.799c-1.912,1.912 -1.912,5.018 0,6.931c1.913,1.912 5.018,1.912 6.931,-0l6.798,-6.799Z" style="fill:#fff;"></path></g><g id="beam4" serif:id="beam"><path id="beam5" serif:id="beam" d="M25.728,61.108c1.912,-1.913 1.912,-5.018 -0,-6.931c-1.913,-1.913 -5.019,-1.913 -6.931,-0l-6.799,6.798c-1.912,1.913 -1.912,5.019 0,6.931c1.913,1.913 5.019,1.913 6.931,0l6.799,-6.798Z" style="fill:#fff;"></path></g><g id="beam6" serif:id="beam"><path id="beam7" serif:id="beam" d="M60.682,54.177c-1.913,-1.913 -5.018,-1.913 -6.931,-0c-1.912,1.913 -1.912,5.018 0,6.931l6.798,6.798c1.913,1.913 5.019,1.913 6.931,0c1.913,-1.912 1.913,-5.018 0,-6.931l-6.798,-6.798Z" style="fill:#fff;"></path></g><g id="beam8" serif:id="beam"><path id="beam9" serif:id="beam" d="M4.901,34.623c-2.705,0 -4.901,2.196 -4.901,4.901c0,2.705 2.196,4.901 4.901,4.901l9.614,0c2.705,0 4.901,-2.196 4.901,-4.901c0,-2.705 -2.196,-4.901 -4.901,-4.901l-9.614,0Z" style="fill:#fff;"></path></g><g id="beam10" serif:id="beam"><path id="beam11" serif:id="beam" d="M44.212,64.534c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,-0 -4.9,2.196 -4.9,4.901l-0,9.614c-0,2.705 2.196,4.901 4.9,4.901c2.705,-0 4.901,-2.196 4.901,-4.901l0,-9.614Z" style="fill:#fff;"></path></g><g id="beam12" serif:id="beam"><path id="beam13" serif:id="beam" d="M18.929,11.142c-1.912,-1.912 -5.018,-1.912 -6.931,0c-1.912,1.913 -1.912,5.019 0,6.931l6.799,6.799c1.912,1.912 5.018,1.912 6.931,-0c1.912,-1.913 1.912,-5.019 -0,-6.931l-6.799,-6.799Z" style="fill:#fff;"></path></g><g id="beam14" serif:id="beam"><path id="beam15" serif:id="beam" d="M64.108,34.623c-2.705,0 -4.901,2.196 -4.901,4.901c-0,2.705 2.196,4.901 4.901,4.901l9.614,0c2.705,0 4.901,-2.196 4.901,-4.901c-0,-2.705 -2.196,-4.901 -4.901,-4.901l-9.614,0Z" style="fill:#fff;"></path></g></g></g></svg>
+    </template>
+
+    <template v-if="mode == 'dark'">
+        <svg width="100%" height="100%" viewbox="0 0 79 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g id="mode_dark"><rect id="Bounds" x="0" y="-0" width="78.623" height="79.049" style="fill:none;"></rect><circle cx="39.311" cy="39.524" r="15.734" style="fill:#fff;"></circle><g id="beams"><g id="beam"><path id="beam1" serif:id="beam" d="M44.212,14.515c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,0 -4.901,2.196 -4.901,4.901c0,2.705 2.197,4.901 4.901,4.901c2.705,0 4.901,-2.196 4.901,-4.901Z" style="fill:#fff;"></path></g><g id="beam2" serif:id="beam"><path id="beam3" serif:id="beam" d="M60.662,24.892c1.902,-1.902 1.902,-4.99 0,-6.892l-0.04,-0.039c-1.901,-1.902 -4.989,-1.902 -6.891,-0c-1.901,1.901 -1.901,4.989 0,6.891l0.04,0.04c1.902,1.901 4.989,1.901 6.891,-0Z" style="fill:#fff;"></path></g><g id="beam4" serif:id="beam"><path id="beam5" serif:id="beam" d="M25.732,61.103c1.91,-1.91 1.91,-5.011 0,-6.921l-0.009,-0.01c-1.91,-1.91 -5.012,-1.91 -6.921,-0c-1.91,1.91 -1.91,5.011 -0,6.921l0.01,0.01c1.909,1.91 5.011,1.91 6.92,-0Z" style="fill:#fff;"></path></g><g id="beam6" serif:id="beam"><path id="beam7" serif:id="beam" d="M60.672,54.167c-1.907,-1.907 -5.004,-1.907 -6.911,0l-0.02,0.02c-1.907,1.907 -1.907,5.004 0,6.911c1.907,1.907 5.004,1.907 6.911,-0l0.02,-0.02c1.907,-1.907 1.907,-5.004 0,-6.911Z" style="fill:#fff;"></path></g><g id="beam8" serif:id="beam"><path id="beam9" serif:id="beam" d="M14.52,34.623c-2.702,0 -4.896,2.194 -4.896,4.896l0,0.01c0,2.702 2.194,4.896 4.896,4.896c2.702,0 4.896,-2.194 4.896,-4.896l-0,-0.01c-0,-2.702 -2.194,-4.896 -4.896,-4.896Z" style="fill:#fff;"></path></g><g id="beam10" serif:id="beam"><path id="beam11" serif:id="beam" d="M44.212,64.534c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,-0 -4.901,2.196 -4.901,4.901c0,2.704 2.197,4.9 4.901,4.9c2.705,0 4.901,-2.196 4.901,-4.9Z" style="fill:#fff;"></path></g><g id="beam12" serif:id="beam"><path id="beam13" serif:id="beam" d="M25.73,17.943c-1.911,-1.911 -5.015,-1.911 -6.926,0l-0.005,0.005c-1.911,1.911 -1.911,5.015 0,6.926c1.911,1.911 5.015,1.911 6.926,0l0.005,-0.005c1.911,-1.911 1.911,-5.014 -0,-6.926Z" style="fill:#fff;"></path></g><g id="beam14" serif:id="beam"><path id="beam15" serif:id="beam" d="M64.098,34.623c-2.699,0 -4.891,2.192 -4.891,4.892l-0,0.019c-0,2.699 2.192,4.891 4.891,4.891c2.7,0 4.892,-2.192 4.892,-4.891l0,-0.019c0,-2.7 -2.192,-4.892 -4.892,-4.892Z" style="fill:#fff;"></path></g></g></g></svg>
+    </template>
+
+    <template v-if="mode == 'darkest'">
+        <svg width="100%" height="100%" viewbox="0 0 79 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g id="mode_darkest"><rect id="Bounds" x="0" y="-0" width="78.623" height="79.049" style="fill:none;"></rect><path d="M39.315,23.791c8.684,-0 15.734,7.05 15.734,15.733c0,8.684 -7.05,15.734 -15.734,15.734c-8.683,0 -15.733,-7.05 -15.733,-15.734c-0,-8.683 7.05,-15.733 15.733,-15.733Zm0,4.737c6.069,0 10.997,4.927 10.997,10.996c-0,6.069 -4.928,10.996 -10.997,10.996c-6.068,0 -10.996,-4.927 -10.996,-10.996c0,-6.069 4.928,-10.996 10.996,-10.996Z" style="fill:#fff;"></path><g id="beams"><g id="beam"><path id="beam1" serif:id="beam" d="M44.216,14.515c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,0 -4.9,2.196 -4.9,4.901c-0,2.705 2.196,4.901 4.9,4.901c2.705,0 4.901,-2.196 4.901,-4.901Z" style="fill:#fff;"></path></g><g id="beam2" serif:id="beam"><path id="beam3" serif:id="beam" d="M60.666,24.892c1.902,-1.902 1.902,-4.99 0,-6.892l-0.04,-0.039c-1.901,-1.902 -4.989,-1.902 -6.891,-0c-1.901,1.901 -1.901,4.989 0,6.891l0.04,0.04c1.902,1.901 4.99,1.901 6.891,-0Z" style="fill:#fff;"></path></g><g id="beam4" serif:id="beam"><path id="beam5" serif:id="beam" d="M25.737,61.103c1.909,-1.91 1.909,-5.011 -0,-6.921l-0.01,-0.01c-1.91,-1.91 -5.011,-1.91 -6.921,-0c-1.91,1.91 -1.91,5.011 -0,6.921l0.01,0.01c1.91,1.91 5.011,1.91 6.921,-0Z" style="fill:#fff;"></path></g><g id="beam6" serif:id="beam"><path id="beam7" serif:id="beam" d="M60.676,54.167c-1.907,-1.907 -5.004,-1.907 -6.911,0l-0.02,0.02c-1.907,1.907 -1.907,5.004 0,6.911c1.907,1.907 5.004,1.907 6.911,-0l0.02,-0.02c1.907,-1.907 1.907,-5.004 0,-6.911Z" style="fill:#fff;"></path></g><g id="beam8" serif:id="beam"><path id="beam9" serif:id="beam" d="M14.524,34.623c-2.702,0 -4.896,2.194 -4.896,4.896l0,0.01c0,2.702 2.194,4.896 4.896,4.896c2.702,0 4.896,-2.194 4.896,-4.896l0,-0.01c0,-2.702 -2.194,-4.896 -4.896,-4.896Z" style="fill:#fff;"></path></g><g id="beam10" serif:id="beam"><path id="beam11" serif:id="beam" d="M44.216,64.534c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,-0 -4.9,2.196 -4.9,4.901c-0,2.704 2.196,4.9 4.9,4.9c2.705,0 4.901,-2.196 4.901,-4.9Z" style="fill:#fff;"></path></g><g id="beam12" serif:id="beam"><path id="beam13" serif:id="beam" d="M25.734,17.943c-1.911,-1.911 -5.015,-1.911 -6.926,0l-0.005,0.005c-1.911,1.911 -1.911,5.015 0,6.926c1.911,1.911 5.015,1.911 6.926,0l0.005,-0.005c1.911,-1.911 1.911,-5.014 0,-6.926Z" style="fill:#fff;"></path></g><g id="beam14" serif:id="beam"><path id="beam15" serif:id="beam" d="M64.103,34.623c-2.7,0 -4.892,2.192 -4.892,4.892l-0,0.019c-0,2.699 2.192,4.891 4.892,4.891c2.699,0 4.891,-2.192 4.891,-4.891l0,-0.019c0,-2.7 -2.192,-4.892 -4.891,-4.892Z" style="fill:#fff;"></path></g></g></g></svg>
+    </template>
+</a>
+
+<script>
+(function() {
+    const LOCAL_STORAGE_KEY = 'piccoloThemeMode'
+
+    var initialMode = localStorage.getItem(LOCAL_STORAGE_KEY)
+
+    if (initialMode) {
+        // Make sure the value in local storage is valid
+        if (['light', 'dark', 'darkest'].indexOf(initialMode) == -1) {
+            initialMode = 'light'
+            localStorage.setItem(LOCAL_STORAGE_KEY, initialMode)
+        }
+    } else {
+        // Check if the client prefers dark mode
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            initialMode = 'dark'
+        } else {
+            initialMode = 'light'
+        }
+        localStorage.setItem(LOCAL_STORAGE_KEY, initialMode)
+    }
+
+    document.documentElement.dataset.mode = initialMode
+
+    PetiteVue.createApp({
+        'mode': initialMode,
+        handleClick() {
+            let currentMode = this.mode
+
+            if (currentMode == 'light') {
+                this.mode = 'dark'
+            } else if (currentMode == 'dark') {
+                this.mode = 'darkest'
+            } else if (currentMode == 'darkest') {
+                this.mode = 'light'
+            }
+
+            document.documentElement.dataset.mode = this.mode
+            localStorage.setItem(LOCAL_STORAGE_KEY, this.mode)
+
+            console.log(this.mode)
+        }
+    }).mount('#mode_toggle')
+})()
+</script>
+            <p class="mobile_search_link">
+                <a href="../../../search.html" title="Search">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 65 64" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2">
+                        <path d="M14.873 40.009c-2.315-3.943-3.642-8.532-3.642-13.429C11.231 11.91 23.141 0 37.811 0s26.58 11.91 26.58 26.58-11.91 26.58-26.58 26.58a26.44 26.44 0 0 1-14.277-4.161L9.739 62.794a3.12 3.12 0 0 1-4.413 0L.913 58.382c-1.217-1.218-1.217-3.196 0-4.413l13.96-13.96zM37.811 8.054c10.225 0 18.526 8.301 18.526 18.526s-8.301 18.526-18.526 18.526-18.526-8.301-18.526-18.526S27.586 8.054 37.811 8.054z" fill="#fff"></path>
+                    </svg>
+                </a>
+            </p>
+        
+
+        <div class="searchbox_wrapper">
+            
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+      <input type="submit" value="Go">
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+    </nav>
+</div>
+
+    
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper"><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">DEXPI Information Models</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../Builtin/model-index.html">Builtin</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../model-index.html">Core</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../ConceptualModel.html">ConceptualModel</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../ConceptualObject.html">ConceptualObject</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../DataTypes/package-index.html">DataTypes</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="package-index.html">Diagram</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../EngineeringModel.html">EngineeringModel</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Note.html">Note</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../PersistentIdentifier.html">PersistentIdentifier</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../PhysicalQuantities/package-index.html">PhysicalQuantities</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../QualifiedValue.html">QualifiedValue</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Role.html">Role</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../Plant/model-index.html">Plant</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Process/model-index.html">Process</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../disc-models/index.html">DISC Information Models</a></li>
+</ul>
+
+        </div>
+      </div>
+
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="metadata">
+<h1>MetaData<a class="headerlink" href="#metadata" title="Link to this heading">¶</a></h1>
+<p><a class="sp-element reference internal" href="../model-index.html"><span class="doc">Core</span></a><span class="sp-element">::</span><a class="sp-element reference internal" href="package-index.html"><span class="doc">Diagram</span></a><span class="sp-element">::</span><span class="sp-element">MetaData</span></p>
+<section id="Overview">
+<h2>Overview<a class="headerlink" href="#Overview" title="Link to this heading">¶</a></h2>
+<p class="rubric">Concrete Class</p>
+<p><strong>RDL:</strong><span> </span><a class="reference external" href="http://sandbox.dexpi.org/rdl/MetaData">META DATA (http://sandbox.dexpi.org/rdl/MetaData)</a></p>
+<p>Meta data about a <span class="sp-element sp-error">Core.Container</span>.</p>
+<p><span>(</span><a class="reference external" href="../../../_images/uml-34.svg">Fullscreen Diagram</a><span>)</span></p>
+<svg xmlns:ns0="http://www.w3.org/2000/svg" width="746.142578125px" viewBox="0.0 0.0 746.142578125 760.5999999999999" style="max-width: 100%; background-color: white;"><style>
+            .uml-foreground-stroke {
+                stroke: black;
+                stroke-width: 1px;
+            }
+            
+            .uml-foreground-fill {
+                fill: black;
+            }
+            
+            .uml-background_color-type {
+                fill: #ffffcc;
+            }
+            
+            .uml-background_color-main_type {
+                fill: #ffff66;
+            }
+            
+            .uml-background_color-instance {
+                fill: blue;
+            }
+            
+            .uml-background_color-background {
+                fill: white;
+            }
+            
+            .uml-background_color-foreground {
+                fill: black;
+            }
+            
+            .uml-font-normal {
+                font-family: Arial;
+            }
+            
+            .uml-font-element {
+                font-family: Arial;
+            }
+            
+            .uml-fontsize-normal {
+                font-size: 10px;
+            }
+
+            .uml-fontsize-large {
+                font-size: 12px;
+            }
+            
+            .uml-source_marker-closed_arrow {
+                marker-start: url(#uml-marker-closed_arrow);
+            }
+            
+            .uml-source_marker-open_arrow {
+                marker-start: url(#uml-marker-open_arrow);
+            }
+            
+            .uml-source_marker-filled_diamond {
+                marker-start: url(#uml-marker-filled_diamond);
+            }
+
+            .uml-target_marker-closed_arrow {
+                marker-end: url(#uml-marker-closed_arrow);
+            }
+            
+            .uml-target_marker-open_arrow {
+                marker-end: url(#uml-marker-open_arrow);
+            }
+            
+            .uml-target_marker-filled_diamond {
+                marker-end: url(#uml-marker-filled_diamond);
+            }
+
+            </style><defs>
+        <marker id="uml-marker-closed_arrow" viewBox="-2 -2 14 14" refX="10" refY="5.0" markerWidth="14" markerHeight="14" orient="auto-start-reverse">
+          <path d="M 0 0 L 10 5.0 L 0 10 Z" stroke-linejoin="round" stroke-linecap="round" class="uml-foreground-stroke uml-background_color-background"></path>
+        </marker>
+        <marker id="uml-marker-open_arrow" viewBox="-2 -2 14 14" refX="10" refY="5.0" markerWidth="14" markerHeight="14" orient="auto-start-reverse">
+          <path d="M 0 0 L 10 5.0 L 0 10" stroke-linejoin="round" stroke-linecap="round" fill="none" class="uml-foreground-stroke"></path>
+        </marker>
+        <marker id="uml-marker-filled_diamond" viewBox="-2 -2 14 14" refX="10" refY="5.0" markerWidth="14" markerHeight="14" orient="auto-start-reverse">
+          <path d="M 0 5.0 L      5.0 2.0        10 5.0      5.0 8.0 Z       " stroke-linejoin="round" stroke-linecap="round" class="uml-foreground-stroke uml-background_color-foreground"></path>
+        </marker>
+      </defs><rect class="uml-background_color-type uml-foreground-stroke" x="543.1843391927084" y="125.19999999999999" width="123.00501953125001" height="23.799999999999997"></rect><text x="604.6868489583335" text-anchor="middle" font-size="0px" y="140.64"><a href="../../../dexpi-models/Core/ConceptualModel.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold" font-style="italic">ConceptualModel</tspan></a></text><rect class="uml-background_color-type uml-foreground-stroke" x="17.3505859375" y="125.19999999999999" width="200.0" height="23.799999999999997"></rect><text x="117.3505859375" text-anchor="middle" font-size="0px" y="140.64"><a href="../../../dexpi-models/Core/ConceptualObject.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold" font-style="italic">ConceptualObject</tspan></a></text><rect class="uml-background_color-type uml-foreground-stroke" x="172.12330729166666" y="12.0" width="148.6837890625" height="23.799999999999997"></rect><text x="246.46520182291667" text-anchor="middle" font-size="0px" y="27.439999999999998"><a href="../../../dexpi-models/Core/Diagram/AttributeRepresentation.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold">AttributeRepresentation</tspan></a></text><rect class="uml-background_color-main_type uml-foreground-stroke" x="345.775390625" y="258.4" width="388.3671875" height="490.2"></rect><text x="539.958984375" text-anchor="middle" font-size="0px" y="273.84"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold">MetaData</tspan></text><polyline class="uml-foreground-stroke" points="345.775390625,282.2 734.142578125,282.2" fill="none"></polyline><text x="350.775390625" font-size="0px" y="298.64"><a href="../../../dexpi-models/Core/Diagram/MetaData.html#sp:core.diagram.metadata.approvaldaterepresentation"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">ApprovalDateRepresentation</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> :</tspan></text><text x="553.056640625" font-size="0px" y="298.64"><a href="../../../dexpi-models/Builtin/Undefined.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Undefined</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> | </tspan><a href="../../../dexpi-models/Builtin/String.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">String</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> [0..1]</tspan></text><text x="350.775390625" font-size="0px" y="312.44"><a href="../../../dexpi-models/Core/Diagram/MetaData.html#sp:core.diagram.metadata.approvaldescription"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">ApprovalDescription</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> :</tspan></text><text x="553.056640625" font-size="0px" y="312.44"><a href="../../../dexpi-models/Core/DataTypes/MultiLanguageString.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">MultiLanguageString</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> [0..1]</tspan></text><text x="350.775390625" font-size="0px" y="326.24"><a href="../../../dexpi-models/Core/Diagram/MetaData.html#sp:core.diagram.metadata.approvername"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">ApproverName</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> :</tspan></text><text x="553.056640625" font-size="0px" y="326.24"><a href="../../../dexpi-models/Builtin/Undefined.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Undefined</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> | </tspan><a href="../../../dexpi-models/Builtin/String.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">String</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> [0..1]</tspan></text><text x="350.775390625" font-size="0px" y="340.04"><a href="../../../dexpi-models/Core/Diagram/MetaData.html#sp:core.diagram.metadata.archivenumber"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">ArchiveNumber</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> :</tspan></text><text x="553.056640625" font-size="0px" y="340.04"><a href="../../../dexpi-models/Builtin/Undefined.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Undefined</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> | </tspan><a href="../../../dexpi-models/Builtin/String.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">String</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> [0..1]</tspan></text><text x="350.775390625" font-size="0px" y="353.84000000000003"><a href="../../../dexpi-models/Core/Diagram/MetaData.html#sp:core.diagram.metadata.blockname"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">BlockName</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> :</tspan></text><text x="553.056640625" font-size="0px" y="353.84000000000003"><a href="../../../dexpi-models/Builtin/Undefined.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Undefined</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> | </tspan><a href="../../../dexpi-models/Builtin/String.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">String</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> [0..1]</tspan></text><text x="350.775390625" font-size="0px" y="367.64000000000004"><a href="../../../dexpi-models/Core/Diagram/MetaData.html#sp:core.diagram.metadata.blocknumber"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">BlockNumber</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> :</tspan></text><text x="553.056640625" font-size="0px" y="367.64000000000004"><a href="../../../dexpi-models/Builtin/Undefined.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Undefined</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> | </tspan><a href="../../../dexpi-models/Builtin/String.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">String</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> [0..1]</tspan></text><text x="350.775390625" font-size="0px" y="381.44000000000005"><a href="../../../dexpi-models/Core/Diagram/MetaData.html#sp:core.diagram.metadata.checkername"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">CheckerName</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> :</tspan></text><text x="553.056640625" font-size="0px" y="381.44000000000005"><a href="../../../dexpi-models/Builtin/Undefined.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Undefined</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> | </tspan><a href="../../../dexpi-models/Builtin/String.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">String</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> [0..1]</tspan></text><text x="350.775390625" font-size="0px" y="395.24000000000007"><a href="../../../dexpi-models/Core/Diagram/MetaData.html#sp:core.diagram.metadata.confidentiality"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Confidentiality</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> :</tspan></text><text x="553.056640625" font-size="0px" y="395.24000000000007"><a href="../../../dexpi-models/Core/Diagram/ConfidentialityClassification.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">ConfidentialityClassification</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> [0..1]</tspan></text><text x="350.775390625" font-size="0px" y="409.0400000000001"><a href="../../../dexpi-models/Core/Diagram/MetaData.html#sp:core.diagram.metadata.creationdaterepresentation"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">CreationDateRepresentation</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> :</tspan></text><text x="553.056640625" font-size="0px" y="409.0400000000001"><a href="../../../dexpi-models/Builtin/Undefined.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Undefined</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> | </tspan><a href="../../../dexpi-models/Builtin/String.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">String</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> [0..1]</tspan></text><text x="350.775390625" font-size="0px" y="422.8400000000001"><a href="../../../dexpi-models/Core/Diagram/MetaData.html#sp:core.diagram.metadata.creatorname"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">CreatorName</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> :</tspan></text><text x="553.056640625" font-size="0px" y="422.8400000000001"><a href="../../../dexpi-models/Builtin/Undefined.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Undefined</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> | </tspan><a href="../../../dexpi-models/Builtin/String.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">String</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> [0..1]</tspan></text><text x="350.775390625" font-size="0px" y="436.6400000000001"><a href="../../../dexpi-models/Core/Diagram/MetaData.html#sp:core.diagram.metadata.designername"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">DesignerName</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> :</tspan></text><text x="553.056640625" font-size="0px" y="436.6400000000001"><a href="../../../dexpi-models/Builtin/Undefined.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Undefined</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> | </tspan><a href="../../../dexpi-models/Builtin/String.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">String</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> [0..1]</tspan></text><text x="350.775390625" font-size="0px" y="450.4400000000001"><a href="../../../dexpi-models/Core/Diagram/MetaData.html#sp:core.diagram.metadata.draftername"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">DrafterName</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> :</tspan></text><text x="553.056640625" font-size="0px" y="450.4400000000001"><a href="../../../dexpi-models/Builtin/Undefined.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Undefined</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> | </tspan><a href="../../../dexpi-models/Builtin/String.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">String</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> [0..1]</tspan></text><text x="350.775390625" font-size="0px" y="464.2400000000001"><a href="../../../dexpi-models/Core/Diagram/MetaData.html#sp:core.diagram.metadata.drawingname"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">DrawingName</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> :</tspan></text><text x="553.056640625" font-size="0px" y="464.2400000000001"><a href="../../../dexpi-models/Builtin/Undefined.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Undefined</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> | </tspan><a href="../../../dexpi-models/Builtin/String.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">String</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> [0..1]</tspan></text><text x="350.775390625" font-size="0px" y="478.04000000000013"><a href="../../../dexpi-models/Core/Diagram/MetaData.html#sp:core.diagram.metadata.drawingnumber"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">DrawingNumber</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> :</tspan></text><text x="553.056640625" font-size="0px" y="478.04000000000013"><a href="../../../dexpi-models/Builtin/Undefined.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Undefined</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> | </tspan><a href="../../../dexpi-models/Builtin/String.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">String</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> [0..1]</tspan></text><text x="350.775390625" font-size="0px" y="491.84000000000015"><a href="../../../dexpi-models/Core/Diagram/MetaData.html#sp:core.diagram.metadata.drawingsubtitle"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">DrawingSubTitle</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> :</tspan></text><text x="553.056640625" font-size="0px" y="491.84000000000015"><a href="../../../dexpi-models/Core/DataTypes/MultiLanguageString.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">MultiLanguageString</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> [0..1]</tspan></text><text x="350.775390625" font-size="0px" y="505.64000000000016"><a href="../../../dexpi-models/Core/Diagram/MetaData.html#sp:core.diagram.metadata.filename"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">FileName</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> :</tspan></text><text x="553.056640625" font-size="0px" y="505.64000000000016"><a href="../../../dexpi-models/Builtin/Undefined.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Undefined</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> | </tspan><a href="../../../dexpi-models/Builtin/String.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">String</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> [0..1]</tspan></text><text x="350.775390625" font-size="0px" y="519.4400000000002"><a href="../../../dexpi-models/Core/Diagram/MetaData.html#sp:core.diagram.metadata.lastmodificationdaterepresentation"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">LastModificationDateRepresentation</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> :</tspan></text><text x="553.056640625" font-size="0px" y="519.4400000000002"><a href="../../../dexpi-models/Builtin/Undefined.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Undefined</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> | </tspan><a href="../../../dexpi-models/Builtin/String.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">String</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> [0..1]</tspan></text><text x="350.775390625" font-size="0px" y="533.2400000000002"><a href="../../../dexpi-models/Core/Diagram/MetaData.html#sp:core.diagram.metadata.locationname"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">LocationName</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> :</tspan></text><text x="553.056640625" font-size="0px" y="533.2400000000002"><a href="../../../dexpi-models/Builtin/Undefined.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Undefined</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> | </tspan><a href="../../../dexpi-models/Builtin/String.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">String</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> [0..1]</tspan></text><text x="350.775390625" font-size="0px" y="547.0400000000002"><a href="../../../dexpi-models/Core/Diagram/MetaData.html#sp:core.diagram.metadata.processcellidentificationcode"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">ProcessCellIdentificationCode</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> :</tspan></text><text x="553.056640625" font-size="0px" y="547.0400000000002"><a href="../../../dexpi-models/Builtin/Undefined.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Undefined</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> | </tspan><a href="../../../dexpi-models/Builtin/String.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">String</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> [0..1]</tspan></text><text x="350.775390625" font-size="0px" y="560.8400000000001"><a href="../../../dexpi-models/Core/Diagram/MetaData.html#sp:core.diagram.metadata.processcellname"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">ProcessCellName</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> :</tspan></text><text x="553.056640625" font-size="0px" y="560.8400000000001"><a href="../../../dexpi-models/Builtin/Undefined.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Undefined</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> | </tspan><a href="../../../dexpi-models/Builtin/String.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">String</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> [0..1]</tspan></text><text x="350.775390625" font-size="0px" y="574.6400000000001"><a href="../../../dexpi-models/Core/Diagram/MetaData.html#sp:core.diagram.metadata.projectname"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">ProjectName</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> :</tspan></text><text x="553.056640625" font-size="0px" y="574.6400000000001"><a href="../../../dexpi-models/Builtin/Undefined.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Undefined</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> | </tspan><a href="../../../dexpi-models/Builtin/String.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">String</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> [0..1]</tspan></text><text x="350.775390625" font-size="0px" y="588.44"><a href="../../../dexpi-models/Core/Diagram/MetaData.html#sp:core.diagram.metadata.projectnumber"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">ProjectNumber</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> :</tspan></text><text x="553.056640625" font-size="0px" y="588.44"><a href="../../../dexpi-models/Builtin/Undefined.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Undefined</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> | </tspan><a href="../../../dexpi-models/Builtin/String.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">String</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> [0..1]</tspan></text><text x="350.775390625" font-size="0px" y="602.24"><a href="../../../dexpi-models/Core/Diagram/MetaData.html#sp:core.diagram.metadata.projectrangenumber"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">ProjectRangeNumber</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> :</tspan></text><text x="553.056640625" font-size="0px" y="602.24"><a href="../../../dexpi-models/Builtin/Undefined.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Undefined</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> | </tspan><a href="../../../dexpi-models/Builtin/String.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">String</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> [0..1]</tspan></text><text x="350.775390625" font-size="0px" y="616.04"><a href="../../../dexpi-models/Core/Diagram/MetaData.html#sp:core.diagram.metadata.replaceddrawing"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">ReplacedDrawing</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> :</tspan></text><text x="553.056640625" font-size="0px" y="616.04"><a href="../../../dexpi-models/Builtin/Undefined.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Undefined</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> | </tspan><a href="../../../dexpi-models/Builtin/String.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">String</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> [0..1]</tspan></text><text x="350.775390625" font-size="0px" y="629.8399999999999"><a href="../../../dexpi-models/Core/Diagram/MetaData.html#sp:core.diagram.metadata.responsibledepartmentname"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">ResponsibleDepartmentName</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> :</tspan></text><text x="553.056640625" font-size="0px" y="629.8399999999999"><a href="../../../dexpi-models/Builtin/Undefined.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Undefined</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> | </tspan><a href="../../../dexpi-models/Builtin/String.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">String</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> [0..1]</tspan></text><text x="350.775390625" font-size="0px" y="643.6399999999999"><a href="../../../dexpi-models/Core/Diagram/MetaData.html#sp:core.diagram.metadata.revisionnumber"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">RevisionNumber</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> :</tspan></text><text x="553.056640625" font-size="0px" y="643.6399999999999"><a href="../../../dexpi-models/Builtin/Undefined.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Undefined</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> | </tspan><a href="../../../dexpi-models/Builtin/String.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">String</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> [0..1]</tspan></text><text x="350.775390625" font-size="0px" y="657.4399999999998"><a href="../../../dexpi-models/Core/Diagram/MetaData.html#sp:core.diagram.metadata.sheetformat"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">SheetFormat</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> :</tspan></text><text x="553.056640625" font-size="0px" y="657.4399999999998"><a href="../../../dexpi-models/Builtin/Undefined.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Undefined</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> | </tspan><a href="../../../dexpi-models/Builtin/String.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">String</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> [0..1]</tspan></text><text x="350.775390625" font-size="0px" y="671.2399999999998"><a href="../../../dexpi-models/Core/Diagram/MetaData.html#sp:core.diagram.metadata.sheetnumber"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">SheetNumber</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> :</tspan></text><text x="553.056640625" font-size="0px" y="671.2399999999998"><a href="../../../dexpi-models/Builtin/Undefined.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Undefined</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> | </tspan><a href="../../../dexpi-models/Builtin/String.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">String</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> [0..1]</tspan></text><text x="350.775390625" font-size="0px" y="685.0399999999997"><a href="../../../dexpi-models/Core/Diagram/MetaData.html#sp:core.diagram.metadata.subprojectname"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">SubProjectName</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> :</tspan></text><text x="553.056640625" font-size="0px" y="685.0399999999997"><a href="../../../dexpi-models/Builtin/Undefined.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Undefined</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> | </tspan><a href="../../../dexpi-models/Builtin/String.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">String</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> [0..1]</tspan></text><text x="350.775390625" font-size="0px" y="698.8399999999997"><a href="../../../dexpi-models/Core/Diagram/MetaData.html#sp:core.diagram.metadata.subprojectnumber"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">SubProjectNumber</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> :</tspan></text><text x="553.056640625" font-size="0px" y="698.8399999999997"><a href="../../../dexpi-models/Builtin/Undefined.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Undefined</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> | </tspan><a href="../../../dexpi-models/Builtin/String.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">String</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> [0..1]</tspan></text><text x="350.775390625" font-size="0px" y="712.6399999999996"><a href="../../../dexpi-models/Core/Diagram/MetaData.html#sp:core.diagram.metadata.totalnumberofsheets"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">TotalNumberOfSheets</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> :</tspan></text><text x="553.056640625" font-size="0px" y="712.6399999999996"><a href="../../../dexpi-models/Builtin/Undefined.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Undefined</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> | </tspan><a href="../../../dexpi-models/Builtin/Integer.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Integer</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> [0..1]</tspan></text><text x="350.775390625" font-size="0px" y="726.4399999999996"><a href="../../../dexpi-models/Core/Diagram/MetaData.html#sp:core.diagram.metadata.unitidentificationcode"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">UnitIdentificationCode</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> :</tspan></text><text x="553.056640625" font-size="0px" y="726.4399999999996"><a href="../../../dexpi-models/Builtin/Undefined.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Undefined</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> | </tspan><a href="../../../dexpi-models/Builtin/String.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">String</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> [0..1]</tspan></text><text x="350.775390625" font-size="0px" y="740.2399999999996"><a href="../../../dexpi-models/Core/Diagram/MetaData.html#sp:core.diagram.metadata.unitname"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">UnitName</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> :</tspan></text><text x="553.056640625" font-size="0px" y="740.2399999999996"><a href="../../../dexpi-models/Builtin/Undefined.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Undefined</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> | </tspan><a href="../../../dexpi-models/Builtin/String.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">String</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> [0..1]</tspan></text><rect class="uml-background_color-type uml-foreground-stroke" x="15.911197916666652" y="12.0" width="136.212109375" height="23.799999999999997"></rect><text x="84.01725260416666" text-anchor="middle" font-size="0px" y="27.439999999999998"><a href="../../../dexpi-models/Core/Diagram/RepresentationGroup.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold">RepresentationGroup</tspan></a></text><rect class="uml-background_color-type uml-foreground-stroke" x="275.775390625" y="258.4" width="50.0" height="23.799999999999997"></rect><text x="300.775390625" text-anchor="middle" font-size="0px" y="273.84"><a href="../../../dexpi-models/Core/Note.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold">Note</tspan></a></text><rect class="uml-background_color-type uml-foreground-stroke" x="117.73212890625" y="258.4" width="119.3189453125" height="23.799999999999997"></rect><text x="177.3916015625" text-anchor="middle" font-size="0px" y="273.84"><a href="../../../dexpi-models/Core/PersistentIdentifier.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold">PersistentIdentifier</tspan></a></text><rect class="uml-background_color-type uml-foreground-stroke" x="32.3505859375" y="258.4" width="50.0" height="23.799999999999997"></rect><text x="57.3505859375" text-anchor="middle" font-size="0px" y="273.84"><a href="../../../dexpi-models/Core/Role.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold">Role</tspan></a></text><polyline class="uml-foreground-stroke uml-source_marker-closed_arrow" points="177.3505859375,149.0 177.3505859375,174.79999999999998 475.2311197916667,174.79999999999998 475.2311197916667,213.2 475.2311197916667,214.2 475.2311197916667,258.4" fill="none"></polyline><rect class="uml-background_color-background " x="576.6741536458335" y="204.79999999999998" width="56.025390625" height="17.799999999999997"></rect><text x="604.6868489583335" text-anchor="middle" font-size="0px" y="217.23999999999998"><a href="../../../dexpi-models/Core/ConceptualModel.html#sp:core.conceptualmodel.metadata"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">MetaData</tspan></a></text><polyline class="uml-foreground-stroke uml-source_marker-filled_diamond" points="604.6868489583335,149.0 604.6868489583335,204.79999999999998" fill="none"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="604.6868489583335,222.59999999999997 604.6868489583334,258.4" fill="none"></polyline><text x="612.6868489583335" font-size="0px" y="161.2"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">0..1</tspan></text><text x="612.6868489583334" font-size="0px" y="252.79999999999995"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">0..1</tspan></text><rect class="uml-background_color-background " x="12.0" y="204.79999999999998" width="90.701171875" height="17.799999999999997"></rect><text x="57.3505859375" text-anchor="middle" font-size="0px" y="217.23999999999998"><a href="../../../dexpi-models/Core/ConceptualObject.html#sp:core.conceptualobject.performedroles"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">PerformedRoles</tspan></a></text><polyline class="uml-foreground-stroke" points="57.3505859375,149.0 57.3505859375,204.79999999999998" fill="none"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="57.3505859375,222.59999999999997 57.3505859375,258.4" fill="none"></polyline><text x="65.3505859375" font-size="0px" y="161.2"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</tspan></text><text x="65.3505859375" font-size="0px" y="252.79999999999995"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</tspan></text><rect class="uml-background_color-background " x="122.701171875" y="204.79999999999998" width="109.380859375" height="17.799999999999997"></rect><text x="177.3916015625" text-anchor="middle" font-size="0px" y="217.23999999999998"><a href="../../../dexpi-models/Core/ConceptualObject.html#sp:core.conceptualobject.persistentidentifiers"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">PersistentIdentifiers</tspan></a></text><polyline class="uml-foreground-stroke uml-source_marker-filled_diamond" points="97.3505859375,149.0 97.3505859375,194.79999999999998 177.3916015625,194.79999999999998 177.3916015625,204.79999999999998" fill="none"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="177.3916015625,222.59999999999997 177.3916015625,258.4" fill="none"></polyline><text x="105.3505859375" font-size="0px" y="161.2"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">0..1</tspan></text><text x="185.3916015625" font-size="0px" y="252.79999999999995"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</tspan></text><rect class="uml-background_color-background " x="252.08203125" y="204.79999999999998" width="97.38671875" height="17.799999999999997"></rect><text x="300.775390625" text-anchor="middle" font-size="0px" y="217.23999999999998"><a href="../../../dexpi-models/Core/ConceptualObject.html#sp:core.conceptualobject.referencednotes"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">ReferencedNotes</tspan></a></text><polyline class="uml-foreground-stroke" points="137.3505859375,149.0 137.3505859375,184.79999999999998 300.775390625,184.79999999999998 300.775390625,204.79999999999998" fill="none"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="300.775390625,222.59999999999997 300.775390625,258.4" fill="none"></polyline><text x="145.3505859375" font-size="0px" y="161.2"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</tspan></text><text x="308.775390625" font-size="0px" y="252.79999999999995"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</tspan></text><rect class="uml-background_color-background " x="227.12438151041667" y="71.6" width="38.681640625" height="17.799999999999997"></rect><text x="246.46520182291667" text-anchor="middle" font-size="0px" y="84.03999999999999"><a href="../../../dexpi-models/Core/Diagram/AttributeRepresentation.html#sp:core.diagram.attributerepresentation.object"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Object</tspan></a></text><polyline class="uml-foreground-stroke" points="246.46520182291667,35.8 246.46520182291667,71.6" fill="none"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="246.46520182291667,89.39999999999999 246.46520182291667,99.39999999999999 150.68391927083331,99.39999999999999 150.68391927083331,125.19999999999999" fill="none"></polyline><text x="254.46520182291667" font-size="0px" y="48.0"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</tspan></text><rect class="uml-background_color-background " x="51.33463541666666" y="71.6" width="65.365234375" height="17.799999999999997"></rect><text x="84.01725260416666" text-anchor="middle" font-size="0px" y="84.03999999999999"><a href="../../../dexpi-models/Core/Diagram/RepresentationGroup.html#sp:core.diagram.representationgroup.represents"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Represents</tspan></a></text><polyline class="uml-foreground-stroke" points="84.01725260416666,35.8 84.01725260416666,71.6" fill="none"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="84.01725260416666,89.39999999999999 84.01725260416666,125.19999999999999" fill="none"></polyline><text x="92.01725260416666" font-size="0px" y="48.0"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</tspan></text></svg><p class="rubric">Supertypes</p>
+<ul class="simple">
+<li><p><a class="sp-element reference internal" href="../ConceptualObject.html"><span class="doc">ConceptualObject</span></a></p></li>
+</ul>
+<p class="rubric">Subtypes</p>
+<ul class="simple">
+<li><p><a class="sp-element reference internal" href="../../Plant/Diagram/PlantMetaData.html"><span class="doc">PlantMetaData</span></a></p></li>
+</ul>
+</section>
+<section id="Members">
+<h2>Members<a class="headerlink" href="#Members" title="Link to this heading">¶</a></h2>
+<section id="member-list-section-Data Properties">
+<h3>Data Properties<a class="headerlink" href="#member-list-section-Data%20Properties" title="Link to this heading">¶</a></h3>
+</section>
+<table class="docutils align-left">
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Multiplicity</p></th>
+<th class="head"><p>Type</p></th>
+<th class="head"><p>Ordered</p></th>
+<th class="head"><p>Unique</p></th>
+<th class="head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="#sp:core.diagram.metadata.approvaldaterepresentation"><span class="std std-ref">ApprovalDateRepresentation</span></a></p></td>
+<td><p>0..1</p></td>
+<td><p><a class="sp-element reference internal" href="../../Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><a class="sp-element reference internal" href="../../Builtin/String.html"><span class="doc">String</span></a></p></td>
+<td><p>no</p></td>
+<td><p>no</p></td>
+<td><p>A representation of the approval date of the drawing. The format of the
+representation is not prescribed.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="#sp:core.diagram.metadata.approvaldescription"><span class="std std-ref">ApprovalDescription</span></a></p></td>
+<td><p>0..1</p></td>
+<td><p><a class="sp-element reference internal" href="../DataTypes/MultiLanguageString.html"><span class="doc">MultiLanguageString</span></a></p></td>
+<td><p>no</p></td>
+<td><p>no</p></td>
+<td><p>A description of the approval of the drawing.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="#sp:core.diagram.metadata.approvername"><span class="std std-ref">ApproverName</span></a></p></td>
+<td><p>0..1</p></td>
+<td><p><a class="sp-element reference internal" href="../../Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><a class="sp-element reference internal" href="../../Builtin/String.html"><span class="doc">String</span></a></p></td>
+<td><p>no</p></td>
+<td><p>no</p></td>
+<td><p>The name of the approver of the drawing.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="#sp:core.diagram.metadata.archivenumber"><span class="std std-ref">ArchiveNumber</span></a></p></td>
+<td><p>0..1</p></td>
+<td><p><a class="sp-element reference internal" href="../../Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><a class="sp-element reference internal" href="../../Builtin/String.html"><span class="doc">String</span></a></p></td>
+<td><p>no</p></td>
+<td><p>no</p></td>
+<td><p>The archive number of the drawing.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="#sp:core.diagram.metadata.blockname"><span class="std std-ref">BlockName</span></a></p></td>
+<td><p>0..1</p></td>
+<td><p><a class="sp-element reference internal" href="../../Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><a class="sp-element reference internal" href="../../Builtin/String.html"><span class="doc">String</span></a></p></td>
+<td><p>no</p></td>
+<td><p>no</p></td>
+<td><p>The name of the related block.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="#sp:core.diagram.metadata.blocknumber"><span class="std std-ref">BlockNumber</span></a></p></td>
+<td><p>0..1</p></td>
+<td><p><a class="sp-element reference internal" href="../../Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><a class="sp-element reference internal" href="../../Builtin/String.html"><span class="doc">String</span></a></p></td>
+<td><p>no</p></td>
+<td><p>no</p></td>
+<td><p>The number of the related block.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="#sp:core.diagram.metadata.checkername"><span class="std std-ref">CheckerName</span></a></p></td>
+<td><p>0..1</p></td>
+<td><p><a class="sp-element reference internal" href="../../Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><a class="sp-element reference internal" href="../../Builtin/String.html"><span class="doc">String</span></a></p></td>
+<td><p>no</p></td>
+<td><p>no</p></td>
+<td><p>The name of the checker of the drawing.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="#sp:core.diagram.metadata.confidentiality"><span class="std std-ref">Confidentiality</span></a></p></td>
+<td><p>0..1</p></td>
+<td><p><a class="sp-element reference internal" href="ConfidentialityClassification.html"><span class="doc">ConfidentialityClassification</span></a></p></td>
+<td><p>no</p></td>
+<td><p>no</p></td>
+<td><p>The confidentiality classification of the diagram.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="#sp:core.diagram.metadata.creationdaterepresentation"><span class="std std-ref">CreationDateRepresentation</span></a></p></td>
+<td><p>0..1</p></td>
+<td><p><a class="sp-element reference internal" href="../../Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><a class="sp-element reference internal" href="../../Builtin/String.html"><span class="doc">String</span></a></p></td>
+<td><p>no</p></td>
+<td><p>no</p></td>
+<td><p>A representation of the creation date of the drawing. The format of the
+representation is not prescribed.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="#sp:core.diagram.metadata.creatorname"><span class="std std-ref">CreatorName</span></a></p></td>
+<td><p>0..1</p></td>
+<td><p><a class="sp-element reference internal" href="../../Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><a class="sp-element reference internal" href="../../Builtin/String.html"><span class="doc">String</span></a></p></td>
+<td><p>no</p></td>
+<td><p>no</p></td>
+<td><p>The name of the creator of the drawing.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="#sp:core.diagram.metadata.designername"><span class="std std-ref">DesignerName</span></a></p></td>
+<td><p>0..1</p></td>
+<td><p><a class="sp-element reference internal" href="../../Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><a class="sp-element reference internal" href="../../Builtin/String.html"><span class="doc">String</span></a></p></td>
+<td><p>no</p></td>
+<td><p>no</p></td>
+<td><p>The name of the designer of the drawing.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="#sp:core.diagram.metadata.draftername"><span class="std std-ref">DrafterName</span></a></p></td>
+<td><p>0..1</p></td>
+<td><p><a class="sp-element reference internal" href="../../Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><a class="sp-element reference internal" href="../../Builtin/String.html"><span class="doc">String</span></a></p></td>
+<td><p>no</p></td>
+<td><p>no</p></td>
+<td><p>The name of the drafter of the drawing.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="#sp:core.diagram.metadata.drawingname"><span class="std std-ref">DrawingName</span></a></p></td>
+<td><p>0..1</p></td>
+<td><p><a class="sp-element reference internal" href="../../Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><a class="sp-element reference internal" href="../../Builtin/String.html"><span class="doc">String</span></a></p></td>
+<td><p>no</p></td>
+<td><p>no</p></td>
+<td><p>The drawing name.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="#sp:core.diagram.metadata.drawingnumber"><span class="std std-ref">DrawingNumber</span></a></p></td>
+<td><p>0..1</p></td>
+<td><p><a class="sp-element reference internal" href="../../Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><a class="sp-element reference internal" href="../../Builtin/String.html"><span class="doc">String</span></a></p></td>
+<td><p>no</p></td>
+<td><p>no</p></td>
+<td><p>The drawing number.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="#sp:core.diagram.metadata.drawingsubtitle"><span class="std std-ref">DrawingSubTitle</span></a></p></td>
+<td><p>0..1</p></td>
+<td><p><a class="sp-element reference internal" href="../DataTypes/MultiLanguageString.html"><span class="doc">MultiLanguageString</span></a></p></td>
+<td><p>no</p></td>
+<td><p>no</p></td>
+<td><p>The subtitle of the drawing.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="#sp:core.diagram.metadata.filename"><span class="std std-ref">FileName</span></a></p></td>
+<td><p>0..1</p></td>
+<td><p><a class="sp-element reference internal" href="../../Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><a class="sp-element reference internal" href="../../Builtin/String.html"><span class="doc">String</span></a></p></td>
+<td><p>no</p></td>
+<td><p>no</p></td>
+<td><p>The file name of the drawing.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="#sp:core.diagram.metadata.lastmodificationdaterepresentation"><span class="std std-ref">LastModificationDateRepresentation</span></a></p></td>
+<td><p>0..1</p></td>
+<td><p><a class="sp-element reference internal" href="../../Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><a class="sp-element reference internal" href="../../Builtin/String.html"><span class="doc">String</span></a></p></td>
+<td><p>no</p></td>
+<td><p>no</p></td>
+<td><p>A representation of the last modification date of the drawing. The format of the
+representation is not prescribed.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="#sp:core.diagram.metadata.locationname"><span class="std std-ref">LocationName</span></a></p></td>
+<td><p>0..1</p></td>
+<td><p><a class="sp-element reference internal" href="../../Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><a class="sp-element reference internal" href="../../Builtin/String.html"><span class="doc">String</span></a></p></td>
+<td><p>no</p></td>
+<td><p>no</p></td>
+<td><p>The location name.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="#sp:core.diagram.metadata.processcellidentificationcode"><span class="std std-ref">ProcessCellIdentificationCode</span></a></p></td>
+<td><p>0..1</p></td>
+<td><p><a class="sp-element reference internal" href="../../Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><a class="sp-element reference internal" href="../../Builtin/String.html"><span class="doc">String</span></a></p></td>
+<td><p>no</p></td>
+<td><p>no</p></td>
+<td><p>The identification code of the related process cell according to ISA-95.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="#sp:core.diagram.metadata.processcellname"><span class="std std-ref">ProcessCellName</span></a></p></td>
+<td><p>0..1</p></td>
+<td><p><a class="sp-element reference internal" href="../../Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><a class="sp-element reference internal" href="../../Builtin/String.html"><span class="doc">String</span></a></p></td>
+<td><p>no</p></td>
+<td><p>no</p></td>
+<td><p>The name of the related process cell according to ISA-95.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="#sp:core.diagram.metadata.projectname"><span class="std std-ref">ProjectName</span></a></p></td>
+<td><p>0..1</p></td>
+<td><p><a class="sp-element reference internal" href="../../Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><a class="sp-element reference internal" href="../../Builtin/String.html"><span class="doc">String</span></a></p></td>
+<td><p>no</p></td>
+<td><p>no</p></td>
+<td><p>The name of the related project.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="#sp:core.diagram.metadata.projectnumber"><span class="std std-ref">ProjectNumber</span></a></p></td>
+<td><p>0..1</p></td>
+<td><p><a class="sp-element reference internal" href="../../Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><a class="sp-element reference internal" href="../../Builtin/String.html"><span class="doc">String</span></a></p></td>
+<td><p>no</p></td>
+<td><p>no</p></td>
+<td><p>The number of the related project.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="#sp:core.diagram.metadata.projectrangenumber"><span class="std std-ref">ProjectRangeNumber</span></a></p></td>
+<td><p>0..1</p></td>
+<td><p><a class="sp-element reference internal" href="../../Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><a class="sp-element reference internal" href="../../Builtin/String.html"><span class="doc">String</span></a></p></td>
+<td><p>no</p></td>
+<td><p>no</p></td>
+<td><p>The range number of the related project.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="#sp:core.diagram.metadata.replaceddrawing"><span class="std std-ref">ReplacedDrawing</span></a></p></td>
+<td><p>0..1</p></td>
+<td><p><a class="sp-element reference internal" href="../../Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><a class="sp-element reference internal" href="../../Builtin/String.html"><span class="doc">String</span></a></p></td>
+<td><p>no</p></td>
+<td><p>no</p></td>
+<td><p>The drawing replaced by this drawing.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="#sp:core.diagram.metadata.responsibledepartmentname"><span class="std std-ref">ResponsibleDepartmentName</span></a></p></td>
+<td><p>0..1</p></td>
+<td><p><a class="sp-element reference internal" href="../../Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><a class="sp-element reference internal" href="../../Builtin/String.html"><span class="doc">String</span></a></p></td>
+<td><p>no</p></td>
+<td><p>no</p></td>
+<td><p>The name of the department responsible for the drawing.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="#sp:core.diagram.metadata.revisionnumber"><span class="std std-ref">RevisionNumber</span></a></p></td>
+<td><p>0..1</p></td>
+<td><p><a class="sp-element reference internal" href="../../Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><a class="sp-element reference internal" href="../../Builtin/String.html"><span class="doc">String</span></a></p></td>
+<td><p>no</p></td>
+<td><p>no</p></td>
+<td><p>The revision number of the drawing.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="#sp:core.diagram.metadata.sheetformat"><span class="std std-ref">SheetFormat</span></a></p></td>
+<td><p>0..1</p></td>
+<td><p><a class="sp-element reference internal" href="../../Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><a class="sp-element reference internal" href="../../Builtin/String.html"><span class="doc">String</span></a></p></td>
+<td><p>no</p></td>
+<td><p>no</p></td>
+<td><p>The sheet format.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="#sp:core.diagram.metadata.sheetnumber"><span class="std std-ref">SheetNumber</span></a></p></td>
+<td><p>0..1</p></td>
+<td><p><a class="sp-element reference internal" href="../../Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><a class="sp-element reference internal" href="../../Builtin/String.html"><span class="doc">String</span></a></p></td>
+<td><p>no</p></td>
+<td><p>no</p></td>
+<td><p>The sheet number of the drawing.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="#sp:core.diagram.metadata.subprojectname"><span class="std std-ref">SubProjectName</span></a></p></td>
+<td><p>0..1</p></td>
+<td><p><a class="sp-element reference internal" href="../../Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><a class="sp-element reference internal" href="../../Builtin/String.html"><span class="doc">String</span></a></p></td>
+<td><p>no</p></td>
+<td><p>no</p></td>
+<td><p>The name of the related sub-project.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="#sp:core.diagram.metadata.subprojectnumber"><span class="std std-ref">SubProjectNumber</span></a></p></td>
+<td><p>0..1</p></td>
+<td><p><a class="sp-element reference internal" href="../../Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><a class="sp-element reference internal" href="../../Builtin/String.html"><span class="doc">String</span></a></p></td>
+<td><p>no</p></td>
+<td><p>no</p></td>
+<td><p>The number of the related sub-project.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="#sp:core.diagram.metadata.totalnumberofsheets"><span class="std std-ref">TotalNumberOfSheets</span></a></p></td>
+<td><p>0..1</p></td>
+<td><p><a class="sp-element reference internal" href="../../Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><a class="sp-element reference internal" href="../../Builtin/Integer.html"><span class="doc">Integer</span></a></p></td>
+<td><p>no</p></td>
+<td><p>no</p></td>
+<td><p>The total number of sheets.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="#sp:core.diagram.metadata.unitidentificationcode"><span class="std std-ref">UnitIdentificationCode</span></a></p></td>
+<td><p>0..1</p></td>
+<td><p><a class="sp-element reference internal" href="../../Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><a class="sp-element reference internal" href="../../Builtin/String.html"><span class="doc">String</span></a></p></td>
+<td><p>no</p></td>
+<td><p>no</p></td>
+<td><p>The identification code of the related unit according to ISA-95.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="#sp:core.diagram.metadata.unitname"><span class="std std-ref">UnitName</span></a></p></td>
+<td><p>0..1</p></td>
+<td><p><a class="sp-element reference internal" href="../../Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><a class="sp-element reference internal" href="../../Builtin/String.html"><span class="doc">String</span></a></p></td>
+<td><p>no</p></td>
+<td><p>no</p></td>
+<td><p>The name of the related unit according to ISA-95.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="sp:core.diagram.metadata.approvaldaterepresentation">
+<h2>ApprovalDateRepresentation<a class="headerlink" href="#sp:core.diagram.metadata.approvaldaterepresentation" title="Link to this heading">¶</a></h2>
+<p class="rubric">Data Property</p>
+<p>A representation of the approval date of the drawing. The format of the
+representation is not prescribed.</p>
+<p><strong>Type:</strong><span> </span><a class="sp-element reference internal" href="../../Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><a class="sp-element reference internal" href="../../Builtin/String.html"><span class="doc">String</span></a></p>
+<p><strong>Multiplicity:</strong><span> </span><span>0..1</span></p>
+<p><strong>Ordered:</strong><span> </span><span>no</span></p>
+<p><strong>Unique:</strong><span> </span><span>no</span></p>
+<p><strong>RDL:</strong><span> </span><a class="reference external" href="http://sandbox.dexpi.org/rdl/ApprovalDateRepresentationAssignmentClass">APPROVAL DATE REPRESENTATION ASSIGNMENT CLASS (http://sandbox.dexpi.org/rdl/ApprovalDateRepresentationAssignmentClass)</a></p>
+<section id="sp:core.diagram.metadata.approvaldaterepresentation-example">
+<h3>Example<a class="headerlink" href="#sp:core.diagram.metadata.approvaldaterepresentation-example" title="Link to this heading">¶</a></h3>
+<p class="sp-dense"><code class="docutils literal notranslate"><span class="pre">"2016-04-01"</span></code></p>
+</section>
+</section>
+<section id="sp:core.diagram.metadata.approvaldescription">
+<h2>ApprovalDescription<a class="headerlink" href="#sp:core.diagram.metadata.approvaldescription" title="Link to this heading">¶</a></h2>
+<p class="rubric">Data Property</p>
+<p>A description of the approval of the drawing.</p>
+<p><strong>Type:</strong><span> </span><a class="sp-element reference internal" href="../DataTypes/MultiLanguageString.html"><span class="doc">MultiLanguageString</span></a></p>
+<p><strong>Multiplicity:</strong><span> </span><span>0..1</span></p>
+<p><strong>Ordered:</strong><span> </span><span>no</span></p>
+<p><strong>Unique:</strong><span> </span><span>no</span></p>
+<p><strong>RDL:</strong><span> </span><a class="reference external" href="http://sandbox.dexpi.org/rdl/ApprovalDescriptionAssignmentClass">APPROVAL DESCRIPTION ASSIGNMENT CLASS (http://sandbox.dexpi.org/rdl/ApprovalDescriptionAssignmentClass)</a></p>
+<section id="sp:core.diagram.metadata.approvaldescription-example">
+<h3>Example<a class="headerlink" href="#sp:core.diagram.metadata.approvaldescription-example" title="Link to this heading">¶</a></h3>
+<p class="sp-dense"><a class="sp-element reference internal" href="../DataTypes/MultiLanguageString.html"><span class="doc">MultiLanguageString</span></a><span>(</span></p>
+<p class="sp-dense"><span>     </span><a class="sp-element reference internal" href="../DataTypes/MultiLanguageString.html#sp:core.datatypes.multilanguagestring.singlelanguagestrings"><span class="std std-ref">SingleLanguageStrings</span></a><span> = </span><span>[</span></p>
+<p class="sp-dense"><span>          </span><a class="sp-element reference internal" href="../DataTypes/SingleLanguageString.html"><span class="doc">SingleLanguageString</span></a><span>(</span></p>
+<p class="sp-dense"><span>               </span><a class="sp-element reference internal" href="../DataTypes/SingleLanguageString.html#sp:core.datatypes.singlelanguagestring.language"><span class="std std-ref">Language</span></a><span> = </span><code class="docutils literal notranslate"><span class="pre">"en"</span></code><span>,</span></p>
+<p class="sp-dense"><span>               </span><a class="sp-element reference internal" href="../DataTypes/SingleLanguageString.html#sp:core.datatypes.singlelanguagestring.value"><span class="std std-ref">Value</span></a><span> = </span><code class="docutils literal notranslate"><span class="pre">"approved"</span></code><span>)</span><span>,</span></p>
+<p class="sp-dense"><span>          </span><a class="sp-element reference internal" href="../DataTypes/SingleLanguageString.html"><span class="doc">SingleLanguageString</span></a><span>(</span></p>
+<p class="sp-dense"><span>               </span><a class="sp-element reference internal" href="../DataTypes/SingleLanguageString.html#sp:core.datatypes.singlelanguagestring.language"><span class="std std-ref">Language</span></a><span> = </span><code class="docutils literal notranslate"><span class="pre">"de"</span></code><span>,</span></p>
+<p class="sp-dense"><span>               </span><a class="sp-element reference internal" href="../DataTypes/SingleLanguageString.html#sp:core.datatypes.singlelanguagestring.value"><span class="std std-ref">Value</span></a><span> = </span><code class="docutils literal notranslate"><span class="pre">"genehmigt"</span></code><span>)</span><span>]</span><span>)</span></p>
+</section>
+</section>
+<section id="sp:core.diagram.metadata.approvername">
+<h2>ApproverName<a class="headerlink" href="#sp:core.diagram.metadata.approvername" title="Link to this heading">¶</a></h2>
+<p class="rubric">Data Property</p>
+<p>The name of the approver of the drawing.</p>
+<p><strong>Type:</strong><span> </span><a class="sp-element reference internal" href="../../Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><a class="sp-element reference internal" href="../../Builtin/String.html"><span class="doc">String</span></a></p>
+<p><strong>Multiplicity:</strong><span> </span><span>0..1</span></p>
+<p><strong>Ordered:</strong><span> </span><span>no</span></p>
+<p><strong>Unique:</strong><span> </span><span>no</span></p>
+<p><strong>RDL:</strong><span> </span><a class="reference external" href="http://sandbox.dexpi.org/rdl/ApproverNameAssignmentClass">APPROVER NAME ASSIGNMENT CLASS (http://sandbox.dexpi.org/rdl/ApproverNameAssignmentClass)</a></p>
+<section id="sp:core.diagram.metadata.approvername-example">
+<h3>Example<a class="headerlink" href="#sp:core.diagram.metadata.approvername-example" title="Link to this heading">¶</a></h3>
+<p class="sp-dense"><code class="docutils literal notranslate"><span class="pre">"A.</span> <span class="pre">P.</span> <span class="pre">Prover"</span></code></p>
+</section>
+</section>
+<section id="sp:core.diagram.metadata.archivenumber">
+<h2>ArchiveNumber<a class="headerlink" href="#sp:core.diagram.metadata.archivenumber" title="Link to this heading">¶</a></h2>
+<p class="rubric">Data Property</p>
+<p>The archive number of the drawing.</p>
+<p><strong>Type:</strong><span> </span><a class="sp-element reference internal" href="../../Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><a class="sp-element reference internal" href="../../Builtin/String.html"><span class="doc">String</span></a></p>
+<p><strong>Multiplicity:</strong><span> </span><span>0..1</span></p>
+<p><strong>Ordered:</strong><span> </span><span>no</span></p>
+<p><strong>Unique:</strong><span> </span><span>no</span></p>
+<p><strong>RDL:</strong><span> </span><a class="reference external" href="http://sandbox.dexpi.org/rdl/ArchiveNumberAssignmentClass">ARCHIVE NUMBER ASSIGNMENT CLASS (http://sandbox.dexpi.org/rdl/ArchiveNumberAssignmentClass)</a></p>
+<section id="sp:core.diagram.metadata.archivenumber-example">
+<h3>Example<a class="headerlink" href="#sp:core.diagram.metadata.archivenumber-example" title="Link to this heading">¶</a></h3>
+<p class="sp-dense"><code class="docutils literal notranslate"><span class="pre">"XY923-463"</span></code></p>
+</section>
+</section>
+<section id="sp:core.diagram.metadata.blockname">
+<h2>BlockName<a class="headerlink" href="#sp:core.diagram.metadata.blockname" title="Link to this heading">¶</a></h2>
+<p class="rubric">Data Property</p>
+<p>The name of the related block.</p>
+<p><strong>Type:</strong><span> </span><a class="sp-element reference internal" href="../../Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><a class="sp-element reference internal" href="../../Builtin/String.html"><span class="doc">String</span></a></p>
+<p><strong>Multiplicity:</strong><span> </span><span>0..1</span></p>
+<p><strong>Ordered:</strong><span> </span><span>no</span></p>
+<p><strong>Unique:</strong><span> </span><span>no</span></p>
+<p><strong>RDL:</strong><span> </span><a class="reference external" href="http://sandbox.dexpi.org/rdl/BlockNameAssignmentClass">BLOCK NAME ASSIGNMENT CLASS (http://sandbox.dexpi.org/rdl/BlockNameAssignmentClass)</a></p>
+<section id="sp:core.diagram.metadata.blockname-example">
+<h3>Example<a class="headerlink" href="#sp:core.diagram.metadata.blockname-example" title="Link to this heading">¶</a></h3>
+<p class="sp-dense"><code class="docutils literal notranslate"><span class="pre">"a</span> <span class="pre">block"</span></code></p>
+</section>
+</section>
+<section id="sp:core.diagram.metadata.blocknumber">
+<h2>BlockNumber<a class="headerlink" href="#sp:core.diagram.metadata.blocknumber" title="Link to this heading">¶</a></h2>
+<p class="rubric">Data Property</p>
+<p>The number of the related block.</p>
+<p><strong>Type:</strong><span> </span><a class="sp-element reference internal" href="../../Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><a class="sp-element reference internal" href="../../Builtin/String.html"><span class="doc">String</span></a></p>
+<p><strong>Multiplicity:</strong><span> </span><span>0..1</span></p>
+<p><strong>Ordered:</strong><span> </span><span>no</span></p>
+<p><strong>Unique:</strong><span> </span><span>no</span></p>
+<p><strong>RDL:</strong><span> </span><a class="reference external" href="http://sandbox.dexpi.org/rdl/BlockNumberAssignmentClass">BLOCK NUMBER ASSIGNMENT CLASS (http://sandbox.dexpi.org/rdl/BlockNumberAssignmentClass)</a></p>
+<section id="sp:core.diagram.metadata.blocknumber-example">
+<h3>Example<a class="headerlink" href="#sp:core.diagram.metadata.blocknumber-example" title="Link to this heading">¶</a></h3>
+<p class="sp-dense"><code class="docutils literal notranslate"><span class="pre">"B987-654"</span></code></p>
+</section>
+</section>
+<section id="sp:core.diagram.metadata.checkername">
+<h2>CheckerName<a class="headerlink" href="#sp:core.diagram.metadata.checkername" title="Link to this heading">¶</a></h2>
+<p class="rubric">Data Property</p>
+<p>The name of the checker of the drawing.</p>
+<p><strong>Type:</strong><span> </span><a class="sp-element reference internal" href="../../Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><a class="sp-element reference internal" href="../../Builtin/String.html"><span class="doc">String</span></a></p>
+<p><strong>Multiplicity:</strong><span> </span><span>0..1</span></p>
+<p><strong>Ordered:</strong><span> </span><span>no</span></p>
+<p><strong>Unique:</strong><span> </span><span>no</span></p>
+<p><strong>RDL:</strong><span> </span><a class="reference external" href="http://sandbox.dexpi.org/rdl/CheckerNameAssignmentClass">CHECKER NAME ASSIGNMENT CLASS (http://sandbox.dexpi.org/rdl/CheckerNameAssignmentClass)</a></p>
+<section id="sp:core.diagram.metadata.checkername-example">
+<h3>Example<a class="headerlink" href="#sp:core.diagram.metadata.checkername-example" title="Link to this heading">¶</a></h3>
+<p class="sp-dense"><code class="docutils literal notranslate"><span class="pre">"C.</span> <span class="pre">Hecker"</span></code></p>
+</section>
+</section>
+<section id="sp:core.diagram.metadata.confidentiality">
+<h2>Confidentiality<a class="headerlink" href="#sp:core.diagram.metadata.confidentiality" title="Link to this heading">¶</a></h2>
+<p class="rubric">Data Property</p>
+<p>The confidentiality classification of the diagram.</p>
+<p><strong>Type:</strong><span> </span><a class="sp-element reference internal" href="ConfidentialityClassification.html"><span class="doc">ConfidentialityClassification</span></a></p>
+<p><strong>Multiplicity:</strong><span> </span><span>0..1</span></p>
+<p><strong>Ordered:</strong><span> </span><span>no</span></p>
+<p><strong>Unique:</strong><span> </span><span>no</span></p>
+<p><strong>RDL:</strong><span> </span><a class="reference external" href="http://sandbox.dexpi.org/rdl/ConfidentialitySpecialization">CONFIDENTIALITY SPECIALIZATION (http://sandbox.dexpi.org/rdl/ConfidentialitySpecialization)</a></p>
+<section id="sp:core.diagram.metadata.confidentiality-example">
+<h3>Example<a class="headerlink" href="#sp:core.diagram.metadata.confidentiality-example" title="Link to this heading">¶</a></h3>
+<p class="sp-dense"><a class="sp-element reference internal" href="ConfidentialityClassification.html#sp:core.diagram.confidentialityclassification.confidentialinformation"><span class="std std-ref">ConfidentialInformation</span></a></p>
+</section>
+</section>
+<section id="sp:core.diagram.metadata.creationdaterepresentation">
+<h2>CreationDateRepresentation<a class="headerlink" href="#sp:core.diagram.metadata.creationdaterepresentation" title="Link to this heading">¶</a></h2>
+<p class="rubric">Data Property</p>
+<p>A representation of the creation date of the drawing. The format of the
+representation is not prescribed.</p>
+<p><strong>Type:</strong><span> </span><a class="sp-element reference internal" href="../../Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><a class="sp-element reference internal" href="../../Builtin/String.html"><span class="doc">String</span></a></p>
+<p><strong>Multiplicity:</strong><span> </span><span>0..1</span></p>
+<p><strong>Ordered:</strong><span> </span><span>no</span></p>
+<p><strong>Unique:</strong><span> </span><span>no</span></p>
+<p><strong>RDL:</strong><span> </span><a class="reference external" href="http://sandbox.dexpi.org/rdl/CreationDateRepresentationAssignmentClass">CREATION DATE REPRESENTATION ASSIGNMENT CLASS (http://sandbox.dexpi.org/rdl/CreationDateRepresentationAssignmentClass)</a></p>
+<section id="sp:core.diagram.metadata.creationdaterepresentation-example">
+<h3>Example<a class="headerlink" href="#sp:core.diagram.metadata.creationdaterepresentation-example" title="Link to this heading">¶</a></h3>
+<p class="sp-dense"><code class="docutils literal notranslate"><span class="pre">"2016-04-01"</span></code></p>
+</section>
+</section>
+<section id="sp:core.diagram.metadata.creatorname">
+<h2>CreatorName<a class="headerlink" href="#sp:core.diagram.metadata.creatorname" title="Link to this heading">¶</a></h2>
+<p class="rubric">Data Property</p>
+<p>The name of the creator of the drawing.</p>
+<p><strong>Type:</strong><span> </span><a class="sp-element reference internal" href="../../Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><a class="sp-element reference internal" href="../../Builtin/String.html"><span class="doc">String</span></a></p>
+<p><strong>Multiplicity:</strong><span> </span><span>0..1</span></p>
+<p><strong>Ordered:</strong><span> </span><span>no</span></p>
+<p><strong>Unique:</strong><span> </span><span>no</span></p>
+<p><strong>RDL:</strong><span> </span><a class="reference external" href="http://sandbox.dexpi.org/rdl/CreatorNameAssignmentClass">CREATOR NAME ASSIGNMENT CLASS (http://sandbox.dexpi.org/rdl/CreatorNameAssignmentClass)</a></p>
+<section id="sp:core.diagram.metadata.creatorname-example">
+<h3>Example<a class="headerlink" href="#sp:core.diagram.metadata.creatorname-example" title="Link to this heading">¶</a></h3>
+<p class="sp-dense"><code class="docutils literal notranslate"><span class="pre">"A.</span> <span class="pre">Creator"</span></code></p>
+</section>
+</section>
+<section id="sp:core.diagram.metadata.designername">
+<h2>DesignerName<a class="headerlink" href="#sp:core.diagram.metadata.designername" title="Link to this heading">¶</a></h2>
+<p class="rubric">Data Property</p>
+<p>The name of the designer of the drawing.</p>
+<p><strong>Type:</strong><span> </span><a class="sp-element reference internal" href="../../Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><a class="sp-element reference internal" href="../../Builtin/String.html"><span class="doc">String</span></a></p>
+<p><strong>Multiplicity:</strong><span> </span><span>0..1</span></p>
+<p><strong>Ordered:</strong><span> </span><span>no</span></p>
+<p><strong>Unique:</strong><span> </span><span>no</span></p>
+<p><strong>RDL:</strong><span> </span><a class="reference external" href="http://sandbox.dexpi.org/rdl/DesignerNameAssignmentClass">DESIGNER NAME ASSIGNMENT CLASS (http://sandbox.dexpi.org/rdl/DesignerNameAssignmentClass)</a></p>
+<section id="sp:core.diagram.metadata.designername-example">
+<h3>Example<a class="headerlink" href="#sp:core.diagram.metadata.designername-example" title="Link to this heading">¶</a></h3>
+<p class="sp-dense"><code class="docutils literal notranslate"><span class="pre">"D.</span> <span class="pre">E.</span> <span class="pre">Signer"</span></code></p>
+</section>
+</section>
+<section id="sp:core.diagram.metadata.draftername">
+<h2>DrafterName<a class="headerlink" href="#sp:core.diagram.metadata.draftername" title="Link to this heading">¶</a></h2>
+<p class="rubric">Data Property</p>
+<p>The name of the drafter of the drawing.</p>
+<p><strong>Type:</strong><span> </span><a class="sp-element reference internal" href="../../Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><a class="sp-element reference internal" href="../../Builtin/String.html"><span class="doc">String</span></a></p>
+<p><strong>Multiplicity:</strong><span> </span><span>0..1</span></p>
+<p><strong>Ordered:</strong><span> </span><span>no</span></p>
+<p><strong>Unique:</strong><span> </span><span>no</span></p>
+<p><strong>RDL:</strong><span> </span><a class="reference external" href="http://sandbox.dexpi.org/rdl/DrafterNameAssignmentClass">DRAFTER NAME ASSIGNMENT CLASS (http://sandbox.dexpi.org/rdl/DrafterNameAssignmentClass)</a></p>
+<section id="sp:core.diagram.metadata.draftername-example">
+<h3>Example<a class="headerlink" href="#sp:core.diagram.metadata.draftername-example" title="Link to this heading">¶</a></h3>
+<p class="sp-dense"><code class="docutils literal notranslate"><span class="pre">"D.</span> <span class="pre">Rafter"</span></code></p>
+</section>
+</section>
+<section id="sp:core.diagram.metadata.drawingname">
+<h2>DrawingName<a class="headerlink" href="#sp:core.diagram.metadata.drawingname" title="Link to this heading">¶</a></h2>
+<p class="rubric">Data Property</p>
+<p>The drawing name.</p>
+<p><strong>Type:</strong><span> </span><a class="sp-element reference internal" href="../../Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><a class="sp-element reference internal" href="../../Builtin/String.html"><span class="doc">String</span></a></p>
+<p><strong>Multiplicity:</strong><span> </span><span>0..1</span></p>
+<p><strong>Ordered:</strong><span> </span><span>no</span></p>
+<p><strong>Unique:</strong><span> </span><span>no</span></p>
+<p><strong>RDL:</strong><span> </span><a class="reference external" href="http://data.posccaesar.org/rdl/RDS2102503531">DRAWING NAME ASSIGNMENT CLASS (http://data.posccaesar.org/rdl/RDS2102503531)</a></p>
+<section id="sp:core.diagram.metadata.drawingname-example">
+<h3>Example<a class="headerlink" href="#sp:core.diagram.metadata.drawingname-example" title="Link to this heading">¶</a></h3>
+<p class="sp-dense"><code class="docutils literal notranslate"><span class="pre">"DEXPI</span> <span class="pre">example</span> <span class="pre">PID"</span></code></p>
+</section>
+</section>
+<section id="sp:core.diagram.metadata.drawingnumber">
+<h2>DrawingNumber<a class="headerlink" href="#sp:core.diagram.metadata.drawingnumber" title="Link to this heading">¶</a></h2>
+<p class="rubric">Data Property</p>
+<p>The drawing number.</p>
+<p><strong>Type:</strong><span> </span><a class="sp-element reference internal" href="../../Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><a class="sp-element reference internal" href="../../Builtin/String.html"><span class="doc">String</span></a></p>
+<p><strong>Multiplicity:</strong><span> </span><span>0..1</span></p>
+<p><strong>Ordered:</strong><span> </span><span>no</span></p>
+<p><strong>Unique:</strong><span> </span><span>no</span></p>
+<p><strong>RDL:</strong><span> </span><a class="reference external" href="http://sandbox.dexpi.org/rdl/DrawingNumberAssignmentClass">DRAWING NUMBER ASSIGNMENT CLASS (http://sandbox.dexpi.org/rdl/DrawingNumberAssignmentClass)</a></p>
+<section id="sp:core.diagram.metadata.drawingnumber-example">
+<h3>Example<a class="headerlink" href="#sp:core.diagram.metadata.drawingnumber-example" title="Link to this heading">¶</a></h3>
+<p class="sp-dense"><code class="docutils literal notranslate"><span class="pre">"123/A93"</span></code></p>
+</section>
+</section>
+<section id="sp:core.diagram.metadata.drawingsubtitle">
+<h2>DrawingSubTitle<a class="headerlink" href="#sp:core.diagram.metadata.drawingsubtitle" title="Link to this heading">¶</a></h2>
+<p class="rubric">Data Property</p>
+<p>The subtitle of the drawing.</p>
+<p><strong>Type:</strong><span> </span><a class="sp-element reference internal" href="../DataTypes/MultiLanguageString.html"><span class="doc">MultiLanguageString</span></a></p>
+<p><strong>Multiplicity:</strong><span> </span><span>0..1</span></p>
+<p><strong>Ordered:</strong><span> </span><span>no</span></p>
+<p><strong>Unique:</strong><span> </span><span>no</span></p>
+<p><strong>RDL:</strong><span> </span><a class="reference external" href="http://sandbox.dexpi.org/rdl/DrawingSubTitleAssignmentClass">DRAWING SUB TITLE ASSIGNMENT CLASS (http://sandbox.dexpi.org/rdl/DrawingSubTitleAssignmentClass)</a></p>
+<section id="sp:core.diagram.metadata.drawingsubtitle-example">
+<h3>Example<a class="headerlink" href="#sp:core.diagram.metadata.drawingsubtitle-example" title="Link to this heading">¶</a></h3>
+<p class="sp-dense"><a class="sp-element reference internal" href="../DataTypes/MultiLanguageString.html"><span class="doc">MultiLanguageString</span></a><span>(</span></p>
+<p class="sp-dense"><span>     </span><a class="sp-element reference internal" href="../DataTypes/MultiLanguageString.html#sp:core.datatypes.multilanguagestring.singlelanguagestrings"><span class="std std-ref">SingleLanguageStrings</span></a><span> = </span><span>[</span></p>
+<p class="sp-dense"><span>          </span><a class="sp-element reference internal" href="../DataTypes/SingleLanguageString.html"><span class="doc">SingleLanguageString</span></a><span>(</span></p>
+<p class="sp-dense"><span>               </span><a class="sp-element reference internal" href="../DataTypes/SingleLanguageString.html#sp:core.datatypes.singlelanguagestring.language"><span class="std std-ref">Language</span></a><span> = </span><code class="docutils literal notranslate"><span class="pre">"en"</span></code><span>,</span></p>
+<p class="sp-dense"><span>               </span><a class="sp-element reference internal" href="../DataTypes/SingleLanguageString.html#sp:core.datatypes.singlelanguagestring.value"><span class="std std-ref">Value</span></a><span> = </span><code class="docutils literal notranslate"><span class="pre">"DEXPI</span> <span class="pre">Example</span> <span class="pre">PID"</span></code><span>)</span><span>,</span></p>
+<p class="sp-dense"><span>          </span><a class="sp-element reference internal" href="../DataTypes/SingleLanguageString.html"><span class="doc">SingleLanguageString</span></a><span>(</span></p>
+<p class="sp-dense"><span>               </span><a class="sp-element reference internal" href="../DataTypes/SingleLanguageString.html#sp:core.datatypes.singlelanguagestring.language"><span class="std std-ref">Language</span></a><span> = </span><code class="docutils literal notranslate"><span class="pre">"de"</span></code><span>,</span></p>
+<p class="sp-dense"><span>               </span><a class="sp-element reference internal" href="../DataTypes/SingleLanguageString.html#sp:core.datatypes.singlelanguagestring.value"><span class="std std-ref">Value</span></a><span> = </span><code class="docutils literal notranslate"><span class="pre">"DEXPI</span> <span class="pre">Beispiel-R&amp;I"</span></code><span>)</span><span>]</span><span>)</span></p>
+</section>
+</section>
+<section id="sp:core.diagram.metadata.filename">
+<h2>FileName<a class="headerlink" href="#sp:core.diagram.metadata.filename" title="Link to this heading">¶</a></h2>
+<p class="rubric">Data Property</p>
+<p>The file name of the drawing.</p>
+<p><strong>Type:</strong><span> </span><a class="sp-element reference internal" href="../../Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><a class="sp-element reference internal" href="../../Builtin/String.html"><span class="doc">String</span></a></p>
+<p><strong>Multiplicity:</strong><span> </span><span>0..1</span></p>
+<p><strong>Ordered:</strong><span> </span><span>no</span></p>
+<p><strong>Unique:</strong><span> </span><span>no</span></p>
+<p><strong>RDL:</strong><span> </span><a class="reference external" href="http://sandbox.dexpi.org/rdl/FileNameAssignmentClass">FILE NAME ASSIGNMENT CLASS (http://sandbox.dexpi.org/rdl/FileNameAssignmentClass)</a></p>
+<section id="sp:core.diagram.metadata.filename-example">
+<h3>Example<a class="headerlink" href="#sp:core.diagram.metadata.filename-example" title="Link to this heading">¶</a></h3>
+<p class="sp-dense"><code class="docutils literal notranslate"><span class="pre">"DEXPI_example_PID.xml"</span></code></p>
+</section>
+</section>
+<section id="sp:core.diagram.metadata.lastmodificationdaterepresentation">
+<h2>LastModificationDateRepresentation<a class="headerlink" href="#sp:core.diagram.metadata.lastmodificationdaterepresentation" title="Link to this heading">¶</a></h2>
+<p class="rubric">Data Property</p>
+<p>A representation of the last modification date of the drawing. The format of the
+representation is not prescribed.</p>
+<p><strong>Type:</strong><span> </span><a class="sp-element reference internal" href="../../Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><a class="sp-element reference internal" href="../../Builtin/String.html"><span class="doc">String</span></a></p>
+<p><strong>Multiplicity:</strong><span> </span><span>0..1</span></p>
+<p><strong>Ordered:</strong><span> </span><span>no</span></p>
+<p><strong>Unique:</strong><span> </span><span>no</span></p>
+<p><strong>RDL:</strong><span> </span><a class="reference external" href="http://sandbox.dexpi.org/rdl/LastModificationDateRepresentationAssignmentClass">LAST MODIFICATION DATE REPRESENTATION ASSIGNMENT CLASS (http://sandbox.dexpi.org/rdl/LastModificationDateRepresentationAssignmentClass)</a></p>
+<section id="sp:core.diagram.metadata.lastmodificationdaterepresentation-example">
+<h3>Example<a class="headerlink" href="#sp:core.diagram.metadata.lastmodificationdaterepresentation-example" title="Link to this heading">¶</a></h3>
+<p class="sp-dense"><code class="docutils literal notranslate"><span class="pre">"2016-04-02"</span></code></p>
+</section>
+</section>
+<section id="sp:core.diagram.metadata.locationname">
+<h2>LocationName<a class="headerlink" href="#sp:core.diagram.metadata.locationname" title="Link to this heading">¶</a></h2>
+<p class="rubric">Data Property</p>
+<p>The location name.</p>
+<p><strong>Type:</strong><span> </span><a class="sp-element reference internal" href="../../Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><a class="sp-element reference internal" href="../../Builtin/String.html"><span class="doc">String</span></a></p>
+<p><strong>Multiplicity:</strong><span> </span><span>0..1</span></p>
+<p><strong>Ordered:</strong><span> </span><span>no</span></p>
+<p><strong>Unique:</strong><span> </span><span>no</span></p>
+<p><strong>RDL:</strong><span> </span><a class="reference external" href="http://sandbox.dexpi.org/rdl/LocationNameAssignmentClass">LOCATION NAME ASSIGNMENT CLASS (http://sandbox.dexpi.org/rdl/LocationNameAssignmentClass)</a></p>
+<section id="sp:core.diagram.metadata.locationname-example">
+<h3>Example<a class="headerlink" href="#sp:core.diagram.metadata.locationname-example" title="Link to this heading">¶</a></h3>
+<p class="sp-dense"><code class="docutils literal notranslate"><span class="pre">"C1248"</span></code></p>
+</section>
+</section>
+<section id="sp:core.diagram.metadata.processcellidentificationcode">
+<h2>ProcessCellIdentificationCode<a class="headerlink" href="#sp:core.diagram.metadata.processcellidentificationcode" title="Link to this heading">¶</a></h2>
+<p class="rubric">Data Property</p>
+<p>The identification code of the related process cell according to ISA-95.</p>
+<p><strong>Type:</strong><span> </span><a class="sp-element reference internal" href="../../Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><a class="sp-element reference internal" href="../../Builtin/String.html"><span class="doc">String</span></a></p>
+<p><strong>Multiplicity:</strong><span> </span><span>0..1</span></p>
+<p><strong>Ordered:</strong><span> </span><span>no</span></p>
+<p><strong>Unique:</strong><span> </span><span>no</span></p>
+<p><strong>RDL:</strong><span> </span><a class="reference external" href="http://sandbox.dexpi.org/rdl/ProcessCellIdentificationCodeAssignmentClass">PROCESS CELL IDENTIFICATION CODE ASSIGNMENT CLASS (http://sandbox.dexpi.org/rdl/ProcessCellIdentificationCodeAssignmentClass)</a></p>
+<section id="sp:core.diagram.metadata.processcellidentificationcode-example">
+<h3>Example<a class="headerlink" href="#sp:core.diagram.metadata.processcellidentificationcode-example" title="Link to this heading">¶</a></h3>
+<p class="sp-dense"><code class="docutils literal notranslate"><span class="pre">"PC123"</span></code></p>
+</section>
+</section>
+<section id="sp:core.diagram.metadata.processcellname">
+<h2>ProcessCellName<a class="headerlink" href="#sp:core.diagram.metadata.processcellname" title="Link to this heading">¶</a></h2>
+<p class="rubric">Data Property</p>
+<p>The name of the related process cell according to ISA-95.</p>
+<p><strong>Type:</strong><span> </span><a class="sp-element reference internal" href="../../Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><a class="sp-element reference internal" href="../../Builtin/String.html"><span class="doc">String</span></a></p>
+<p><strong>Multiplicity:</strong><span> </span><span>0..1</span></p>
+<p><strong>Ordered:</strong><span> </span><span>no</span></p>
+<p><strong>Unique:</strong><span> </span><span>no</span></p>
+<p><strong>RDL:</strong><span> </span><a class="reference external" href="http://sandbox.dexpi.org/rdl/ProcessCellNameAssignmentClass">PROCESS CELL NAME ASSIGNMENT CLASS (http://sandbox.dexpi.org/rdl/ProcessCellNameAssignmentClass)</a></p>
+<section id="sp:core.diagram.metadata.processcellname-example">
+<h3>Example<a class="headerlink" href="#sp:core.diagram.metadata.processcellname-example" title="Link to this heading">¶</a></h3>
+<p class="sp-dense"><code class="docutils literal notranslate"><span class="pre">"a</span> <span class="pre">process</span> <span class="pre">cell"</span></code></p>
+</section>
+</section>
+<section id="sp:core.diagram.metadata.projectname">
+<h2>ProjectName<a class="headerlink" href="#sp:core.diagram.metadata.projectname" title="Link to this heading">¶</a></h2>
+<p class="rubric">Data Property</p>
+<p>The name of the related project.</p>
+<p><strong>Type:</strong><span> </span><a class="sp-element reference internal" href="../../Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><a class="sp-element reference internal" href="../../Builtin/String.html"><span class="doc">String</span></a></p>
+<p><strong>Multiplicity:</strong><span> </span><span>0..1</span></p>
+<p><strong>Ordered:</strong><span> </span><span>no</span></p>
+<p><strong>Unique:</strong><span> </span><span>no</span></p>
+<p><strong>RDL:</strong><span> </span><a class="reference external" href="http://sandbox.dexpi.org/rdl/ProjectNameAssignmentClass">PROJECT NAME ASSIGNMENT CLASS (http://sandbox.dexpi.org/rdl/ProjectNameAssignmentClass)</a></p>
+<section id="sp:core.diagram.metadata.projectname-example">
+<h3>Example<a class="headerlink" href="#sp:core.diagram.metadata.projectname-example" title="Link to this heading">¶</a></h3>
+<p class="sp-dense"><code class="docutils literal notranslate"><span class="pre">"a</span> <span class="pre">project"</span></code></p>
+</section>
+</section>
+<section id="sp:core.diagram.metadata.projectnumber">
+<h2>ProjectNumber<a class="headerlink" href="#sp:core.diagram.metadata.projectnumber" title="Link to this heading">¶</a></h2>
+<p class="rubric">Data Property</p>
+<p>The number of the related project.</p>
+<p><strong>Type:</strong><span> </span><a class="sp-element reference internal" href="../../Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><a class="sp-element reference internal" href="../../Builtin/String.html"><span class="doc">String</span></a></p>
+<p><strong>Multiplicity:</strong><span> </span><span>0..1</span></p>
+<p><strong>Ordered:</strong><span> </span><span>no</span></p>
+<p><strong>Unique:</strong><span> </span><span>no</span></p>
+<p><strong>RDL:</strong><span> </span><a class="reference external" href="http://sandbox.dexpi.org/rdl/ProjectNumberAssignmentClass">PROJECT NUMBER ASSIGNMENT CLASS (http://sandbox.dexpi.org/rdl/ProjectNumberAssignmentClass)</a></p>
+<section id="sp:core.diagram.metadata.projectnumber-example">
+<h3>Example<a class="headerlink" href="#sp:core.diagram.metadata.projectnumber-example" title="Link to this heading">¶</a></h3>
+<p class="sp-dense"><code class="docutils literal notranslate"><span class="pre">"P3.1415"</span></code></p>
+</section>
+</section>
+<section id="sp:core.diagram.metadata.projectrangenumber">
+<h2>ProjectRangeNumber<a class="headerlink" href="#sp:core.diagram.metadata.projectrangenumber" title="Link to this heading">¶</a></h2>
+<p class="rubric">Data Property</p>
+<p>The range number of the related project.</p>
+<p><strong>Type:</strong><span> </span><a class="sp-element reference internal" href="../../Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><a class="sp-element reference internal" href="../../Builtin/String.html"><span class="doc">String</span></a></p>
+<p><strong>Multiplicity:</strong><span> </span><span>0..1</span></p>
+<p><strong>Ordered:</strong><span> </span><span>no</span></p>
+<p><strong>Unique:</strong><span> </span><span>no</span></p>
+<p><strong>RDL:</strong><span> </span><a class="reference external" href="http://sandbox.dexpi.org/rdl/ProjectRangeNumberAssignmentClass">PROJECT RANGE NUMBER ASSIGNMENT CLASS (http://sandbox.dexpi.org/rdl/ProjectRangeNumberAssignmentClass)</a></p>
+<section id="sp:core.diagram.metadata.projectrangenumber-example">
+<h3>Example<a class="headerlink" href="#sp:core.diagram.metadata.projectrangenumber-example" title="Link to this heading">¶</a></h3>
+<p class="sp-dense"><code class="docutils literal notranslate"><span class="pre">"PR321"</span></code></p>
+</section>
+</section>
+<section id="sp:core.diagram.metadata.replaceddrawing">
+<h2>ReplacedDrawing<a class="headerlink" href="#sp:core.diagram.metadata.replaceddrawing" title="Link to this heading">¶</a></h2>
+<p class="rubric">Data Property</p>
+<p>The drawing replaced by this drawing.</p>
+<p><strong>Type:</strong><span> </span><a class="sp-element reference internal" href="../../Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><a class="sp-element reference internal" href="../../Builtin/String.html"><span class="doc">String</span></a></p>
+<p><strong>Multiplicity:</strong><span> </span><span>0..1</span></p>
+<p><strong>Ordered:</strong><span> </span><span>no</span></p>
+<p><strong>Unique:</strong><span> </span><span>no</span></p>
+<p><strong>RDL:</strong><span> </span><a class="reference external" href="http://sandbox.dexpi.org/rdl/ReplacedDrawingAssignmentClass">REPLACED DRAWING ASSIGNMENT CLASS (http://sandbox.dexpi.org/rdl/ReplacedDrawingAssignmentClass)</a></p>
+<section id="sp:core.diagram.metadata.replaceddrawing-example">
+<h3>Example<a class="headerlink" href="#sp:core.diagram.metadata.replaceddrawing-example" title="Link to this heading">¶</a></h3>
+<p class="sp-dense"><code class="docutils literal notranslate"><span class="pre">"D321"</span></code></p>
+</section>
+</section>
+<section id="sp:core.diagram.metadata.responsibledepartmentname">
+<h2>ResponsibleDepartmentName<a class="headerlink" href="#sp:core.diagram.metadata.responsibledepartmentname" title="Link to this heading">¶</a></h2>
+<p class="rubric">Data Property</p>
+<p>The name of the department responsible for the drawing.</p>
+<p><strong>Type:</strong><span> </span><a class="sp-element reference internal" href="../../Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><a class="sp-element reference internal" href="../../Builtin/String.html"><span class="doc">String</span></a></p>
+<p><strong>Multiplicity:</strong><span> </span><span>0..1</span></p>
+<p><strong>Ordered:</strong><span> </span><span>no</span></p>
+<p><strong>Unique:</strong><span> </span><span>no</span></p>
+<p><strong>RDL:</strong><span> </span><a class="reference external" href="http://sandbox.dexpi.org/rdl/ResponsibleDepartmentNameAssignmentClass">RESPONSIBLE DEPARTMENT NAME ASSIGNMENT CLASS (http://sandbox.dexpi.org/rdl/ResponsibleDepartmentNameAssignmentClass)</a></p>
+<section id="sp:core.diagram.metadata.responsibledepartmentname-example">
+<h3>Example<a class="headerlink" href="#sp:core.diagram.metadata.responsibledepartmentname-example" title="Link to this heading">¶</a></h3>
+<p class="sp-dense"><code class="docutils literal notranslate"><span class="pre">"R2-D2"</span></code></p>
+</section>
+</section>
+<section id="sp:core.diagram.metadata.revisionnumber">
+<h2>RevisionNumber<a class="headerlink" href="#sp:core.diagram.metadata.revisionnumber" title="Link to this heading">¶</a></h2>
+<p class="rubric">Data Property</p>
+<p>The revision number of the drawing.</p>
+<p><strong>Type:</strong><span> </span><a class="sp-element reference internal" href="../../Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><a class="sp-element reference internal" href="../../Builtin/String.html"><span class="doc">String</span></a></p>
+<p><strong>Multiplicity:</strong><span> </span><span>0..1</span></p>
+<p><strong>Ordered:</strong><span> </span><span>no</span></p>
+<p><strong>Unique:</strong><span> </span><span>no</span></p>
+<p><strong>RDL:</strong><span> </span><a class="reference external" href="http://sandbox.dexpi.org/rdl/RevisionNumberAssignmentClass">REVISION NUMBER ASSIGNMENT CLASS (http://sandbox.dexpi.org/rdl/RevisionNumberAssignmentClass)</a></p>
+<section id="sp:core.diagram.metadata.revisionnumber-example">
+<h3>Example<a class="headerlink" href="#sp:core.diagram.metadata.revisionnumber-example" title="Link to this heading">¶</a></h3>
+<p class="sp-dense"><code class="docutils literal notranslate"><span class="pre">"R2.2"</span></code></p>
+</section>
+</section>
+<section id="sp:core.diagram.metadata.sheetformat">
+<h2>SheetFormat<a class="headerlink" href="#sp:core.diagram.metadata.sheetformat" title="Link to this heading">¶</a></h2>
+<p class="rubric">Data Property</p>
+<p>The sheet format.</p>
+<p><strong>Type:</strong><span> </span><a class="sp-element reference internal" href="../../Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><a class="sp-element reference internal" href="../../Builtin/String.html"><span class="doc">String</span></a></p>
+<p><strong>Multiplicity:</strong><span> </span><span>0..1</span></p>
+<p><strong>Ordered:</strong><span> </span><span>no</span></p>
+<p><strong>Unique:</strong><span> </span><span>no</span></p>
+<p><strong>RDL:</strong><span> </span><a class="reference external" href="http://sandbox.dexpi.org/rdl/SheetFormatAssignmentClass">SHEET FORMAT ASSIGNMENT CLASS (http://sandbox.dexpi.org/rdl/SheetFormatAssignmentClass)</a></p>
+<section id="sp:core.diagram.metadata.sheetformat-example">
+<h3>Example<a class="headerlink" href="#sp:core.diagram.metadata.sheetformat-example" title="Link to this heading">¶</a></h3>
+<p class="sp-dense"><code class="docutils literal notranslate"><span class="pre">"DIN</span> <span class="pre">A3"</span></code></p>
+</section>
+</section>
+<section id="sp:core.diagram.metadata.sheetnumber">
+<h2>SheetNumber<a class="headerlink" href="#sp:core.diagram.metadata.sheetnumber" title="Link to this heading">¶</a></h2>
+<p class="rubric">Data Property</p>
+<p>The sheet number of the drawing.</p>
+<p><strong>Type:</strong><span> </span><a class="sp-element reference internal" href="../../Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><a class="sp-element reference internal" href="../../Builtin/String.html"><span class="doc">String</span></a></p>
+<p><strong>Multiplicity:</strong><span> </span><span>0..1</span></p>
+<p><strong>Ordered:</strong><span> </span><span>no</span></p>
+<p><strong>Unique:</strong><span> </span><span>no</span></p>
+<p><strong>RDL:</strong><span> </span><a class="reference external" href="http://sandbox.dexpi.org/rdl/SheetNumberAssignmentClass">SHEET NUMBER ASSIGNMENT CLASS (http://sandbox.dexpi.org/rdl/SheetNumberAssignmentClass)</a></p>
+<section id="sp:core.diagram.metadata.sheetnumber-example">
+<h3>Example<a class="headerlink" href="#sp:core.diagram.metadata.sheetnumber-example" title="Link to this heading">¶</a></h3>
+<p class="sp-dense"><code class="docutils literal notranslate"><span class="pre">"2a"</span></code></p>
+</section>
+</section>
+<section id="sp:core.diagram.metadata.subprojectname">
+<h2>SubProjectName<a class="headerlink" href="#sp:core.diagram.metadata.subprojectname" title="Link to this heading">¶</a></h2>
+<p class="rubric">Data Property</p>
+<p>The name of the related sub-project.</p>
+<p><strong>Type:</strong><span> </span><a class="sp-element reference internal" href="../../Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><a class="sp-element reference internal" href="../../Builtin/String.html"><span class="doc">String</span></a></p>
+<p><strong>Multiplicity:</strong><span> </span><span>0..1</span></p>
+<p><strong>Ordered:</strong><span> </span><span>no</span></p>
+<p><strong>Unique:</strong><span> </span><span>no</span></p>
+<p><strong>RDL:</strong><span> </span><a class="reference external" href="http://sandbox.dexpi.org/rdl/SubProjectNameAssignmentClass">SUB PROJECT NAME ASSIGNMENT CLASS (http://sandbox.dexpi.org/rdl/SubProjectNameAssignmentClass)</a></p>
+<section id="sp:core.diagram.metadata.subprojectname-example">
+<h3>Example<a class="headerlink" href="#sp:core.diagram.metadata.subprojectname-example" title="Link to this heading">¶</a></h3>
+<p class="sp-dense"><code class="docutils literal notranslate"><span class="pre">"a</span> <span class="pre">sub-project"</span></code></p>
+</section>
+</section>
+<section id="sp:core.diagram.metadata.subprojectnumber">
+<h2>SubProjectNumber<a class="headerlink" href="#sp:core.diagram.metadata.subprojectnumber" title="Link to this heading">¶</a></h2>
+<p class="rubric">Data Property</p>
+<p>The number of the related sub-project.</p>
+<p><strong>Type:</strong><span> </span><a class="sp-element reference internal" href="../../Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><a class="sp-element reference internal" href="../../Builtin/String.html"><span class="doc">String</span></a></p>
+<p><strong>Multiplicity:</strong><span> </span><span>0..1</span></p>
+<p><strong>Ordered:</strong><span> </span><span>no</span></p>
+<p><strong>Unique:</strong><span> </span><span>no</span></p>
+<p><strong>RDL:</strong><span> </span><a class="reference external" href="http://sandbox.dexpi.org/rdl/SubProjectNumberAssignmentClass">SUB PROJECT NUMBER ASSIGNMENT CLASS (http://sandbox.dexpi.org/rdl/SubProjectNumberAssignmentClass)</a></p>
+<section id="sp:core.diagram.metadata.subprojectnumber-example">
+<h3>Example<a class="headerlink" href="#sp:core.diagram.metadata.subprojectnumber-example" title="Link to this heading">¶</a></h3>
+<p class="sp-dense"><code class="docutils literal notranslate"><span class="pre">"P3.1415-SP2"</span></code></p>
+</section>
+</section>
+<section id="sp:core.diagram.metadata.totalnumberofsheets">
+<h2>TotalNumberOfSheets<a class="headerlink" href="#sp:core.diagram.metadata.totalnumberofsheets" title="Link to this heading">¶</a></h2>
+<p class="rubric">Data Property</p>
+<p>The total number of sheets.</p>
+<p><strong>Type:</strong><span> </span><a class="sp-element reference internal" href="../../Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><a class="sp-element reference internal" href="../../Builtin/Integer.html"><span class="doc">Integer</span></a></p>
+<p><strong>Multiplicity:</strong><span> </span><span>0..1</span></p>
+<p><strong>Ordered:</strong><span> </span><span>no</span></p>
+<p><strong>Unique:</strong><span> </span><span>no</span></p>
+<p><strong>RDL:</strong><span> </span><a class="reference external" href="http://sandbox.dexpi.org/rdl/TotalNumberOfSheets">TOTAL NUMBER OF SHEETS (http://sandbox.dexpi.org/rdl/TotalNumberOfSheets)</a></p>
+<section id="sp:core.diagram.metadata.totalnumberofsheets-example">
+<h3>Example<a class="headerlink" href="#sp:core.diagram.metadata.totalnumberofsheets-example" title="Link to this heading">¶</a></h3>
+<p class="sp-dense"><code class="docutils literal notranslate"><span class="pre">4</span></code></p>
+</section>
+</section>
+<section id="sp:core.diagram.metadata.unitidentificationcode">
+<h2>UnitIdentificationCode<a class="headerlink" href="#sp:core.diagram.metadata.unitidentificationcode" title="Link to this heading">¶</a></h2>
+<p class="rubric">Data Property</p>
+<p>The identification code of the related unit according to ISA-95.</p>
+<p><strong>Type:</strong><span> </span><a class="sp-element reference internal" href="../../Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><a class="sp-element reference internal" href="../../Builtin/String.html"><span class="doc">String</span></a></p>
+<p><strong>Multiplicity:</strong><span> </span><span>0..1</span></p>
+<p><strong>Ordered:</strong><span> </span><span>no</span></p>
+<p><strong>Unique:</strong><span> </span><span>no</span></p>
+<p><strong>RDL:</strong><span> </span><a class="reference external" href="http://sandbox.dexpi.org/rdl/UnitIdentificationCodeAssignmentClass">UNIT IDENTIFICATION CODE ASSIGNMENT CLASS (http://sandbox.dexpi.org/rdl/UnitIdentificationCodeAssignmentClass)</a></p>
+<section id="sp:core.diagram.metadata.unitidentificationcode-example">
+<h3>Example<a class="headerlink" href="#sp:core.diagram.metadata.unitidentificationcode-example" title="Link to this heading">¶</a></h3>
+<p class="sp-dense"><code class="docutils literal notranslate"><span class="pre">"U-923-463"</span></code></p>
+</section>
+</section>
+<section id="sp:core.diagram.metadata.unitname">
+<h2>UnitName<a class="headerlink" href="#sp:core.diagram.metadata.unitname" title="Link to this heading">¶</a></h2>
+<p class="rubric">Data Property</p>
+<p>The name of the related unit according to ISA-95.</p>
+<p><strong>Type:</strong><span> </span><a class="sp-element reference internal" href="../../Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><a class="sp-element reference internal" href="../../Builtin/String.html"><span class="doc">String</span></a></p>
+<p><strong>Multiplicity:</strong><span> </span><span>0..1</span></p>
+<p><strong>Ordered:</strong><span> </span><span>no</span></p>
+<p><strong>Unique:</strong><span> </span><span>no</span></p>
+<p><strong>RDL:</strong><span> </span><a class="reference external" href="http://sandbox.dexpi.org/rdl/UnitIsa95NameAssignmentClass">UNIT ISA95 NAME ASSIGNMENT CLASS (http://sandbox.dexpi.org/rdl/UnitIsa95NameAssignmentClass)</a></p>
+<section id="sp:core.diagram.metadata.unitname-example">
+<h3>Example<a class="headerlink" href="#sp:core.diagram.metadata.unitname-example" title="Link to this heading">¶</a></h3>
+<p class="sp-dense"><code class="docutils literal notranslate"><span class="pre">"a</span> <span class="pre">unit"</span></code></p>
+</section>
+</section>
+<section id="Core.Diagram.MetaData-example">
+<h2>Example in DEXPI XML<a class="headerlink" href="#Core.Diagram.MetaData-example" title="Link to this heading">¶</a></h2>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;Object</span><span class="w"> </span><span class="na">type=</span><span class="s">"Core/Diagram.MetaData"</span><span class="nt">&gt;</span>
+<span class="w">  </span><span class="nt">&lt;Data</span><span class="w"> </span><span class="na">property=</span><span class="s">"ApprovalDateRepresentation"</span><span class="nt">&gt;</span>
+<span class="w">    </span><span class="nt">&lt;String&gt;</span>2016-04-01<span class="nt">&lt;/String&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/Data&gt;</span>
+<span class="w">  </span><span class="nt">&lt;Data</span><span class="w"> </span><span class="na">property=</span><span class="s">"ApprovalDescription"</span><span class="nt">&gt;</span>
+<span class="w">    </span><span class="nt">&lt;AggregatedDataValue</span><span class="w"> </span><span class="na">type=</span><span class="s">"Core/DataTypes.MultiLanguageString"</span><span class="nt">&gt;</span>
+<span class="w">      </span><span class="nt">&lt;Data</span><span class="w"> </span><span class="na">property=</span><span class="s">"SingleLanguageStrings"</span><span class="nt">&gt;</span>
+<span class="w">        </span><span class="nt">&lt;AggregatedDataValue</span><span class="w"> </span><span class="na">type=</span><span class="s">"Core/DataTypes.SingleLanguageString"</span><span class="nt">&gt;</span>
+<span class="w">          </span><span class="nt">&lt;Data</span><span class="w"> </span><span class="na">property=</span><span class="s">"Language"</span><span class="nt">&gt;</span>
+<span class="w">            </span><span class="nt">&lt;String&gt;</span>en<span class="nt">&lt;/String&gt;</span>
+<span class="w">          </span><span class="nt">&lt;/Data&gt;</span>
+<span class="w">          </span><span class="nt">&lt;Data</span><span class="w"> </span><span class="na">property=</span><span class="s">"Value"</span><span class="nt">&gt;</span>
+<span class="w">            </span><span class="nt">&lt;String&gt;</span>approved<span class="nt">&lt;/String&gt;</span>
+<span class="w">          </span><span class="nt">&lt;/Data&gt;</span>
+<span class="w">        </span><span class="nt">&lt;/AggregatedDataValue&gt;</span>
+<span class="w">        </span><span class="nt">&lt;AggregatedDataValue</span><span class="w"> </span><span class="na">type=</span><span class="s">"Core/DataTypes.SingleLanguageString"</span><span class="nt">&gt;</span>
+<span class="w">          </span><span class="nt">&lt;Data</span><span class="w"> </span><span class="na">property=</span><span class="s">"Language"</span><span class="nt">&gt;</span>
+<span class="w">            </span><span class="nt">&lt;String&gt;</span>de<span class="nt">&lt;/String&gt;</span>
+<span class="w">          </span><span class="nt">&lt;/Data&gt;</span>
+<span class="w">          </span><span class="nt">&lt;Data</span><span class="w"> </span><span class="na">property=</span><span class="s">"Value"</span><span class="nt">&gt;</span>
+<span class="w">            </span><span class="nt">&lt;String&gt;</span>genehmigt<span class="nt">&lt;/String&gt;</span>
+<span class="w">          </span><span class="nt">&lt;/Data&gt;</span>
+<span class="w">        </span><span class="nt">&lt;/AggregatedDataValue&gt;</span>
+<span class="w">      </span><span class="nt">&lt;/Data&gt;</span>
+<span class="w">    </span><span class="nt">&lt;/AggregatedDataValue&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/Data&gt;</span>
+<span class="w">  </span><span class="nt">&lt;Data</span><span class="w"> </span><span class="na">property=</span><span class="s">"ApproverName"</span><span class="nt">&gt;</span>
+<span class="w">    </span><span class="nt">&lt;String&gt;</span>A.<span class="w"> </span>P.<span class="w"> </span>Prover<span class="nt">&lt;/String&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/Data&gt;</span>
+<span class="w">  </span><span class="nt">&lt;Data</span><span class="w"> </span><span class="na">property=</span><span class="s">"ArchiveNumber"</span><span class="nt">&gt;</span>
+<span class="w">    </span><span class="nt">&lt;String&gt;</span>XY923-463<span class="nt">&lt;/String&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/Data&gt;</span>
+<span class="w">  </span><span class="nt">&lt;Data</span><span class="w"> </span><span class="na">property=</span><span class="s">"BlockName"</span><span class="nt">&gt;</span>
+<span class="w">    </span><span class="nt">&lt;String&gt;</span>a<span class="w"> </span>block<span class="nt">&lt;/String&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/Data&gt;</span>
+<span class="w">  </span><span class="nt">&lt;Data</span><span class="w"> </span><span class="na">property=</span><span class="s">"BlockNumber"</span><span class="nt">&gt;</span>
+<span class="w">    </span><span class="nt">&lt;String&gt;</span>B987-654<span class="nt">&lt;/String&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/Data&gt;</span>
+<span class="w">  </span><span class="nt">&lt;Data</span><span class="w"> </span><span class="na">property=</span><span class="s">"CheckerName"</span><span class="nt">&gt;</span>
+<span class="w">    </span><span class="nt">&lt;String&gt;</span>C.<span class="w"> </span>Hecker<span class="nt">&lt;/String&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/Data&gt;</span>
+<span class="w">  </span><span class="nt">&lt;Data</span><span class="w"> </span><span class="na">property=</span><span class="s">"Confidentiality"</span><span class="nt">&gt;</span>
+<span class="w">    </span><span class="nt">&lt;DataReference</span><span class="w"> </span><span class="na">data=</span><span class="s">"Core/Diagram.ConfidentialityClassification.ConfidentialInformation"</span><span class="nt">/&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/Data&gt;</span>
+<span class="w">  </span><span class="nt">&lt;Data</span><span class="w"> </span><span class="na">property=</span><span class="s">"CreationDateRepresentation"</span><span class="nt">&gt;</span>
+<span class="w">    </span><span class="nt">&lt;String&gt;</span>2016-04-01<span class="nt">&lt;/String&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/Data&gt;</span>
+<span class="w">  </span><span class="nt">&lt;Data</span><span class="w"> </span><span class="na">property=</span><span class="s">"CreatorName"</span><span class="nt">&gt;</span>
+<span class="w">    </span><span class="nt">&lt;String&gt;</span>A.<span class="w"> </span>Creator<span class="nt">&lt;/String&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/Data&gt;</span>
+<span class="w">  </span><span class="nt">&lt;Data</span><span class="w"> </span><span class="na">property=</span><span class="s">"DesignerName"</span><span class="nt">&gt;</span>
+<span class="w">    </span><span class="nt">&lt;String&gt;</span>D.<span class="w"> </span>E.<span class="w"> </span>Signer<span class="nt">&lt;/String&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/Data&gt;</span>
+<span class="w">  </span><span class="nt">&lt;Data</span><span class="w"> </span><span class="na">property=</span><span class="s">"DrafterName"</span><span class="nt">&gt;</span>
+<span class="w">    </span><span class="nt">&lt;String&gt;</span>D.<span class="w"> </span>Rafter<span class="nt">&lt;/String&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/Data&gt;</span>
+<span class="w">  </span><span class="nt">&lt;Data</span><span class="w"> </span><span class="na">property=</span><span class="s">"DrawingName"</span><span class="nt">&gt;</span>
+<span class="w">    </span><span class="nt">&lt;String&gt;</span>DEXPI<span class="w"> </span>example<span class="w"> </span>PID<span class="nt">&lt;/String&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/Data&gt;</span>
+<span class="w">  </span><span class="nt">&lt;Data</span><span class="w"> </span><span class="na">property=</span><span class="s">"DrawingNumber"</span><span class="nt">&gt;</span>
+<span class="w">    </span><span class="nt">&lt;String&gt;</span>123/A93<span class="nt">&lt;/String&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/Data&gt;</span>
+<span class="w">  </span><span class="nt">&lt;Data</span><span class="w"> </span><span class="na">property=</span><span class="s">"DrawingSubTitle"</span><span class="nt">&gt;</span>
+<span class="w">    </span><span class="nt">&lt;AggregatedDataValue</span><span class="w"> </span><span class="na">type=</span><span class="s">"Core/DataTypes.MultiLanguageString"</span><span class="nt">&gt;</span>
+<span class="w">      </span><span class="nt">&lt;Data</span><span class="w"> </span><span class="na">property=</span><span class="s">"SingleLanguageStrings"</span><span class="nt">&gt;</span>
+<span class="w">        </span><span class="nt">&lt;AggregatedDataValue</span><span class="w"> </span><span class="na">type=</span><span class="s">"Core/DataTypes.SingleLanguageString"</span><span class="nt">&gt;</span>
+<span class="w">          </span><span class="nt">&lt;Data</span><span class="w"> </span><span class="na">property=</span><span class="s">"Language"</span><span class="nt">&gt;</span>
+<span class="w">            </span><span class="nt">&lt;String&gt;</span>en<span class="nt">&lt;/String&gt;</span>
+<span class="w">          </span><span class="nt">&lt;/Data&gt;</span>
+<span class="w">          </span><span class="nt">&lt;Data</span><span class="w"> </span><span class="na">property=</span><span class="s">"Value"</span><span class="nt">&gt;</span>
+<span class="w">            </span><span class="nt">&lt;String&gt;</span>DEXPI<span class="w"> </span>Example<span class="w"> </span>PID<span class="nt">&lt;/String&gt;</span>
+<span class="w">          </span><span class="nt">&lt;/Data&gt;</span>
+<span class="w">        </span><span class="nt">&lt;/AggregatedDataValue&gt;</span>
+<span class="w">        </span><span class="nt">&lt;AggregatedDataValue</span><span class="w"> </span><span class="na">type=</span><span class="s">"Core/DataTypes.SingleLanguageString"</span><span class="nt">&gt;</span>
+<span class="w">          </span><span class="nt">&lt;Data</span><span class="w"> </span><span class="na">property=</span><span class="s">"Language"</span><span class="nt">&gt;</span>
+<span class="w">            </span><span class="nt">&lt;String&gt;</span>de<span class="nt">&lt;/String&gt;</span>
+<span class="w">          </span><span class="nt">&lt;/Data&gt;</span>
+<span class="w">          </span><span class="nt">&lt;Data</span><span class="w"> </span><span class="na">property=</span><span class="s">"Value"</span><span class="nt">&gt;</span>
+<span class="w">            </span><span class="nt">&lt;String&gt;</span>DEXPI<span class="w"> </span>Beispiel-R<span class="ni">&amp;amp;</span>I<span class="nt">&lt;/String&gt;</span>
+<span class="w">          </span><span class="nt">&lt;/Data&gt;</span>
+<span class="w">        </span><span class="nt">&lt;/AggregatedDataValue&gt;</span>
+<span class="w">      </span><span class="nt">&lt;/Data&gt;</span>
+<span class="w">    </span><span class="nt">&lt;/AggregatedDataValue&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/Data&gt;</span>
+<span class="w">  </span><span class="nt">&lt;Data</span><span class="w"> </span><span class="na">property=</span><span class="s">"FileName"</span><span class="nt">&gt;</span>
+<span class="w">    </span><span class="nt">&lt;String&gt;</span>DEXPI_example_PID.xml<span class="nt">&lt;/String&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/Data&gt;</span>
+<span class="w">  </span><span class="nt">&lt;Data</span><span class="w"> </span><span class="na">property=</span><span class="s">"LastModificationDateRepresentation"</span><span class="nt">&gt;</span>
+<span class="w">    </span><span class="nt">&lt;String&gt;</span>2016-04-02<span class="nt">&lt;/String&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/Data&gt;</span>
+<span class="w">  </span><span class="nt">&lt;Data</span><span class="w"> </span><span class="na">property=</span><span class="s">"LocationName"</span><span class="nt">&gt;</span>
+<span class="w">    </span><span class="nt">&lt;String&gt;</span>C1248<span class="nt">&lt;/String&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/Data&gt;</span>
+<span class="w">  </span><span class="nt">&lt;Data</span><span class="w"> </span><span class="na">property=</span><span class="s">"ProcessCellIdentificationCode"</span><span class="nt">&gt;</span>
+<span class="w">    </span><span class="nt">&lt;String&gt;</span>PC123<span class="nt">&lt;/String&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/Data&gt;</span>
+<span class="w">  </span><span class="nt">&lt;Data</span><span class="w"> </span><span class="na">property=</span><span class="s">"ProcessCellName"</span><span class="nt">&gt;</span>
+<span class="w">    </span><span class="nt">&lt;String&gt;</span>a<span class="w"> </span>process<span class="w"> </span>cell<span class="nt">&lt;/String&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/Data&gt;</span>
+<span class="w">  </span><span class="nt">&lt;Data</span><span class="w"> </span><span class="na">property=</span><span class="s">"ProjectName"</span><span class="nt">&gt;</span>
+<span class="w">    </span><span class="nt">&lt;String&gt;</span>a<span class="w"> </span>project<span class="nt">&lt;/String&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/Data&gt;</span>
+<span class="w">  </span><span class="nt">&lt;Data</span><span class="w"> </span><span class="na">property=</span><span class="s">"ProjectNumber"</span><span class="nt">&gt;</span>
+<span class="w">    </span><span class="nt">&lt;String&gt;</span>P3.1415<span class="nt">&lt;/String&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/Data&gt;</span>
+<span class="w">  </span><span class="nt">&lt;Data</span><span class="w"> </span><span class="na">property=</span><span class="s">"ProjectRangeNumber"</span><span class="nt">&gt;</span>
+<span class="w">    </span><span class="nt">&lt;String&gt;</span>PR321<span class="nt">&lt;/String&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/Data&gt;</span>
+<span class="w">  </span><span class="nt">&lt;Data</span><span class="w"> </span><span class="na">property=</span><span class="s">"ReplacedDrawing"</span><span class="nt">&gt;</span>
+<span class="w">    </span><span class="nt">&lt;String&gt;</span>D321<span class="nt">&lt;/String&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/Data&gt;</span>
+<span class="w">  </span><span class="nt">&lt;Data</span><span class="w"> </span><span class="na">property=</span><span class="s">"ResponsibleDepartmentName"</span><span class="nt">&gt;</span>
+<span class="w">    </span><span class="nt">&lt;String&gt;</span>R2-D2<span class="nt">&lt;/String&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/Data&gt;</span>
+<span class="w">  </span><span class="nt">&lt;Data</span><span class="w"> </span><span class="na">property=</span><span class="s">"RevisionNumber"</span><span class="nt">&gt;</span>
+<span class="w">    </span><span class="nt">&lt;String&gt;</span>R2.2<span class="nt">&lt;/String&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/Data&gt;</span>
+<span class="w">  </span><span class="nt">&lt;Data</span><span class="w"> </span><span class="na">property=</span><span class="s">"SheetFormat"</span><span class="nt">&gt;</span>
+<span class="w">    </span><span class="nt">&lt;String&gt;</span>DIN<span class="w"> </span>A3<span class="nt">&lt;/String&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/Data&gt;</span>
+<span class="w">  </span><span class="nt">&lt;Data</span><span class="w"> </span><span class="na">property=</span><span class="s">"SheetNumber"</span><span class="nt">&gt;</span>
+<span class="w">    </span><span class="nt">&lt;String&gt;</span>2a<span class="nt">&lt;/String&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/Data&gt;</span>
+<span class="w">  </span><span class="nt">&lt;Data</span><span class="w"> </span><span class="na">property=</span><span class="s">"SubProjectName"</span><span class="nt">&gt;</span>
+<span class="w">    </span><span class="nt">&lt;String&gt;</span>a<span class="w"> </span>sub-project<span class="nt">&lt;/String&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/Data&gt;</span>
+<span class="w">  </span><span class="nt">&lt;Data</span><span class="w"> </span><span class="na">property=</span><span class="s">"SubProjectNumber"</span><span class="nt">&gt;</span>
+<span class="w">    </span><span class="nt">&lt;String&gt;</span>P3.1415-SP2<span class="nt">&lt;/String&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/Data&gt;</span>
+<span class="w">  </span><span class="nt">&lt;Data</span><span class="w"> </span><span class="na">property=</span><span class="s">"TotalNumberOfSheets"</span><span class="nt">&gt;</span>
+<span class="w">    </span><span class="nt">&lt;Integer&gt;</span>4<span class="nt">&lt;/Integer&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/Data&gt;</span>
+<span class="w">  </span><span class="nt">&lt;Data</span><span class="w"> </span><span class="na">property=</span><span class="s">"UnitIdentificationCode"</span><span class="nt">&gt;</span>
+<span class="w">    </span><span class="nt">&lt;String&gt;</span>U-923-463<span class="nt">&lt;/String&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/Data&gt;</span>
+<span class="w">  </span><span class="nt">&lt;Data</span><span class="w"> </span><span class="na">property=</span><span class="s">"UnitName"</span><span class="nt">&gt;</span>
+<span class="w">    </span><span class="nt">&lt;String&gt;</span>a<span class="w"> </span>unit<span class="nt">&lt;/String&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/Data&gt;</span>
+<span class="nt">&lt;/Object&gt;</span>
+</pre></div>
+</div>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+    
+        <div id="show_right_sidebar">
+            <p><a class="toggle_right_sidebar" href="#"><span class="icon">&lt;</span><span>Page contents</span></a></p>
+        </div>
+
+        <div id="right_sidebar">
+            <p><a class="toggle_right_sidebar" href="#"><span class="icon">&gt;</span><span>Page contents:</span></a></p>
+            <div class="page_toc">
+                <ul>
+<li><a class="reference internal" href="#">MetaData</a><ul>
+<li><a class="reference internal" href="#Overview">Overview</a></li>
+<li><a class="reference internal" href="#Members">Members</a><ul>
+<li><a class="reference internal" href="#member-list-section-Data%20Properties">Data Properties</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#sp:core.diagram.metadata.approvaldaterepresentation">ApprovalDateRepresentation</a><ul>
+<li><a class="reference internal" href="#sp:core.diagram.metadata.approvaldaterepresentation-example">Example</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#sp:core.diagram.metadata.approvaldescription">ApprovalDescription</a><ul>
+<li><a class="reference internal" href="#sp:core.diagram.metadata.approvaldescription-example">Example</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#sp:core.diagram.metadata.approvername">ApproverName</a><ul>
+<li><a class="reference internal" href="#sp:core.diagram.metadata.approvername-example">Example</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#sp:core.diagram.metadata.archivenumber">ArchiveNumber</a><ul>
+<li><a class="reference internal" href="#sp:core.diagram.metadata.archivenumber-example">Example</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#sp:core.diagram.metadata.blockname">BlockName</a><ul>
+<li><a class="reference internal" href="#sp:core.diagram.metadata.blockname-example">Example</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#sp:core.diagram.metadata.blocknumber">BlockNumber</a><ul>
+<li><a class="reference internal" href="#sp:core.diagram.metadata.blocknumber-example">Example</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#sp:core.diagram.metadata.checkername">CheckerName</a><ul>
+<li><a class="reference internal" href="#sp:core.diagram.metadata.checkername-example">Example</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#sp:core.diagram.metadata.confidentiality">Confidentiality</a><ul>
+<li><a class="reference internal" href="#sp:core.diagram.metadata.confidentiality-example">Example</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#sp:core.diagram.metadata.creationdaterepresentation">CreationDateRepresentation</a><ul>
+<li><a class="reference internal" href="#sp:core.diagram.metadata.creationdaterepresentation-example">Example</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#sp:core.diagram.metadata.creatorname">CreatorName</a><ul>
+<li><a class="reference internal" href="#sp:core.diagram.metadata.creatorname-example">Example</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#sp:core.diagram.metadata.designername">DesignerName</a><ul>
+<li><a class="reference internal" href="#sp:core.diagram.metadata.designername-example">Example</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#sp:core.diagram.metadata.draftername">DrafterName</a><ul>
+<li><a class="reference internal" href="#sp:core.diagram.metadata.draftername-example">Example</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#sp:core.diagram.metadata.drawingname">DrawingName</a><ul>
+<li><a class="reference internal" href="#sp:core.diagram.metadata.drawingname-example">Example</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#sp:core.diagram.metadata.drawingnumber">DrawingNumber</a><ul>
+<li><a class="reference internal" href="#sp:core.diagram.metadata.drawingnumber-example">Example</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#sp:core.diagram.metadata.drawingsubtitle">DrawingSubTitle</a><ul>
+<li><a class="reference internal" href="#sp:core.diagram.metadata.drawingsubtitle-example">Example</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#sp:core.diagram.metadata.filename">FileName</a><ul>
+<li><a class="reference internal" href="#sp:core.diagram.metadata.filename-example">Example</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#sp:core.diagram.metadata.lastmodificationdaterepresentation">LastModificationDateRepresentation</a><ul>
+<li><a class="reference internal" href="#sp:core.diagram.metadata.lastmodificationdaterepresentation-example">Example</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#sp:core.diagram.metadata.locationname">LocationName</a><ul>
+<li><a class="reference internal" href="#sp:core.diagram.metadata.locationname-example">Example</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#sp:core.diagram.metadata.processcellidentificationcode">ProcessCellIdentificationCode</a><ul>
+<li><a class="reference internal" href="#sp:core.diagram.metadata.processcellidentificationcode-example">Example</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#sp:core.diagram.metadata.processcellname">ProcessCellName</a><ul>
+<li><a class="reference internal" href="#sp:core.diagram.metadata.processcellname-example">Example</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#sp:core.diagram.metadata.projectname">ProjectName</a><ul>
+<li><a class="reference internal" href="#sp:core.diagram.metadata.projectname-example">Example</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#sp:core.diagram.metadata.projectnumber">ProjectNumber</a><ul>
+<li><a class="reference internal" href="#sp:core.diagram.metadata.projectnumber-example">Example</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#sp:core.diagram.metadata.projectrangenumber">ProjectRangeNumber</a><ul>
+<li><a class="reference internal" href="#sp:core.diagram.metadata.projectrangenumber-example">Example</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#sp:core.diagram.metadata.replaceddrawing">ReplacedDrawing</a><ul>
+<li><a class="reference internal" href="#sp:core.diagram.metadata.replaceddrawing-example">Example</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#sp:core.diagram.metadata.responsibledepartmentname">ResponsibleDepartmentName</a><ul>
+<li><a class="reference internal" href="#sp:core.diagram.metadata.responsibledepartmentname-example">Example</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#sp:core.diagram.metadata.revisionnumber">RevisionNumber</a><ul>
+<li><a class="reference internal" href="#sp:core.diagram.metadata.revisionnumber-example">Example</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#sp:core.diagram.metadata.sheetformat">SheetFormat</a><ul>
+<li><a class="reference internal" href="#sp:core.diagram.metadata.sheetformat-example">Example</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#sp:core.diagram.metadata.sheetnumber">SheetNumber</a><ul>
+<li><a class="reference internal" href="#sp:core.diagram.metadata.sheetnumber-example">Example</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#sp:core.diagram.metadata.subprojectname">SubProjectName</a><ul>
+<li><a class="reference internal" href="#sp:core.diagram.metadata.subprojectname-example">Example</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#sp:core.diagram.metadata.subprojectnumber">SubProjectNumber</a><ul>
+<li><a class="reference internal" href="#sp:core.diagram.metadata.subprojectnumber-example">Example</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#sp:core.diagram.metadata.totalnumberofsheets">TotalNumberOfSheets</a><ul>
+<li><a class="reference internal" href="#sp:core.diagram.metadata.totalnumberofsheets-example">Example</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#sp:core.diagram.metadata.unitidentificationcode">UnitIdentificationCode</a><ul>
+<li><a class="reference internal" href="#sp:core.diagram.metadata.unitidentificationcode-example">Example</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#sp:core.diagram.metadata.unitname">UnitName</a><ul>
+<li><a class="reference internal" href="#sp:core.diagram.metadata.unitname-example">Example</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#Core.Diagram.MetaData-example">Example in DEXPI XML</a></li>
+</ul>
+</li>
+</ul>
+
+            </div>
+        </div>
+    
+
+      <div class="clearer"></div>
+    </div>
+    <div class="button_nav_wrapper">
+        <div class="button_nav">
+            <div class="left">
+                
+                <a href="LiteralText.html">
+                    <span class="icon">&lt;</span><span>LiteralText</span></a>
+                
+            </div>
+
+            <div class="right">
+                
+                    <a href="NodePosition.html"><span>NodePosition</span><span class="icon">&gt;</span></a>
+                
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer" role="contentinfo">
+    © Copyright .
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.1.3.
+    </div>
+
+<p id="theme_credit">Styled using the <a href="https://github.com/piccolo-orm/piccolo_theme">Piccolo Theme</a></p>
+  </body>
+</html>

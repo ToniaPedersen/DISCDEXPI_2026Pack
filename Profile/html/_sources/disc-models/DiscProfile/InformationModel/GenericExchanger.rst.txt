@@ -1,0 +1,5 @@
+GenericExchanger
+================
+
+.. sp:internal-autoelement::
+   :element: DiscProfile.InformationModel.GenericExchanger

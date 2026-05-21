@@ -1,0 +1,5 @@
+AirEjector
+==========
+
+.. sp:internal-autoelement::
+   :element: Plant.ProcessEquipment.AirEjector

@@ -1,0 +1,5 @@
+Label
+=====
+
+.. sp:internal-autoelement::
+   :element: Core.Diagram.Label

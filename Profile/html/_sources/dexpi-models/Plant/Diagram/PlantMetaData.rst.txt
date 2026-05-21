@@ -1,0 +1,5 @@
+PlantMetaData
+=============
+
+.. sp:internal-autoelement::
+   :element: Plant.Diagram.PlantMetaData

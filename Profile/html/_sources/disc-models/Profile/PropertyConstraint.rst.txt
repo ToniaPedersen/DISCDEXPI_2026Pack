@@ -1,0 +1,5 @@
+PropertyConstraint
+==================
+
+.. sp:internal-autoelement::
+   :element: Profile.PropertyConstraint
