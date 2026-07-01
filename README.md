@@ -13,7 +13,7 @@ The repository contents are as follows:
 	- *FinalReport_DEXPI.docx*: Final report for the DISC DEXPI 2026 Project [[Link]](https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fraw.githubusercontent.com%2FToniaPedersen%2FDISCDEXPI_2026Pack%2Frefs%2Fheads%2Fmain%2FFinalReport_DEXPI.docx&wdOrigin=BROWSELINK)
 		
 - **pnb Toolbox**:
-	Use the password protected link to pnb hidrive download areas (links below) to access the Verificator tools for DISC DEXPI 2.0 files (profile version 0.6.x)
+	Use the password protected links to pnb hidrive download areas (links below) to access the Verificator tools for DISC DEXPI 2.0 files (profile version 0.6.x)
 
 	Please contact me for the password : tonia.pedersen@draga.no
 	- *pnb Toolbox Command Line 2.0.0 beta 1 for DEXPI 2.0 - DISC (profile version 0.6 from June 2026).zip* : command line tool for DISC DEXPI Verification [[Link]](https://my.hidrive.com/share/if7eqq-rq6#$/pnb%20Toolbox%20for%20DEXPI%202.0%20-%20DISC%20%28%22Verificator%22%29/pnb%20Toolbox%20Command%20Line%202.0.0%20beta%201%20for%20DEXPI%202.0%20-%20DISC%20%28profile%20version%200.6%20from%20June%202026%29)
