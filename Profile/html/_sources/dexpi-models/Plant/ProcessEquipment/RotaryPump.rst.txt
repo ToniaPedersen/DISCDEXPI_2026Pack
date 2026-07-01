@@ -1,0 +1,5 @@
+RotaryPump
+==========
+
+.. sp:internal-autoelement::
+   :element: Plant.ProcessEquipment.RotaryPump

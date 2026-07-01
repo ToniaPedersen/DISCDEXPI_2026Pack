@@ -1,0 +1,5 @@
+CompositionDisplay
+==================
+
+.. sp:internal-autoelement::
+   :element: Process.Enumerations.CompositionDisplay

@@ -1,0 +1,5 @@
+ReactionProcessType
+===================
+
+.. sp:internal-autoelement::
+   :element: Process.Enumerations.ReactionProcessType

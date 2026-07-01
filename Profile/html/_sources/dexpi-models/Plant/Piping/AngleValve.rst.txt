@@ -1,0 +1,5 @@
+AngleValve
+==========
+
+.. sp:internal-autoelement::
+   :element: Plant.Piping.AngleValve

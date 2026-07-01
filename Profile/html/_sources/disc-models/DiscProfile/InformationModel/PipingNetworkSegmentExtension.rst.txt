@@ -1,0 +1,5 @@
+PipingNetworkSegmentExtension
+=============================
+
+.. sp:internal-autoelement::
+   :element: DiscProfile.InformationModel.PipingNetworkSegmentExtension

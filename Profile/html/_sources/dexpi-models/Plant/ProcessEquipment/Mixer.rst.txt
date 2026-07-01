@@ -1,0 +1,5 @@
+Mixer
+=====
+
+.. sp:internal-autoelement::
+   :element: Plant.ProcessEquipment.Mixer

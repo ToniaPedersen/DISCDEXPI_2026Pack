@@ -1,0 +1,5 @@
+Role
+====
+
+.. sp:internal-autoelement::
+   :element: Core.Role

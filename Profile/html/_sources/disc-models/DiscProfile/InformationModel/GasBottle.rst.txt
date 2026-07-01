@@ -1,0 +1,5 @@
+GasBottle
+=========
+
+.. sp:internal-autoelement::
+   :element: DiscProfile.InformationModel.GasBottle

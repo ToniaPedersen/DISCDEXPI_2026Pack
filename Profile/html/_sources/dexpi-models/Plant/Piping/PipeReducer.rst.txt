@@ -1,0 +1,5 @@
+PipeReducer
+===========
+
+.. sp:internal-autoelement::
+   :element: Plant.Piping.PipeReducer

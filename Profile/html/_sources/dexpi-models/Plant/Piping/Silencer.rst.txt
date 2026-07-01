@@ -1,0 +1,5 @@
+Silencer
+========
+
+.. sp:internal-autoelement::
+   :element: Plant.Piping.Silencer

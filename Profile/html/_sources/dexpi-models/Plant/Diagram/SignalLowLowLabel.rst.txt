@@ -1,0 +1,5 @@
+SignalLowLowLabel
+=================
+
+.. sp:internal-autoelement::
+   :element: Plant.Diagram.SignalLowLowLabel

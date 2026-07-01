@@ -1,0 +1,5 @@
+Plant
+=====
+
+.. sp:internal-autoelement::
+   :element: Plant

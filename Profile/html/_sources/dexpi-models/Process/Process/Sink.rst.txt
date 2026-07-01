@@ -1,0 +1,5 @@
+Sink
+====
+
+.. sp:internal-autoelement::
+   :element: Process.Process.Sink

@@ -1,0 +1,5 @@
+Double
+======
+
+.. sp:internal-autoelement::
+   :element: Builtin.Double

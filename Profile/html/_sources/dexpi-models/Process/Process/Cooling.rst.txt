@@ -1,0 +1,5 @@
+Cooling
+=======
+
+.. sp:internal-autoelement::
+   :element: Process.Process.Cooling

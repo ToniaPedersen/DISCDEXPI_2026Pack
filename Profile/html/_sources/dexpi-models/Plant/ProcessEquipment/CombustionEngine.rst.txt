@@ -1,0 +1,5 @@
+CombustionEngine
+================
+
+.. sp:internal-autoelement::
+   :element: Plant.ProcessEquipment.CombustionEngine

@@ -1,0 +1,5 @@
+Ellipse
+=======
+
+.. sp:internal-autoelement::
+   :element: Core.Diagram.Ellipse

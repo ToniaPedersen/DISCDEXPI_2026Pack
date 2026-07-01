@@ -1,0 +1,5 @@
+MassUnit
+========
+
+.. sp:internal-autoelement::
+   :element: Core.PhysicalQuantities.MassUnit

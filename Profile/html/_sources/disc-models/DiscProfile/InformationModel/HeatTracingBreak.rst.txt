@@ -1,0 +1,5 @@
+HeatTracingBreak
+================
+
+.. sp:internal-autoelement::
+   :element: DiscProfile.InformationModel.HeatTracingBreak

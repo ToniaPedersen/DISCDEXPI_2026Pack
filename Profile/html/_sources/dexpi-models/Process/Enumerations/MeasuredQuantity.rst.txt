@@ -1,0 +1,5 @@
+MeasuredQuantity
+================
+
+.. sp:internal-autoelement::
+   :element: Process.Enumerations.MeasuredQuantity

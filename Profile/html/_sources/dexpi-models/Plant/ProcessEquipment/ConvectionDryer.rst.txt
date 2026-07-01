@@ -1,0 +1,5 @@
+ConvectionDryer
+===============
+
+.. sp:internal-autoelement::
+   :element: Plant.ProcessEquipment.ConvectionDryer

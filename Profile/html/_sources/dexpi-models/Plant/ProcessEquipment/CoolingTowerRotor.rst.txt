@@ -1,0 +1,5 @@
+CoolingTowerRotor
+=================
+
+.. sp:internal-autoelement::
+   :element: Plant.ProcessEquipment.CoolingTowerRotor

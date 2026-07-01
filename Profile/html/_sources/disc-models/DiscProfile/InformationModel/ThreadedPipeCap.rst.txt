@@ -1,0 +1,5 @@
+ThreadedPipeCap
+===============
+
+.. sp:internal-autoelement::
+   :element: DiscProfile.InformationModel.ThreadedPipeCap

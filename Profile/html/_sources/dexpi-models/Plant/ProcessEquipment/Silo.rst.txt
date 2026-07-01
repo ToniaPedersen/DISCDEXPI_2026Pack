@@ -1,0 +1,5 @@
+Silo
+====
+
+.. sp:internal-autoelement::
+   :element: Plant.ProcessEquipment.Silo

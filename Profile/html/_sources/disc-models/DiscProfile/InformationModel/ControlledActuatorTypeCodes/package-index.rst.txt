@@ -1,0 +1,5 @@
+ControlledActuatorTypeCodes
+===========================
+
+.. sp:internal-autoelement::
+   :element: DiscProfile.InformationModel.ControlledActuatorTypeCodes

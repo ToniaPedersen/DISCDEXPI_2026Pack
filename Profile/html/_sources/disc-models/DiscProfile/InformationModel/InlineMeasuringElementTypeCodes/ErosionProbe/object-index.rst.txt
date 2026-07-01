@@ -1,0 +1,5 @@
+ErosionProbe
+============
+
+.. sp:internal-autoelement::
+   :element: DiscProfile.InformationModel.InlineMeasuringElementTypeCodes.ErosionProbe

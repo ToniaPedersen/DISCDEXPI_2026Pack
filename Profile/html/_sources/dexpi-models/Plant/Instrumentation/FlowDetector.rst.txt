@@ -1,0 +1,5 @@
+FlowDetector
+============
+
+.. sp:internal-autoelement::
+   :element: Plant.Instrumentation.FlowDetector

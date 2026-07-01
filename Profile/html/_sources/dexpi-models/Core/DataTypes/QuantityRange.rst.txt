@@ -1,0 +1,5 @@
+QuantityRange
+=============
+
+.. sp:internal-autoelement::
+   :element: Core.DataTypes.QuantityRange

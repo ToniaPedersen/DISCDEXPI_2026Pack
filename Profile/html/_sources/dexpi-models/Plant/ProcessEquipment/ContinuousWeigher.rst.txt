@@ -1,0 +1,5 @@
+ContinuousWeigher
+=================
+
+.. sp:internal-autoelement::
+   :element: Plant.ProcessEquipment.ContinuousWeigher

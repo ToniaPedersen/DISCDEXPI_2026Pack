@@ -1,0 +1,5 @@
+MotorTypeCode
+=============
+
+.. sp:internal-autoelement::
+   :element: DiscProfile.InformationModel.MotorTypeCode

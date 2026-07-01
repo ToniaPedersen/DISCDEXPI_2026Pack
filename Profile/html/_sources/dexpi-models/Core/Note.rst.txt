@@ -1,0 +1,5 @@
+Note
+====
+
+.. sp:internal-autoelement::
+   :element: Core.Note

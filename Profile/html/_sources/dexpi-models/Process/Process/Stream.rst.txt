@@ -1,0 +1,5 @@
+Stream
+======
+
+.. sp:internal-autoelement::
+   :element: Process.Process.Stream

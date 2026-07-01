@@ -1,0 +1,5 @@
+ProcessShutdown
+===============
+
+.. sp:internal-autoelement::
+   :element: DiscProfile.InformationModel.ProcessInstrumentationFunctionTypeCodes.ProcessShutdown

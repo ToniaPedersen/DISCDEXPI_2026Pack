@@ -1,0 +1,5 @@
+ProcessInstrumentationFunctionTypeCode
+======================================
+
+.. sp:internal-autoelement::
+   :element: DiscProfile.InformationModel.ProcessInstrumentationFunctionTypeCode

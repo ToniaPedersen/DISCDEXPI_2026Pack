@@ -1,0 +1,5 @@
+QuickChangeOrificePlate
+=======================
+
+.. sp:internal-autoelement::
+   :element: DiscProfile.InformationModel.QuickChangeOrificePlate

@@ -1,0 +1,5 @@
+BirdScreen
+==========
+
+.. sp:internal-autoelement::
+   :element: DiscProfile.InformationModel.BirdScreen

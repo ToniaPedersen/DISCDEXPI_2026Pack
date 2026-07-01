@@ -1,0 +1,5 @@
+VesselExtension
+===============
+
+.. sp:internal-autoelement::
+   :element: DiscProfile.InformationModel.VesselExtension

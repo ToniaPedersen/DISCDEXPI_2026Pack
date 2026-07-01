@@ -1,0 +1,5 @@
+VenturiTubeFlowMeter
+====================
+
+.. sp:internal-autoelement::
+   :element: DiscProfile.InformationModel.VenturiTubeFlowMeter

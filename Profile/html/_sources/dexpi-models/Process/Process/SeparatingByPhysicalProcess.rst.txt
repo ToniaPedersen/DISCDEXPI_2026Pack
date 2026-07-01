@@ -1,0 +1,5 @@
+SeparatingByPhysicalProcess
+===========================
+
+.. sp:internal-autoelement::
+   :element: Process.Process.SeparatingByPhysicalProcess

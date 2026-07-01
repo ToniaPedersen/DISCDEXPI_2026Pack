@@ -1,0 +1,5 @@
+PipingComponent
+===============
+
+.. sp:internal-autoelement::
+   :element: Plant.Piping.PipingComponent

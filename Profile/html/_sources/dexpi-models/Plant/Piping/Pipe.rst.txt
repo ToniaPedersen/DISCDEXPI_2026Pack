@@ -1,0 +1,5 @@
+Pipe
+====
+
+.. sp:internal-autoelement::
+   :element: Plant.Piping.Pipe

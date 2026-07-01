@@ -1,0 +1,5 @@
+SensingLocation
+===============
+
+.. sp:internal-autoelement::
+   :element: Plant.Instrumentation.SensingLocation

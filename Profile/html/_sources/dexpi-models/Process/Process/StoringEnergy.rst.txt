@@ -1,0 +1,5 @@
+StoringEnergy
+=============
+
+.. sp:internal-autoelement::
+   :element: Process.Process.StoringEnergy

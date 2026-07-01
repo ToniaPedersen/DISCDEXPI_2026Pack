@@ -1,0 +1,5 @@
+Compensator
+===========
+
+.. sp:internal-autoelement::
+   :element: Plant.Piping.Compensator

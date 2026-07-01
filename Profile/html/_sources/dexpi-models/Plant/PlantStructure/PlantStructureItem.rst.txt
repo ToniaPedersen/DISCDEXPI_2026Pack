@@ -1,0 +1,5 @@
+PlantStructureItem
+==================
+
+.. sp:internal-autoelement::
+   :element: Plant.PlantStructure.PlantStructureItem

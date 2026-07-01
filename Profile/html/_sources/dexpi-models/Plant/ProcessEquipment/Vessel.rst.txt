@@ -1,0 +1,5 @@
+Vessel
+======
+
+.. sp:internal-autoelement::
+   :element: Plant.ProcessEquipment.Vessel

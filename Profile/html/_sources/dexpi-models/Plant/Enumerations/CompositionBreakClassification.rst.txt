@@ -1,0 +1,5 @@
+CompositionBreakClassification
+==============================
+
+.. sp:internal-autoelement::
+   :element: Plant.Enumerations.CompositionBreakClassification

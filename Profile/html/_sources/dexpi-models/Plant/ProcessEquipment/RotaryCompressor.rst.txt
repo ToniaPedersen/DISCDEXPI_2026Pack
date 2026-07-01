@@ -1,0 +1,5 @@
+RotaryCompressor
+================
+
+.. sp:internal-autoelement::
+   :element: Plant.ProcessEquipment.RotaryCompressor

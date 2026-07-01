@@ -1,0 +1,81 @@
+<ns0:svg xmlns:ns0="http://www.w3.org/2000/svg" width="365.58590820312503px" height="227.2px" viewBox="0.0 0.0 365.58590820312503 227.2"><ns0:style>
+            .uml-foreground-stroke {
+                stroke: black;
+                stroke-width: 1px;
+            }
+            
+            .uml-foreground-fill {
+                fill: black;
+            }
+            
+            .uml-background_color-type {
+                fill: #ffffcc;
+            }
+            
+            .uml-background_color-main_type {
+                fill: #ffff66;
+            }
+            
+            .uml-background_color-instance {
+                fill: blue;
+            }
+            
+            .uml-background_color-background {
+                fill: white;
+            }
+            
+            .uml-background_color-foreground {
+                fill: black;
+            }
+            
+            .uml-font-normal {
+                font-family: Arial;
+            }
+            
+            .uml-font-element {
+                font-family: Arial;
+            }
+            
+            .uml-fontsize-normal {
+                font-size: 10px;
+            }
+
+            .uml-fontsize-large {
+                font-size: 12px;
+            }
+            
+            .uml-source_marker-closed_arrow {
+                marker-start: url(#uml-marker-closed_arrow);
+            }
+            
+            .uml-source_marker-open_arrow {
+                marker-start: url(#uml-marker-open_arrow);
+            }
+            
+            .uml-source_marker-filled_diamond {
+                marker-start: url(#uml-marker-filled_diamond);
+            }
+
+            .uml-target_marker-closed_arrow {
+                marker-end: url(#uml-marker-closed_arrow);
+            }
+            
+            .uml-target_marker-open_arrow {
+                marker-end: url(#uml-marker-open_arrow);
+            }
+            
+            .uml-target_marker-filled_diamond {
+                marker-end: url(#uml-marker-filled_diamond);
+            }
+
+            </ns0:style><ns0:defs>
+        <ns0:marker id="uml-marker-closed_arrow" viewBox="-2 -2 14 14" refX="10" refY="5.0" markerWidth="14" markerHeight="14" orient="auto-start-reverse">
+          <ns0:path d="M 0 0 L 10 5.0 L 0 10 Z" stroke-linejoin="round" stroke-linecap="round" class="uml-foreground-stroke uml-background_color-background"/>
+        </ns0:marker>
+        <ns0:marker id="uml-marker-open_arrow" viewBox="-2 -2 14 14" refX="10" refY="5.0" markerWidth="14" markerHeight="14" orient="auto-start-reverse">
+          <ns0:path d="M 0 0 L 10 5.0 L 0 10" stroke-linejoin="round" stroke-linecap="round" fill="none" class="uml-foreground-stroke"/>
+        </ns0:marker>
+        <ns0:marker id="uml-marker-filled_diamond" viewBox="-2 -2 14 14" refX="10" refY="5.0" markerWidth="14" markerHeight="14" orient="auto-start-reverse">
+          <ns0:path d="M 0 5.0 L      5.0 2.0        10 5.0      5.0 8.0 Z       " stroke-linejoin="round" stroke-linecap="round" class="uml-foreground-stroke uml-background_color-foreground"/>
+        </ns0:marker>
+      </ns0:defs><ns0:rect class="uml-background_color-type uml-foreground-stroke" x="140.34902343750002" y="191.39999999999998" width="123.00501953125001" height="23.799999999999997"/><ns0:text x="201.85153320312503" text-anchor="middle" font-size="0px" y="206.83999999999997"><ns0:a href="../dexpi-models/Core/ConceptualModel.html"><ns0:tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold" font-style="italic">ConceptualModel</ns0:tspan></ns0:a></ns0:text><ns0:rect class="uml-background_color-type uml-foreground-stroke" x="283.35404296875004" y="191.39999999999998" width="59.8802734375" height="23.799999999999997"/><ns0:text x="313.29417968750005" text-anchor="middle" font-size="0px" y="206.83999999999997"><ns0:a href="../dexpi-models/Core/Diagram/Diagram.html"><ns0:tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold">Diagram</ns0:tspan></ns0:a></ns0:text><ns0:rect class="uml-background_color-type uml-foreground-stroke" x="12.0" y="191.39999999999998" width="108.34902343750001" height="23.799999999999997"/><ns0:text x="66.17451171875001" text-anchor="middle" font-size="0px" y="206.83999999999997"><ns0:a href="../dexpi-models/Core/Diagram/ShapeCatalogue.html"><ns0:tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold">ShapeCatalogue</ns0:tspan></ns0:a></ns0:text><ns0:rect class="uml-background_color-main_type uml-foreground-stroke" x="50.11715820312503" y="12.0" width="303.46875" height="90.0"/><ns0:text x="201.85153320312503" text-anchor="middle" font-size="0px" y="27.439999999999998"><ns0:tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold">EngineeringModel</ns0:tspan></ns0:text><ns0:polyline class="uml-foreground-stroke" points="50.11715820312503,35.8 353.58590820312503,35.8" fill="none"/><ns0:text x="55.11715820312503" font-size="0px" y="52.239999999999995"><ns0:a href="../dexpi-models/Core/EngineeringModel.html#sp:core.engineeringmodel.exportdatetime"><ns0:tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">ExportDateTime</ns0:tspan></ns0:a><ns0:tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">&#160;:</ns0:tspan></ns0:text><ns0:text x="232.69528320312503" font-size="0px" y="52.239999999999995"><ns0:a href="../dexpi-models/Builtin/Undefined.html"><ns0:tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Undefined</ns0:tspan></ns0:a><ns0:tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">&#160;|&#160;</ns0:tspan><ns0:a href="../dexpi-models/Builtin/DateTime.html"><ns0:tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">DateTime</ns0:tspan></ns0:a></ns0:text><ns0:text x="55.11715820312503" font-size="0px" y="66.03999999999999"><ns0:a href="../dexpi-models/Core/EngineeringModel.html#sp:core.engineeringmodel.originatingsystemname"><ns0:tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">OriginatingSystemName</ns0:tspan></ns0:a><ns0:tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">&#160;:</ns0:tspan></ns0:text><ns0:text x="232.69528320312503" font-size="0px" y="66.03999999999999"><ns0:a href="../dexpi-models/Builtin/Undefined.html"><ns0:tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Undefined</ns0:tspan></ns0:a><ns0:tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">&#160;|&#160;</ns0:tspan><ns0:a href="../dexpi-models/Builtin/String.html"><ns0:tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">String</ns0:tspan></ns0:a></ns0:text><ns0:text x="55.11715820312503" font-size="0px" y="79.83999999999999"><ns0:a href="../dexpi-models/Core/EngineeringModel.html#sp:core.engineeringmodel.originatingsystemvendorname"><ns0:tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">OriginatingSystemVendorName</ns0:tspan></ns0:a><ns0:tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">&#160;:</ns0:tspan></ns0:text><ns0:text x="232.69528320312503" font-size="0px" y="79.83999999999999"><ns0:a href="../dexpi-models/Builtin/Undefined.html"><ns0:tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Undefined</ns0:tspan></ns0:a><ns0:tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">&#160;|&#160;</ns0:tspan><ns0:a href="../dexpi-models/Builtin/String.html"><ns0:tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">String</ns0:tspan></ns0:a></ns0:text><ns0:text x="55.11715820312503" font-size="0px" y="93.63999999999999"><ns0:a href="../dexpi-models/Core/EngineeringModel.html#sp:core.engineeringmodel.originatingsystemversion"><ns0:tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">OriginatingSystemVersion</ns0:tspan></ns0:a><ns0:tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">&#160;:</ns0:tspan></ns0:text><ns0:text x="232.69528320312503" font-size="0px" y="93.63999999999999"><ns0:a href="../dexpi-models/Builtin/Undefined.html"><ns0:tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Undefined</ns0:tspan></ns0:a><ns0:tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">&#160;|&#160;</ns0:tspan><ns0:a href="../dexpi-models/Builtin/String.html"><ns0:tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">String</ns0:tspan></ns0:a></ns0:text><ns0:rect class="uml-background_color-background " x="153.15524414062503" y="137.8" width="97.392578125" height="17.799999999999997"/><ns0:text x="201.85153320312503" text-anchor="middle" font-size="0px" y="150.24"><ns0:a href="../dexpi-models/Core/EngineeringModel.html#sp:core.engineeringmodel.conceptualmodel"><ns0:tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">ConceptualModel</ns0:tspan></ns0:a></ns0:text><ns0:polyline class="uml-foreground-stroke uml-source_marker-filled_diamond" points="201.85153320312503,102.0 201.85153320312503,137.8" fill="none"/><ns0:polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="201.85153320312503,155.6 201.85153320312503,191.39999999999998" fill="none"/><ns0:text x="209.85153320312503" font-size="0px" y="114.2"><ns0:tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">0..1</ns0:tspan></ns0:text><ns0:text x="209.85153320312503" font-size="0px" y="185.79999999999995"><ns0:tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">0..1</ns0:tspan></ns0:text><ns0:rect class="uml-background_color-background " x="288.62132812500005" y="137.8" width="49.345703125" height="17.799999999999997"/><ns0:text x="313.29417968750005" text-anchor="middle" font-size="0px" y="150.24"><ns0:a href="../dexpi-models/Core/EngineeringModel.html#sp:core.engineeringmodel.diagram"><ns0:tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Diagram</ns0:tspan></ns0:a></ns0:text><ns0:polyline class="uml-foreground-stroke uml-source_marker-filled_diamond" points="277.71872070312503,102.0 277.71872070312503,127.8 313.29417968750005,127.8 313.29417968750005,137.8" fill="none"/><ns0:polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="313.29417968750005,155.6 313.29417968750005,191.39999999999998" fill="none"/><ns0:text x="285.71872070312503" font-size="0px" y="114.2"><ns0:tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">0..1</ns0:tspan></ns0:text><ns0:text x="321.29417968750005" font-size="0px" y="185.79999999999995"><ns0:tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">0..1</ns0:tspan></ns0:text><ns0:rect class="uml-background_color-background " x="16.470410156250004" y="137.8" width="99.408203125" height="17.799999999999997"/><ns0:text x="66.17451171875001" text-anchor="middle" font-size="0px" y="150.24"><ns0:a href="../dexpi-models/Core/EngineeringModel.html#sp:core.engineeringmodel.shapecatalogues"><ns0:tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">ShapeCatalogues</ns0:tspan></ns0:a></ns0:text><ns0:polyline class="uml-foreground-stroke uml-source_marker-filled_diamond" points="125.98434570312503,102.0 125.98434570312503,127.8 66.17451171875001,127.8 66.17451171875001,137.8" fill="none"/><ns0:polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="66.17451171875001,155.6 66.17451171875001,191.39999999999998" fill="none"/><ns0:text x="133.98434570312503" font-size="0px" y="114.2"><ns0:tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">0..1</ns0:tspan></ns0:text><ns0:text x="74.17451171875001" font-size="0px" y="185.79999999999995"><ns0:tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</ns0:tspan></ns0:text></ns0:svg>

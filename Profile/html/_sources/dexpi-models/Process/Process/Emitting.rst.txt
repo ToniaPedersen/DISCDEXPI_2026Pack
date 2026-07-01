@@ -1,0 +1,5 @@
+Emitting
+========
+
+.. sp:internal-autoelement::
+   :element: Process.Process.Emitting

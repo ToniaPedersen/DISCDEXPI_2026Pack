@@ -1,0 +1,5 @@
+PipingNetworkSystemLabel
+========================
+
+.. sp:internal-autoelement::
+   :element: Plant.Diagram.PipingNetworkSystemLabel

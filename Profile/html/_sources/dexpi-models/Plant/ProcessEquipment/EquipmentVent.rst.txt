@@ -1,0 +1,5 @@
+EquipmentVent
+=============
+
+.. sp:internal-autoelement::
+   :element: Plant.ProcessEquipment.EquipmentVent

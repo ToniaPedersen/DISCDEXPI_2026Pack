@@ -1,0 +1,5 @@
+FlowMeter
+=========
+
+.. sp:internal-autoelement::
+   :element: DiscProfile.InformationModel.InlineMeasuringElementTypeCodes.FlowMeter

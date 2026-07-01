@@ -1,0 +1,81 @@
+<ns0:svg xmlns:ns0="http://www.w3.org/2000/svg" width="547.5185546875px" height="443.0px" viewBox="0.0 0.0 547.5185546875 443.0"><ns0:style>
+            .uml-foreground-stroke {
+                stroke: black;
+                stroke-width: 1px;
+            }
+            
+            .uml-foreground-fill {
+                fill: black;
+            }
+            
+            .uml-background_color-type {
+                fill: #ffffcc;
+            }
+            
+            .uml-background_color-main_type {
+                fill: #ffff66;
+            }
+            
+            .uml-background_color-instance {
+                fill: blue;
+            }
+            
+            .uml-background_color-background {
+                fill: white;
+            }
+            
+            .uml-background_color-foreground {
+                fill: black;
+            }
+            
+            .uml-font-normal {
+                font-family: Arial;
+            }
+            
+            .uml-font-element {
+                font-family: Arial;
+            }
+            
+            .uml-fontsize-normal {
+                font-size: 10px;
+            }
+
+            .uml-fontsize-large {
+                font-size: 12px;
+            }
+            
+            .uml-source_marker-closed_arrow {
+                marker-start: url(#uml-marker-closed_arrow);
+            }
+            
+            .uml-source_marker-open_arrow {
+                marker-start: url(#uml-marker-open_arrow);
+            }
+            
+            .uml-source_marker-filled_diamond {
+                marker-start: url(#uml-marker-filled_diamond);
+            }
+
+            .uml-target_marker-closed_arrow {
+                marker-end: url(#uml-marker-closed_arrow);
+            }
+            
+            .uml-target_marker-open_arrow {
+                marker-end: url(#uml-marker-open_arrow);
+            }
+            
+            .uml-target_marker-filled_diamond {
+                marker-end: url(#uml-marker-filled_diamond);
+            }
+
+            </ns0:style><ns0:defs>
+        <ns0:marker id="uml-marker-closed_arrow" viewBox="-2 -2 14 14" refX="10" refY="5.0" markerWidth="14" markerHeight="14" orient="auto-start-reverse">
+          <ns0:path d="M 0 0 L 10 5.0 L 0 10 Z" stroke-linejoin="round" stroke-linecap="round" class="uml-foreground-stroke uml-background_color-background"/>
+        </ns0:marker>
+        <ns0:marker id="uml-marker-open_arrow" viewBox="-2 -2 14 14" refX="10" refY="5.0" markerWidth="14" markerHeight="14" orient="auto-start-reverse">
+          <ns0:path d="M 0 0 L 10 5.0 L 0 10" stroke-linejoin="round" stroke-linecap="round" fill="none" class="uml-foreground-stroke"/>
+        </ns0:marker>
+        <ns0:marker id="uml-marker-filled_diamond" viewBox="-2 -2 14 14" refX="10" refY="5.0" markerWidth="14" markerHeight="14" orient="auto-start-reverse">
+          <ns0:path d="M 0 5.0 L      5.0 2.0        10 5.0      5.0 8.0 Z       " stroke-linejoin="round" stroke-linecap="round" class="uml-foreground-stroke uml-background_color-foreground"/>
+        </ns0:marker>
+      </ns0:defs><ns0:rect class="uml-background_color-type uml-foreground-stroke" x="326.8251953125" y="125.19999999999999" width="200.0" height="23.799999999999997"/><ns0:text x="426.8251953125" text-anchor="middle" font-size="0px" y="140.64"><ns0:a href="../dexpi-models/Core/ConceptualObject.html"><ns0:tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold" font-style="italic">ConceptualObject</ns0:tspan></ns0:a></ns0:text><ns0:rect class="uml-background_color-type uml-foreground-stroke" x="98.400390625" y="272.2" width="100.0" height="23.799999999999997"/><ns0:text x="148.400390625" text-anchor="middle" font-size="0px" y="287.64"><ns0:a href="../disc-models/DiscProfile/InformationModel/LogicalBreak.html"><ns0:tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold" font-style="italic">LogicalBreak</ns0:tspan></ns0:a></ns0:text><ns0:rect class="uml-background_color-type uml-foreground-stroke" x="385.8166341145833" y="12.0" width="148.6837890625" height="23.799999999999997"/><ns0:text x="460.15852864583326" text-anchor="middle" font-size="0px" y="27.439999999999998"><ns0:a href="../dexpi-models/Core/Diagram/AttributeRepresentation.html"><ns0:tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold">AttributeRepresentation</ns0:tspan></ns0:a></ns0:text><ns0:rect class="uml-background_color-type uml-foreground-stroke" x="229.6045247395833" y="12.0" width="136.212109375" height="23.799999999999997"/><ns0:text x="297.7105794270833" text-anchor="middle" font-size="0px" y="27.439999999999998"><ns0:a href="../dexpi-models/Core/Diagram/RepresentationGroup.html"><ns0:tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold">RepresentationGroup</ns0:tspan></ns0:a></ns0:text><ns0:rect class="uml-background_color-type uml-foreground-stroke" x="461.8251953125" y="272.2" width="50.0" height="23.799999999999997"/><ns0:text x="486.8251953125" text-anchor="middle" font-size="0px" y="287.64"><ns0:a href="../dexpi-models/Core/Note.html"><ns0:tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold">Note</ns0:tspan></ns0:a></ns0:text><ns0:rect class="uml-background_color-type uml-foreground-stroke" x="303.78193359375" y="272.2" width="119.3189453125" height="23.799999999999997"/><ns0:text x="363.44140625" text-anchor="middle" font-size="0px" y="287.64"><ns0:a href="../dexpi-models/Core/PersistentIdentifier.html"><ns0:tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold">PersistentIdentifier</ns0:tspan></ns0:a></ns0:text><ns0:rect class="uml-background_color-type uml-foreground-stroke" x="218.400390625" y="272.2" width="50.0" height="23.799999999999997"/><ns0:text x="243.400390625" text-anchor="middle" font-size="0px" y="287.64"><ns0:a href="../dexpi-models/Core/Role.html"><ns0:tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold">Role</ns0:tspan></ns0:a></ns0:text><ns0:rect class="uml-background_color-main_type uml-foreground-stroke" x="12.0" y="368.59999999999997" width="272.80078125" height="62.4"/><ns0:text x="148.400390625" text-anchor="middle" font-size="0px" y="384.03999999999996"><ns0:tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold">TieInPoint</ns0:tspan></ns0:text><ns0:polyline class="uml-foreground-stroke" points="12.0,392.4 284.80078125,392.4" fill="none"/><ns0:text x="17.0" font-size="0px" y="408.84"><ns0:a href="../disc-models/DiscProfile/InformationModel/TieInPoint.html#sp:discprofile.informationmodel.tieinpoint.commissioningpackage"><ns0:tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">CommissioningPackage</ns0:tspan></ns0:a><ns0:tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">&#160;:</ns0:tspan></ns0:text><ns0:text x="154.55859375" font-size="0px" y="408.84"><ns0:a href="../dexpi-models/Builtin/Undefined.html"><ns0:tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Undefined</ns0:tspan></ns0:a><ns0:tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">&#160;|&#160;</ns0:tspan><ns0:a href="../dexpi-models/Builtin/String.html"><ns0:tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">String</ns0:tspan></ns0:a><ns0:tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">&#160;[0..1]</ns0:tspan></ns0:text><ns0:text x="17.0" font-size="0px" y="422.64"><ns0:a href="../disc-models/DiscProfile/InformationModel/TieInPoint.html#sp:discprofile.informationmodel.tieinpoint.tieinpointidentifier"><ns0:tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">TieInPointIdentifier</ns0:tspan></ns0:a><ns0:tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">&#160;:</ns0:tspan></ns0:text><ns0:text x="154.55859375" font-size="0px" y="422.64"><ns0:a href="../dexpi-models/Builtin/Undefined.html"><ns0:tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Undefined</ns0:tspan></ns0:a><ns0:tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">&#160;|&#160;</ns0:tspan><ns0:a href="../dexpi-models/Builtin/String.html"><ns0:tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">String</ns0:tspan></ns0:a><ns0:tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">&#160;[0..1]</ns0:tspan></ns0:text><ns0:rect class="uml-background_color-type uml-foreground-stroke" x="44.408658854166674" y="125.19999999999999" width="94.369140625" height="23.799999999999997"/><ns0:text x="91.59322916666667" text-anchor="middle" font-size="0px" y="140.64"><ns0:a href="../dexpi-models/Plant/Piping/PropertyBreak.html"><ns0:tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold">PropertyBreak</ns0:tspan></ns0:a></ns0:text><ns0:polyline class="uml-foreground-stroke uml-source_marker-closed_arrow" points="366.8251953125,149.0 366.8251953125,174.79999999999998 165.06705729166666,174.79999999999998 165.06705729166666,220.1 165.06705729166666,221.1 165.06705729166666,272.2" fill="none"/><ns0:polyline class="uml-foreground-stroke uml-source_marker-closed_arrow" points="148.400390625,296.0 148.400390625,331.79999999999995 148.400390625,332.79999999999995 148.400390625,368.59999999999997" fill="none"/><ns0:rect class="uml-background_color-background " x="198.0498046875" y="211.7" width="90.701171875" height="17.799999999999997"/><ns0:text x="243.400390625" text-anchor="middle" font-size="0px" y="224.14"><ns0:a href="../dexpi-models/Core/ConceptualObject.html#sp:core.conceptualobject.performedroles"><ns0:tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">PerformedRoles</ns0:tspan></ns0:a></ns0:text><ns0:polyline class="uml-foreground-stroke" points="406.8251953125,149.0 406.8251953125,184.79999999999998 243.400390625,184.79999999999998 243.400390625,211.7" fill="none"/><ns0:polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="243.400390625,229.5 243.400390625,272.2" fill="none"/><ns0:text x="414.8251953125" font-size="0px" y="161.2"><ns0:tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</ns0:tspan></ns0:text><ns0:text x="251.400390625" font-size="0px" y="266.59999999999997"><ns0:tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</ns0:tspan></ns0:text><ns0:rect class="uml-background_color-background " x="308.7509765625" y="211.7" width="109.380859375" height="17.799999999999997"/><ns0:text x="363.44140625" text-anchor="middle" font-size="0px" y="224.14"><ns0:a href="../dexpi-models/Core/ConceptualObject.html#sp:core.conceptualobject.persistentidentifiers"><ns0:tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">PersistentIdentifiers</ns0:tspan></ns0:a></ns0:text><ns0:polyline class="uml-foreground-stroke uml-source_marker-filled_diamond" points="446.8251953125,149.0 446.8251953125,194.79999999999998 363.44140625,194.79999999999998 363.44140625,211.7" fill="none"/><ns0:polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="363.44140625,229.5 363.44140625,272.2" fill="none"/><ns0:text x="454.8251953125" font-size="0px" y="161.2"><ns0:tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">0..1</ns0:tspan></ns0:text><ns0:text x="371.44140625" font-size="0px" y="266.59999999999997"><ns0:tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</ns0:tspan></ns0:text><ns0:rect class="uml-background_color-background " x="438.1318359375" y="211.7" width="97.38671875" height="17.799999999999997"/><ns0:text x="486.8251953125" text-anchor="middle" font-size="0px" y="224.14"><ns0:a href="../dexpi-models/Core/ConceptualObject.html#sp:core.conceptualobject.referencednotes"><ns0:tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">ReferencedNotes</ns0:tspan></ns0:a></ns0:text><ns0:polyline class="uml-foreground-stroke" points="486.8251953125,149.0 486.8251953125,211.7" fill="none"/><ns0:polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="486.8251953125,229.5 486.8251953125,272.2" fill="none"/><ns0:text x="494.8251953125" font-size="0px" y="161.2"><ns0:tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</ns0:tspan></ns0:text><ns0:text x="494.8251953125" font-size="0px" y="266.59999999999997"><ns0:tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</ns0:tspan></ns0:text><ns0:rect class="uml-background_color-background " x="440.8177083333333" y="71.6" width="38.681640625" height="17.799999999999997"/><ns0:text x="460.1585286458333" text-anchor="middle" font-size="0px" y="84.03999999999999"><ns0:a href="../dexpi-models/Core/Diagram/AttributeRepresentation.html#sp:core.diagram.attributerepresentation.object"><ns0:tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Object</ns0:tspan></ns0:a></ns0:text><ns0:polyline class="uml-foreground-stroke" points="460.15852864583326,35.8 460.1585286458333,71.6" fill="none"/><ns0:polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="460.1585286458333,89.39999999999999 460.1585286458333,125.19999999999999" fill="none"/><ns0:text x="468.1585286458333" font-size="0px" y="48.0"><ns0:tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</ns0:tspan></ns0:text><ns0:rect class="uml-background_color-background " x="265.0279622395833" y="71.6" width="65.365234375" height="17.799999999999997"/><ns0:text x="297.7105794270833" text-anchor="middle" font-size="0px" y="84.03999999999999"><ns0:a href="../dexpi-models/Core/Diagram/RepresentationGroup.html#sp:core.diagram.representationgroup.represents"><ns0:tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Represents</ns0:tspan></ns0:a></ns0:text><ns0:polyline class="uml-foreground-stroke" points="297.7105794270833,35.8 297.7105794270833,71.6" fill="none"/><ns0:polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="297.7105794270833,89.39999999999999 297.7105794270833,99.39999999999999 393.49186197916663,99.39999999999999 393.49186197916663,125.19999999999999" fill="none"/><ns0:text x="305.7105794270833" font-size="0px" y="48.0"><ns0:tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</ns0:tspan></ns0:text><ns0:rect class="uml-background_color-background " x="38.61940104166666" y="204.79999999999998" width="105.94765625000001" height="31.599999999999998"/><ns0:text x="91.59322916666667" text-anchor="middle" font-size="0px" y="217.23999999999998"><ns0:a href="../disc-models/DiscProfile/InformationModel/PropertyBreakExtension.html#sp:discprofile.informationmodel.propertybreakextension.logicalbreaks"><ns0:tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">LogicalBreaks</ns0:tspan></ns0:a></ns0:text><ns0:text x="91.59322916666667" text-anchor="middle" font-size="0px" y="231.04"><ns0:a href="../disc-models/DiscProfile/InformationModel/PropertyBreakExtension.html#sp:discprofile.informationmodel.propertybreakextension.logicalbreaks"><ns0:tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-style="italic">(from&#160;DiscProfile)</ns0:tspan></ns0:a></ns0:text><ns0:polyline class="uml-foreground-stroke uml-source_marker-filled_diamond" points="91.59322916666667,149.0 91.59322916666667,204.79999999999998" fill="none"/><ns0:polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="91.59322916666667,236.39999999999998 91.59322916666667,246.39999999999998 131.73372395833331,246.39999999999998 131.73372395833331,272.2" fill="none"/><ns0:text x="99.59322916666667" font-size="0px" y="161.2"><ns0:tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">0..1</ns0:tspan></ns0:text><ns0:text x="139.73372395833331" font-size="0px" y="266.59999999999997"><ns0:tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</ns0:tspan></ns0:text></ns0:svg>

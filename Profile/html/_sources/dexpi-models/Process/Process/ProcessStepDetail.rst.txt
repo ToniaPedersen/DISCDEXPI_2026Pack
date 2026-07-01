@@ -1,0 +1,5 @@
+ProcessStepDetail
+=================
+
+.. sp:internal-autoelement::
+   :element: Process.Process.ProcessStepDetail

@@ -1,0 +1,5 @@
+Symbol
+======
+
+.. sp:internal-autoelement::
+   :element: Profile.Symbol

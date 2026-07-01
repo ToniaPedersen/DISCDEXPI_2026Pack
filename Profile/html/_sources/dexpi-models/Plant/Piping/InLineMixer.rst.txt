@@ -1,0 +1,5 @@
+InLineMixer
+===========
+
+.. sp:internal-autoelement::
+   :element: Plant.Piping.InLineMixer

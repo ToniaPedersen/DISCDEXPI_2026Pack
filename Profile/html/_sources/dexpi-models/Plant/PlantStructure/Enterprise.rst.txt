@@ -1,0 +1,5 @@
+Enterprise
+==========
+
+.. sp:internal-autoelement::
+   :element: Plant.PlantStructure.Enterprise

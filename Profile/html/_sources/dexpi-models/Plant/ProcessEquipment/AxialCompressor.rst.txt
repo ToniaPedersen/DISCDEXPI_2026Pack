@@ -1,0 +1,5 @@
+AxialCompressor
+===============
+
+.. sp:internal-autoelement::
+   :element: Plant.ProcessEquipment.AxialCompressor

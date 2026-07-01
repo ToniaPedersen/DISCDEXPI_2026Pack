@@ -1,0 +1,5 @@
+Agglomerator
+============
+
+.. sp:internal-autoelement::
+   :element: Plant.ProcessEquipment.Agglomerator

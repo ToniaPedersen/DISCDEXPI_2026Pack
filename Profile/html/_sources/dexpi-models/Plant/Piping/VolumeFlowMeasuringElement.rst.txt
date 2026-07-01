@@ -1,0 +1,5 @@
+VolumeFlowMeasuringElement
+==========================
+
+.. sp:internal-autoelement::
+   :element: Plant.Piping.VolumeFlowMeasuringElement

@@ -1,0 +1,5 @@
+QualityRelevanceClassification
+==============================
+
+.. sp:internal-autoelement::
+   :element: Plant.Enumerations.QualityRelevanceClassification

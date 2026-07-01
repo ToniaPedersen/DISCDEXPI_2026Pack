@@ -1,0 +1,5 @@
+DoubleBlockAndBleedValve
+========================
+
+.. sp:internal-autoelement::
+   :element: DiscProfile.InformationModel.DoubleBlockAndBleedValve

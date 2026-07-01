@@ -1,0 +1,5 @@
+TimeIntervalUnit
+================
+
+.. sp:internal-autoelement::
+   :element: Core.PhysicalQuantities.TimeIntervalUnit

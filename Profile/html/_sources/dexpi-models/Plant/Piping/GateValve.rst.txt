@@ -1,0 +1,5 @@
+GateValve
+=========
+
+.. sp:internal-autoelement::
+   :element: Plant.Piping.GateValve

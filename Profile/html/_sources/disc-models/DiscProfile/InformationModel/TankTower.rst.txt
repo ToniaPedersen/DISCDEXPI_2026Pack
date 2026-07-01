@@ -1,0 +1,5 @@
+TankTower
+=========
+
+.. sp:internal-autoelement::
+   :element: DiscProfile.InformationModel.TankTower

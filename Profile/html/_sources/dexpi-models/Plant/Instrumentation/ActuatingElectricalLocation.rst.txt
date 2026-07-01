@@ -1,0 +1,5 @@
+ActuatingElectricalLocation
+===========================
+
+.. sp:internal-autoelement::
+   :element: Plant.Instrumentation.ActuatingElectricalLocation

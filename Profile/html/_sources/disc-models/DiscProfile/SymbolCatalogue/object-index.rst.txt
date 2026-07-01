@@ -1,0 +1,5 @@
+SymbolCatalogue
+===============
+
+.. sp:internal-autoelement::
+   :element: DiscProfile.SymbolCatalogue

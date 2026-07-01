@@ -1,0 +1,5 @@
+PropertyValueCondition
+======================
+
+.. sp:internal-autoelement::
+   :element: Profile.PropertyValueCondition

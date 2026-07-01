@@ -1,0 +1,5 @@
+HeatTransferCoefficientUnit
+===========================
+
+.. sp:internal-autoelement::
+   :element: Core.PhysicalQuantities.HeatTransferCoefficientUnit

@@ -1,0 +1,5 @@
+PipeSlopeSymbol
+===============
+
+.. sp:internal-autoelement::
+   :element: Core.Diagram.PipeSlopeSymbol

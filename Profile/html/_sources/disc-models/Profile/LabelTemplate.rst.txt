@@ -1,0 +1,5 @@
+LabelTemplate
+=============
+
+.. sp:internal-autoelement::
+   :element: Profile.LabelTemplate

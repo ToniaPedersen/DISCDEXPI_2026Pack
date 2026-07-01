@@ -1,0 +1,5 @@
+CustomSymbol
+============
+
+.. sp:internal-autoelement::
+   :element: Core.Diagram.CustomSymbol

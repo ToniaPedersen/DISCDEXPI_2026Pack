@@ -1,0 +1,5 @@
+AirReleaseTrap
+==============
+
+.. sp:internal-autoelement::
+   :element: DiscProfile.InformationModel.AirReleaseTrap

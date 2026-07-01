@@ -1,0 +1,5 @@
+OilInWaterAnalyser
+==================
+
+.. sp:internal-autoelement::
+   :element: DiscProfile.InformationModel.OilInWaterAnalyser

@@ -1,0 +1,5 @@
+InsulationSymbol
+================
+
+.. sp:internal-autoelement::
+   :element: Core.Diagram.InsulationSymbol

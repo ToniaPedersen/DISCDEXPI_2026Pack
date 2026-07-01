@@ -1,0 +1,5 @@
+ShellAndTubeHeatExchanger
+=========================
+
+.. sp:internal-autoelement::
+   :element: DiscProfile.InformationModel.ShellAndTubeHeatExchanger

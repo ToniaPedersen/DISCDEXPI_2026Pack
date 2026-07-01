@@ -1,0 +1,5 @@
+UsageConstraint
+===============
+
+.. sp:internal-autoelement::
+   :element: Profile.UsageConstraint

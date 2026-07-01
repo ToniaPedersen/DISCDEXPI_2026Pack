@@ -1,0 +1,5 @@
+Boolean
+=======
+
+.. sp:internal-autoelement::
+   :element: Builtin.Boolean

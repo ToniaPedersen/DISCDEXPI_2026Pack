@@ -1,0 +1,5 @@
+InsulationBreakClassification
+=============================
+
+.. sp:internal-autoelement::
+   :element: Plant.Enumerations.InsulationBreakClassification

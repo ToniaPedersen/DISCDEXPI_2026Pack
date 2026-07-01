@@ -1,0 +1,5 @@
+ButterflyValve
+==============
+
+.. sp:internal-autoelement::
+   :element: Plant.Piping.ButterflyValve

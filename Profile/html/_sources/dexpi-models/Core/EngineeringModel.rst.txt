@@ -1,0 +1,5 @@
+EngineeringModel
+================
+
+.. sp:internal-autoelement::
+   :element: Core.EngineeringModel

@@ -1,0 +1,16 @@
+DEXPI Information Models
+========================
+
+The DISC Profile :sp:element:`DiscProfile` builds on existing DEXPI models. These models
+(:sp:element:`Builtin`, :sp:element:`Core`, :sp:element:`Plant`, and :sp:element:`Process` from DEXPI 2.0) are reproduced here; they
+have been licensed by DEXPI e.V. under a Creative Commons Attribution 4.0 International License, see
+https://dexpi.org/specifications/ .
+
+.. toctree::
+   :maxdepth: 1
+
+   <#AUTOMODEL Builtin#>
+   <#AUTOMODEL Core#>
+   <#AUTOMODEL Plant#>
+   <#AUTOMODEL Process#>
+

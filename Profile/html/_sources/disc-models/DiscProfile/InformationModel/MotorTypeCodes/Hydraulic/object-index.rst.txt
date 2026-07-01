@@ -1,0 +1,5 @@
+Hydraulic
+=========
+
+.. sp:internal-autoelement::
+   :element: DiscProfile.InformationModel.MotorTypeCodes.Hydraulic

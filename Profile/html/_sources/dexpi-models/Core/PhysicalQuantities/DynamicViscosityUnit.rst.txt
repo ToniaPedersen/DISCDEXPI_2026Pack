@@ -1,0 +1,5 @@
+DynamicViscosityUnit
+====================
+
+.. sp:internal-autoelement::
+   :element: Core.PhysicalQuantities.DynamicViscosityUnit

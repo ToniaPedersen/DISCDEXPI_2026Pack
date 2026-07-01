@@ -1,0 +1,5 @@
+PlantSectionParentStructure
+===========================
+
+.. sp:internal-autoelement::
+   :element: Plant.PlantStructure.PlantSectionParentStructure

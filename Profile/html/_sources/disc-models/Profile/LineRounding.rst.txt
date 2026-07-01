@@ -1,0 +1,5 @@
+LineRounding
+============
+
+.. sp:internal-autoelement::
+   :element: Profile.LineRounding

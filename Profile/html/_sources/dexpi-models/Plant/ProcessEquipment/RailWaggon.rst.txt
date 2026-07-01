@@ -1,0 +1,5 @@
+RailWaggon
+==========
+
+.. sp:internal-autoelement::
+   :element: Plant.ProcessEquipment.RailWaggon

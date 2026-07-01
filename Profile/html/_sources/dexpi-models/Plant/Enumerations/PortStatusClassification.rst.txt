@@ -1,0 +1,5 @@
+PortStatusClassification
+========================
+
+.. sp:internal-autoelement::
+   :element: Plant.Enumerations.PortStatusClassification

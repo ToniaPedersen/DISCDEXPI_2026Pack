@@ -1,0 +1,5 @@
+MaterialState
+=============
+
+.. sp:internal-autoelement::
+   :element: Process.Process.MaterialState

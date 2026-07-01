@@ -1,0 +1,5 @@
+DeviceInformationLabel
+======================
+
+.. sp:internal-autoelement::
+   :element: Plant.Diagram.DeviceInformationLabel

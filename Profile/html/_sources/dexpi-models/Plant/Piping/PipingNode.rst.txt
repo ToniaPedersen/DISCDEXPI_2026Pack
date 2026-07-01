@@ -1,0 +1,5 @@
+PipingNode
+==========
+
+.. sp:internal-autoelement::
+   :element: Plant.Piping.PipingNode

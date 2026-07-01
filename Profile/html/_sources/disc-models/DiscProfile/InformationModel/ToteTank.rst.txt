@@ -1,0 +1,5 @@
+ToteTank
+========
+
+.. sp:internal-autoelement::
+   :element: DiscProfile.InformationModel.ToteTank

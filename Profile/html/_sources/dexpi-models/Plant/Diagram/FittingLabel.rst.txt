@@ -1,0 +1,5 @@
+FittingLabel
+============
+
+.. sp:internal-autoelement::
+   :element: Plant.Diagram.FittingLabel

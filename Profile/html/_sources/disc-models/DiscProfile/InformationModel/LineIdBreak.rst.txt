@@ -1,0 +1,5 @@
+LineIdBreak
+===========
+
+.. sp:internal-autoelement::
+   :element: DiscProfile.InformationModel.LineIdBreak

@@ -1,0 +1,5 @@
+StoringSolids
+=============
+
+.. sp:internal-autoelement::
+   :element: Process.Process.StoringSolids

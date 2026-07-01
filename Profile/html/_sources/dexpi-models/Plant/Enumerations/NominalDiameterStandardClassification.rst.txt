@@ -1,0 +1,5 @@
+NominalDiameterStandardClassification
+=====================================
+
+.. sp:internal-autoelement::
+   :element: Plant.Enumerations.NominalDiameterStandardClassification

@@ -1,0 +1,5 @@
+DirectCurrentMotorAsComponent
+=============================
+
+.. sp:internal-autoelement::
+   :element: Plant.ProcessEquipment.DirectCurrentMotorAsComponent

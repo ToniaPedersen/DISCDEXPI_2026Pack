@@ -1,0 +1,5 @@
+SelfActuatedPressureControlValve
+================================
+
+.. sp:internal-autoelement::
+   :element: DiscProfile.InformationModel.SelfActuatedPressureControlValve

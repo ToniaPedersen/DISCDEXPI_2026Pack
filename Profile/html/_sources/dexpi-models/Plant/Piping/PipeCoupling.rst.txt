@@ -1,0 +1,5 @@
+PipeCoupling
+============
+
+.. sp:internal-autoelement::
+   :element: Plant.Piping.PipeCoupling

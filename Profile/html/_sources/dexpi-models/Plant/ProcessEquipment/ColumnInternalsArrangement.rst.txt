@@ -1,0 +1,5 @@
+ColumnInternalsArrangement
+==========================
+
+.. sp:internal-autoelement::
+   :element: Plant.ProcessEquipment.ColumnInternalsArrangement

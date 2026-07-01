@@ -1,0 +1,5 @@
+PipingTargetItem
+================
+
+.. sp:internal-autoelement::
+   :element: Plant.Piping.PipingTargetItem

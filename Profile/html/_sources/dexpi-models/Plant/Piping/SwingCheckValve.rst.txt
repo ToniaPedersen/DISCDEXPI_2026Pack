@@ -1,0 +1,5 @@
+SwingCheckValve
+===============
+
+.. sp:internal-autoelement::
+   :element: Plant.Piping.SwingCheckValve

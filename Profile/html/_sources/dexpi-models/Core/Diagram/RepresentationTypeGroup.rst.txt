@@ -1,0 +1,5 @@
+RepresentationTypeGroup
+=======================
+
+.. sp:internal-autoelement::
+   :element: Core.Diagram.RepresentationTypeGroup

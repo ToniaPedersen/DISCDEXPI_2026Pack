@@ -1,0 +1,5 @@
+FourWayValve
+============
+
+.. sp:internal-autoelement::
+   :element: DiscProfile.InformationModel.FourWayValve

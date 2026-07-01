@@ -1,0 +1,5 @@
+Instrumentation
+===============
+
+.. sp:internal-autoelement::
+   :element: Plant.Instrumentation

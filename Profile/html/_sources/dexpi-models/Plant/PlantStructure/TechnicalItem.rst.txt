@@ -1,0 +1,5 @@
+TechnicalItem
+=============
+
+.. sp:internal-autoelement::
+   :element: Plant.PlantStructure.TechnicalItem

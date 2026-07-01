@@ -1,0 +1,5 @@
+SignalOffPageConnectorReference
+===============================
+
+.. sp:internal-autoelement::
+   :element: Plant.Instrumentation.SignalOffPageConnectorReference

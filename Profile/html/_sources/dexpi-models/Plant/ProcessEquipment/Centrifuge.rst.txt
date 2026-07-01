@@ -1,0 +1,5 @@
+Centrifuge
+==========
+
+.. sp:internal-autoelement::
+   :element: Plant.ProcessEquipment.Centrifuge

@@ -1,0 +1,5 @@
+ActuatingElectricalFunction
+===========================
+
+.. sp:internal-autoelement::
+   :element: Plant.Instrumentation.ActuatingElectricalFunction

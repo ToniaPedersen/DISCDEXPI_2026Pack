@@ -1,0 +1,5 @@
+ConceptualObject
+================
+
+.. sp:internal-autoelement::
+   :element: Core.ConceptualObject

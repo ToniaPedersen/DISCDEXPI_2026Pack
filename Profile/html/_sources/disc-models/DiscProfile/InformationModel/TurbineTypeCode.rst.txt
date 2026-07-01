@@ -1,0 +1,5 @@
+TurbineTypeCode
+===============
+
+.. sp:internal-autoelement::
+   :element: DiscProfile.InformationModel.TurbineTypeCode

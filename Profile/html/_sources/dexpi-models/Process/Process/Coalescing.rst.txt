@@ -1,0 +1,5 @@
+Coalescing
+==========
+
+.. sp:internal-autoelement::
+   :element: Process.Process.Coalescing

@@ -1,0 +1,5 @@
+ColumnSection
+=============
+
+.. sp:internal-autoelement::
+   :element: Plant.ProcessEquipment.ColumnSection

@@ -1,0 +1,5 @@
+Pilot
+=====
+
+.. sp:internal-autoelement::
+   :element: DiscProfile.InformationModel.ControlledActuatorTypeCodes.Pilot

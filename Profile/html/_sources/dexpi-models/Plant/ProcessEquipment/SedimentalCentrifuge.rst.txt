@@ -1,0 +1,5 @@
+SedimentalCentrifuge
+====================
+
+.. sp:internal-autoelement::
+   :element: Plant.ProcessEquipment.SedimentalCentrifuge

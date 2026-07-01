@@ -1,0 +1,5 @@
+AcousticNoiseReducer
+====================
+
+.. sp:internal-autoelement::
+   :element: DiscProfile.InformationModel.AcousticNoiseReducer

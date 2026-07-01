@@ -1,0 +1,5 @@
+Hose
+====
+
+.. sp:internal-autoelement::
+   :element: Plant.Piping.Hose

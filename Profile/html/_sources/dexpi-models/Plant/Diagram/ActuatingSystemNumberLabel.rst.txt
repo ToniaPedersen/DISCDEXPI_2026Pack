@@ -1,0 +1,5 @@
+ActuatingSystemNumberLabel
+==========================
+
+.. sp:internal-autoelement::
+   :element: Plant.Diagram.ActuatingSystemNumberLabel

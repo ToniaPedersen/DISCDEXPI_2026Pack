@@ -1,0 +1,5 @@
+ReactingChemicals
+=================
+
+.. sp:internal-autoelement::
+   :element: Process.Process.ReactingChemicals

@@ -1,0 +1,5 @@
+UltrasonicFlowMeter
+===================
+
+.. sp:internal-autoelement::
+   :element: DiscProfile.InformationModel.UltrasonicFlowMeter

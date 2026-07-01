@@ -1,0 +1,5 @@
+CompositionBasis
+================
+
+.. sp:internal-autoelement::
+   :element: Process.Enumerations.CompositionBasis

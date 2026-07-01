@@ -1,0 +1,5 @@
+MonoflangeValve
+===============
+
+.. sp:internal-autoelement::
+   :element: DiscProfile.InformationModel.MonoflangeValve

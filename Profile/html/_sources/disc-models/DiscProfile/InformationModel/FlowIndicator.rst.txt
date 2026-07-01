@@ -1,0 +1,5 @@
+FlowIndicator
+=============
+
+.. sp:internal-autoelement::
+   :element: DiscProfile.InformationModel.FlowIndicator

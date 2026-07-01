@@ -1,0 +1,81 @@
+<ns0:svg xmlns:ns0="http://www.w3.org/2000/svg" width="637.1883789062501px" height="274.19999999999993px" viewBox="0.0 0.0 637.1883789062501 274.19999999999993"><ns0:style>
+            .uml-foreground-stroke {
+                stroke: black;
+                stroke-width: 1px;
+            }
+            
+            .uml-foreground-fill {
+                fill: black;
+            }
+            
+            .uml-background_color-type {
+                fill: #ffffcc;
+            }
+            
+            .uml-background_color-main_type {
+                fill: #ffff66;
+            }
+            
+            .uml-background_color-instance {
+                fill: blue;
+            }
+            
+            .uml-background_color-background {
+                fill: white;
+            }
+            
+            .uml-background_color-foreground {
+                fill: black;
+            }
+            
+            .uml-font-normal {
+                font-family: Arial;
+            }
+            
+            .uml-font-element {
+                font-family: Arial;
+            }
+            
+            .uml-fontsize-normal {
+                font-size: 10px;
+            }
+
+            .uml-fontsize-large {
+                font-size: 12px;
+            }
+            
+            .uml-source_marker-closed_arrow {
+                marker-start: url(#uml-marker-closed_arrow);
+            }
+            
+            .uml-source_marker-open_arrow {
+                marker-start: url(#uml-marker-open_arrow);
+            }
+            
+            .uml-source_marker-filled_diamond {
+                marker-start: url(#uml-marker-filled_diamond);
+            }
+
+            .uml-target_marker-closed_arrow {
+                marker-end: url(#uml-marker-closed_arrow);
+            }
+            
+            .uml-target_marker-open_arrow {
+                marker-end: url(#uml-marker-open_arrow);
+            }
+            
+            .uml-target_marker-filled_diamond {
+                marker-end: url(#uml-marker-filled_diamond);
+            }
+
+            </ns0:style><ns0:defs>
+        <ns0:marker id="uml-marker-closed_arrow" viewBox="-2 -2 14 14" refX="10" refY="5.0" markerWidth="14" markerHeight="14" orient="auto-start-reverse">
+          <ns0:path d="M 0 0 L 10 5.0 L 0 10 Z" stroke-linejoin="round" stroke-linecap="round" class="uml-foreground-stroke uml-background_color-background"/>
+        </ns0:marker>
+        <ns0:marker id="uml-marker-open_arrow" viewBox="-2 -2 14 14" refX="10" refY="5.0" markerWidth="14" markerHeight="14" orient="auto-start-reverse">
+          <ns0:path d="M 0 0 L 10 5.0 L 0 10" stroke-linejoin="round" stroke-linecap="round" fill="none" class="uml-foreground-stroke"/>
+        </ns0:marker>
+        <ns0:marker id="uml-marker-filled_diamond" viewBox="-2 -2 14 14" refX="10" refY="5.0" markerWidth="14" markerHeight="14" orient="auto-start-reverse">
+          <ns0:path d="M 0 5.0 L      5.0 2.0        10 5.0      5.0 8.0 Z       " stroke-linejoin="round" stroke-linecap="round" class="uml-foreground-stroke uml-background_color-foreground"/>
+        </ns0:marker>
+      </ns0:defs><ns0:rect class="uml-background_color-type uml-foreground-stroke" x="234.08513671875002" y="12.0" width="184.34634765625003" height="23.799999999999997"/><ns0:text x="326.258310546875" text-anchor="middle" font-size="0px" y="27.439999999999998"><ns0:a href="../dexpi-models/Plant/PlantStructure/PlantAreaLocatedStructure.html"><ns0:tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold" font-style="italic">PlantAreaLocatedStructure</ns0:tspan></ns0:a></ns0:text><ns0:rect class="uml-background_color-type uml-foreground-stroke" x="12.0" y="12.0" width="202.08513671875002" height="23.799999999999997"/><ns0:text x="113.04256835937501" text-anchor="middle" font-size="0px" y="27.439999999999998"><ns0:a href="../dexpi-models/Plant/PlantStructure/PlantSystemLocatedStructure.html"><ns0:tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold" font-style="italic">PlantSystemLocatedStructure</ns0:tspan></ns0:a></ns0:text><ns0:rect class="uml-background_color-type uml-foreground-stroke" x="438.4314843750001" y="12.0" width="186.75689453125003" height="23.799999999999997"/><ns0:text x="531.8099316406251" text-anchor="middle" font-size="0px" y="27.439999999999998"><ns0:a href="../dexpi-models/Plant/PlantStructure/PlantTrainLocatedStructure.html"><ns0:tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold" font-style="italic">PlantTrainLocatedStructure</ns0:tspan></ns0:a></ns0:text><ns0:rect class="uml-background_color-main_type uml-foreground-stroke" x="349.51848958333335" y="125.19999999999999" width="150.0" height="23.799999999999997"/><ns0:text x="424.51848958333335" text-anchor="middle" font-size="0px" y="140.64"><ns0:tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold" font-style="italic">TechnicalItem</ns0:tspan></ns0:text><ns0:rect class="uml-background_color-type uml-foreground-stroke" x="323.48301106770833" y="238.39999999999998" width="202.07095703125003" height="23.799999999999997"/><ns0:text x="424.51848958333335" text-anchor="middle" font-size="0px" y="253.83999999999997"><ns0:a href="../dexpi-models/Plant/PlantStructure/TechnicalItemParentStructure.html"><ns0:tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold" font-style="italic">TechnicalItemParentStructure</ns0:tspan></ns0:a></ns0:text><ns0:rect class="uml-background_color-type uml-foreground-stroke" x="261.5493489583334" y="125.19999999999999" width="67.969140625" height="23.799999999999997"/><ns0:text x="295.5339192708334" text-anchor="middle" font-size="0px" y="140.64"><ns0:a href="../dexpi-models/Plant/PlantStructure/PlantArea.html"><ns0:tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold">PlantArea</ns0:tspan></ns0:a></ns0:text><ns0:rect class="uml-background_color-type uml-foreground-stroke" x="37.31405598958334" y="125.19999999999999" width="84.0953125" height="23.799999999999997"/><ns0:text x="79.36171223958334" text-anchor="middle" font-size="0px" y="140.64"><ns0:a href="../dexpi-models/Plant/PlantStructure/PlantSystem.html"><ns0:tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold">PlantSystem</ns0:tspan></ns0:a></ns0:text><ns0:rect class="uml-background_color-type uml-foreground-stroke" x="527.8558072916668" y="125.19999999999999" width="70.160546875" height="23.799999999999997"/><ns0:text x="562.9360807291667" text-anchor="middle" font-size="0px" y="140.64"><ns0:a href="../dexpi-models/Plant/PlantStructure/PlantTrain.html"><ns0:tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold">PlantTrain</ns0:tspan></ns0:a></ns0:text><ns0:polyline class="uml-foreground-stroke uml-source_marker-closed_arrow" points="356.98270182291674,35.8 356.98270182291674,61.599999999999994 424.51848958333335,61.599999999999994 424.51848958333335,80.0 424.51848958333335,81.0 424.51848958333335,125.19999999999999" fill="none"/><ns0:polyline class="uml-foreground-stroke uml-source_marker-closed_arrow" points="146.72342447916668,35.8 146.72342447916668,80.0 146.72342447916668,81.0 146.72342447916668,99.39999999999999 387.01848958333335,99.39999999999999 387.01848958333335,125.19999999999999" fill="none"/><ns0:polyline class="uml-foreground-stroke uml-source_marker-closed_arrow" points="500.6837825520834,35.8 500.6837825520834,80.0 500.6837825520834,81.0 500.6837825520834,99.39999999999999 462.01848958333335,99.39999999999999 462.01848958333335,125.19999999999999" fill="none"/><ns0:rect class="uml-background_color-background " x="267.1843098958334" y="71.6" width="56.69921875" height="17.799999999999997"/><ns0:text x="295.5339192708334" text-anchor="middle" font-size="0px" y="84.03999999999999"><ns0:a href="../dexpi-models/Plant/PlantStructure/PlantAreaLocatedStructure.html#sp:plant.plantstructure.plantarealocatedstructure.plantarea"><ns0:tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">PlantArea</ns0:tspan></ns0:a></ns0:text><ns0:polyline class="uml-foreground-stroke" points="295.5339192708334,35.8 295.5339192708334,71.6" fill="none"/><ns0:polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="295.5339192708334,89.39999999999999 295.5339192708334,125.19999999999999" fill="none"/><ns0:text x="303.5339192708334" font-size="0px" y="48.0"><ns0:tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</ns0:tspan></ns0:text><ns0:text x="303.5339192708334" font-size="0px" y="119.6"><ns0:tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">0..1</ns0:tspan></ns0:text><ns0:rect class="uml-background_color-background " x="43.68202473958334" y="71.6" width="71.359375" height="17.799999999999997"/><ns0:text x="79.36171223958334" text-anchor="middle" font-size="0px" y="84.03999999999999"><ns0:a href="../dexpi-models/Plant/PlantStructure/PlantSystemLocatedStructure.html#sp:plant.plantstructure.plantsystemlocatedstructure.plantsystem"><ns0:tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">PlantSystem</ns0:tspan></ns0:a></ns0:text><ns0:polyline class="uml-foreground-stroke" points="79.36171223958334,35.8 79.36171223958334,71.6" fill="none"/><ns0:polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="79.36171223958334,89.39999999999999 79.36171223958334,125.19999999999999" fill="none"/><ns0:text x="87.36171223958334" font-size="0px" y="48.0"><ns0:tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</ns0:tspan></ns0:text><ns0:text x="87.36171223958334" font-size="0px" y="119.6"><ns0:tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">0..1</ns0:tspan></ns0:text><ns0:rect class="uml-background_color-background " x="533.5903776041667" y="71.6" width="58.69140625" height="17.799999999999997"/><ns0:text x="562.9360807291667" text-anchor="middle" font-size="0px" y="84.03999999999999"><ns0:a href="../dexpi-models/Plant/PlantStructure/PlantTrainLocatedStructure.html#sp:plant.plantstructure.planttrainlocatedstructure.planttrain"><ns0:tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">PlantTrain</ns0:tspan></ns0:a></ns0:text><ns0:polyline class="uml-foreground-stroke" points="562.9360807291667,35.8 562.9360807291667,71.6" fill="none"/><ns0:polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="562.9360807291667,89.39999999999999 562.9360807291667,125.19999999999999" fill="none"/><ns0:text x="570.9360807291667" font-size="0px" y="48.0"><ns0:tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</ns0:tspan></ns0:text><ns0:text x="570.9360807291667" font-size="0px" y="119.6"><ns0:tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">0..1</ns0:tspan></ns0:text><ns0:rect class="uml-background_color-background " x="380.49798177083335" y="184.79999999999998" width="88.041015625" height="17.799999999999997"/><ns0:text x="424.51848958333335" text-anchor="middle" font-size="0px" y="197.23999999999998"><ns0:a href="../dexpi-models/Plant/PlantStructure/TechnicalItem.html#sp:plant.plantstructure.technicalitem.parentstructure"><ns0:tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">ParentStructure</ns0:tspan></ns0:a></ns0:text><ns0:polyline class="uml-foreground-stroke" points="424.51848958333335,149.0 424.51848958333335,184.79999999999998" fill="none"/><ns0:polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="424.51848958333335,202.59999999999997 424.51848958333335,238.39999999999998" fill="none"/><ns0:text x="432.51848958333335" font-size="0px" y="161.2"><ns0:tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</ns0:tspan></ns0:text><ns0:text x="432.51848958333335" font-size="0px" y="232.79999999999995"><ns0:tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">0..1</ns0:tspan></ns0:text></ns0:svg>

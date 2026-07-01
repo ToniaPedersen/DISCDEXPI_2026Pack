@@ -1,0 +1,5 @@
+PipeOffPageConnectorReference
+=============================
+
+.. sp:internal-autoelement::
+   :element: Plant.Piping.PipeOffPageConnectorReference

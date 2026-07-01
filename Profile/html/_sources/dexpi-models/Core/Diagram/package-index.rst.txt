@@ -1,0 +1,5 @@
+Diagram
+=======
+
+.. sp:internal-autoelement::
+   :element: Core.Diagram

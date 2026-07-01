@@ -1,0 +1,5 @@
+PipeUnion
+=========
+
+.. sp:internal-autoelement::
+   :element: DiscProfile.InformationModel.PipeUnion

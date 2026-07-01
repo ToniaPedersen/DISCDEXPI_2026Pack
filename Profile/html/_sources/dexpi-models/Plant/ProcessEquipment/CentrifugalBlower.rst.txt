@@ -1,0 +1,5 @@
+CentrifugalBlower
+=================
+
+.. sp:internal-autoelement::
+   :element: Plant.ProcessEquipment.CentrifugalBlower

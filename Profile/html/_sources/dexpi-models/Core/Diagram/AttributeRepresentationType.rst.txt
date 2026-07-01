@@ -1,0 +1,5 @@
+AttributeRepresentationType
+===========================
+
+.. sp:internal-autoelement::
+   :element: Core.Diagram.AttributeRepresentationType

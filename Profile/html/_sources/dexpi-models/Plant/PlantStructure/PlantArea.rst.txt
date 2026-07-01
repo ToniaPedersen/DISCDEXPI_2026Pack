@@ -1,0 +1,5 @@
+PlantArea
+=========
+
+.. sp:internal-autoelement::
+   :element: Plant.PlantStructure.PlantArea

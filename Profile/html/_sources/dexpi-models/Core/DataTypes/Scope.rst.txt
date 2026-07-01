@@ -1,0 +1,5 @@
+Scope
+=====
+
+.. sp:internal-autoelement::
+   :element: Core.DataTypes.Scope

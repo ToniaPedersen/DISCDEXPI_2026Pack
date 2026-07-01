@@ -1,0 +1,5 @@
+ChokeValve
+==========
+
+.. sp:internal-autoelement::
+   :element: DiscProfile.InformationModel.ChokeValve

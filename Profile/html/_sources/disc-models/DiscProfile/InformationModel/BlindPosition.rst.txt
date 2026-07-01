@@ -1,0 +1,5 @@
+BlindPosition
+=============
+
+.. sp:internal-autoelement::
+   :element: DiscProfile.InformationModel.BlindPosition

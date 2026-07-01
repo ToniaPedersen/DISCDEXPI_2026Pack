@@ -1,0 +1,5 @@
+SpringLoadedGlobeSafetyValve
+============================
+
+.. sp:internal-autoelement::
+   :element: Plant.Piping.SpringLoadedGlobeSafetyValve

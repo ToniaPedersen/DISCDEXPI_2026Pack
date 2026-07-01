@@ -1,0 +1,5 @@
+ProcessSignalGeneratingFunction
+===============================
+
+.. sp:internal-autoelement::
+   :element: Plant.Instrumentation.ProcessSignalGeneratingFunction

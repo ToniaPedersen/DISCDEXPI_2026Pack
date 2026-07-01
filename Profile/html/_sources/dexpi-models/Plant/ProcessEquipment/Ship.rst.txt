@@ -1,0 +1,5 @@
+Ship
+====
+
+.. sp:internal-autoelement::
+   :element: Plant.ProcessEquipment.Ship

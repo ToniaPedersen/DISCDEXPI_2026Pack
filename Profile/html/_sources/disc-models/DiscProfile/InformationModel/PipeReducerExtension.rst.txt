@@ -1,0 +1,5 @@
+PipeReducerExtension
+====================
+
+.. sp:internal-autoelement::
+   :element: DiscProfile.InformationModel.PipeReducerExtension

@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en" data-content_root="../../../">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>ProcessColumn — DISC Profile 0.6</title>
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=b86133f3">
+    <link rel="stylesheet" type="text/css" href="../../../_static/basic_mod.css?v=9b2032db">
+    <link rel="stylesheet" type="text/css" href="../../../_static/sp.css">
+    <script src="../../../_static/documentation_options.js?v=ec806d2c"></script>
+    <script src="../../../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../_static/js/theme.js"></script>
+    <script src="../../../_static/js/petite-vue.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html">
+    <link rel="search" title="Search" href="../../../search.html">
+    <link rel="next" title="ProcessEquipment" href="ProcessEquipment.html">
+    <link rel="prev" title="PressureVessel" href="PressureVessel.html"> 
+  </head><body data-dark_mode_code_blocks="true">
+
+<div id="top_nav">
+    
+
+    <nav>
+        
+            
+        
+
+        <p id="toggle_sidebar">
+            <a href="#" title="Toggle sidebar">|||</a>
+        </p>
+        <h1><a href="../../../index.html" title="Go to homepage">DISC Profile 0.6</a></h1>
+
+        <a id="mode_toggle" href="#" @click.prevent="handleClick" :title="mode">
+    <template v-if="mode == 'light'">
+        <svg width="100%" height="100%" viewbox="0 0 79 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g id="mode_light"><rect id="Bounds" x="0" y="-0" width="78.623" height="79.049" style="fill:none;"></rect><circle cx="39.311" cy="39.524" r="15.734" style="fill:#fff;"></circle><g id="beams"><g id="beam"><path id="beam1" serif:id="beam" d="M44.212,4.901c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,-0 -4.9,2.196 -4.9,4.901l-0,9.614c-0,2.705 2.196,4.901 4.9,4.901c2.705,0 4.901,-2.196 4.901,-4.901l0,-9.614Z" style="fill:#fff;"></path></g><g id="beam2" serif:id="beam"><path id="beam3" serif:id="beam" d="M67.48,18.073c1.913,-1.912 1.913,-5.018 0,-6.931c-1.912,-1.912 -5.018,-1.912 -6.931,0l-6.798,6.799c-1.912,1.912 -1.912,5.018 0,6.931c1.913,1.912 5.018,1.912 6.931,-0l6.798,-6.799Z" style="fill:#fff;"></path></g><g id="beam4" serif:id="beam"><path id="beam5" serif:id="beam" d="M25.728,61.108c1.912,-1.913 1.912,-5.018 -0,-6.931c-1.913,-1.913 -5.019,-1.913 -6.931,-0l-6.799,6.798c-1.912,1.913 -1.912,5.019 0,6.931c1.913,1.913 5.019,1.913 6.931,0l6.799,-6.798Z" style="fill:#fff;"></path></g><g id="beam6" serif:id="beam"><path id="beam7" serif:id="beam" d="M60.682,54.177c-1.913,-1.913 -5.018,-1.913 -6.931,-0c-1.912,1.913 -1.912,5.018 0,6.931l6.798,6.798c1.913,1.913 5.019,1.913 6.931,0c1.913,-1.912 1.913,-5.018 0,-6.931l-6.798,-6.798Z" style="fill:#fff;"></path></g><g id="beam8" serif:id="beam"><path id="beam9" serif:id="beam" d="M4.901,34.623c-2.705,0 -4.901,2.196 -4.901,4.901c0,2.705 2.196,4.901 4.901,4.901l9.614,0c2.705,0 4.901,-2.196 4.901,-4.901c0,-2.705 -2.196,-4.901 -4.901,-4.901l-9.614,0Z" style="fill:#fff;"></path></g><g id="beam10" serif:id="beam"><path id="beam11" serif:id="beam" d="M44.212,64.534c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,-0 -4.9,2.196 -4.9,4.901l-0,9.614c-0,2.705 2.196,4.901 4.9,4.901c2.705,-0 4.901,-2.196 4.901,-4.901l0,-9.614Z" style="fill:#fff;"></path></g><g id="beam12" serif:id="beam"><path id="beam13" serif:id="beam" d="M18.929,11.142c-1.912,-1.912 -5.018,-1.912 -6.931,0c-1.912,1.913 -1.912,5.019 0,6.931l6.799,6.799c1.912,1.912 5.018,1.912 6.931,-0c1.912,-1.913 1.912,-5.019 -0,-6.931l-6.799,-6.799Z" style="fill:#fff;"></path></g><g id="beam14" serif:id="beam"><path id="beam15" serif:id="beam" d="M64.108,34.623c-2.705,0 -4.901,2.196 -4.901,4.901c-0,2.705 2.196,4.901 4.901,4.901l9.614,0c2.705,0 4.901,-2.196 4.901,-4.901c-0,-2.705 -2.196,-4.901 -4.901,-4.901l-9.614,0Z" style="fill:#fff;"></path></g></g></g></svg>
+    </template>
+
+    <template v-if="mode == 'dark'">
+        <svg width="100%" height="100%" viewbox="0 0 79 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g id="mode_dark"><rect id="Bounds" x="0" y="-0" width="78.623" height="79.049" style="fill:none;"></rect><circle cx="39.311" cy="39.524" r="15.734" style="fill:#fff;"></circle><g id="beams"><g id="beam"><path id="beam1" serif:id="beam" d="M44.212,14.515c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,0 -4.901,2.196 -4.901,4.901c0,2.705 2.197,4.901 4.901,4.901c2.705,0 4.901,-2.196 4.901,-4.901Z" style="fill:#fff;"></path></g><g id="beam2" serif:id="beam"><path id="beam3" serif:id="beam" d="M60.662,24.892c1.902,-1.902 1.902,-4.99 0,-6.892l-0.04,-0.039c-1.901,-1.902 -4.989,-1.902 -6.891,-0c-1.901,1.901 -1.901,4.989 0,6.891l0.04,0.04c1.902,1.901 4.989,1.901 6.891,-0Z" style="fill:#fff;"></path></g><g id="beam4" serif:id="beam"><path id="beam5" serif:id="beam" d="M25.732,61.103c1.91,-1.91 1.91,-5.011 0,-6.921l-0.009,-0.01c-1.91,-1.91 -5.012,-1.91 -6.921,-0c-1.91,1.91 -1.91,5.011 -0,6.921l0.01,0.01c1.909,1.91 5.011,1.91 6.92,-0Z" style="fill:#fff;"></path></g><g id="beam6" serif:id="beam"><path id="beam7" serif:id="beam" d="M60.672,54.167c-1.907,-1.907 -5.004,-1.907 -6.911,0l-0.02,0.02c-1.907,1.907 -1.907,5.004 0,6.911c1.907,1.907 5.004,1.907 6.911,-0l0.02,-0.02c1.907,-1.907 1.907,-5.004 0,-6.911Z" style="fill:#fff;"></path></g><g id="beam8" serif:id="beam"><path id="beam9" serif:id="beam" d="M14.52,34.623c-2.702,0 -4.896,2.194 -4.896,4.896l0,0.01c0,2.702 2.194,4.896 4.896,4.896c2.702,0 4.896,-2.194 4.896,-4.896l-0,-0.01c-0,-2.702 -2.194,-4.896 -4.896,-4.896Z" style="fill:#fff;"></path></g><g id="beam10" serif:id="beam"><path id="beam11" serif:id="beam" d="M44.212,64.534c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,-0 -4.901,2.196 -4.901,4.901c0,2.704 2.197,4.9 4.901,4.9c2.705,0 4.901,-2.196 4.901,-4.9Z" style="fill:#fff;"></path></g><g id="beam12" serif:id="beam"><path id="beam13" serif:id="beam" d="M25.73,17.943c-1.911,-1.911 -5.015,-1.911 -6.926,0l-0.005,0.005c-1.911,1.911 -1.911,5.015 0,6.926c1.911,1.911 5.015,1.911 6.926,0l0.005,-0.005c1.911,-1.911 1.911,-5.014 -0,-6.926Z" style="fill:#fff;"></path></g><g id="beam14" serif:id="beam"><path id="beam15" serif:id="beam" d="M64.098,34.623c-2.699,0 -4.891,2.192 -4.891,4.892l-0,0.019c-0,2.699 2.192,4.891 4.891,4.891c2.7,0 4.892,-2.192 4.892,-4.891l0,-0.019c0,-2.7 -2.192,-4.892 -4.892,-4.892Z" style="fill:#fff;"></path></g></g></g></svg>
+    </template>
+
+    <template v-if="mode == 'darkest'">
+        <svg width="100%" height="100%" viewbox="0 0 79 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g id="mode_darkest"><rect id="Bounds" x="0" y="-0" width="78.623" height="79.049" style="fill:none;"></rect><path d="M39.315,23.791c8.684,-0 15.734,7.05 15.734,15.733c0,8.684 -7.05,15.734 -15.734,15.734c-8.683,0 -15.733,-7.05 -15.733,-15.734c-0,-8.683 7.05,-15.733 15.733,-15.733Zm0,4.737c6.069,0 10.997,4.927 10.997,10.996c-0,6.069 -4.928,10.996 -10.997,10.996c-6.068,0 -10.996,-4.927 -10.996,-10.996c0,-6.069 4.928,-10.996 10.996,-10.996Z" style="fill:#fff;"></path><g id="beams"><g id="beam"><path id="beam1" serif:id="beam" d="M44.216,14.515c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,0 -4.9,2.196 -4.9,4.901c-0,2.705 2.196,4.901 4.9,4.901c2.705,0 4.901,-2.196 4.901,-4.901Z" style="fill:#fff;"></path></g><g id="beam2" serif:id="beam"><path id="beam3" serif:id="beam" d="M60.666,24.892c1.902,-1.902 1.902,-4.99 0,-6.892l-0.04,-0.039c-1.901,-1.902 -4.989,-1.902 -6.891,-0c-1.901,1.901 -1.901,4.989 0,6.891l0.04,0.04c1.902,1.901 4.99,1.901 6.891,-0Z" style="fill:#fff;"></path></g><g id="beam4" serif:id="beam"><path id="beam5" serif:id="beam" d="M25.737,61.103c1.909,-1.91 1.909,-5.011 -0,-6.921l-0.01,-0.01c-1.91,-1.91 -5.011,-1.91 -6.921,-0c-1.91,1.91 -1.91,5.011 -0,6.921l0.01,0.01c1.91,1.91 5.011,1.91 6.921,-0Z" style="fill:#fff;"></path></g><g id="beam6" serif:id="beam"><path id="beam7" serif:id="beam" d="M60.676,54.167c-1.907,-1.907 -5.004,-1.907 -6.911,0l-0.02,0.02c-1.907,1.907 -1.907,5.004 0,6.911c1.907,1.907 5.004,1.907 6.911,-0l0.02,-0.02c1.907,-1.907 1.907,-5.004 0,-6.911Z" style="fill:#fff;"></path></g><g id="beam8" serif:id="beam"><path id="beam9" serif:id="beam" d="M14.524,34.623c-2.702,0 -4.896,2.194 -4.896,4.896l0,0.01c0,2.702 2.194,4.896 4.896,4.896c2.702,0 4.896,-2.194 4.896,-4.896l0,-0.01c0,-2.702 -2.194,-4.896 -4.896,-4.896Z" style="fill:#fff;"></path></g><g id="beam10" serif:id="beam"><path id="beam11" serif:id="beam" d="M44.216,64.534c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,-0 -4.9,2.196 -4.9,4.901c-0,2.704 2.196,4.9 4.9,4.9c2.705,0 4.901,-2.196 4.901,-4.9Z" style="fill:#fff;"></path></g><g id="beam12" serif:id="beam"><path id="beam13" serif:id="beam" d="M25.734,17.943c-1.911,-1.911 -5.015,-1.911 -6.926,0l-0.005,0.005c-1.911,1.911 -1.911,5.015 0,6.926c1.911,1.911 5.015,1.911 6.926,0l0.005,-0.005c1.911,-1.911 1.911,-5.014 0,-6.926Z" style="fill:#fff;"></path></g><g id="beam14" serif:id="beam"><path id="beam15" serif:id="beam" d="M64.103,34.623c-2.7,0 -4.892,2.192 -4.892,4.892l-0,0.019c-0,2.699 2.192,4.891 4.892,4.891c2.699,0 4.891,-2.192 4.891,-4.891l0,-0.019c0,-2.7 -2.192,-4.892 -4.891,-4.892Z" style="fill:#fff;"></path></g></g></g></svg>
+    </template>
+</a>
+
+<script>
+(function() {
+    const LOCAL_STORAGE_KEY = 'piccoloThemeMode'
+
+    var initialMode = localStorage.getItem(LOCAL_STORAGE_KEY)
+
+    if (initialMode) {
+        // Make sure the value in local storage is valid
+        if (['light', 'dark', 'darkest'].indexOf(initialMode) == -1) {
+            initialMode = 'light'
+            localStorage.setItem(LOCAL_STORAGE_KEY, initialMode)
+        }
+    } else {
+        // Check if the client prefers dark mode
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            initialMode = 'dark'
+        } else {
+            initialMode = 'light'
+        }
+        localStorage.setItem(LOCAL_STORAGE_KEY, initialMode)
+    }
+
+    document.documentElement.dataset.mode = initialMode
+
+    PetiteVue.createApp({
+        'mode': initialMode,
+        handleClick() {
+            let currentMode = this.mode
+
+            if (currentMode == 'light') {
+                this.mode = 'dark'
+            } else if (currentMode == 'dark') {
+                this.mode = 'darkest'
+            } else if (currentMode == 'darkest') {
+                this.mode = 'light'
+            }
+
+            document.documentElement.dataset.mode = this.mode
+            localStorage.setItem(LOCAL_STORAGE_KEY, this.mode)
+
+            console.log(this.mode)
+        }
+    }).mount('#mode_toggle')
+})()
+</script>
+            <p class="mobile_search_link">
+                <a href="../../../search.html" title="Search">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 65 64" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2">
+                        <path d="M14.873 40.009c-2.315-3.943-3.642-8.532-3.642-13.429C11.231 11.91 23.141 0 37.811 0s26.58 11.91 26.58 26.58-11.91 26.58-26.58 26.58a26.44 26.44 0 0 1-14.277-4.161L9.739 62.794a3.12 3.12 0 0 1-4.413 0L.913 58.382c-1.217-1.218-1.217-3.196 0-4.413l13.96-13.96zM37.811 8.054c10.225 0 18.526 8.301 18.526 18.526s-8.301 18.526-18.526 18.526-18.526-8.301-18.526-18.526S27.586 8.054 37.811 8.054z" fill="#fff"></path>
+                    </svg>
+                </a>
+            </p>
+        
+
+        <div class="searchbox_wrapper">
+            
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+      <input type="submit" value="Go">
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+    </nav>
+</div>
+
+    
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper"><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">DEXPI Information Models</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../Builtin/model-index.html">Builtin</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Core/model-index.html">Core</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../model-index.html">Plant</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../Diagram/package-index.html">Diagram</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Enumerations/package-index.html">Enumerations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Instrumentation/package-index.html">Instrumentation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Piping/package-index.html">Piping</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../PlantModel.html">PlantModel</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../PlantStructure/package-index.html">PlantStructure</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="package-index.html">ProcessEquipment</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../Process/model-index.html">Process</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../disc-models/index.html">DISC Information Models</a></li>
+</ul>
+
+        </div>
+      </div>
+
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="processcolumn">
+<h1>ProcessColumn<a class="headerlink" href="#processcolumn" title="Link to this heading">¶</a></h1>
+<p><a class="sp-element reference internal" href="../model-index.html"><span class="doc">Plant</span></a><span class="sp-element">::</span><a class="sp-element reference internal" href="package-index.html"><span class="doc">ProcessEquipment</span></a><span class="sp-element">::</span><span class="sp-element">ProcessColumn</span></p>
+<section id="Overview">
+<h2>Overview<a class="headerlink" href="#Overview" title="Link to this heading">¶</a></h2>
+<p class="rubric">Concrete Class</p>
+<p><strong>RDL:</strong><span> </span><a class="reference external" href="http://data.posccaesar.org/rdl/RDS4316825224">PROCESS COLUMN (http://data.posccaesar.org/rdl/RDS4316825224)</a></p>
+<p><span>(</span><a class="reference external" href="../../../_images/uml-383.svg">Fullscreen Diagram</a><span>)</span></p>
+<svg xmlns:ns0="http://www.w3.org/2000/svg" width="1503.6849934895833px" viewBox="0.0 0.0 1503.6849934895833 735.3999999999999" style="max-width: 100%; background-color: white;"><style>
+            .uml-foreground-stroke {
+                stroke: black;
+                stroke-width: 1px;
+            }
+            
+            .uml-foreground-fill {
+                fill: black;
+            }
+            
+            .uml-background_color-type {
+                fill: #ffffcc;
+            }
+            
+            .uml-background_color-main_type {
+                fill: #ffff66;
+            }
+            
+            .uml-background_color-instance {
+                fill: blue;
+            }
+            
+            .uml-background_color-background {
+                fill: white;
+            }
+            
+            .uml-background_color-foreground {
+                fill: black;
+            }
+            
+            .uml-font-normal {
+                font-family: Arial;
+            }
+            
+            .uml-font-element {
+                font-family: Arial;
+            }
+            
+            .uml-fontsize-normal {
+                font-size: 10px;
+            }
+
+            .uml-fontsize-large {
+                font-size: 12px;
+            }
+            
+            .uml-source_marker-closed_arrow {
+                marker-start: url(#uml-marker-closed_arrow);
+            }
+            
+            .uml-source_marker-open_arrow {
+                marker-start: url(#uml-marker-open_arrow);
+            }
+            
+            .uml-source_marker-filled_diamond {
+                marker-start: url(#uml-marker-filled_diamond);
+            }
+
+            .uml-target_marker-closed_arrow {
+                marker-end: url(#uml-marker-closed_arrow);
+            }
+            
+            .uml-target_marker-open_arrow {
+                marker-end: url(#uml-marker-open_arrow);
+            }
+            
+            .uml-target_marker-filled_diamond {
+                marker-end: url(#uml-marker-filled_diamond);
+            }
+
+            </style><defs>
+        <marker id="uml-marker-closed_arrow" viewBox="-2 -2 14 14" refX="10" refY="5.0" markerWidth="14" markerHeight="14" orient="auto-start-reverse">
+          <path d="M 0 0 L 10 5.0 L 0 10 Z" stroke-linejoin="round" stroke-linecap="round" class="uml-foreground-stroke uml-background_color-background"></path>
+        </marker>
+        <marker id="uml-marker-open_arrow" viewBox="-2 -2 14 14" refX="10" refY="5.0" markerWidth="14" markerHeight="14" orient="auto-start-reverse">
+          <path d="M 0 0 L 10 5.0 L 0 10" stroke-linejoin="round" stroke-linecap="round" fill="none" class="uml-foreground-stroke"></path>
+        </marker>
+        <marker id="uml-marker-filled_diamond" viewBox="-2 -2 14 14" refX="10" refY="5.0" markerWidth="14" markerHeight="14" orient="auto-start-reverse">
+          <path d="M 0 5.0 L      5.0 2.0        10 5.0      5.0 8.0 Z       " stroke-linejoin="round" stroke-linecap="round" class="uml-foreground-stroke uml-background_color-foreground"></path>
+        </marker>
+      </defs><rect class="uml-background_color-type uml-foreground-stroke" x="1199.6078450520833" y="135.2" width="200.0" height="23.799999999999997"></rect><text x="1299.6078450520833" text-anchor="middle" font-size="0px" y="150.64"><a href="../../../dexpi-models/Core/ConceptualObject.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold" font-style="italic">ConceptualObject</tspan></a></text><rect class="uml-background_color-type uml-foreground-stroke" x="477.4782747395833" y="12.0" width="184.34634765625003" height="23.799999999999997"></rect><text x="569.6514485677083" text-anchor="middle" font-size="0px" y="27.439999999999998"><a href="../../../dexpi-models/Plant/PlantStructure/PlantAreaLocatedStructure.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold" font-style="italic">PlantAreaLocatedStructure</tspan></a></text><rect class="uml-background_color-type uml-foreground-stroke" x="681.8246223958333" y="12.0" width="202.08513671875002" height="23.799999999999997"></rect><text x="782.8671907552083" text-anchor="middle" font-size="0px" y="27.439999999999998"><a href="../../../dexpi-models/Plant/PlantStructure/PlantSystemLocatedStructure.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold" font-style="italic">PlantSystemLocatedStructure</tspan></a></text><rect class="uml-background_color-type uml-foreground-stroke" x="270.72138020833336" y="12.0" width="186.75689453125003" height="23.799999999999997"></rect><text x="364.0998274739584" text-anchor="middle" font-size="0px" y="27.439999999999998"><a href="../../../dexpi-models/Plant/PlantStructure/PlantTrainLocatedStructure.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold" font-style="italic">PlantTrainLocatedStructure</tspan></a></text><rect class="uml-background_color-type uml-foreground-stroke" x="604.500390625" y="135.2" width="150.0" height="23.799999999999997"></rect><text x="679.500390625" text-anchor="middle" font-size="0px" y="150.64"><a href="../../../dexpi-models/Plant/PlantStructure/TechnicalItem.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold" font-style="italic">TechnicalItem</tspan></a></text><rect class="uml-background_color-type uml-foreground-stroke" x="533.23841796875" y="268.4" width="202.07095703125003" height="23.799999999999997"></rect><text x="634.273896484375" text-anchor="middle" font-size="0px" y="283.84"><a href="../../../dexpi-models/Plant/PlantStructure/TechnicalItemParentStructure.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold" font-style="italic">TechnicalItemParentStructure</tspan></a></text><rect class="uml-background_color-type uml-foreground-stroke" x="1127.4646809895835" y="268.4" width="112.48369140625002" height="23.799999999999997"></rect><text x="1183.7065266927084" text-anchor="middle" font-size="0px" y="283.84"><a href="../../../dexpi-models/Plant/ProcessEquipment/ChamberOwner.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold" font-style="italic">ChamberOwner</tspan></a></text><rect class="uml-background_color-type uml-foreground-stroke" x="755.309375" y="268.4" width="100.0" height="23.799999999999997"></rect><text x="805.309375" text-anchor="middle" font-size="0px" y="283.84"><a href="../../../dexpi-models/Plant/ProcessEquipment/NozzleOwner.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold" font-style="italic">NozzleOwner</tspan></a></text><rect class="uml-background_color-type uml-foreground-stroke" x="750.309375" y="381.59999999999997" width="400.0" height="23.799999999999997"></rect><text x="950.309375" text-anchor="middle" font-size="0px" y="397.03999999999996"><a href="../../../dexpi-models/Plant/ProcessEquipment/ProcessEquipment.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold" font-style="italic">ProcessEquipment</tspan></a></text><rect class="uml-background_color-type uml-foreground-stroke" x="875.309375" y="268.4" width="150.0" height="23.799999999999997"></rect><text x="950.309375" text-anchor="middle" font-size="0px" y="283.84"><a href="../../../dexpi-models/Plant/ProcessEquipment/TaggedPlantItem.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold" font-style="italic">TaggedPlantItem</tspan></a></text><rect class="uml-background_color-type uml-foreground-stroke" x="1124.4088802083334" y="662.7999999999998" width="135.0506640625" height="23.799999999999997"></rect><text x="1191.9342122395833" text-anchor="middle" font-size="0px" y="678.2399999999999"><a href="../../../dexpi-models/Plant/ProcessEquipment/TransmissionDriver.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold" font-style="italic">TransmissionDriver</tspan></a></text><rect class="uml-background_color-type uml-foreground-stroke" x="1258.5992838541667" y="12.0" width="148.6837890625" height="23.799999999999997"></rect><text x="1332.9411783854168" text-anchor="middle" font-size="0px" y="27.439999999999998"><a href="../../../dexpi-models/Core/Diagram/AttributeRepresentation.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold">AttributeRepresentation</tspan></a></text><rect class="uml-background_color-type uml-foreground-stroke" x="1102.3871744791668" y="12.0" width="136.212109375" height="23.799999999999997"></rect><text x="1170.4932291666669" text-anchor="middle" font-size="0px" y="27.439999999999998"><a href="../../../dexpi-models/Core/Diagram/RepresentationGroup.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold">RepresentationGroup</tspan></a></text><rect class="uml-background_color-type uml-foreground-stroke" x="1417.9916341145833" y="268.4" width="50.0" height="23.799999999999997"></rect><text x="1442.9916341145833" text-anchor="middle" font-size="0px" y="283.84"><a href="../../../dexpi-models/Core/Note.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold">Note</tspan></a></text><rect class="uml-background_color-type uml-foreground-stroke" x="1259.9483723958333" y="268.4" width="119.3189453125" height="23.799999999999997"></rect><text x="1319.6078450520833" text-anchor="middle" font-size="0px" y="283.84"><a href="../../../dexpi-models/Core/PersistentIdentifier.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold">PersistentIdentifier</tspan></a></text><rect class="uml-background_color-type uml-foreground-stroke" x="1057.4646809895835" y="268.4" width="50.0" height="23.799999999999997"></rect><text x="1082.4646809895835" text-anchor="middle" font-size="0px" y="283.84"><a href="../../../dexpi-models/Core/Role.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold">Role</tspan></a></text><rect class="uml-background_color-type uml-foreground-stroke" x="878.595703125" y="135.2" width="76.038671875" height="23.799999999999997"></rect><text x="916.6150390625" text-anchor="middle" font-size="0px" y="150.64"><a href="../../../dexpi-models/Plant/PlantModel.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold">PlantModel</tspan></a></text><rect class="uml-background_color-type uml-foreground-stroke" x="504.9424869791667" y="135.2" width="67.969140625" height="23.799999999999997"></rect><text x="538.9270572916666" text-anchor="middle" font-size="0px" y="150.64"><a href="../../../dexpi-models/Plant/PlantStructure/PlantArea.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold">PlantArea</tspan></a></text><rect class="uml-background_color-type uml-foreground-stroke" x="774.500390625" y="135.2" width="84.0953125" height="23.799999999999997"></rect><text x="816.5480468750001" text-anchor="middle" font-size="0px" y="150.64"><a href="../../../dexpi-models/Plant/PlantStructure/PlantSystem.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold">PlantSystem</tspan></a></text><rect class="uml-background_color-type uml-foreground-stroke" x="297.8934049479168" y="135.2" width="70.160546875" height="23.799999999999997"></rect><text x="332.9736783854168" text-anchor="middle" font-size="0px" y="150.64"><a href="../../../dexpi-models/Plant/PlantStructure/PlantTrain.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold">PlantTrain</tspan></a></text><rect class="uml-background_color-type uml-foreground-stroke" x="1170.309375" y="381.59999999999997" width="64.2888671875" height="23.799999999999997"></rect><text x="1202.45380859375" text-anchor="middle" font-size="0px" y="397.03999999999996"><a href="../../../dexpi-models/Plant/ProcessEquipment/Chamber.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold">Chamber</tspan></a></text><rect class="uml-background_color-type uml-foreground-stroke" x="279.64863281249995" y="524.8" width="102.4322265625" height="23.799999999999997"></rect><text x="330.86474609374994" text-anchor="middle" font-size="0px" y="540.24"><a href="../../../dexpi-models/Plant/ProcessEquipment/DryingChamber.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold">DryingChamber</tspan></a></text><rect class="uml-background_color-type uml-foreground-stroke" x="159.38847656250005" y="524.8" width="100.26015625000001" height="23.799999999999997"></rect><text x="209.51855468750006" text-anchor="middle" font-size="0px" y="540.24"><a href="../../../dexpi-models/Plant/ProcessEquipment/EquipmentVent.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold">EquipmentVent</tspan></a></text><rect class="uml-background_color-type uml-foreground-stroke" x="12.0" y="524.8" width="127.3884765625" height="23.799999999999997"></rect><text x="75.69423828125" text-anchor="middle" font-size="0px" y="540.24"><a href="../../../dexpi-models/Plant/ProcessEquipment/MotorAsComponent.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold">MotorAsComponent</tspan></a></text><rect class="uml-background_color-type uml-foreground-stroke" x="925.309375" y="524.8" width="50.0" height="23.799999999999997"></rect><text x="950.309375" text-anchor="middle" font-size="0px" y="540.24"><a href="../../../dexpi-models/Plant/ProcessEquipment/Mount.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold">Mount</tspan></a></text><rect class="uml-background_color-type uml-foreground-stroke" x="679.96171875" y="381.59999999999997" width="50.34765625" height="23.799999999999997"></rect><text x="705.135546875" text-anchor="middle" font-size="0px" y="397.03999999999996"><a href="../../../dexpi-models/Plant/ProcessEquipment/Nozzle.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold">Nozzle</tspan></a></text><rect class="uml-background_color-main_type uml-foreground-stroke" x="402.08085937500005" y="524.8" width="503.228515625" height="48.599999999999994"></rect><text x="653.6951171875" text-anchor="middle" font-size="0px" y="540.24"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold">ProcessColumn</tspan></text><polyline class="uml-foreground-stroke" points="402.08085937500005,548.5999999999999 905.309375,548.5999999999999" fill="none"></polyline><text x="407.08085937500005" font-size="0px" y="565.04"><a href="../../../dexpi-models/Plant/ProcessEquipment/ProcessColumn.html#sp:plant.processequipment.processcolumn.nominalcapacityvolume"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">NominalCapacityVolume</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> :</tspan></text><text x="547.30546875" font-size="0px" y="565.04"><a href="../../../dexpi-models/Builtin/Undefined.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Undefined</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> | </tspan><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">&lt;</tspan><a href="../../../dexpi-models/Core/PhysicalQuantities/PhysicalQuantity.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">PhysicalQuantity</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> with </tspan><a href="../../../dexpi-models/Core/PhysicalQuantities/PhysicalQuantity.html#sp:core.physicalquantities.physicalquantity.unittype"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">UnitType</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> → </tspan><a href="../../../dexpi-models/Core/PhysicalQuantities/VolumeUnit.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">VolumeUnit</tspan></a><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">&gt;</tspan><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large"> [0..1]</tspan></text><rect class="uml-background_color-type uml-foreground-stroke" x="1306.9646484375" y="524.8" width="84.830078125" height="23.799999999999997"></rect><text x="1349.3796875" text-anchor="middle" font-size="0px" y="540.24"><a href="../../../dexpi-models/Plant/ProcessEquipment/SprayNozzle.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold">SprayNozzle</tspan></a></text><rect class="uml-background_color-type uml-foreground-stroke" x="569.8109375" y="662.7999999999998" width="167.76835937500002" height="23.799999999999997"></rect><text x="653.6951171875" text-anchor="middle" font-size="0px" y="678.2399999999999"><a href="../../../dexpi-models/Plant/ProcessEquipment/SubTaggedColumnSection.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold">SubTaggedColumnSection</tspan></a></text><rect class="uml-background_color-type uml-foreground-stroke" x="1125.6876302083333" y="533.0666666666666" width="132.4931640625" height="23.799999999999997"></rect><text x="1191.9342122395833" text-anchor="middle" font-size="0px" y="548.5066666666667"><a href="../../../dexpi-models/Plant/ProcessEquipment/TransmissionSystem.html"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold">TransmissionSystem</tspan></a></text><polyline class="uml-foreground-stroke uml-source_marker-closed_arrow" points="1239.6078450520833,159.0 1239.6078450520833,184.79999999999998 987.809375,184.79999999999998 987.809375,213.2 987.809375,214.2 987.809375,268.4" fill="none"></polyline><polyline class="uml-foreground-stroke uml-source_marker-closed_arrow" points="600.37583984375,35.8 600.37583984375,80.0 600.37583984375,81.0 600.37583984375,99.39999999999999 679.500390625,99.39999999999999 679.500390625,135.2" fill="none"></polyline><polyline class="uml-foreground-stroke uml-source_marker-closed_arrow" points="749.1863346354166,35.8 749.1863346354166,61.599999999999994 717.000390625,61.599999999999994 717.000390625,80.0 717.000390625,81.0 717.000390625,135.2" fill="none"></polyline><polyline class="uml-foreground-stroke uml-source_marker-closed_arrow" points="395.2259765625,35.8 395.2259765625,80.0 395.2259765625,81.0 395.2259765625,109.39999999999999 642.000390625,109.39999999999999 642.000390625,135.2" fill="none"></polyline><polyline class="uml-foreground-stroke uml-source_marker-closed_arrow" points="704.500390625,159.0 704.500390625,213.2 704.500390625,214.2 704.500390625,242.59999999999997 912.809375,242.59999999999997 912.809375,268.4" fill="none"></polyline><polyline class="uml-foreground-stroke uml-source_marker-closed_arrow" points="1164.9592447916668,292.2 1164.9592447916666,317.99999999999994 1050.309375,317.99999999999994 1050.309375,336.3999999999999 1050.309375,337.3999999999999 1050.309375,381.59999999999997" fill="none"></polyline><polyline class="uml-foreground-stroke uml-source_marker-closed_arrow" points="821.9760416666667,292.2 821.9760416666667,336.3999999999999 821.9760416666667,337.3999999999999 821.9760416666667,355.79999999999995 850.309375,355.79999999999995 850.309375,381.59999999999997" fill="none"></polyline><polyline class="uml-foreground-stroke uml-source_marker-closed_arrow" points="910.309375,405.4 910.309375,461.19999999999993 653.6951171875,461.19999999999993 653.6951171875,479.5999999999999 653.6951171875,480.5999999999999 653.6951171875,524.8" fill="none"></polyline><polyline class="uml-foreground-stroke uml-source_marker-closed_arrow" points="950.309375,292.2 950.309375,336.3999999999999 950.309375,337.3999999999999 950.309375,381.59999999999997" fill="none"></polyline><polyline class="uml-foreground-stroke uml-source_marker-closed_arrow" points="1191.9342122395833,686.5999999999998 1191.9342122395835,722.3999999999999 1191.60087890625,722.3999999999999 1191.60087890625,712.3999999999999 985.309375,712.3999999999999 985.309375,431.19999999999993 990.309375,431.19999999999993 990.309375,405.4" fill="none"></polyline><rect class="uml-background_color-background " x="1037.1140950520835" y="204.79999999999998" width="90.701171875" height="17.799999999999997"></rect><text x="1082.4646809895835" text-anchor="middle" font-size="0px" y="217.23999999999998"><a href="../../../dexpi-models/Core/ConceptualObject.html#sp:core.conceptualobject.performedroles"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">PerformedRoles</tspan></a></text><polyline class="uml-foreground-stroke" points="1279.6078450520833,159.0 1279.6078450520833,194.79999999999998 1082.4646809895835,194.79999999999998 1082.4646809895835,204.79999999999998" fill="none"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="1082.4646809895835,222.59999999999997 1082.4646809895835,268.4" fill="none"></polyline><text x="1287.6078450520833" font-size="0px" y="171.2"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</tspan></text><text x="1090.4646809895835" font-size="0px" y="262.79999999999995"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</tspan></text><rect class="uml-background_color-background " x="1264.9174153645833" y="204.79999999999998" width="109.380859375" height="17.799999999999997"></rect><text x="1319.6078450520833" text-anchor="middle" font-size="0px" y="217.23999999999998"><a href="../../../dexpi-models/Core/ConceptualObject.html#sp:core.conceptualobject.persistentidentifiers"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">PersistentIdentifiers</tspan></a></text><polyline class="uml-foreground-stroke uml-source_marker-filled_diamond" points="1319.6078450520833,159.0 1319.6078450520833,204.79999999999998" fill="none"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="1319.6078450520833,222.59999999999997 1319.6078450520833,268.4" fill="none"></polyline><text x="1327.6078450520833" font-size="0px" y="171.2"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">0..1</tspan></text><text x="1327.6078450520833" font-size="0px" y="262.79999999999995"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</tspan></text><rect class="uml-background_color-background " x="1394.2982747395833" y="204.79999999999998" width="97.38671875" height="17.799999999999997"></rect><text x="1442.9916341145833" text-anchor="middle" font-size="0px" y="217.23999999999998"><a href="../../../dexpi-models/Core/ConceptualObject.html#sp:core.conceptualobject.referencednotes"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">ReferencedNotes</tspan></a></text><polyline class="uml-foreground-stroke" points="1359.6078450520833,159.0 1359.6078450520833,184.79999999999998 1442.9916341145833,184.79999999999998 1442.9916341145833,204.79999999999998" fill="none"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="1442.9916341145833,222.59999999999997 1442.9916341145833,268.4" fill="none"></polyline><text x="1367.6078450520833" font-size="0px" y="171.2"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</tspan></text><text x="1450.9916341145833" font-size="0px" y="262.79999999999995"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</tspan></text><rect class="uml-background_color-background " x="1313.6003580729166" y="71.6" width="38.681640625" height="17.799999999999997"></rect><text x="1332.9411783854166" text-anchor="middle" font-size="0px" y="84.03999999999999"><a href="../../../dexpi-models/Core/Diagram/AttributeRepresentation.html#sp:core.diagram.attributerepresentation.object"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Object</tspan></a></text><polyline class="uml-foreground-stroke" points="1332.9411783854168,35.8 1332.9411783854166,71.6" fill="none"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="1332.9411783854166,89.39999999999999 1332.9411783854166,135.2" fill="none"></polyline><text x="1340.9411783854166" font-size="0px" y="48.0"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</tspan></text><rect class="uml-background_color-background " x="1137.8106119791667" y="71.6" width="65.365234375" height="17.799999999999997"></rect><text x="1170.4932291666667" text-anchor="middle" font-size="0px" y="84.03999999999999"><a href="../../../dexpi-models/Core/Diagram/RepresentationGroup.html#sp:core.diagram.representationgroup.represents"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Represents</tspan></a></text><polyline class="uml-foreground-stroke" points="1170.4932291666669,35.8 1170.4932291666667,71.6" fill="none"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="1170.4932291666667,89.39999999999999 1170.4932291666667,99.39999999999999 1266.27451171875,99.39999999999999 1266.27451171875,135.2" fill="none"></polyline><text x="1178.4932291666667" font-size="0px" y="48.0"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</tspan></text><rect class="uml-background_color-background " x="865.920703125" y="204.79999999999998" width="101.388671875" height="17.799999999999997"></rect><text x="916.6150390625" text-anchor="middle" font-size="0px" y="217.23999999999998"><a href="../../../dexpi-models/Plant/PlantModel.html#sp:plant.plantmodel.taggedplantitems"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">TaggedPlantItems</tspan></a></text><polyline class="uml-foreground-stroke uml-source_marker-filled_diamond" points="916.6150390625,159.0 916.6150390625,204.79999999999998" fill="none"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="916.6150390625,222.59999999999997 916.6150390625,232.59999999999997 950.309375,232.59999999999997 950.309375,268.4" fill="none"></polyline><text x="924.6150390625" font-size="0px" y="171.2"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">0..1</tspan></text><text x="958.309375" font-size="0px" y="262.79999999999995"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</tspan></text><rect class="uml-background_color-background " x="510.57744791666664" y="71.6" width="56.69921875" height="17.799999999999997"></rect><text x="538.9270572916666" text-anchor="middle" font-size="0px" y="84.03999999999999"><a href="../../../dexpi-models/Plant/PlantStructure/PlantAreaLocatedStructure.html#sp:plant.plantstructure.plantarealocatedstructure.plantarea"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">PlantArea</tspan></a></text><polyline class="uml-foreground-stroke" points="538.9270572916666,35.8 538.9270572916666,71.6" fill="none"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="538.9270572916666,89.39999999999999 538.9270572916666,135.2" fill="none"></polyline><text x="546.9270572916666" font-size="0px" y="48.0"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</tspan></text><text x="546.9270572916666" font-size="0px" y="129.6"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">0..1</tspan></text><rect class="uml-background_color-background " x="780.868359375" y="71.6" width="71.359375" height="17.799999999999997"></rect><text x="816.548046875" text-anchor="middle" font-size="0px" y="84.03999999999999"><a href="../../../dexpi-models/Plant/PlantStructure/PlantSystemLocatedStructure.html#sp:plant.plantstructure.plantsystemlocatedstructure.plantsystem"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">PlantSystem</tspan></a></text><polyline class="uml-foreground-stroke" points="816.548046875,35.8 816.548046875,71.6" fill="none"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="816.548046875,89.39999999999999 816.5480468750001,135.2" fill="none"></polyline><text x="824.548046875" font-size="0px" y="48.0"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</tspan></text><text x="824.548046875" font-size="0px" y="129.6"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">0..1</tspan></text><rect class="uml-background_color-background " x="303.62797526041675" y="71.6" width="58.69140625" height="17.799999999999997"></rect><text x="332.97367838541675" text-anchor="middle" font-size="0px" y="84.03999999999999"><a href="../../../dexpi-models/Plant/PlantStructure/PlantTrainLocatedStructure.html#sp:plant.plantstructure.planttrainlocatedstructure.planttrain"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">PlantTrain</tspan></a></text><polyline class="uml-foreground-stroke" points="332.9736783854167,35.8 332.97367838541675,71.6" fill="none"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="332.97367838541675,89.39999999999999 332.9736783854168,135.2" fill="none"></polyline><text x="340.97367838541663" font-size="0px" y="48.0"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</tspan></text><text x="340.97367838541675" font-size="0px" y="129.6"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">0..1</tspan></text><rect class="uml-background_color-background " x="590.253388671875" y="204.79999999999998" width="88.041015625" height="17.799999999999997"></rect><text x="634.273896484375" text-anchor="middle" font-size="0px" y="217.23999999999998"><a href="../../../dexpi-models/Plant/PlantStructure/TechnicalItem.html#sp:plant.plantstructure.technicalitem.parentstructure"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">ParentStructure</tspan></a></text><polyline class="uml-foreground-stroke" points="654.500390625,159.0 654.500390625,184.79999999999998 634.273896484375,184.79999999999998 634.273896484375,204.79999999999998" fill="none"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="634.273896484375,222.59999999999997 634.273896484375,268.4" fill="none"></polyline><text x="662.500390625" font-size="0px" y="171.2"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</tspan></text><text x="642.273896484375" font-size="0px" y="262.79999999999995"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">0..1</tspan></text><rect class="uml-background_color-background " x="1172.77705078125" y="327.99999999999994" width="59.353515625" height="17.799999999999997"></rect><text x="1202.45380859375" text-anchor="middle" font-size="0px" y="340.43999999999994"><a href="../../../dexpi-models/Plant/ProcessEquipment/ChamberOwner.html#sp:plant.processequipment.chamberowner.chambers"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Chambers</tspan></a></text><polyline class="uml-foreground-stroke uml-source_marker-filled_diamond" points="1202.4538085937502,292.2 1202.45380859375,327.99999999999994" fill="none"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="1202.45380859375,345.79999999999995 1202.45380859375,381.59999999999997" fill="none"></polyline><text x="1210.45380859375" font-size="0px" y="304.4"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">0..1</tspan></text><text x="1210.45380859375" font-size="0px" y="375.99999999999994"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</tspan></text><rect class="uml-background_color-background " x="681.795703125" y="327.99999999999994" width="46.6796875" height="17.799999999999997"></rect><text x="705.135546875" text-anchor="middle" font-size="0px" y="340.43999999999994"><a href="../../../dexpi-models/Plant/ProcessEquipment/NozzleOwner.html#sp:plant.processequipment.nozzleowner.nozzles"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Nozzles</tspan></a></text><polyline class="uml-foreground-stroke uml-source_marker-filled_diamond" points="788.6427083333334,292.2 788.6427083333334,317.99999999999994 705.135546875,317.99999999999994 705.135546875,327.99999999999994" fill="none"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="705.135546875,345.79999999999995 705.135546875,381.59999999999997" fill="none"></polyline><text x="796.6427083333334" font-size="0px" y="304.4"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">0..1</tspan></text><text x="713.135546875" font-size="0px" y="375.99999999999994"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</tspan></text><rect class="uml-background_color-background " x="608.0076171875" y="609.1999999999999" width="91.375" height="17.799999999999997"></rect><text x="653.6951171875" text-anchor="middle" font-size="0px" y="621.64"><a href="../../../dexpi-models/Plant/ProcessEquipment/ProcessColumn.html#sp:plant.processequipment.processcolumn.columnsections"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">ColumnSections</tspan></a></text><polyline class="uml-foreground-stroke uml-source_marker-filled_diamond" points="653.6951171875,573.4 653.6951171875,609.1999999999999" fill="none"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="653.6951171875,626.9999999999999 653.6951171875,662.7999999999998" fill="none"></polyline><text x="661.6951171875" font-size="0px" y="585.6"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">0..1</tspan></text><text x="661.6951171875" font-size="0px" y="657.1999999999999"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</tspan></text><rect class="uml-background_color-background " x="1137.666796875" y="471.19999999999993" width="152.69921875" height="17.799999999999997"></rect><text x="1214.01640625" text-anchor="middle" font-size="0px" y="483.63999999999993"><a href="../../../dexpi-models/Plant/ProcessEquipment/ProcessEquipment.html#sp:plant.processequipment.processequipment.drivingtransmissionsystem"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">DrivingTransmissionSystem</tspan></a></text><polyline class="uml-foreground-stroke" points="1070.309375,405.4 1070.309375,441.19999999999993 1214.01640625,441.19999999999993 1214.01640625,471.19999999999993" fill="none"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="1214.01640625,488.99999999999994 1214.01640625,533.0666666666666" fill="none"></polyline><text x="1078.309375" font-size="0px" y="417.59999999999997"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">0..1</tspan></text><text x="1222.01640625" font-size="0px" y="527.4666666666667"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">0..1</tspan></text><rect class="uml-background_color-background " x="283.85009765625" y="471.19999999999993" width="94.029296875" height="17.799999999999997"></rect><text x="330.86474609375" text-anchor="middle" font-size="0px" y="483.63999999999993"><a href="../../../dexpi-models/Plant/ProcessEquipment/ProcessEquipment.html#sp:plant.processequipment.processequipment.dryingchambers"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">DryingChambers</tspan></a></text><polyline class="uml-foreground-stroke uml-source_marker-filled_diamond" points="870.309375,405.4 870.309375,451.19999999999993 330.86474609375,451.19999999999993 330.86474609375,471.19999999999993" fill="none"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="330.86474609375,488.99999999999994 330.86474609374994,524.8" fill="none"></polyline><text x="878.309375" font-size="0px" y="417.59999999999997"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">0..1</tspan></text><text x="338.86474609375" font-size="0px" y="519.1999999999999"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</tspan></text><rect class="uml-background_color-background " x="55.35732421874991" y="471.19999999999993" width="40.673828125" height="17.799999999999997"></rect><text x="75.69423828124991" text-anchor="middle" font-size="0px" y="483.63999999999993"><a href="../../../dexpi-models/Plant/ProcessEquipment/ProcessEquipment.html#sp:plant.processequipment.processequipment.motors"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Motors</tspan></a></text><polyline class="uml-foreground-stroke uml-source_marker-filled_diamond" points="790.309375,405.4 790.309375,431.19999999999993 75.69423828124991,431.19999999999993 75.69423828124991,471.19999999999993" fill="none"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="75.69423828124991,488.99999999999994 75.69423828125,524.8" fill="none"></polyline><text x="798.309375" font-size="0px" y="417.59999999999997"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">0..1</tspan></text><text x="83.69423828124991" font-size="0px" y="519.1999999999999"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</tspan></text><rect class="uml-background_color-background " x="928.63359375" y="471.19999999999993" width="43.3515625" height="17.799999999999997"></rect><text x="950.309375" text-anchor="middle" font-size="0px" y="483.63999999999993"><a href="../../../dexpi-models/Plant/ProcessEquipment/ProcessEquipment.html#sp:plant.processequipment.processequipment.mounts"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Mounts</tspan></a></text><polyline class="uml-foreground-stroke uml-source_marker-filled_diamond" points="950.309375,405.4 950.309375,471.19999999999993" fill="none"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="950.309375,488.99999999999994 950.309375,524.8" fill="none"></polyline><text x="958.309375" font-size="0px" y="417.59999999999997"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">0..1</tspan></text><text x="958.309375" font-size="0px" y="519.1999999999999"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</tspan></text><rect class="uml-background_color-background " x="1310.366015625" y="471.19999999999993" width="78.02734375" height="17.799999999999997"></rect><text x="1349.3796875" text-anchor="middle" font-size="0px" y="483.63999999999993"><a href="../../../dexpi-models/Plant/ProcessEquipment/ProcessEquipment.html#sp:plant.processequipment.processequipment.spraynozzles"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">SprayNozzles</tspan></a></text><polyline class="uml-foreground-stroke uml-source_marker-filled_diamond" points="1110.309375,405.4 1110.309375,431.19999999999993 1349.3796875,431.19999999999993 1349.3796875,471.19999999999993" fill="none"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="1349.3796875,488.99999999999994 1349.3796875,524.8" fill="none"></polyline><text x="1118.309375" font-size="0px" y="417.59999999999997"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">0..1</tspan></text><text x="1357.3796875" font-size="0px" y="519.1999999999999"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</tspan></text><rect class="uml-background_color-background " x="996.309375" y="471.19999999999993" width="121.357421875" height="17.799999999999997"></rect><text x="1056.9880859375" text-anchor="middle" font-size="0px" y="483.63999999999993"><a href="../../../dexpi-models/Plant/ProcessEquipment/ProcessEquipment.html#sp:plant.processequipment.processequipment.transmissionsystems"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">TransmissionSystems</tspan></a></text><polyline class="uml-foreground-stroke uml-source_marker-filled_diamond" points="1030.309375,405.4 1030.309375,431.19999999999993 1056.9880859375,431.19999999999993 1056.9880859375,471.19999999999993" fill="none"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="1056.9880859375,488.99999999999994 1056.9880859375,498.99999999999994 1169.8520182291668,498.99999999999994 1169.8520182291666,533.0666666666666" fill="none"></polyline><text x="1038.309375" font-size="0px" y="417.59999999999997"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">0..1</tspan></text><text x="1177.8520182291668" font-size="0px" y="527.4666666666667"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</tspan></text><rect class="uml-background_color-background " x="192.17578125" y="471.19999999999993" width="34.685546875" height="17.799999999999997"></rect><text x="209.5185546875" text-anchor="middle" font-size="0px" y="483.63999999999993"><a href="../../../dexpi-models/Plant/ProcessEquipment/ProcessEquipment.html#sp:plant.processequipment.processequipment.vents"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Vents</tspan></a></text><polyline class="uml-foreground-stroke uml-source_marker-filled_diamond" points="830.309375,405.4 830.309375,441.19999999999993 209.5185546875,441.19999999999993 209.5185546875,471.19999999999993" fill="none"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="209.5185546875,488.99999999999994 209.51855468750006,524.8" fill="none"></polyline><text x="838.309375" font-size="0px" y="417.59999999999997"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">0..1</tspan></text><text x="217.5185546875" font-size="0px" y="519.1999999999999"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</tspan></text><rect class="uml-background_color-background " x="1173.9351888020833" y="609.1999999999999" width="35.998046875" height="17.799999999999997"></rect><text x="1191.9342122395833" text-anchor="middle" font-size="0px" y="621.64"><a href="../../../dexpi-models/Plant/ProcessEquipment/TransmissionSystem.html#sp:plant.processequipment.transmissionsystem.driver"><tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Driver</tspan></a></text><polyline class="uml-foreground-stroke" points="1191.9342122395833,556.8666666666666 1191.9342122395833,609.1999999999999" fill="none"></polyline><polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="1191.9342122395833,626.9999999999999 1191.9342122395833,662.7999999999998" fill="none"></polyline><text x="1199.9342122395833" font-size="0px" y="569.0666666666666"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">0..1</tspan></text><text x="1199.9342122395833" font-size="0px" y="657.1999999999999"><tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">0..1</tspan></text></svg><p class="rubric">Supertypes</p>
+<ul class="simple">
+<li><p><a class="sp-element reference internal" href="ProcessEquipment.html"><span class="doc">ProcessEquipment</span></a></p></li>
+</ul>
+</section>
+<section id="Members">
+<h2>Members<a class="headerlink" href="#Members" title="Link to this heading">¶</a></h2>
+<section id="member-list-section-Composition Properties">
+<h3>Composition Properties<a class="headerlink" href="#member-list-section-Composition%20Properties" title="Link to this heading">¶</a></h3>
+</section>
+<table class="docutils align-left">
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Multiplicity</p></th>
+<th class="head"><p>Type</p></th>
+<th class="head"><p>Ordered</p></th>
+<th class="head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="#sp:plant.processequipment.processcolumn.columnsections"><span class="std std-ref">ColumnSections</span></a></p></td>
+<td><p>*</p></td>
+<td><p><a class="sp-element reference internal" href="SubTaggedColumnSection.html"><span class="doc">SubTaggedColumnSection</span></a></p></td>
+<td><p>no</p></td>
+<td><p>The column sections of the <span class="sp-element">ProcessColumn</span>.</p></td>
+</tr>
+</tbody>
+</table>
+<section id="member-list-section-Data Properties">
+<h3>Data Properties<a class="headerlink" href="#member-list-section-Data%20Properties" title="Link to this heading">¶</a></h3>
+</section>
+<table class="docutils align-left">
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Multiplicity</p></th>
+<th class="head"><p>Type</p></th>
+<th class="head"><p>Ordered</p></th>
+<th class="head"><p>Unique</p></th>
+<th class="head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="#sp:plant.processequipment.processcolumn.nominalcapacityvolume"><span class="std std-ref">NominalCapacityVolume</span></a></p></td>
+<td><p>0..1</p></td>
+<td><p><a class="sp-element reference internal" href="../../Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><span>&lt;</span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/PhysicalQuantity.html"><span class="doc">PhysicalQuantity</span></a><span> with </span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/PhysicalQuantity.html#sp:core.physicalquantities.physicalquantity.unittype"><span class="std std-ref">UnitType</span></a><span> → </span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/VolumeUnit.html"><span class="doc">VolumeUnit</span></a><span>&gt;</span></p></td>
+<td><p>no</p></td>
+<td><p>no</p></td>
+<td><p>The nominal volumetric capacity of the <a class="sp-element reference internal" href="#"><span class="doc">ProcessColumn</span></a>.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="sp:plant.processequipment.processcolumn.columnsections">
+<h2>ColumnSections<a class="headerlink" href="#sp:plant.processequipment.processcolumn.columnsections" title="Link to this heading">¶</a></h2>
+<p class="rubric">Composition Property</p>
+<p>The column sections of the <span class="sp-element">ProcessColumn</span>.</p>
+<p><strong>Type:</strong><span> </span><a class="sp-element reference internal" href="SubTaggedColumnSection.html"><span class="doc">SubTaggedColumnSection</span></a></p>
+<p><strong>Multiplicity:</strong><span> </span><span>*</span></p>
+<p><strong>Ordered:</strong><span> </span><span>no</span></p>
+</section>
+<section id="sp:plant.processequipment.processcolumn.nominalcapacityvolume">
+<h2>NominalCapacityVolume<a class="headerlink" href="#sp:plant.processequipment.processcolumn.nominalcapacityvolume" title="Link to this heading">¶</a></h2>
+<p class="rubric">Data Property</p>
+<p>The nominal volumetric capacity of the <a class="sp-element reference internal" href="#"><span class="doc">ProcessColumn</span></a>.</p>
+<p><strong>Type:</strong><span> </span><a class="sp-element reference internal" href="../../Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><span>&lt;</span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/PhysicalQuantity.html"><span class="doc">PhysicalQuantity</span></a><span> with </span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/PhysicalQuantity.html#sp:core.physicalquantities.physicalquantity.unittype"><span class="std std-ref">UnitType</span></a><span> → </span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/VolumeUnit.html"><span class="doc">VolumeUnit</span></a><span>&gt;</span></p>
+<p><strong>Multiplicity:</strong><span> </span><span>0..1</span></p>
+<p><strong>Ordered:</strong><span> </span><span>no</span></p>
+<p><strong>Unique:</strong><span> </span><span>no</span></p>
+<p><strong>RDL:</strong><span> </span><a class="reference external" href="http://sandbox.dexpi.org/rdl/NominalCapacityVolume">NOMINAL CAPACITY VOLUME (http://sandbox.dexpi.org/rdl/NominalCapacityVolume)</a></p>
+<section id="sp:plant.processequipment.processcolumn.nominalcapacityvolume-example">
+<h3>Example<a class="headerlink" href="#sp:plant.processequipment.processcolumn.nominalcapacityvolume-example" title="Link to this heading">¶</a></h3>
+<p class="sp-dense"><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/PhysicalQuantity.html"><span class="doc">PhysicalQuantity</span></a><span>(</span></p>
+<p class="sp-dense"><span>     </span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/PhysicalQuantity.html#sp:core.physicalquantities.physicalquantity.unit"><span class="std std-ref">Unit</span></a><span> = </span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/VolumeUnit.html#sp:core.physicalquantities.volumeunit.metrecubed"><span class="std std-ref">MetreCubed</span></a><span>,</span></p>
+<p class="sp-dense"><span>     </span><a class="sp-element reference internal" href="../../Core/PhysicalQuantities/PhysicalQuantity.html#sp:core.physicalquantities.physicalquantity.value"><span class="std std-ref">Value</span></a><span> = </span><code class="docutils literal notranslate"><span class="pre">7.2</span></code><span>)</span></p>
+</section>
+</section>
+<section id="Plant.ProcessEquipment.ProcessColumn-example">
+<h2>Example in DEXPI XML<a class="headerlink" href="#Plant.ProcessEquipment.ProcessColumn-example" title="Link to this heading">¶</a></h2>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;Object</span><span class="w"> </span><span class="na">type=</span><span class="s">"Plant/ProcessEquipment.ProcessColumn"</span><span class="nt">&gt;</span>
+<span class="w">  </span><span class="nt">&lt;Data</span><span class="w"> </span><span class="na">property=</span><span class="s">"NominalCapacityVolume"</span><span class="nt">&gt;</span>
+<span class="w">    </span><span class="nt">&lt;AggregatedDataValue</span><span class="w"> </span><span class="na">type=</span><span class="s">"Core/PhysicalQuantities.PhysicalQuantity"</span><span class="nt">&gt;</span>
+<span class="w">      </span><span class="nt">&lt;Data</span><span class="w"> </span><span class="na">property=</span><span class="s">"Unit"</span><span class="nt">&gt;</span>
+<span class="w">        </span><span class="nt">&lt;DataReference</span><span class="w"> </span><span class="na">data=</span><span class="s">"Core/PhysicalQuantities.VolumeUnit.MetreCubed"</span><span class="nt">/&gt;</span>
+<span class="w">      </span><span class="nt">&lt;/Data&gt;</span>
+<span class="w">      </span><span class="nt">&lt;Data</span><span class="w"> </span><span class="na">property=</span><span class="s">"Value"</span><span class="nt">&gt;</span>
+<span class="w">        </span><span class="nt">&lt;Double&gt;</span>7.2<span class="nt">&lt;/Double&gt;</span>
+<span class="w">      </span><span class="nt">&lt;/Data&gt;</span>
+<span class="w">    </span><span class="nt">&lt;/AggregatedDataValue&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/Data&gt;</span>
+<span class="nt">&lt;/Object&gt;</span>
+</pre></div>
+</div>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+    
+        <div id="show_right_sidebar">
+            <p><a class="toggle_right_sidebar" href="#"><span class="icon">&lt;</span><span>Page contents</span></a></p>
+        </div>
+
+        <div id="right_sidebar">
+            <p><a class="toggle_right_sidebar" href="#"><span class="icon">&gt;</span><span>Page contents:</span></a></p>
+            <div class="page_toc">
+                <ul>
+<li><a class="reference internal" href="#">ProcessColumn</a><ul>
+<li><a class="reference internal" href="#Overview">Overview</a></li>
+<li><a class="reference internal" href="#Members">Members</a><ul>
+<li><a class="reference internal" href="#member-list-section-Composition%20Properties">Composition Properties</a></li>
+<li><a class="reference internal" href="#member-list-section-Data%20Properties">Data Properties</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#sp:plant.processequipment.processcolumn.columnsections">ColumnSections</a></li>
+<li><a class="reference internal" href="#sp:plant.processequipment.processcolumn.nominalcapacityvolume">NominalCapacityVolume</a><ul>
+<li><a class="reference internal" href="#sp:plant.processequipment.processcolumn.nominalcapacityvolume-example">Example</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#Plant.ProcessEquipment.ProcessColumn-example">Example in DEXPI XML</a></li>
+</ul>
+</li>
+</ul>
+
+            </div>
+        </div>
+    
+
+      <div class="clearer"></div>
+    </div>
+    <div class="button_nav_wrapper">
+        <div class="button_nav">
+            <div class="left">
+                
+                <a href="PressureVessel.html">
+                    <span class="icon">&lt;</span><span>PressureVessel</span></a>
+                
+            </div>
+
+            <div class="right">
+                
+                    <a href="ProcessEquipment.html"><span>ProcessEquipment</span><span class="icon">&gt;</span></a>
+                
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer" role="contentinfo">
+    © Copyright .
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.1.3.
+    </div>
+
+<p id="theme_credit">Styled using the <a href="https://github.com/piccolo-orm/piccolo_theme">Piccolo Theme</a></p>
+  </body>
+</html>

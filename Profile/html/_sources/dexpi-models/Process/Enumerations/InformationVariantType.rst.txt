@@ -1,0 +1,5 @@
+InformationVariantType
+======================
+
+.. sp:internal-autoelement::
+   :element: Process.Enumerations.InformationVariantType

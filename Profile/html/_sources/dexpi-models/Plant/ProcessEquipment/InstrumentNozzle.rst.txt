@@ -1,0 +1,5 @@
+InstrumentNozzle
+================
+
+.. sp:internal-autoelement::
+   :element: Plant.ProcessEquipment.InstrumentNozzle

@@ -1,0 +1,5 @@
+DoublePipeHeatExchanger
+=======================
+
+.. sp:internal-autoelement::
+   :element: DiscProfile.InformationModel.DoublePipeHeatExchanger

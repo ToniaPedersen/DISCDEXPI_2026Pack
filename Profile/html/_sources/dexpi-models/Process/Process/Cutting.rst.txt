@@ -1,0 +1,5 @@
+Cutting
+=======
+
+.. sp:internal-autoelement::
+   :element: Process.Process.Cutting

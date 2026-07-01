@@ -1,0 +1,5 @@
+Static
+======
+
+.. sp:internal-autoelement::
+   :element: Core.Diagram.Static

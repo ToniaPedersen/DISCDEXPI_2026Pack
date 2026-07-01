@@ -1,0 +1,5 @@
+CoriolisMassFlowMeter
+=====================
+
+.. sp:internal-autoelement::
+   :element: DiscProfile.InformationModel.CoriolisMassFlowMeter

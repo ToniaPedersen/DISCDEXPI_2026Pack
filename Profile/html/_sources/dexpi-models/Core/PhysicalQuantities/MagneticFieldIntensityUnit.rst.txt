@@ -1,0 +1,5 @@
+MagneticFieldIntensityUnit
+==========================
+
+.. sp:internal-autoelement::
+   :element: Core.PhysicalQuantities.MagneticFieldIntensityUnit

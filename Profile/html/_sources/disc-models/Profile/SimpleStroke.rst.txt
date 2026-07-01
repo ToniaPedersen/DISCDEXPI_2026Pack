@@ -1,0 +1,5 @@
+SimpleStroke
+============
+
+.. sp:internal-autoelement::
+   :element: Profile.SimpleStroke

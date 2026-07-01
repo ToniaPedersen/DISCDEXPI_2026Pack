@@ -1,0 +1,5 @@
+BucketFilter
+============
+
+.. sp:internal-autoelement::
+   :element: DiscProfile.InformationModel.BucketFilter

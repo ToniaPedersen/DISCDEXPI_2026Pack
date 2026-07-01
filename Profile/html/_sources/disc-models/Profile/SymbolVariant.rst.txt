@@ -1,0 +1,5 @@
+SymbolVariant
+=============
+
+.. sp:internal-autoelement::
+   :element: Profile.SymbolVariant

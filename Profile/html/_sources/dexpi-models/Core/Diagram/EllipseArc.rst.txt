@@ -1,0 +1,5 @@
+EllipseArc
+==========
+
+.. sp:internal-autoelement::
+   :element: Core.Diagram.EllipseArc

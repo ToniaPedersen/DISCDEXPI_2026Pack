@@ -1,0 +1,5 @@
+HeatTransferResistanceUnit
+==========================
+
+.. sp:internal-autoelement::
+   :element: Core.PhysicalQuantities.HeatTransferResistanceUnit

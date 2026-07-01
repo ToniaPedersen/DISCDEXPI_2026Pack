@@ -1,0 +1,5 @@
+PipingNetworkSegment
+====================
+
+.. sp:internal-autoelement::
+   :element: Plant.Piping.PipingNetworkSegment

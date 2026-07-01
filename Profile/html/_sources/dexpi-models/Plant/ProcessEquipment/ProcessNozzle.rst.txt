@@ -1,0 +1,5 @@
+ProcessNozzle
+=============
+
+.. sp:internal-autoelement::
+   :element: Plant.ProcessEquipment.ProcessNozzle

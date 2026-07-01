@@ -1,0 +1,5 @@
+FinExchanger
+============
+
+.. sp:internal-autoelement::
+   :element: DiscProfile.InformationModel.FinExchanger

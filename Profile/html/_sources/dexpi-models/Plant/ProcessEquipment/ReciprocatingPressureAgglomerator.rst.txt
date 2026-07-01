@@ -1,0 +1,5 @@
+ReciprocatingPressureAgglomerator
+=================================
+
+.. sp:internal-autoelement::
+   :element: Plant.ProcessEquipment.ReciprocatingPressureAgglomerator

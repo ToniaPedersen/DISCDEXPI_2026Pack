@@ -1,0 +1,5 @@
+ND0240
+======
+
+.. sp:internal-autoelement::
+   :element: DiscProfile.SymbolCatalogue.ND0240

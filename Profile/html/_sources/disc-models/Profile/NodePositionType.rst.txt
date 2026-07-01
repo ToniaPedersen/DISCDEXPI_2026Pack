@@ -1,0 +1,5 @@
+NodePositionType
+================
+
+.. sp:internal-autoelement::
+   :element: Profile.NodePositionType

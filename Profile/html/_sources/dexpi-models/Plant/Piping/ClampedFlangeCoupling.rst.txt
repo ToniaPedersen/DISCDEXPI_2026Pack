@@ -1,0 +1,5 @@
+ClampedFlangeCoupling
+=====================
+
+.. sp:internal-autoelement::
+   :element: Plant.Piping.ClampedFlangeCoupling

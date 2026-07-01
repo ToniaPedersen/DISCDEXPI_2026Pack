@@ -1,0 +1,5 @@
+DuplexStrainer
+==============
+
+.. sp:internal-autoelement::
+   :element: DiscProfile.InformationModel.DuplexStrainer

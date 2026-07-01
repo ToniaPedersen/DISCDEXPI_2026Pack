@@ -1,0 +1,5 @@
+ReducingFlange
+==============
+
+.. sp:internal-autoelement::
+   :element: DiscProfile.InformationModel.ReducingFlange

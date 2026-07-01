@@ -1,0 +1,5 @@
+HeatCapacityUnit
+================
+
+.. sp:internal-autoelement::
+   :element: Core.PhysicalQuantities.HeatCapacityUnit

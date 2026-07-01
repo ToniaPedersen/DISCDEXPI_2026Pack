@@ -1,0 +1,81 @@
+<ns0:svg xmlns:ns0="http://www.w3.org/2000/svg" width="605.9208496093751px" height="284.19999999999993px" viewBox="0.0 0.0 605.9208496093751 284.19999999999993"><ns0:style>
+            .uml-foreground-stroke {
+                stroke: black;
+                stroke-width: 1px;
+            }
+            
+            .uml-foreground-fill {
+                fill: black;
+            }
+            
+            .uml-background_color-type {
+                fill: #ffffcc;
+            }
+            
+            .uml-background_color-main_type {
+                fill: #ffff66;
+            }
+            
+            .uml-background_color-instance {
+                fill: blue;
+            }
+            
+            .uml-background_color-background {
+                fill: white;
+            }
+            
+            .uml-background_color-foreground {
+                fill: black;
+            }
+            
+            .uml-font-normal {
+                font-family: Arial;
+            }
+            
+            .uml-font-element {
+                font-family: Arial;
+            }
+            
+            .uml-fontsize-normal {
+                font-size: 10px;
+            }
+
+            .uml-fontsize-large {
+                font-size: 12px;
+            }
+            
+            .uml-source_marker-closed_arrow {
+                marker-start: url(#uml-marker-closed_arrow);
+            }
+            
+            .uml-source_marker-open_arrow {
+                marker-start: url(#uml-marker-open_arrow);
+            }
+            
+            .uml-source_marker-filled_diamond {
+                marker-start: url(#uml-marker-filled_diamond);
+            }
+
+            .uml-target_marker-closed_arrow {
+                marker-end: url(#uml-marker-closed_arrow);
+            }
+            
+            .uml-target_marker-open_arrow {
+                marker-end: url(#uml-marker-open_arrow);
+            }
+            
+            .uml-target_marker-filled_diamond {
+                marker-end: url(#uml-marker-filled_diamond);
+            }
+
+            </ns0:style><ns0:defs>
+        <ns0:marker id="uml-marker-closed_arrow" viewBox="-2 -2 14 14" refX="10" refY="5.0" markerWidth="14" markerHeight="14" orient="auto-start-reverse">
+          <ns0:path d="M 0 0 L 10 5.0 L 0 10 Z" stroke-linejoin="round" stroke-linecap="round" class="uml-foreground-stroke uml-background_color-background"/>
+        </ns0:marker>
+        <ns0:marker id="uml-marker-open_arrow" viewBox="-2 -2 14 14" refX="10" refY="5.0" markerWidth="14" markerHeight="14" orient="auto-start-reverse">
+          <ns0:path d="M 0 0 L 10 5.0 L 0 10" stroke-linejoin="round" stroke-linecap="round" fill="none" class="uml-foreground-stroke"/>
+        </ns0:marker>
+        <ns0:marker id="uml-marker-filled_diamond" viewBox="-2 -2 14 14" refX="10" refY="5.0" markerWidth="14" markerHeight="14" orient="auto-start-reverse">
+          <ns0:path d="M 0 5.0 L      5.0 2.0        10 5.0      5.0 8.0 Z       " stroke-linejoin="round" stroke-linecap="round" class="uml-foreground-stroke uml-background_color-foreground"/>
+        </ns0:marker>
+      </ns0:defs><ns0:rect class="uml-background_color-type uml-foreground-stroke" x="96.087890625" y="125.19999999999999" width="250.0" height="23.799999999999997"/><ns0:text x="221.087890625" text-anchor="middle" font-size="0px" y="140.64"><ns0:a href="../dexpi-models/Plant/Piping/PipingConnection.html"><ns0:tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold" font-style="italic">PipingConnection</ns0:tspan></ns0:a></ns0:text><ns0:rect class="uml-background_color-type uml-foreground-stroke" x="469.31352539062505" y="248.39999999999998" width="124.60732421875002" height="23.799999999999997"/><ns0:text x="531.6171875" text-anchor="middle" font-size="0px" y="263.84"><ns0:a href="../dexpi-models/Plant/Piping/PipingSourceItem.html"><ns0:tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold" font-style="italic">PipingSourceItem</ns0:tspan></ns0:a></ns0:text><ns0:rect class="uml-background_color-type uml-foreground-stroke" x="160.804833984375" y="248.39999999999998" width="120.56611328125003" height="23.799999999999997"/><ns0:text x="221.087890625" text-anchor="middle" font-size="0px" y="263.84"><ns0:a href="../dexpi-models/Plant/Piping/PipingTargetItem.html"><ns0:tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold" font-style="italic">PipingTargetItem</ns0:tspan></ns0:a></ns0:text><ns0:rect class="uml-background_color-main_type uml-foreground-stroke" x="301.37094726562503" y="248.39999999999998" width="147.942578125" height="23.799999999999997"/><ns0:text x="375.34223632812507" text-anchor="middle" font-size="0px" y="263.84"><ns0:tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold">DirectPipingConnection</ns0:tspan></ns0:text><ns0:rect class="uml-background_color-type uml-foreground-stroke" x="147.11982421875" y="12.0" width="147.9361328125" height="23.799999999999997"/><ns0:text x="221.087890625" text-anchor="middle" font-size="0px" y="27.439999999999998"><ns0:a href="../dexpi-models/Plant/Piping/PipingNetworkSegment.html"><ns0:tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold">PipingNetworkSegment</ns0:tspan></ns0:a></ns0:text><ns0:rect class="uml-background_color-type uml-foreground-stroke" x="12.351236979166671" y="248.39999999999998" width="100.0" height="23.799999999999997"/><ns0:text x="62.35123697916667" text-anchor="middle" font-size="0px" y="263.84"><ns0:a href="../dexpi-models/Plant/Piping/PipingNode.html"><ns0:tspan class="uml-foreground-fill uml-font-element uml-fontsize-large" font-weight="bold">PipingNode</ns0:tspan></ns0:a></ns0:text><ns0:polyline class="uml-foreground-stroke uml-source_marker-closed_arrow" points="262.7545572916667,149.0 262.7545572916667,184.79999999999998 375.34223632812507,184.79999999999998 375.34223632812507,203.2 375.34223632812507,204.2 375.34223632812507,248.39999999999998" fill="none"/><ns0:rect class="uml-background_color-background " x="498.93750000000006" y="194.79999999999998" width="65.359375" height="17.799999999999997"/><ns0:text x="531.6171875" text-anchor="middle" font-size="0px" y="207.23999999999998"><ns0:a href="../dexpi-models/Plant/Piping/PipingConnection.html#sp:plant.piping.pipingconnection.sourceitem"><ns0:tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">SourceItem</ns0:tspan></ns0:a></ns0:text><ns0:polyline class="uml-foreground-stroke" points="304.42122395833337,149.0 304.42122395833337,174.79999999999998 531.6171875,174.79999999999998 531.6171875,194.79999999999998" fill="none"/><ns0:polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="531.6171875,212.59999999999997 531.6171875,248.39999999999998" fill="none"/><ns0:text x="312.42122395833337" font-size="0px" y="161.2"><ns0:tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">0..1</ns0:tspan></ns0:text><ns0:text x="539.6171875" font-size="0px" y="242.79999999999995"><ns0:tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">0..1</ns0:tspan></ns0:text><ns0:rect class="uml-background_color-background " x="99.369140625" y="194.79999999999998" width="70.708984375" height="17.799999999999997"/><ns0:text x="134.7236328125" text-anchor="middle" font-size="0px" y="207.23999999999998"><ns0:a href="../dexpi-models/Plant/Piping/PipingConnection.html#sp:plant.piping.pipingconnection.sourcenode"><ns0:tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">SourceNode</ns0:tspan></ns0:a></ns0:text><ns0:polyline class="uml-foreground-stroke" points="179.42122395833334,149.0 179.42122395833334,184.79999999999998 134.7236328125,184.79999999999998 134.7236328125,194.79999999999998" fill="none"/><ns0:polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="134.7236328125,212.59999999999997 134.7236328125,222.59999999999997 79.01790364583333,222.59999999999997 79.01790364583333,248.39999999999998" fill="none"/><ns0:text x="187.42122395833334" font-size="0px" y="161.2"><ns0:tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">0..1</ns0:tspan></ns0:text><ns0:text x="87.01790364583333" font-size="0px" y="242.79999999999995"><ns0:tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">0..1</ns0:tspan></ns0:text><ns0:rect class="uml-background_color-background " x="190.078125" y="194.79999999999998" width="62.01953125" height="17.799999999999997"/><ns0:text x="221.087890625" text-anchor="middle" font-size="0px" y="207.23999999999998"><ns0:a href="../dexpi-models/Plant/Piping/PipingConnection.html#sp:plant.piping.pipingconnection.targetitem"><ns0:tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">TargetItem</ns0:tspan></ns0:a></ns0:text><ns0:polyline class="uml-foreground-stroke" points="221.087890625,149.0 221.087890625,194.79999999999998" fill="none"/><ns0:polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="221.087890625,212.59999999999997 221.087890625,248.39999999999998" fill="none"/><ns0:text x="229.087890625" font-size="0px" y="161.2"><ns0:tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">0..1</ns0:tspan></ns0:text><ns0:text x="229.087890625" font-size="0px" y="242.79999999999995"><ns0:tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">0..1</ns0:tspan></ns0:text><ns0:rect class="uml-background_color-background " x="12.0" y="194.79999999999998" width="67.369140625" height="17.799999999999997"/><ns0:text x="45.6845703125" text-anchor="middle" font-size="0px" y="207.23999999999998"><ns0:a href="../dexpi-models/Plant/Piping/PipingConnection.html#sp:plant.piping.pipingconnection.targetnode"><ns0:tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">TargetNode</ns0:tspan></ns0:a></ns0:text><ns0:polyline class="uml-foreground-stroke" points="137.75455729166669,149.0 137.75455729166669,174.79999999999998 45.6845703125,174.79999999999998 45.6845703125,194.79999999999998" fill="none"/><ns0:polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="45.6845703125,212.59999999999997 45.6845703125,248.39999999999998" fill="none"/><ns0:text x="145.75455729166669" font-size="0px" y="161.2"><ns0:tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">0..1</ns0:tspan></ns0:text><ns0:text x="53.6845703125" font-size="0px" y="242.79999999999995"><ns0:tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">0..1</ns0:tspan></ns0:text><ns0:rect class="uml-background_color-background " x="185.7333984375" y="71.6" width="70.708984375" height="17.799999999999997"/><ns0:text x="221.087890625" text-anchor="middle" font-size="0px" y="84.03999999999999"><ns0:a href="../dexpi-models/Plant/Piping/PipingNetworkSegment.html#sp:plant.piping.pipingnetworksegment.connections"><ns0:tspan class="uml-foreground-fill uml-font-element uml-fontsize-large">Connections</ns0:tspan></ns0:a></ns0:text><ns0:polyline class="uml-foreground-stroke uml-source_marker-filled_diamond" points="221.087890625,35.8 221.087890625,71.6" fill="none"/><ns0:polyline class="uml-foreground-stroke uml-target_marker-open_arrow" points="221.087890625,89.39999999999999 221.087890625,125.19999999999999" fill="none"/><ns0:text x="229.087890625" font-size="0px" y="48.0"><ns0:tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">0..1</ns0:tspan></ns0:text><ns0:text x="229.087890625" font-size="0px" y="119.6"><ns0:tspan class="uml-foreground-fill uml-font-normal uml-fontsize-normal">*</ns0:tspan></ns0:text></ns0:svg>

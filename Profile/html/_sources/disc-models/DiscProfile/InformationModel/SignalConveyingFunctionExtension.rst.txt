@@ -1,0 +1,5 @@
+SignalConveyingFunctionExtension
+================================
+
+.. sp:internal-autoelement::
+   :element: DiscProfile.InformationModel.SignalConveyingFunctionExtension

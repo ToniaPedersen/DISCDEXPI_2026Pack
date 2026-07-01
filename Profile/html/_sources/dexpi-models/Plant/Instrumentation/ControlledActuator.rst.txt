@@ -1,0 +1,5 @@
+ControlledActuator
+==================
+
+.. sp:internal-autoelement::
+   :element: Plant.Instrumentation.ControlledActuator

@@ -1,0 +1,5 @@
+VoltageUnit
+===========
+
+.. sp:internal-autoelement::
+   :element: Core.PhysicalQuantities.VoltageUnit

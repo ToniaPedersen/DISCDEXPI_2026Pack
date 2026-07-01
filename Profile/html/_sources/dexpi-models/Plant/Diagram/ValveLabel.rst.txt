@@ -1,0 +1,5 @@
+ValveLabel
+==========
+
+.. sp:internal-autoelement::
+   :element: Plant.Diagram.ValveLabel

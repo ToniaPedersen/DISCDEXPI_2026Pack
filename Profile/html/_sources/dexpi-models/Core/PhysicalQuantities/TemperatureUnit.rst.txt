@@ -1,0 +1,5 @@
+TemperatureUnit
+===============
+
+.. sp:internal-autoelement::
+   :element: Core.PhysicalQuantities.TemperatureUnit

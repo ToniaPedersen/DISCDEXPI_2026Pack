@@ -1,0 +1,5 @@
+MassConcentrationUnit
+=====================
+
+.. sp:internal-autoelement::
+   :element: Core.PhysicalQuantities.MassConcentrationUnit

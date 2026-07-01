@@ -1,0 +1,5 @@
+SlidingVanePump
+===============
+
+.. sp:internal-autoelement::
+   :element: DiscProfile.InformationModel.SlidingVanePump

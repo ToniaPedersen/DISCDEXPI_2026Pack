@@ -1,0 +1,5 @@
+Blower
+======
+
+.. sp:internal-autoelement::
+   :element: Plant.ProcessEquipment.Blower

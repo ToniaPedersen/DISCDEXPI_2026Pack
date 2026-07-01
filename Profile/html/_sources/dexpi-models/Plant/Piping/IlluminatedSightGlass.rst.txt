@@ -1,0 +1,5 @@
+IlluminatedSightGlass
+=====================
+
+.. sp:internal-autoelement::
+   :element: Plant.Piping.IlluminatedSightGlass

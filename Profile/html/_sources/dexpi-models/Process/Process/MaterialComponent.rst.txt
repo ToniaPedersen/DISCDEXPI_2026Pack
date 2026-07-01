@@ -1,0 +1,5 @@
+MaterialComponent
+=================
+
+.. sp:internal-autoelement::
+   :element: Process.Process.MaterialComponent

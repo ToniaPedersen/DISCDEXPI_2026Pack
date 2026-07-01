@@ -1,0 +1,5 @@
+AreaBreak
+=========
+
+.. sp:internal-autoelement::
+   :element: DiscProfile.InformationModel.AreaBreak

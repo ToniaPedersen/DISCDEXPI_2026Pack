@@ -1,0 +1,5 @@
+ForceUnit
+=========
+
+.. sp:internal-autoelement::
+   :element: Core.PhysicalQuantities.ForceUnit

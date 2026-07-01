@@ -1,0 +1,5 @@
+MassSpecificHeatCapacityUnit
+============================
+
+.. sp:internal-autoelement::
+   :element: Core.PhysicalQuantities.MassSpecificHeatCapacityUnit

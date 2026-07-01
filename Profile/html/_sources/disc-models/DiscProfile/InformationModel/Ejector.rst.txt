@@ -1,0 +1,5 @@
+Ejector
+=======
+
+.. sp:internal-autoelement::
+   :element: DiscProfile.InformationModel.Ejector

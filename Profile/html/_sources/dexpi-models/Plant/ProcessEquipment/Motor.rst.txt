@@ -1,0 +1,5 @@
+Motor
+=====
+
+.. sp:internal-autoelement::
+   :element: Plant.ProcessEquipment.Motor

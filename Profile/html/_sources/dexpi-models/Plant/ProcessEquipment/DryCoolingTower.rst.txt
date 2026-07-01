@@ -1,0 +1,5 @@
+DryCoolingTower
+===============
+
+.. sp:internal-autoelement::
+   :element: Plant.ProcessEquipment.DryCoolingTower

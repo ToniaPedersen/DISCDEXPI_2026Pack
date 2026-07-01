@@ -1,0 +1,5 @@
+ProcessControlFunction
+======================
+
+.. sp:internal-autoelement::
+   :element: Plant.Instrumentation.ProcessControlFunction

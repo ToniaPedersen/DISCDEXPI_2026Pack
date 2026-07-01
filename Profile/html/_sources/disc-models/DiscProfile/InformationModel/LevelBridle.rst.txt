@@ -1,0 +1,5 @@
+LevelBridle
+===========
+
+.. sp:internal-autoelement::
+   :element: DiscProfile.InformationModel.LevelBridle

@@ -1,0 +1,5 @@
+CrusherElement
+==============
+
+.. sp:internal-autoelement::
+   :element: Plant.ProcessEquipment.CrusherElement

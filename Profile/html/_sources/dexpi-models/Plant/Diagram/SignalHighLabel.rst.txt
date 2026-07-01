@@ -1,0 +1,5 @@
+SignalHighLabel
+===============
+
+.. sp:internal-autoelement::
+   :element: Plant.Diagram.SignalHighLabel

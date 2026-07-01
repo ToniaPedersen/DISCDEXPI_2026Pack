@@ -1,0 +1,5 @@
+MomentOfForceUnit
+=================
+
+.. sp:internal-autoelement::
+   :element: Core.PhysicalQuantities.MomentOfForceUnit

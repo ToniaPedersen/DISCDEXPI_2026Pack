@@ -1,0 +1,5 @@
+RemovingThermalEnergy
+=====================
+
+.. sp:internal-autoelement::
+   :element: Process.Process.RemovingThermalEnergy

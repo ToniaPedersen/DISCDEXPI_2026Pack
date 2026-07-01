@@ -1,0 +1,5 @@
+Absorbing
+=========
+
+.. sp:internal-autoelement::
+   :element: Process.Process.Absorbing

@@ -1,0 +1,5 @@
+DiaphragmPump
+=============
+
+.. sp:internal-autoelement::
+   :element: DiscProfile.InformationModel.DiaphragmPump

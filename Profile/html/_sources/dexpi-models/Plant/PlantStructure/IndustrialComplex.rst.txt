@@ -1,0 +1,5 @@
+IndustrialComplex
+=================
+
+.. sp:internal-autoelement::
+   :element: Plant.PlantStructure.IndustrialComplex

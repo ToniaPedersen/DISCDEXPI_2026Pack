@@ -1,0 +1,5 @@
+HeatExchangeMethod
+==================
+
+.. sp:internal-autoelement::
+   :element: Process.Enumerations.HeatExchangeMethod

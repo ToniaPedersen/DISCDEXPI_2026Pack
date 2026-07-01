@@ -1,0 +1,5 @@
+Separating
+==========
+
+.. sp:internal-autoelement::
+   :element: Process.Process.Separating

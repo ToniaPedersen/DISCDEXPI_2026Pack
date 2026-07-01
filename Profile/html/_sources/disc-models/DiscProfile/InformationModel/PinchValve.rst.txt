@@ -1,0 +1,5 @@
+PinchValve
+==========
+
+.. sp:internal-autoelement::
+   :element: DiscProfile.InformationModel.PinchValve

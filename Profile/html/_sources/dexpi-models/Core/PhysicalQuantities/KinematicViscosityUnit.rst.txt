@@ -1,0 +1,5 @@
+KinematicViscosityUnit
+======================
+
+.. sp:internal-autoelement::
+   :element: Core.PhysicalQuantities.KinematicViscosityUnit

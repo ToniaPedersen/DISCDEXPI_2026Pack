@@ -1,0 +1,5 @@
+Weigher
+=======
+
+.. sp:internal-autoelement::
+   :element: Plant.ProcessEquipment.Weigher

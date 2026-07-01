@@ -1,0 +1,5 @@
+PhysicalQuantityVector
+======================
+
+.. sp:internal-autoelement::
+   :element: Core.PhysicalQuantities.PhysicalQuantityVector

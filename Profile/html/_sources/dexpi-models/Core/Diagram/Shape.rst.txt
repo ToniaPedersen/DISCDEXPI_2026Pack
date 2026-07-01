@@ -1,0 +1,5 @@
+Shape
+=====
+
+.. sp:internal-autoelement::
+   :element: Core.Diagram.Shape

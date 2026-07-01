@@ -1,0 +1,5 @@
+MaterialTemplate
+================
+
+.. sp:internal-autoelement::
+   :element: Process.Process.MaterialTemplate

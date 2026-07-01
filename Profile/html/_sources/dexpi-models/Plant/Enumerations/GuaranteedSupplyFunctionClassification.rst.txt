@@ -1,0 +1,5 @@
+GuaranteedSupplyFunctionClassification
+======================================
+
+.. sp:internal-autoelement::
+   :element: Plant.Enumerations.GuaranteedSupplyFunctionClassification

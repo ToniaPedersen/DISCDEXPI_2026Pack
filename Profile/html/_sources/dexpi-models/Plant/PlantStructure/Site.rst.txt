@@ -1,0 +1,5 @@
+Site
+====
+
+.. sp:internal-autoelement::
+   :element: Plant.PlantStructure.Site

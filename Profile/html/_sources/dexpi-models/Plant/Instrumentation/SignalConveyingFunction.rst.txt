@@ -1,0 +1,5 @@
+SignalConveyingFunction
+=======================
+
+.. sp:internal-autoelement::
+   :element: Plant.Instrumentation.SignalConveyingFunction

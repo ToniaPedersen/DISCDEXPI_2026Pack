@@ -1,0 +1,5 @@
+PersistentIdentifier
+====================
+
+.. sp:internal-autoelement::
+   :element: Core.PersistentIdentifier

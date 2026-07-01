@@ -1,0 +1,5 @@
+DrainerTrap
+===========
+
+.. sp:internal-autoelement::
+   :element: DiscProfile.InformationModel.DrainerTrap

@@ -1,0 +1,5 @@
+Border
+======
+
+.. sp:internal-autoelement::
+   :element: Core.Diagram.Border

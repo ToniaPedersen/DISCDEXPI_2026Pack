@@ -1,0 +1,5 @@
+Grinder
+=======
+
+.. sp:internal-autoelement::
+   :element: Plant.ProcessEquipment.Grinder

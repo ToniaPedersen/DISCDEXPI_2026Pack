@@ -1,0 +1,5 @@
+RestrictionOrifice
+==================
+
+.. sp:internal-autoelement::
+   :element: Plant.Piping.RestrictionOrifice

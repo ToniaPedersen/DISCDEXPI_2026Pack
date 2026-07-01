@@ -1,0 +1,5 @@
+GmpRelevanceClassification
+==========================
+
+.. sp:internal-autoelement::
+   :element: Plant.Enumerations.GmpRelevanceClassification

@@ -1,0 +1,5 @@
+BlindFlange
+===========
+
+.. sp:internal-autoelement::
+   :element: Plant.Piping.BlindFlange

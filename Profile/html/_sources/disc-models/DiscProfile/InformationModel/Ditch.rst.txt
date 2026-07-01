@@ -1,0 +1,5 @@
+Ditch
+=====
+
+.. sp:internal-autoelement::
+   :element: DiscProfile.InformationModel.Ditch

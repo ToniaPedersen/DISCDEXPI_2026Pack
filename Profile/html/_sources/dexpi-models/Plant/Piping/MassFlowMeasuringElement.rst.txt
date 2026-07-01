@@ -1,0 +1,5 @@
+MassFlowMeasuringElement
+========================
+
+.. sp:internal-autoelement::
+   :element: Plant.Piping.MassFlowMeasuringElement

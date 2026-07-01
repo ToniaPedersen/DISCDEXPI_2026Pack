@@ -1,0 +1,5 @@
+SteamTrap
+=========
+
+.. sp:internal-autoelement::
+   :element: Plant.Piping.SteamTrap

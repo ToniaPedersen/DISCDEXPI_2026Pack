@@ -1,0 +1,5 @@
+Truck
+=====
+
+.. sp:internal-autoelement::
+   :element: Plant.ProcessEquipment.Truck
