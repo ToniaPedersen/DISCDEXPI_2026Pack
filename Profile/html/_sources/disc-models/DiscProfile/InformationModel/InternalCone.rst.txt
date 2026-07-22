@@ -1,0 +1,5 @@
+InternalCone
+============
+
+.. sp:internal-autoelement::
+   :element: DiscProfile.InformationModel.InternalCone

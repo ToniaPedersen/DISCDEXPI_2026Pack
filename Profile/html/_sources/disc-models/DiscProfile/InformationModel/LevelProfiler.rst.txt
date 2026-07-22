@@ -1,0 +1,5 @@
+LevelProfiler
+=============
+
+.. sp:internal-autoelement::
+   :element: DiscProfile.InformationModel.LevelProfiler

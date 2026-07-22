@@ -3,7 +3,7 @@
 This GitHub repository contains the document delivery for the **DISC DEXPI 2026 Project**.
 
 📌 **DISC DEXPI Profile (HTML):** Limited HTML view of the profile [[Link]](https://html-preview.github.io/?url=https://github.com/ToniaPedersen/DISCDEXPI_2026Pack/blob/main/Profile/html/index.html). 
-Recommend to download HTML.zip [[Link]](https://github.com/ToniaPedersen/DISCDEXPI_2026Pack/blob/main/Profile/html.zip).
+**Do not download HTML folder** instead download HTML.zip [[Link]](https://github.com/ToniaPedersen/DISCDEXPI_2026Pack/blob/main/Profile/html.zip).
 
 ---
 

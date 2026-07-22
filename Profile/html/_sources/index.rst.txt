@@ -1,7 +1,7 @@
-DISC Profile 0.6
-================
+DISC Profile 0.6.3
+==================
 
-This is a human-readably rendering of the machine-readable DISC Profile 0.6 that is part
+This is a human-readably rendering of the machine-readable DISC Profile 0.6.3 that is part
 of the deliverables of the DISC III DEXPI Project.
 
 .. toctree::

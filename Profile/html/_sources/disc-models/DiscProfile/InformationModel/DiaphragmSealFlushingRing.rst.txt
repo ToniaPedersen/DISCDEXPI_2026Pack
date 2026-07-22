@@ -1,0 +1,5 @@
+DiaphragmSealFlushingRing
+=========================
+
+.. sp:internal-autoelement::
+   :element: DiscProfile.InformationModel.DiaphragmSealFlushingRing
