@@ -5,11 +5,11 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>SignalConveyingFunctionExtension &#8212; DISC Profile 0.6.3</title>
+    <title>SignalConveyingFunctionExtension &#8212; DISC Profile 0.6.4</title>
     <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=b86133f3" />
     <link rel="stylesheet" type="text/css" href="../../../_static/basic_mod.css?v=9b2032db" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sp.css" />
-    <script src="../../../_static/documentation_options.js?v=b8503983"></script>
+    <script src="../../../_static/documentation_options.js?v=73d9a94e"></script>
     <script src="../../../_static/doctools.js?v=9bcbadda"></script>
     <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../../_static/js/theme.js"></script>
@@ -31,7 +31,7 @@
         <p id="toggle_sidebar">
             <a href="#" title="Toggle sidebar">|||</a>
         </p>
-        <h1><a href="../../../index.html" title="Go to homepage">DISC Profile 0.6.3</a></h1>
+        <h1><a href="../../../index.html" title="Go to homepage">DISC Profile 0.6.4</a></h1>
 
         <a id="mode_toggle" href="#" @click.prevent="handleClick" :title="mode">
     <template v-if="mode == 'light'">
@@ -173,7 +173,14 @@
 <td><p>no</p></td>
 <td><p>The alarm value given as a physical quantity of appropriate DEXPI type</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="sp-element reference internal" href="#sp:discprofile.informationmodel.signalconveyingfunctionextension.signalconveyingfunctiontyperepresentation"><span class="std std-ref">SignalConveyingFunctionTypeRepresentation</span></a></p></td>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="#sp:discprofile.informationmodel.signalconveyingfunctionextension.heattracingtype"><span class="std std-ref">HeatTracingType</span></a></p></td>
+<td><p>0..1</p></td>
+<td><p><a class="sp-element reference internal" href="../../../dexpi-models/Plant/Enumerations/HeatTracingTypeClassification.html"><span class="doc">HeatTracingTypeClassification</span></a></p></td>
+<td><p>no</p></td>
+<td><p>no</p></td>
+<td><p>Indicates which type of heat tracing is used.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="#sp:discprofile.informationmodel.signalconveyingfunctionextension.signalconveyingfunctiontyperepresentation"><span class="std std-ref">SignalConveyingFunctionTypeRepresentation</span></a></p></td>
 <td><p>0..1</p></td>
 <td><p><a class="sp-element reference internal" href="../../../dexpi-models/Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><a class="sp-element reference internal" href="../../../dexpi-models/Builtin/String.html"><span class="doc">String</span></a></p></td>
 <td><p>no</p></td>
@@ -192,6 +199,16 @@
 <p><strong>Ordered:</strong><span> </span><span>no</span></p>
 <p><strong>Unique:</strong><span> </span><span>no</span></p>
 <p><strong>RDL:</strong><span> </span><a class="reference external" href="http://sandbox.dexpi.org/rdl/AlarmValue">ALARM VALUE (http://sandbox.dexpi.org/rdl/AlarmValue)</a></p>
+</section>
+<section id="sp:discprofile.informationmodel.signalconveyingfunctionextension.heattracingtype">
+<h2>HeatTracingType<a class="headerlink" href="#sp:discprofile.informationmodel.signalconveyingfunctionextension.heattracingtype" title="Link to this heading">¶</a></h2>
+<p class="rubric">Data Property</p>
+<p>Indicates which type of heat tracing is used.</p>
+<p><strong>Type:</strong><span> </span><a class="sp-element reference internal" href="../../../dexpi-models/Plant/Enumerations/HeatTracingTypeClassification.html"><span class="doc">HeatTracingTypeClassification</span></a></p>
+<p><strong>Multiplicity:</strong><span> </span><span>0..1</span></p>
+<p><strong>Ordered:</strong><span> </span><span>no</span></p>
+<p><strong>Unique:</strong><span> </span><span>no</span></p>
+<p><strong>RDL:</strong><span> </span><a class="reference external" href="http://sandbox.dexpi.org/rdl/HeatTracingTypeSpecialization">HEAT TRACING TYPE (http://sandbox.dexpi.org/rdl/HeatTracingTypeSpecialization)</a></p>
 </section>
 <section id="sp:discprofile.informationmodel.signalconveyingfunctionextension.signalconveyingfunctiontyperepresentation">
 <h2>SignalConveyingFunctionTypeRepresentation<a class="headerlink" href="#sp:discprofile.informationmodel.signalconveyingfunctionextension.signalconveyingfunctiontyperepresentation" title="Link to this heading">¶</a></h2>
@@ -226,6 +243,7 @@
 </ul>
 </li>
 <li><a class="reference internal" href="#sp:discprofile.informationmodel.signalconveyingfunctionextension.alarmvalue">AlarmValue</a></li>
+<li><a class="reference internal" href="#sp:discprofile.informationmodel.signalconveyingfunctionextension.heattracingtype">HeatTracingType</a></li>
 <li><a class="reference internal" href="#sp:discprofile.informationmodel.signalconveyingfunctionextension.signalconveyingfunctiontyperepresentation">SignalConveyingFunctionTypeRepresentation</a></li>
 </ul>
 </li>

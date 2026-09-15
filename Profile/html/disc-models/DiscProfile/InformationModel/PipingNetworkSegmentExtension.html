@@ -5,11 +5,11 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>PipingNetworkSegmentExtension &#8212; DISC Profile 0.6.3</title>
+    <title>PipingNetworkSegmentExtension &#8212; DISC Profile 0.6.4</title>
     <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=b86133f3" />
     <link rel="stylesheet" type="text/css" href="../../../_static/basic_mod.css?v=9b2032db" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sp.css" />
-    <script src="../../../_static/documentation_options.js?v=b8503983"></script>
+    <script src="../../../_static/documentation_options.js?v=73d9a94e"></script>
     <script src="../../../_static/doctools.js?v=9bcbadda"></script>
     <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../../_static/js/theme.js"></script>
@@ -17,7 +17,7 @@
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
     <link rel="next" title="PipingNetworkSystemExtension" href="PipingNetworkSystemExtension.html" />
-    <link rel="prev" title="PipingInstrInterface" href="PipingInstrInterface.html" /> 
+    <link rel="prev" title="PipingComponentExtension" href="PipingComponentExtension.html" /> 
   </head><body data-dark_mode_code_blocks="true">
 
 <div id="top_nav">
@@ -31,7 +31,7 @@
         <p id="toggle_sidebar">
             <a href="#" title="Toggle sidebar">|||</a>
         </p>
-        <h1><a href="../../../index.html" title="Go to homepage">DISC Profile 0.6.3</a></h1>
+        <h1><a href="../../../index.html" title="Go to homepage">DISC Profile 0.6.4</a></h1>
 
         <a id="mode_toggle" href="#" @click.prevent="handleClick" :title="mode">
     <template v-if="mode == 'light'">
@@ -173,6 +173,34 @@
 <td><p>no</p></td>
 <td><p>Set to ‘true’ if heat tracing is safety critical.</p></td>
 </tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="#sp:discprofile.informationmodel.pipingnetworksegmentextension.lineid"><span class="std std-ref">LineId</span></a></p></td>
+<td><p>0..1</p></td>
+<td><p><a class="sp-element reference internal" href="../../../dexpi-models/Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><a class="sp-element reference internal" href="../../../dexpi-models/Builtin/String.html"><span class="doc">String</span></a></p></td>
+<td><p>no</p></td>
+<td><p>no</p></td>
+<td><p>Line ID to drive the line break.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="#sp:discprofile.informationmodel.pipingnetworksegmentextension.lowerlimitendtoendlength"><span class="std std-ref">LowerLimitEndToEndLength</span></a></p></td>
+<td><p>0..1</p></td>
+<td><p><a class="sp-element reference internal" href="../../../dexpi-models/Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><span>&lt;</span><a class="sp-element reference internal" href="../../../dexpi-models/Core/PhysicalQuantities/PhysicalQuantity.html"><span class="doc">PhysicalQuantity</span></a><span> with </span><a class="sp-element reference internal" href="../../../dexpi-models/Core/PhysicalQuantities/PhysicalQuantity.html#sp:core.physicalquantities.physicalquantity.unittype"><span class="std std-ref">UnitType</span></a><span> → </span><a class="sp-element reference internal" href="../../../dexpi-models/Core/PhysicalQuantities/LengthUnit.html"><span class="doc">LengthUnit</span></a><span>&gt;</span></p></td>
+<td><p>no</p></td>
+<td><p>no</p></td>
+<td><p>The minimum length of the PipingNetworkSegment.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="#sp:discprofile.informationmodel.pipingnetworksegmentextension.pipesloperatio"><span class="std std-ref">PipeSlopeRatio</span></a></p></td>
+<td><p>0..1</p></td>
+<td><p><a class="sp-element reference internal" href="../../../dexpi-models/Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><a class="sp-element reference internal" href="../../../dexpi-models/Builtin/String.html"><span class="doc">String</span></a></p></td>
+<td><p>no</p></td>
+<td><p>no</p></td>
+<td><p>Show the slope ratio.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="#sp:discprofile.informationmodel.pipingnetworksegmentextension.scopeidentification"><span class="std std-ref">ScopeIdentification</span></a></p></td>
+<td><p>0..1</p></td>
+<td><p><a class="sp-element reference internal" href="../../../dexpi-models/Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><a class="sp-element reference internal" href="../../../dexpi-models/Builtin/String.html"><span class="doc">String</span></a></p></td>
+<td><p>no</p></td>
+<td><p>no</p></td>
+<td><p>Scope identifier to be drive the scope break.</p></td>
+</tr>
 <tr class="row-odd"><td><p><a class="sp-element reference internal" href="#sp:discprofile.informationmodel.pipingnetworksegmentextension.segmentlinetyperepresentation"><span class="std std-ref">SegmentLineTypeRepresentation</span></a></p></td>
 <td><p>0..1</p></td>
 <td><p><a class="sp-element reference internal" href="../../../dexpi-models/Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><a class="sp-element reference internal" href="../../../dexpi-models/Builtin/String.html"><span class="doc">String</span></a></p></td>
@@ -192,6 +220,46 @@
 <p><strong>Ordered:</strong><span> </span><span>no</span></p>
 <p><strong>Unique:</strong><span> </span><span>no</span></p>
 <p><strong>RDL:</strong><span> </span><a class="reference external" href="http://noaka.org/rdl/IsHeatTracingSafetyCritical">IS HEAT TRACING SAFETY CRITICAL (http://noaka.org/rdl/IsHeatTracingSafetyCritical)</a></p>
+</section>
+<section id="sp:discprofile.informationmodel.pipingnetworksegmentextension.lineid">
+<h2>LineId<a class="headerlink" href="#sp:discprofile.informationmodel.pipingnetworksegmentextension.lineid" title="Link to this heading">¶</a></h2>
+<p class="rubric">Data Property</p>
+<p>Line ID to drive the line break.</p>
+<p><strong>Type:</strong><span> </span><a class="sp-element reference internal" href="../../../dexpi-models/Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><a class="sp-element reference internal" href="../../../dexpi-models/Builtin/String.html"><span class="doc">String</span></a></p>
+<p><strong>Multiplicity:</strong><span> </span><span>0..1</span></p>
+<p><strong>Ordered:</strong><span> </span><span>no</span></p>
+<p><strong>Unique:</strong><span> </span><span>no</span></p>
+<p><strong>RDL:</strong><span> </span><a class="reference external" href="http://noaka.org/rdl/LineIdAssignmentClass">LINE ID ASSIGNMENT CLASS (http://noaka.org/rdl/LineIdAssignmentClass)</a></p>
+</section>
+<section id="sp:discprofile.informationmodel.pipingnetworksegmentextension.lowerlimitendtoendlength">
+<h2>LowerLimitEndToEndLength<a class="headerlink" href="#sp:discprofile.informationmodel.pipingnetworksegmentextension.lowerlimitendtoendlength" title="Link to this heading">¶</a></h2>
+<p class="rubric">Data Property</p>
+<p>The minimum length of the PipingNetworkSegment.</p>
+<p><strong>Type:</strong><span> </span><a class="sp-element reference internal" href="../../../dexpi-models/Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><span>&lt;</span><a class="sp-element reference internal" href="../../../dexpi-models/Core/PhysicalQuantities/PhysicalQuantity.html"><span class="doc">PhysicalQuantity</span></a><span> with </span><a class="sp-element reference internal" href="../../../dexpi-models/Core/PhysicalQuantities/PhysicalQuantity.html#sp:core.physicalquantities.physicalquantity.unittype"><span class="std std-ref">UnitType</span></a><span> → </span><a class="sp-element reference internal" href="../../../dexpi-models/Core/PhysicalQuantities/LengthUnit.html"><span class="doc">LengthUnit</span></a><span>&gt;</span></p>
+<p><strong>Multiplicity:</strong><span> </span><span>0..1</span></p>
+<p><strong>Ordered:</strong><span> </span><span>no</span></p>
+<p><strong>Unique:</strong><span> </span><span>no</span></p>
+<p><strong>RDL:</strong><span> </span><a class="reference external" href="http://data.posccaesar.org/rdl/RDS376649">LOWER LIMIT END TO END LENGTH (http://data.posccaesar.org/rdl/RDS376649)</a></p>
+</section>
+<section id="sp:discprofile.informationmodel.pipingnetworksegmentextension.pipesloperatio">
+<h2>PipeSlopeRatio<a class="headerlink" href="#sp:discprofile.informationmodel.pipingnetworksegmentextension.pipesloperatio" title="Link to this heading">¶</a></h2>
+<p class="rubric">Data Property</p>
+<p>Show the slope ratio.</p>
+<p><strong>Type:</strong><span> </span><a class="sp-element reference internal" href="../../../dexpi-models/Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><a class="sp-element reference internal" href="../../../dexpi-models/Builtin/String.html"><span class="doc">String</span></a></p>
+<p><strong>Multiplicity:</strong><span> </span><span>0..1</span></p>
+<p><strong>Ordered:</strong><span> </span><span>no</span></p>
+<p><strong>Unique:</strong><span> </span><span>no</span></p>
+<p><strong>RDL:</strong><span> </span><a class="reference external" href="http://noaka.org/rdl/PipeSlopeRatioAssignmentClass">PIPE SLOPE RATIO ASSIGNMENT CLASS (http://noaka.org/rdl/PipeSlopeRatioAssignmentClass)</a></p>
+</section>
+<section id="sp:discprofile.informationmodel.pipingnetworksegmentextension.scopeidentification">
+<h2>ScopeIdentification<a class="headerlink" href="#sp:discprofile.informationmodel.pipingnetworksegmentextension.scopeidentification" title="Link to this heading">¶</a></h2>
+<p class="rubric">Data Property</p>
+<p>Scope identifier to be drive the scope break.</p>
+<p><strong>Type:</strong><span> </span><a class="sp-element reference internal" href="../../../dexpi-models/Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><a class="sp-element reference internal" href="../../../dexpi-models/Builtin/String.html"><span class="doc">String</span></a></p>
+<p><strong>Multiplicity:</strong><span> </span><span>0..1</span></p>
+<p><strong>Ordered:</strong><span> </span><span>no</span></p>
+<p><strong>Unique:</strong><span> </span><span>no</span></p>
+<p><strong>RDL:</strong><span> </span><a class="reference external" href="http://noaka.org/rdl/ScopeIdentificationAssignmentClass">SCOPE IDENTIFICATION ASSIGNMENT CLASS (http://noaka.org/rdl/ScopeIdentificationAssignmentClass)</a></p>
 </section>
 <section id="sp:discprofile.informationmodel.pipingnetworksegmentextension.segmentlinetyperepresentation">
 <h2>SegmentLineTypeRepresentation<a class="headerlink" href="#sp:discprofile.informationmodel.pipingnetworksegmentextension.segmentlinetyperepresentation" title="Link to this heading">¶</a></h2>
@@ -226,6 +294,10 @@
 </ul>
 </li>
 <li><a class="reference internal" href="#sp:discprofile.informationmodel.pipingnetworksegmentextension.isheattracingsafetycritical">IsHeatTracingSafetyCritical</a></li>
+<li><a class="reference internal" href="#sp:discprofile.informationmodel.pipingnetworksegmentextension.lineid">LineId</a></li>
+<li><a class="reference internal" href="#sp:discprofile.informationmodel.pipingnetworksegmentextension.lowerlimitendtoendlength">LowerLimitEndToEndLength</a></li>
+<li><a class="reference internal" href="#sp:discprofile.informationmodel.pipingnetworksegmentextension.pipesloperatio">PipeSlopeRatio</a></li>
+<li><a class="reference internal" href="#sp:discprofile.informationmodel.pipingnetworksegmentextension.scopeidentification">ScopeIdentification</a></li>
 <li><a class="reference internal" href="#sp:discprofile.informationmodel.pipingnetworksegmentextension.segmentlinetyperepresentation">SegmentLineTypeRepresentation</a></li>
 </ul>
 </li>
@@ -241,8 +313,8 @@
         <div class="button_nav">
             <div class="left">
                 
-                <a href="PipingInstrInterface.html">
-                    <span class="icon">&lt;</span><span>PipingInstrInterface</span></a>
+                <a href="PipingComponentExtension.html">
+                    <span class="icon">&lt;</span><span>PipingComponentExtension</span></a>
                 
             </div>
 

@@ -5,11 +5,11 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>OperatedValveExtension &#8212; DISC Profile 0.6.3</title>
+    <title>OperatedValveExtension &#8212; DISC Profile 0.6.4</title>
     <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=b86133f3" />
     <link rel="stylesheet" type="text/css" href="../../../_static/basic_mod.css?v=9b2032db" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sp.css" />
-    <script src="../../../_static/documentation_options.js?v=b8503983"></script>
+    <script src="../../../_static/documentation_options.js?v=73d9a94e"></script>
     <script src="../../../_static/doctools.js?v=9bcbadda"></script>
     <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../../_static/js/theme.js"></script>
@@ -31,7 +31,7 @@
         <p id="toggle_sidebar">
             <a href="#" title="Toggle sidebar">|||</a>
         </p>
-        <h1><a href="../../../index.html" title="Go to homepage">DISC Profile 0.6.3</a></h1>
+        <h1><a href="../../../index.html" title="Go to homepage">DISC Profile 0.6.4</a></h1>
 
         <a id="mode_toggle" href="#" @click.prevent="handleClick" :title="mode">
     <template v-if="mode == 'light'">
@@ -215,42 +215,49 @@
 <td><p>no</p></td>
 <td><p>The set point given as a physical quatity of appropriate DEXP type</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="sp-element reference internal" href="#sp:discprofile.informationmodel.operatedvalveextension.tagsuffix"><span class="std std-ref">TagSuffix</span></a></p></td>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="#sp:discprofile.informationmodel.operatedvalveextension.shutoffcapability"><span class="std std-ref">ShutoffCapability</span></a></p></td>
+<td><p>0..1</p></td>
+<td><p><a class="sp-element reference internal" href="../../../dexpi-models/Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><a class="sp-element reference internal" href="../../../dexpi-models/Builtin/String.html"><span class="doc">String</span></a></p></td>
+<td><p>no</p></td>
+<td><p>no</p></td>
+<td><p>Value to show on P&amp;ID to indicate if there is a shutoff leakage capability e.g. Tight Shut-off (TSO).</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="#sp:discprofile.informationmodel.operatedvalveextension.tagsuffix"><span class="std std-ref">TagSuffix</span></a></p></td>
 <td><p>0..1</p></td>
 <td><p><a class="sp-element reference internal" href="../../../dexpi-models/Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><a class="sp-element reference internal" href="../../../dexpi-models/Builtin/String.html"><span class="doc">String</span></a></p></td>
 <td><p>no</p></td>
 <td><p>no</p></td>
 <td><p>Tag suffix</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="sp-element reference internal" href="#sp:discprofile.informationmodel.operatedvalveextension.tagtype"><span class="std std-ref">TagType</span></a></p></td>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="#sp:discprofile.informationmodel.operatedvalveextension.tagtype"><span class="std std-ref">TagType</span></a></p></td>
 <td><p>0..1</p></td>
 <td><p><a class="sp-element reference internal" href="../../../dexpi-models/Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><a class="sp-element reference internal" href="../../../dexpi-models/Builtin/String.html"><span class="doc">String</span></a></p></td>
 <td><p>no</p></td>
 <td><p>no</p></td>
 <td><p>Letter code indicating the function of the item.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="sp-element reference internal" href="#sp:discprofile.informationmodel.operatedvalveextension.trimtype"><span class="std std-ref">TrimType</span></a></p></td>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="#sp:discprofile.informationmodel.operatedvalveextension.trimtype"><span class="std std-ref">TrimType</span></a></p></td>
 <td><p>0..1</p></td>
 <td><p><a class="sp-element reference internal" href="../../../dexpi-models/Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><a class="sp-element reference internal" href="../../../dexpi-models/Builtin/String.html"><span class="doc">String</span></a></p></td>
 <td><p>no</p></td>
 <td><p>no</p></td>
 <td><p>Trim Type: e.g. Full Bore / Reduced Bore</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="sp-element reference internal" href="#sp:discprofile.informationmodel.operatedvalveextension.typicalreference"><span class="std std-ref">TypicalReference</span></a></p></td>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="#sp:discprofile.informationmodel.operatedvalveextension.typicalreference"><span class="std std-ref">TypicalReference</span></a></p></td>
 <td><p>0..1</p></td>
 <td><p><a class="sp-element reference internal" href="../../../dexpi-models/Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><a class="sp-element reference internal" href="../../../dexpi-models/Builtin/String.html"><span class="doc">String</span></a></p></td>
 <td><p>no</p></td>
 <td><p>no</p></td>
 <td><p>Code identifying the associated Typical</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="sp-element reference internal" href="#sp:discprofile.informationmodel.operatedvalveextension.valvedatasheet"><span class="std std-ref">ValveDataSheet</span></a></p></td>
+<tr class="row-even"><td><p><a class="sp-element reference internal" href="#sp:discprofile.informationmodel.operatedvalveextension.valvedatasheet"><span class="std std-ref">ValveDataSheet</span></a></p></td>
 <td><p>0..1</p></td>
 <td><p><a class="sp-element reference internal" href="../../../dexpi-models/Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><a class="sp-element reference internal" href="../../../dexpi-models/Builtin/String.html"><span class="doc">String</span></a></p></td>
 <td><p>no</p></td>
 <td><p>no</p></td>
 <td><p>Valve Data Sheet</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="sp-element reference internal" href="#sp:discprofile.informationmodel.operatedvalveextension.valveposition"><span class="std std-ref">ValvePosition</span></a></p></td>
+<tr class="row-odd"><td><p><a class="sp-element reference internal" href="#sp:discprofile.informationmodel.operatedvalveextension.valveposition"><span class="std std-ref">ValvePosition</span></a></p></td>
 <td><p>0..1</p></td>
 <td><p><a class="sp-element reference internal" href="../../../dexpi-models/Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><a class="sp-element reference internal" href="ValvePosition.html"><span class="doc">ValvePosition</span></a></p></td>
 <td><p>no</p></td>
@@ -308,7 +315,7 @@
 <p><strong>Multiplicity:</strong><span> </span><span>0..1</span></p>
 <p><strong>Ordered:</strong><span> </span><span>no</span></p>
 <p><strong>Unique:</strong><span> </span><span>no</span></p>
-<p><strong>RDL:</strong><span> </span><a class="reference external" href="http://noaka.org/rdl/NominalDiameterRepresentationAssignmentClass">NOMINAL DIAMETER REPRESENTATION ASSIGNMENT CLASS (http://noaka.org/rdl/NominalDiameterRepresentationAssignmentClass)</a></p>
+<p><strong>RDL:</strong><span> </span><a class="reference external" href="http://sandbox.dexpi.org/rdl/NominalDiameterRepresentationAssignmentClass">NOMINAL DIAMETER REPRESENTATION ASSIGNMENT CLASS (http://sandbox.dexpi.org/rdl/NominalDiameterRepresentationAssignmentClass)</a></p>
 </section>
 <section id="sp:discprofile.informationmodel.operatedvalveextension.sequence">
 <h2>Sequence<a class="headerlink" href="#sp:discprofile.informationmodel.operatedvalveextension.sequence" title="Link to this heading">¶</a></h2>
@@ -329,6 +336,16 @@
 <p><strong>Ordered:</strong><span> </span><span>no</span></p>
 <p><strong>Unique:</strong><span> </span><span>no</span></p>
 <p><strong>RDL:</strong><span> </span><a class="reference external" href="http://noaka.org/rdl/SetPoint">SET POINT (http://noaka.org/rdl/SetPoint)</a></p>
+</section>
+<section id="sp:discprofile.informationmodel.operatedvalveextension.shutoffcapability">
+<h2>ShutoffCapability<a class="headerlink" href="#sp:discprofile.informationmodel.operatedvalveextension.shutoffcapability" title="Link to this heading">¶</a></h2>
+<p class="rubric">Data Property</p>
+<p>Value to show on P&amp;ID to indicate if there is a shutoff leakage capability e.g. Tight Shut-off (TSO).</p>
+<p><strong>Type:</strong><span> </span><a class="sp-element reference internal" href="../../../dexpi-models/Builtin/Undefined.html"><span class="doc">Undefined</span></a><span> | </span><a class="sp-element reference internal" href="../../../dexpi-models/Builtin/String.html"><span class="doc">String</span></a></p>
+<p><strong>Multiplicity:</strong><span> </span><span>0..1</span></p>
+<p><strong>Ordered:</strong><span> </span><span>no</span></p>
+<p><strong>Unique:</strong><span> </span><span>no</span></p>
+<p><strong>RDL:</strong><span> </span><a class="reference external" href="http://noaka.org/rdl/ShutoffCapabilityAssignmentClass">SHUTOFF CAPABILITY ASSIGNMENT CLASS (http://noaka.org/rdl/ShutoffCapabilityAssignmentClass)</a></p>
 </section>
 <section id="sp:discprofile.informationmodel.operatedvalveextension.tagsuffix">
 <h2>TagSuffix<a class="headerlink" href="#sp:discprofile.informationmodel.operatedvalveextension.tagsuffix" title="Link to this heading">¶</a></h2>
@@ -419,6 +436,7 @@
 <li><a class="reference internal" href="#sp:discprofile.informationmodel.operatedvalveextension.nominaldiameterrepresentation">NominalDiameterRepresentation</a></li>
 <li><a class="reference internal" href="#sp:discprofile.informationmodel.operatedvalveextension.sequence">Sequence</a></li>
 <li><a class="reference internal" href="#sp:discprofile.informationmodel.operatedvalveextension.setpoint">SetPoint</a></li>
+<li><a class="reference internal" href="#sp:discprofile.informationmodel.operatedvalveextension.shutoffcapability">ShutoffCapability</a></li>
 <li><a class="reference internal" href="#sp:discprofile.informationmodel.operatedvalveextension.tagsuffix">TagSuffix</a></li>
 <li><a class="reference internal" href="#sp:discprofile.informationmodel.operatedvalveextension.tagtype">TagType</a></li>
 <li><a class="reference internal" href="#sp:discprofile.informationmodel.operatedvalveextension.trimtype">TrimType</a></li>

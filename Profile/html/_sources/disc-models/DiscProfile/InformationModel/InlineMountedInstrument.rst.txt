@@ -1,0 +1,5 @@
+InlineMountedInstrument
+=======================
+
+.. sp:internal-autoelement::
+   :element: DiscProfile.InformationModel.InlineMountedInstrument
